@@ -1,0 +1,7 @@
+{
+  "title": "XSL-FO (XSL Formatting Objects)",
+  "description": "W3C XML vocabulary for generating PDF and paginated output from XML. Covers fo:block, fo:table, fo:list-block, page layout, writing modes, links, bookmarks, and all formatting object properties.",
+  "folders": [
+    "docs"
+  ]
+}
