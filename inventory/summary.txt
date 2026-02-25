@@ -1,0 +1,423 @@
+======================================================================
+PHASE 2 EXTRACTION SUMMARY
+======================================================================
+
+Sections found:  651 total
+  div1 (chapters): 12
+  div2 (sections): 94
+  div3 (subsections): 545
+
+Code samples (<eg> tags): 221
+  Expected: 221
+  Match: YES
+
+Samples by chapter:
+  Introduction and Overview: 0
+  XSL Transformation: 0
+  Introduction to Formatting: 0
+  Area Model: 6
+  Property Refinement / Resolution: 22
+  Formatting Objects: 186
+  Formatting Properties: 7
+  Conformance: 0
+  Formatting Object Summary: 0
+  Property Summary: 0
+  References: 0
+  Property Index: 0
+
+──────────────────────────────────────────────────────────────────────
+CHAPTER OVERVIEW
+──────────────────────────────────────────────────────────────────────
+
+Introduction and Overview
+  Lines: 203–678
+  ID: (none)
+  Target: guide-introduction.md
+  Sections (2):
+    - Processing a Stylesheet -> guide-introduction.md
+    - Benefits of XSL -> guide-introduction.md
+
+XSL Transformation
+  Lines: 681–753
+  ID: (none)
+  Target: guide-xslt-integration.md
+  Sections (2):
+    - Tree Construction -> guide-xslt-integration.md
+    - XSL Namespace [xsl-namespace] -> guide-xslt-integration.md
+
+Introduction to Formatting
+  Lines: 756–916
+  ID: fo-jc-intro
+  Target: guide-formatting-intro.md
+  Sections (1):
+    - Conceptual Procedure -> guide-formatting-intro.md
+
+Area Model
+  Lines: 921–3182
+  ID: area_model
+  Target: guide-area-model.md
+  Sections (11):
+    - Introduction [area-intro] -> guide-area-model.md
+    - Rectangular Areas [area-rect] -> guide-area-model.md
+    - Spaces and Conditionality [spacecond] -> guide-spaces-conditionality.md
+    - Block-areas [area-block] -> guide-area-model.md
+    - Line-areas [area-line] -> guide-area-model.md
+    - Inline-areas [area-inline] -> guide-area-model.md
+    - Ordering Constraints [area-order] -> guide-area-model.md
+    - Keeps and Breaks [keepbreak] -> guide-keeps-breaks.md
+    - Rendering Model [rendmodel] -> guide-rendering-model.md
+    - Sample Area Tree [area-tree-sample] -> guide-area-model.md
+    - Copyfitting [copyfitting] -> guide-copyfitting.md
+
+Property Refinement / Resolution
+  Lines: 3185–6278
+  ID: refinement
+  Target: guide-property-refinement.md
+  Sections (15):
+    - Specified, Computed, and Actual Values, and Inheritance [speccomact] -> guide-property-refinement.md
+    - Shorthand Expansion [shortexpan] -> guide-property-refinement.md
+    - Computing the Values of Corresponding Properties [compcorr] -> guide-property-refinement.md
+    - Simple Property to Trait Mapping -> guide-property-refinement.md
+    - Complex Property to Trait Mapping -> guide-property-refinement.md
+    - Non-property Based Trait Generation -> guide-property-refinement.md
+    - Property Based Transformations -> guide-property-refinement.md
+    - Alignment Properties [alignmentproperties.intro] -> guide-property-refinement.md
+    - Ruby [rubydef] -> guide-property-refinement.md
+    - Unicode BIDI Processing -> guide-bidi.md
+    - Expressions -> guide-expressions.md
+    - Core Function Library -> guide-expressions.md
+    - Property Datatypes [datatype] -> guide-datatypes.md
+    - Numbering [numbering] -> guide-numbering.md
+    - Composition [composition] -> guide-property-refinement.md
+
+Formatting Objects
+  Lines: 6282–18420
+  ID: fo-section
+  Target: guide-formatting-objects.md
+  Sections (13):
+    - Introduction to Formatting Objects -> guide-formatting-objects.md
+    - Formatting Object Content -> guide-formatting-objects.md
+    - Formatting Objects Summary -> guide-formatting-objects.md
+    - Declarations and Pagination and Layout Formatting Objects -> properties-pagination.md
+    - Block-level Formatting Objects -> guide-formatting-objects.md
+    - Inline-level Formatting Objects -> guide-formatting-objects.md
+    - Formatting Objects for Tables -> guide-formatting-objects.md
+    - Formatting Objects for Lists -> guide-formatting-objects.md
+    - Dynamic Effects: Link and Multi Formatting Objects -> properties-dynamic-effects.md
+    - Formatting Objects for Indexing -> properties-indexing.md
+    - Formatting Objects for Bookmarks -> guide-formatting-objects.md
+    - Out-of-Line Formatting Objects -> guide-formatting-objects.md
+    - Other Formatting Objects -> guide-formatting-objects.md
+
+Formatting Properties
+  Lines: 18421–34039
+  ID: pr-section
+  Target: guide-property-refinement.md
+  Sections (34):
+    - Description of Property Groups -> guide-property-refinement.md
+    - XSL Areas and the CSS Box Model [cssbox] -> guide-property-refinement.md
+    - Reference Rectangle for Percentage Computations [percrule] -> guide-property-refinement.md
+    - Additional CSS Datatypes [cssdatat] -> guide-property-refinement.md
+    - Common Accessibility Properties [common-accessibility-properties] -> properties-accessibility.md
+    - Common Absolute Position Properties [common-absolute-position-properties] -> properties-absolute-position.md
+    - Common Aural Properties [common-aural-properties] -> properties-aural.md
+    - Common Border, Padding, and Background Properties [common-border-padding-and-background-properties] -> properties-border-padding-background.md
+    - Common Font Properties [common-font-properties] -> properties-font.md
+    - Common Hyphenation Properties [common-hyphenation-properties] -> properties-hyphenation.md
+    - Common Margin Properties-Block [common-margin-properties-block] -> properties-margin-block.md
+    - Common Margin Properties-Inline [common-margin-properties-inline] -> properties-margin-inline.md
+    - Common Relative Position Properties [common-relative-position-properties] -> properties-relative-position.md
+    - Common Wrap Properties [common-wrap-properties] -> properties-wrap.md
+    - Area Alignment Properties [area-alignment] -> properties-alignment.md
+    - Area Dimension Properties -> properties-dimension.md
+    - Block and Line-related Properties -> properties-block-line.md
+    - Character Properties -> properties-character.md
+    - Color-related Properties -> properties-color.md
+    - Float-related Properties -> properties-float.md
+    - Keeps and Breaks Properties -> properties-keeps-breaks.md
+    - Layout-related Properties -> properties-layout.md
+    - Leader and Rule Properties -> properties-leader.md
+    - Properties for Dynamic Effects Formatting Objects -> properties-dynamic-effects.md
+    - Properties for Indexing -> properties-indexing.md
+    - Properties for Markers -> properties-markers.md
+    - Ruby [ruby] -> properties-ruby.md
+    - Numbering Properties [numbering.properties] -> properties-numbering.md
+    - Properties for Number to String Conversion -> properties-number-string.md
+    - Pagination and Layout Properties -> properties-pagination.md
+    - Table Properties -> properties-table.md
+    - Writing-mode-related Properties [writing-mode-related] -> properties-writing-mode.md
+    - Miscellaneous Properties -> properties-misc.md
+    - Shorthand Properties -> properties-shorthand.md
+
+Conformance
+  Lines: 34044–34104
+  ID: conform
+  Target: ref-conformance.md
+
+Formatting Object Summary
+  Lines: 34112–34718
+  ID: FO-summary
+  Target: ref-fo-summary.md
+  Sections (10):
+    - Declaration and Pagination and Layout Formatting Objects -> properties-pagination.md
+    - Block Formatting Objects -> ref-fo-summary.md
+    - Inline Formatting Objects -> ref-fo-summary.md
+    - Table Formatting Objects -> ref-fo-summary.md
+    - List Formatting Objects -> ref-fo-summary.md
+    - Link and Multi Formatting Objects [ConfMulti] -> ref-fo-summary.md
+    - Out-of-line Formatting Objects -> guide-formatting-objects.md
+    - Formatting Objects for Indexing -> properties-indexing.md
+    - Formatting Objects for Bookmarks -> guide-formatting-objects.md
+    - Other Formatting Objects -> guide-formatting-objects.md
+
+Property Summary
+  Lines: 34719–38436
+  ID: property-index
+  Target: ref-property-summary.md
+  Sections (4):
+    - Explanation of Trait Mapping Values [trmval] -> ref-property-summary.md
+    - Property Table: Part I [prtab1] -> ref-property-summary.md
+    - Property Table: Part II [prtab2] -> ref-property-summary.md
+    - Properties and the FOs they apply to [prapply] -> ref-property-summary.md
+
+References
+  Lines: 38437–38641
+  ID: (none)
+  Target: None
+  Sections (2):
+    - Normative References -> ref-references.md
+    - Other References -> ref-references.md
+
+Property Index
+  Lines: 38643–38921
+  ID: (none)
+  Target: None
+
+──────────────────────────────────────────────────────────────────────
+TARGET FILE DISTRIBUTION
+──────────────────────────────────────────────────────────────────────
+  (unmapped): 8 sections, 0 samples
+  fo-alternative-copyfit-content.md: 1 sections, 2 samples
+  fo-basic-link.md: 1 sections, 1 samples
+  fo-bidi-override.md: 1 sections, 1 samples
+  fo-block-container.md: 1 sections, 1 samples
+  fo-block.md: 1 sections, 1 samples
+  fo-bookmark-title.md: 1 sections, 1 samples
+  fo-bookmark-tree.md: 1 sections, 1 samples
+  fo-bookmark.md: 1 sections, 1 samples
+  fo-change-bar-begin.md: 1 sections, 1 samples
+  fo-change-bar-end.md: 1 sections, 1 samples
+  fo-character.md: 1 sections, 1 samples
+  fo-color-profile.md: 1 sections, 1 samples
+  fo-conditional-page-master-reference.md: 1 sections, 1 samples
+  fo-conditional-table-footer-reference.md: 1 sections, 1 samples
+  fo-conditional-table-header-reference.md: 1 sections, 1 samples
+  fo-declarations.md: 1 sections, 1 samples
+  fo-extension-region-end.md: 1 sections, 1 samples
+  fo-extension-region-start.md: 1 sections, 1 samples
+  fo-external-graphic.md: 1 sections, 1 samples
+  fo-float.md: 1 sections, 1 samples
+  fo-flow-assignment.md: 1 sections, 1 samples
+  fo-flow-map.md: 1 sections, 2 samples
+  fo-flow-name-specifier.md: 1 sections, 1 samples
+  fo-flow-source-list.md: 1 sections, 1 samples
+  fo-flow-target-list.md: 1 sections, 1 samples
+  fo-flow.md: 1 sections, 1 samples
+  fo-folio-prefix.md: 1 sections, 1 samples
+  fo-folio-suffix.md: 1 sections, 1 samples
+  fo-footnote-body.md: 1 sections, 1 samples
+  fo-footnote.md: 1 sections, 1 samples
+  fo-index-key-reference.md: 1 sections, 1 samples
+  fo-index-page-citation-list-separator.md: 1 sections, 1 samples
+  fo-index-page-citation-list.md: 1 sections, 1 samples
+  fo-index-page-citation-range-separator.md: 1 sections, 1 samples
+  fo-index-page-number-prefix.md: 1 sections, 1 samples
+  fo-index-page-number-suffix.md: 1 sections, 1 samples
+  fo-index-range-begin.md: 1 sections, 1 samples
+  fo-index-range-end.md: 1 sections, 1 samples
+  fo-initial-property-set.md: 1 sections, 1 samples
+  fo-inline-container.md: 1 sections, 1 samples
+  fo-inline.md: 1 sections, 1 samples
+  fo-instream-foreign-object.md: 1 sections, 0 samples
+  fo-layout-master-set.md: 1 sections, 1 samples
+  fo-leader.md: 1 sections, 1 samples
+  fo-list-block.md: 1 sections, 1 samples
+  fo-list-item-body.md: 1 sections, 1 samples
+  fo-list-item-label.md: 1 sections, 1 samples
+  fo-list-item.md: 1 sections, 1 samples
+  fo-marginalia-body.md: 1 sections, 1 samples
+  fo-marginalia.md: 1 sections, 1 samples
+  fo-marker.md: 1 sections, 1 samples
+  fo-multi-case.md: 1 sections, 1 samples
+  fo-multi-properties.md: 1 sections, 1 samples
+  fo-multi-property-set.md: 1 sections, 1 samples
+  fo-multi-switch.md: 1 sections, 1 samples
+  fo-multi-toggle.md: 1 sections, 1 samples
+  fo-number.md: 1 sections, 0 samples
+  fo-page-master.md: 1 sections, 1 samples
+  fo-page-number-citation-last.md: 1 sections, 1 samples
+  fo-page-number-citation.md: 1 sections, 1 samples
+  fo-page-number.md: 1 sections, 1 samples
+  fo-page-sequence-master.md: 1 sections, 1 samples
+  fo-page-sequence-wrapper.md: 1 sections, 1 samples
+  fo-page-sequence.md: 1 sections, 1 samples
+  fo-region-after.md: 1 sections, 1 samples
+  fo-region-before.md: 1 sections, 1 samples
+  fo-region-body.md: 1 sections, 1 samples
+  fo-region-end.md: 1 sections, 1 samples
+  fo-region-name-specifier.md: 1 sections, 1 samples
+  fo-region-start.md: 1 sections, 1 samples
+  fo-region.md: 1 sections, 3 samples
+  fo-repeatable-page-master-alternatives.md: 1 sections, 1 samples
+  fo-repeatable-page-master-reference.md: 1 sections, 1 samples
+  fo-retrieve-marker.md: 1 sections, 1 samples
+  fo-retrieve-number.md: 1 sections, 2 samples
+  fo-retrieve-table-marker.md: 1 sections, 1 samples
+  fo-root.md: 1 sections, 1 samples
+  fo-ruby-base-container-text.md: 1 sections, 1 samples
+  fo-ruby-base.md: 1 sections, 1 samples
+  fo-ruby-parenthesis.md: 1 sections, 1 samples
+  fo-ruby-text-container.md: 1 sections, 1 samples
+  fo-ruby-text.md: 1 sections, 1 samples
+  fo-ruby.md: 1 sections, 1 samples
+  fo-scaling-value-citation.md: 1 sections, 1 samples
+  fo-shape-background-specifier.md: 1 sections, 0 samples
+  fo-shape-border-specifier.md: 1 sections, 0 samples
+  fo-shape-path-specifier.md: 1 sections, 1 samples
+  fo-simple-page-master.md: 1 sections, 1 samples
+  fo-single-page-master-reference.md: 1 sections, 1 samples
+  fo-static-content.md: 1 sections, 1 samples
+  fo-table-and-caption.md: 1 sections, 1 samples
+  fo-table-body.md: 1 sections, 1 samples
+  fo-table-caption.md: 1 sections, 1 samples
+  fo-table-cell.md: 1 sections, 1 samples
+  fo-table-column.md: 1 sections, 1 samples
+  fo-table-footer-alternatives.md: 1 sections, 1 samples
+  fo-table-footer.md: 1 sections, 1 samples
+  fo-table-header-alternatives.md: 1 sections, 1 samples
+  fo-table-header.md: 1 sections, 1 samples
+  fo-table-row.md: 1 sections, 1 samples
+  fo-table.md: 1 sections, 1 samples
+  fo-title.md: 1 sections, 1 samples
+  fo-wrapper.md: 1 sections, 1 samples
+  guide-area-model.md: 32 sections, 6 samples
+  guide-bidi.md: 1 sections, 2 samples
+  guide-copyfitting.md: 1 sections, 0 samples
+  guide-datatypes.md: 1 sections, 8 samples
+  guide-expressions.md: 2 sections, 0 samples
+  guide-formatting-intro.md: 2 sections, 0 samples
+  guide-formatting-objects.md: 15 sections, 50 samples
+  guide-introduction.md: 9 sections, 0 samples
+  guide-keeps-breaks.md: 1 sections, 0 samples
+  guide-linking.md: 1 sections, 0 samples
+  guide-numbering.md: 1 sections, 0 samples
+  guide-property-refinement.md: 62 sections, 12 samples
+  guide-rendering-model.md: 1 sections, 0 samples
+  guide-spaces-conditionality.md: 3 sections, 0 samples
+  guide-writing-modes.md: 1 sections, 0 samples
+  guide-xslt-integration.md: 3 sections, 0 samples
+  properties-absolute-position.md: 6 sections, 0 samples
+  properties-accessibility.md: 3 sections, 0 samples
+  properties-alignment.md: 14 sections, 0 samples
+  properties-aural.md: 19 sections, 0 samples
+  properties-block-line.md: 21 sections, 0 samples
+  properties-border-padding-background.md: 39 sections, 0 samples
+  properties-character.md: 10 sections, 0 samples
+  properties-color.md: 4 sections, 0 samples
+  properties-dimension.md: 15 sections, 0 samples
+  properties-dynamic-effects.md: 17 sections, 6 samples
+  properties-float.md: 4 sections, 0 samples
+  properties-font.md: 9 sections, 0 samples
+  properties-hyphenation.md: 16 sections, 0 samples
+  properties-indexing.md: 11 sections, 16 samples
+  properties-keeps-breaks.md: 10 sections, 0 samples
+  properties-layout.md: 7 sections, 0 samples
+  properties-leader.md: 7 sections, 1 samples
+  properties-margin-block.md: 9 sections, 0 samples
+  properties-margin-inline.md: 3 sections, 0 samples
+  properties-markers.md: 7 sections, 0 samples
+  properties-misc.md: 21 sections, 0 samples
+  properties-number-string.md: 5 sections, 0 samples
+  properties-numbering.md: 17 sections, 3 samples
+  properties-pagination.md: 32 sections, 13 samples
+  properties-relative-position.md: 2 sections, 0 samples
+  properties-ruby.md: 13 sections, 0 samples
+  properties-shorthand.md: 25 sections, 0 samples
+  properties-table.md: 32 sections, 0 samples
+  properties-wrap.md: 4 sections, 0 samples
+  properties-writing-mode.md: 8 sections, 0 samples
+  ref-conformance.md: 1 sections, 0 samples
+  ref-fo-summary.md: 6 sections, 0 samples
+  ref-property-summary.md: 5 sections, 0 samples
+  ref-references.md: 2 sections, 0 samples
+
+──────────────────────────────────────────────────────────────────────
+UNMAPPED SECTIONS (8)
+──────────────────────────────────────────────────────────────────────
+  Line 9911: div3 — Introduction [id=None]
+  Line 10332: div3 — Introduction [id=None]
+  Line 12135: div3 — Introduction [id=None]
+  Line 13955: div3 — Introduction [id=None]
+  Line 16598: div3 — Introduction [id=None]
+  Line 17262: div3 — Introduction [id=None]
+  Line 38437: div1 — References [id=None]
+  Line 38643: div1 — Property Index [id=None]
+
+
+SECTIONS WITHOUT ID (div1/div2 only): 56
+  Line 203: div1 — Introduction and Overview
+  Line 213: div2 — Processing a Stylesheet
+  Line 434: div2 — Benefits of XSL
+  Line 681: div1 — XSL Transformation
+  Line 682: div2 — Tree Construction
+  Line 843: div2 — Conceptual Procedure
+  Line 3670: div2 — Simple Property to Trait Mapping
+  Line 3719: div2 — Complex Property to Trait Mapping
+  Line 4055: div2 — Non-property Based Trait Generation
+  Line 4064: div2 — Property Based Transformations
+  Line 4693: div2 — Unicode BIDI Processing
+  Line 4922: div2 — Expressions
+  Line 5425: div2 — Core Function Library
+  Line 6284: div2 — Introduction to Formatting Objects
+  Line 6442: div2 — Formatting Object Content
+  Line 6515: div2 — Formatting Objects Summary
+  Line 6945: div2 — Declarations and Pagination and Layout Formatting Objects
+  Line 9908: div2 — Block-level Formatting Objects
+  Line 10329: div2 — Inline-level Formatting Objects
+  Line 12132: div2 — Formatting Objects for Tables
+  Line 13952: div2 — Formatting Objects for Lists
+  Line 14636: div2 — Dynamic Effects: Link and Multi Formatting Objects
+  Line 15323: div2 — Formatting Objects for Indexing
+  Line 16478: div2 — Formatting Objects for Bookmarks
+  Line 16595: div2 — Out-of-Line Formatting Objects
+  Line 17259: div2 — Other Formatting Objects
+  Line 18422: div2 — Description of Property Groups
+  Line 23246: div2 — Area Dimension Properties
+  Line 23878: div2 — Block and Line-related Properties
+  Line 24771: div2 — Character Properties
+  Line 25299: div2 — Color-related Properties
+  Line 25403: div2 — Float-related Properties
+  Line 25751: div2 — Keeps and Breaks Properties
+  Line 26061: div2 — Layout-related Properties
+  Line 26385: div2 — Leader and Rule Properties
+  Line 26609: div2 — Properties for Dynamic Effects Formatting Objects
+  Line 27095: div2 — Properties for Indexing
+  Line 27305: div2 — Properties for Markers
+  Line 28880: div2 — Properties for Number to String Conversion
+  Line 28979: div2 — Pagination and Layout Properties
+  Line 29998: div2 — Table Properties
+  Line 32177: div2 — Miscellaneous Properties
+  Line 32863: div2 — Shorthand Properties
+  Line 34125: div2 — Declaration and Pagination and Layout Formatting Objects
+  Line 34268: div2 — Block Formatting Objects
+  Line 34292: div2 — Inline Formatting Objects
+  Line 34384: div2 — Table Formatting Objects
+  Line 34458: div2 — List Formatting Objects
+  Line 34558: div2 — Out-of-line Formatting Objects
+  Line 34586: div2 — Formatting Objects for Indexing
+  Line 34641: div2 — Formatting Objects for Bookmarks
+  Line 34670: div2 — Other Formatting Objects
+  Line 38437: div1 — References
+  Line 38439: div2 — Normative References
+  Line 38559: div2 — Other References
+  Line 38643: div1 — Property Index

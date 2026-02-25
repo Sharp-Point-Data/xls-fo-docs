@@ -1,0 +1,4625 @@
+{
+  "guide-introduction.md": {
+    "sections": [
+      {
+        "title": "Introduction and Overview",
+        "id": null,
+        "level": 1,
+        "start_line": 203
+      },
+      {
+        "title": "Processing a Stylesheet",
+        "id": null,
+        "level": 2,
+        "start_line": 213
+      },
+      {
+        "title": "Tree Transformations",
+        "id": null,
+        "level": 3,
+        "start_line": 257
+      },
+      {
+        "title": "Formatting",
+        "id": null,
+        "level": 3,
+        "start_line": 298
+      },
+      {
+        "title": "Benefits of XSL",
+        "id": null,
+        "level": 2,
+        "start_line": 434
+      },
+      {
+        "title": "Paging and Scrolling",
+        "id": null,
+        "level": 3,
+        "start_line": 457
+      },
+      {
+        "title": "Selectors and Tree Construction",
+        "id": null,
+        "level": 3,
+        "start_line": 539
+      },
+      {
+        "title": "An Extended Page Layout Model",
+        "id": null,
+        "level": 3,
+        "start_line": 560
+      },
+      {
+        "title": "A Comprehensive Area Model",
+        "id": null,
+        "level": 3,
+        "start_line": 589
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-writing-modes.md": {
+    "sections": [
+      {
+        "title": "Internationalization and Writing-Modes",
+        "id": null,
+        "level": 3,
+        "start_line": 604
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-linking.md": {
+    "sections": [
+      {
+        "title": "Linking",
+        "id": null,
+        "level": 3,
+        "start_line": 647
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-xslt-integration.md": {
+    "sections": [
+      {
+        "title": "XSL Transformation",
+        "id": null,
+        "level": 1,
+        "start_line": 681
+      },
+      {
+        "title": "Tree Construction",
+        "id": null,
+        "level": 2,
+        "start_line": 682
+      },
+      {
+        "title": "XSL Namespace",
+        "id": "xsl-namespace",
+        "level": 2,
+        "start_line": 704
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-formatting-intro.md": {
+    "sections": [
+      {
+        "title": "Introduction to Formatting",
+        "id": "fo-jc-intro",
+        "level": 1,
+        "start_line": 756
+      },
+      {
+        "title": "Conceptual Procedure",
+        "id": null,
+        "level": 2,
+        "start_line": 843
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-area-model.md": {
+    "sections": [
+      {
+        "title": "Area Model",
+        "id": "area_model",
+        "level": 1,
+        "start_line": 921
+      },
+      {
+        "title": "Introduction",
+        "id": "area-intro",
+        "level": 2,
+        "start_line": 930
+      },
+      {
+        "title": "Rectangular Areas",
+        "id": "area-rect",
+        "level": 2,
+        "start_line": 1031
+      },
+      {
+        "title": "Area Types",
+        "id": null,
+        "level": 3,
+        "start_line": 1032
+      },
+      {
+        "title": "Common Traits",
+        "id": "area-common",
+        "level": 3,
+        "start_line": 1052
+      },
+      {
+        "title": "Geometric Definitions",
+        "id": "area-geo",
+        "level": 3,
+        "start_line": 1155
+      },
+      {
+        "title": "Tree Ordering",
+        "id": "area-treeorder",
+        "level": 3,
+        "start_line": 1228
+      },
+      {
+        "title": "Stacking Constraints",
+        "id": "area-stackcon",
+        "level": 3,
+        "start_line": 1246
+      },
+      {
+        "title": "Block-areas",
+        "id": "area-block",
+        "level": 2,
+        "start_line": 1722
+      },
+      {
+        "title": "Stacked Block-areas",
+        "id": "area-stackblock",
+        "level": 3,
+        "start_line": 1747
+      },
+      {
+        "title": "Positioning in the block-progression direction",
+        "id": "verticalpositioning",
+        "level": 3,
+        "start_line": 1835
+      },
+      {
+        "title": "Intrusion Adjustments",
+        "id": "intrusadjust",
+        "level": 3,
+        "start_line": 1943
+      },
+      {
+        "title": "Line-areas",
+        "id": "area-line",
+        "level": 2,
+        "start_line": 2066
+      },
+      {
+        "title": "Inline-areas",
+        "id": "area-inline",
+        "level": 2,
+        "start_line": 2142
+      },
+      {
+        "title": "Stacked Inline-areas",
+        "id": "area-stackinline",
+        "level": 3,
+        "start_line": 2172
+      },
+      {
+        "title": "Glyph-areas",
+        "id": "area-glyph",
+        "level": 3,
+        "start_line": 2208
+      },
+      {
+        "title": "Font Baseline Tables",
+        "id": "area-font",
+        "level": 3,
+        "start_line": 2229
+      },
+      {
+        "title": "Ordering Constraints",
+        "id": "area-order",
+        "level": 2,
+        "start_line": 2250
+      },
+      {
+        "title": "General Ordering Constraints",
+        "id": "area-genorder",
+        "level": 3,
+        "start_line": 2252
+      },
+      {
+        "title": "Line-building",
+        "id": "area-linebuild",
+        "level": 3,
+        "start_line": 2274
+      },
+      {
+        "title": "Inline-building",
+        "id": "area-inlinebuild",
+        "level": 3,
+        "start_line": 2386
+      },
+      {
+        "title": "Geometry",
+        "id": "rend-geo",
+        "level": 3,
+        "start_line": 2512
+      },
+      {
+        "title": "Viewport Geometry",
+        "id": "rend-view",
+        "level": 3,
+        "start_line": 2557
+      },
+      {
+        "title": "Visibility",
+        "id": "rend-vis",
+        "level": 3,
+        "start_line": 2581
+      },
+      {
+        "title": "Border, Padding, and Background",
+        "id": "rend-border",
+        "level": 3,
+        "start_line": 2601
+      },
+      {
+        "title": "Intrinsic Marks",
+        "id": "rend-intrinsic",
+        "level": 3,
+        "start_line": 2632
+      },
+      {
+        "title": "Layering and Conflict of Marks",
+        "id": "rend-layer",
+        "level": 3,
+        "start_line": 2651
+      },
+      {
+        "title": "Sample Area Tree",
+        "id": "area-tree-sample",
+        "level": 2,
+        "start_line": 2707
+      },
+      {
+        "title": "Summary",
+        "id": "copyfitting-summary",
+        "level": 3,
+        "start_line": 2717
+      },
+      {
+        "title": "Copyfit: basic approach and definitions",
+        "id": "copyfitting-approach",
+        "level": 3,
+        "start_line": 2751
+      },
+      {
+        "title": "Copyfit Examples",
+        "id": null,
+        "level": 3,
+        "start_line": 2785
+      },
+      {
+        "title": "Content Adjusting Strategies",
+        "id": null,
+        "level": 3,
+        "start_line": 3019
+      }
+    ],
+    "sample_count": 6
+  },
+  "guide-spaces-conditionality.md": {
+    "sections": [
+      {
+        "title": "Spaces and Conditionality",
+        "id": "spacecond",
+        "level": 2,
+        "start_line": 1550
+      },
+      {
+        "title": "Space-resolution Rules",
+        "id": "area-space",
+        "level": 3,
+        "start_line": 1580
+      },
+      {
+        "title": "Overconstrained space-specifiers",
+        "id": "bpd-slack",
+        "level": 3,
+        "start_line": 1695
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-keeps-breaks.md": {
+    "sections": [
+      {
+        "title": "Keeps and Breaks",
+        "id": "keepbreak",
+        "level": 2,
+        "start_line": 2420
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-rendering-model.md": {
+    "sections": [
+      {
+        "title": "Rendering Model",
+        "id": "rendmodel",
+        "level": 2,
+        "start_line": 2495
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-copyfitting.md": {
+    "sections": [
+      {
+        "title": "Copyfitting",
+        "id": "copyfitting",
+        "level": 2,
+        "start_line": 2714
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-property-refinement.md": {
+    "sections": [
+      {
+        "title": "Property Refinement / Resolution",
+        "id": "refinement",
+        "level": 1,
+        "start_line": 3185
+      },
+      {
+        "title": "Specified, Computed, and Actual Values, and Inheritance",
+        "id": "speccomact",
+        "level": 2,
+        "start_line": 3214
+      },
+      {
+        "title": "Specified Values",
+        "id": null,
+        "level": 3,
+        "start_line": 3233
+      },
+      {
+        "title": "Computed Values",
+        "id": null,
+        "level": 3,
+        "start_line": 3257
+      },
+      {
+        "title": "Actual Values",
+        "id": null,
+        "level": 3,
+        "start_line": 3302
+      },
+      {
+        "title": "Inheritance",
+        "id": "inheritance",
+        "level": 3,
+        "start_line": 3312
+      },
+      {
+        "title": "Shorthand Expansion",
+        "id": "shortexpan",
+        "level": 2,
+        "start_line": 3330
+      },
+      {
+        "title": "Computing the Values of Corresponding Properties",
+        "id": "compcorr",
+        "level": 2,
+        "start_line": 3389
+      },
+      {
+        "title": "Border and Padding Properties",
+        "id": "refine-border-padding",
+        "level": 3,
+        "start_line": 3422
+      },
+      {
+        "title": "Margin, Space, and Indent Properties",
+        "id": "refine-margin-space-indent",
+        "level": 3,
+        "start_line": 3474
+      },
+      {
+        "title": "Height, and Width Properties",
+        "id": null,
+        "level": 3,
+        "start_line": 3546
+      },
+      {
+        "title": "Overconstrained Geometry",
+        "id": "overcons_geom",
+        "level": 3,
+        "start_line": 3660
+      },
+      {
+        "title": "Simple Property to Trait Mapping",
+        "id": null,
+        "level": 2,
+        "start_line": 3670
+      },
+      {
+        "title": "Background-position-horizontal and background-position-vertical Properties",
+        "id": null,
+        "level": 3,
+        "start_line": 3687
+      },
+      {
+        "title": "Column-number Property",
+        "id": null,
+        "level": 3,
+        "start_line": 3691
+      },
+      {
+        "title": "Text-align Property",
+        "id": null,
+        "level": 3,
+        "start_line": 3696
+      },
+      {
+        "title": "Text-align-last Property",
+        "id": null,
+        "level": 3,
+        "start_line": 3700
+      },
+      {
+        "title": "z-index Property",
+        "id": null,
+        "level": 3,
+        "start_line": 3704
+      },
+      {
+        "title": "Language Property",
+        "id": null,
+        "level": 3,
+        "start_line": 3709
+      },
+      {
+        "title": "Complex Property to Trait Mapping",
+        "id": null,
+        "level": 2,
+        "start_line": 3719
+      },
+      {
+        "title": "Word spacing and Letter spacing Properties",
+        "id": null,
+        "level": 3,
+        "start_line": 3723
+      },
+      {
+        "title": "Reference-orientation Property",
+        "id": "refine-reference-orientation",
+        "level": 3,
+        "start_line": 3728
+      },
+      {
+        "title": "Writing-mode and Direction Properties",
+        "id": "refine-writing-mode",
+        "level": 3,
+        "start_line": 3735
+      },
+      {
+        "title": "Absolute-position Property",
+        "id": "refine-absolute-pos",
+        "level": 3,
+        "start_line": 3749
+      },
+      {
+        "title": "Relative-position Property",
+        "id": "refine-relative-pos",
+        "level": 3,
+        "start_line": 3758
+      },
+      {
+        "title": "Text-decoration Property",
+        "id": "refine-text-decoration",
+        "level": 3,
+        "start_line": 3774
+      },
+      {
+        "title": "Font Properties",
+        "id": "fontprops",
+        "level": 3,
+        "start_line": 3810
+      },
+      {
+        "title": "Fonts and Font Data",
+        "id": "font-model",
+        "level": 3,
+        "start_line": 3861
+      },
+      {
+        "title": "Non-property Based Trait Generation",
+        "id": null,
+        "level": 2,
+        "start_line": 4055
+      },
+      {
+        "title": "Property Based Transformations",
+        "id": null,
+        "level": 2,
+        "start_line": 4064
+      },
+      {
+        "title": "Text-transform Property",
+        "id": null,
+        "level": 3,
+        "start_line": 4065
+      },
+      {
+        "title": "Alignment Properties",
+        "id": "alignmentproperties.intro",
+        "level": 2,
+        "start_line": 4076
+      },
+      {
+        "title": "Ruby",
+        "id": "rubydef",
+        "level": 2,
+        "start_line": 4660
+      },
+      {
+        "title": "Property Context",
+        "id": null,
+        "level": 3,
+        "start_line": 4930
+      },
+      {
+        "title": "Evaluation Order",
+        "id": null,
+        "level": 3,
+        "start_line": 4966
+      },
+      {
+        "title": "Basics",
+        "id": null,
+        "level": 3,
+        "start_line": 4979
+      },
+      {
+        "title": "Function Calls",
+        "id": null,
+        "level": 3,
+        "start_line": 4987
+      },
+      {
+        "title": "Numerics",
+        "id": "numbers",
+        "level": 3,
+        "start_line": 5001
+      },
+      {
+        "title": "Absolute Numerics",
+        "id": null,
+        "level": 3,
+        "start_line": 5094
+      },
+      {
+        "title": "Relative Numerics",
+        "id": null,
+        "level": 3,
+        "start_line": 5119
+      },
+      {
+        "title": "Strings",
+        "id": null,
+        "level": 3,
+        "start_line": 5160
+      },
+      {
+        "title": "Colors",
+        "id": null,
+        "level": 3,
+        "start_line": 5166
+      },
+      {
+        "title": "Keywords",
+        "id": null,
+        "level": 3,
+        "start_line": 5181
+      },
+      {
+        "title": "Lexical Structure",
+        "id": null,
+        "level": 3,
+        "start_line": 5194
+      },
+      {
+        "title": "Expression Value Conversions",
+        "id": "expr.value.conv",
+        "level": 3,
+        "start_line": 5286
+      },
+      {
+        "title": "Definitions of Units of Measure",
+        "id": null,
+        "level": 3,
+        "start_line": 5339
+      },
+      {
+        "title": "Number Functions",
+        "id": null,
+        "level": 3,
+        "start_line": 5426
+      },
+      {
+        "title": "Color Functions",
+        "id": "expr-color-functions",
+        "level": 3,
+        "start_line": 5463
+      },
+      {
+        "title": "Font Functions",
+        "id": null,
+        "level": 3,
+        "start_line": 5565
+      },
+      {
+        "title": "Property Value Functions",
+        "id": null,
+        "level": 3,
+        "start_line": 5579
+      },
+      {
+        "title": "Composition",
+        "id": "composition",
+        "level": 2,
+        "start_line": 6224
+      },
+      {
+        "title": "Improved font support",
+        "id": null,
+        "level": 3,
+        "start_line": 6227
+      },
+      {
+        "title": "Force line justification",
+        "id": null,
+        "level": 3,
+        "start_line": 6237
+      },
+      {
+        "title": "Alignment around breaks",
+        "id": null,
+        "level": 3,
+        "start_line": 6246
+      },
+      {
+        "title": "Tabs and tab stops",
+        "id": null,
+        "level": 3,
+        "start_line": 6255
+      },
+      {
+        "title": "Word and letter spacing",
+        "id": null,
+        "level": 3,
+        "start_line": 6261
+      },
+      {
+        "title": "Hyphenation and line breaking",
+        "id": null,
+        "level": 3,
+        "start_line": 6267
+      },
+      {
+        "title": "Formatting Properties",
+        "id": "pr-section",
+        "level": 1,
+        "start_line": 18421
+      },
+      {
+        "title": "Description of Property Groups",
+        "id": null,
+        "level": 2,
+        "start_line": 18422
+      },
+      {
+        "title": "XSL Areas and the CSS Box Model",
+        "id": "cssbox",
+        "level": 2,
+        "start_line": 18609
+      },
+      {
+        "title": "Reference Rectangle for Percentage Computations",
+        "id": "percrule",
+        "level": 2,
+        "start_line": 18656
+      },
+      {
+        "title": "Additional CSS Datatypes",
+        "id": "cssdatat",
+        "level": 2,
+        "start_line": 18727
+      }
+    ],
+    "sample_count": 12
+  },
+  "properties-block-line.md": {
+    "sections": [
+      {
+        "title": "Block and Line-related Properties for Ruby",
+        "id": null,
+        "level": 3,
+        "start_line": 4677
+      },
+      {
+        "title": "Block and Line-related Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 23878
+      },
+      {
+        "title": "hyphenation-keep",
+        "id": "hyphenation-keep",
+        "level": 3,
+        "start_line": 23880
+      },
+      {
+        "title": "hyphenation-ladder-count",
+        "id": "hyphenation-ladder-count",
+        "level": 3,
+        "start_line": 23905
+      },
+      {
+        "title": "last-line-end-indent",
+        "id": "last-line-end-indent",
+        "level": 3,
+        "start_line": 23930
+      },
+      {
+        "title": "line-height",
+        "id": "line-height",
+        "level": 3,
+        "start_line": 23961
+      },
+      {
+        "title": "line-height-shift-adjustment",
+        "id": "line-height-shift-adjustment",
+        "level": 3,
+        "start_line": 24048
+      },
+      {
+        "title": "line-stacking-strategy",
+        "id": "line-stacking-strategy",
+        "level": 3,
+        "start_line": 24075
+      },
+      {
+        "title": "linefeed-treatment",
+        "id": "linefeed-treatment",
+        "level": 3,
+        "start_line": 24111
+      },
+      {
+        "title": "text-align",
+        "id": "text-align",
+        "level": 3,
+        "start_line": 24160
+      },
+      {
+        "title": "text-align-last",
+        "id": "text-align-last",
+        "level": 3,
+        "start_line": 24255
+      },
+      {
+        "title": "text-indent",
+        "id": "text-indent",
+        "level": 3,
+        "start_line": 24311
+      },
+      {
+        "title": "white-space-collapse",
+        "id": "white-space-collapse",
+        "level": 3,
+        "start_line": 24357
+      },
+      {
+        "title": "white-space-treatment",
+        "id": "white-space-treatment",
+        "level": 3,
+        "start_line": 24417
+      },
+      {
+        "title": "wrap-option",
+        "id": "wrap-option",
+        "level": 3,
+        "start_line": 24470
+      },
+      {
+        "title": "initial-cap-lines",
+        "id": "initial-cap-lines",
+        "level": 3,
+        "start_line": 24505
+      },
+      {
+        "title": "initial-cap-kern-lines",
+        "id": "initial-cap-kern-lines",
+        "level": 3,
+        "start_line": 24607
+      },
+      {
+        "title": "initial-cap-indent",
+        "id": "initial-cap-indent",
+        "level": 3,
+        "start_line": 24639
+      },
+      {
+        "title": "hanging-punctuation",
+        "id": "hanging-punctuation",
+        "level": 3,
+        "start_line": 24689
+      },
+      {
+        "title": "tab-stops",
+        "id": "tab-stops",
+        "level": 3,
+        "start_line": 24710
+      },
+      {
+        "title": "tab-alignment-character",
+        "id": "tab-alignment-character",
+        "level": 3,
+        "start_line": 24754
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-bidi.md": {
+    "sections": [
+      {
+        "title": "Unicode BIDI Processing",
+        "id": null,
+        "level": 2,
+        "start_line": 4693
+      }
+    ],
+    "sample_count": 2
+  },
+  "guide-expressions.md": {
+    "sections": [
+      {
+        "title": "Expressions",
+        "id": null,
+        "level": 2,
+        "start_line": 4922
+      },
+      {
+        "title": "Core Function Library",
+        "id": null,
+        "level": 2,
+        "start_line": 5425
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-datatypes.md": {
+    "sections": [
+      {
+        "title": "Property Datatypes",
+        "id": "datatype",
+        "level": 2,
+        "start_line": 5876
+      }
+    ],
+    "sample_count": 8
+  },
+  "guide-numbering.md": {
+    "sections": [
+      {
+        "title": "Numbering",
+        "id": "numbering",
+        "level": 2,
+        "start_line": 6194
+      }
+    ],
+    "sample_count": 0
+  },
+  "guide-formatting-objects.md": {
+    "sections": [
+      {
+        "title": "Formatting Objects",
+        "id": "fo-section",
+        "level": 1,
+        "start_line": 6282
+      },
+      {
+        "title": "Introduction to Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 6284
+      },
+      {
+        "title": "Definitions Common to Many Formatting Objects",
+        "id": "define-returned-by",
+        "level": 3,
+        "start_line": 6313
+      },
+      {
+        "title": "Formatting Object Content",
+        "id": null,
+        "level": 2,
+        "start_line": 6442
+      },
+      {
+        "title": "Formatting Objects Summary",
+        "id": null,
+        "level": 2,
+        "start_line": 6515
+      },
+      {
+        "title": "Block-level Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 9908
+      },
+      {
+        "title": "Inline-level Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 10329
+      },
+      {
+        "title": "Formatting Objects for Tables",
+        "id": null,
+        "level": 2,
+        "start_line": 12132
+      },
+      {
+        "title": "Formatting Objects for Lists",
+        "id": null,
+        "level": 2,
+        "start_line": 13952
+      },
+      {
+        "title": "Formatting Objects for Bookmarks",
+        "id": null,
+        "level": 2,
+        "start_line": 16478
+      },
+      {
+        "title": "Out-of-Line Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 16595
+      },
+      {
+        "title": "Other Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 17259
+      },
+      {
+        "title": "Out-of-line Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34558
+      },
+      {
+        "title": "Formatting Objects for Bookmarks",
+        "id": null,
+        "level": 2,
+        "start_line": 34641
+      },
+      {
+        "title": "Other Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34670
+      }
+    ],
+    "sample_count": 50
+  },
+  "properties-pagination.md": {
+    "sections": [
+      {
+        "title": "Declarations and Pagination and Layout Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 6945
+      },
+      {
+        "title": "Introduction",
+        "id": "pag-intro",
+        "level": 3,
+        "start_line": 6948
+      },
+      {
+        "title": "Side by Side",
+        "id": null,
+        "level": 3,
+        "start_line": 7363
+      },
+      {
+        "title": "Widow and Orphan Management",
+        "id": null,
+        "level": 3,
+        "start_line": 7479
+      },
+      {
+        "title": "Extension Regions",
+        "id": "fo_extension-region",
+        "level": 3,
+        "start_line": 9361
+      },
+      {
+        "title": "Pagination and Layout Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 28979
+      },
+      {
+        "title": "blank-or-not-blank",
+        "id": "blank-or-not-blank",
+        "level": 3,
+        "start_line": 28983
+      },
+      {
+        "title": "column-count",
+        "id": "column-count",
+        "level": 3,
+        "start_line": 29010
+      },
+      {
+        "title": "column-gap",
+        "id": "column-gap",
+        "level": 3,
+        "start_line": 29032
+      },
+      {
+        "title": "distance",
+        "id": "distance",
+        "level": 3,
+        "start_line": 29061
+      },
+      {
+        "title": "extent",
+        "id": "extent",
+        "level": 3,
+        "start_line": 29100
+      },
+      {
+        "title": "flow-map-name",
+        "id": "flow-map-name",
+        "level": 3,
+        "start_line": 29132
+      },
+      {
+        "title": "flow-map-reference",
+        "id": "flow-map-reference",
+        "level": 3,
+        "start_line": 29157
+      },
+      {
+        "title": "flow-name",
+        "id": "flow-name",
+        "level": 3,
+        "start_line": 29187
+      },
+      {
+        "title": "flow-name-reference",
+        "id": "flow-name-reference",
+        "level": 3,
+        "start_line": 29218
+      },
+      {
+        "title": "force-page-count",
+        "id": "force-page-count",
+        "level": 3,
+        "start_line": 29245
+      },
+      {
+        "title": "initial-page-number",
+        "id": "initial-page-number",
+        "level": 3,
+        "start_line": 29288
+      },
+      {
+        "title": "master-name",
+        "id": "master-name",
+        "level": 3,
+        "start_line": 29318
+      },
+      {
+        "title": "master-reference",
+        "id": "master-reference",
+        "level": 3,
+        "start_line": 29355
+      },
+      {
+        "title": "maximum-repeats",
+        "id": "maximum-repeats",
+        "level": 3,
+        "start_line": 29396
+      },
+      {
+        "title": "media-usage",
+        "id": "media-usage",
+        "level": 3,
+        "start_line": 29424
+      },
+      {
+        "title": "odd-or-even",
+        "id": "odd-or-even",
+        "level": 3,
+        "start_line": 29502
+      },
+      {
+        "title": "page-height",
+        "id": "page-height",
+        "level": 3,
+        "start_line": 29530
+      },
+      {
+        "title": "page-position",
+        "id": "page-position",
+        "level": 3,
+        "start_line": 29580
+      },
+      {
+        "title": "page-width",
+        "id": "page-width",
+        "level": 3,
+        "start_line": 29638
+      },
+      {
+        "title": "precedence",
+        "id": "precedence",
+        "level": 3,
+        "start_line": 29675
+      },
+      {
+        "title": "region-name",
+        "id": "region-name",
+        "level": 3,
+        "start_line": 29704
+      },
+      {
+        "title": "region-name-reference",
+        "id": "region-name-reference",
+        "level": 3,
+        "start_line": 29745
+      },
+      {
+        "title": "sequence-repeats",
+        "id": "sequence-repeats",
+        "level": 3,
+        "start_line": 29768
+      },
+      {
+        "title": "adjustable-properties",
+        "id": "adjustable-properties",
+        "level": 3,
+        "start_line": 29796
+      },
+      {
+        "title": "marginalia-destination-area",
+        "id": "marginalia-destination-area",
+        "level": 3,
+        "start_line": 29962
+      },
+      {
+        "title": "Declaration and Pagination and Layout Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34125
+      }
+    ],
+    "sample_count": 13
+  },
+  "fo-root.md": {
+    "sections": [
+      {
+        "title": "fo:root",
+        "id": "fo_root",
+        "level": 3,
+        "start_line": 7538
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-declarations.md": {
+    "sections": [
+      {
+        "title": "fo:declarations",
+        "id": "fo_declarations",
+        "level": 3,
+        "start_line": 7595
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-color-profile.md": {
+    "sections": [
+      {
+        "title": "fo:color-profile",
+        "id": "fo_color-profile",
+        "level": 3,
+        "start_line": 7620
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-sequence.md": {
+    "sections": [
+      {
+        "title": "fo:page-sequence",
+        "id": "fo_page-sequence",
+        "level": 3,
+        "start_line": 7663
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-sequence-wrapper.md": {
+    "sections": [
+      {
+        "title": "fo:page-sequence-wrapper",
+        "id": "fo_page-sequence-wrapper",
+        "level": 3,
+        "start_line": 7894
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-layout-master-set.md": {
+    "sections": [
+      {
+        "title": "fo:layout-master-set",
+        "id": "fo_layout-master-set",
+        "level": 3,
+        "start_line": 7940
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-sequence-master.md": {
+    "sections": [
+      {
+        "title": "fo:page-sequence-master",
+        "id": "fo_page-sequence-master",
+        "level": 3,
+        "start_line": 7965
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-single-page-master-reference.md": {
+    "sections": [
+      {
+        "title": "fo:single-page-master-reference",
+        "id": "fo_single-page-master-reference",
+        "level": 3,
+        "start_line": 8025
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-repeatable-page-master-reference.md": {
+    "sections": [
+      {
+        "title": "fo:repeatable-page-master-reference",
+        "id": "fo_repeatable-page-master-reference",
+        "level": 3,
+        "start_line": 8067
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-repeatable-page-master-alternatives.md": {
+    "sections": [
+      {
+        "title": "fo:repeatable-page-master-alternatives",
+        "id": "fo_repeatable-page-master-alternatives",
+        "level": 3,
+        "start_line": 8114
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-conditional-page-master-reference.md": {
+    "sections": [
+      {
+        "title": "fo:conditional-page-master-reference",
+        "id": "fo_conditional-page-master-reference",
+        "level": 3,
+        "start_line": 8182
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-master.md": {
+    "sections": [
+      {
+        "title": "fo:page-master",
+        "id": "fo_page-master",
+        "level": 3,
+        "start_line": 8281
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-simple-page-master.md": {
+    "sections": [
+      {
+        "title": "fo:simple-page-master",
+        "id": "fo_simple-page-master",
+        "level": 3,
+        "start_line": 8341
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region-body.md": {
+    "sections": [
+      {
+        "title": "fo:region-body",
+        "id": "fo_region-body",
+        "level": 3,
+        "start_line": 8514
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region-before.md": {
+    "sections": [
+      {
+        "title": "fo:region-before",
+        "id": "fo_region-before",
+        "level": 3,
+        "start_line": 8750
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region-after.md": {
+    "sections": [
+      {
+        "title": "fo:region-after",
+        "id": "fo_region-after",
+        "level": 3,
+        "start_line": 8855
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region-start.md": {
+    "sections": [
+      {
+        "title": "fo:region-start",
+        "id": "fo_region-start",
+        "level": 3,
+        "start_line": 8959
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region-end.md": {
+    "sections": [
+      {
+        "title": "fo:region-end",
+        "id": "fo_region-end",
+        "level": 3,
+        "start_line": 9064
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region.md": {
+    "sections": [
+      {
+        "title": "fo:region",
+        "id": "fo_region",
+        "level": 3,
+        "start_line": 9165
+      }
+    ],
+    "sample_count": 3
+  },
+  "fo-extension-region-start.md": {
+    "sections": [
+      {
+        "title": "fo:extension-region-start",
+        "id": "fo_extension-region-start",
+        "level": 3,
+        "start_line": 9431
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-extension-region-end.md": {
+    "sections": [
+      {
+        "title": "fo:extension-region-end",
+        "id": "fo_extension-region-end",
+        "level": 3,
+        "start_line": 9463
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-shape-path-specifier.md": {
+    "sections": [
+      {
+        "title": "fo:shape-path-specifier",
+        "id": "fo_shape-path-specifier",
+        "level": 3,
+        "start_line": 9486
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-shape-background-specifier.md": {
+    "sections": [
+      {
+        "title": "fo:shape-background-specifier",
+        "id": "fo_shape-background-specifier",
+        "level": 3,
+        "start_line": 9502
+      }
+    ],
+    "sample_count": 0
+  },
+  "fo-shape-border-specifier.md": {
+    "sections": [
+      {
+        "title": "fo:shape-border-specifier",
+        "id": "fo_shape-border-specifier",
+        "level": 3,
+        "start_line": 9517
+      }
+    ],
+    "sample_count": 0
+  },
+  "fo-flow.md": {
+    "sections": [
+      {
+        "title": "fo:flow",
+        "id": "fo_flow",
+        "level": 3,
+        "start_line": 9534
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-static-content.md": {
+    "sections": [
+      {
+        "title": "fo:static-content",
+        "id": "fo_static-content",
+        "level": 3,
+        "start_line": 9571
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-title.md": {
+    "sections": [
+      {
+        "title": "fo:title",
+        "id": "fo_title",
+        "level": 3,
+        "start_line": 9620
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-flow-map.md": {
+    "sections": [
+      {
+        "title": "fo:flow-map",
+        "id": "fo_flow-map",
+        "level": 3,
+        "start_line": 9668
+      }
+    ],
+    "sample_count": 2
+  },
+  "fo-flow-assignment.md": {
+    "sections": [
+      {
+        "title": "fo:flow-assignment",
+        "id": "fo_flow-assignment",
+        "level": 3,
+        "start_line": 9773
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-flow-source-list.md": {
+    "sections": [
+      {
+        "title": "fo:flow-source-list",
+        "id": "fo_flow-source-list",
+        "level": 3,
+        "start_line": 9798
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-flow-name-specifier.md": {
+    "sections": [
+      {
+        "title": "fo:flow-name-specifier",
+        "id": "fo_flow-name-specifier",
+        "level": 3,
+        "start_line": 9826
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-flow-target-list.md": {
+    "sections": [
+      {
+        "title": "fo:flow-target-list",
+        "id": "fo_flow-target-list",
+        "level": 3,
+        "start_line": 9853
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-region-name-specifier.md": {
+    "sections": [
+      {
+        "title": "fo:region-name-specifier",
+        "id": "fo_region-name-specifier",
+        "level": 3,
+        "start_line": 9879
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-block.md": {
+    "sections": [
+      {
+        "title": "fo:block",
+        "id": "fo_block",
+        "level": 3,
+        "start_line": 10067
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-block-container.md": {
+    "sections": [
+      {
+        "title": "fo:block-container",
+        "id": "fo_block-container",
+        "level": 3,
+        "start_line": 10164
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-alternative-copyfit-content.md": {
+    "sections": [
+      {
+        "title": "fo:alternative-copyfit-content",
+        "id": "fo_alternative-copyfit-content",
+        "level": 3,
+        "start_line": 10275
+      }
+    ],
+    "sample_count": 2
+  },
+  "fo-bidi-override.md": {
+    "sections": [
+      {
+        "title": "fo:bidi-override",
+        "id": "fo_bidi-override",
+        "level": 3,
+        "start_line": 10730
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-character.md": {
+    "sections": [
+      {
+        "title": "fo:character",
+        "id": "fo_character",
+        "level": 3,
+        "start_line": 10788
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-initial-property-set.md": {
+    "sections": [
+      {
+        "title": "fo:initial-property-set",
+        "id": "fo_initial-property-set",
+        "level": 3,
+        "start_line": 10880
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-external-graphic.md": {
+    "sections": [
+      {
+        "title": "fo:external-graphic",
+        "id": "fo_external-graphic",
+        "level": 3,
+        "start_line": 10936
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-instream-foreign-object.md": {
+    "sections": [
+      {
+        "title": "fo:instream-foreign-object",
+        "id": "fo_instream-foreign-object",
+        "level": 3,
+        "start_line": 11029
+      }
+    ],
+    "sample_count": 0
+  },
+  "fo-inline.md": {
+    "sections": [
+      {
+        "title": "fo:inline",
+        "id": "fo_inline",
+        "level": 3,
+        "start_line": 11127
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-inline-container.md": {
+    "sections": [
+      {
+        "title": "fo:inline-container",
+        "id": "fo_inline-container",
+        "level": 3,
+        "start_line": 11198
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-leader.md": {
+    "sections": [
+      {
+        "title": "fo:leader",
+        "id": "fo_leader",
+        "level": 3,
+        "start_line": 11391
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-number.md": {
+    "sections": [
+      {
+        "title": "fo:page-number",
+        "id": "fo_page-number",
+        "level": 3,
+        "start_line": 11500
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-number-citation.md": {
+    "sections": [
+      {
+        "title": "fo:page-number-citation",
+        "id": "fo_page-number-citation",
+        "level": 3,
+        "start_line": 11583
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-page-number-citation-last.md": {
+    "sections": [
+      {
+        "title": "fo:page-number-citation-last",
+        "id": "fo_page-number-citation-last",
+        "level": 3,
+        "start_line": 11652
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-folio-prefix.md": {
+    "sections": [
+      {
+        "title": "fo:folio-prefix",
+        "id": "fo_folio-prefix",
+        "level": 3,
+        "start_line": 11721
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-folio-suffix.md": {
+    "sections": [
+      {
+        "title": "fo:folio-suffix",
+        "id": "fo_folio-suffix",
+        "level": 3,
+        "start_line": 11746
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-scaling-value-citation.md": {
+    "sections": [
+      {
+        "title": "fo:scaling-value-citation",
+        "id": "fo_scaling-value-citation",
+        "level": 3,
+        "start_line": 11772
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-ruby.md": {
+    "sections": [
+      {
+        "title": "fo:ruby",
+        "id": "fo_ruby",
+        "level": 3,
+        "start_line": 11870
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-ruby-base.md": {
+    "sections": [
+      {
+        "title": "fo:ruby-base",
+        "id": "fo_ruby-base",
+        "level": 3,
+        "start_line": 11938
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-ruby-text.md": {
+    "sections": [
+      {
+        "title": "fo:ruby-text",
+        "id": "fo_ruby-text",
+        "level": 3,
+        "start_line": 11979
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-ruby-parenthesis.md": {
+    "sections": [
+      {
+        "title": "fo:ruby-parenthesis",
+        "id": "fo_ruby-parenthesis",
+        "level": 3,
+        "start_line": 12017
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-ruby-base-container-text.md": {
+    "sections": [
+      {
+        "title": "fo:ruby-base-container-text",
+        "id": "fo_ruby-base_container",
+        "level": 3,
+        "start_line": 12067
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-ruby-text-container.md": {
+    "sections": [
+      {
+        "title": "fo:ruby-text-container",
+        "id": "fo_ruby-text-container",
+        "level": 3,
+        "start_line": 12087
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-and-caption.md": {
+    "sections": [
+      {
+        "title": "fo:table-and-caption",
+        "id": "fo_table-and-caption",
+        "level": 3,
+        "start_line": 12796
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table.md": {
+    "sections": [
+      {
+        "title": "fo:table",
+        "id": "fo_table",
+        "level": 3,
+        "start_line": 12859
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-column.md": {
+    "sections": [
+      {
+        "title": "fo:table-column",
+        "id": "fo_table-column",
+        "level": 3,
+        "start_line": 13055
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-caption.md": {
+    "sections": [
+      {
+        "title": "fo:table-caption",
+        "id": "fo_table-caption",
+        "level": 3,
+        "start_line": 13143
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-header.md": {
+    "sections": [
+      {
+        "title": "fo:table-header",
+        "id": "fo_table-header",
+        "level": 3,
+        "start_line": 13217
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-footer.md": {
+    "sections": [
+      {
+        "title": "fo:table-footer",
+        "id": "fo_table-footer",
+        "level": 3,
+        "start_line": 13304
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-body.md": {
+    "sections": [
+      {
+        "title": "fo:table-body",
+        "id": "fo_table-body",
+        "level": 3,
+        "start_line": 13388
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-row.md": {
+    "sections": [
+      {
+        "title": "fo:table-row",
+        "id": "fo_table-row",
+        "level": 3,
+        "start_line": 13472
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-cell.md": {
+    "sections": [
+      {
+        "title": "fo:table-cell",
+        "id": "fo_table-cell",
+        "level": 3,
+        "start_line": 13566
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-header-alternatives.md": {
+    "sections": [
+      {
+        "title": "fo:table-header-alternatives",
+        "id": "fo_table-header-alternatives",
+        "level": 3,
+        "start_line": 13714
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-table-footer-alternatives.md": {
+    "sections": [
+      {
+        "title": "fo:table-footer-alternatives",
+        "id": "fo_table-footer-alternatives",
+        "level": 3,
+        "start_line": 13752
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-conditional-table-header-reference.md": {
+    "sections": [
+      {
+        "title": "fo:conditional-table-header-reference",
+        "id": "fo_conditional-table-header-reference",
+        "level": 3,
+        "start_line": 13787
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-conditional-table-footer-reference.md": {
+    "sections": [
+      {
+        "title": "fo:conditional-table-footer-reference",
+        "id": "fo_conditional-table-footer-reference",
+        "level": 3,
+        "start_line": 13869
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-list-block.md": {
+    "sections": [
+      {
+        "title": "fo:list-block",
+        "id": "fo_list-block",
+        "level": 3,
+        "start_line": 14422
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-list-item.md": {
+    "sections": [
+      {
+        "title": "fo:list-item",
+        "id": "fo_list-item",
+        "level": 3,
+        "start_line": 14476
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-list-item-body.md": {
+    "sections": [
+      {
+        "title": "fo:list-item-body",
+        "id": "fo_list-item-body",
+        "level": 3,
+        "start_line": 14557
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-list-item-label.md": {
+    "sections": [
+      {
+        "title": "fo:list-item-label",
+        "id": "fo_list-item-label",
+        "level": 3,
+        "start_line": 14595
+      }
+    ],
+    "sample_count": 1
+  },
+  "properties-dynamic-effects.md": {
+    "sections": [
+      {
+        "title": "Dynamic Effects: Link and Multi Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 14636
+      },
+      {
+        "title": "Introduction",
+        "id": null,
+        "level": 3,
+        "start_line": 14639
+      },
+      {
+        "title": "Properties for Dynamic Effects Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 26609
+      },
+      {
+        "title": "active-state",
+        "id": "active-state",
+        "level": 3,
+        "start_line": 26611
+      },
+      {
+        "title": "auto-restore",
+        "id": "auto-restore",
+        "level": 3,
+        "start_line": 26662
+      },
+      {
+        "title": "case-name",
+        "id": "case-name",
+        "level": 3,
+        "start_line": 26700
+      },
+      {
+        "title": "case-title",
+        "id": "case-title",
+        "level": 3,
+        "start_line": 26726
+      },
+      {
+        "title": "destination-placement-offset",
+        "id": "destination-placement-offset",
+        "level": 3,
+        "start_line": 26746
+      },
+      {
+        "title": "external-destination",
+        "id": "external-destination",
+        "level": 3,
+        "start_line": 26780
+      },
+      {
+        "title": "indicate-destination",
+        "id": "indicate-destination",
+        "level": 3,
+        "start_line": 26811
+      },
+      {
+        "title": "internal-destination",
+        "id": "internal-destination",
+        "level": 3,
+        "start_line": 26838
+      },
+      {
+        "title": "show-destination",
+        "id": "show-destination",
+        "level": 3,
+        "start_line": 26860
+      },
+      {
+        "title": "starting-state",
+        "id": "starting-state",
+        "level": 3,
+        "start_line": 26881
+      },
+      {
+        "title": "switch-to",
+        "id": "switch-to",
+        "level": 3,
+        "start_line": 26916
+      },
+      {
+        "title": "target-presentation-context",
+        "id": "target-presentation-context",
+        "level": 3,
+        "start_line": 26963
+      },
+      {
+        "title": "target-processing-context",
+        "id": "target-processing-context",
+        "level": 3,
+        "start_line": 27010
+      },
+      {
+        "title": "target-stylesheet",
+        "id": "target-stylesheet",
+        "level": 3,
+        "start_line": 27050
+      }
+    ],
+    "sample_count": 6
+  },
+  "fo-basic-link.md": {
+    "sections": [
+      {
+        "title": "fo:basic-link",
+        "id": "fo_basic-link",
+        "level": 3,
+        "start_line": 14984
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-multi-switch.md": {
+    "sections": [
+      {
+        "title": "fo:multi-switch",
+        "id": "fo_multi-switch",
+        "level": 3,
+        "start_line": 15052
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-multi-case.md": {
+    "sections": [
+      {
+        "title": "fo:multi-case",
+        "id": "fo_multi-case",
+        "level": 3,
+        "start_line": 15124
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-multi-toggle.md": {
+    "sections": [
+      {
+        "title": "fo:multi-toggle",
+        "id": "fo_multi-toggle",
+        "level": 3,
+        "start_line": 15178
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-multi-properties.md": {
+    "sections": [
+      {
+        "title": "fo:multi-properties",
+        "id": "fo_multi-properties",
+        "level": 3,
+        "start_line": 15226
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-multi-property-set.md": {
+    "sections": [
+      {
+        "title": "fo:multi-property-set",
+        "id": "fo_multi-property-set",
+        "level": 3,
+        "start_line": 15288
+      }
+    ],
+    "sample_count": 1
+  },
+  "properties-indexing.md": {
+    "sections": [
+      {
+        "title": "Formatting Objects for Indexing",
+        "id": null,
+        "level": 2,
+        "start_line": 15323
+      },
+      {
+        "title": "Introduction",
+        "id": null,
+        "level": 3,
+        "start_line": 15326
+      },
+      {
+        "title": "Properties for Indexing",
+        "id": null,
+        "level": 2,
+        "start_line": 27095
+      },
+      {
+        "title": "index-class",
+        "id": "index-class",
+        "level": 3,
+        "start_line": 27097
+      },
+      {
+        "title": "index-key",
+        "id": "index-key",
+        "level": 3,
+        "start_line": 27135
+      },
+      {
+        "title": "page-number-treatment",
+        "id": "page-number-treatment",
+        "level": 3,
+        "start_line": 27163
+      },
+      {
+        "title": "merge-ranges-across-index-key-references",
+        "id": "merge-ranges-across-index-key-references",
+        "level": 3,
+        "start_line": 27190
+      },
+      {
+        "title": "merge-sequential-page-numbers",
+        "id": "merge-sequential-page-numbers",
+        "level": 3,
+        "start_line": 27216
+      },
+      {
+        "title": "merge-pages-across-index-key-references",
+        "id": "merge-pages-across-index-key-references",
+        "level": 3,
+        "start_line": 27243
+      },
+      {
+        "title": "ref-index-key",
+        "id": "ref-index-key",
+        "level": 3,
+        "start_line": 27275
+      },
+      {
+        "title": "Formatting Objects for Indexing",
+        "id": null,
+        "level": 2,
+        "start_line": 34586
+      }
+    ],
+    "sample_count": 16
+  },
+  "fo-index-page-number-prefix.md": {
+    "sections": [
+      {
+        "title": "fo:index-page-number-prefix",
+        "id": "fo_index-page-number-prefix",
+        "level": 3,
+        "start_line": 16075
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-page-number-suffix.md": {
+    "sections": [
+      {
+        "title": "fo:index-page-number-suffix",
+        "id": "fo_index-page-number-suffix",
+        "level": 3,
+        "start_line": 16099
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-range-begin.md": {
+    "sections": [
+      {
+        "title": "fo:index-range-begin",
+        "id": "fo_index-range-begin",
+        "level": 3,
+        "start_line": 16123
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-range-end.md": {
+    "sections": [
+      {
+        "title": "fo:index-range-end",
+        "id": "fo_index-range-end",
+        "level": 3,
+        "start_line": 16163
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-key-reference.md": {
+    "sections": [
+      {
+        "title": "fo:index-key-reference",
+        "id": "fo_index-key-reference",
+        "level": 3,
+        "start_line": 16191
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-page-citation-list.md": {
+    "sections": [
+      {
+        "title": "fo:index-page-citation-list",
+        "id": "fo_index-page-citation-list",
+        "level": 3,
+        "start_line": 16270
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-page-citation-list-separator.md": {
+    "sections": [
+      {
+        "title": "fo:index-page-citation-list-separator",
+        "id": "fo_index-page-citation-list-separator",
+        "level": 3,
+        "start_line": 16427
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-index-page-citation-range-separator.md": {
+    "sections": [
+      {
+        "title": "fo:index-page-citation-range-separator",
+        "id": "fo_index-page-citation-range-separator",
+        "level": 3,
+        "start_line": 16451
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-bookmark-tree.md": {
+    "sections": [
+      {
+        "title": "fo:bookmark-tree",
+        "id": "fo_bookmark-tree",
+        "level": 3,
+        "start_line": 16481
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-bookmark.md": {
+    "sections": [
+      {
+        "title": "fo:bookmark",
+        "id": "fo_bookmark",
+        "level": 3,
+        "start_line": 16506
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-bookmark-title.md": {
+    "sections": [
+      {
+        "title": "fo:bookmark-title",
+        "id": "fo_bookmark-title",
+        "level": 3,
+        "start_line": 16549
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-float.md": {
+    "sections": [
+      {
+        "title": "fo:float",
+        "id": "fo_float",
+        "level": 3,
+        "start_line": 16858
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-marginalia.md": {
+    "sections": [
+      {
+        "title": "fo:marginalia",
+        "id": "fo_marginalia",
+        "level": 3,
+        "start_line": 17005
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-marginalia-body.md": {
+    "sections": [
+      {
+        "title": "fo:marginalia-body",
+        "id": "fo_marginalia-body",
+        "level": 3,
+        "start_line": 17102
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-footnote.md": {
+    "sections": [
+      {
+        "title": "fo:footnote",
+        "id": "fo_footnote",
+        "level": 3,
+        "start_line": 17169
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-footnote-body.md": {
+    "sections": [
+      {
+        "title": "fo:footnote-body",
+        "id": "fo_footnote-body",
+        "level": 3,
+        "start_line": 17227
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-change-bar-begin.md": {
+    "sections": [
+      {
+        "title": "fo:change-bar-begin",
+        "id": "fo_change-bar-begin",
+        "level": 3,
+        "start_line": 17884
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-change-bar-end.md": {
+    "sections": [
+      {
+        "title": "fo:change-bar-end",
+        "id": "fo_change-bar-end",
+        "level": 3,
+        "start_line": 17947
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-wrapper.md": {
+    "sections": [
+      {
+        "title": "fo:wrapper",
+        "id": "fo_wrapper",
+        "level": 3,
+        "start_line": 17980
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-marker.md": {
+    "sections": [
+      {
+        "title": "fo:marker",
+        "id": "fo_marker",
+        "level": 3,
+        "start_line": 18045
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-retrieve-marker.md": {
+    "sections": [
+      {
+        "title": "fo:retrieve-marker",
+        "id": "fo_retrieve-marker",
+        "level": 3,
+        "start_line": 18098
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-retrieve-table-marker.md": {
+    "sections": [
+      {
+        "title": "fo:retrieve-table-marker",
+        "id": "fo_retrieve-table-marker",
+        "level": 3,
+        "start_line": 18186
+      }
+    ],
+    "sample_count": 1
+  },
+  "fo-number.md": {
+    "sections": [
+      {
+        "title": "fo:number",
+        "id": "fo_number",
+        "level": 3,
+        "start_line": 18283
+      }
+    ],
+    "sample_count": 0
+  },
+  "fo-retrieve-number.md": {
+    "sections": [
+      {
+        "title": "fo:retrieve-number",
+        "id": "fo_retrieve-number",
+        "level": 3,
+        "start_line": 18380
+      }
+    ],
+    "sample_count": 2
+  },
+  "properties-accessibility.md": {
+    "sections": [
+      {
+        "title": "Common Accessibility Properties",
+        "id": "common-accessibility-properties",
+        "level": 2,
+        "start_line": 18755
+      },
+      {
+        "title": "source-document",
+        "id": "source-document",
+        "level": 3,
+        "start_line": 18758
+      },
+      {
+        "title": "role",
+        "id": "role",
+        "level": 3,
+        "start_line": 18797
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-absolute-position.md": {
+    "sections": [
+      {
+        "title": "Common Absolute Position Properties",
+        "id": "common-absolute-position-properties",
+        "level": 2,
+        "start_line": 18848
+      },
+      {
+        "title": "absolute-position",
+        "id": "absolute-position",
+        "level": 3,
+        "start_line": 18851
+      },
+      {
+        "title": "bottom",
+        "id": "bottom",
+        "level": 3,
+        "start_line": 18905
+      },
+      {
+        "title": "left",
+        "id": "left",
+        "level": 3,
+        "start_line": 18932
+      },
+      {
+        "title": "right",
+        "id": "right",
+        "level": 3,
+        "start_line": 18992
+      },
+      {
+        "title": "top",
+        "id": "top",
+        "level": 3,
+        "start_line": 19021
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-aural.md": {
+    "sections": [
+      {
+        "title": "Common Aural Properties",
+        "id": "common-aural-properties",
+        "level": 2,
+        "start_line": 19054
+      },
+      {
+        "title": "azimuth",
+        "id": "azimuth",
+        "level": 3,
+        "start_line": 19055
+      },
+      {
+        "title": "cue-after",
+        "id": "cue-after",
+        "level": 3,
+        "start_line": 19077
+      },
+      {
+        "title": "cue-before",
+        "id": "cue-before",
+        "level": 3,
+        "start_line": 19100
+      },
+      {
+        "title": "elevation",
+        "id": "elevation",
+        "level": 3,
+        "start_line": 19123
+      },
+      {
+        "title": "pause-after",
+        "id": "pause-after",
+        "level": 3,
+        "start_line": 19142
+      },
+      {
+        "title": "pause-before",
+        "id": "pause-before",
+        "level": 3,
+        "start_line": 19159
+      },
+      {
+        "title": "pitch",
+        "id": "pitch",
+        "level": 3,
+        "start_line": 19176
+      },
+      {
+        "title": "pitch-range",
+        "id": "pitch-range",
+        "level": 3,
+        "start_line": 19194
+      },
+      {
+        "title": "play-during",
+        "id": "play-during",
+        "level": 3,
+        "start_line": 19212
+      },
+      {
+        "title": "richness",
+        "id": "richness",
+        "level": 3,
+        "start_line": 19235
+      },
+      {
+        "title": "speak",
+        "id": "speak",
+        "level": 3,
+        "start_line": 19252
+      },
+      {
+        "title": "speak-header",
+        "id": "speak-header",
+        "level": 3,
+        "start_line": 19269
+      },
+      {
+        "title": "speak-numeral",
+        "id": "speak-numeral",
+        "level": 3,
+        "start_line": 19286
+      },
+      {
+        "title": "speak-punctuation",
+        "id": "speak-punctuation",
+        "level": 3,
+        "start_line": 19303
+      },
+      {
+        "title": "speech-rate",
+        "id": "speech-rate",
+        "level": 3,
+        "start_line": 19320
+      },
+      {
+        "title": "stress",
+        "id": "stress",
+        "level": 3,
+        "start_line": 19338
+      },
+      {
+        "title": "voice-family",
+        "id": "voice-family",
+        "level": 3,
+        "start_line": 19355
+      },
+      {
+        "title": "volume",
+        "id": "volume",
+        "level": 3,
+        "start_line": 19373
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-border-padding-background.md": {
+    "sections": [
+      {
+        "title": "Common Border, Padding, and Background Properties",
+        "id": "common-border-padding-and-background-properties",
+        "level": 2,
+        "start_line": 19392
+      },
+      {
+        "title": "background-attachment",
+        "id": "background-attachment",
+        "level": 3,
+        "start_line": 19400
+      },
+      {
+        "title": "background-color",
+        "id": "background-color",
+        "level": 3,
+        "start_line": 19438
+      },
+      {
+        "title": "background-image",
+        "id": "background-image",
+        "level": 3,
+        "start_line": 19469
+      },
+      {
+        "title": "background-position-horizontal",
+        "id": "background-position-horizontal",
+        "level": 3,
+        "start_line": 19503
+      },
+      {
+        "title": "background-position-vertical",
+        "id": "background-position-vertical",
+        "level": 3,
+        "start_line": 19573
+      },
+      {
+        "title": "background-repeat",
+        "id": "background-repeat",
+        "level": 3,
+        "start_line": 19644
+      },
+      {
+        "title": "border-after-color",
+        "id": "border-after-color",
+        "level": 3,
+        "start_line": 19683
+      },
+      {
+        "title": "border-after-style",
+        "id": "border-after-style",
+        "level": 3,
+        "start_line": 19705
+      },
+      {
+        "title": "border-after-width",
+        "id": "border-after-width",
+        "level": 3,
+        "start_line": 19722
+      },
+      {
+        "title": "border-before-color",
+        "id": "border-before-color",
+        "level": 3,
+        "start_line": 19758
+      },
+      {
+        "title": "border-before-style",
+        "id": "border-before-style",
+        "level": 3,
+        "start_line": 19780
+      },
+      {
+        "title": "border-before-width",
+        "id": "border-before-width",
+        "level": 3,
+        "start_line": 19797
+      },
+      {
+        "title": "border-bottom-color",
+        "id": "border-bottom-color",
+        "level": 3,
+        "start_line": 19847
+      },
+      {
+        "title": "border-bottom-style",
+        "id": "border-bottom-style",
+        "level": 3,
+        "start_line": 19876
+      },
+      {
+        "title": "border-bottom-width",
+        "id": "border-bottom-width",
+        "level": 3,
+        "start_line": 19899
+      },
+      {
+        "title": "border-end-color",
+        "id": "border-end-color",
+        "level": 3,
+        "start_line": 19922
+      },
+      {
+        "title": "border-end-style",
+        "id": "border-end-style",
+        "level": 3,
+        "start_line": 19944
+      },
+      {
+        "title": "border-end-width",
+        "id": "border-end-width",
+        "level": 3,
+        "start_line": 19961
+      },
+      {
+        "title": "border-left-color",
+        "id": "border-left-color",
+        "level": 3,
+        "start_line": 19995
+      },
+      {
+        "title": "border-left-style",
+        "id": "border-left-style",
+        "level": 3,
+        "start_line": 20024
+      },
+      {
+        "title": "border-left-width",
+        "id": "border-left-width",
+        "level": 3,
+        "start_line": 20047
+      },
+      {
+        "title": "border-right-color",
+        "id": "border-right-color",
+        "level": 3,
+        "start_line": 20070
+      },
+      {
+        "title": "border-right-style",
+        "id": "border-right-style",
+        "level": 3,
+        "start_line": 20099
+      },
+      {
+        "title": "border-right-width",
+        "id": "border-right-width",
+        "level": 3,
+        "start_line": 20122
+      },
+      {
+        "title": "border-start-color",
+        "id": "border-start-color",
+        "level": 3,
+        "start_line": 20145
+      },
+      {
+        "title": "border-start-style",
+        "id": "border-start-style",
+        "level": 3,
+        "start_line": 20167
+      },
+      {
+        "title": "border-start-width",
+        "id": "border-start-width",
+        "level": 3,
+        "start_line": 20184
+      },
+      {
+        "title": "border-top-color",
+        "id": "border-top-color",
+        "level": 3,
+        "start_line": 20219
+      },
+      {
+        "title": "border-top-style",
+        "id": "border-top-style",
+        "level": 3,
+        "start_line": 20254
+      },
+      {
+        "title": "border-top-width",
+        "id": "border-top-width",
+        "level": 3,
+        "start_line": 20306
+      },
+      {
+        "title": "padding-after",
+        "id": "padding-after",
+        "level": 3,
+        "start_line": 20340
+      },
+      {
+        "title": "padding-before",
+        "id": "padding-before",
+        "level": 3,
+        "start_line": 20370
+      },
+      {
+        "title": "padding-bottom",
+        "id": "padding-bottom",
+        "level": 3,
+        "start_line": 20399
+      },
+      {
+        "title": "padding-end",
+        "id": "padding-end",
+        "level": 3,
+        "start_line": 20421
+      },
+      {
+        "title": "padding-left",
+        "id": "padding-left",
+        "level": 3,
+        "start_line": 20451
+      },
+      {
+        "title": "padding-right",
+        "id": "padding-right",
+        "level": 3,
+        "start_line": 20472
+      },
+      {
+        "title": "padding-start",
+        "id": "padding-start",
+        "level": 3,
+        "start_line": 20496
+      },
+      {
+        "title": "padding-top",
+        "id": "padding-top",
+        "level": 3,
+        "start_line": 20527
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-font.md": {
+    "sections": [
+      {
+        "title": "Common Font Properties",
+        "id": "common-font-properties",
+        "level": 2,
+        "start_line": 20556
+      },
+      {
+        "title": "font-family",
+        "id": "font-family",
+        "level": 3,
+        "start_line": 20568
+      },
+      {
+        "title": "font-selection-strategy",
+        "id": "font-selection-strategy",
+        "level": 3,
+        "start_line": 20627
+      },
+      {
+        "title": "font-size",
+        "id": "font-size",
+        "level": 3,
+        "start_line": 20729
+      },
+      {
+        "title": "font-size-adjust",
+        "id": "font-size-adjust",
+        "level": 3,
+        "start_line": 20807
+      },
+      {
+        "title": "font-stretch",
+        "id": "font-stretch",
+        "level": 3,
+        "start_line": 20867
+      },
+      {
+        "title": "font-style",
+        "id": "font-style",
+        "level": 3,
+        "start_line": 20921
+      },
+      {
+        "title": "font-variant",
+        "id": "font-variant",
+        "level": 3,
+        "start_line": 20971
+      },
+      {
+        "title": "font-weight",
+        "id": "font-weight",
+        "level": 3,
+        "start_line": 21021
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-hyphenation.md": {
+    "sections": [
+      {
+        "title": "Common Hyphenation Properties",
+        "id": "common-hyphenation-properties",
+        "level": 2,
+        "start_line": 21094
+      },
+      {
+        "title": "country",
+        "id": "country",
+        "level": 3,
+        "start_line": 21096
+      },
+      {
+        "title": "hyphenate",
+        "id": "hyphenate",
+        "level": 3,
+        "start_line": 21125
+      },
+      {
+        "title": "hyphenation-character",
+        "id": "hyphenation-character",
+        "level": 3,
+        "start_line": 21150
+      },
+      {
+        "title": "hyphenation-push-character-count",
+        "id": "hyphenation-push-character-count",
+        "level": 3,
+        "start_line": 21172
+      },
+      {
+        "title": "hyphenation-remain-character-count",
+        "id": "hyphenation-remain-character-count",
+        "level": 3,
+        "start_line": 21196
+      },
+      {
+        "title": "language",
+        "id": "language",
+        "level": 3,
+        "start_line": 21221
+      },
+      {
+        "title": "script",
+        "id": "script",
+        "level": 3,
+        "start_line": 21257
+      },
+      {
+        "title": "",
+        "id": "hyphenation-push-syllable-count",
+        "level": 3,
+        "start_line": 21301
+      },
+      {
+        "title": "hyphenation-remain-syllable-count",
+        "id": "hyphenation-remain-syllable-count",
+        "level": 3,
+        "start_line": 21339
+      },
+      {
+        "title": "syllable-widows",
+        "id": "syllable-widows",
+        "level": 3,
+        "start_line": 21368
+      },
+      {
+        "title": "hyphenation-exceptions",
+        "id": "hyphenation-exceptions",
+        "level": 3,
+        "start_line": 21401
+      },
+      {
+        "title": "word-widows",
+        "id": "word-widows",
+        "level": 3,
+        "start_line": 21435
+      },
+      {
+        "title": "min-length-of-last-line",
+        "id": "min-length-of-last-line",
+        "level": 3,
+        "start_line": 21474
+      },
+      {
+        "title": "last-line-minimum-deficit",
+        "id": "last-line-minimum-deficit",
+        "level": 3,
+        "start_line": 21508
+      },
+      {
+        "title": "hyphenation-permitted-minimum-deficit",
+        "id": "hyphenation-permitted-minimum-deficit",
+        "level": 3,
+        "start_line": 21544
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-margin-block.md": {
+    "sections": [
+      {
+        "title": "Common Margin Properties-Block",
+        "id": "common-margin-properties-block",
+        "level": 2,
+        "start_line": 21575
+      },
+      {
+        "title": "end-indent",
+        "id": "end-indent",
+        "level": 3,
+        "start_line": 21576
+      },
+      {
+        "title": "margin-bottom",
+        "id": "margin-bottom",
+        "level": 3,
+        "start_line": 21606
+      },
+      {
+        "title": "margin-left",
+        "id": "margin-left",
+        "level": 3,
+        "start_line": 21643
+      },
+      {
+        "title": "margin-right",
+        "id": "margin-right",
+        "level": 3,
+        "start_line": 21679
+      },
+      {
+        "title": "margin-top",
+        "id": "margin-top",
+        "level": 3,
+        "start_line": 21716
+      },
+      {
+        "title": "space-after",
+        "id": "space-after",
+        "level": 3,
+        "start_line": 21753
+      },
+      {
+        "title": "space-before",
+        "id": "space-before",
+        "level": 3,
+        "start_line": 21786
+      },
+      {
+        "title": "start-indent",
+        "id": "start-indent",
+        "level": 3,
+        "start_line": 21817
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-margin-inline.md": {
+    "sections": [
+      {
+        "title": "Common Margin Properties-Inline",
+        "id": "common-margin-properties-inline",
+        "level": 2,
+        "start_line": 21849
+      },
+      {
+        "title": "space-end",
+        "id": "space-end",
+        "level": 3,
+        "start_line": 21860
+      },
+      {
+        "title": "space-start",
+        "id": "space-start",
+        "level": 3,
+        "start_line": 21895
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-relative-position.md": {
+    "sections": [
+      {
+        "title": "Common Relative Position Properties",
+        "id": "common-relative-position-properties",
+        "level": 2,
+        "start_line": 21932
+      },
+      {
+        "title": "relative-position",
+        "id": "relative-position",
+        "level": 3,
+        "start_line": 21940
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-wrap.md": {
+    "sections": [
+      {
+        "title": "Common Wrap Properties",
+        "id": "common-wrap-properties",
+        "level": 2,
+        "start_line": 21978
+      },
+      {
+        "title": "wrap",
+        "id": "wrap",
+        "level": 3,
+        "start_line": 21985
+      },
+      {
+        "title": "wrap-path",
+        "id": "wrap-path",
+        "level": 3,
+        "start_line": 22054
+      },
+      {
+        "title": "wrap-side",
+        "id": "wrap-side",
+        "level": 3,
+        "start_line": 22095
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-alignment.md": {
+    "sections": [
+      {
+        "title": "Area Alignment Properties",
+        "id": "area-alignment",
+        "level": 2,
+        "start_line": 22229
+      },
+      {
+        "title": "alignment-adjust",
+        "id": "alignment-adjust",
+        "level": 3,
+        "start_line": 22233
+      },
+      {
+        "title": "alignment-baseline",
+        "id": "alignment-baseline",
+        "level": 3,
+        "start_line": 22352
+      },
+      {
+        "title": "block-unit",
+        "id": "block-unit",
+        "level": 3,
+        "start_line": 22439
+      },
+      {
+        "title": "baseline-shift",
+        "id": "baseline-shift",
+        "level": 3,
+        "start_line": 22498
+      },
+      {
+        "title": "display-align",
+        "id": "display-align",
+        "level": 3,
+        "start_line": 22615
+      },
+      {
+        "title": "display-align-last",
+        "id": "display-align-last",
+        "level": 3,
+        "start_line": 22700
+      },
+      {
+        "title": "dominant-baseline",
+        "id": "dominant-baseline",
+        "level": 3,
+        "start_line": 22823
+      },
+      {
+        "title": "relative-align",
+        "id": "relative-align",
+        "level": 3,
+        "start_line": 22986
+      },
+      {
+        "title": "marginalia-relative-align",
+        "id": "marginalia-relative-align",
+        "level": 3,
+        "start_line": 23055
+      },
+      {
+        "title": "flow-map-dependency-reference",
+        "id": "flow-map-dependency-reference",
+        "level": 3,
+        "start_line": 23086
+      },
+      {
+        "title": "dependency-content-begin",
+        "id": "dependency-content-begin",
+        "level": 3,
+        "start_line": 23119
+      },
+      {
+        "title": "dependency-content-end",
+        "id": "dependency-content-end",
+        "level": 3,
+        "start_line": 23157
+      },
+      {
+        "title": "keep-with-dependent-content",
+        "id": "keep-with-dependent-content",
+        "level": 3,
+        "start_line": 23194
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-dimension.md": {
+    "sections": [
+      {
+        "title": "Area Dimension Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 23246
+      },
+      {
+        "title": "allowed-height-scale",
+        "id": "allowed-height-scale",
+        "level": 3,
+        "start_line": 23248
+      },
+      {
+        "title": "allowed-width-scale",
+        "id": "allowed-width-scale",
+        "level": 3,
+        "start_line": 23287
+      },
+      {
+        "title": "block-progression-dimension",
+        "id": "block-progression-dimension",
+        "level": 3,
+        "start_line": 23326
+      },
+      {
+        "title": "content-height",
+        "id": "content-height",
+        "level": 3,
+        "start_line": 23401
+      },
+      {
+        "title": "content-width",
+        "id": "content-width",
+        "level": 3,
+        "start_line": 23453
+      },
+      {
+        "title": "height",
+        "id": "height",
+        "level": 3,
+        "start_line": 23504
+      },
+      {
+        "title": "inline-progression-dimension",
+        "id": "inline-progression-dimension",
+        "level": 3,
+        "start_line": 23549
+      },
+      {
+        "title": "max-height",
+        "id": "max-height",
+        "level": 3,
+        "start_line": 23618
+      },
+      {
+        "title": "max-width",
+        "id": "max-width",
+        "level": 3,
+        "start_line": 23656
+      },
+      {
+        "title": "min-height",
+        "id": "min-height",
+        "level": 3,
+        "start_line": 23691
+      },
+      {
+        "title": "min-width",
+        "id": "min-width",
+        "level": 3,
+        "start_line": 23729
+      },
+      {
+        "title": "scaling",
+        "id": "scaling",
+        "level": 3,
+        "start_line": 23764
+      },
+      {
+        "title": "scaling-method",
+        "id": "scaling-method",
+        "level": 3,
+        "start_line": 23789
+      },
+      {
+        "title": "width",
+        "id": "width",
+        "level": 3,
+        "start_line": 23832
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-character.md": {
+    "sections": [
+      {
+        "title": "Character Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 24771
+      },
+      {
+        "title": "character",
+        "id": "character",
+        "level": 3,
+        "start_line": 24773
+      },
+      {
+        "title": "letter-spacing",
+        "id": "letter-spacing",
+        "level": 3,
+        "start_line": 24796
+      },
+      {
+        "title": "suppress-at-line-break",
+        "id": "suppress-at-line-break",
+        "level": 3,
+        "start_line": 24899
+      },
+      {
+        "title": "text-decoration",
+        "id": "text-decoration",
+        "level": 3,
+        "start_line": 24936
+      },
+      {
+        "title": "text-shadow",
+        "id": "text-shadow",
+        "level": 3,
+        "start_line": 25022
+      },
+      {
+        "title": "text-transform",
+        "id": "text-transform",
+        "level": 3,
+        "start_line": 25091
+      },
+      {
+        "title": "treat-as-word-space",
+        "id": "treat-as-word-space",
+        "level": 3,
+        "start_line": 25132
+      },
+      {
+        "title": "word-spacing",
+        "id": "word-spacing",
+        "level": 3,
+        "start_line": 25170
+      },
+      {
+        "title": "word-spacing-critical-length",
+        "id": "word-spacing-critical-length",
+        "level": 3,
+        "start_line": 25265
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-color.md": {
+    "sections": [
+      {
+        "title": "Color-related Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 25299
+      },
+      {
+        "title": "color",
+        "id": "color",
+        "level": 3,
+        "start_line": 25301
+      },
+      {
+        "title": "color-profile-name",
+        "id": "color-profile-name",
+        "level": 3,
+        "start_line": 25327
+      },
+      {
+        "title": "rendering-intent",
+        "id": "rendering-intent",
+        "level": 3,
+        "start_line": 25347
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-float.md": {
+    "sections": [
+      {
+        "title": "Float-related Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 25403
+      },
+      {
+        "title": "clear",
+        "id": "clear",
+        "level": 3,
+        "start_line": 25405
+      },
+      {
+        "title": "float",
+        "id": "float",
+        "level": 3,
+        "start_line": 25566
+      },
+      {
+        "title": "intrusion-displace",
+        "id": "intrusion-displace",
+        "level": 3,
+        "start_line": 25675
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-keeps-breaks.md": {
+    "sections": [
+      {
+        "title": "Keeps and Breaks Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 25751
+      },
+      {
+        "title": "break-after",
+        "id": "break-after",
+        "level": 3,
+        "start_line": 25765
+      },
+      {
+        "title": "break-before",
+        "id": "break-before",
+        "level": 3,
+        "start_line": 25804
+      },
+      {
+        "title": "keep-together",
+        "id": "keep-together",
+        "level": 3,
+        "start_line": 25844
+      },
+      {
+        "title": "keep-with-next",
+        "id": "keep-with-next",
+        "level": 3,
+        "start_line": 25891
+      },
+      {
+        "title": "keep-with-previous",
+        "id": "keep-with-previous",
+        "level": 3,
+        "start_line": 25935
+      },
+      {
+        "title": "orphans",
+        "id": "orphans",
+        "level": 3,
+        "start_line": 25981
+      },
+      {
+        "title": "widows",
+        "id": "widows",
+        "level": 3,
+        "start_line": 26000
+      },
+      {
+        "title": "text-align-before-break",
+        "id": "text-align-before-break",
+        "level": 3,
+        "start_line": 26029
+      },
+      {
+        "title": "text-align-after-break",
+        "id": "text-align-after-break",
+        "level": 3,
+        "start_line": 26044
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-layout.md": {
+    "sections": [
+      {
+        "title": "Layout-related Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 26061
+      },
+      {
+        "title": "clip",
+        "id": "clip",
+        "level": 3,
+        "start_line": 26066
+      },
+      {
+        "title": "overflow",
+        "id": "overflow",
+        "level": 3,
+        "start_line": 26113
+      },
+      {
+        "title": "reference-orientation",
+        "id": "reference-orientation",
+        "level": 3,
+        "start_line": 26189
+      },
+      {
+        "title": "span",
+        "id": "span",
+        "level": 3,
+        "start_line": 26251
+      },
+      {
+        "title": "",
+        "id": "bleed-box",
+        "level": 3,
+        "start_line": 26277
+      },
+      {
+        "title": "",
+        "id": "trim-box",
+        "level": 3,
+        "start_line": 26331
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-leader.md": {
+    "sections": [
+      {
+        "title": "Leader and Rule Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 26385
+      },
+      {
+        "title": "leader-alignment",
+        "id": "leader-alignment",
+        "level": 3,
+        "start_line": 26387
+      },
+      {
+        "title": "leader-pattern",
+        "id": "leader-pattern",
+        "level": 3,
+        "start_line": 26420
+      },
+      {
+        "title": "leader-pattern-width",
+        "id": "leader-pattern-width",
+        "level": 3,
+        "start_line": 26453
+      },
+      {
+        "title": "leader-length",
+        "id": "leader-length",
+        "level": 3,
+        "start_line": 26487
+      },
+      {
+        "title": "rule-style",
+        "id": "rule-style",
+        "level": 3,
+        "start_line": 26545
+      },
+      {
+        "title": "rule-thickness",
+        "id": "rule-thickness",
+        "level": 3,
+        "start_line": 26583
+      }
+    ],
+    "sample_count": 1
+  },
+  "properties-markers.md": {
+    "sections": [
+      {
+        "title": "Properties for Markers",
+        "id": null,
+        "level": 2,
+        "start_line": 27305
+      },
+      {
+        "title": "marker-class-name",
+        "id": "marker-class-name",
+        "level": 3,
+        "start_line": 27307
+      },
+      {
+        "title": "retrieve-boundary-within-table",
+        "id": "retrieve-boundary-within-table",
+        "level": 3,
+        "start_line": 27334
+      },
+      {
+        "title": "retrieve-class-name",
+        "id": "retrieve-class-name",
+        "level": 3,
+        "start_line": 27371
+      },
+      {
+        "title": "retrieve-boundary",
+        "id": "retrieve-boundary",
+        "level": 3,
+        "start_line": 27394
+      },
+      {
+        "title": "retrieve-position",
+        "id": "retrieve-position",
+        "level": 3,
+        "start_line": 27425
+      },
+      {
+        "title": "retrieve-position-within-table",
+        "id": "retrieve-position-within-table",
+        "level": 3,
+        "start_line": 27482
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-ruby.md": {
+    "sections": [
+      {
+        "title": "Ruby",
+        "id": "ruby",
+        "level": 2,
+        "start_line": 27558
+      },
+      {
+        "title": "ruby-position",
+        "id": "ruby-position",
+        "level": 3,
+        "start_line": 27560
+      },
+      {
+        "title": "ruby-alignment",
+        "id": "ruby-alignment",
+        "level": 3,
+        "start_line": 27678
+      },
+      {
+        "title": "ruby-group-distribution",
+        "id": "ruby-group-distribution",
+        "level": 3,
+        "start_line": 27746
+      },
+      {
+        "title": "ruby-alignment-edge",
+        "id": "ruby-alignment-edge",
+        "level": 3,
+        "start_line": 27813
+      },
+      {
+        "title": "ruby-align",
+        "id": "ruby-align",
+        "level": 3,
+        "start_line": 27864
+      },
+      {
+        "title": "ruby-overhang",
+        "id": "ruby-overhang",
+        "level": 3,
+        "start_line": 28044
+      },
+      {
+        "title": "ruby-overhang-length",
+        "id": "ruby-overhang-length",
+        "level": 3,
+        "start_line": 28109
+      },
+      {
+        "title": "ruby-span",
+        "id": "ruby-span",
+        "level": 3,
+        "start_line": 28136
+      },
+      {
+        "title": "ruby-size",
+        "id": "ruby-size",
+        "level": 3,
+        "start_line": 28166
+      },
+      {
+        "title": "ruby-proportion",
+        "id": "ruby-proportion",
+        "level": 3,
+        "start_line": 28197
+      },
+      {
+        "title": "ruby-mode",
+        "id": "ruby-mode",
+        "level": 3,
+        "start_line": 28231
+      },
+      {
+        "title": "line-stacking-annotation",
+        "id": "line-stacking-annotation",
+        "level": 3,
+        "start_line": 28265
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-numbering.md": {
+    "sections": [
+      {
+        "title": "Numbering Properties",
+        "id": "numbering.properties",
+        "level": 2,
+        "start_line": 28298
+      },
+      {
+        "title": "Property reference-name",
+        "id": "reference-name",
+        "level": 3,
+        "start_line": 28371
+      },
+      {
+        "title": "Property reference-value",
+        "id": "reference-value",
+        "level": 3,
+        "start_line": 28386
+      },
+      {
+        "title": "number-ref-id",
+        "id": "name",
+        "level": 3,
+        "start_line": 28419
+      },
+      {
+        "title": "layout-level",
+        "id": "layout-level",
+        "level": 3,
+        "start_line": 28437
+      },
+      {
+        "title": "reset-level",
+        "id": "reset-level",
+        "level": 3,
+        "start_line": 28502
+      },
+      {
+        "title": "initial-value",
+        "id": "initial-value",
+        "level": 3,
+        "start_line": 28558
+      },
+      {
+        "title": "interval",
+        "id": "interval",
+        "level": 3,
+        "start_line": 28576
+      },
+      {
+        "title": "reset-value",
+        "id": "reset-value",
+        "level": 3,
+        "start_line": 28594
+      },
+      {
+        "title": "display-when",
+        "id": "display-when",
+        "level": 3,
+        "start_line": 28610
+      },
+      {
+        "title": "display-position",
+        "id": "display-position",
+        "level": 3,
+        "start_line": 28635
+      },
+      {
+        "title": "number-align",
+        "id": "number-align",
+        "level": 3,
+        "start_line": 28678
+      },
+      {
+        "title": "number-area-extent",
+        "id": "number-area-extent",
+        "level": 3,
+        "start_line": 28724
+      },
+      {
+        "title": "decimal-format",
+        "id": "decimal-format",
+        "level": 3,
+        "start_line": 28755
+      },
+      {
+        "title": "ordinal",
+        "id": "ordinal",
+        "level": 3,
+        "start_line": 28775
+      },
+      {
+        "title": "number-ref-id",
+        "id": "number-ref-id",
+        "level": 3,
+        "start_line": 28833
+      },
+      {
+        "title": "level",
+        "id": "level",
+        "level": 3,
+        "start_line": 28861
+      }
+    ],
+    "sample_count": 3
+  },
+  "properties-number-string.md": {
+    "sections": [
+      {
+        "title": "Properties for Number to String Conversion",
+        "id": null,
+        "level": 2,
+        "start_line": 28880
+      },
+      {
+        "title": "format",
+        "id": "format",
+        "level": 3,
+        "start_line": 28882
+      },
+      {
+        "title": "grouping-separator",
+        "id": "grouping-separator",
+        "level": 3,
+        "start_line": 28897
+      },
+      {
+        "title": "grouping-size",
+        "id": "grouping-size",
+        "level": 3,
+        "start_line": 28913
+      },
+      {
+        "title": "letter-value",
+        "id": "letter-value",
+        "level": 3,
+        "start_line": 28929
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-table.md": {
+    "sections": [
+      {
+        "title": "Table Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 29998
+      },
+      {
+        "title": "border-after-precedence",
+        "id": "border-after-precedence",
+        "level": 3,
+        "start_line": 30000
+      },
+      {
+        "title": "border-before-precedence",
+        "id": "border-before-precedence",
+        "level": 3,
+        "start_line": 30031
+      },
+      {
+        "title": "border-collapse",
+        "id": "border-collapse",
+        "level": 3,
+        "start_line": 30051
+      },
+      {
+        "title": "border-end-precedence",
+        "id": "border-end-precedence",
+        "level": 3,
+        "start_line": 30089
+      },
+      {
+        "title": "border-separation",
+        "id": "border-separation",
+        "level": 3,
+        "start_line": 30109
+      },
+      {
+        "title": "border-start-precedence",
+        "id": "border-start-precedence",
+        "level": 3,
+        "start_line": 30139
+      },
+      {
+        "title": "caption-side",
+        "id": "caption-side",
+        "level": 3,
+        "start_line": 30159
+      },
+      {
+        "title": "column-number",
+        "id": "column-number",
+        "level": 3,
+        "start_line": 30222
+      },
+      {
+        "title": "column-width",
+        "id": "column-width",
+        "level": 3,
+        "start_line": 30260
+      },
+      {
+        "title": "empty-cells",
+        "id": "empty-cells",
+        "level": 3,
+        "start_line": 30299
+      },
+      {
+        "title": "ends-row",
+        "id": "ends-row",
+        "level": 3,
+        "start_line": 30336
+      },
+      {
+        "title": "number-columns-repeated",
+        "id": "number-columns-repeated",
+        "level": 3,
+        "start_line": 30354
+      },
+      {
+        "title": "number-columns-spanned",
+        "id": "number-columns-spanned",
+        "level": 3,
+        "start_line": 30380
+      },
+      {
+        "title": "number-rows-spanned",
+        "id": "number-rows-spanned",
+        "level": 3,
+        "start_line": 30410
+      },
+      {
+        "title": "starts-row",
+        "id": "starts-row",
+        "level": 3,
+        "start_line": 30434
+      },
+      {
+        "title": "table-layout",
+        "id": "table-layout",
+        "level": 3,
+        "start_line": 30459
+      },
+      {
+        "title": "table-omit-footer-at-break",
+        "id": "table-omit-footer-at-break",
+        "level": 3,
+        "start_line": 30484
+      },
+      {
+        "title": "table-omit-header-at-break",
+        "id": "table-omit-header-at-break",
+        "level": 3,
+        "start_line": 30504
+      },
+      {
+        "title": "header-position",
+        "id": "header-position",
+        "level": 3,
+        "start_line": 30561
+      },
+      {
+        "title": "footer-position",
+        "id": "footer-position",
+        "level": 3,
+        "start_line": 30629
+      },
+      {
+        "title": "table-overflow",
+        "id": "table-overflow",
+        "level": 3,
+        "start_line": 30697
+      },
+      {
+        "title": "border-break",
+        "id": "border-break",
+        "level": 3,
+        "start_line": 30756
+      },
+      {
+        "title": "border-before-break",
+        "id": "border-before-break",
+        "level": 3,
+        "start_line": 30811
+      },
+      {
+        "title": "border-after-break",
+        "id": "border-after-break",
+        "level": 3,
+        "start_line": 30866
+      },
+      {
+        "title": "border-start-break",
+        "id": "border-start-break",
+        "level": 3,
+        "start_line": 30921
+      },
+      {
+        "title": "border-end-break",
+        "id": "border-end-break",
+        "level": 3,
+        "start_line": 30976
+      },
+      {
+        "title": "border-break-style",
+        "id": "border-break-style",
+        "level": 3,
+        "start_line": 31030
+      },
+      {
+        "title": "border-start-break-style",
+        "id": "border-start-break-style",
+        "level": 3,
+        "start_line": 31070
+      },
+      {
+        "title": "border-end-break-style",
+        "id": "border-end-break-style",
+        "level": 3,
+        "start_line": 31109
+      },
+      {
+        "title": "border-before-break-style",
+        "id": "border-before-break-style",
+        "level": 3,
+        "start_line": 31148
+      },
+      {
+        "title": "border-after-break-style",
+        "id": "border-after-break-style",
+        "level": 3,
+        "start_line": 31187
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-writing-mode.md": {
+    "sections": [
+      {
+        "title": "Writing-mode-related Properties",
+        "id": "writing-mode-related",
+        "level": 2,
+        "start_line": 31231
+      },
+      {
+        "title": "direction",
+        "id": "direction",
+        "level": 3,
+        "start_line": 31575
+      },
+      {
+        "title": "glyph-orientation-horizontal",
+        "id": "glyph-orientation-horizontal",
+        "level": 3,
+        "start_line": 31670
+      },
+      {
+        "title": "glyph-orientation-vertical",
+        "id": "glyph-orientation-vertical",
+        "level": 3,
+        "start_line": 31708
+      },
+      {
+        "title": "text-altitude",
+        "id": "text-altitude",
+        "level": 3,
+        "start_line": 31777
+      },
+      {
+        "title": "text-depth",
+        "id": "text-depth",
+        "level": 3,
+        "start_line": 31813
+      },
+      {
+        "title": "unicode-bidi",
+        "id": "unicode-bidi",
+        "level": 3,
+        "start_line": 31851
+      },
+      {
+        "title": "writing-mode",
+        "id": "writing-mode",
+        "level": 3,
+        "start_line": 31926
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-misc.md": {
+    "sections": [
+      {
+        "title": "Miscellaneous Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 32177
+      },
+      {
+        "title": "change-bar-class",
+        "id": "change-bar-class",
+        "level": 3,
+        "start_line": 32179
+      },
+      {
+        "title": "change-bar-color",
+        "id": "change-bar-color",
+        "level": 3,
+        "start_line": 32208
+      },
+      {
+        "title": "change-bar-offset",
+        "id": "change-bar-offset",
+        "level": 3,
+        "start_line": 32236
+      },
+      {
+        "title": "change-bar-placement",
+        "id": "change-bar-placement",
+        "level": 3,
+        "start_line": 32272
+      },
+      {
+        "title": "change-bar-style",
+        "id": "change-bar-style",
+        "level": 3,
+        "start_line": 32318
+      },
+      {
+        "title": "change-bar-width",
+        "id": "change-bar-width",
+        "level": 3,
+        "start_line": 32348
+      },
+      {
+        "title": "content-type",
+        "id": "content-type",
+        "level": 3,
+        "start_line": 32384
+      },
+      {
+        "title": "id",
+        "id": "id",
+        "level": 3,
+        "start_line": 32422
+      },
+      {
+        "title": "intrinsic-scale-value",
+        "id": "intrinsic-scale-value",
+        "level": 3,
+        "start_line": 32447
+      },
+      {
+        "title": "page-citation-strategy",
+        "id": "page-citation-strategy",
+        "level": 3,
+        "start_line": 32472
+      },
+      {
+        "title": "provisional-distance-between-starts",
+        "id": "provisional-distance-between-starts",
+        "level": 3,
+        "start_line": 32533
+      },
+      {
+        "title": "provisional-label-separation",
+        "id": "provisional-label-separation",
+        "level": 3,
+        "start_line": 32570
+      },
+      {
+        "title": "ref-id",
+        "id": "ref-id",
+        "level": 3,
+        "start_line": 32612
+      },
+      {
+        "title": "scale-option",
+        "id": "scale-option",
+        "level": 3,
+        "start_line": 32634
+      },
+      {
+        "title": "score-spaces",
+        "id": "score-spaces",
+        "level": 3,
+        "start_line": 32659
+      },
+      {
+        "title": "src",
+        "id": "src",
+        "level": 3,
+        "start_line": 32679
+      },
+      {
+        "title": "visibility",
+        "id": "visibility",
+        "level": 3,
+        "start_line": 32700
+      },
+      {
+        "title": "z-index",
+        "id": "z-index",
+        "level": 3,
+        "start_line": 32737
+      },
+      {
+        "title": "xml:base",
+        "id": "xml.base",
+        "level": 3,
+        "start_line": 32774
+      },
+      {
+        "title": "output-base-uri",
+        "id": "output-base-uri",
+        "level": 3,
+        "start_line": 32811
+      }
+    ],
+    "sample_count": 0
+  },
+  "properties-shorthand.md": {
+    "sections": [
+      {
+        "title": "Shorthand Properties",
+        "id": null,
+        "level": 2,
+        "start_line": 32863
+      },
+      {
+        "title": "background",
+        "id": "background",
+        "level": 3,
+        "start_line": 32875
+      },
+      {
+        "title": "background-position",
+        "id": "background-position",
+        "level": 3,
+        "start_line": 32904
+      },
+      {
+        "title": "border",
+        "id": "border",
+        "level": 3,
+        "start_line": 33075
+      },
+      {
+        "title": "border-bottom",
+        "id": "border-bottom",
+        "level": 3,
+        "start_line": 33108
+      },
+      {
+        "title": "border-color",
+        "id": "border-color",
+        "level": 3,
+        "start_line": 33133
+      },
+      {
+        "title": "border-left",
+        "id": "border-left",
+        "level": 3,
+        "start_line": 33169
+      },
+      {
+        "title": "border-right",
+        "id": "border-right",
+        "level": 3,
+        "start_line": 33194
+      },
+      {
+        "title": "border-spacing",
+        "id": "border-spacing",
+        "level": 3,
+        "start_line": 33219
+      },
+      {
+        "title": "border-style",
+        "id": "border-style",
+        "level": 3,
+        "start_line": 33269
+      },
+      {
+        "title": "border-top",
+        "id": "border-top",
+        "level": 3,
+        "start_line": 33300
+      },
+      {
+        "title": "border-width",
+        "id": "border-width",
+        "level": 3,
+        "start_line": 33325
+      },
+      {
+        "title": "cue",
+        "id": "cue",
+        "level": 3,
+        "start_line": 33353
+      },
+      {
+        "title": "font",
+        "id": "font",
+        "level": 3,
+        "start_line": 33371
+      },
+      {
+        "title": "margin",
+        "id": "margin",
+        "level": 3,
+        "start_line": 33439
+      },
+      {
+        "title": "padding",
+        "id": "padding",
+        "level": 3,
+        "start_line": 33474
+      },
+      {
+        "title": "page-break-after",
+        "id": "page-break-after",
+        "level": 3,
+        "start_line": 33504
+      },
+      {
+        "title": "page-break-before",
+        "id": "page-break-before",
+        "level": 3,
+        "start_line": 33554
+      },
+      {
+        "title": "page-break-inside",
+        "id": "page-break-inside",
+        "level": 3,
+        "start_line": 33604
+      },
+      {
+        "title": "pause",
+        "id": "pause",
+        "level": 3,
+        "start_line": 33645
+      },
+      {
+        "title": "position",
+        "id": "position",
+        "level": 3,
+        "start_line": 33664
+      },
+      {
+        "title": "size",
+        "id": "size",
+        "level": 3,
+        "start_line": 33743
+      },
+      {
+        "title": "vertical-align",
+        "id": "vertical-align",
+        "level": 3,
+        "start_line": 33803
+      },
+      {
+        "title": "white-space",
+        "id": "white-space",
+        "level": 3,
+        "start_line": 33948
+      },
+      {
+        "title": "xml:lang",
+        "id": "xml.lang",
+        "level": 3,
+        "start_line": 34009
+      }
+    ],
+    "sample_count": 0
+  },
+  "ref-conformance.md": {
+    "sections": [
+      {
+        "title": "Conformance",
+        "id": "conform",
+        "level": 1,
+        "start_line": 34044
+      }
+    ],
+    "sample_count": 0
+  },
+  "ref-fo-summary.md": {
+    "sections": [
+      {
+        "title": "Formatting Object Summary",
+        "id": "FO-summary",
+        "level": 1,
+        "start_line": 34112
+      },
+      {
+        "title": "Block Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34268
+      },
+      {
+        "title": "Inline Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34292
+      },
+      {
+        "title": "Table Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34384
+      },
+      {
+        "title": "List Formatting Objects",
+        "id": null,
+        "level": 2,
+        "start_line": 34458
+      },
+      {
+        "title": "Link and Multi Formatting Objects",
+        "id": "ConfMulti",
+        "level": 2,
+        "start_line": 34495
+      }
+    ],
+    "sample_count": 0
+  },
+  "ref-property-summary.md": {
+    "sections": [
+      {
+        "title": "Property Summary",
+        "id": "property-index",
+        "level": 1,
+        "start_line": 34719
+      },
+      {
+        "title": "Explanation of Trait Mapping Values",
+        "id": "trmval",
+        "level": 2,
+        "start_line": 34721
+      },
+      {
+        "title": "Property Table: Part I",
+        "id": "prtab1",
+        "level": 2,
+        "start_line": 34777
+      },
+      {
+        "title": "Property Table: Part II",
+        "id": "prtab2",
+        "level": 2,
+        "start_line": 35153
+      },
+      {
+        "title": "Properties and the FOs they apply to",
+        "id": "prapply",
+        "level": 2,
+        "start_line": 35527
+      }
+    ],
+    "sample_count": 0
+  },
+  "ref-references.md": {
+    "sections": [
+      {
+        "title": "Normative References",
+        "id": null,
+        "level": 2,
+        "start_line": 38439
+      },
+      {
+        "title": "Other References",
+        "id": null,
+        "level": 2,
+        "start_line": 38559
+      }
+    ],
+    "sample_count": 0
+  }
+}

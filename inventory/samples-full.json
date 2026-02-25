@@ -1,0 +1,1770 @@
+[
+  {
+    "index": 1,
+    "start_line": 2790,
+    "end_line": 2844,
+    "source_link": "https://www.w3.org/TR/xslfo20/#copyfitting-approach",
+    "target_file": "guide-area-model.md",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<fo:root xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\n<fo:page-master master-name=\"sample1\" \n     page-height=\"11in\" page-width=\"8.5in\" margin-top=\"3pt\"\n     margin-bottom=\"3pt\" margin-left=\"3pt\" margin-right=\"3pt\">\n  <fo:region  region-name=\"R1\" \n     display-align=\"justify\" \n     adjustable-properties=\"line-height\"/> \n  <fo:region  region-name=\"R2\" \n     display-align=\"before\"/> \n</fo:page-master>\n\n<fo:flow-map flow-map-name=\"M1\">\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n       <fo:flow-name-specifier flow-name-reference=\"A\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n     <fo:region-name-specifier region-name-reference=\"R1\"/>\n    </fo:flow-target-list>\n   </fo:flow-assignment>\n   <fo:flow-assignment>\n    <fo:flow-source-list>\n     <fo:flow-name-specifier flow-name-reference=\"B\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n     <fo:region-name-specifier region-name-reference=\"R2\"/>\n    </fo:flow-target-list>\n    </fo:flow-assignment>\n </fo:flow-map>\n\n<fo:page-sequence force-page-count=\"1\" flow-map-reference=\"M1\">\n  <fo:flow flow-name=\"A\">\n   <fo:block> Lorem maecenas blandit ac, neque sed ut pulvinar,\n   lectus sagittis sapien per risus vel.  Ligula sapien sed morbi cras\n   tellus commodo. Si qua ex docet dei etris crucis</fo:block>\n  <fo:block> curabitur magna nisi, faucibus sed ornare sed,\n  congue eu dui.  Pellentesque habitant morbi tristique senectus et\n  netus et malessecularia uada fames ac turpis\n  egestas. </fo:block>\n  <fo:block> Nunc sit amet dolor sed sem congue mattis sed ut\n  arcu. Mauris id magna sit amet elit aliquam.</fo:block>\n  <fo:block>Pellentesque habitant morbi tristique senectus et\n  netus et malesuada fames.</fo:block>\n </fo:flow>\n\n <fo:flow flow-name=\"B\">\n  <fo:block>Crucis rosa ut hoc sien qua non res veni.</fo:block>\n  <fo:block> Etiam tristique, nulla a pulvinar hendrerit nihil\n  tortor urna auctor etim domine secularia cali sed ut quotie ire in\n  domince hoc fantus quis eius rei rei.  </fo:block>\n</fo:flow>\n</fo:page-sequence>\n</fo:root>"
+  },
+  {
+    "index": 2,
+    "start_line": 2862,
+    "end_line": 2873,
+    "source_link": "https://www.w3.org/TR/xslfo20/#copyfitting-approach",
+    "target_file": "guide-area-model.md",
+    "content": "<fo:flow-map flow-map-name=\"M2\">\n<fo:flow-assignment>\n<fo:flow-source-list>\n<fo:flow-name-specifier flow-name-reference=\"A\"/>\n<fo:flow-name-specifier flow-name-reference=\"B\"/>\n</fo:flow-source-list>\n<fo:flow-target-list>\n<fo:region-name-specifier region-name-reference=\"R1\"/>\n<fo:region-name-specifier region-name-reference=\"R2\"/>\n</fo:flow-target-list>\n</fo:flow-assignment>\n</fo:flow-map>"
+  },
+  {
+    "index": 3,
+    "start_line": 2892,
+    "end_line": 2901,
+    "source_link": "https://www.w3.org/TR/xslfo20/#copyfitting-approach",
+    "target_file": "guide-area-model.md",
+    "content": "<fo:page-master master-name=\"sample1\" \n   page-height=\"11in\" page-width=\"8.5in\" margin-top=\"3pt\"\n   margin-bottom=\"3pt\" margin-left=\"3pt\" margin-right=\"3pt\">\n  <fo:region  region-name=\"R1\" \n     display-align=\"justify\" \n     adjustable-properties=\"line-height\"/> \n    <fo:region  region-name=\"R2\" \n      display-align=\"justify\"/>\n  </fo:page-master>"
+  },
+  {
+    "index": 4,
+    "start_line": 2923,
+    "end_line": 2950,
+    "source_link": "https://www.w3.org/TR/xslfo20/#copyfitting-approach",
+    "target_file": "guide-area-model.md",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<fo:root xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\n <fo:page-master master-name=\"sample1\" \n    page-height=\"11in\" page-width=\"8.5in\" margin-top=\"3pt\"\n   margin-bottom=\"3pt\" margin-left=\"3pt\" margin-right=\"3pt\">\n  <fo:region-body region-name=\"xsl-region-body\" \n    display-align=\"justify\" \n    display-align-last=\"relative\"\n    adjustable-properties=\"...\"/>\n</fo:page-master>\n\n<fo:page-sequence>\n  <fo:flow flow-name=\"A\">\n\n<fo:block>Lorem ipsum dolor sit amet, nunc euismod nisl nam euismod, quis maecenas\nblandit ac, neque sed ut pulvinar, lectus sagittis ... quorneque tortor\nneque, commodo mauris sagittis yurpis,hic fecit leuc em.</fo:block>\n\n<fo:block>Lorem ipsum dolor sit amet, nunc ... lectus sagittis sapien\nmauris per risus.</fo:block>\n\n<fo:block>Ligula sapien sed morbi cras tellus ... quoque\ncra ut sic fecit quorem deis hoc hac lorem ipse die cruci faucibus sed ultrices\ntempor inter dum.</fo:block>\n<fo:block>Lorem ipsum dolor sit amet, .... Rutrum mattis accumsan.</fo:block>\n</fo:flow>\n</fo:page-sequence>\n</fo:root>"
+  },
+  {
+    "index": 5,
+    "start_line": 2979,
+    "end_line": 2983,
+    "source_link": "https://www.w3.org/TR/xslfo20/#copyfitting-approach",
+    "target_file": "guide-area-model.md",
+    "content": "<fo:region-body region-name=\"xsl-region-body\" \ndisplay-align=\"justify\" \ndisplay-align-last=\"justify\"\n force-page-count=\"2\"\nadjustable-properties=\"...\"/>"
+  },
+  {
+    "index": 6,
+    "start_line": 3086,
+    "end_line": 3155,
+    "source_link": "https://www.w3.org/TR/xslfo20/#copyfitting-approach",
+    "target_file": "guide-area-model.md",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<fo:root xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\n  <fo:page-master master-name=\"sample1\" page-height=\"11in\" \n        page-width=\"8.5in\" margin-top=\"3pt\"\n\tmargin-bottom=\"3pt\" margin-left=\"3pt\" margin-right=\"3pt\">\n   <fo:region  region-name=\"R1\" \n       display-align=\"justify\" \n       adjustable-properties=\"line-height\"/> \n   <fo:region  region-name=\"R2\" \n       display-align=\"before\"/> \n</fo:page-master>\n\n<fo:flow-map flow-map-name=\"M1\">\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n     <fo:flow-name-specifier flow-name-reference=\"A\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n     <fo:region-name-specifier region-name-reference=\"R1\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n\n  <fo:flow-assignment>\n   <fo:flow-source-list>\n    <fo:flow-name-specifier flow-name-reference=\"B\"/>\n   </fo:flow-source-list>\n   <fo:flow-target-list>\n     <fo:region-name-specifier region-name-reference=\"R2\"/>\n   </fo:flow-target-list>\n  </fo:flow-assignment>\n</fo:flow-map>\n\n<fo:page-sequence force-page-count=\"1\" flow-map-reference=\"M1\">\n  <fo:flow flow-name=\"A\">\n \n  <fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\"\n  line-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Lorem\n  maecenas blandit ac, neque sed ut pulvinar, lectus sagittis sapien\n  per risus vel.  Ligula sapien sed morbi cras tellus commodo.  Si qua\n  ex docet dei etris crucis</fo:block>\n\n  <fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\"\n  line-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> curabitur\n  magna nis, faucibus sed ornare sed, congue eu dui.  Pellentesque\n  habitant morbi tristique senectus et netus et malessecularia uada\n  fames ac turpis egestas. </fo:block>\n\n  <fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\"\n  line-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Nunc sit\n  amet dolor sed sem congue mattis sed ut arcu. Mauris id magna sit\n  amet elit aliquam.</fo:block> <fo:block>Pellentesque\n  habitant morbi tristique senectus et netus et malesuada\n  fames.</fo:block>\n\n  </fo:flow>\n  <fo:flow flow-name=\"B\">\n\n  <fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\"\n  line-height.minimum=\"8pt\" line-height.maximum=\"14pt\">Crucis rosa\n  ut hoc sien qua non res veni.</fo:block>\n\n  <fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\"\n  line-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Etiam\n  tristique, nulla a pulvinar hendrerit nihil tortor urna auctor etim\n  domine secularia cali sed ut quotie ire in domince hoc fantus quis\n  eius rei rei.  </fo:block>\n\n</fo:flow>\n</fo:page-sequence>\n</fo:root>"
+  },
+  {
+    "index": 7,
+    "start_line": 4392,
+    "end_line": 4392,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Apex <fo:inline>Top</fo:inline></fo:inline>"
+  },
+  {
+    "index": 8,
+    "start_line": 4441,
+    "end_line": 4441,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Apex <fo:inline><emph>guru</emph></fo:inline></fo:inline>"
+  },
+  {
+    "index": 9,
+    "start_line": 4465,
+    "end_line": 4469,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Ap<emph>guru</emph>\n  <fo:inline font-size='.75em'>\n    Ex<emph>ji</emph>\n  </fo:inline>\n</fo:inline>"
+  },
+  {
+    "index": 10,
+    "start_line": 4511,
+    "end_line": 4516,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Ap<emph>guru</emph>\n  <fo:inline font-size='.75em'\n             dominant-baseline='reset-size'>\n     Ex<emph>ji</emph>\n  </fo:inline>\n</fo:inline>"
+  },
+  {
+    "index": 11,
+    "start_line": 4538,
+    "end_line": 4543,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline dominant-baseline='hanging'>Ap<emph>guru</emph>\n  <fo:inline font-size='.75em'\n             dominant-baseline='reset-size'>\n     Ex<emph>ji</emph>\n  </fo:inline>\n</fo:inline>"
+  },
+  {
+    "index": 12,
+    "start_line": 4565,
+    "end_line": 4571,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Ap<emph>guru</emph>\n  <fo:inline font-size='.75em'\n             dominant-baseline='reset-size'\n             alignment-baseline='hanging'>\n     Ex<emph>ji</emph>\n  </fo:inline>\n</fo:inline>"
+  },
+  {
+    "index": 13,
+    "start_line": 4593,
+    "end_line": 4597,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Ap\n  <fo:inline baseline-shift='super'>1<emph>ji</emph></fo:inline>\n</fo:inline>"
+  },
+  {
+    "index": 14,
+    "start_line": 4618,
+    "end_line": 4623,
+    "source_link": "https://www.w3.org/TR/xslfo20/#alignmentproperties.intro",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:inline>Ap\n  <fo:inline font-size='.75em'\n             baseline-shift='super'>\n    1<emph>ji</emph>\n  </fo:inline>\n</fo:inline>"
+  },
+  {
+    "index": 15,
+    "start_line": 4878,
+    "end_line": 4884,
+    "source_link": "https://www.w3.org/TR/xslfo20/#rubydef",
+    "target_file": "guide-bidi.md",
+    "content": "<fo:block>\n    LL\n    <fo:inline id=\"A\" color=\"red\">LLLRRR</fo:inline>\n    RR\n  </fo:block>"
+  },
+  {
+    "index": 16,
+    "start_line": 4888,
+    "end_line": 4897,
+    "source_link": "https://www.w3.org/TR/xslfo20/#rubydef",
+    "target_file": "guide-bidi.md",
+    "content": "<fo:block>\n    LL\n    <fo:inline id=\"A\" color=\"red\">LLL</fo:inline>\n    <fo:bidi-override direction=\"rtl\">\n      <fo:inline color=\"red\">RRR</fo:inline>\n      RR\n    </fo:bidi-override>\n  </fo:block>"
+  },
+  {
+    "index": 17,
+    "start_line": 5607,
+    "end_line": 5617,
+    "source_link": "https://www.w3.org/TR/xslfo20/#expr-color-functions",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:list-block>\n  ...\n  <fo:list-item color=\"red\">\n    <fo:list-item-body background-color=\"green\">\n      <fo:block background-color=\"inherited-property-value(color)\">\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n</fo:list-block>"
+  },
+  {
+    "index": 18,
+    "start_line": 5725,
+    "end_line": 5749,
+    "source_link": "https://www.w3.org/TR/xslfo20/#expr-color-functions",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:root>\n\n<fo:layout-master-set>\n  <fo:simple-page-master master-name=\"all-pages\">\n    <fo:region-body region-name=\"xsl-region-body\" margin=\"0.75in\"\n                    writing-mode=\"tb-rl\" />\n    <fo:region-before region-name=\"xsl-region-before\" extent=\"0.75in\"/>\n  </fo:simple-page-master>\n  <fo:page-sequence-master master-name=\"default-sequence\">\n    <fo:repeatable-page-master-reference master-reference=\"all-pages\"/>\n  </fo:page-sequence-master>\n</fo:layout-master-set>\n\n<fo:page-sequence master-name=\"default-sequence\">\n  <fo:flow flow-name=\"xsl-region-body\">\n    <fo:block>\n        [Content in a language which allows either\n         horizontal or vertical formatting]\n    </fo:block>\n  </fo:flow>\n</fo:page-sequence>\n\n</fo:root>"
+  },
+  {
+    "index": 19,
+    "start_line": 5770,
+    "end_line": 5772,
+    "source_link": "https://www.w3.org/TR/xslfo20/#expr-color-functions",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:page-sequence master-name=\"default-sequence\">"
+  },
+  {
+    "index": 20,
+    "start_line": 5774,
+    "end_line": 5777,
+    "source_link": "https://www.w3.org/TR/xslfo20/#expr-color-functions",
+    "target_file": "guide-property-refinement.md",
+    "content": "<fo:page-sequence master-name=\"default-sequence\"\n                  writing-mode=\"from-page-master-region()\">"
+  },
+  {
+    "index": 21,
+    "start_line": 5885,
+    "end_line": 5891,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "space-before.minimum=\"2.0pt\"\nspace-before.optimum=\"3.0pt\"\nspace-before.maximum=\"4.0pt\"\nspace-before.precedence=\"0\"\nspace-before.conditionality=\"discard\""
+  },
+  {
+    "index": 22,
+    "start_line": 5899,
+    "end_line": 5901,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "space-before=\"4.0pt\""
+  },
+  {
+    "index": 23,
+    "start_line": 5903,
+    "end_line": 5909,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "space-before.minimum=\"4.0pt\"\nspace-before.optimum=\"4.0pt\"\nspace-before.maximum=\"4.0pt\"\nspace-before.precedence=\"0\"\nspace-before.conditionality=\"discard\""
+  },
+  {
+    "index": 24,
+    "start_line": 5919,
+    "end_line": 5921,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "keep-together=\"always\""
+  },
+  {
+    "index": 25,
+    "start_line": 5923,
+    "end_line": 5927,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "keep-together.within-line=\"always\"\nkeep-together.within-column=\"always\"\nkeep-together.within-page=\"always\""
+  },
+  {
+    "index": 26,
+    "start_line": 5931,
+    "end_line": 5934,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "space-before=\"4.0pt\"\nspace-before.maximum=\"6.0pt\""
+  },
+  {
+    "index": 27,
+    "start_line": 5936,
+    "end_line": 5942,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "space-before.minimum=\"4.0pt\"\nspace-before.optimum=\"4.0pt\"\nspace-before.maximum=\"6.0pt\"\nspace-before.precedence=\"0\"\nspace-before.conditionality=\"discard\""
+  },
+  {
+    "index": 28,
+    "start_line": 5953,
+    "end_line": 5956,
+    "source_link": "https://www.w3.org/TR/xslfo20/#datatype",
+    "target_file": "guide-datatypes.md",
+    "content": "margin-top=\"10.0pt\"\nspace-before.minimum=\"4.0pt\""
+  },
+  {
+    "index": 29,
+    "start_line": 6449,
+    "end_line": 6455,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "block\n     block-container\n     table-and-caption\n     table\n     list-block"
+  },
+  {
+    "index": 30,
+    "start_line": 6458,
+    "end_line": 6473,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "bidi-override\n     character\n     external-graphic\n     instream-foreign-object\n     inline\n     inline-container\n     leader\n     page-number\n     page-number-citation\n     page-number-citation-last\n     scaling-value-citation\n     basic-link\n     multi-toggle\n     index-page-citation-list"
+  },
+  {
+    "index": 31,
+    "start_line": 6479,
+    "end_line": 6486,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "multi-switch\n     multi-properties\n     index-range-begin\n     index-range-end\n     wrapper\n     retrieve-marker"
+  },
+  {
+    "index": 32,
+    "start_line": 6490,
+    "end_line": 6492,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "retrieve-table-marker"
+  },
+  {
+    "index": 33,
+    "start_line": 6496,
+    "end_line": 6499,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "change-bar-begin\n     change-bar-end"
+  },
+  {
+    "index": 34,
+    "start_line": 6504,
+    "end_line": 6506,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "float"
+  },
+  {
+    "index": 35,
+    "start_line": 6510,
+    "end_line": 6512,
+    "source_link": "https://www.w3.org/TR/xslfo20/#define-returned-by",
+    "target_file": "guide-formatting-objects.md",
+    "content": "footnote"
+  },
+  {
+    "index": 36,
+    "start_line": 7204,
+    "end_line": 7209,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow flow-name=\"A\">\n  <fo:block>In the second century of\nthe Christian Aera, the empire of Rome ... </fo:block>\n</fo:flow>"
+  },
+  {
+    "index": 37,
+    "start_line": 7211,
+    "end_line": 7216,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow flow-name=\"B\">\n  <fo:block>Quo usque tandem abutere, Catilina, patientia nostra? ...\n</fo:block>\n</fo:flow>"
+  },
+  {
+    "index": 38,
+    "start_line": 7220,
+    "end_line": 7239,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow-map flow-map-name=\"E1\">\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier flow-name-reference=\"A\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier region-name-reference=\"R\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier flow-name-reference=\"B\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier region-name-reference=\"S\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n</fo:flow-map>"
+  },
+  {
+    "index": 39,
+    "start_line": 7247,
+    "end_line": 7259,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow-map flow-map-name=\"E2\">\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier flow-name-reference=\"A\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier region-name-reference=\"R1\"/>\n      <fo:region-name-specifier region-name-reference=\"R2\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n</fo:flow-map>"
+  },
+  {
+    "index": 40,
+    "start_line": 7267,
+    "end_line": 7279,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow-map flow-map-name=\"E3\">\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier flow-name-reference=\"A\"/>\n      <fo:flow-name-specifier flow-name-reference=\"B\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier region-name-reference=\"R\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n</fo:flow-map>"
+  },
+  {
+    "index": 41,
+    "start_line": 7287,
+    "end_line": 7300,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow-map flow-map-name=\"E4\">\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier flow-name-reference=\"A\"/>\n      <fo:flow-name-specifier flow-name-reference=\"B\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier region-name-reference=\"R1\"/>\n      <fo:region-name-specifier region-name-reference=\"R2\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n</fo:flow-map>"
+  },
+  {
+    "index": 42,
+    "start_line": 7373,
+    "end_line": 7406,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow-map>\n   <fo:flow-assignment>\n      <fo:flow-source-list>\n        <fo:flow-name-specifier\n           flow-name-reference=\"Arabic-Flow\"/>\n      </fo:flow-source-list>\n      <fo:flow-target-list>\n         <fo:region-name-specifier\n         region-name-reference=\"Region-Middle\"/>\n      </fo:flow-target-list>\n   </fo:flow-assignment>\n   <fo:flow-assignment flow-map-dependency-reference=”Arabic-Flow”>\n      <fo:flow-source-list>\n         <fo:flow-name-specifier\n            flow-name-reference=\"Armenian-Flow\"/>\n      </fo:flow-source-list>\n      <fo:flow-target-list>\n         <fo:region-name-specifier\n           region-name-reference=\"Region-Right\"/>\n      </fo:flow-target-list>\n   </fo:flow-assignment>\n   <fo:flow-assignment flow-map-dependency-reference=\"Arabic-Flow\">\n      <fo:flow-source-list>\n         <fo:flow-name-specifier\n          flow-name-reference=\"Syriac-Flow\"/>\n      </fo:flow-source-list>\n   <fo:flow-target-list>\n      <fo:region-name-specifier\n        region-name-reference=\"Region-Left\"/>\n   </fo:flow-target-list>\n </fo:flow-assignment>\n </fo:flow-map>"
+  },
+  {
+    "index": 43,
+    "start_line": 7440,
+    "end_line": 7466,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow flow-name=”Arabic-Flow”>\n   …\n   <fo:block dependency-content-begin=”Key_A”>\n       And Nadan went to Haiqâr, and said to him, \n       ‘W’allah, O my uncle! The king verily \n       rejoiceth in thee for having done what he \n       commanded thee.\n   </fo:block>\n   <fo:block>\n       And now he hath sent me to thee that thou \n       mayst dismiss the soldiers to their duties \n       and come thyself to him with thy handsbound \n       behind thee, and thy feet chained, that the \n       ambassadors of Pharaoh may see this, and \n       that the king may be feared by them and by \n       their king’.\n   </fo:block> \n   <fo:block>\n       And Nadan took him and went with him to the \n       king.\n   </fo:block>\n   <fo:block dependency-content-end=”Key_A”>\n       Then answered Haiqâr and said, ‘To hear is \n       to obey.’\n   </fo:block>\n   …\n </fo:flow>"
+  },
+  {
+    "index": 44,
+    "start_line": 7506,
+    "end_line": 7520,
+    "source_link": "https://www.w3.org/TR/xslfo20/#pag-intro",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:block keep-with-dependent-content=”widows” \n          dependent-content-begin=”Key_A”>\n    Text text text …\n   <fo:inline dependent-content-end=”Key_A”>\n       Text text … \n   </fo:inline>\n    Text text text …\n </fo:block>\n <fo:block keep-with-dependent-content=”all”>\n     Text text text …\n     <fo:block dependent-content-begin=”Key_B”>\n         Text text … \n     </fo:inline>\n     Text text text …\n </fo:block>"
+  },
+  {
+    "index": 45,
+    "start_line": 7578,
+    "end_line": 7580,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_root",
+    "target_file": "fo-root.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_layout-master-set\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">layout-master-set</loc>,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_declarations\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">declarations</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_bookmark-tree\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">bookmark-tree</loc>?,(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_layout-master-set\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">layout-master-set</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_page-sequence\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">page-sequence</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_page-sequence-wrapper\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">page-sequence-wrapper</loc>)+)"
+  },
+  {
+    "index": 46,
+    "start_line": 7608,
+    "end_line": 7610,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_declarations",
+    "target_file": "fo-declarations.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_color-profile\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">color-profile</loc>)*"
+  },
+  {
+    "index": 47,
+    "start_line": 7650,
+    "end_line": 7652,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_color-profile",
+    "target_file": "fo-color-profile.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 48,
+    "start_line": 7870,
+    "end_line": 7872,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-sequence",
+    "target_file": "fo-page-sequence.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_title\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">title</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_folio-prefix\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">folio-prefix</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_folio-suffix\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">folio-suffix</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_static-content\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">static-content</loc>*,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_flow\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">flow</loc>+)"
+  },
+  {
+    "index": 49,
+    "start_line": 7928,
+    "end_line": 7930,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-sequence-wrapper",
+    "target_file": "fo-page-sequence-wrapper.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_layout-master-set\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">layout-master-set</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_page-sequence\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">page-sequence</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_page-sequence-wrapper\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">page-sequence-wrapper</loc>)*"
+  },
+  {
+    "index": 50,
+    "start_line": 7958,
+    "end_line": 7960,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_layout-master-set",
+    "target_file": "fo-layout-master-set.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_simple-page-master\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">simple-page-master</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_page-sequence-master\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">page-sequence-master</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_flow-map\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">flow-map</loc>)+"
+  },
+  {
+    "index": 51,
+    "start_line": 8015,
+    "end_line": 8017,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-sequence-master",
+    "target_file": "fo-page-sequence-master.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_single-page-master-reference\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">single-page-master-reference</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_repeatable-page-master-reference\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">repeatable-page-master-reference</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_repeatable-page-master-alternatives\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">repeatable-page-master-alternatives</loc>)+"
+  },
+  {
+    "index": 52,
+    "start_line": 8057,
+    "end_line": 8059,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_single-page-master-reference",
+    "target_file": "fo-single-page-master-reference.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 53,
+    "start_line": 8103,
+    "end_line": 8105,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_repeatable-page-master-reference",
+    "target_file": "fo-repeatable-page-master-reference.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 54,
+    "start_line": 8171,
+    "end_line": 8173,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_repeatable-page-master-alternatives",
+    "target_file": "fo-repeatable-page-master-alternatives.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_conditional-page-master-reference\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">conditional-page-master-reference</loc>+)"
+  },
+  {
+    "index": 55,
+    "start_line": 8267,
+    "end_line": 8269,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-page-master-reference",
+    "target_file": "fo-conditional-page-master-reference.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 56,
+    "start_line": 8328,
+    "end_line": 8328,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-master",
+    "target_file": "fo-page-master.md",
+    "content": "(region)+"
+  },
+  {
+    "index": 57,
+    "start_line": 8497,
+    "end_line": 8499,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_simple-page-master",
+    "target_file": "fo-simple-page-master.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_region-body\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">region-body</loc>+,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_region-before\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">region-before</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_region-after\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">region-after</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_region-start\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">region-start</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_region-end\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">region-end</loc>?)"
+  },
+  {
+    "index": 58,
+    "start_line": 8731,
+    "end_line": 8733,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-body",
+    "target_file": "fo-region-body.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 59,
+    "start_line": 8837,
+    "end_line": 8839,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-before",
+    "target_file": "fo-region-before.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 60,
+    "start_line": 8941,
+    "end_line": 8943,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-after",
+    "target_file": "fo-region-after.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 61,
+    "start_line": 9047,
+    "end_line": 9049,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-start",
+    "target_file": "fo-region-start.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 62,
+    "start_line": 9149,
+    "end_line": 9151,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-end",
+    "target_file": "fo-region-end.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 63,
+    "start_line": 9198,
+    "end_line": 9201,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region",
+    "target_file": "fo-region.md",
+    "content": "(shape-name-specifier,\n  shape-path-specifier?,\n  shape-background-specifier*, shape-border-specifier*)"
+  },
+  {
+    "index": 64,
+    "start_line": 9203,
+    "end_line": 9230,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region",
+    "target_file": "fo-region.md",
+    "content": "<fo:page-master \n\t       master-name=\"only\"\n\t       page-height=\"11in\" page-width=\"8.5in\"\n\t       margin-top=\"3pt\" margin-bottom=\"3pt\" \n\t       margin-left=\"3pt\" margin-right=\"3pt\">\n\n\t       <fo:region \n\t        absolute-position=\"absolute\" \n\t        top=\"0.8636in\" left=\"1.125in\"\n\t        width=\"6.75in\" height=\"7.75in\"\n\t        region-name=\"region_A\" \n\t        z-index=\"0\"\n\t        wrap=\"shape\"\n\t        wrap-sides=\"both\"\n\t        wrap-path=\"shape\">\n\t        ... shape reference specifier(s) ...\n\t       </fo:region>\n\n\t      <fo:region \n\t        absolute-position=\"absolute\" \n\t        top=\"1.3in\" left=\"1.4in\"\n\t        width=\"3.6in\" height=\"5.4in\"\n\t        region-name=\"region_B\" \n\t        z-index=\"1\"> \n\t        ... shape reference specifier(s) ...\n\t       </fo:region>\n\n\t      </fo:page-master>"
+  },
+  {
+    "index": 65,
+    "start_line": 9277,
+    "end_line": 9357,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region",
+    "target_file": "fo-region.md",
+    "content": "<fo:layout-master-set>\n\t        <fo:shape shape-name=\"hexagon\"> \n\t          <svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\">\n\t            <svg:path d=\"M ... z \" />\n\t          </svg:svg>\n\t        </fo:shape>\n\n\t        <fo:shape shape-name=\"intruder-bag\"> \n\t          <svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\">\n\t            <svg:path d=\"M ... z \" />\n\t          </svg:svg>\n\t        </fo:shape>\n\n\t        <fo:shape shape-name=\"border-bag\"> \n\t          <svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\">\n\t           <svg:path d=\"M ... z \" />\n\t          </svg:svg>>\n\t       </fo:shape>\n\n\t       <fo:shape shape-name=\"bag\"> \n\t        <svg:svg xmlns:svg=\"http://www.w3.org/2000/svg\">\n\t        <svg:path d=\"M ... z \" />\n\t       </svg:svg>\n\t      </fo:shape>\n\n\t      <fo:page-master \n\t        master-name=\"only\"\n\t        page-height=\"11in\" page-width=\"8.5in\"\n\t        margin-top=\"3pt\" margin-bottom=\"3pt\" \n\t        margin-left=\"3pt\" margin-right=\"3pt\">\n\n\t       <fo:region \n\t          absolute-position=\"absolute\" \n\t          top=\"0.8636in\" left=\"1.125in\"\n\t          width=\"10in\" height=\"12in\"\n\t          region-name=\"region_A\" \n\t          z-index=\"0\">\n\n\t         <fo:shape-name-specifier\n\t             shape-name-reference=\"bag\"\n\t            width=\"100%\" height=\"100%\"\n\t            display-align=\"center\" />\n\n\t        <fo:shape-path-specifier\n\t              shape-name-reference=\"intruder-bag\"\n\t              width=\"100%\" height=\"100%\"\n\t              display-align=\"center\" />\n\n\t            <fo:shape-border-specifier\n\t              shape-name-reference=\"border-bag\"\n\t              width=\"100%\" height=\"100%\"\n\t              display-align=\"center\" />\n\n\t            <fo:fo:shape-background-specifier\n\t              shape-name-reference=\"hexagon\"\n\t              width=\"80%\" height=\"80%\"\n\t              relative-position=\"relative\"\n\t              top=\"6in\" left=\"6in\" />\n\n\t            <fo:fo:shape-background-specifier\n\t              shape-name-reference=\"hexagon\"\n\t              width=\"60%\" height=\"60%\"\n\t              relative-position=\"relative\"\n\t              top=\"4in\" left=\"4in\" />\n\n\t            <fo:fo:shape-background-specifier\n\t              shape-name-reference=\"hexagon\"\n\t              width=\"40%\" height=\"40%\"\n\t              relative-position=\"relative\"\n\t              top=\"2in\" left=\"2in\" />\n\n\t            <fo:fo:shape-background-specifier\n\t              shape-name-reference=\"hexagon\"\n\t              width=\"20%\" height=\"20%\"\n\t              relative-position=\"relative\"\n\t              top=\"1in\" left=\"1in\" />\n\n\t          </fo:region>\n\t        </fo:page-master>\n\n\t      </fo:layout-master-set>"
+  },
+  {
+    "index": 66,
+    "start_line": 9395,
+    "end_line": 9410,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_extension-region",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:simple-page-master master-name=\"only\"\n\t      page-height=\"29.7cm\"\n\t      page-width=\"21cm\"\n\t      margin-top=\"1cm\"\n\t      margin-bottom=\"2cm\"\n\t      margin-left=\"2.5cm\"\n\t      margin-right=\"2.5cm\">\n\t      <fo:region-body margin-top=\"3cm\" margin-bottom=\"1.5cm\"\n\t      margin-left=\"2cm\" margin-right=\"2cm\"/>\n\t      <fo:extension-region-start extent=\"1cm\" distance=\"0.5cm\"/>\n\t      <fo:extension-region-end extent=\"1cm\" distance=\"0.5cm\"/>\n\t      <fo:region-before precedence=\"true\" extent=\"3cm\"/>\n\t      <fo:region-after precedence=\"true\" extent=\"1.5cm\"/>\n\t      <fo:region-start extent=\"1cm\"/>\n\t      <fo:region-end extent=\"1cm\"/>\n\t      </fo:simple-page-master>"
+  },
+  {
+    "index": 67,
+    "start_line": 9460,
+    "end_line": 9460,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_extension-region-start",
+    "target_file": "fo-extension-region-start.md",
+    "content": "Empty."
+  },
+  {
+    "index": 68,
+    "start_line": 9482,
+    "end_line": 9482,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_extension-region-end",
+    "target_file": "fo-extension-region-end.md",
+    "content": "Empty."
+  },
+  {
+    "index": 69,
+    "start_line": 9492,
+    "end_line": 9492,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_shape-path-specifier",
+    "target_file": "fo-shape-path-specifier.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 70,
+    "start_line": 9555,
+    "end_line": 9557,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow",
+    "target_file": "fo-flow.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 71,
+    "start_line": 9607,
+    "end_line": 9609,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_static-content",
+    "target_file": "fo-static-content.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 72,
+    "start_line": 9644,
+    "end_line": 9648,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_title",
+    "target_file": "fo-title.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\"\nhref=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\"\nxlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 73,
+    "start_line": 9707,
+    "end_line": 9760,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow-map",
+    "target_file": "fo-flow-map.md",
+    "content": "<fo:flow-map>\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier\n        flow-name-reference=\"xsl-region-body\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier\n        region-name-reference=\"xsl-region-body\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier\n        flow-name-reference=\"xsl-region-before\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier\n        region-name-reference=\"xsl-region-before\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier\n        flow-name-reference=\"xsl-region-after\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier\n        region-name-reference=\"xsl-region-after\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier\n        flow-name-reference=\"xsl-region-start\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier\n        region-name-reference=\"xsl-region-start\"/>\n    </fo:flow-target-list>\n  </fo:flow-assignment>\n  <fo:flow-assignment>\n    <fo:flow-source-list>\n      <fo:flow-name-specifier\n        flow-name-reference=\"xsl-region-end\"/>\n    </fo:flow-source-list>\n    <fo:flow-target-list>\n      <fo:region-name-specifier\n        region-name-reference=\"xsl-region-end\"/>\n     </fo:flow-target-list>\n  </fo:flow-assignment>\n</fo:flow-map>"
+  },
+  {
+    "index": 74,
+    "start_line": 9763,
+    "end_line": 9765,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow-map",
+    "target_file": "fo-flow-map.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_flow-assignment\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">flow-assignment</loc>+)"
+  },
+  {
+    "index": 75,
+    "start_line": 9791,
+    "end_line": 9793,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow-assignment",
+    "target_file": "fo-flow-assignment.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_flow-source-list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">flow-source-list</loc>,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_flow-target-list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">flow-target-list</loc>)"
+  },
+  {
+    "index": 76,
+    "start_line": 9819,
+    "end_line": 9821,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow-source-list",
+    "target_file": "fo-flow-source-list.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_flow-name-specifier\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">flow-name-specifier</loc>+)"
+  },
+  {
+    "index": 77,
+    "start_line": 9843,
+    "end_line": 9845,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow-name-specifier",
+    "target_file": "fo-flow-name-specifier.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 78,
+    "start_line": 9872,
+    "end_line": 9874,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_flow-target-list",
+    "target_file": "fo-flow-target-list.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_region-name-specifier\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">region-name-specifier</loc>+)"
+  },
+  {
+    "index": 79,
+    "start_line": 9896,
+    "end_line": 9898,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-name-specifier",
+    "target_file": "fo-region-name-specifier.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 80,
+    "start_line": 9921,
+    "end_line": 9936,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-name-specifier",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n  <chapter>\n    <title>Chapter title</title>\n    <section>\n      <title>First section title</title>\n      <paragraph>Section one's first paragraph.</paragraph>\n      <paragraph>Section one's second paragraph.</paragraph>\n    </section>\n    <section>\n      <title>Second section title</title>\n      <paragraph>Section two's only paragraph.</paragraph>\n    </section>\n  </chapter>\n</doc>"
+  },
+  {
+    "index": 81,
+    "start_line": 9976,
+    "end_line": 10024,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-name-specifier",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\n\n<xsl:template match=\"chapter\">\n  <fo:block break-before=\"page\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"chapter/title\">\n  <fo:block text-align=\"center\" space-after=\"8pt\"\n            space-before=\"16pt\" space-after.precedence=\"3\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"section\">\n  <xsl:apply-templates/>\n</xsl:template>\n\n<xsl:template match=\"section/title\">\n  <fo:block text-align=\"center\" space-after=\"6pt\"\n            space-before=\"12pt\" space-before.precedence=\"0\"\n            space-after.precedence=\"3\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"paragraph[1]\" priority=\"1\">\n  <fo:block text-indent=\"0pc\" space-after=\"7pt\"\n            space-before.minimum=\"6pt\" space-before.optimum=\"8pt\"\n            space-before.maximum=\"10pt\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"paragraph\">\n  <fo:block text-indent=\"2pc\" space-after=\"7pt\"\n            space-before.minimum=\"6pt\" space-before.optimum=\"8pt\"\n            space-before.maximum=\"10pt\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 82,
+    "start_line": 10027,
+    "end_line": 10061,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_region-name-specifier",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block break-before=\"page\">\n\n  <fo:block text-align=\"center\" space-after=\"8pt\"\n    space-before=\"16pt\"\n    space-after.precedence=\"3\">Chapter title\n  </fo:block>\n\n  <fo:block text-align=\"center\" space-after=\"6pt\"\n    space-before=\"12pt\" space-before.precedence=\"0\"\n    space-after.precedence=\"3\">First section title\n  </fo:block>\n\n  <fo:block text-indent=\"0pc\" space-after=\"7pt\"\n    space-before.minimum=\"6pt\" space-before.optimum=\"8pt\"\n    space-before.maximum=\"10pt\">Section one's first paragraph.\n  </fo:block>\n\n  <fo:block text-indent=\"2pc\" space-after=\"7pt\"\n    space-before.minimum=\"6pt\" space-before.optimum=\"8pt\"\n    space-before.maximum=\"10pt\">Section one's second paragraph.\n  </fo:block>\n\n  <fo:block text-align=\"center\" space-after=\"6pt\"\n    space-before=\"12pt\" space-before.precedence=\"0\"\n    space-after.precedence=\"3\">Second section title\n  </fo:block>\n\n  <fo:block text-indent=\"0pc\" space-after=\"7pt\"\n    space-before.minimum=\"6pt\" space-before.optimum=\"8pt\"\n    space-before.maximum=\"10pt\">Section two's only paragraph.\n  </fo:block>\n\n</fo:block>"
+  },
+  {
+    "index": 83,
+    "start_line": 10113,
+    "end_line": 10115,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_block",
+    "target_file": "fo-block.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 84,
+    "start_line": 10236,
+    "end_line": 10238,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_block-container",
+    "target_file": "fo-block-container.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 85,
+    "start_line": 10288,
+    "end_line": 10288,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "fo-alternative-copyfit-content.md",
+    "content": "(%block;)*"
+  },
+  {
+    "index": 86,
+    "start_line": 10290,
+    "end_line": 10317,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "fo-alternative-copyfit-content.md",
+    "content": "<fo:flow flow-name=\"A\">\n <fo:alternative-copyfit-content>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\">Crucis rosa ut \nhoc sien qua non res veni.</fo:block>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Etiam tristique, \nnulla a pulvinar hendrerit nihil tortor urna auctor etim\ndomine secularia cali sed ut quotie ire in domince hoc fantus quis eius rei rei.\n</fo:block>\n </fo:alternative-copyfit-content>\n\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> \nLorem maecenas blandit ac, neque sed ut pulvinar, lectus sagittis \nsapien per risus vel.  Ligula sapien sed morbi cras tellus commodo. \nSi qua ex docet dei etris crucis</fo:block>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> curabitur \nmagna nis, faucibus sed ornare sed, congue eu dui. \nPellentesque habitant morbi tristique senectus et netus et \nmalessecularia uada fames ac turpis egestas. </fo:block>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Nunc sit amet dolor \nsed sem congue mattis sed ut arcu. Mauris id magna sit amet elit aliquam.</fo:block>\n<fo:block>Pellentesque habitant morbi tristique senectus et netus et malesuada\nfames.</fo:block>\n</fo:flow>"
+  },
+  {
+    "index": 87,
+    "start_line": 10350,
+    "end_line": 10355,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n<p>This is the text of a paragraph that is going to be\npresented with the first line in small-caps.</p>\n</doc>"
+  },
+  {
+    "index": 88,
+    "start_line": 10357,
+    "end_line": 10371,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <fo:initial-property-set font-variant=\"small-caps\"/>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 89,
+    "start_line": 10374,
+    "end_line": 10380,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block>\n  <fo:initial-property-set font-variant=\"small-caps\">\n  </fo:initial-property-set>This is the text of a paragraph that is going to be\npresented with the first line in small-caps.\n</fo:block>"
+  },
+  {
+    "index": 90,
+    "start_line": 10385,
+    "end_line": 10392,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n  <figure>\n    <photo image=\"TH0317A.jpg\"/>\n    <caption>C'ieng Tamlung of C'ieng Mai</caption>\n  </figure>\n</doc>"
+  },
+  {
+    "index": 91,
+    "start_line": 10397,
+    "end_line": 10423,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"figure\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"photo\">\n  <fo:block text-align=\"center\">\n    <fo:external-graphic src=\"'url({@image})'\"/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"caption\">\n  <fo:block space-before=\"3pt\" text-align=\"center\"\n    start-indent=\"10mm\" end-indent=\"10mm\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 92,
+    "start_line": 10425,
+    "end_line": 10434,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block>\n  <fo:block text-align=\"center\">\n    <fo:external-graphic src=\"'url(TH0317A.jpg)'\"/>\n  </fo:block>\n\n  <fo:block space-before=\"3pt\" text-align=\"center\" start-indent=\"10mm\"\n    end-indent=\"10mm\">C'ieng Tamlung of C'ieng Mai</fo:block>\n</fo:block>"
+  },
+  {
+    "index": 93,
+    "start_line": 10439,
+    "end_line": 10449,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<!DOCTYPE doc SYSTEM \"pgref.dtd\">\n<doc>\n  <chapter id=\"x\"><title>Chapter</title>\n    <p>Text</p>\n  </chapter>\n  <chapter><title>Chapter</title>\n    <p>For a description of X see <ref refid=\"x\"/>.</p>\n  </chapter>\n</doc>"
+  },
+  {
+    "index": 94,
+    "start_line": 10455,
+    "end_line": 10507,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"doc\">\n  <fo:root>\n    <fo:layout-master-set>\n      <fo:simple-page-master master-name=\"page\"\n        page-height=\"297mm\" page-width=\"210mm\"\n        margin-top=\"20mm\" margin-bottom=\"10mm\"\n        margin-left=\"25mm\" margin-right=\"25mm\">\n        <fo:region-body\n          margin-top=\"0mm\" margin-bottom=\"15mm\"\n          margin-left=\"0mm\" margin-right=\"0mm\"/>\n        <fo:region-after extent=\"10mm\"/>\n      </fo:simple-page-master>\n    </fo:layout-master-set>\n    <fo:page-sequence master-reference=\"page\">\n      <fo:static-content flow-name=\"xsl-region-after\">\n        <fo:block>\n          <xsl:text>Page </xsl:text>\n          <fo:page-number/>\n        </fo:block>\n      </fo:static-content>\n      <fo:flow flow-name=\"xsl-region-body\">\n        <xsl:apply-templates/>\n      </fo:flow>\n    </fo:page-sequence>\n  </fo:root>\n</xsl:template>\n\n<xsl:template match=\"chapter/title\">\n  <fo:block id=\"{generate-id(.)}\">\n    <xsl:number level=\"multiple\" count=\"chapter\" format=\"1. \"/>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"ref\">\n  <xsl:text>page </xsl:text>\n  <fo:page-number-citation refid=\"{generate-id(id(@refid)/title)}\"/>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 95,
+    "start_line": 10510,
+    "end_line": 10536,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:root>\n  <fo:layout-master-set>\n    <fo:simple-page-master master-name=\"page\"\n      page-height=\"297mm\" page-width=\"210mm\"\n      margin-top=\"20mm\" margin-bottom=\"10mm\"\n      margin-left=\"25mm\" margin-right=\"25mm\">\n      <fo:region-body margin-top=\"0mm\" margin-bottom=\"15mm\"\n        margin-left=\"0mm\" margin-right=\"0mm\"/>\n      <fo:region-after extent=\"10mm\"/>\n    </fo:simple-page-master>\n  </fo:layout-master-set>\n  <fo:page-sequence master-reference=\"page\">\n    <fo:static-content flow-name=\"xsl-region-after\">\n      <fo:block>Page <fo:page-number/>\n      </fo:block>\n    </fo:static-content>\n    <fo:flow flow-name=\"xsl-region-body\">\n      <fo:block id=\"N5\">1. Chapter</fo:block>\n      <fo:block>Text</fo:block>\n      <fo:block id=\"N13\">2. Chapter</fo:block>\n      <fo:block>For a description of X see page <fo:page-number-citation refid=\"N5\"/>\n      </fo:block>\n    </fo:flow>\n  </fo:page-sequence>\n</fo:root>"
+  },
+  {
+    "index": 96,
+    "start_line": 10541,
+    "end_line": 10562,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n  <chapter><title>Chapter</title>\n    <p>Text</p>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n  </chapter>\n  <chapter><title>Chapter</title>\n    <p>Text</p>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n  </chapter>\n</doc>"
+  },
+  {
+    "index": 97,
+    "start_line": 10566,
+    "end_line": 10629,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"doc\">\n  <!-- create the table of contents -->\n  <xsl:apply-templates select=\"chapter/title\" mode=\"toc\"/>\n  <!-- do the document -->\n  <xsl:apply-templates/>\n</xsl:template>\n\n<xsl:template match=\"chapter/title\" mode=\"toc\">\n  <fo:block text-align-last=\"justify\">\n    <fo:basic-link internal-destination=\"{generate-id(.)}\">\n      <xsl:number level=\"multiple\" count=\"chapter\" format=\"1. \"/>\n      <xsl:apply-templates/>\n    </fo:basic-link>\n    <xsl:text> </xsl:text>\n    <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n               leader-length.maximum=\"100%\" leader-pattern=\"dots\"/>\n    <xsl:text> </xsl:text>\n    <fo:page-number-citation ref-id=\"{generate-id(.)}\"/>\n  </fo:block>\n  <xsl:apply-templates select=\"../section/title\" mode=\"toc\"/>\n</xsl:template>\n\n<xsl:template match=\"section/title\" mode=\"toc\">\n  <fo:block start-indent=\"10mm\" text-align-last=\"justify\">\n    <fo:basic-link internal-destination=\"{generate-id(.)}\">\n      <xsl:number level=\"multiple\" count=\"chapter|section\" format=\"1.1 \"/>\n      <xsl:apply-templates/>\n    </fo:basic-link>\n    <xsl:text> </xsl:text>\n    <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n               leader-length.maximum=\"100%\" leader-pattern=\"dots\"/>\n    <xsl:text> </xsl:text>\n    <fo:page-number-citation ref-id=\"{generate-id(.)}\"/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"chapter/title\">\n  <fo:block id=\"{generate-id(.)}\">\n    <xsl:number level=\"multiple\" count=\"chapter\" format=\"1. \"/>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"section/title\">\n  <fo:block id=\"{generate-id(.)}\">\n    <xsl:number level=\"multiple\" count=\"chapter|section\" format=\"1.1 \"/>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 98,
+    "start_line": 10632,
+    "end_line": 10723,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block text-align-last=\"justify\">\n  <fo:basic-link internal-destination=\"N4\">1. Chapter\n  </fo:basic-link>\n  <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n    leader-length.maximum=\"100%\" leader-pattern=\"dots\">\n  </fo:leader>\n  <fo:page-number-citation ref-id=\"N4\">\n  </fo:page-number-citation>\n</fo:block>\n<fo:block start-indent=\"10mm\" text-align-last=\"justify\">\n  <fo:basic-link internal-destination=\"N11\">1.1 Section\n  </fo:basic-link>\n  <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n    leader-length.maximum=\"100%\" leader-pattern=\"dots\">\n  </fo:leader>\n  <fo:page-number-citation ref-id=\"N11\">\n  </fo:page-number-citation>\n</fo:block>\n<fo:block start-indent=\"10mm\" text-align-last=\"justify\">\n  <fo:basic-link internal-destination=\"N19\">1.2 Section\n  </fo:basic-link>\n  <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n    leader-length.maximum=\"100%\" leader-pattern=\"dots\">\n  </fo:leader>\n  <fo:page-number-citation ref-id=\"N19\">\n  </fo:page-number-citation>\n</fo:block>\n<fo:block text-align-last=\"justify\">\n  <fo:basic-link internal-destination=\"N28\">2. Chapter\n  </fo:basic-link>\n  <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n    leader-length.maximum=\"100%\" leader-pattern=\"dots\">\n  </fo:leader>\n  <fo:page-number-citation ref-id=\"N28\">\n  </fo:page-number-citation>\n</fo:block>\n<fo:block start-indent=\"10mm\" text-align-last=\"justify\">\n  <fo:basic-link internal-destination=\"N35\">2.1 Section\n  </fo:basic-link>\n  <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n    leader-length.maximum=\"100%\" leader-pattern=\"dots\">\n  </fo:leader>\n  <fo:page-number-citation ref-id=\"N35\">\n  </fo:page-number-citation>\n</fo:block>\n<fo:block start-indent=\"10mm\" text-align-last=\"justify\">\n  <fo:basic-link internal-destination=\"N43\">2.2 Section\n  </fo:basic-link>\n  <fo:leader leader-length.minimum=\"12pt\" leader-length.optimum=\"40pt\"\n    leader-length.maximum=\"100%\" leader-pattern=\"dots\">\n  </fo:leader>\n  <fo:page-number-citation ref-id=\"N43\">\n  </fo:page-number-citation>\n</fo:block>\n\n<fo:block id=\"N4\">1. Chapter\n</fo:block>\n\n<fo:block>Text\n</fo:block>\n\n<fo:block id=\"N11\">1.1 Section\n</fo:block>\n\n<fo:block>Text\n</fo:block>\n\n<fo:block id=\"N19\">1.2 Section\n</fo:block>\n\n<fo:block>Text\n</fo:block>\n\n<fo:block id=\"N28\">2. Chapter\n</fo:block>\n\n<fo:block>Text\n</fo:block>\n\n<fo:block id=\"N35\">2.1 Section\n</fo:block>\n\n<fo:block>Text\n</fo:block>\n\n<fo:block id=\"N43\">2.2 Section\n</fo:block>\n\n<fo:block>Text\n</fo:block>"
+  },
+  {
+    "index": 99,
+    "start_line": 10759,
+    "end_line": 10761,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bidi-override",
+    "target_file": "fo-bidi-override.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 100,
+    "start_line": 10838,
+    "end_line": 10840,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_character",
+    "target_file": "fo-character.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 101,
+    "start_line": 10913,
+    "end_line": 10915,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_initial-property-set",
+    "target_file": "fo-initial-property-set.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 102,
+    "start_line": 10987,
+    "end_line": 10989,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_external-graphic",
+    "target_file": "fo-external-graphic.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 103,
+    "start_line": 11154,
+    "end_line": 11156,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_inline",
+    "target_file": "fo-inline.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 104,
+    "start_line": 11354,
+    "end_line": 11356,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_inline-container",
+    "target_file": "fo-inline-container.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 105,
+    "start_line": 11456,
+    "end_line": 11458,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_leader",
+    "target_file": "fo-leader.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 106,
+    "start_line": 11546,
+    "end_line": 11548,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-number",
+    "target_file": "fo-page-number.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 107,
+    "start_line": 11614,
+    "end_line": 11616,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-number-citation",
+    "target_file": "fo-page-number-citation.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 108,
+    "start_line": 11682,
+    "end_line": 11684,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_page-number-citation-last",
+    "target_file": "fo-page-number-citation-last.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 109,
+    "start_line": 11736,
+    "end_line": 11738,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_folio-prefix",
+    "target_file": "fo-folio-prefix.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 110,
+    "start_line": 11761,
+    "end_line": 11763,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_folio-suffix",
+    "target_file": "fo-folio-suffix.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 111,
+    "start_line": 11824,
+    "end_line": 11826,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_scaling-value-citation",
+    "target_file": "fo-scaling-value-citation.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 112,
+    "start_line": 11896,
+    "end_line": 11898,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby",
+    "target_file": "fo-ruby.md",
+    "content": "((fo:ruby-base, (fo:ruby-text |\n    (fo:ruby-parenthesis, fo:ruby-text, fo:ruby-parenthesis)) |\n    (fo:ruby-base-container, fo:ruby-text-container, fo:ruby-text-container?))"
+  },
+  {
+    "index": 113,
+    "start_line": 11959,
+    "end_line": 11959,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-base",
+    "target_file": "fo-ruby-base.md",
+    "content": "(#PCDATA|%inline;)*"
+  },
+  {
+    "index": 114,
+    "start_line": 11999,
+    "end_line": 11999,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text",
+    "target_file": "fo-ruby-text.md",
+    "content": "#PCDATA"
+  },
+  {
+    "index": 115,
+    "start_line": 12046,
+    "end_line": 12046,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-parenthesis",
+    "target_file": "fo-ruby-parenthesis.md",
+    "content": "(#PCDATA)"
+  },
+  {
+    "index": 116,
+    "start_line": 12084,
+    "end_line": 12084,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-base_container",
+    "target_file": "fo-ruby-base-container-text.md",
+    "content": "(fo:ruby-base)+"
+  },
+  {
+    "index": 117,
+    "start_line": 12110,
+    "end_line": 12110,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "fo-ruby-text-container.md",
+    "content": "(fo:ruby-text)+"
+  },
+  {
+    "index": 118,
+    "start_line": 12230,
+    "end_line": 12256,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:table>\n <fo:table-header>\n   <fo:table-header-alternatives>\n     <fo:conditional-table-header-reference> \n       ...\n     </fo:conditional-table-header-reference>\n     <fo:conditional-table-header-reference header-position=\"page\">\n       ...\n     </fo:conditional-table-header-reference>\n     <fo:conditional-table-header-reference header-position=\"column\">\n       ...\n     </fo:conditional-table-header-reference>\n     ...\n   </fo:table-header-alternatives>\n </fo:table-header>\n <fo:table-footer>\n   <fo:table-footer-alternatives>\n   </fo:table-footer-alternatives>\n </fo:table-footer>\n <fo:table-body>\n   ...\n </fo:table-body>\n</fo:table>"
+  },
+  {
+    "index": 119,
+    "start_line": 12433,
+    "end_line": 12451,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n<table>\n<caption><p>Caption for this table</p></caption>\n<tgroup cols=\"3\" width=\"325pt\">\n<colspec colwidth=\"100pt\"/>\n<colspec colwidth=\"150pt\"/>\n<colspec colwidth=\"75pt\"/>\n<tbody>\n<row>\n<entry><p>Cell 1</p></entry>\n<entry><p>Cell 2</p></entry>\n<entry><p>Cell 3</p></entry>\n</row>\n</tbody>\n</tgroup>\n</table>\n</doc>"
+  },
+  {
+    "index": 120,
+    "start_line": 12458,
+    "end_line": 12520,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:attribute-set name=\"inside-table\">\n  <xsl:attribute name=\"start-indent\">0pt</xsl:attribute>\n  <xsl:attribute name=\"text-align\">start</xsl:attribute>\n</xsl:attribute-set>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"table\">\n  <fo:table-and-caption text-align=\"center\" start-indent=\"100pt\">\n    <xsl:apply-templates/>\n  </fo:table-and-caption>\n</xsl:template>\n\n<xsl:template match=\"caption\">\n  <fo:table-caption xsl:use-attribute-sets=\"inside-table\">\n    <xsl:apply-templates/>\n  </fo:table-caption>\n</xsl:template>\n\n<xsl:template match=\"tgroup\">\n  <fo:table width=\"{@width}\" table-layout=\"fixed\">\n    <xsl:apply-templates/>\n  </fo:table>\n</xsl:template>\n\n<xsl:template match=\"colspec\">\n  <fo:table-column column-width=\"{@colwidth}\">\n    <xsl:attribute name=\"column-number\">\n      <xsl:number count=\"colspec\"/>\n    </xsl:attribute>\n  </fo:table-column>\n</xsl:template>\n\n<xsl:template match=\"tbody\">\n  <fo:table-body xsl:use-attribute-sets=\"inside-table\">\n    <xsl:apply-templates/>\n  </fo:table-body>\n</xsl:template>\n\n<xsl:template match=\"row\">\n  <fo:table-row>\n    <xsl:apply-templates/>\n  </fo:table-row>\n</xsl:template>\n\n<xsl:template match=\"entry\">\n  <fo:table-cell>\n    <xsl:apply-templates/>\n  </fo:table-cell>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 121,
+    "start_line": 12523,
+    "end_line": 12564,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:table-and-caption text-align=\"center\" start-indent=\"100pt\">\n\n  <fo:table-caption start-indent=\"0pt\" text-align=\"start\">\n    <fo:block>Caption for this table\n    </fo:block>\n  </fo:table-caption>\n\n  <fo:table width=\"325pt\" table-layout=\"fixed\">\n\n    <fo:table-column column-width=\"100pt\" column-number=\"1\">\n    </fo:table-column>\n    <fo:table-column column-width=\"150pt\" column-number=\"2\">\n    </fo:table-column>\n    <fo:table-column column-width=\"75pt\" column-number=\"3\">\n    </fo:table-column>\n\n    <fo:table-body start-indent=\"0pt\" text-align=\"start\">\n\n    <fo:table-row>\n\n    <fo:table-cell>\n    <fo:block>Cell 1\n    </fo:block>\n    </fo:table-cell>\n    <fo:table-cell>\n    <fo:block>Cell 2\n    </fo:block>\n    </fo:table-cell>\n    <fo:table-cell>\n    <fo:block>Cell 3\n    </fo:block>\n    </fo:table-cell>\n\n    </fo:table-row>\n\n    </fo:table-body>\n\n  </fo:table>\n\n</fo:table-and-caption>"
+  },
+  {
+    "index": 122,
+    "start_line": 12572,
+    "end_line": 12589,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n<table>\n<tgroup cols=\"3\">\n<colspec colname=\"col1\" colwidth=\"1*\"/>\n<colspec colname=\"col2\" colwidth=\"2*+2pi\"/>\n<colspec colname=\"col3\" colwidth=\"72\"/>\n<tbody>\n<row>\n<entry colnum=\"1\" valign=\"top\"><p>Cell 1</p></entry>\n<entry colnum=\"2\" valign=\"middle\" align=\"center\"><p>Cell 2</p></entry>\n<entry colnum=\"3\" align=\"center\"><p>Cell 3</p></entry>\n</row>\n</tbody>\n</tgroup>\n</table>\n</doc>"
+  },
+  {
+    "index": 123,
+    "start_line": 12591,
+    "end_line": 12763,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"table\">\n  <fo:table width=\"12cm\" table-layout=\"fixed\">\n    <xsl:apply-templates/>\n  </fo:table>\n</xsl:template>\n\n<xsl:template match=\"colspec\">\n  <fo:table-column>\n    <xsl:attribute name=\"column-number\">\n      <xsl:number count=\"colspec\"/>\n    </xsl:attribute>\n    <xsl:attribute name=\"column-width\">\n      <xsl:call-template name=\"calc.column.width\">\n        <xsl:with-param name=\"colwidth\">\n          <xsl:value-of select=\"@colwidth\"/>\n        </xsl:with-param>\n      </xsl:call-template>\n    </xsl:attribute>\n  </fo:table-column>\n</xsl:template>\n\n<xsl:template match=\"tbody\">\n  <fo:table-body>\n    <xsl:apply-templates/>\n  </fo:table-body>\n</xsl:template>\n\n<xsl:template match=\"row\">\n  <fo:table-row>\n    <xsl:apply-templates/>\n  </fo:table-row>\n</xsl:template>\n\n<xsl:template match=\"entry\">\n  <fo:table-cell column-number=\"{@colnum}\">\n    <xsl:if test=\"@valign\">\n      <xsl:choose>\n        <xsl:when test=\"@valign='middle'\">\n          <xsl:attribute name=\"display-align\">center</xsl:attribute>\n        </xsl:when>\n        <xsl:when test=\"@valign='top'\">\n          <xsl:attribute name=\"display-align\">before</xsl:attribute>\n        </xsl:when>\n        <xsl:when test=\"@valign='bottom'\">\n          <xsl:attribute name=\"display-align\">after</xsl:attribute>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:attribute name=\"display-align\">before</xsl:attribute>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:if>\n    <xsl:if test=\"@align\">\n      <xsl:attribute name=\"text-align\">\n        <xsl:value-of select=\"@align\"/>\n      </xsl:attribute>\n    </xsl:if>\n    <xsl:apply-templates/>\n  </fo:table-cell>\n</xsl:template>\n\n\n<xsl:template name=\"calc.column.width\">\n<!-- **\n     * <p>Calculate an XSL FO table column-width specification from a\n     * full relative table column-width specification.</p>\n     *\n     * <p>Table column-widths are in the following basic\n     * forms:</p>\n     *\n     * <ul>\n     * <li><b>99.99units</b>, a fixed length-specifier.</li>\n     * <li><b>99.99</b>, a fixed length-specifier without any units.</li>\n     * <li><b>99.99*</b>, a relative length-specifier.</li>\n     * <li><b>99.99*+99.99units</b>, a combination of both.</li>\n     * </ul>\n     *\n     * <p>The units are points (pt), picas (pi), centimeters (cm),\n     * millimeters (mm), and inches (in). These are the same units as XSL,\n     * except that XSL abbreviates picas \"pc\" instead of \"pi\". If a length\n     * specifier has no units, the default unit (pt) is assumed.</p>\n     *\n     * <p>Relative length-specifiers are represented in XSL with the\n     * proportional-column-width() function.</p>\n     *\n     * <p>Here are some examples:</p>\n     *\n     * <ul>\n     * <li>\"36pt\" becomes \"36pt\"</li>\n     * <li>\"3pi\" becomes \"3pc\"</li>\n     * <li>\"36\" becomes \"36pt\"</li>\n     * <li>\"3*\" becomes \"proportional-column-width(3)\"</li>\n     * <li>\"3*+2pi\" becomes \"proportional-column-width(3)+2pc\"</li>\n     * <li>\"1*+2\" becomes \"proportional-column-width(1)+2pt\"</li>\n     * </ul>\n     *\n     * @param colwidth The column width specification.\n     *\n     * @returns The XSL column width specification.\n     * -->\n  <xsl:param name=\"colwidth\">1*</xsl:param>\n\n  <!-- Ok, the colwidth could have any one of the following forms: -->\n  <!--        1*       = proportional width -->\n  <!--     1unit       = 1.0 units wide -->\n  <!--         1       = 1pt wide -->\n  <!--  1*+1unit       = proportional width + some fixed width -->\n  <!--      1*+1       = proportional width + some fixed width -->\n\n  <!-- If it has a proportional width, translate it to XSL -->\n  <xsl:if test=\"contains($colwidth, '*')\">\n    <xsl:text>proportional-column-width(</xsl:text>\n    <xsl:value-of select=\"substring-before($colwidth, '*')\"/>\n    <xsl:text>)</xsl:text>\n  </xsl:if>\n\n  <!-- Now get the non-proportional part of the specification -->\n  <xsl:variable name=\"width-units\">\n    <xsl:choose>\n      <xsl:when test=\"contains($colwidth, '*')\">\n        <xsl:value-of\n             select=\"normalize-space(substring-after($colwidth, '*'))\"/>\n      </xsl:when>\n      <xsl:otherwise>\n        <xsl:value-of select=\"normalize-space($colwidth)\"/>\n      </xsl:otherwise>\n    </xsl:choose>\n  </xsl:variable>\n\n  <!-- Now the width-units could have any one of the following forms: -->\n  <!--                 = <empty string> -->\n  <!--     1unit       = 1.0 units wide -->\n  <!--         1       = 1pt wide -->\n  <!-- with an optional leading sign -->\n\n  <!-- Get the width part by blanking out the units part and discarding -->\n  <!-- white space. -->\n  <xsl:variable name=\"width\"\n       select=\"normalize-space(translate($width-units,\n                                         '+-0123456789.abcdefghijklmnopqrstuvwxyz',\n                                         '+-0123456789.'))\"/>\n\n  <!-- Get the units part by blanking out the width part and discarding -->\n  <!-- white space. -->\n  <xsl:variable name=\"units\"\n       select=\"normalize-space(translate($width-units,\n                                         'abcdefghijklmnopqrstuvwxyz+-0123456789.',\n                                         'abcdefghijklmnopqrstuvwxyz'))\"/>\n\n  <!-- Output the width -->\n  <xsl:value-of select=\"$width\"/>\n\n  <!-- Output the units, translated appropriately -->\n  <xsl:choose>\n    <xsl:when test=\"$units = 'pi'\">pc</xsl:when>\n    <xsl:when test=\"$units = '' and $width != ''\">pt</xsl:when>\n    <xsl:otherwise><xsl:value-of select=\"$units\"/></xsl:otherwise>\n  </xsl:choose>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 124,
+    "start_line": 12766,
+    "end_line": 12791,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_ruby-text-container",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:table width=\"12cm\" table-layout=\"fixed\">\n  <fo:table-column column-number=\"1\" column-width=\"proportional-column-width(1)\">\n  </fo:table-column>\n  <fo:table-column column-number=\"2\" column-width=\"proportional-column-width(2)+2pc\">\n  </fo:table-column>\n  <fo:table-column column-number=\"3\" column-width=\"72pt\">\n  </fo:table-column>\n  <fo:table-body>\n    <fo:table-row>\n      <fo:table-cell column-number=\"1\" display-align=\"before\">\n        <fo:block>Cell 1\n        </fo:block>\n      </fo:table-cell>\n      <fo:table-cell column-number=\"2\" display-align=\"center\" text-align=\"center\">\n        <fo:block>Cell 2\n        </fo:block>\n      </fo:table-cell>\n      <fo:table-cell column-number=\"3\" text-align=\"center\">\n        <fo:block>Cell 3\n        </fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n  </fo:table-body>\n</fo:table>"
+  },
+  {
+    "index": 125,
+    "start_line": 12830,
+    "end_line": 12832,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-and-caption",
+    "target_file": "fo-table-and-caption.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-caption\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-caption</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table</loc>)"
+  },
+  {
+    "index": 126,
+    "start_line": 13013,
+    "end_line": 13015,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table",
+    "target_file": "fo-table.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-column\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-column</loc>*,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-header\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-header</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-footer\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-footer</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-body\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-body</loc>+)"
+  },
+  {
+    "index": 127,
+    "start_line": 13084,
+    "end_line": 13086,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-column",
+    "target_file": "fo-table-column.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 128,
+    "start_line": 13192,
+    "end_line": 13194,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-caption",
+    "target_file": "fo-table-caption.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 129,
+    "start_line": 13238,
+    "end_line": 13243,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-header",
+    "target_file": "fo-table-header.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n  href=\"#fo_table-header-alternatives\"\nxlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-header-alternatives</loc>* , \n<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-row\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-row</loc>+|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-cell\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-cell</loc>+)"
+  },
+  {
+    "index": 130,
+    "start_line": 13325,
+    "end_line": 13327,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-footer",
+    "target_file": "fo-table-footer.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-row\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-row</loc>+|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-cell\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-cell</loc>+)"
+  },
+  {
+    "index": 131,
+    "start_line": 13409,
+    "end_line": 13411,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-body",
+    "target_file": "fo-table-body.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-row\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-row</loc>+|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-cell\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-cell</loc>+)"
+  },
+  {
+    "index": 132,
+    "start_line": 13500,
+    "end_line": 13502,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-row",
+    "target_file": "fo-table-row.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-cell\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-cell</loc>+)"
+  },
+  {
+    "index": 133,
+    "start_line": 13680,
+    "end_line": 13682,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-cell",
+    "target_file": "fo-table-cell.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 134,
+    "start_line": 13741,
+    "end_line": 13748,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-header-alternatives",
+    "target_file": "fo-table-header-alternatives.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" \nhref=\"#fo_conditional-table-header-reference\" \nxlink:type=\"simple\" \nxlink:show=\"replace\" \nxlink:actuate=\"onRequest\">conditional-table-header-reference</loc>\n+)"
+  },
+  {
+    "index": 135,
+    "start_line": 13776,
+    "end_line": 13783,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_table-footer-alternatives",
+    "target_file": "fo-table-footer-alternatives.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" \nhref=\"#fo_conditional-table-footer-reference\" \nxlink:type=\"simple\" \nxlink:show=\"replace\" \nxlink:actuate=\"onRequest\">conditional-table-footer-reference</loc>\n+)"
+  },
+  {
+    "index": 136,
+    "start_line": 13809,
+    "end_line": 13811,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-header-reference",
+    "target_file": "fo-conditional-table-header-reference.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-row\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-row</loc>+|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-cell\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-cell</loc>+)"
+  },
+  {
+    "index": 137,
+    "start_line": 13891,
+    "end_line": 13893,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "fo-conditional-table-footer-reference.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-row\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-row</loc>+|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_table-cell\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">table-cell</loc>+)"
+  },
+  {
+    "index": 138,
+    "start_line": 14020,
+    "end_line": 14026,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<ol>\n<item>List item 1.</item>\n<item>List item 2.</item>\n<item>List item 3.</item>\n</ol>"
+  },
+  {
+    "index": 139,
+    "start_line": 14028,
+    "end_line": 14057,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"ol\">\n  <fo:list-block provisional-distance-between-starts=\"15mm\"\n   provisional-label-separation=\"5mm\">\n    <xsl:apply-templates/>\n  </fo:list-block>\n</xsl:template>\n\n<xsl:template match=\"ol/item\">\n  <fo:list-item>\n    <fo:list-item-label start-indent=\"5mm\" end-indent=\"label-end()\">\n      <fo:block>\n        <xsl:number format=\"a.\"/>\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>\n        <xsl:apply-templates/>\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 140,
+    "start_line": 14060,
+    "end_line": 14098,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:list-block provisional-distance-between-starts=\"15mm\"\n  provisional-label-separation=\"5mm\">\n\n  <fo:list-item>\n    <fo:list-item-label start-indent=\"5mm\" end-indent=\"label-end()\">\n      <fo:block>a.\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>List item 1.\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n\n  <fo:list-item>\n    <fo:list-item-label start-indent=\"5mm\" end-indent=\"label-end()\">\n      <fo:block>b.\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>List item 2.\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n\n  <fo:list-item>\n    <fo:list-item-label start-indent=\"5mm\" end-indent=\"label-end()\">\n      <fo:block>c.\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>List item 3.\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n\n</fo:list-block>"
+  },
+  {
+    "index": 141,
+    "start_line": 14122,
+    "end_line": 14135,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n<dl>\n  <dt>term</dt>\n  <dd>definition</dd>\n  <dt>term</dt>\n  <dt>term</dt>\n  <dd>definition</dd>\n  <dt>term</dt>\n  <dd>definition</dd>\n  <dd>definition</dd>\n</dl>\n</doc>"
+  },
+  {
+    "index": 142,
+    "start_line": 14138,
+    "end_line": 14182,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:list-block provisional-distance-between-starts=\"35mm\"\n  provisional-label-separation=\"5mm\">\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n      <fo:block>term\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n      <fo:block>term\n      </fo:block>\n      <fo:block>term\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n      <fo:block>term\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n</fo:list-block>"
+  },
+  {
+    "index": 143,
+    "start_line": 14185,
+    "end_line": 14223,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:list-block provisional-distance-between-starts=\"35mm\"\n  provisional-label-separation=\"5mm\">\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n      <fo:block>term\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n      <fo:block>term\n      </fo:block>\n      <fo:block>term\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n  <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n      <fo:block>term\n      </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n      <fo:block>definition\n      </fo:block>\n      <fo:block>definition\n      </fo:block>\n    </fo:list-item-body>\n  </fo:list-item>\n</fo:list-block>"
+  },
+  {
+    "index": 144,
+    "start_line": 14225,
+    "end_line": 14248,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:include href=\"dtdd.xsl\"/>\n\n<xsl:template match=\"doc\">\n  <xsl:apply-templates/>\n</xsl:template>\n\n<xsl:template match=\"dl\">\n  <xsl:call-template name=\"process.dl\"/>\n</xsl:template>\n\n<xsl:template match=\"dt|dd\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 145,
+    "start_line": 14250,
+    "end_line": 14398,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:variable name=\"allow-naked-dd\" select=\"true()\"/>\n\n<xsl:template name=\"process.dl\">\n  <fo:list-block provisional-distance-between-starts=\"35mm\"\n   provisional-label-separation=\"5mm\">\n    <xsl:choose>\n      <xsl:when test=\"$allow-naked-dd\">\n        <xsl:call-template name=\"process.dl.content.with.naked.dd\"/>\n      </xsl:when>\n      <xsl:otherwise>\n        <xsl:call-template name=\"process.dl.content\"/>\n      </xsl:otherwise>\n    </xsl:choose>\n  </fo:list-block>\n</xsl:template>\n\n<xsl:template name=\"process.dl.content.with.naked.dd\">\n  <xsl:param name=\"dts\" select=\"./force-list-to-be-empty\"/>\n  <xsl:param name=\"nodes\" select=\"*\"/>\n\n  <xsl:choose>\n    <xsl:when test=\"count($nodes)=0\">\n      <!-- Out of nodes, output any pending DTs -->\n      <xsl:if test=\"count($dts)>0\">\n        <fo:list-item>\n          <fo:list-item-label end-indent=\"label-end()\">\n            <xsl:apply-templates select=\"$dts\"/>\n          </fo:list-item-label>\n          <fo:list-item-body start-indent=\"body-start()\"/>\n        </fo:list-item>\n      </xsl:if>\n    </xsl:when>\n\n    <xsl:when test=\"name($nodes[1])='dd'\">\n      <!-- We found a DD, output the DTs and the DD -->\n      <fo:list-item>\n        <fo:list-item-label end-indent=\"label-end()\">\n          <xsl:apply-templates select=\"$dts\"/>\n        </fo:list-item-label>\n        <fo:list-item-body start-indent=\"body-start()\">\n          <xsl:apply-templates select=\"$nodes[1]\"/>\n        </fo:list-item-body>\n      </fo:list-item>\n      <xsl:call-template name=\"process.dl.content.with.naked.dd\">\n        <xsl:with-param name=\"nodes\" select=\"$nodes[position()>1]\"/>\n      </xsl:call-template>\n    </xsl:when>\n\n    <xsl:when test=\"name($nodes[1])='dt'\">\n      <!-- We found a DT, add it to the list of DTs and loop -->\n      <xsl:call-template name=\"process.dl.content.with.naked.dd\">\n        <xsl:with-param name=\"dts\" select=\"$dts|$nodes[1]\"/>\n        <xsl:with-param name=\"nodes\" select=\"$nodes[position()>1]\"/>\n      </xsl:call-template>\n    </xsl:when>\n\n    <xsl:otherwise>\n      <!-- This shouldn't happen -->\n      <xsl:message>\n        <xsl:text>DT/DD list contained something bogus (</xsl:text>\n        <xsl:value-of select=\"name($nodes[1])\"/>\n        <xsl:text>).</xsl:text>\n      </xsl:message>\n    </xsl:otherwise>\n  </xsl:choose>\n</xsl:template>\n\n<xsl:template name=\"process.dl.content\">\n  <xsl:param name=\"dts\" select=\"./force-list-to-be-empty\"/>\n  <xsl:param name=\"dds\" select=\"./force-list-to-be-empty\"/>\n  <xsl:param name=\"output-on\"></xsl:param>\n  <xsl:param name=\"nodes\" select=\"*\"/>\n\n  <!-- The algorithm here is to build up a list of DTs and DDs, -->\n  <!-- outputing them only on the transition from DD back to DT -->\n\n  <xsl:choose>\n    <xsl:when test=\"count($nodes)=0\">\n      <!-- Out of nodes, output any pending elements -->\n      <xsl:if test=\"count($dts)>0 or count($dds)>0\">\n        <fo:list-item>\n          <fo:list-item-label end-indent=\"label-end()\">\n            <xsl:apply-templates select=\"$dts\"/>\n          </fo:list-item-label>\n          <fo:list-item-body start-indent=\"body-start()\">\n            <xsl:apply-templates select=\"$dds\"/>\n          </fo:list-item-body>\n        </fo:list-item>\n      </xsl:if>\n    </xsl:when>\n\n    <xsl:when test=\"name($nodes[1])=$output-on\">\n      <!-- We're making the transition from DD back to DT -->\n      <fo:list-item>\n        <fo:list-item-label end-indent=\"label-end()\">\n          <xsl:apply-templates select=\"$dts\"/>\n        </fo:list-item-label>\n        <fo:list-item-body start-indent=\"body-start()\">\n          <xsl:apply-templates select=\"$dds\"/>\n        </fo:list-item-body>\n      </fo:list-item>\n\n      <!-- Reprocess this node (and the rest of the node list) -->\n      <!-- resetting the output-on state to nil -->\n      <xsl:call-template name=\"process.dl.content\">\n        <xsl:with-param name=\"nodes\" select=\"$nodes\"/>\n      </xsl:call-template>\n    </xsl:when>\n\n    <xsl:when test=\"name($nodes[1])='dt'\">\n      <!-- We found a DT, add it to the list and loop -->\n      <xsl:call-template name=\"process.dl.content\">\n        <xsl:with-param name=\"dts\" select=\"$dts|$nodes[1]\"/>\n        <xsl:with-param name=\"dds\" select=\"$dds\"/>\n        <xsl:with-param name=\"nodes\" select=\"$nodes[position()>1]\"/>\n      </xsl:call-template>\n    </xsl:when>\n\n    <xsl:when test=\"name($nodes[1])='dd'\">\n      <!-- We found a DD, add it to the list and loop, noting that -->\n      <!-- the next time we cross back to DT's, we need to output the -->\n      <!-- current DT/DDs. -->\n      <xsl:call-template name=\"process.dl.content\">\n        <xsl:with-param name=\"dts\" select=\"$dts\"/>\n        <xsl:with-param name=\"dds\" select=\"$dds|$nodes[1]\"/>\n        <xsl:with-param name=\"output-on\">dt</xsl:with-param>\n        <xsl:with-param name=\"nodes\" select=\"$nodes[position()>1]\"/>\n      </xsl:call-template>\n    </xsl:when>\n\n    <xsl:otherwise>\n      <!-- This shouldn't happen -->\n      <xsl:message>\n        <xsl:text>DT/DD list contained something bogus (</xsl:text>\n        <xsl:value-of select=\"name($nodes[1])\"/>\n        <xsl:text>).</xsl:text>\n      </xsl:message>\n    </xsl:otherwise>\n  </xsl:choose>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 146,
+    "start_line": 14446,
+    "end_line": 14448,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-block",
+    "target_file": "fo-list-block.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_list-item\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">list-item</loc>+)"
+  },
+  {
+    "index": 147,
+    "start_line": 14528,
+    "end_line": 14530,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item",
+    "target_file": "fo-list-item.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_list-item-label\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">list-item-label</loc>,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_list-item-body\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">list-item-body</loc>)"
+  },
+  {
+    "index": 148,
+    "start_line": 14578,
+    "end_line": 14580,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-body",
+    "target_file": "fo-list-item-body.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 149,
+    "start_line": 14617,
+    "end_line": 14619,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "fo-list-item-label.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 150,
+    "start_line": 14696,
+    "end_line": 14717,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "properties-dynamic-effects.md",
+    "content": "<doc>\n  <chapter><title>Chapter</title>\n    <p>Text</p>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n  </chapter>\n  <chapter><title>Chapter</title>\n    <p>Text</p>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n    <section><title>Section</title>\n    <p>Text</p>\n    </section>\n  </chapter>\n</doc>"
+  },
+  {
+    "index": 151,
+    "start_line": 14734,
+    "end_line": 14807,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "properties-dynamic-effects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"doc\">\n  <!-- create the table of contents -->\n  <xsl:apply-templates select=\"chapter/title\" mode=\"toc\"/>\n  <!-- do the document -->\n  <xsl:apply-templates/>\n</xsl:template>\n\n<xsl:template match=\"chapter/title\" mode=\"toc\">\n  <fo:multi-switch>\n    <fo:multi-case case-name=\"collapsed\" case-title=\"collapsed\"\n    starting-state=\"show\">\n      <fo:block>\n        <fo:multi-toggle switch-to=\"expanded\">\n          <fo:external-graphic href=\"plus-icon.gif\"/>\n        </fo:multi-toggle>\n        <fo:basic-link internal-destination=\"{generate-id(.)}\">\n          <xsl:number level=\"multiple\" count=\"chapter\" format=\"1. \"/>\n          <xsl:apply-templates mode=\"toc\"/>\n        </fo:basic-link>\n      </fo:block>\n    </fo:multi-case>\n    <fo:multi-case case-name=\"expanded\" case-title=\"expanded\"\n    starting-state=\"hide\">\n      <fo:block>\n        <fo:multi-toggle switch-to=\"collapsed\">\n          <fo:external-graphic href=\"minus-icon.gif\"/>\n        </fo:multi-toggle>\n        <fo:basic-link internal-destination=\"{generate-id(.)}\">\n          <xsl:number level=\"multiple\" count=\"chapter\" format=\"1. \"/>\n          <xsl:apply-templates mode=\"toc\"/>\n        </fo:basic-link>\n      </fo:block>\n      <xsl:apply-templates select=\"../section/title\" mode=\"toc\"/>\n    </fo:multi-case>\n  </fo:multi-switch>\n</xsl:template>\n\n<xsl:template match=\"section/title\" mode=\"toc\">\n  <fo:block start-indent=\"10mm\">\n    <fo:basic-link internal-destination=\"{generate-id(.)}\">\n      <xsl:number level=\"multiple\" count=\"chapter|section\" format=\"1.1 \"/>\n      <xsl:apply-templates/>\n    </fo:basic-link>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"chapter/title\">\n  <fo:block id=\"{generate-id(.)}\">\n    <xsl:number level=\"multiple\" count=\"chapter\" format=\"1. \"/>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"section/title\">\n  <fo:block id=\"{generate-id(.)}\">\n    <xsl:number level=\"multiple\" count=\"chapter|section\" format=\"1.1 \"/>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 152,
+    "start_line": 14810,
+    "end_line": 14896,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "properties-dynamic-effects.md",
+    "content": "<fo:multi-switch>\n  <fo:multi-case case-name=\"collapsed\" case-title=\"collapsed\" starting-state=\"show\">\n    <fo:block>\n      <fo:multi-toggle switch-to=\"expanded\">\n        <fo:external-graphic href=\"plus-icon.gif\">\n        </fo:external-graphic>\n      </fo:multi-toggle>\n      <fo:basic-link internal-destination=\"N4\">1. Chapter\n      </fo:basic-link>\n    </fo:block>\n  </fo:multi-case>\n  <fo:multi-case case-name=\"expanded\" case-title=\"expanded\" starting-state=\"hide\">\n    <fo:block>\n      <fo:multi-toggle switch-to=\"collapsed\">\n        <fo:external-graphic href=\"minus-icon.gif\">\n        </fo:external-graphic>\n      </fo:multi-toggle>\n      <fo:basic-link internal-destination=\"N4\">1. Chapter\n      </fo:basic-link>\n    </fo:block>\n    <fo:block start-indent=\"10mm\">\n      <fo:basic-link internal-destination=\"N11\">1.1 Section\n      </fo:basic-link>\n    </fo:block>\n    <fo:block start-indent=\"10mm\">\n      <fo:basic-link internal-destination=\"N19\">1.2 Section\n      </fo:basic-link>\n    </fo:block>\n  </fo:multi-case>\n</fo:multi-switch>\n<fo:multi-switch>\n  <fo:multi-case case-name=\"collapsed\" case-title=\"collapsed\" starting-state=\"show\">\n    <fo:block>\n      <fo:multi-toggle switch-to=\"expanded\">\n        <fo:external-graphic href=\"plus-icon.gif\">\n        </fo:external-graphic>\n      </fo:multi-toggle>\n      <fo:basic-link internal-destination=\"N28\">2. Chapter\n      </fo:basic-link>\n    </fo:block>\n  </fo:multi-case>\n  <fo:multi-case case-name=\"expanded\" case-title=\"expanded\" starting-state=\"hide\">\n    <fo:block>\n      <fo:multi-toggle switch-to=\"collapsed\">\n        <fo:external-graphic href=\"minus-icon.gif\">\n        </fo:external-graphic>\n      </fo:multi-toggle>\n      <fo:basic-link internal-destination=\"N28\">2. Chapter\n      </fo:basic-link>\n    </fo:block>\n    <fo:block start-indent=\"10mm\">\n      <fo:basic-link internal-destination=\"N35\">2.1 Section\n      </fo:basic-link>\n    </fo:block>\n    <fo:block start-indent=\"10mm\">\n      <fo:basic-link internal-destination=\"N43\">2.2 Section\n      </fo:basic-link>\n    </fo:block>\n  </fo:multi-case>\n</fo:multi-switch>\n\n<fo:block id=\"N4\">1. Chapter\n</fo:block>\n<fo:block>Text\n</fo:block>\n<fo:block id=\"N11\">1.1 Section\n</fo:block>\n<fo:block>Text\n</fo:block>\n<fo:block id=\"N19\">1.2 Section\n</fo:block>\n<fo:block>Text\n</fo:block>\n<fo:block id=\"N28\">2. Chapter\n</fo:block>\n<fo:block>Text\n</fo:block>\n<fo:block id=\"N35\">2.1 Section\n</fo:block>\n<fo:block>Text\n</fo:block>\n<fo:block id=\"N43\">2.2 Section\n</fo:block>\n<fo:block>Text\n</fo:block>"
+  },
+  {
+    "index": 153,
+    "start_line": 14901,
+    "end_line": 14908,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "properties-dynamic-effects.md",
+    "content": "<p>Follow this <xlink:mylink xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n        xlink:href=\"http://www.w3.org/TR\"\n        xlink:title=\"An Example\"\n        xlink:show=\"new\"\n        xlink:actuate=\"onRequest\">link</xlink:mylink> to access all\nTRs of the W3C.</p>"
+  },
+  {
+    "index": 154,
+    "start_line": 14917,
+    "end_line": 14952,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "properties-dynamic-effects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"p\">\n    <fo:block>\n        <xsl:apply-templates/>\n    </fo:block>\n</xsl:template>\n\n<xsl:template match=\"xlink:mylink\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <xsl:variable name=\"show\"><xsl:value-of select=\"@xlink:show\"/>\n    </xsl:variable>\n     <fo:multi-properties text-decoration=\"underline\">\n        <fo:multi-property-set active-state=\"link\" color=\"blue\"/>\n        <fo:multi-property-set active-state=\"visited\" color=\"red\"/>\n        <fo:multi-property-set active-state=\"active\" color=\"green\"/>\n        <fo:multi-property-set active-state=\"hover\" text-decoration=\"blink\"/>\n        <fo:multi-property-set active-state=\"focus\" color=\"yellow\"/>\n        <fo:wrapper color=\"merge-property-values()\"\n                    text-decoration=\"merge-property-values()\">\n              <fo:basic-link external-destination=\"http://www.w3.org/TR\"\n                              show-destination=\"{$show}\">\n                  <xsl:attribute name=\"role\">\n                      <xsl:value-of select=\"@xlink:title\"/>\n                  </xsl:attribute>\n                  <xsl:apply-templates/>\n              </fo:basic-link>\n        </fo:wrapper>\n      </fo:multi-properties>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 155,
+    "start_line": 14955,
+    "end_line": 14977,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_list-item-label",
+    "target_file": "properties-dynamic-effects.md",
+    "content": "<fo:block>Follow this\n  <fo:multi-properties text-decoration=\"underline\">\n    <fo:multi-property-set active-state=\"link\" color=\"blue\">\n    </fo:multi-property-set>\n    <fo:multi-property-set active-state=\"visited\" color=\"red\">\n    </fo:multi-property-set>\n    <fo:multi-property-set active-state=\"active\" color=\"green\">\n    </fo:multi-property-set>\n    <fo:multi-property-set active-state=\"hover\" text-decoration=\"blink\">\n    </fo:multi-property-set>\n    <fo:multi-property-set active-state=\"focus\" color=\"yellow\">\n    </fo:multi-property-set>\n    <fo:wrapper color=\"merge-property-values()\"\n      text-decoration=\"merge-property-values()\">\n      <fo:basic-link external-destination=\"http://www.w3.org/TR\"\n        show-destination=\"new\" role=\"An Example\">link\n      </fo:basic-link>\n    </fo:wrapper>\n  </fo:multi-properties> to access all\nTRs of the W3C.\n</fo:block>"
+  },
+  {
+    "index": 156,
+    "start_line": 15015,
+    "end_line": 15017,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_basic-link",
+    "target_file": "fo-basic-link.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 157,
+    "start_line": 15110,
+    "end_line": 15112,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-switch",
+    "target_file": "fo-multi-switch.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_multi-case\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">multi-case</loc>+)"
+  },
+  {
+    "index": 158,
+    "start_line": 15146,
+    "end_line": 15148,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-case",
+    "target_file": "fo-multi-case.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 159,
+    "start_line": 15210,
+    "end_line": 15212,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-toggle",
+    "target_file": "fo-multi-toggle.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 160,
+    "start_line": 15270,
+    "end_line": 15272,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-properties",
+    "target_file": "fo-multi-properties.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_multi-property-set\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">multi-property-set</loc>+,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_wrapper\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">wrapper</loc>)"
+  },
+  {
+    "index": 161,
+    "start_line": 15308,
+    "end_line": 15310,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "fo-multi-property-set.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 162,
+    "start_line": 15366,
+    "end_line": 15372,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<fo:block>Eiffel Tower\n  <fo:index-page-citation-list>\n    <fo:index-key-reference ref-index-key=\"Eiffel Tower;;\"/>\n  </fo:index-page-citation-list>\n</fo:block>"
+  },
+  {
+    "index": 163,
+    "start_line": 15474,
+    "end_line": 15481,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<fo:page-sequence id=\"glossary\" initial-page-number=\"1\">\n  <fo:page-number-folio-prefix>\n    <fo:inline>G-</fo:inline>\n  </fo:page-number-folio-prefix>\n  <fo:flow>...</fo:flow>\n</fo:page-sequence>"
+  },
+  {
+    "index": 164,
+    "start_line": 15502,
+    "end_line": 15504,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<indexterm><primary>Eiffel Tower</primary></indexterm>"
+  },
+  {
+    "index": 165,
+    "start_line": 15508,
+    "end_line": 15511,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<indexterm significance=\"preferred\">\n<primary>Eiffel Tower</primary></indexterm>"
+  },
+  {
+    "index": 166,
+    "start_line": 15517,
+    "end_line": 15522,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<indexterm id=\"ei.idx\" class=\"startofrange\">\n<primary>Eiffel Tower</primary></indexterm>\n...\n<indexterm startref=\"ei.idx\" class=\"endofrange\"/>"
+  },
+  {
+    "index": 167,
+    "start_line": 15526,
+    "end_line": 15532,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<figure id=\"tower1\">\n<head>The Eiffel Tower</head>\n<indexterm><primary>Eiffel Tower</primary></indexterm>\n...\n</figure>"
+  },
+  {
+    "index": 168,
+    "start_line": 15553,
+    "end_line": 15610,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<xsl:template match=\"indexterm[@significance='preferred']\"\n     priority=\"100\">\n  <fo:wrapper>\n    <xsl:attribute name=\"index-key\">\n      <xsl:value-of select=\"primary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"secondary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"tertiary\"/>\n      <xsl:text>;preferred</xsl:text>\n    </xsl:attribute>\n  </fo:wrapper>\n</xsl:template>\n\n<xsl:template match=\"indexterm[@class='startofrange']\"\n     priority=\"75\">\n  <fo:index-range-begin id=\"{@id}\"/>\n    <xsl:attribute name=\"index-key\">\n      <xsl:value-of select=\"primary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"secondary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"tertiary\"/>\n    </xsl:attribute>\n</xsl:template>\n\n<xsl:template match=\"indexterm[@class='endofrange']\"\n     priority=\"75\">\n  <fo:index-range-end ref-id=\"{@startref}\">\n  </fo:index-range-end>\n</xsl:template>\n\n<xsl:template match=\"figure/indexterm\" priority=\"50\">\n  <fo:wrapper>\n    <xsl:attribute name=\"index-key\">\n      <xsl:value-of select=\"primary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"secondary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"tertiary\"/>\n      <xsl:text>;figure</xsl:text>\n    </xsl:attribute>\n  </fo:wrapper>\n</xsl:template>\n\n<xsl:template match=\"indexterm\">\n  <fo:wrapper>\n    <xsl:attribute name=\"index-key\">\n      <xsl:value-of select=\"primary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"secondary\"/>\n      <xsl:text>;</xsl:text>\n      <xsl:value-of select=\"tertiary\"/>\n    </xsl:attribute>\n  </fo:wrapper>\n</xsl:template>"
+  },
+  {
+    "index": 169,
+    "start_line": 15614,
+    "end_line": 15635,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E  9] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[F 10] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[G 11] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[H 13] <fo:index-range-begin id=\"ei.idx\" index-key=\"Eiffel Tower;;\"/>\n[Y 15] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[C 15] <fo:wrapper index-key=\"Eiffel Tower;;;figure\"/>\n[K 16] <fo:index-range-end ref-id=\"ei.idx\"/>\n[L 18] <fo:index-range-begin id=\"ei2.idx\" index-key=\"Eiffel Tower;;\"/>\n[A 19] <fo:wrapper index-key=\"Eiffel Tower;;;preferred\"/>\n[O 21] <fo:index-range-end ref-id=\"ei2.idx\"/>\n[B 23] <fo:wrapper index-key=\"Eiffel Tower;;;preferred\"/>\n[D 25] <fo:wrapper index-key=\"Eiffel Tower;;;figure\"/>\n[P 27] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[Q 29] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[R 30] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[S 31] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[T 32] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[U 33] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[V 34] <fo:wrapper index-key=\"Eiffel Tower;;\"/>\n[X 37] <fo:wrapper index-key=\"Eiffel Tower;;\"/>"
+  },
+  {
+    "index": 170,
+    "start_line": 15692,
+    "end_line": 15711,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "<fo:index-page-citation-list\n   merge-sequential-page-numbers=\"merge\"/>\n  <fo:index-key-reference ref-index-key=\"Eiffel Tower;;;preferred\"\n         font-weight=\"bold\"\n         id=\"XB\"/>\n  <fo:index-key-reference ref-index-key=\"Eiffel Tower;;;figure\"\n         font-style=\"italic\"\n         id=\"XI\">\n    <fo:index-page-number-prefix>\n      <fo:inline>[</fo:inline>\n    </fo:index-page-number-prefix>\n    <fo:index-page-number-suffix>\n      <fo:inline>]</fo:inline>\n    </fo:index-page-number-suffix>\n  </fo:index-key-reference>\n  <fo:index-key-reference ref-index-key=\"Eiffel Tower;;\"\n                 id=\"XX\"/>\n</fo:index-page-citation-list>"
+  },
+  {
+    "index": 171,
+    "start_line": 15801,
+    "end_line": 15825,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[A] (19, fo:wrapper,           chapter,  XB)\n[B] (23, fo:wrapper,           chapter,  XB)\n[C] (15, fo:wrapper,           chapter,  XI)\n[D] (25, fo:wrapper,           chapter,  XI)\n[E] ( 9, fo:wrapper,           preface,  XX)\n[F] (10, fo:wrapper,           preface,  XX)\n[G] (11, fo:wrapper,           chapter,  XX)\n[H] (13, fo:index-range-begin, chapter,  XX)\n[I] (14, null,                 chapter,  XX)\n[J] (15, null,                 chapter,  XX)\n[K] (16, fo:index-range-end,   chapter,  XX)\n[L] (18, fo:index-range-begin, chapter,  XX)\n[M] (19, null,                 chapter,  XX)\n[N] (20, null,                 chapter,  XX)\n[O] (21, fo:index-range-end,   chapter,  XX)\n[P] (27, fo:wrapper,           chapter,  XX)\n[Q] (29, fo:wrapper,           chapter,  XX)\n[R] (30, fo:wrapper,           chapter,  XX)\n[S] (31, fo:wrapper,           chapter,  XX)\n[T] (32, fo:wrapper,           chapter,  XX)\n[U] (33, fo:wrapper,           chapter,  XX)\n[V] (34, fo:wrapper,           chapter,  XX)\n[X] (37, fo:wrapper,           glossary, XX)"
+  },
+  {
+    "index": 172,
+    "start_line": 15854,
+    "end_line": 15878,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E] ( 9, fo:wrapper,           preface,  XX)\n[F] (10, fo:wrapper,           preface,  XX)\n[G] (11, fo:wrapper,           chapter,  XX)\n[H] (13, fo:index-range-begin, chapter,  XX)\n[I] (14, null,                 chapter,  XX)\n[J] (15, null,                 chapter,  XX)\n[C] (15, fo:wrapper,           chapter,  XI)\n[K] (16, fo:index-range-end,   chapter,  XX)\n[L] (18, fo:index-range-begin, chapter,  XX)\n[A] (19, fo:wrapper,           chapter,  XB)\n[M] (19, null,                 chapter,  XX)\n[N] (20, null,                 chapter,  XX)\n[O] (21, fo:index-range-end,   chapter,  XX)\n[B] (23, fo:wrapper,           chapter,  XB)\n[D] (25, fo:wrapper,           chapter,  XI)\n[P] (27, fo:wrapper,           chapter,  XX)\n[Q] (29, fo:wrapper,           chapter,  XX)\n[R] (30, fo:wrapper,           chapter,  XX)\n[S] (31, fo:wrapper,           chapter,  XX)\n[T] (32, fo:wrapper,           chapter,  XX)\n[U] (33, fo:wrapper,           chapter,  XX)\n[V] (34, fo:wrapper,           chapter,  XX)\n[X] (37, fo:wrapper,           glossary, XX)"
+  },
+  {
+    "index": 173,
+    "start_line": 15887,
+    "end_line": 15903,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E] ( 9,   fo:wrapper,            preface,  XX)\n[F] (10,   fo:wrapper,            preface,  XX)\n[G] (11,   fo:wrapper,            chapter,  XX)\n([H] (13,  fo:index-range-begin,  chapter,  XX),\n  [K] (16, fo:index-range-end,    chapter,  XX))\n[C] (15,   fo:wrapper,            chapter,  XI)\n([L] (18,  fo:index-range-begin,  chapter,  XX),\n  [O] (21, fo:index-range-end,    chapter,  XX))\n[A] (19,   fo:wrapper,            chapter,  XB)\n[B] (23,   fo:wrapper,            chapter,  XB)\n[D] (25,   fo:wrapper,            chapter,  XI)\n[P] (27,   fo:wrapper,            chapter,  XX)\n([Q] (29,  fo:wrapper,            chapter,  XX),\n  [V] (34, fo:wrapper,            chapter,  XX))\n[X] (37,   fo:wrapper,            glossary, XX)"
+  },
+  {
+    "index": 174,
+    "start_line": 15906,
+    "end_line": 15920,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E] ( 9,   fo:wrapper,            preface,  XX)\n[F] (10,   fo:wrapper,            preface,  XX)\n[G] (11,   fo:wrapper,            chapter,  XX)\n([H] (13,  fo:index-range-begin,  chapter,  XX),\n  [K] (16, fo:index-range-end,    chapter,  XX))\n([L] (18,  fo:index-range-begin,  chapter,  XX),\n  [O] (21, fo:index-range-end,    chapter,  XX))\n[B] (23,   fo:wrapper,            chapter,  XB)\n[D] (25,   fo:wrapper,            chapter,  XI)\n[P] (27,   fo:wrapper,            chapter,  XX)\n([Q] (29,  fo:wrapper,            chapter,  XX),\n  [V] (34, fo:wrapper,            chapter,  XX))\n[X] (37,   fo:wrapper,            glossary, XX)"
+  },
+  {
+    "index": 175,
+    "start_line": 15935,
+    "end_line": 15957,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E] ( 9, fo:wrapper,           preface,  XX)\n[F] (10, fo:wrapper,           preface,  XX)\n[G] (11, fo:wrapper,           chapter,  XX)\n[H] (13, fo:index-range-begin, chapter,  XX)\n[I] (14, null,                 chapter,  XX)\n[C] (15, fo:wrapper,           chapter,  XI)\n[K] (16, fo:index-range-end,   chapter,  XX)\n[L] (18, fo:index-range-begin, chapter,  XX)\n[A] (19, fo:wrapper,           chapter,  XB)\n[N] (20, null,                 chapter,  XX)\n[O] (21, fo:index-range-end,   chapter,  XX)\n[B] (23, fo:wrapper,           chapter,  XB)\n[D] (25, fo:wrapper,           chapter,  XI)\n[P] (27, fo:wrapper,           chapter,  XX)\n[Q] (29, fo:wrapper,           chapter,  XX)\n[R] (30, fo:wrapper,           chapter,  XX)\n[S] (31, fo:wrapper,           chapter,  XX)\n[T] (32, fo:wrapper,           chapter,  XX)\n[U] (33, fo:wrapper,           chapter,  XX)\n[V] (34, fo:wrapper,           chapter,  XX)\n[X] (37, fo:wrapper,           glossary, XX)"
+  },
+  {
+    "index": 176,
+    "start_line": 15960,
+    "end_line": 15978,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E] ( 9,   fo:wrapper,           preface,  XX)\n[F] (10,   fo:wrapper,           preface,  XX)\n[G] (11,   fo:wrapper,           chapter,  XX)\n[H] (13,   fo:index-range-begin, chapter,  XX)\n[I] (14,   null,                 chapter,  XX)\n[C] (15,   fo:wrapper,           chapter,  XI)\n[K] (16,   fo:index-range-end,   chapter,  XX)\n[L] (18,   fo:index-range-begin, chapter,  XX)\n[A] (19,   fo:wrapper,           chapter,  XB)\n[N] (20,   null,                 chapter,  XX)\n[O] (21,   fo:index-range-end,   chapter,  XX)\n[B] (23,   fo:wrapper,           chapter,  XB)\n[D] (25,   fo:wrapper,           chapter,  XI)\n[P] (27,   fo:wrapper,           chapter,  XX)\n([Q] (29,  fo:wrapper,           chapter,  XX),\n  [V] (34, fo:wrapper,           chapter,  XX))\n[X] (37,   fo:wrapper,           glossary, XX)"
+  },
+  {
+    "index": 177,
+    "start_line": 15981,
+    "end_line": 15995,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_multi-property-set",
+    "target_file": "properties-indexing.md",
+    "content": "[E] ( 9,   fo:wrapper,           preface,  XX)\n[F] (10,   fo:wrapper,           preface,  XX)\n[G] (11,   fo:wrapper,           chapter,  XX)\n([H] (13,  fo:index-range-begin, chapter,  XX),\n  [K] (16, fo:index-range-end,   chapter,  XX))\n([L] (18,  fo:index-range-begin, chapter,  XX),\n  [O] (21, fo:index-range-end,   chapter,  XX))\n[B] (23,   fo:wrapper,           chapter,  XB)\n[D] (25,   fo:wrapper,           chapter,  XI)\n[P] (27,   fo:wrapper,           chapter,  XX)\n([Q] (29,  fo:wrapper,           chapter,  XX),\n  [V] (34, fo:wrapper,           chapter,  XX))\n[X] (37,   fo:wrapper,           glossary, XX)"
+  },
+  {
+    "index": 178,
+    "start_line": 16092,
+    "end_line": 16094,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-page-number-prefix",
+    "target_file": "fo-index-page-number-prefix.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 179,
+    "start_line": 16116,
+    "end_line": 16118,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-page-number-suffix",
+    "target_file": "fo-index-page-number-suffix.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 180,
+    "start_line": 16151,
+    "end_line": 16153,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-range-begin",
+    "target_file": "fo-index-range-begin.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 181,
+    "start_line": 16181,
+    "end_line": 16183,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-range-end",
+    "target_file": "fo-index-range-end.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 182,
+    "start_line": 16259,
+    "end_line": 16261,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-key-reference",
+    "target_file": "fo-index-key-reference.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_index-page-number-prefix\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">index-page-number-prefix</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_index-page-number-suffix\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">index-page-number-suffix</loc>?)"
+  },
+  {
+    "index": 183,
+    "start_line": 16415,
+    "end_line": 16417,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-page-citation-list",
+    "target_file": "fo-index-page-citation-list.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_index-page-citation-list-separator\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">index-page-citation-list-separator</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_index-page-citation-range-separator\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">index-page-citation-range-separator</loc>?,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_index-key-reference\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">index-key-reference</loc>+)"
+  },
+  {
+    "index": 184,
+    "start_line": 16444,
+    "end_line": 16446,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-page-citation-list-separator",
+    "target_file": "fo-index-page-citation-list-separator.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 185,
+    "start_line": 16468,
+    "end_line": 16470,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_index-page-citation-range-separator",
+    "target_file": "fo-index-page-citation-range-separator.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>)*"
+  },
+  {
+    "index": 186,
+    "start_line": 16499,
+    "end_line": 16501,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-tree",
+    "target_file": "fo-bookmark-tree.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_bookmark\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">bookmark</loc>+)"
+  },
+  {
+    "index": 187,
+    "start_line": 16536,
+    "end_line": 16538,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark",
+    "target_file": "fo-bookmark.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_bookmark-title\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">bookmark-title</loc>,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_bookmark\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">bookmark</loc>*)"
+  },
+  {
+    "index": 188,
+    "start_line": 16577,
+    "end_line": 16579,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "fo-bookmark-title.md",
+    "content": "(#PCDATA)"
+  },
+  {
+    "index": 189,
+    "start_line": 16700,
+    "end_line": 16709,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n  <p>C'ieng pieces were made in northern towns, such as C'ieng Mai.\nThey were typically of tamlung weight.</p>\n  <figure>\n    <photo image=\"TH0317A.jpg\"/>\n    <caption>C'ieng Tamlung of C'ieng Mai</caption>\n  </figure>\n</doc>"
+  },
+  {
+    "index": 190,
+    "start_line": 16714,
+    "end_line": 16746,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"figure\">\n  <fo:float float=\"before\">\n    <xsl:apply-templates/>\n  </fo:float>\n</xsl:template>\n\n<xsl:template match=\"photo\">\n  <fo:block text-align=\"center\">\n    <fo:external-graphic src=\"{@image}\"/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"caption\">\n  <fo:block space-before=\"3pt\" text-align=\"center\"\n    start-indent=\"10mm\" end-indent=\"10mm\">\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 191,
+    "start_line": 16749,
+    "end_line": 16766,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block>C'ieng pieces were made in northern towns,\nsuch as C'ieng Mai. They were typically of tamlung weight.\n</fo:block>\n\n<fo:float float=\"before\">\n\n  <fo:block text-align=\"center\">\n    <fo:external-graphic src=\"TH0317A.jpg\">\n    </fo:external-graphic>\n  </fo:block>\n\n  <fo:block space-before=\"3pt\" text-align=\"center\" start-indent=\"10mm\"\n    end-indent=\"10mm\">C'ieng Tamlung of C'ieng Mai\n  </fo:block>\n\n</fo:float>"
+  },
+  {
+    "index": 192,
+    "start_line": 16771,
+    "end_line": 16776,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n  <p>Some Pod Duang were restruck<fn>Berglund, A., Thai Money, from\nEarliest Times to King Rama V, p. 203.</fn> during the reign of King Rama V.</p>\n</doc>"
+  },
+  {
+    "index": 193,
+    "start_line": 16784,
+    "end_line": 16824,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"fn\">\n  <fo:footnote>\n    <fo:inline font-size=\"0.83em\" baseline-shift=\"super\">\n      <xsl:number level=\"any\" count=\"fn\" format=\"1)\"/>\n    </fo:inline>\n    <fo:footnote-body>\n      <fo:list-block provisional-distance-between-starts=\"20pt\"\n          provisional-label-separation=\"5pt\">\n        <fo:list-item>\n          <fo:list-item-label end-indent=\"label-end()\">\n            <fo:block  font-size=\"0.83em\"\n                       line-height=\"0.9em\">\n              <xsl:number level=\"any\" count=\"fn\" format=\"1)\"/>\n            </fo:block>\n          </fo:list-item-label>\n          <fo:list-item-body start-indent=\"body-start()\">\n            <fo:block  font-size=\"0.83em\"\n                       line-height=\"0.9em\">\n              <xsl:apply-templates/>\n            </fo:block>\n          </fo:list-item-body>\n        </fo:list-item>\n      </fo:list-block>\n    </fo:footnote-body>\n  </fo:footnote>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 194,
+    "start_line": 16827,
+    "end_line": 16850,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_bookmark-title",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block>Some Pod Duang were restruck\n  <fo:footnote>\n    <fo:inline font-size=\"0.83em\" baseline-shift=\"super\">1)\n    </fo:inline>\n    <fo:footnote-body>\n    <fo:list-block provisional-distance-between-starts=\"20pt\"\n      provisional-label-separation=\"5pt\">\n    <fo:list-item>\n    <fo:list-item-label end-indent=\"label-end()\">\n    <fo:block font-size=\"0.83em\" line-height=\"0.9em\">1)\n    </fo:block>\n    </fo:list-item-label>\n    <fo:list-item-body start-indent=\"body-start()\">\n    <fo:block font-size=\"0.83em\" line-height=\"0.9em\">Berglund, A.,\nThai Money, from Earliest Times to King Rama V, p. 203.\n    </fo:block>\n    </fo:list-item-body>\n    </fo:list-item>\n    </fo:list-block>\n    </fo:footnote-body>\n  </fo:footnote> during the reign of King Rama V.\n</fo:block>"
+  },
+  {
+    "index": 195,
+    "start_line": 16987,
+    "end_line": 16989,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_float",
+    "target_file": "fo-float.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 196,
+    "start_line": 17057,
+    "end_line": 17057,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_marginalia",
+    "target_file": "fo-marginalia.md",
+    "content": "(inline?,marginalia-body)"
+  },
+  {
+    "index": 197,
+    "start_line": 17153,
+    "end_line": 17155,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_marginalia-body",
+    "target_file": "fo-marginalia-body.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 198,
+    "start_line": 17209,
+    "end_line": 17211,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote",
+    "target_file": "fo-footnote.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_inline\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">inline</loc>,<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#fo_footnote-body\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">footnote-body</loc>)"
+  },
+  {
+    "index": 199,
+    "start_line": 17244,
+    "end_line": 17246,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "fo-footnote-body.md",
+    "content": "(<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)+"
+  },
+  {
+    "index": 200,
+    "start_line": 17269,
+    "end_line": 17274,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<doc>\n<p>This is an <emph>important word</emph> in this\nsentence that also refers to a <code>variable</code>.</p>\n</doc>"
+  },
+  {
+    "index": 201,
+    "start_line": 17280,
+    "end_line": 17305,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version='1.0'?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n                xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"\n                version='1.0'>\n\n<xsl:template match=\"p\">\n  <fo:block>\n    <xsl:apply-templates/>\n  </fo:block>\n</xsl:template>\n\n<xsl:template match=\"emph\">\n  <fo:wrapper font-weight=\"bold\">\n    <xsl:apply-templates/>\n  </fo:wrapper>\n</xsl:template>\n\n<xsl:template match=\"code\">\n  <fo:wrapper font-family=\"Courier\">\n    <xsl:apply-templates/>\n  </fo:wrapper>\n</xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 202,
+    "start_line": 17307,
+    "end_line": 17313,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:block xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">This is an\n<fo:wrapper font-weight=\"bold\">important word</fo:wrapper>\nin this sentence that also refers to a\n<fo:wrapper font-family=\"Courier\">variable</fo:wrapper>.\n</fo:block>"
+  },
+  {
+    "index": 203,
+    "start_line": 17323,
+    "end_line": 17332,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<numbers>\n  <number>1</number>\n  <number>2</number>\n  <!-- and so on... -->\n  <number>11</number>\n  <number>12</number>\n</numbers>"
+  },
+  {
+    "index": 204,
+    "start_line": 17334,
+    "end_line": 17393,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\nxmlns:fo=\"http://www.w3.org/1999/XSL/Format\" version=\"1.0\">\n  <xsl:strip-space elements=\"*\"/>\n\n  <xsl:template match=\"numbers\">\n    <fo:table>\n      <fo:table-column/>\n      <fo:table-footer>\n        <fo:table-row>\n          <fo:table-cell font-weight=\"bold\">\n            <fo:block>\n <fo:retrieve-table-marker retrieve-class-name=\"subtotal-caption\"\nretrieve-position-within-table=\"last-ending\"/>\n <fo:retrieve-table-marker retrieve-class-name=\"subtotal\"\nretrieve-position-within-table=\"last-ending\"/>\n            </fo:block>\n          </fo:table-cell>\n        </fo:table-row>\n        <fo:retrieve-table-marker retrieve-class-name=\"continued\"\n          retrieve-position-within-table=\"last-ending\"/>\n      </fo:table-footer>\n      <fo:table-body>\n        <fo:marker marker-class-name=\"continued\">\n          <fo:table-row>\n            <fo:table-cell>\n              <fo:block>Table continued...</fo:block>\n            </fo:table-cell>\n          </fo:table-row>\n        </fo:marker>\n        <fo:marker marker-class-name=\"subtotal-caption\">\n                Subtotal:\n        </fo:marker>\n        <xsl:apply-templates/>\n      </fo:table-body>\n    </fo:table>\n  </xsl:template>\n\n  <xsl:template match=\"number\">\n    <fo:table-row>\n      <fo:marker marker-class-name=\"subtotal\">\n        <xsl:value-of select=\"sum(preceding::number)+text()\"/>\n      </fo:marker>\n      <xsl:if test=\"position() = last()\">\n        <fo:marker marker-class-name=\"continued\"/>\n        <fo:marker marker-class-name=\"subtotal-caption\">\n          Total:\n        </fo:marker>\n      </xsl:if>\n      <fo:table-cell>\n        <fo:block>\n          <xsl:apply-templates/>\n        </fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n  </xsl:template>\n\n</xsl:stylesheet>"
+  },
+  {
+    "index": 205,
+    "start_line": 17396,
+    "end_line": 17458,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<fo:table>\n  <fo:table-column/>\n  <fo:table-footer>\n    <fo:table-row>\n      <fo:table-cell font-weight=\"bold\">\n        <fo:block>\n          <fo:retrieve-table-marker\n            retrieve-position-within-table=\"last-ending\"\n            retrieve-class-name=\"subtotal-caption\"/>\n          <fo:retrieve-table-marker\n            retrieve-position-within-table=\"last-ending\"\n            retrieve-class-name=\"subtotal\"/>\n        </fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n    <fo:retrieve-table-marker retrieve-class-name=\"continued\"\n      retrieve-position-within-table=\"last-ending\"/>\n  </fo:table-footer>\n  <fo:table-body>\n    <fo:marker marker-class-name=\"continued\">\n      <fo:table-row>\n        <fo:table-cell>\n          <fo:block>Table continued...</fo:block>\n        </fo:table-cell>\n      </fo:table-row>\n    </fo:marker>\n    <fo:marker marker-class-name=\"subtotal-caption\">\n      Subtotal:\n    </fo:marker>\n    <fo:table-row>\n      <fo:marker marker-class-name=\"subtotal\">1</fo:marker>\n      <fo:table-cell>\n        <fo:block>1</fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n    <fo:table-row>\n      <fo:marker marker-class-name=\"subtotal\">3</fo:marker>\n      <fo:table-cell>\n        <fo:block>2</fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n    <!-- and so on... -->\n    <fo:table-row>\n      <fo:marker marker-class-name=\"subtotal\">66</fo:marker>\n      <fo:table-cell>\n        <fo:block>11</fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n    <fo:table-row>\n      <fo:marker marker-class-name=\"subtotal\">78</fo:marker>\n      <fo:marker marker-class-name=\"continued\"/>\n      <fo:marker marker-class-name=\"subtotal-caption\">\n        Total:\n      </fo:marker>\n      <fo:table-cell>\n        <fo:block>12</fo:block>\n      </fo:table-cell>\n    </fo:table-row>\n  </fo:table-body>\n</fo:table>"
+  },
+  {
+    "index": 206,
+    "start_line": 17464,
+    "end_line": 17515,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_footnote-body",
+    "target_file": "guide-formatting-objects.md",
+    "content": "<fo:root xmlns:fo=http://www.w3.org/1999/XSL/Format>\n  <fo:layout-master-set>\n    <fo:simple-page-master master-name=\"page \">\n      <fo:region-body region-name=\" body\"  column-count=\"2\"/>\n    </fo:simple-page-master>\n  </fo:layout-master-set>\n  <fo:page-sequence master-reference=\"page\"\n    <fo:flow flow-name=\" body\">\n      <fo:table>\n        <fo:table-column/>\n        <fo:table-header>...</fo:table-header>\n          <fo:table-footer>\n            <fo:table-row>\n              <fo:table-cell>\n                <fo:block>\n                  <fo:retrieve-table-marker\n                    retrieve-class-name=\"marker-name\"\n                    retrieve-position-within-table=\"See table for values...\"\n                    retrieve-boundary-within-table=\"See table for values...\"/>\n                </fo:block>\n              </fo:table-cell>\n            </fo:table-row>\n        </fo:table-footer>\n        <fo:table-body>\n          <fo:table-row>\n            <fo:table-cell>\n              <!-- cell 1 -->\n              <fo:marker marker-class-name=\"marker-name\">\n                <!-- marker 1 -->\n                ...\n              </fo:marker>\n              ...\n            </fo:table-cell>\n          </fo:table-row>\n          <!-- and so on ... -->\n          <fo:table-row>\n            <fo:table-cell>\n              <!-- cell 14 -->\n              <fo:marker marker-class-name=\"marker-name\">\n                <!-- marker 14 -->\n                ...\n              </fo:marker>\n              ...\n            </fo:table-cell>\n          </fo:table-row>\n        </fo:table-body>\n      </fo:table>\n    </fo:flow>\n  </fo:page-sequence>\n</fo:root>"
+  },
+  {
+    "index": 207,
+    "start_line": 17929,
+    "end_line": 17931,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_change-bar-begin",
+    "target_file": "fo-change-bar-begin.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 208,
+    "start_line": 17967,
+    "end_line": 17969,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_change-bar-end",
+    "target_file": "fo-change-bar-end.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 209,
+    "start_line": 18017,
+    "end_line": 18019,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_wrapper",
+    "target_file": "fo-wrapper.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 210,
+    "start_line": 18080,
+    "end_line": 18082,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_marker",
+    "target_file": "fo-marker.md",
+    "content": "(#PCDATA|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#inline.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%inline;</loc>|<loc xmlns:xlink=\"http://www.w3.org/1999/xlink\" href=\"#block.fo.list\" xlink:type=\"simple\" xlink:show=\"replace\" xlink:actuate=\"onRequest\">%block;</loc>)*"
+  },
+  {
+    "index": 211,
+    "start_line": 18174,
+    "end_line": 18176,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_retrieve-marker",
+    "target_file": "fo-retrieve-marker.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 212,
+    "start_line": 18272,
+    "end_line": 18274,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_retrieve-table-marker",
+    "target_file": "fo-retrieve-table-marker.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 213,
+    "start_line": 18394,
+    "end_line": 18396,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_retrieve-number",
+    "target_file": "fo-retrieve-number.md",
+    "content": "EMPTY"
+  },
+  {
+    "index": 214,
+    "start_line": 18398,
+    "end_line": 18409,
+    "source_link": "https://www.w3.org/TR/xslfo20/#fo_retrieve-number",
+    "target_file": "fo-retrieve-number.md",
+    "content": "<fo:retrieve-number\n  reference-name = string\n  reference-value = [ expression ]\n  format = [ string ]\n  decimal-format = [ QName ]\n  letter-value = [ \"auto\" | \"alphabetic\" | \"traditional\" | <implementater extension> ]\n  ordinal = [ string ]\n  country = [ \"none\" | country | \"inherit\" ]\n  language = [ \"none\" | language | \"inherit\" ]\n  grouping-separator = [ char ]\n  grouping-size = [ number ]\n/>"
+  },
+  {
+    "index": 215,
+    "start_line": 26514,
+    "end_line": 26518,
+    "source_link": "https://www.w3.org/TR/xslfo20/#leader-length",
+    "target_file": "properties-leader.md",
+    "content": "leader-length.minimum=\"0pt\"\nleader-length.optimum=\"12pt\"\nleader-length.maximum=\"100%\""
+  },
+  {
+    "index": 216,
+    "start_line": 28315,
+    "end_line": 28317,
+    "source_link": "https://www.w3.org/TR/xslfo20/#numbering.properties",
+    "target_file": "properties-numbering.md",
+    "content": "<!-- the layout-level needs to be set as \"none\" -->\n<fo:number name=\"p1\" layout-level=\"none\"/>\n<fo:number name=\"f1\" layout-level=\"none\"/>"
+  },
+  {
+    "index": 217,
+    "start_line": 28323,
+    "end_line": 28360,
+    "source_link": "https://www.w3.org/TR/xslfo20/#numbering.properties",
+    "target_file": "properties-numbering.md",
+    "content": "<fo:block number-ref-id=\"p1\">Lorem ipsum dolor sit amet,\n  consectetuer adipiscing elit, sed diam nonummy nibh euismod\n  tincidunt ut laoreet dolore magna aliquam erat\n  volutpat.<fo:block>\n\n<fo:block>Ut wisi enim ad minim veniam, quis nostrud exerci\ntation <fo:instream-foreign-object\nnumber-ref-id=\"f1\">...</fo:instreaem-foreign-object>\nullamcorper suscipit lobortis nisl ut aliquip ex ea commodo\nconsequat.</fo:block>\n\n<fo:block number-ref-id=\"p1\">Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt\nut laoreet dolore magna aliquam erat volutpat.</fo:block>\n\n<fo:block>Duis autem vel eum iriure dolor in hendrerit in\nvulputate velit esse molestie consequat, vel illum dolore eu feugiat\nnulla facilisis at vero eros et accumsan et iusto odio dignissim qui\nblandit praesent luptatum zzril delenit</fo:block>\n\n<fo:block>Lorem ipsum dolor sit amet, consectetuer adipiscing\nelit, <fo:instream-foreign-object\nnumber-ref-id=\"f1\">...</fo:instreaem-foreign-object> sed diam\nnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat\nvolutpat.</fo:block>\n\n<fo:block number-ref-id=\"p1\">Ut wisi enim ad minim veniam, quis\nnostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex\nea commodo consequat.</fo:block>\n\n<fo:block number-ref-id=\"p1\">Lorem ipsum dolor sit amet,\nconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt\nut laoreet dolore magna aliquam erat volutpat.</fo:block>\n\n<fo:block>In above <fo:retrieve-number \n  name=\"f1\"/> in <fo:retrieve-number name=\"p1\"> paragraphs,\nwe demonstrated the new attribute\n\"number-ref-id\"</fo:block>"
+  },
+  {
+    "index": 218,
+    "start_line": 28400,
+    "end_line": 28404,
+    "source_link": "https://www.w3.org/TR/xslfo20/#reference-value",
+    "target_file": "properties-numbering.md",
+    "content": "if (value() - current-page-number() > 1) string(concat('Page ', value())\n     else if (value() - current-page-number() = 1) 'next page'\n     else if (value() = current-page-number()) 'later this page'"
+  },
+  {
+    "index": 219,
+    "start_line": 29819,
+    "end_line": 29822,
+    "source_link": "https://www.w3.org/TR/xslfo20/#adjustable-properties",
+    "target_file": "properties-pagination.md",
+    "content": "prioritized-list-of-names = [<priority-group>]*\n\t\tpriority-group = <property-name> | <shorthand-name> | \n                ([<property-name> | <shorthand-name>]+)"
+  },
+  {
+    "index": 220,
+    "start_line": 29924,
+    "end_line": 29924,
+    "source_link": "https://www.w3.org/TR/xslfo20/#adjustable-properties",
+    "target_file": "properties-pagination.md",
+    "content": "(%block;)*"
+  },
+  {
+    "index": 221,
+    "start_line": 29926,
+    "end_line": 29953,
+    "source_link": "https://www.w3.org/TR/xslfo20/#adjustable-properties",
+    "target_file": "properties-pagination.md",
+    "content": "<fo:flow flow-name=\"A\">\n <fo:alternative-copyfit-content>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\">Crucis rosa ut \nhoc sien qua non res veni.</fo:block>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Etiam tristique, \nnulla a pulvinar hendrerit nihil tortor urna auctor etim\ndomine secularia cali sed ut quotie ire in domince hoc fantus quis eius rei rei.\n</fo:block>\n </fo:alternative-copyfit-content>\n\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> \nLorem maecenas blandit ac, neque sed ut pulvinar, lectus sagittis \nsapien per risus vel.  Ligula sapien sed morbi cras tellus commodo. \nSi qua ex docet dei etris crucis</fo:block>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> curabitur \nmagna nis, faucibus sed ornare sed, congue eu dui. \nPellentesque habitant morbi tristique senectus et netus et \nmalessecularia uada fames ac turpis egestas. </fo:block>\n<fo:block word-spacing.minimum=\"1pt\" word-spacing.maximum=\"4pt\" \nline-height.minimum=\"8pt\" line-height.maximum=\"14pt\"> Nunc sit amet dolor \nsed sem congue mattis sed ut arcu. Mauris id magna sit amet elit aliquam.</fo:block>\n<fo:block>Pellentesque habitant morbi tristique senectus et netus et malesuada\nfames.</fo:block>\n</fo:flow>"
+  }
+]

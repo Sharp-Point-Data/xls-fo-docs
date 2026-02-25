@@ -1,0 +1,5861 @@
+[
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": null,
+    "title": "Introduction and Overview",
+    "start_line": 203,
+    "end_line": 678,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Processing a Stylesheet",
+    "start_line": 213,
+    "end_line": 433,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Tree Transformations",
+    "start_line": 257,
+    "end_line": 297,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Formatting",
+    "start_line": 298,
+    "end_line": 432,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Benefits of XSL",
+    "start_line": 434,
+    "end_line": 677,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Paging and Scrolling",
+    "start_line": 457,
+    "end_line": 538,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Selectors and Tree Construction",
+    "start_line": 539,
+    "end_line": 559,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "An Extended Page Layout Model",
+    "start_line": 560,
+    "end_line": 588,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "A Comprehensive Area Model",
+    "start_line": 589,
+    "end_line": 603,
+    "target_file": "guide-introduction.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Internationalization and Writing-Modes",
+    "start_line": 604,
+    "end_line": 646,
+    "target_file": "guide-writing-modes.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Linking",
+    "start_line": 647,
+    "end_line": 676,
+    "target_file": "guide-linking.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": null,
+    "title": "XSL Transformation",
+    "start_line": 681,
+    "end_line": 753,
+    "target_file": "guide-xslt-integration.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Tree Construction",
+    "start_line": 682,
+    "end_line": 702,
+    "target_file": "guide-xslt-integration.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "xsl-namespace",
+    "title": "XSL Namespace",
+    "start_line": 704,
+    "end_line": 751,
+    "target_file": "guide-xslt-integration.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "fo-jc-intro",
+    "title": "Introduction to Formatting",
+    "start_line": 756,
+    "end_line": 916,
+    "target_file": "guide-formatting-intro.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Conceptual Procedure",
+    "start_line": 843,
+    "end_line": 915,
+    "target_file": "guide-formatting-intro.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "area_model",
+    "title": "Area Model",
+    "start_line": 921,
+    "end_line": 3182,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-intro",
+    "title": "Introduction",
+    "start_line": 930,
+    "end_line": 1030,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-rect",
+    "title": "Rectangular Areas",
+    "start_line": 1031,
+    "end_line": 1549,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Area Types",
+    "start_line": 1032,
+    "end_line": 1051,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-common",
+    "title": "Common Traits",
+    "start_line": 1052,
+    "end_line": 1154,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-geo",
+    "title": "Geometric Definitions",
+    "start_line": 1155,
+    "end_line": 1227,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-treeorder",
+    "title": "Tree Ordering",
+    "start_line": 1228,
+    "end_line": 1244,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-stackcon",
+    "title": "Stacking Constraints",
+    "start_line": 1246,
+    "end_line": 1545,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "spacecond",
+    "title": "Spaces and Conditionality",
+    "start_line": 1550,
+    "end_line": 1721,
+    "target_file": "guide-spaces-conditionality.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-space",
+    "title": "Space-resolution Rules",
+    "start_line": 1580,
+    "end_line": 1693,
+    "target_file": "guide-spaces-conditionality.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "bpd-slack",
+    "title": "Overconstrained space-specifiers",
+    "start_line": 1695,
+    "end_line": 1718,
+    "target_file": "guide-spaces-conditionality.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-block",
+    "title": "Block-areas",
+    "start_line": 1722,
+    "end_line": 2065,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-stackblock",
+    "title": "Stacked Block-areas",
+    "start_line": 1747,
+    "end_line": 1831,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "verticalpositioning",
+    "title": "Positioning in the block-progression direction",
+    "start_line": 1835,
+    "end_line": 1940,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "intrusadjust",
+    "title": "Intrusion Adjustments",
+    "start_line": 1943,
+    "end_line": 2064,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-line",
+    "title": "Line-areas",
+    "start_line": 2066,
+    "end_line": 2141,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-inline",
+    "title": "Inline-areas",
+    "start_line": 2142,
+    "end_line": 2248,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-stackinline",
+    "title": "Stacked Inline-areas",
+    "start_line": 2172,
+    "end_line": 2207,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-glyph",
+    "title": "Glyph-areas",
+    "start_line": 2208,
+    "end_line": 2228,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-font",
+    "title": "Font Baseline Tables",
+    "start_line": 2229,
+    "end_line": 2247,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-order",
+    "title": "Ordering Constraints",
+    "start_line": 2250,
+    "end_line": 2418,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-genorder",
+    "title": "General Ordering Constraints",
+    "start_line": 2252,
+    "end_line": 2273,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-linebuild",
+    "title": "Line-building",
+    "start_line": 2274,
+    "end_line": 2383,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "area-inlinebuild",
+    "title": "Inline-building",
+    "start_line": 2386,
+    "end_line": 2417,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "keepbreak",
+    "title": "Keeps and Breaks",
+    "start_line": 2420,
+    "end_line": 2493,
+    "target_file": "guide-keeps-breaks.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "rendmodel",
+    "title": "Rendering Model",
+    "start_line": 2495,
+    "end_line": 2706,
+    "target_file": "guide-rendering-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rend-geo",
+    "title": "Geometry",
+    "start_line": 2512,
+    "end_line": 2556,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rend-view",
+    "title": "Viewport Geometry",
+    "start_line": 2557,
+    "end_line": 2580,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rend-vis",
+    "title": "Visibility",
+    "start_line": 2581,
+    "end_line": 2600,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rend-border",
+    "title": "Border, Padding, and Background",
+    "start_line": 2601,
+    "end_line": 2631,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rend-intrinsic",
+    "title": "Intrinsic Marks",
+    "start_line": 2632,
+    "end_line": 2650,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rend-layer",
+    "title": "Layering and Conflict of Marks",
+    "start_line": 2651,
+    "end_line": 2705,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-tree-sample",
+    "title": "Sample Area Tree",
+    "start_line": 2707,
+    "end_line": 2712,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "copyfitting",
+    "title": "Copyfitting",
+    "start_line": 2714,
+    "end_line": 3181,
+    "target_file": "guide-copyfitting.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "copyfitting-summary",
+    "title": "Summary",
+    "start_line": 2717,
+    "end_line": 2748,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "copyfitting-approach",
+    "title": "Copyfit: basic approach and definitions",
+    "start_line": 2751,
+    "end_line": 2783,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Copyfit Examples",
+    "start_line": 2785,
+    "end_line": 3016,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Content Adjusting Strategies",
+    "start_line": 3019,
+    "end_line": 3179,
+    "target_file": "guide-area-model.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "refinement",
+    "title": "Property Refinement / Resolution",
+    "start_line": 3185,
+    "end_line": 6278,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "speccomact",
+    "title": "Specified, Computed, and Actual Values, and Inheritance",
+    "start_line": 3214,
+    "end_line": 3328,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Specified Values",
+    "start_line": 3233,
+    "end_line": 3256,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Computed Values",
+    "start_line": 3257,
+    "end_line": 3301,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Actual Values",
+    "start_line": 3302,
+    "end_line": 3311,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "inheritance",
+    "title": "Inheritance",
+    "start_line": 3312,
+    "end_line": 3327,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "shortexpan",
+    "title": "Shorthand Expansion",
+    "start_line": 3330,
+    "end_line": 3387,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "compcorr",
+    "title": "Computing the Values of Corresponding Properties",
+    "start_line": 3389,
+    "end_line": 3668,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-border-padding",
+    "title": "Border and Padding Properties",
+    "start_line": 3422,
+    "end_line": 3473,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-margin-space-indent",
+    "title": "Margin, Space, and Indent Properties",
+    "start_line": 3474,
+    "end_line": 3545,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Height, and Width Properties",
+    "start_line": 3546,
+    "end_line": 3659,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "overcons_geom",
+    "title": "Overconstrained Geometry",
+    "start_line": 3660,
+    "end_line": 3667,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Simple Property to Trait Mapping",
+    "start_line": 3670,
+    "end_line": 3717,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Background-position-horizontal and background-position-vertical Properties",
+    "start_line": 3687,
+    "end_line": 3690,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Column-number Property",
+    "start_line": 3691,
+    "end_line": 3695,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Text-align Property",
+    "start_line": 3696,
+    "end_line": 3699,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Text-align-last Property",
+    "start_line": 3700,
+    "end_line": 3703,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "z-index Property",
+    "start_line": 3704,
+    "end_line": 3708,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Language Property",
+    "start_line": 3709,
+    "end_line": 3716,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Complex Property to Trait Mapping",
+    "start_line": 3719,
+    "end_line": 4053,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Word spacing and Letter spacing Properties",
+    "start_line": 3723,
+    "end_line": 3727,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-reference-orientation",
+    "title": "Reference-orientation Property",
+    "start_line": 3728,
+    "end_line": 3734,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-writing-mode",
+    "title": "Writing-mode and Direction Properties",
+    "start_line": 3735,
+    "end_line": 3748,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-absolute-pos",
+    "title": "Absolute-position Property",
+    "start_line": 3749,
+    "end_line": 3757,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-relative-pos",
+    "title": "Relative-position Property",
+    "start_line": 3758,
+    "end_line": 3773,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "refine-text-decoration",
+    "title": "Text-decoration Property",
+    "start_line": 3774,
+    "end_line": 3808,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fontprops",
+    "title": "Font Properties",
+    "start_line": 3810,
+    "end_line": 3860,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-model",
+    "title": "Fonts and Font Data",
+    "start_line": 3861,
+    "end_line": 4048,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Non-property Based Trait Generation",
+    "start_line": 4055,
+    "end_line": 4062,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Property Based Transformations",
+    "start_line": 4064,
+    "end_line": 4074,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Text-transform Property",
+    "start_line": 4065,
+    "end_line": 4073,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "alignmentproperties.intro",
+    "title": "Alignment Properties",
+    "start_line": 4076,
+    "end_line": 4655,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "rubydef",
+    "title": "Ruby",
+    "start_line": 4660,
+    "end_line": 4688,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Block and Line-related Properties for Ruby",
+    "start_line": 4677,
+    "end_line": 4685,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Unicode BIDI Processing",
+    "start_line": 4693,
+    "end_line": 4917,
+    "target_file": "guide-bidi.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Expressions",
+    "start_line": 4922,
+    "end_line": 5424,
+    "target_file": "guide-expressions.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Property Context",
+    "start_line": 4930,
+    "end_line": 4964,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Evaluation Order",
+    "start_line": 4966,
+    "end_line": 4978,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Basics",
+    "start_line": 4979,
+    "end_line": 4985,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Function Calls",
+    "start_line": 4987,
+    "end_line": 4999,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "numbers",
+    "title": "Numerics",
+    "start_line": 5001,
+    "end_line": 5092,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Absolute Numerics",
+    "start_line": 5094,
+    "end_line": 5116,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Relative Numerics",
+    "start_line": 5119,
+    "end_line": 5159,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Strings",
+    "start_line": 5160,
+    "end_line": 5165,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Colors",
+    "start_line": 5166,
+    "end_line": 5180,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Keywords",
+    "start_line": 5181,
+    "end_line": 5193,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Lexical Structure",
+    "start_line": 5194,
+    "end_line": 5285,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "expr.value.conv",
+    "title": "Expression Value Conversions",
+    "start_line": 5286,
+    "end_line": 5338,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Definitions of Units of Measure",
+    "start_line": 5339,
+    "end_line": 5423,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Core Function Library",
+    "start_line": 5425,
+    "end_line": 5873,
+    "target_file": "guide-expressions.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Number Functions",
+    "start_line": 5426,
+    "end_line": 5462,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "expr-color-functions",
+    "title": "Color Functions",
+    "start_line": 5463,
+    "end_line": 5564,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Font Functions",
+    "start_line": 5565,
+    "end_line": 5578,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Property Value Functions",
+    "start_line": 5579,
+    "end_line": 5872,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "datatype",
+    "title": "Property Datatypes",
+    "start_line": 5876,
+    "end_line": 6192,
+    "target_file": "guide-datatypes.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "numbering",
+    "title": "Numbering",
+    "start_line": 6194,
+    "end_line": 6222,
+    "target_file": "guide-numbering.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "composition",
+    "title": "Composition",
+    "start_line": 6224,
+    "end_line": 6273,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Improved font support",
+    "start_line": 6227,
+    "end_line": 6235,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Force line justification",
+    "start_line": 6237,
+    "end_line": 6244,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Alignment around breaks",
+    "start_line": 6246,
+    "end_line": 6251,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Tabs and tab stops",
+    "start_line": 6255,
+    "end_line": 6260,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Word and letter spacing",
+    "start_line": 6261,
+    "end_line": 6265,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Hyphenation and line breaking",
+    "start_line": 6267,
+    "end_line": 6271,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "fo-section",
+    "title": "Formatting Objects",
+    "start_line": 6282,
+    "end_line": 18420,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Introduction to Formatting Objects",
+    "start_line": 6284,
+    "end_line": 6440,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "define-returned-by",
+    "title": "Definitions Common to Many Formatting Objects",
+    "start_line": 6313,
+    "end_line": 6439,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Object Content",
+    "start_line": 6442,
+    "end_line": 6513,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects Summary",
+    "start_line": 6515,
+    "end_line": 6939,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Declarations and Pagination and Layout Formatting Objects",
+    "start_line": 6945,
+    "end_line": 9906,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "pag-intro",
+    "title": "Introduction",
+    "start_line": 6948,
+    "end_line": 7360,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Side by Side",
+    "start_line": 7363,
+    "end_line": 7477,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Widow and Orphan Management",
+    "start_line": 7479,
+    "end_line": 7534,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_root",
+    "title": "fo:root",
+    "start_line": 7538,
+    "end_line": 7592,
+    "target_file": "fo-root.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_declarations",
+    "title": "fo:declarations",
+    "start_line": 7595,
+    "end_line": 7617,
+    "target_file": "fo-declarations.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_color-profile",
+    "title": "fo:color-profile",
+    "start_line": 7620,
+    "end_line": 7660,
+    "target_file": "fo-color-profile.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-sequence",
+    "title": "fo:page-sequence",
+    "start_line": 7663,
+    "end_line": 7891,
+    "target_file": "fo-page-sequence.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-sequence-wrapper",
+    "title": "fo:page-sequence-wrapper",
+    "start_line": 7894,
+    "end_line": 7937,
+    "target_file": "fo-page-sequence-wrapper.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_layout-master-set",
+    "title": "fo:layout-master-set",
+    "start_line": 7940,
+    "end_line": 7962,
+    "target_file": "fo-layout-master-set.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-sequence-master",
+    "title": "fo:page-sequence-master",
+    "start_line": 7965,
+    "end_line": 8022,
+    "target_file": "fo-page-sequence-master.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_single-page-master-reference",
+    "title": "fo:single-page-master-reference",
+    "start_line": 8025,
+    "end_line": 8064,
+    "target_file": "fo-single-page-master-reference.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_repeatable-page-master-reference",
+    "title": "fo:repeatable-page-master-reference",
+    "start_line": 8067,
+    "end_line": 8111,
+    "target_file": "fo-repeatable-page-master-reference.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_repeatable-page-master-alternatives",
+    "title": "fo:repeatable-page-master-alternatives",
+    "start_line": 8114,
+    "end_line": 8179,
+    "target_file": "fo-repeatable-page-master-alternatives.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_conditional-page-master-reference",
+    "title": "fo:conditional-page-master-reference",
+    "start_line": 8182,
+    "end_line": 8277,
+    "target_file": "fo-conditional-page-master-reference.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-master",
+    "title": "fo:page-master",
+    "start_line": 8281,
+    "end_line": 8339,
+    "target_file": "fo-page-master.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_simple-page-master",
+    "title": "fo:simple-page-master",
+    "start_line": 8341,
+    "end_line": 8509,
+    "target_file": "fo-simple-page-master.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region-body",
+    "title": "fo:region-body",
+    "start_line": 8514,
+    "end_line": 8747,
+    "target_file": "fo-region-body.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region-before",
+    "title": "fo:region-before",
+    "start_line": 8750,
+    "end_line": 8852,
+    "target_file": "fo-region-before.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region-after",
+    "title": "fo:region-after",
+    "start_line": 8855,
+    "end_line": 8956,
+    "target_file": "fo-region-after.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region-start",
+    "title": "fo:region-start",
+    "start_line": 8959,
+    "end_line": 9061,
+    "target_file": "fo-region-start.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region-end",
+    "title": "fo:region-end",
+    "start_line": 9064,
+    "end_line": 9163,
+    "target_file": "fo-region-end.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region",
+    "title": "fo:region",
+    "start_line": 9165,
+    "end_line": 9359,
+    "target_file": "fo-region.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_extension-region",
+    "title": "Extension Regions",
+    "start_line": 9361,
+    "end_line": 9429,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_extension-region-start",
+    "title": "fo:extension-region-start",
+    "start_line": 9431,
+    "end_line": 9461,
+    "target_file": "fo-extension-region-start.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_extension-region-end",
+    "title": "fo:extension-region-end",
+    "start_line": 9463,
+    "end_line": 9483,
+    "target_file": "fo-extension-region-end.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_shape-path-specifier",
+    "title": "fo:shape-path-specifier",
+    "start_line": 9486,
+    "end_line": 9501,
+    "target_file": "fo-shape-path-specifier.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_shape-background-specifier",
+    "title": "fo:shape-background-specifier",
+    "start_line": 9502,
+    "end_line": 9516,
+    "target_file": "fo-shape-background-specifier.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_shape-border-specifier",
+    "title": "fo:shape-border-specifier",
+    "start_line": 9517,
+    "end_line": 9530,
+    "target_file": "fo-shape-border-specifier.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_flow",
+    "title": "fo:flow",
+    "start_line": 9534,
+    "end_line": 9568,
+    "target_file": "fo-flow.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_static-content",
+    "title": "fo:static-content",
+    "start_line": 9571,
+    "end_line": 9617,
+    "target_file": "fo-static-content.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_title",
+    "title": "fo:title",
+    "start_line": 9620,
+    "end_line": 9665,
+    "target_file": "fo-title.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_flow-map",
+    "title": "fo:flow-map",
+    "start_line": 9668,
+    "end_line": 9770,
+    "target_file": "fo-flow-map.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_flow-assignment",
+    "title": "fo:flow-assignment",
+    "start_line": 9773,
+    "end_line": 9795,
+    "target_file": "fo-flow-assignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_flow-source-list",
+    "title": "fo:flow-source-list",
+    "start_line": 9798,
+    "end_line": 9823,
+    "target_file": "fo-flow-source-list.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_flow-name-specifier",
+    "title": "fo:flow-name-specifier",
+    "start_line": 9826,
+    "end_line": 9850,
+    "target_file": "fo-flow-name-specifier.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_flow-target-list",
+    "title": "fo:flow-target-list",
+    "start_line": 9853,
+    "end_line": 9876,
+    "target_file": "fo-flow-target-list.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_region-name-specifier",
+    "title": "fo:region-name-specifier",
+    "start_line": 9879,
+    "end_line": 9903,
+    "target_file": "fo-region-name-specifier.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Block-level Formatting Objects",
+    "start_line": 9908,
+    "end_line": 10327,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 9911,
+    "end_line": 10064,
+    "target_file": null
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_block",
+    "title": "fo:block",
+    "start_line": 10067,
+    "end_line": 10162,
+    "target_file": "fo-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_block-container",
+    "title": "fo:block-container",
+    "start_line": 10164,
+    "end_line": 10272,
+    "target_file": "fo-block-container.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_alternative-copyfit-content",
+    "title": "fo:alternative-copyfit-content",
+    "start_line": 10275,
+    "end_line": 10324,
+    "target_file": "fo-alternative-copyfit-content.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Inline-level Formatting Objects",
+    "start_line": 10329,
+    "end_line": 12130,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 10332,
+    "end_line": 10727,
+    "target_file": null
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_bidi-override",
+    "title": "fo:bidi-override",
+    "start_line": 10730,
+    "end_line": 10785,
+    "target_file": "fo-bidi-override.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_character",
+    "title": "fo:character",
+    "start_line": 10788,
+    "end_line": 10877,
+    "target_file": "fo-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_initial-property-set",
+    "title": "fo:initial-property-set",
+    "start_line": 10880,
+    "end_line": 10933,
+    "target_file": "fo-initial-property-set.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_external-graphic",
+    "title": "fo:external-graphic",
+    "start_line": 10936,
+    "end_line": 11026,
+    "target_file": "fo-external-graphic.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_instream-foreign-object",
+    "title": "fo:instream-foreign-object",
+    "start_line": 11029,
+    "end_line": 11124,
+    "target_file": "fo-instream-foreign-object.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_inline",
+    "title": "fo:inline",
+    "start_line": 11127,
+    "end_line": 11195,
+    "target_file": "fo-inline.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_inline-container",
+    "title": "fo:inline-container",
+    "start_line": 11198,
+    "end_line": 11388,
+    "target_file": "fo-inline-container.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_leader",
+    "title": "fo:leader",
+    "start_line": 11391,
+    "end_line": 11496,
+    "target_file": "fo-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-number",
+    "title": "fo:page-number",
+    "start_line": 11500,
+    "end_line": 11580,
+    "target_file": "fo-page-number.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-number-citation",
+    "title": "fo:page-number-citation",
+    "start_line": 11583,
+    "end_line": 11649,
+    "target_file": "fo-page-number-citation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_page-number-citation-last",
+    "title": "fo:page-number-citation-last",
+    "start_line": 11652,
+    "end_line": 11718,
+    "target_file": "fo-page-number-citation-last.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_folio-prefix",
+    "title": "fo:folio-prefix",
+    "start_line": 11721,
+    "end_line": 11743,
+    "target_file": "fo-folio-prefix.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_folio-suffix",
+    "title": "fo:folio-suffix",
+    "start_line": 11746,
+    "end_line": 11768,
+    "target_file": "fo-folio-suffix.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_scaling-value-citation",
+    "title": "fo:scaling-value-citation",
+    "start_line": 11772,
+    "end_line": 11867,
+    "target_file": "fo-scaling-value-citation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_ruby",
+    "title": "fo:ruby",
+    "start_line": 11870,
+    "end_line": 11937,
+    "target_file": "fo-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_ruby-base",
+    "title": "fo:ruby-base",
+    "start_line": 11938,
+    "end_line": 11977,
+    "target_file": "fo-ruby-base.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_ruby-text",
+    "title": "fo:ruby-text",
+    "start_line": 11979,
+    "end_line": 12015,
+    "target_file": "fo-ruby-text.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_ruby-parenthesis",
+    "title": "fo:ruby-parenthesis",
+    "start_line": 12017,
+    "end_line": 12063,
+    "target_file": "fo-ruby-parenthesis.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_ruby-base_container",
+    "title": "fo:ruby-base-container-text",
+    "start_line": 12067,
+    "end_line": 12085,
+    "target_file": "fo-ruby-base-container-text.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_ruby-text-container",
+    "title": "fo:ruby-text-container",
+    "start_line": 12087,
+    "end_line": 12125,
+    "target_file": "fo-ruby-text-container.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects for Tables",
+    "start_line": 12132,
+    "end_line": 13950,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 12135,
+    "end_line": 12794,
+    "target_file": null
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-and-caption",
+    "title": "fo:table-and-caption",
+    "start_line": 12796,
+    "end_line": 12856,
+    "target_file": "fo-table-and-caption.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table",
+    "title": "fo:table",
+    "start_line": 12859,
+    "end_line": 13052,
+    "target_file": "fo-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-column",
+    "title": "fo:table-column",
+    "start_line": 13055,
+    "end_line": 13140,
+    "target_file": "fo-table-column.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-caption",
+    "title": "fo:table-caption",
+    "start_line": 13143,
+    "end_line": 13214,
+    "target_file": "fo-table-caption.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-header",
+    "title": "fo:table-header",
+    "start_line": 13217,
+    "end_line": 13301,
+    "target_file": "fo-table-header.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-footer",
+    "title": "fo:table-footer",
+    "start_line": 13304,
+    "end_line": 13385,
+    "target_file": "fo-table-footer.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-body",
+    "title": "fo:table-body",
+    "start_line": 13388,
+    "end_line": 13469,
+    "target_file": "fo-table-body.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-row",
+    "title": "fo:table-row",
+    "start_line": 13472,
+    "end_line": 13563,
+    "target_file": "fo-table-row.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-cell",
+    "title": "fo:table-cell",
+    "start_line": 13566,
+    "end_line": 13712,
+    "target_file": "fo-table-cell.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-header-alternatives",
+    "title": "fo:table-header-alternatives",
+    "start_line": 13714,
+    "end_line": 13750,
+    "target_file": "fo-table-header-alternatives.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_table-footer-alternatives",
+    "title": "fo:table-footer-alternatives",
+    "start_line": 13752,
+    "end_line": 13785,
+    "target_file": "fo-table-footer-alternatives.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_conditional-table-header-reference",
+    "title": "fo:conditional-table-header-reference",
+    "start_line": 13787,
+    "end_line": 13865,
+    "target_file": "fo-conditional-table-header-reference.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_conditional-table-footer-reference",
+    "title": "fo:conditional-table-footer-reference",
+    "start_line": 13869,
+    "end_line": 13947,
+    "target_file": "fo-conditional-table-footer-reference.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects for Lists",
+    "start_line": 13952,
+    "end_line": 14634,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 13955,
+    "end_line": 14419,
+    "target_file": null
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_list-block",
+    "title": "fo:list-block",
+    "start_line": 14422,
+    "end_line": 14473,
+    "target_file": "fo-list-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_list-item",
+    "title": "fo:list-item",
+    "start_line": 14476,
+    "end_line": 14554,
+    "target_file": "fo-list-item.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_list-item-body",
+    "title": "fo:list-item-body",
+    "start_line": 14557,
+    "end_line": 14592,
+    "target_file": "fo-list-item-body.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_list-item-label",
+    "title": "fo:list-item-label",
+    "start_line": 14595,
+    "end_line": 14631,
+    "target_file": "fo-list-item-label.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Dynamic Effects: Link and Multi Formatting Objects",
+    "start_line": 14636,
+    "end_line": 15321,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 14639,
+    "end_line": 14981,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_basic-link",
+    "title": "fo:basic-link",
+    "start_line": 14984,
+    "end_line": 15049,
+    "target_file": "fo-basic-link.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_multi-switch",
+    "title": "fo:multi-switch",
+    "start_line": 15052,
+    "end_line": 15121,
+    "target_file": "fo-multi-switch.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_multi-case",
+    "title": "fo:multi-case",
+    "start_line": 15124,
+    "end_line": 15175,
+    "target_file": "fo-multi-case.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_multi-toggle",
+    "title": "fo:multi-toggle",
+    "start_line": 15178,
+    "end_line": 15223,
+    "target_file": "fo-multi-toggle.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_multi-properties",
+    "title": "fo:multi-properties",
+    "start_line": 15226,
+    "end_line": 15285,
+    "target_file": "fo-multi-properties.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_multi-property-set",
+    "title": "fo:multi-property-set",
+    "start_line": 15288,
+    "end_line": 15318,
+    "target_file": "fo-multi-property-set.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects for Indexing",
+    "start_line": 15323,
+    "end_line": 16476,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 15326,
+    "end_line": 16072,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-page-number-prefix",
+    "title": "fo:index-page-number-prefix",
+    "start_line": 16075,
+    "end_line": 16096,
+    "target_file": "fo-index-page-number-prefix.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-page-number-suffix",
+    "title": "fo:index-page-number-suffix",
+    "start_line": 16099,
+    "end_line": 16120,
+    "target_file": "fo-index-page-number-suffix.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-range-begin",
+    "title": "fo:index-range-begin",
+    "start_line": 16123,
+    "end_line": 16160,
+    "target_file": "fo-index-range-begin.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-range-end",
+    "title": "fo:index-range-end",
+    "start_line": 16163,
+    "end_line": 16188,
+    "target_file": "fo-index-range-end.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-key-reference",
+    "title": "fo:index-key-reference",
+    "start_line": 16191,
+    "end_line": 16267,
+    "target_file": "fo-index-key-reference.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-page-citation-list",
+    "title": "fo:index-page-citation-list",
+    "start_line": 16270,
+    "end_line": 16424,
+    "target_file": "fo-index-page-citation-list.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-page-citation-list-separator",
+    "title": "fo:index-page-citation-list-separator",
+    "start_line": 16427,
+    "end_line": 16448,
+    "target_file": "fo-index-page-citation-list-separator.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_index-page-citation-range-separator",
+    "title": "fo:index-page-citation-range-separator",
+    "start_line": 16451,
+    "end_line": 16472,
+    "target_file": "fo-index-page-citation-range-separator.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects for Bookmarks",
+    "start_line": 16478,
+    "end_line": 16593,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_bookmark-tree",
+    "title": "fo:bookmark-tree",
+    "start_line": 16481,
+    "end_line": 16503,
+    "target_file": "fo-bookmark-tree.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_bookmark",
+    "title": "fo:bookmark",
+    "start_line": 16506,
+    "end_line": 16546,
+    "target_file": "fo-bookmark.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_bookmark-title",
+    "title": "fo:bookmark-title",
+    "start_line": 16549,
+    "end_line": 16590,
+    "target_file": "fo-bookmark-title.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Out-of-Line Formatting Objects",
+    "start_line": 16595,
+    "end_line": 17257,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 16598,
+    "end_line": 16855,
+    "target_file": null
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_float",
+    "title": "fo:float",
+    "start_line": 16858,
+    "end_line": 17003,
+    "target_file": "fo-float.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_marginalia",
+    "title": "fo:marginalia",
+    "start_line": 17005,
+    "end_line": 17100,
+    "target_file": "fo-marginalia.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_marginalia-body",
+    "title": "fo:marginalia-body",
+    "start_line": 17102,
+    "end_line": 17166,
+    "target_file": "fo-marginalia-body.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_footnote",
+    "title": "fo:footnote",
+    "start_line": 17169,
+    "end_line": 17224,
+    "target_file": "fo-footnote.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_footnote-body",
+    "title": "fo:footnote-body",
+    "start_line": 17227,
+    "end_line": 17254,
+    "target_file": "fo-footnote-body.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Other Formatting Objects",
+    "start_line": 17259,
+    "end_line": 18418,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": null,
+    "title": "Introduction",
+    "start_line": 17262,
+    "end_line": 17881,
+    "target_file": null
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_change-bar-begin",
+    "title": "fo:change-bar-begin",
+    "start_line": 17884,
+    "end_line": 17944,
+    "target_file": "fo-change-bar-begin.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_change-bar-end",
+    "title": "fo:change-bar-end",
+    "start_line": 17947,
+    "end_line": 17976,
+    "target_file": "fo-change-bar-end.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_wrapper",
+    "title": "fo:wrapper",
+    "start_line": 17980,
+    "end_line": 18042,
+    "target_file": "fo-wrapper.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_marker",
+    "title": "fo:marker",
+    "start_line": 18045,
+    "end_line": 18093,
+    "target_file": "fo-marker.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_retrieve-marker",
+    "title": "fo:retrieve-marker",
+    "start_line": 18098,
+    "end_line": 18183,
+    "target_file": "fo-retrieve-marker.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_retrieve-table-marker",
+    "title": "fo:retrieve-table-marker",
+    "start_line": 18186,
+    "end_line": 18281,
+    "target_file": "fo-retrieve-table-marker.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_number",
+    "title": "fo:number",
+    "start_line": 18283,
+    "end_line": 18371,
+    "target_file": "fo-number.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "fo_retrieve-number",
+    "title": "fo:retrieve-number",
+    "start_line": 18380,
+    "end_line": 18411,
+    "target_file": "fo-retrieve-number.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "pr-section",
+    "title": "Formatting Properties",
+    "start_line": 18421,
+    "end_line": 34039,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Description of Property Groups",
+    "start_line": 18422,
+    "end_line": 18608,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "cssbox",
+    "title": "XSL Areas and the CSS Box Model",
+    "start_line": 18609,
+    "end_line": 18655,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "percrule",
+    "title": "Reference Rectangle for Percentage Computations",
+    "start_line": 18656,
+    "end_line": 18726,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "cssdatat",
+    "title": "Additional CSS Datatypes",
+    "start_line": 18727,
+    "end_line": 18751,
+    "target_file": "guide-property-refinement.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-accessibility-properties",
+    "title": "Common Accessibility Properties",
+    "start_line": 18755,
+    "end_line": 18846,
+    "target_file": "properties-accessibility.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "source-document",
+    "title": "source-document",
+    "start_line": 18758,
+    "end_line": 18795,
+    "target_file": "properties-accessibility.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "role",
+    "title": "role",
+    "start_line": 18797,
+    "end_line": 18845,
+    "target_file": "properties-accessibility.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-absolute-position-properties",
+    "title": "Common Absolute Position Properties",
+    "start_line": 18848,
+    "end_line": 19052,
+    "target_file": "properties-absolute-position.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "absolute-position",
+    "title": "absolute-position",
+    "start_line": 18851,
+    "end_line": 18903,
+    "target_file": "properties-absolute-position.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "bottom",
+    "title": "bottom",
+    "start_line": 18905,
+    "end_line": 18930,
+    "target_file": "properties-absolute-position.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "left",
+    "title": "left",
+    "start_line": 18932,
+    "end_line": 18990,
+    "target_file": "properties-absolute-position.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "right",
+    "title": "right",
+    "start_line": 18992,
+    "end_line": 19018,
+    "target_file": "properties-absolute-position.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "top",
+    "title": "top",
+    "start_line": 19021,
+    "end_line": 19048,
+    "target_file": "properties-absolute-position.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-aural-properties",
+    "title": "Common Aural Properties",
+    "start_line": 19054,
+    "end_line": null,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "azimuth",
+    "title": "azimuth",
+    "start_line": 19055,
+    "end_line": 19075,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "cue-after",
+    "title": "cue-after",
+    "start_line": 19077,
+    "end_line": 19098,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "cue-before",
+    "title": "cue-before",
+    "start_line": 19100,
+    "end_line": 19121,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "elevation",
+    "title": "elevation",
+    "start_line": 19123,
+    "end_line": 19140,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "pause-after",
+    "title": "pause-after",
+    "start_line": 19142,
+    "end_line": 19158,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "pause-before",
+    "title": "pause-before",
+    "start_line": 19159,
+    "end_line": 19175,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "pitch",
+    "title": "pitch",
+    "start_line": 19176,
+    "end_line": 19193,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "pitch-range",
+    "title": "pitch-range",
+    "start_line": 19194,
+    "end_line": 19210,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "play-during",
+    "title": "play-during",
+    "start_line": 19212,
+    "end_line": 19233,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "richness",
+    "title": "richness",
+    "start_line": 19235,
+    "end_line": 19251,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "speak",
+    "title": "speak",
+    "start_line": 19252,
+    "end_line": 19268,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "speak-header",
+    "title": "speak-header",
+    "start_line": 19269,
+    "end_line": 19285,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "speak-numeral",
+    "title": "speak-numeral",
+    "start_line": 19286,
+    "end_line": 19302,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "speak-punctuation",
+    "title": "speak-punctuation",
+    "start_line": 19303,
+    "end_line": 19319,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "speech-rate",
+    "title": "speech-rate",
+    "start_line": 19320,
+    "end_line": 19337,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "stress",
+    "title": "stress",
+    "start_line": 19338,
+    "end_line": 19354,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "voice-family",
+    "title": "voice-family",
+    "start_line": 19355,
+    "end_line": 19372,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "volume",
+    "title": "volume",
+    "start_line": 19373,
+    "end_line": 19390,
+    "target_file": "properties-aural.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-border-padding-and-background-properties",
+    "title": "Common Border, Padding, and Background Properties",
+    "start_line": 19392,
+    "end_line": 20554,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-attachment",
+    "title": "background-attachment",
+    "start_line": 19400,
+    "end_line": 19436,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-color",
+    "title": "background-color",
+    "start_line": 19438,
+    "end_line": 19467,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-image",
+    "title": "background-image",
+    "start_line": 19469,
+    "end_line": 19501,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-position-horizontal",
+    "title": "background-position-horizontal",
+    "start_line": 19503,
+    "end_line": 19571,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-position-vertical",
+    "title": "background-position-vertical",
+    "start_line": 19573,
+    "end_line": 19640,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-repeat",
+    "title": "background-repeat",
+    "start_line": 19644,
+    "end_line": 19681,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-after-color",
+    "title": "border-after-color",
+    "start_line": 19683,
+    "end_line": 19703,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-after-style",
+    "title": "border-after-style",
+    "start_line": 19705,
+    "end_line": 19720,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-after-width",
+    "title": "border-after-width",
+    "start_line": 19722,
+    "end_line": 19756,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-before-color",
+    "title": "border-before-color",
+    "start_line": 19758,
+    "end_line": 19778,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-before-style",
+    "title": "border-before-style",
+    "start_line": 19780,
+    "end_line": 19795,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-before-width",
+    "title": "border-before-width",
+    "start_line": 19797,
+    "end_line": 19845,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-bottom-color",
+    "title": "border-bottom-color",
+    "start_line": 19847,
+    "end_line": 19874,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-bottom-style",
+    "title": "border-bottom-style",
+    "start_line": 19876,
+    "end_line": 19897,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-bottom-width",
+    "title": "border-bottom-width",
+    "start_line": 19899,
+    "end_line": 19920,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-end-color",
+    "title": "border-end-color",
+    "start_line": 19922,
+    "end_line": 19942,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-end-style",
+    "title": "border-end-style",
+    "start_line": 19944,
+    "end_line": 19959,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-end-width",
+    "title": "border-end-width",
+    "start_line": 19961,
+    "end_line": 19993,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-left-color",
+    "title": "border-left-color",
+    "start_line": 19995,
+    "end_line": 20022,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-left-style",
+    "title": "border-left-style",
+    "start_line": 20024,
+    "end_line": 20045,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-left-width",
+    "title": "border-left-width",
+    "start_line": 20047,
+    "end_line": 20068,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-right-color",
+    "title": "border-right-color",
+    "start_line": 20070,
+    "end_line": 20097,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-right-style",
+    "title": "border-right-style",
+    "start_line": 20099,
+    "end_line": 20120,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-right-width",
+    "title": "border-right-width",
+    "start_line": 20122,
+    "end_line": 20143,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-start-color",
+    "title": "border-start-color",
+    "start_line": 20145,
+    "end_line": 20165,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-start-style",
+    "title": "border-start-style",
+    "start_line": 20167,
+    "end_line": 20182,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-start-width",
+    "title": "border-start-width",
+    "start_line": 20184,
+    "end_line": 20216,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-top-color",
+    "title": "border-top-color",
+    "start_line": 20219,
+    "end_line": 20252,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-top-style",
+    "title": "border-top-style",
+    "start_line": 20254,
+    "end_line": 20304,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-top-width",
+    "title": "border-top-width",
+    "start_line": 20306,
+    "end_line": 20336,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-after",
+    "title": "padding-after",
+    "start_line": 20340,
+    "end_line": 20368,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-before",
+    "title": "padding-before",
+    "start_line": 20370,
+    "end_line": 20398,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-bottom",
+    "title": "padding-bottom",
+    "start_line": 20399,
+    "end_line": 20419,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-end",
+    "title": "padding-end",
+    "start_line": 20421,
+    "end_line": 20449,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-left",
+    "title": "padding-left",
+    "start_line": 20451,
+    "end_line": 20471,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-right",
+    "title": "padding-right",
+    "start_line": 20472,
+    "end_line": 20492,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-start",
+    "title": "padding-start",
+    "start_line": 20496,
+    "end_line": 20524,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding-top",
+    "title": "padding-top",
+    "start_line": 20527,
+    "end_line": 20550,
+    "target_file": "properties-border-padding-background.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-font-properties",
+    "title": "Common Font Properties",
+    "start_line": 20556,
+    "end_line": 21092,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-family",
+    "title": "font-family",
+    "start_line": 20568,
+    "end_line": 20625,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-selection-strategy",
+    "title": "font-selection-strategy",
+    "start_line": 20627,
+    "end_line": 20727,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-size",
+    "title": "font-size",
+    "start_line": 20729,
+    "end_line": 20805,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-size-adjust",
+    "title": "font-size-adjust",
+    "start_line": 20807,
+    "end_line": 20862,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-stretch",
+    "title": "font-stretch",
+    "start_line": 20867,
+    "end_line": 20917,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-style",
+    "title": "font-style",
+    "start_line": 20921,
+    "end_line": 20969,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-variant",
+    "title": "font-variant",
+    "start_line": 20971,
+    "end_line": 21019,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font-weight",
+    "title": "font-weight",
+    "start_line": 21021,
+    "end_line": 21091,
+    "target_file": "properties-font.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-hyphenation-properties",
+    "title": "Common Hyphenation Properties",
+    "start_line": 21094,
+    "end_line": 21573,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "country",
+    "title": "country",
+    "start_line": 21096,
+    "end_line": 21124,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenate",
+    "title": "hyphenate",
+    "start_line": 21125,
+    "end_line": 21148,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-character",
+    "title": "hyphenation-character",
+    "start_line": 21150,
+    "end_line": 21170,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-push-character-count",
+    "title": "hyphenation-push-character-count",
+    "start_line": 21172,
+    "end_line": 21194,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-remain-character-count",
+    "title": "hyphenation-remain-character-count",
+    "start_line": 21196,
+    "end_line": 21218,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "language",
+    "title": "language",
+    "start_line": 21221,
+    "end_line": 21255,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "script",
+    "title": "script",
+    "start_line": 21257,
+    "end_line": 21297,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-push-syllable-count",
+    "title": "",
+    "start_line": 21301,
+    "end_line": 21335,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-remain-syllable-count",
+    "title": "hyphenation-remain-syllable-count",
+    "start_line": 21339,
+    "end_line": 21366,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "syllable-widows",
+    "title": "syllable-widows",
+    "start_line": 21368,
+    "end_line": 21399,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-exceptions",
+    "title": "hyphenation-exceptions",
+    "start_line": 21401,
+    "end_line": 21432,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "word-widows",
+    "title": "word-widows",
+    "start_line": 21435,
+    "end_line": 21472,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "min-length-of-last-line",
+    "title": "min-length-of-last-line",
+    "start_line": 21474,
+    "end_line": 21506,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "last-line-minimum-deficit",
+    "title": "last-line-minimum-deficit",
+    "start_line": 21508,
+    "end_line": 21542,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-permitted-minimum-deficit",
+    "title": "hyphenation-permitted-minimum-deficit",
+    "start_line": 21544,
+    "end_line": 21570,
+    "target_file": "properties-hyphenation.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-margin-properties-block",
+    "title": "Common Margin Properties-Block",
+    "start_line": 21575,
+    "end_line": 21847,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "end-indent",
+    "title": "end-indent",
+    "start_line": 21576,
+    "end_line": 21603,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "margin-bottom",
+    "title": "margin-bottom",
+    "start_line": 21606,
+    "end_line": 21641,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "margin-left",
+    "title": "margin-left",
+    "start_line": 21643,
+    "end_line": 21677,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "margin-right",
+    "title": "margin-right",
+    "start_line": 21679,
+    "end_line": 21713,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "margin-top",
+    "title": "margin-top",
+    "start_line": 21716,
+    "end_line": 21751,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "space-after",
+    "title": "space-after",
+    "start_line": 21753,
+    "end_line": 21781,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "space-before",
+    "title": "space-before",
+    "start_line": 21786,
+    "end_line": 21814,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "start-indent",
+    "title": "start-indent",
+    "start_line": 21817,
+    "end_line": 21844,
+    "target_file": "properties-margin-block.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-margin-properties-inline",
+    "title": "Common Margin Properties-Inline",
+    "start_line": 21849,
+    "end_line": 21930,
+    "target_file": "properties-margin-inline.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "space-end",
+    "title": "space-end",
+    "start_line": 21860,
+    "end_line": 21893,
+    "target_file": "properties-margin-inline.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "space-start",
+    "title": "space-start",
+    "start_line": 21895,
+    "end_line": 21928,
+    "target_file": "properties-margin-inline.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-relative-position-properties",
+    "title": "Common Relative Position Properties",
+    "start_line": 21932,
+    "end_line": 21975,
+    "target_file": "properties-relative-position.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "relative-position",
+    "title": "relative-position",
+    "start_line": 21940,
+    "end_line": 21969,
+    "target_file": "properties-relative-position.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "common-wrap-properties",
+    "title": "Common Wrap Properties",
+    "start_line": 21978,
+    "end_line": 22225,
+    "target_file": "properties-wrap.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "wrap",
+    "title": "wrap",
+    "start_line": 21985,
+    "end_line": 22053,
+    "target_file": "properties-wrap.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "wrap-path",
+    "title": "wrap-path",
+    "start_line": 22054,
+    "end_line": 22094,
+    "target_file": "properties-wrap.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "wrap-side",
+    "title": "wrap-side",
+    "start_line": 22095,
+    "end_line": 22224,
+    "target_file": "properties-wrap.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "area-alignment",
+    "title": "Area Alignment Properties",
+    "start_line": 22229,
+    "end_line": 23244,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "alignment-adjust",
+    "title": "alignment-adjust",
+    "start_line": 22233,
+    "end_line": 22350,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "alignment-baseline",
+    "title": "alignment-baseline",
+    "start_line": 22352,
+    "end_line": 22437,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "block-unit",
+    "title": "block-unit",
+    "start_line": 22439,
+    "end_line": 22495,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "baseline-shift",
+    "title": "baseline-shift",
+    "start_line": 22498,
+    "end_line": 22609,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "display-align",
+    "title": "display-align",
+    "start_line": 22615,
+    "end_line": 22697,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "display-align-last",
+    "title": "display-align-last",
+    "start_line": 22700,
+    "end_line": 22762,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "dominant-baseline",
+    "title": "dominant-baseline",
+    "start_line": 22823,
+    "end_line": 22984,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "relative-align",
+    "title": "relative-align",
+    "start_line": 22986,
+    "end_line": 23054,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "marginalia-relative-align",
+    "title": "marginalia-relative-align",
+    "start_line": 23055,
+    "end_line": 23084,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "flow-map-dependency-reference",
+    "title": "flow-map-dependency-reference",
+    "start_line": 23086,
+    "end_line": 23117,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "dependency-content-begin",
+    "title": "dependency-content-begin",
+    "start_line": 23119,
+    "end_line": 23155,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "dependency-content-end",
+    "title": "dependency-content-end",
+    "start_line": 23157,
+    "end_line": 23192,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "keep-with-dependent-content",
+    "title": "keep-with-dependent-content",
+    "start_line": 23194,
+    "end_line": 23241,
+    "target_file": "properties-alignment.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Area Dimension Properties",
+    "start_line": 23246,
+    "end_line": 23876,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "allowed-height-scale",
+    "title": "allowed-height-scale",
+    "start_line": 23248,
+    "end_line": 23285,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "allowed-width-scale",
+    "title": "allowed-width-scale",
+    "start_line": 23287,
+    "end_line": 23324,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "block-progression-dimension",
+    "title": "block-progression-dimension",
+    "start_line": 23326,
+    "end_line": 23399,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "content-height",
+    "title": "content-height",
+    "start_line": 23401,
+    "end_line": 23451,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "content-width",
+    "title": "content-width",
+    "start_line": 23453,
+    "end_line": 23502,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "height",
+    "title": "height",
+    "start_line": 23504,
+    "end_line": 23547,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "inline-progression-dimension",
+    "title": "inline-progression-dimension",
+    "start_line": 23549,
+    "end_line": 23616,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "max-height",
+    "title": "max-height",
+    "start_line": 23618,
+    "end_line": 23654,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "max-width",
+    "title": "max-width",
+    "start_line": 23656,
+    "end_line": 23689,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "min-height",
+    "title": "min-height",
+    "start_line": 23691,
+    "end_line": 23727,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "min-width",
+    "title": "min-width",
+    "start_line": 23729,
+    "end_line": 23762,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "scaling",
+    "title": "scaling",
+    "start_line": 23764,
+    "end_line": 23787,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "scaling-method",
+    "title": "scaling-method",
+    "start_line": 23789,
+    "end_line": 23830,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "width",
+    "title": "width",
+    "start_line": 23832,
+    "end_line": 23874,
+    "target_file": "properties-dimension.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Block and Line-related Properties",
+    "start_line": 23878,
+    "end_line": 24769,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-keep",
+    "title": "hyphenation-keep",
+    "start_line": 23880,
+    "end_line": 23903,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hyphenation-ladder-count",
+    "title": "hyphenation-ladder-count",
+    "start_line": 23905,
+    "end_line": 23928,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "last-line-end-indent",
+    "title": "last-line-end-indent",
+    "start_line": 23930,
+    "end_line": 23959,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "line-height",
+    "title": "line-height",
+    "start_line": 23961,
+    "end_line": 24046,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "line-height-shift-adjustment",
+    "title": "line-height-shift-adjustment",
+    "start_line": 24048,
+    "end_line": 24073,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "line-stacking-strategy",
+    "title": "line-stacking-strategy",
+    "start_line": 24075,
+    "end_line": 24109,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "linefeed-treatment",
+    "title": "linefeed-treatment",
+    "start_line": 24111,
+    "end_line": 24159,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-align",
+    "title": "text-align",
+    "start_line": 24160,
+    "end_line": 24253,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-align-last",
+    "title": "text-align-last",
+    "start_line": 24255,
+    "end_line": 24309,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-indent",
+    "title": "text-indent",
+    "start_line": 24311,
+    "end_line": 24355,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "white-space-collapse",
+    "title": "white-space-collapse",
+    "start_line": 24357,
+    "end_line": 24413,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "white-space-treatment",
+    "title": "white-space-treatment",
+    "start_line": 24417,
+    "end_line": 24467,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "wrap-option",
+    "title": "wrap-option",
+    "start_line": 24470,
+    "end_line": 24503,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "initial-cap-lines",
+    "title": "initial-cap-lines",
+    "start_line": 24505,
+    "end_line": 24566,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "initial-cap-kern-lines",
+    "title": "initial-cap-kern-lines",
+    "start_line": 24607,
+    "end_line": 24637,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "initial-cap-indent",
+    "title": "initial-cap-indent",
+    "start_line": 24639,
+    "end_line": 24686,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "hanging-punctuation",
+    "title": "hanging-punctuation",
+    "start_line": 24689,
+    "end_line": 24707,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "tab-stops",
+    "title": "tab-stops",
+    "start_line": 24710,
+    "end_line": 24752,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "tab-alignment-character",
+    "title": "tab-alignment-character",
+    "start_line": 24754,
+    "end_line": 24766,
+    "target_file": "properties-block-line.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Character Properties",
+    "start_line": 24771,
+    "end_line": 25297,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "character",
+    "title": "character",
+    "start_line": 24773,
+    "end_line": 24794,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "letter-spacing",
+    "title": "letter-spacing",
+    "start_line": 24796,
+    "end_line": 24897,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "suppress-at-line-break",
+    "title": "suppress-at-line-break",
+    "start_line": 24899,
+    "end_line": 24934,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-decoration",
+    "title": "text-decoration",
+    "start_line": 24936,
+    "end_line": 25020,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-shadow",
+    "title": "text-shadow",
+    "start_line": 25022,
+    "end_line": 25089,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-transform",
+    "title": "text-transform",
+    "start_line": 25091,
+    "end_line": 25130,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "treat-as-word-space",
+    "title": "treat-as-word-space",
+    "start_line": 25132,
+    "end_line": 25166,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "word-spacing",
+    "title": "word-spacing",
+    "start_line": 25170,
+    "end_line": 25261,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "word-spacing-critical-length",
+    "title": "word-spacing-critical-length",
+    "start_line": 25265,
+    "end_line": 25294,
+    "target_file": "properties-character.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Color-related Properties",
+    "start_line": 25299,
+    "end_line": 25401,
+    "target_file": "properties-color.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "color",
+    "title": "color",
+    "start_line": 25301,
+    "end_line": 25325,
+    "target_file": "properties-color.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "color-profile-name",
+    "title": "color-profile-name",
+    "start_line": 25327,
+    "end_line": 25345,
+    "target_file": "properties-color.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rendering-intent",
+    "title": "rendering-intent",
+    "start_line": 25347,
+    "end_line": 25399,
+    "target_file": "properties-color.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Float-related Properties",
+    "start_line": 25403,
+    "end_line": 25747,
+    "target_file": "properties-float.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "clear",
+    "title": "clear",
+    "start_line": 25405,
+    "end_line": 25564,
+    "target_file": "properties-float.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "float",
+    "title": "float",
+    "start_line": 25566,
+    "end_line": 25673,
+    "target_file": "properties-float.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "intrusion-displace",
+    "title": "intrusion-displace",
+    "start_line": 25675,
+    "end_line": 25745,
+    "target_file": "properties-float.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Keeps and Breaks Properties",
+    "start_line": 25751,
+    "end_line": 26059,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "break-after",
+    "title": "break-after",
+    "start_line": 25765,
+    "end_line": 25802,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "break-before",
+    "title": "break-before",
+    "start_line": 25804,
+    "end_line": 25842,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "keep-together",
+    "title": "keep-together",
+    "start_line": 25844,
+    "end_line": 25889,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "keep-with-next",
+    "title": "keep-with-next",
+    "start_line": 25891,
+    "end_line": 25933,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "keep-with-previous",
+    "title": "keep-with-previous",
+    "start_line": 25935,
+    "end_line": 25979,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "orphans",
+    "title": "orphans",
+    "start_line": 25981,
+    "end_line": 25998,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "widows",
+    "title": "widows",
+    "start_line": 26000,
+    "end_line": 26027,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-align-before-break",
+    "title": "text-align-before-break",
+    "start_line": 26029,
+    "end_line": 26042,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-align-after-break",
+    "title": "text-align-after-break",
+    "start_line": 26044,
+    "end_line": 26055,
+    "target_file": "properties-keeps-breaks.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Layout-related Properties",
+    "start_line": 26061,
+    "end_line": 26383,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "clip",
+    "title": "clip",
+    "start_line": 26066,
+    "end_line": 26111,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "overflow",
+    "title": "overflow",
+    "start_line": 26113,
+    "end_line": 26187,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "reference-orientation",
+    "title": "reference-orientation",
+    "start_line": 26189,
+    "end_line": 26249,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "span",
+    "title": "span",
+    "start_line": 26251,
+    "end_line": 26275,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "bleed-box",
+    "title": "",
+    "start_line": 26277,
+    "end_line": 26328,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "trim-box",
+    "title": "",
+    "start_line": 26331,
+    "end_line": 26378,
+    "target_file": "properties-layout.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Leader and Rule Properties",
+    "start_line": 26385,
+    "end_line": 26607,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "leader-alignment",
+    "title": "leader-alignment",
+    "start_line": 26387,
+    "end_line": 26418,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "leader-pattern",
+    "title": "leader-pattern",
+    "start_line": 26420,
+    "end_line": 26451,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "leader-pattern-width",
+    "title": "leader-pattern-width",
+    "start_line": 26453,
+    "end_line": 26485,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "leader-length",
+    "title": "leader-length",
+    "start_line": 26487,
+    "end_line": 26543,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rule-style",
+    "title": "rule-style",
+    "start_line": 26545,
+    "end_line": 26581,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "rule-thickness",
+    "title": "rule-thickness",
+    "start_line": 26583,
+    "end_line": 26605,
+    "target_file": "properties-leader.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Properties for Dynamic Effects Formatting Objects",
+    "start_line": 26609,
+    "end_line": 27093,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "active-state",
+    "title": "active-state",
+    "start_line": 26611,
+    "end_line": 26660,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "auto-restore",
+    "title": "auto-restore",
+    "start_line": 26662,
+    "end_line": 26698,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "case-name",
+    "title": "case-name",
+    "start_line": 26700,
+    "end_line": 26724,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "case-title",
+    "title": "case-title",
+    "start_line": 26726,
+    "end_line": 26744,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "destination-placement-offset",
+    "title": "destination-placement-offset",
+    "start_line": 26746,
+    "end_line": 26778,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "external-destination",
+    "title": "external-destination",
+    "start_line": 26780,
+    "end_line": 26809,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "indicate-destination",
+    "title": "indicate-destination",
+    "start_line": 26811,
+    "end_line": 26836,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "internal-destination",
+    "title": "internal-destination",
+    "start_line": 26838,
+    "end_line": 26858,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "show-destination",
+    "title": "show-destination",
+    "start_line": 26860,
+    "end_line": 26879,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "starting-state",
+    "title": "starting-state",
+    "start_line": 26881,
+    "end_line": 26914,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "switch-to",
+    "title": "switch-to",
+    "start_line": 26916,
+    "end_line": 26961,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "target-presentation-context",
+    "title": "target-presentation-context",
+    "start_line": 26963,
+    "end_line": 27008,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "target-processing-context",
+    "title": "target-processing-context",
+    "start_line": 27010,
+    "end_line": 27048,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "target-stylesheet",
+    "title": "target-stylesheet",
+    "start_line": 27050,
+    "end_line": 27091,
+    "target_file": "properties-dynamic-effects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Properties for Indexing",
+    "start_line": 27095,
+    "end_line": 27303,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "index-class",
+    "title": "index-class",
+    "start_line": 27097,
+    "end_line": 27133,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "index-key",
+    "title": "index-key",
+    "start_line": 27135,
+    "end_line": 27161,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-number-treatment",
+    "title": "page-number-treatment",
+    "start_line": 27163,
+    "end_line": 27188,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "merge-ranges-across-index-key-references",
+    "title": "merge-ranges-across-index-key-references",
+    "start_line": 27190,
+    "end_line": 27214,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "merge-sequential-page-numbers",
+    "title": "merge-sequential-page-numbers",
+    "start_line": 27216,
+    "end_line": 27241,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "merge-pages-across-index-key-references",
+    "title": "merge-pages-across-index-key-references",
+    "start_line": 27243,
+    "end_line": 27273,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ref-index-key",
+    "title": "ref-index-key",
+    "start_line": 27275,
+    "end_line": 27301,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Properties for Markers",
+    "start_line": 27305,
+    "end_line": 27556,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "marker-class-name",
+    "title": "marker-class-name",
+    "start_line": 27307,
+    "end_line": 27332,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "retrieve-boundary-within-table",
+    "title": "retrieve-boundary-within-table",
+    "start_line": 27334,
+    "end_line": 27369,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "retrieve-class-name",
+    "title": "retrieve-class-name",
+    "start_line": 27371,
+    "end_line": 27392,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "retrieve-boundary",
+    "title": "retrieve-boundary",
+    "start_line": 27394,
+    "end_line": 27422,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "retrieve-position",
+    "title": "retrieve-position",
+    "start_line": 27425,
+    "end_line": 27478,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "retrieve-position-within-table",
+    "title": "retrieve-position-within-table",
+    "start_line": 27482,
+    "end_line": 27554,
+    "target_file": "properties-markers.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "ruby",
+    "title": "Ruby",
+    "start_line": 27558,
+    "end_line": 28295,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-position",
+    "title": "ruby-position",
+    "start_line": 27560,
+    "end_line": 27677,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-alignment",
+    "title": "ruby-alignment",
+    "start_line": 27678,
+    "end_line": 27745,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-group-distribution",
+    "title": "ruby-group-distribution",
+    "start_line": 27746,
+    "end_line": 27812,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-alignment-edge",
+    "title": "ruby-alignment-edge",
+    "start_line": 27813,
+    "end_line": 27863,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-align",
+    "title": "ruby-align",
+    "start_line": 27864,
+    "end_line": 28043,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-overhang",
+    "title": "ruby-overhang",
+    "start_line": 28044,
+    "end_line": 28108,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-overhang-length",
+    "title": "ruby-overhang-length",
+    "start_line": 28109,
+    "end_line": 28135,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-span",
+    "title": "ruby-span",
+    "start_line": 28136,
+    "end_line": 28165,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-size",
+    "title": "ruby-size",
+    "start_line": 28166,
+    "end_line": 28196,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-proportion",
+    "title": "ruby-proportion",
+    "start_line": 28197,
+    "end_line": 28230,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ruby-mode",
+    "title": "ruby-mode",
+    "start_line": 28231,
+    "end_line": 28264,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "line-stacking-annotation",
+    "title": "line-stacking-annotation",
+    "start_line": 28265,
+    "end_line": 28292,
+    "target_file": "properties-ruby.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "numbering.properties",
+    "title": "Numbering Properties",
+    "start_line": 28298,
+    "end_line": 28877,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "reference-name",
+    "title": "Property reference-name",
+    "start_line": 28371,
+    "end_line": 28384,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "reference-value",
+    "title": "Property reference-value",
+    "start_line": 28386,
+    "end_line": 28415,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "name",
+    "title": "number-ref-id",
+    "start_line": 28419,
+    "end_line": 28435,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "layout-level",
+    "title": "layout-level",
+    "start_line": 28437,
+    "end_line": 28500,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "reset-level",
+    "title": "reset-level",
+    "start_line": 28502,
+    "end_line": 28556,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "initial-value",
+    "title": "initial-value",
+    "start_line": 28558,
+    "end_line": 28574,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "interval",
+    "title": "interval",
+    "start_line": 28576,
+    "end_line": 28592,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "reset-value",
+    "title": "reset-value",
+    "start_line": 28594,
+    "end_line": 28608,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "display-when",
+    "title": "display-when",
+    "start_line": 28610,
+    "end_line": 28633,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "display-position",
+    "title": "display-position",
+    "start_line": 28635,
+    "end_line": 28676,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "number-align",
+    "title": "number-align",
+    "start_line": 28678,
+    "end_line": 28722,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "number-area-extent",
+    "title": "number-area-extent",
+    "start_line": 28724,
+    "end_line": 28747,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "decimal-format",
+    "title": "decimal-format",
+    "start_line": 28755,
+    "end_line": 28772,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ordinal",
+    "title": "ordinal",
+    "start_line": 28775,
+    "end_line": 28816,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "number-ref-id",
+    "title": "number-ref-id",
+    "start_line": 28833,
+    "end_line": 28853,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "level",
+    "title": "level",
+    "start_line": 28861,
+    "end_line": 28872,
+    "target_file": "properties-numbering.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Properties for Number to String Conversion",
+    "start_line": 28880,
+    "end_line": 28977,
+    "target_file": "properties-number-string.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "format",
+    "title": "format",
+    "start_line": 28882,
+    "end_line": 28894,
+    "target_file": "properties-number-string.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "grouping-separator",
+    "title": "grouping-separator",
+    "start_line": 28897,
+    "end_line": 28911,
+    "target_file": "properties-number-string.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "grouping-size",
+    "title": "grouping-size",
+    "start_line": 28913,
+    "end_line": 28927,
+    "target_file": "properties-number-string.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "letter-value",
+    "title": "letter-value",
+    "start_line": 28929,
+    "end_line": 28975,
+    "target_file": "properties-number-string.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Pagination and Layout Properties",
+    "start_line": 28979,
+    "end_line": 29996,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "blank-or-not-blank",
+    "title": "blank-or-not-blank",
+    "start_line": 28983,
+    "end_line": 29008,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "column-count",
+    "title": "column-count",
+    "start_line": 29010,
+    "end_line": 29030,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "column-gap",
+    "title": "column-gap",
+    "start_line": 29032,
+    "end_line": 29059,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "distance",
+    "title": "distance",
+    "start_line": 29061,
+    "end_line": 29096,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "extent",
+    "title": "extent",
+    "start_line": 29100,
+    "end_line": 29131,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "flow-map-name",
+    "title": "flow-map-name",
+    "start_line": 29132,
+    "end_line": 29156,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "flow-map-reference",
+    "title": "flow-map-reference",
+    "start_line": 29157,
+    "end_line": 29185,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "flow-name",
+    "title": "flow-name",
+    "start_line": 29187,
+    "end_line": 29217,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "flow-name-reference",
+    "title": "flow-name-reference",
+    "start_line": 29218,
+    "end_line": 29241,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "force-page-count",
+    "title": "force-page-count",
+    "start_line": 29245,
+    "end_line": 29286,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "initial-page-number",
+    "title": "initial-page-number",
+    "start_line": 29288,
+    "end_line": 29316,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "master-name",
+    "title": "master-name",
+    "start_line": 29318,
+    "end_line": 29353,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "master-reference",
+    "title": "master-reference",
+    "start_line": 29355,
+    "end_line": 29394,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "maximum-repeats",
+    "title": "maximum-repeats",
+    "start_line": 29396,
+    "end_line": 29422,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "media-usage",
+    "title": "media-usage",
+    "start_line": 29424,
+    "end_line": 29500,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "odd-or-even",
+    "title": "odd-or-even",
+    "start_line": 29502,
+    "end_line": 29528,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-height",
+    "title": "page-height",
+    "start_line": 29530,
+    "end_line": 29578,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-position",
+    "title": "page-position",
+    "start_line": 29580,
+    "end_line": 29636,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-width",
+    "title": "page-width",
+    "start_line": 29638,
+    "end_line": 29673,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "precedence",
+    "title": "precedence",
+    "start_line": 29675,
+    "end_line": 29702,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "region-name",
+    "title": "region-name",
+    "start_line": 29704,
+    "end_line": 29740,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "region-name-reference",
+    "title": "region-name-reference",
+    "start_line": 29745,
+    "end_line": 29766,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "sequence-repeats",
+    "title": "sequence-repeats",
+    "start_line": 29768,
+    "end_line": 29791,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "adjustable-properties",
+    "title": "adjustable-properties",
+    "start_line": 29796,
+    "end_line": 29960,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "marginalia-destination-area",
+    "title": "marginalia-destination-area",
+    "start_line": 29962,
+    "end_line": 29992,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Table Properties",
+    "start_line": 29998,
+    "end_line": 31229,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-after-precedence",
+    "title": "border-after-precedence",
+    "start_line": 30000,
+    "end_line": 30029,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-before-precedence",
+    "title": "border-before-precedence",
+    "start_line": 30031,
+    "end_line": 30049,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-collapse",
+    "title": "border-collapse",
+    "start_line": 30051,
+    "end_line": 30087,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-end-precedence",
+    "title": "border-end-precedence",
+    "start_line": 30089,
+    "end_line": 30107,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-separation",
+    "title": "border-separation",
+    "start_line": 30109,
+    "end_line": 30137,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-start-precedence",
+    "title": "border-start-precedence",
+    "start_line": 30139,
+    "end_line": 30157,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "caption-side",
+    "title": "caption-side",
+    "start_line": 30159,
+    "end_line": 30220,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "column-number",
+    "title": "column-number",
+    "start_line": 30222,
+    "end_line": 30258,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "column-width",
+    "title": "column-width",
+    "start_line": 30260,
+    "end_line": 30297,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "empty-cells",
+    "title": "empty-cells",
+    "start_line": 30299,
+    "end_line": 30334,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ends-row",
+    "title": "ends-row",
+    "start_line": 30336,
+    "end_line": 30352,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "number-columns-repeated",
+    "title": "number-columns-repeated",
+    "start_line": 30354,
+    "end_line": 30378,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "number-columns-spanned",
+    "title": "number-columns-spanned",
+    "start_line": 30380,
+    "end_line": 30408,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "number-rows-spanned",
+    "title": "number-rows-spanned",
+    "start_line": 30410,
+    "end_line": 30432,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "starts-row",
+    "title": "starts-row",
+    "start_line": 30434,
+    "end_line": 30457,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "table-layout",
+    "title": "table-layout",
+    "start_line": 30459,
+    "end_line": 30482,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "table-omit-footer-at-break",
+    "title": "table-omit-footer-at-break",
+    "start_line": 30484,
+    "end_line": 30502,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "table-omit-header-at-break",
+    "title": "table-omit-header-at-break",
+    "start_line": 30504,
+    "end_line": 30557,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "header-position",
+    "title": "header-position",
+    "start_line": 30561,
+    "end_line": 30626,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "footer-position",
+    "title": "footer-position",
+    "start_line": 30629,
+    "end_line": 30694,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "table-overflow",
+    "title": "table-overflow",
+    "start_line": 30697,
+    "end_line": 30754,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-break",
+    "title": "border-break",
+    "start_line": 30756,
+    "end_line": 30808,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-before-break",
+    "title": "border-before-break",
+    "start_line": 30811,
+    "end_line": 30863,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-after-break",
+    "title": "border-after-break",
+    "start_line": 30866,
+    "end_line": 30918,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-start-break",
+    "title": "border-start-break",
+    "start_line": 30921,
+    "end_line": 30973,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-end-break",
+    "title": "border-end-break",
+    "start_line": 30976,
+    "end_line": 31028,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-break-style",
+    "title": "border-break-style",
+    "start_line": 31030,
+    "end_line": 31068,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-start-break-style",
+    "title": "border-start-break-style",
+    "start_line": 31070,
+    "end_line": 31106,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-end-break-style",
+    "title": "border-end-break-style",
+    "start_line": 31109,
+    "end_line": 31145,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-before-break-style",
+    "title": "border-before-break-style",
+    "start_line": 31148,
+    "end_line": 31184,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-after-break-style",
+    "title": "border-after-break-style",
+    "start_line": 31187,
+    "end_line": 31223,
+    "target_file": "properties-table.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "writing-mode-related",
+    "title": "Writing-mode-related Properties",
+    "start_line": 31231,
+    "end_line": 32174,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "direction",
+    "title": "direction",
+    "start_line": 31575,
+    "end_line": 31668,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "glyph-orientation-horizontal",
+    "title": "glyph-orientation-horizontal",
+    "start_line": 31670,
+    "end_line": 31706,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "glyph-orientation-vertical",
+    "title": "glyph-orientation-vertical",
+    "start_line": 31708,
+    "end_line": 31775,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-altitude",
+    "title": "text-altitude",
+    "start_line": 31777,
+    "end_line": 31811,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "text-depth",
+    "title": "text-depth",
+    "start_line": 31813,
+    "end_line": 31849,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "unicode-bidi",
+    "title": "unicode-bidi",
+    "start_line": 31851,
+    "end_line": 31924,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "writing-mode",
+    "title": "writing-mode",
+    "start_line": 31926,
+    "end_line": 32172,
+    "target_file": "properties-writing-mode.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Miscellaneous Properties",
+    "start_line": 32177,
+    "end_line": 32861,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "change-bar-class",
+    "title": "change-bar-class",
+    "start_line": 32179,
+    "end_line": 32206,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "change-bar-color",
+    "title": "change-bar-color",
+    "start_line": 32208,
+    "end_line": 32234,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "change-bar-offset",
+    "title": "change-bar-offset",
+    "start_line": 32236,
+    "end_line": 32270,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "change-bar-placement",
+    "title": "change-bar-placement",
+    "start_line": 32272,
+    "end_line": 32316,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "change-bar-style",
+    "title": "change-bar-style",
+    "start_line": 32318,
+    "end_line": 32346,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "change-bar-width",
+    "title": "change-bar-width",
+    "start_line": 32348,
+    "end_line": 32382,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "content-type",
+    "title": "content-type",
+    "start_line": 32384,
+    "end_line": 32420,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "id",
+    "title": "id",
+    "start_line": 32422,
+    "end_line": 32445,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "intrinsic-scale-value",
+    "title": "intrinsic-scale-value",
+    "start_line": 32447,
+    "end_line": 32470,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-citation-strategy",
+    "title": "page-citation-strategy",
+    "start_line": 32472,
+    "end_line": 32531,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "provisional-distance-between-starts",
+    "title": "provisional-distance-between-starts",
+    "start_line": 32533,
+    "end_line": 32567,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "provisional-label-separation",
+    "title": "provisional-label-separation",
+    "start_line": 32570,
+    "end_line": 32609,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "ref-id",
+    "title": "ref-id",
+    "start_line": 32612,
+    "end_line": 32632,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "scale-option",
+    "title": "scale-option",
+    "start_line": 32634,
+    "end_line": 32657,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "score-spaces",
+    "title": "score-spaces",
+    "start_line": 32659,
+    "end_line": 32677,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "src",
+    "title": "src",
+    "start_line": 32679,
+    "end_line": 32698,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "visibility",
+    "title": "visibility",
+    "start_line": 32700,
+    "end_line": 32735,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "z-index",
+    "title": "z-index",
+    "start_line": 32737,
+    "end_line": 32772,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "xml.base",
+    "title": "xml:base",
+    "start_line": 32774,
+    "end_line": 32810,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "output-base-uri",
+    "title": "output-base-uri",
+    "start_line": 32811,
+    "end_line": 32859,
+    "target_file": "properties-misc.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Shorthand Properties",
+    "start_line": 32863,
+    "end_line": 34037,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background",
+    "title": "background",
+    "start_line": 32875,
+    "end_line": 32902,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "background-position",
+    "title": "background-position",
+    "start_line": 32904,
+    "end_line": 33073,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border",
+    "title": "border",
+    "start_line": 33075,
+    "end_line": 33106,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-bottom",
+    "title": "border-bottom",
+    "start_line": 33108,
+    "end_line": 33131,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-color",
+    "title": "border-color",
+    "start_line": 33133,
+    "end_line": 33167,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-left",
+    "title": "border-left",
+    "start_line": 33169,
+    "end_line": 33192,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-right",
+    "title": "border-right",
+    "start_line": 33194,
+    "end_line": 33217,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-spacing",
+    "title": "border-spacing",
+    "start_line": 33219,
+    "end_line": 33266,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-style",
+    "title": "border-style",
+    "start_line": 33269,
+    "end_line": 33294,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-top",
+    "title": "border-top",
+    "start_line": 33300,
+    "end_line": 33323,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "border-width",
+    "title": "border-width",
+    "start_line": 33325,
+    "end_line": 33351,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "cue",
+    "title": "cue",
+    "start_line": 33353,
+    "end_line": 33369,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "font",
+    "title": "font",
+    "start_line": 33371,
+    "end_line": 33437,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "margin",
+    "title": "margin",
+    "start_line": 33439,
+    "end_line": 33472,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "padding",
+    "title": "padding",
+    "start_line": 33474,
+    "end_line": 33502,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-break-after",
+    "title": "page-break-after",
+    "start_line": 33504,
+    "end_line": 33552,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-break-before",
+    "title": "page-break-before",
+    "start_line": 33554,
+    "end_line": 33602,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "page-break-inside",
+    "title": "page-break-inside",
+    "start_line": 33604,
+    "end_line": 33643,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "pause",
+    "title": "pause",
+    "start_line": 33645,
+    "end_line": 33662,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "position",
+    "title": "position",
+    "start_line": 33664,
+    "end_line": 33741,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "size",
+    "title": "size",
+    "start_line": 33743,
+    "end_line": 33801,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "vertical-align",
+    "title": "vertical-align",
+    "start_line": 33803,
+    "end_line": 33946,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "white-space",
+    "title": "white-space",
+    "start_line": 33948,
+    "end_line": 34007,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div3",
+    "level": 3,
+    "id": "xml.lang",
+    "title": "xml:lang",
+    "start_line": 34009,
+    "end_line": 34034,
+    "target_file": "properties-shorthand.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "conform",
+    "title": "Conformance",
+    "start_line": 34044,
+    "end_line": 34104,
+    "target_file": "ref-conformance.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "FO-summary",
+    "title": "Formatting Object Summary",
+    "start_line": 34112,
+    "end_line": 34718,
+    "target_file": "ref-fo-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Declaration and Pagination and Layout Formatting Objects",
+    "start_line": 34125,
+    "end_line": 34267,
+    "target_file": "properties-pagination.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Block Formatting Objects",
+    "start_line": 34268,
+    "end_line": 34291,
+    "target_file": "ref-fo-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Inline Formatting Objects",
+    "start_line": 34292,
+    "end_line": 34382,
+    "target_file": "ref-fo-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Table Formatting Objects",
+    "start_line": 34384,
+    "end_line": 34456,
+    "target_file": "ref-fo-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "List Formatting Objects",
+    "start_line": 34458,
+    "end_line": 34493,
+    "target_file": "ref-fo-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "ConfMulti",
+    "title": "Link and Multi Formatting Objects",
+    "start_line": 34495,
+    "end_line": 34556,
+    "target_file": "ref-fo-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Out-of-line Formatting Objects",
+    "start_line": 34558,
+    "end_line": 34584,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects for Indexing",
+    "start_line": 34586,
+    "end_line": 34639,
+    "target_file": "properties-indexing.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Formatting Objects for Bookmarks",
+    "start_line": 34641,
+    "end_line": 34668,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Other Formatting Objects",
+    "start_line": 34670,
+    "end_line": 34715,
+    "target_file": "guide-formatting-objects.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": "property-index",
+    "title": "Property Summary",
+    "start_line": 34719,
+    "end_line": 38436,
+    "target_file": "ref-property-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "trmval",
+    "title": "Explanation of Trait Mapping Values",
+    "start_line": 34721,
+    "end_line": 34776,
+    "target_file": "ref-property-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "prtab1",
+    "title": "Property Table: Part I",
+    "start_line": 34777,
+    "end_line": 35151,
+    "target_file": "ref-property-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "prtab2",
+    "title": "Property Table: Part II",
+    "start_line": 35153,
+    "end_line": 35525,
+    "target_file": "ref-property-summary.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": "prapply",
+    "title": "Properties and the FOs they apply to",
+    "start_line": 35527,
+    "end_line": 38434,
+    "target_file": "ref-property-summary.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": null,
+    "title": "References",
+    "start_line": 38437,
+    "end_line": 38641,
+    "target_file": null
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Normative References",
+    "start_line": 38439,
+    "end_line": 38558,
+    "target_file": "ref-references.md"
+  },
+  {
+    "tag": "div2",
+    "level": 2,
+    "id": null,
+    "title": "Other References",
+    "start_line": 38559,
+    "end_line": 38640,
+    "target_file": "ref-references.md"
+  },
+  {
+    "tag": "div1",
+    "level": 1,
+    "id": null,
+    "title": "Property Index",
+    "start_line": 38643,
+    "end_line": 38921,
+    "target_file": null
+  }
+]
