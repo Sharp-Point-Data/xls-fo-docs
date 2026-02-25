@@ -44,7 +44,7 @@ The `fo:bookmark` formatting object generates one or more normal inline-areas. T
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+No code samples in spec for this formatting object. For complete examples of `fo:bookmark` usage including hierarchical nesting, `internal-destination` linking, `external-destination`, `starting-state` expand/collapse control, and XSLT-generated bookmarks, see **guide-bookmarks**.
 
 ## See Also
 

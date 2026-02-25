@@ -52,11 +52,9 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_table-header -->
-```xml
-(table-header-alternatives* ,
-table-row+|table-cell+)
-```
+No code samples in spec for this formatting object's own section. The content model is `(table-header-alternatives*, table-row+ | table-cell+)`.
+
+For the spec example of conditional table headers (`fo:table-header-alternatives`), and for complete examples of styled table headers with `background-color`, distinct header-vs-data-row styling, and table header alternatives, see **guide-tables-advanced**.
 
 ## See Also
 

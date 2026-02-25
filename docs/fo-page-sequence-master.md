@@ -54,7 +54,18 @@ Sub-sequence-specifiers are processed in order. Once a sub-sequence-specifier's 
 
 ## Code Samples
 
-No code samples in spec for this formatting object. The spec section contains only the content model declaration shown above.
+No code samples in spec for this formatting object's own section. However, `fo:page-sequence-master` appears in code samples in other spec sections:
+
+<!-- Source: xslspec.xml line 5725 -->
+```xml
+<fo:page-sequence-master master-name="default-sequence">
+  <fo:repeatable-page-master-reference master-reference="all-pages"/>
+</fo:page-sequence-master>
+```
+
+This shows the simplest usage: a `fo:page-sequence-master` that repeats a single page-master indefinitely.
+
+For comprehensive examples of conditional page layouts using `fo:page-sequence-master` with `fo:repeatable-page-master-alternatives`, including book chapter layouts, different first/odd/even/blank pages, and dynamic region sizing strategies, see **guide-conditional-page-layouts**.
 
 ## See Also
 

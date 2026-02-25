@@ -90,7 +90,7 @@ When `page-position` is set to a numeric value and `sequence-repeats` on the par
 
 ## Code Samples
 
-No code samples in spec for this formatting object. The spec section contains only the content model declaration shown above.
+No code samples in spec for this formatting object's own section. For complete examples of `fo:conditional-page-master-reference` in context — including book chapter layouts with first/odd/even/blank page selection, evaluation ordering, and `force-page-count` interaction — see **guide-conditional-page-layouts**.
 
 ## See Also
 

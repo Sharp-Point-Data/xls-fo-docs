@@ -64,10 +64,35 @@ The constraints on the size and position of the region-reference-area generated 
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_region-after -->
+No code samples in spec for this formatting object's own section. However, `fo:region-after` appears in code samples in other spec sections:
+
+### Region-after with extent for a page footer
+
+<!-- Source: xslspec.xml line 10510 -->
 ```xml
-EMPTY
+<fo:region-after extent="10mm"/>
 ```
+
+This is used with a matching `fo:static-content`:
+
+<!-- Source: xslspec.xml line 10510 -->
+```xml
+<fo:static-content flow-name="xsl-region-after">
+  <fo:block>Page <fo:page-number/>
+  </fo:block>
+</fo:static-content>
+```
+
+### Region-after with precedence in a full page-master
+
+<!-- Source: xslspec.xml line 9395 -->
+```xml
+<fo:region-after precedence="true" extent="1.5cm"/>
+```
+
+When `precedence="true"`, the region-after spans the full page width. The `extent` property sets the height of the footer region.
+
+For comprehensive examples of managing region-after heights across different page-masters, see **guide-conditional-page-layouts**.
 
 ## See Also
 

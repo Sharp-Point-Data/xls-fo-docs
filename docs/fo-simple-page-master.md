@@ -97,7 +97,56 @@ For a typical letter-size portrait document with lr-tb writing mode:
 
 ## Code Samples
 
-No code samples in spec for this formatting object. The spec section contains only the content model declaration shown above.
+No code samples in spec for this formatting object's own section. However, `fo:simple-page-master` appears in code samples throughout the spec:
+
+### Page-master with region-body and region-before (writing-mode example)
+
+<!-- Source: xslspec.xml line 5725 -->
+```xml
+<fo:simple-page-master master-name="all-pages">
+  <fo:region-body region-name="xsl-region-body" margin="0.75in"
+                  writing-mode="tb-rl" />
+  <fo:region-before region-name="xsl-region-before" extent="0.75in"/>
+</fo:simple-page-master>
+```
+
+### Page-master with page dimensions and region margins
+
+<!-- Source: xslspec.xml line 10510 -->
+```xml
+<fo:simple-page-master master-name="page"
+  page-height="297mm" page-width="210mm"
+  margin-top="20mm" margin-bottom="10mm"
+  margin-left="25mm" margin-right="25mm">
+  <fo:region-body margin-top="0mm" margin-bottom="15mm"
+    margin-left="0mm" margin-right="0mm"/>
+  <fo:region-after extent="10mm"/>
+</fo:simple-page-master>
+```
+
+### Page-master with all seven region types including extension regions
+
+<!-- Source: xslspec.xml line 9395 -->
+```xml
+<fo:simple-page-master master-name="only"
+      page-height="29.7cm"
+      page-width="21cm"
+      margin-top="1cm"
+      margin-bottom="2cm"
+      margin-left="2.5cm"
+      margin-right="2.5cm">
+      <fo:region-body margin-top="3cm" margin-bottom="1.5cm"
+      margin-left="2cm" margin-right="2cm"/>
+      <fo:extension-region-start extent="1cm" distance="0.5cm"/>
+      <fo:extension-region-end extent="1cm" distance="0.5cm"/>
+      <fo:region-before precedence="true" extent="3cm"/>
+      <fo:region-after precedence="true" extent="1.5cm"/>
+      <fo:region-start extent="1cm"/>
+      <fo:region-end extent="1cm"/>
+      </fo:simple-page-master>
+```
+
+For comprehensive examples of conditional page layouts with multiple page-masters, dynamic region sizing, and multi-section documents, see **guide-conditional-page-layouts**.
 
 ## See Also
 

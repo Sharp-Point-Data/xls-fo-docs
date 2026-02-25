@@ -47,7 +47,7 @@ Note: The `font-style` value space is limited to "normal" and "italic". The `fon
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+No code samples in spec for this formatting object. For complete examples of `fo:bookmark-title` with `color`, `font-style`, and `font-weight` styling in context, see **guide-bookmarks**.
 
 ## See Also
 

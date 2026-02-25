@@ -69,7 +69,7 @@ When `sequence-repeats` is set to a number, the page-position conditions are eva
 
 ## Code Samples
 
-No code samples in spec for this formatting object. The spec section contains only the content model declaration shown above.
+No code samples in spec for this formatting object's own section. For complete examples of `fo:repeatable-page-master-alternatives` with conditional page-master selection for book chapters, letters, and multi-section documents, see **guide-conditional-page-layouts**.
 
 ## See Also
 

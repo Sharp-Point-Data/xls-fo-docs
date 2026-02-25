@@ -94,10 +94,9 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_table-cell -->
-```xml
-(%block;)+
-```
+No code samples in spec for this formatting object's own section. The content model is `(%block;)+`.
+
+For complete examples of `fo:table-cell` usage including column and row spanning (`number-columns-spanned`, `number-rows-spanned`), explicit column positioning, nested tables within cells, and cell-level styling with `background-color`, see **guide-tables-advanced**.
 
 ## See Also
 

@@ -64,10 +64,25 @@ The constraints on the size and position of the region-reference-area generated 
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_region-before -->
+No code samples in spec for this formatting object's own section. However, `fo:region-before` appears in code samples in other spec sections:
+
+### Region-before with extent and custom region-name
+
+<!-- Source: xslspec.xml line 5725 -->
 ```xml
-EMPTY
+<fo:region-before region-name="xsl-region-before" extent="0.75in"/>
 ```
+
+### Region-before with precedence in a full page-master
+
+<!-- Source: xslspec.xml line 9395 -->
+```xml
+<fo:region-before precedence="true" extent="3cm"/>
+```
+
+When `precedence="true"`, the region-before spans the full page width. The `extent` property sets the height of the header region.
+
+For comprehensive examples of managing region-before heights across different page-masters, including strategies for variable-height headers and dynamic content, see **guide-conditional-page-layouts**.
 
 ## See Also
 

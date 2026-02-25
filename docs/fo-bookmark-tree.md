@@ -33,7 +33,7 @@ This formatting object has no specific properties.
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+No code samples in spec for this formatting object. For complete examples of `fo:bookmark-tree` usage including hierarchical bookmark structures, styling with `fo:bookmark-title` properties, `starting-state` control, and XSLT-generated bookmarks, see **guide-bookmarks**.
 
 ## See Also
 
