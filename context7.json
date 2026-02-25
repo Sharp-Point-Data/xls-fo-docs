@@ -1,7 +1,4 @@
 {
-  "title": "XSL-FO (XSL Formatting Objects)",
-  "description": "W3C XML vocabulary for generating PDF and paginated output from XML. Covers fo:block, fo:table, fo:list-block, page layout, writing modes, links, bookmarks, and all formatting object properties.",
-  "folders": [
-    "docs"
-  ]
+  "url": "https://context7.com/sharp-point-data/xls-fo-docs",
+  "public_key": "pk_TKuIK9rbRPegQYVll1WoI"
 }
