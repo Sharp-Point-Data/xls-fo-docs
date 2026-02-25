@@ -37,9 +37,46 @@ The fo:initial-property-set auxiliary formatting object specifies formatting pro
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_initial-property-set -->
+The following three-part example from the spec shows how fo:initial-property-set is used to apply small-caps formatting to the first line of a paragraph.
+
+### Source XML input
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
 ```xml
-EMPTY
+<doc>
+<p>This is the text of a paragraph that is going to be
+presented with the first line in small-caps.</p>
+</doc>
+```
+
+### XSLT stylesheet using fo:initial-property-set with font-variant="small-caps"
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="p">
+  <fo:block>
+    <fo:initial-property-set font-variant="small-caps"/>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+### Resulting XSL-FO output with fo:initial-property-set
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<fo:block>
+  <fo:initial-property-set font-variant="small-caps">
+  </fo:initial-property-set>This is the text of a paragraph that is going to be
+presented with the first line in small-caps.
+</fo:block>
 ```
 
 ## See Also

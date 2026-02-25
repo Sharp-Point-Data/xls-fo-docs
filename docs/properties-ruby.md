@@ -273,5 +273,5 @@ No code samples in spec for this property group.
 - [fo-ruby](fo-ruby.md) -- Container formatting object for ruby annotations
 - [fo-ruby-base](fo-ruby-base.md) -- Contains the base text for ruby annotations
 - [fo-ruby-text](fo-ruby-text.md) -- Contains the annotation text for ruby
-- [fo-ruby-base-container](fo-ruby-base-container.md) -- Groups ruby base elements
+- [fo-ruby-base-container-text](fo-ruby-base-container-text.md) -- Groups ruby base elements
 - [fo-ruby-text-container](fo-ruby-text-container.md) -- Groups ruby text elements

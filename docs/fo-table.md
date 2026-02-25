@@ -113,9 +113,235 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_table -->
+The following three-part example demonstrates a table with proportional column widths, vertical alignment, and text alignment. It shows a CALS-style source XML, the XSLT transformation (including a utility template for converting CALS column width specifications to XSL-FO), and the resulting FO output.
+
+Source XML with proportional column widths (`1*`, `2*+2pi`) and a fixed-width column (`72`):
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
 ```xml
-(table-column*,table-header?,table-footer?,table-body+)
+<doc>
+<table>
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*+2pi"/>
+<colspec colname="col3" colwidth="72"/>
+<tbody>
+<row>
+<entry colnum="1" valign="top"><p>Cell 1</p></entry>
+<entry colnum="2" valign="middle" align="center"><p>Cell 2</p></entry>
+<entry colnum="3" align="center"><p>Cell 3</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</doc>
+```
+
+XSLT stylesheet that transforms the source into XSL-FO, including a `calc.column.width` named template that converts CALS column width specifications (e.g., `1*`, `2*+2pi`, `72`) into XSL-FO column widths using `proportional-column-width()`. Also maps `valign` to `display-align` and `align` to `text-align`:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="p">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="table">
+  <fo:table width="12cm" table-layout="fixed">
+    <xsl:apply-templates/>
+  </fo:table>
+</xsl:template>
+
+<xsl:template match="colspec">
+  <fo:table-column>
+    <xsl:attribute name="column-number">
+      <xsl:number count="colspec"/>
+    </xsl:attribute>
+    <xsl:attribute name="column-width">
+      <xsl:call-template name="calc.column.width">
+        <xsl:with-param name="colwidth">
+          <xsl:value-of select="@colwidth"/>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:attribute>
+  </fo:table-column>
+</xsl:template>
+
+<xsl:template match="tbody">
+  <fo:table-body>
+    <xsl:apply-templates/>
+  </fo:table-body>
+</xsl:template>
+
+<xsl:template match="row">
+  <fo:table-row>
+    <xsl:apply-templates/>
+  </fo:table-row>
+</xsl:template>
+
+<xsl:template match="entry">
+  <fo:table-cell column-number="{@colnum}">
+    <xsl:if test="@valign">
+      <xsl:choose>
+        <xsl:when test="@valign='middle'">
+          <xsl:attribute name="display-align">center</xsl:attribute>
+        </xsl:when>
+        <xsl:when test="@valign='top'">
+          <xsl:attribute name="display-align">before</xsl:attribute>
+        </xsl:when>
+        <xsl:when test="@valign='bottom'">
+          <xsl:attribute name="display-align">after</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="display-align">before</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
+    <xsl:if test="@align">
+      <xsl:attribute name="text-align">
+        <xsl:value-of select="@align"/>
+      </xsl:attribute>
+    </xsl:if>
+    <xsl:apply-templates/>
+  </fo:table-cell>
+</xsl:template>
+
+
+<xsl:template name="calc.column.width">
+<!-- **
+     * <p>Calculate an XSL FO table column-width specification from a
+     * full relative table column-width specification.</p>
+     *
+     * <p>Table column-widths are in the following basic
+     * forms:</p>
+     *
+     * <ul>
+     * <li><b>99.99units</b>, a fixed length-specifier.</li>
+     * <li><b>99.99</b>, a fixed length-specifier without any units.</li>
+     * <li><b>99.99*</b>, a relative length-specifier.</li>
+     * <li><b>99.99*+99.99units</b>, a combination of both.</li>
+     * </ul>
+     *
+     * <p>The units are points (pt), picas (pi), centimeters (cm),
+     * millimeters (mm), and inches (in). These are the same units as XSL,
+     * except that XSL abbreviates picas "pc" instead of "pi". If a length
+     * specifier has no units, the default unit (pt) is assumed.</p>
+     *
+     * <p>Relative length-specifiers are represented in XSL with the
+     * proportional-column-width() function.</p>
+     *
+     * <p>Here are some examples:</p>
+     *
+     * <ul>
+     * <li>"36pt" becomes "36pt"</li>
+     * <li>"3pi" becomes "3pc"</li>
+     * <li>"36" becomes "36pt"</li>
+     * <li>"3*" becomes "proportional-column-width(3)"</li>
+     * <li>"3*+2pi" becomes "proportional-column-width(3)+2pc"</li>
+     * <li>"1*+2" becomes "proportional-column-width(1)+2pt"</li>
+     * </ul>
+     *
+     * @param colwidth The column width specification.
+     *
+     * @returns The XSL column width specification.
+     * -->
+  <xsl:param name="colwidth">1*</xsl:param>
+
+  <!-- Ok, the colwidth could have any one of the following forms: -->
+  <!--        1*       = proportional width -->
+  <!--     1unit       = 1.0 units wide -->
+  <!--         1       = 1pt wide -->
+  <!--  1*+1unit       = proportional width + some fixed width -->
+  <!--      1*+1       = proportional width + some fixed width -->
+
+  <!-- If it has a proportional width, translate it to XSL -->
+  <xsl:if test="contains($colwidth, '*')">
+    <xsl:text>proportional-column-width(</xsl:text>
+    <xsl:value-of select="substring-before($colwidth, '*')"/>
+    <xsl:text>)</xsl:text>
+  </xsl:if>
+
+  <!-- Now get the non-proportional part of the specification -->
+  <xsl:variable name="width-units">
+    <xsl:choose>
+      <xsl:when test="contains($colwidth, '*')">
+        <xsl:value-of
+             select="normalize-space(substring-after($colwidth, '*'))"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="normalize-space($colwidth)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <!-- Now the width-units could have any one of the following forms: -->
+  <!--                 = <empty string> -->
+  <!--     1unit       = 1.0 units wide -->
+  <!--         1       = 1pt wide -->
+  <!-- with an optional leading sign -->
+
+  <!-- Get the width part by blanking out the units part and discarding -->
+  <!-- white space. -->
+  <xsl:variable name="width"
+       select="normalize-space(translate($width-units,
+                                         '+-0123456789.abcdefghijklmnopqrstuvwxyz',
+                                         '+-0123456789.'))"/>
+
+  <!-- Get the units part by blanking out the width part and discarding -->
+  <!-- white space. -->
+  <xsl:variable name="units"
+       select="normalize-space(translate($width-units,
+                                         'abcdefghijklmnopqrstuvwxyz+-0123456789.',
+                                         'abcdefghijklmnopqrstuvwxyz'))"/>
+
+  <!-- Output the width -->
+  <xsl:value-of select="$width"/>
+
+  <!-- Output the units, translated appropriately -->
+  <xsl:choose>
+    <xsl:when test="$units = 'pi'">pc</xsl:when>
+    <xsl:when test="$units = '' and $width != ''">pt</xsl:when>
+    <xsl:otherwise><xsl:value-of select="$units"/></xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+Resulting XSL-FO output showing `fo:table` with `table-layout="fixed"`, `proportional-column-width()` for relative columns, and `display-align`/`text-align` for cell alignment:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
+```xml
+<fo:table width="12cm" table-layout="fixed">
+  <fo:table-column column-number="1" column-width="proportional-column-width(1)">
+  </fo:table-column>
+  <fo:table-column column-number="2" column-width="proportional-column-width(2)+2pc">
+  </fo:table-column>
+  <fo:table-column column-number="3" column-width="72pt">
+  </fo:table-column>
+  <fo:table-body>
+    <fo:table-row>
+      <fo:table-cell column-number="1" display-align="before">
+        <fo:block>Cell 1
+        </fo:block>
+      </fo:table-cell>
+      <fo:table-cell column-number="2" display-align="center" text-align="center">
+        <fo:block>Cell 2
+        </fo:block>
+      </fo:table-cell>
+      <fo:table-cell column-number="3" text-align="center">
+        <fo:block>Cell 3
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
 ```
 
 ## See Also

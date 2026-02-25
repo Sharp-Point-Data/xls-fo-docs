@@ -47,7 +47,90 @@ An `fo:footnote` is not permitted to have an `fo:float`, `fo:footnote`, or `fo:m
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+The following three-part example from the spec demonstrates footnote formatting: the source XML, the XSLT stylesheet that produces `fo:footnote`, and the resulting XSL-FO output.
+
+**Source XML with an inline footnote reference:**
+
+<!-- Source: xslspec.xml line 16771 -->
+```xml
+<doc>
+  <p>Some Pod Duang were restruck<fn>Berglund, A., Thai Money, from
+Earliest Times to King Rama V, p. 203.</fn> during the reign of King Rama V.</p>
+</doc>
+```
+
+**XSLT stylesheet using `fo:footnote` with an `fo:inline` citation (superscript number) and `fo:footnote-body` containing the footnote text in a list layout:**
+
+<!-- Source: xslspec.xml line 16784 -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="p">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="fn">
+  <fo:footnote>
+    <fo:inline font-size="0.83em" baseline-shift="super">
+      <xsl:number level="any" count="fn" format="1)"/>
+    </fo:inline>
+    <fo:footnote-body>
+      <fo:list-block provisional-distance-between-starts="20pt"
+          provisional-label-separation="5pt">
+        <fo:list-item>
+          <fo:list-item-label end-indent="label-end()">
+            <fo:block  font-size="0.83em"
+                       line-height="0.9em">
+              <xsl:number level="any" count="fn" format="1)"/>
+            </fo:block>
+          </fo:list-item-label>
+          <fo:list-item-body start-indent="body-start()">
+            <fo:block  font-size="0.83em"
+                       line-height="0.9em">
+              <xsl:apply-templates/>
+            </fo:block>
+          </fo:list-item-body>
+        </fo:list-item>
+      </fo:list-block>
+    </fo:footnote-body>
+  </fo:footnote>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+**Resulting XSL-FO output with `fo:footnote`, inline superscript citation, and `fo:footnote-body` containing the footnote text:**
+
+<!-- Source: xslspec.xml line 16827 -->
+```xml
+<fo:block>Some Pod Duang were restruck
+  <fo:footnote>
+    <fo:inline font-size="0.83em" baseline-shift="super">1)
+    </fo:inline>
+    <fo:footnote-body>
+    <fo:list-block provisional-distance-between-starts="20pt"
+      provisional-label-separation="5pt">
+    <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+    <fo:block font-size="0.83em" line-height="0.9em">1)
+    </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+    <fo:block font-size="0.83em" line-height="0.9em">Berglund, A.,
+Thai Money, from Earliest Times to King Rama V, p. 203.
+    </fo:block>
+    </fo:list-item-body>
+    </fo:list-item>
+    </fo:list-block>
+    </fo:footnote-body>
+  </fo:footnote> during the reign of King Rama V.
+</fo:block>
+```
 
 ## See Also
 

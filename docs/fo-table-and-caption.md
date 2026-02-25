@@ -60,9 +60,142 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_table-and-caption -->
+The following three-part example shows source XML, XSLT stylesheet, and resulting XSL-FO for a table with a caption.
+
+Source XML with a table and caption:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
 ```xml
-(table-caption?,table)
+<doc>
+<table>
+<caption><p>Caption for this table</p></caption>
+<tgroup cols="3" width="325pt">
+<colspec colwidth="100pt"/>
+<colspec colwidth="150pt"/>
+<colspec colwidth="75pt"/>
+<tbody>
+<row>
+<entry><p>Cell 1</p></entry>
+<entry><p>Cell 2</p></entry>
+<entry><p>Cell 3</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</doc>
+```
+
+XSLT stylesheet that transforms the source XML into XSL-FO using `fo:table-and-caption` and `fo:table-caption`. Note the use of `xsl:use-attribute-sets` to reset `start-indent` and `text-align` inside the table:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:attribute-set name="inside-table">
+  <xsl:attribute name="start-indent">0pt</xsl:attribute>
+  <xsl:attribute name="text-align">start</xsl:attribute>
+</xsl:attribute-set>
+
+<xsl:template match="p">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="table">
+  <fo:table-and-caption text-align="center" start-indent="100pt">
+    <xsl:apply-templates/>
+  </fo:table-and-caption>
+</xsl:template>
+
+<xsl:template match="caption">
+  <fo:table-caption xsl:use-attribute-sets="inside-table">
+    <xsl:apply-templates/>
+  </fo:table-caption>
+</xsl:template>
+
+<xsl:template match="tgroup">
+  <fo:table width="{@width}" table-layout="fixed">
+    <xsl:apply-templates/>
+  </fo:table>
+</xsl:template>
+
+<xsl:template match="colspec">
+  <fo:table-column column-width="{@colwidth}">
+    <xsl:attribute name="column-number">
+      <xsl:number count="colspec"/>
+    </xsl:attribute>
+  </fo:table-column>
+</xsl:template>
+
+<xsl:template match="tbody">
+  <fo:table-body xsl:use-attribute-sets="inside-table">
+    <xsl:apply-templates/>
+  </fo:table-body>
+</xsl:template>
+
+<xsl:template match="row">
+  <fo:table-row>
+    <xsl:apply-templates/>
+  </fo:table-row>
+</xsl:template>
+
+<xsl:template match="entry">
+  <fo:table-cell>
+    <xsl:apply-templates/>
+  </fo:table-cell>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+Resulting XSL-FO output showing `fo:table-and-caption` with `fo:table-caption` and `fo:table` as children:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
+```xml
+<fo:table-and-caption text-align="center" start-indent="100pt">
+
+  <fo:table-caption start-indent="0pt" text-align="start">
+    <fo:block>Caption for this table
+    </fo:block>
+  </fo:table-caption>
+
+  <fo:table width="325pt" table-layout="fixed">
+
+    <fo:table-column column-width="100pt" column-number="1">
+    </fo:table-column>
+    <fo:table-column column-width="150pt" column-number="2">
+    </fo:table-column>
+    <fo:table-column column-width="75pt" column-number="3">
+    </fo:table-column>
+
+    <fo:table-body start-indent="0pt" text-align="start">
+
+    <fo:table-row>
+
+    <fo:table-cell>
+    <fo:block>Cell 1
+    </fo:block>
+    </fo:table-cell>
+    <fo:table-cell>
+    <fo:block>Cell 2
+    </fo:block>
+    </fo:table-cell>
+    <fo:table-cell>
+    <fo:block>Cell 3
+    </fo:block>
+    </fo:table-cell>
+
+    </fo:table-row>
+
+    </fo:table-body>
+
+  </fo:table>
+
+</fo:table-and-caption>
 ```
 
 ## See Also

@@ -499,6 +499,6 @@ No code samples in spec for this property group.
 
 - [properties-border-padding-background](properties-border-padding-background.md) -- individual border, padding, and background properties
 - [properties-font](properties-font.md) -- individual font properties
-- [properties-block-level](properties-block-level.md) -- break and keep properties expanded from page-break-* shorthands
+- [properties-keeps-breaks](properties-keeps-breaks.md) -- break and keep properties expanded from page-break-* shorthands
 - [properties-writing-mode](properties-writing-mode.md) -- direction and unicode-bidi
-- [properties-inline-level](properties-inline-level.md) -- baseline alignment properties expanded from vertical-align
+- [properties-alignment](properties-alignment.md) -- baseline alignment properties expanded from vertical-align

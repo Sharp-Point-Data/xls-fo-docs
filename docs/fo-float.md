@@ -58,7 +58,80 @@ An `fo:float` is not permitted to have an `fo:float`, `fo:footnote`, or `fo:mark
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+The following three-part example from the spec demonstrates a floating figure: the source XML, the XSLT stylesheet that produces `fo:float`, and the resulting XSL-FO output.
+
+**Source XML with a figure/photo element to be floated:**
+
+<!-- Source: xslspec.xml line 16700 -->
+```xml
+<doc>
+  <p>C'ieng pieces were made in northern towns, such as C'ieng Mai.
+They were typically of tamlung weight.</p>
+  <figure>
+    <photo image="TH0317A.jpg"/>
+    <caption>C'ieng Tamlung of C'ieng Mai</caption>
+  </figure>
+</doc>
+```
+
+**XSLT stylesheet using `fo:float` with `float="before"` to place the figure at the top of the page:**
+
+<!-- Source: xslspec.xml line 16714 -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="p">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="figure">
+  <fo:float float="before">
+    <xsl:apply-templates/>
+  </fo:float>
+</xsl:template>
+
+<xsl:template match="photo">
+  <fo:block text-align="center">
+    <fo:external-graphic src="{@image}"/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="caption">
+  <fo:block space-before="3pt" text-align="center"
+    start-indent="10mm" end-indent="10mm">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+**Resulting XSL-FO output with `fo:float float="before"` containing the image and caption:**
+
+<!-- Source: xslspec.xml line 16749 -->
+```xml
+<fo:block>C'ieng pieces were made in northern towns,
+such as C'ieng Mai. They were typically of tamlung weight.
+</fo:block>
+
+<fo:float float="before">
+
+  <fo:block text-align="center">
+    <fo:external-graphic src="TH0317A.jpg">
+    </fo:external-graphic>
+  </fo:block>
+
+  <fo:block space-before="3pt" text-align="center" start-indent="10mm"
+    end-indent="10mm">C'ieng Tamlung of C'ieng Mai
+  </fo:block>
+
+</fo:float>
+```
 
 ## See Also
 

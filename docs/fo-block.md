@@ -86,11 +86,118 @@ In addition the constraints imposed by the traits derived from the properties ap
 
 ## Code Samples
 
-### Sample 1: Content model declaration
+The following three-part example from the spec demonstrates a complete transformation pipeline: source XML input, an XSLT stylesheet that uses fo:block with various properties, and the resulting XSL-FO output.
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_block -->
+### Source XML input
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_region-name-specifier -->
 ```xml
-(#PCDATA|%inline;|%block;)*
+<doc>
+  <chapter>
+    <title>Chapter title</title>
+    <section>
+      <title>First section title</title>
+      <paragraph>Section one's first paragraph.</paragraph>
+      <paragraph>Section one's second paragraph.</paragraph>
+    </section>
+    <section>
+      <title>Second section title</title>
+      <paragraph>Section two's only paragraph.</paragraph>
+    </section>
+  </chapter>
+</doc>
+```
+
+### XSLT stylesheet transforming the source to fo:block elements
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_region-name-specifier -->
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+<xsl:template match="chapter">
+  <fo:block break-before="page">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="chapter/title">
+  <fo:block text-align="center" space-after="8pt"
+            space-before="16pt" space-after.precedence="3">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="section">
+  <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="section/title">
+  <fo:block text-align="center" space-after="6pt"
+            space-before="12pt" space-before.precedence="0"
+            space-after.precedence="3">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="paragraph[1]" priority="1">
+  <fo:block text-indent="0pc" space-after="7pt"
+            space-before.minimum="6pt" space-before.optimum="8pt"
+            space-before.maximum="10pt">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="paragraph">
+  <fo:block text-indent="2pc" space-after="7pt"
+            space-before.minimum="6pt" space-before.optimum="8pt"
+            space-before.maximum="10pt">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+### Resulting XSL-FO output showing fo:block with break-before, text-align, and space properties
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_region-name-specifier -->
+```xml
+<fo:block break-before="page">
+
+  <fo:block text-align="center" space-after="8pt"
+    space-before="16pt"
+    space-after.precedence="3">Chapter title
+  </fo:block>
+
+  <fo:block text-align="center" space-after="6pt"
+    space-before="12pt" space-before.precedence="0"
+    space-after.precedence="3">First section title
+  </fo:block>
+
+  <fo:block text-indent="0pc" space-after="7pt"
+    space-before.minimum="6pt" space-before.optimum="8pt"
+    space-before.maximum="10pt">Section one's first paragraph.
+  </fo:block>
+
+  <fo:block text-indent="2pc" space-after="7pt"
+    space-before.minimum="6pt" space-before.optimum="8pt"
+    space-before.maximum="10pt">Section one's second paragraph.
+  </fo:block>
+
+  <fo:block text-align="center" space-after="6pt"
+    space-before="12pt" space-before.precedence="0"
+    space-after.precedence="3">Second section title
+  </fo:block>
+
+  <fo:block text-indent="0pc" space-after="7pt"
+    space-before.minimum="6pt" space-before.optimum="8pt"
+    space-before.maximum="10pt">Section two's only paragraph.
+  </fo:block>
+
+</fo:block>
 ```
 
 ## See Also

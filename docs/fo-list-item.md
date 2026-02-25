@@ -57,7 +57,298 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+The following examples demonstrate definition list patterns using `fo:list-item`. These show how to map `<dt>`/`<dd>` pairs to `fo:list-item` with `fo:list-item-label` and `fo:list-item-body`, including handling of multiple terms per definition and multiple definitions per term.
+
+Source XML definition list with varying dt/dd groupings (multiple dts for one dd, and multiple dds for one dt):
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<doc>
+<dl>
+  <dt>term</dt>
+  <dd>definition</dd>
+  <dt>term</dt>
+  <dt>term</dt>
+  <dd>definition</dd>
+  <dt>term</dt>
+  <dd>definition</dd>
+  <dd>definition</dd>
+</dl>
+</doc>
+```
+
+Resulting FO for definition list -- pattern 1. Each `dd` starts a new `fo:list-item`. When a dt has no following dd, it creates a list-item with an empty body. The second consecutive `dd` for the last `dt` produces its own list-item with an empty label:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<fo:list-block provisional-distance-between-starts="35mm"
+  provisional-label-separation="5mm">
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+      <fo:block>term
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+      <fo:block>term
+      </fo:block>
+      <fo:block>term
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+      <fo:block>term
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+</fo:list-block>
+```
+
+Resulting FO for definition list -- pattern 2 (alternative). Multiple definitions for the same term are grouped into a single `fo:list-item-body` rather than creating separate list-items:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<fo:list-block provisional-distance-between-starts="35mm"
+  provisional-label-separation="5mm">
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+      <fo:block>term
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+      <fo:block>term
+      </fo:block>
+      <fo:block>term
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+  <fo:list-item>
+    <fo:list-item-label end-indent="label-end()">
+      <fo:block>term
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>definition
+      </fo:block>
+      <fo:block>definition
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+</fo:list-block>
+```
+
+XSLT for the definition list -- simple version. This stylesheet includes `dtdd.xsl` (shown below) and provides the top-level template structure:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:include href="dtdd.xsl"/>
+
+<xsl:template match="doc">
+  <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="dl">
+  <xsl:call-template name="process.dl"/>
+</xsl:template>
+
+<xsl:template match="dt|dd">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+XSLT for the definition list -- detailed version (`dtdd.xsl`). Implements recursive processing of dt/dd sequences with a `$allow-naked-dd` variable controlling whether a dd without a preceding dt gets its own list-item (pattern 1) or definitions are grouped with their term (pattern 2):
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:variable name="allow-naked-dd" select="true()"/>
+
+<xsl:template name="process.dl">
+  <fo:list-block provisional-distance-between-starts="35mm"
+   provisional-label-separation="5mm">
+    <xsl:choose>
+      <xsl:when test="$allow-naked-dd">
+        <xsl:call-template name="process.dl.content.with.naked.dd"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="process.dl.content"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </fo:list-block>
+</xsl:template>
+
+<xsl:template name="process.dl.content.with.naked.dd">
+  <xsl:param name="dts" select="./force-list-to-be-empty"/>
+  <xsl:param name="nodes" select="*"/>
+
+  <xsl:choose>
+    <xsl:when test="count($nodes)=0">
+      <!-- Out of nodes, output any pending DTs -->
+      <xsl:if test="count($dts)>0">
+        <fo:list-item>
+          <fo:list-item-label end-indent="label-end()">
+            <xsl:apply-templates select="$dts"/>
+          </fo:list-item-label>
+          <fo:list-item-body start-indent="body-start()"/>
+        </fo:list-item>
+      </xsl:if>
+    </xsl:when>
+
+    <xsl:when test="name($nodes[1])='dd'">
+      <!-- We found a DD, output the DTs and the DD -->
+      <fo:list-item>
+        <fo:list-item-label end-indent="label-end()">
+          <xsl:apply-templates select="$dts"/>
+        </fo:list-item-label>
+        <fo:list-item-body start-indent="body-start()">
+          <xsl:apply-templates select="$nodes[1]"/>
+        </fo:list-item-body>
+      </fo:list-item>
+      <xsl:call-template name="process.dl.content.with.naked.dd">
+        <xsl:with-param name="nodes" select="$nodes[position()>1]"/>
+      </xsl:call-template>
+    </xsl:when>
+
+    <xsl:when test="name($nodes[1])='dt'">
+      <!-- We found a DT, add it to the list of DTs and loop -->
+      <xsl:call-template name="process.dl.content.with.naked.dd">
+        <xsl:with-param name="dts" select="$dts|$nodes[1]"/>
+        <xsl:with-param name="nodes" select="$nodes[position()>1]"/>
+      </xsl:call-template>
+    </xsl:when>
+
+    <xsl:otherwise>
+      <!-- This shouldn't happen -->
+      <xsl:message>
+        <xsl:text>DT/DD list contained something bogus (</xsl:text>
+        <xsl:value-of select="name($nodes[1])"/>
+        <xsl:text>).</xsl:text>
+      </xsl:message>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template name="process.dl.content">
+  <xsl:param name="dts" select="./force-list-to-be-empty"/>
+  <xsl:param name="dds" select="./force-list-to-be-empty"/>
+  <xsl:param name="output-on"></xsl:param>
+  <xsl:param name="nodes" select="*"/>
+
+  <!-- The algorithm here is to build up a list of DTs and DDs, -->
+  <!-- outputing them only on the transition from DD back to DT -->
+
+  <xsl:choose>
+    <xsl:when test="count($nodes)=0">
+      <!-- Out of nodes, output any pending elements -->
+      <xsl:if test="count($dts)>0 or count($dds)>0">
+        <fo:list-item>
+          <fo:list-item-label end-indent="label-end()">
+            <xsl:apply-templates select="$dts"/>
+          </fo:list-item-label>
+          <fo:list-item-body start-indent="body-start()">
+            <xsl:apply-templates select="$dds"/>
+          </fo:list-item-body>
+        </fo:list-item>
+      </xsl:if>
+    </xsl:when>
+
+    <xsl:when test="name($nodes[1])=$output-on">
+      <!-- We're making the transition from DD back to DT -->
+      <fo:list-item>
+        <fo:list-item-label end-indent="label-end()">
+          <xsl:apply-templates select="$dts"/>
+        </fo:list-item-label>
+        <fo:list-item-body start-indent="body-start()">
+          <xsl:apply-templates select="$dds"/>
+        </fo:list-item-body>
+      </fo:list-item>
+
+      <!-- Reprocess this node (and the rest of the node list) -->
+      <!-- resetting the output-on state to nil -->
+      <xsl:call-template name="process.dl.content">
+        <xsl:with-param name="nodes" select="$nodes"/>
+      </xsl:call-template>
+    </xsl:when>
+
+    <xsl:when test="name($nodes[1])='dt'">
+      <!-- We found a DT, add it to the list and loop -->
+      <xsl:call-template name="process.dl.content">
+        <xsl:with-param name="dts" select="$dts|$nodes[1]"/>
+        <xsl:with-param name="dds" select="$dds"/>
+        <xsl:with-param name="nodes" select="$nodes[position()>1]"/>
+      </xsl:call-template>
+    </xsl:when>
+
+    <xsl:when test="name($nodes[1])='dd'">
+      <!-- We found a DD, add it to the list and loop, noting that -->
+      <!-- the next time we cross back to DT's, we need to output the -->
+      <!-- current DT/DDs. -->
+      <xsl:call-template name="process.dl.content">
+        <xsl:with-param name="dts" select="$dts"/>
+        <xsl:with-param name="dds" select="$dds|$nodes[1]"/>
+        <xsl:with-param name="output-on">dt</xsl:with-param>
+        <xsl:with-param name="nodes" select="$nodes[position()>1]"/>
+      </xsl:call-template>
+    </xsl:when>
+
+    <xsl:otherwise>
+      <!-- This shouldn't happen -->
+      <xsl:message>
+        <xsl:text>DT/DD list contained something bogus (</xsl:text>
+        <xsl:value-of select="name($nodes[1])"/>
+        <xsl:text>).</xsl:text>
+      </xsl:message>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+</xsl:stylesheet>
+```
 
 ## See Also
 

@@ -49,7 +49,58 @@ Except for `id`, `index-class`, and `index-key`, the `fo:wrapper` has no propert
 
 ## Code Samples
 
-No code samples in spec for this formatting object. See the "Wrapper" and "Styling an XLink Based on the Active State" examples in the "Other Formatting Objects" and "Dynamic Effects" introduction sections for comprehensive demonstrations.
+The following three-part example from the spec demonstrates `fo:wrapper` used as a property inheritance carrier: the source XML, the XSLT stylesheet, and the resulting XSL-FO output.
+
+**Source XML with emphasis and code markup elements:**
+
+<!-- Source: xslspec.xml line 17269 -->
+```xml
+<doc>
+<p>This is an <emph>important word</emph> in this
+sentence that also refers to a <code>variable</code>.</p>
+</doc>
+```
+
+**XSLT stylesheet using `fo:wrapper` to carry `font-weight` and `font-family` properties for inheritance by child text:**
+
+<!-- Source: xslspec.xml line 17280 -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="p">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="emph">
+  <fo:wrapper font-weight="bold">
+    <xsl:apply-templates/>
+  </fo:wrapper>
+</xsl:template>
+
+<xsl:template match="code">
+  <fo:wrapper font-family="Courier">
+    <xsl:apply-templates/>
+  </fo:wrapper>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+**Resulting XSL-FO output with `fo:wrapper` carrying `font-weight="bold"` and `font-family="Courier"` without generating any areas of its own:**
+
+<!-- Source: xslspec.xml line 17307 -->
+```xml
+<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format">This is an
+<fo:wrapper font-weight="bold">important word</fo:wrapper>
+in this sentence that also refers to a
+<fo:wrapper font-family="Courier">variable</fo:wrapper>.
+</fo:block>
+```
 
 ## See Also
 

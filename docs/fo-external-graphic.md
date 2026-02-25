@@ -57,9 +57,63 @@ The fo:external-graphic flow object is used for a graphic where the graphics dat
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_external-graphic -->
+The following three-part example from the spec shows how fo:external-graphic is used to include an image with a caption.
+
+### Source XML input with figure, photo, and caption elements
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
 ```xml
-EMPTY
+<doc>
+  <figure>
+    <photo image="TH0317A.jpg"/>
+    <caption>C'ieng Tamlung of C'ieng Mai</caption>
+  </figure>
+</doc>
+```
+
+### XSLT stylesheet using fo:external-graphic
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="figure">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="photo">
+  <fo:block text-align="center">
+    <fo:external-graphic src="'url({@image})'"/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="caption">
+  <fo:block space-before="3pt" text-align="center"
+    start-indent="10mm" end-indent="10mm">
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+### Resulting XSL-FO output with fo:external-graphic
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<fo:block>
+  <fo:block text-align="center">
+    <fo:external-graphic src="'url(TH0317A.jpg)'"/>
+  </fo:block>
+
+  <fo:block space-before="3pt" text-align="center" start-indent="10mm"
+    end-indent="10mm">C'ieng Tamlung of C'ieng Mai</fo:block>
+</fo:block>
 ```
 
 ## See Also

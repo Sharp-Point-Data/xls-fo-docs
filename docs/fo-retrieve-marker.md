@@ -57,7 +57,197 @@ EMPTY
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+The following three-part example from the spec demonstrates how fo:marker and fo:retrieve-marker work together to produce a table of contents with fo:leader dot leaders, fo:basic-link hyperlinks, and fo:page-number-citation page references.
+
+### Source XML input with chapters and sections
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<doc>
+  <chapter><title>Chapter</title>
+    <p>Text</p>
+    <section><title>Section</title>
+    <p>Text</p>
+    </section>
+    <section><title>Section</title>
+    <p>Text</p>
+    </section>
+  </chapter>
+  <chapter><title>Chapter</title>
+    <p>Text</p>
+    <section><title>Section</title>
+    <p>Text</p>
+    </section>
+    <section><title>Section</title>
+    <p>Text</p>
+    </section>
+  </chapter>
+</doc>
+```
+
+### XSLT stylesheet using fo:marker, fo:retrieve-marker, fo:leader, fo:basic-link, and fo:page-number-citation for TOC and running headers
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="doc">
+  <!-- create the table of contents -->
+  <xsl:apply-templates select="chapter/title" mode="toc"/>
+  <!-- do the document -->
+  <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="chapter/title" mode="toc">
+  <fo:block text-align-last="justify">
+    <fo:basic-link internal-destination="{generate-id(.)}">
+      <xsl:number level="multiple" count="chapter" format="1. "/>
+      <xsl:apply-templates/>
+    </fo:basic-link>
+    <xsl:text> </xsl:text>
+    <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+               leader-length.maximum="100%" leader-pattern="dots"/>
+    <xsl:text> </xsl:text>
+    <fo:page-number-citation ref-id="{generate-id(.)}"/>
+  </fo:block>
+  <xsl:apply-templates select="../section/title" mode="toc"/>
+</xsl:template>
+
+<xsl:template match="section/title" mode="toc">
+  <fo:block start-indent="10mm" text-align-last="justify">
+    <fo:basic-link internal-destination="{generate-id(.)}">
+      <xsl:number level="multiple" count="chapter|section" format="1.1 "/>
+      <xsl:apply-templates/>
+    </fo:basic-link>
+    <xsl:text> </xsl:text>
+    <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+               leader-length.maximum="100%" leader-pattern="dots"/>
+    <xsl:text> </xsl:text>
+    <fo:page-number-citation ref-id="{generate-id(.)}"/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="chapter/title">
+  <fo:block id="{generate-id(.)}">
+    <xsl:number level="multiple" count="chapter" format="1. "/>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="section/title">
+  <fo:block id="{generate-id(.)}">
+    <xsl:number level="multiple" count="chapter|section" format="1.1 "/>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+<xsl:template match="p">
+  <fo:block>
+    <xsl:apply-templates/>
+  </fo:block>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+### Resulting XSL-FO output with TOC entries using fo:basic-link, fo:leader, and fo:page-number-citation, followed by body content
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_alternative-copyfit-content -->
+```xml
+<fo:block text-align-last="justify">
+  <fo:basic-link internal-destination="N4">1. Chapter
+  </fo:basic-link>
+  <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+    leader-length.maximum="100%" leader-pattern="dots">
+  </fo:leader>
+  <fo:page-number-citation ref-id="N4">
+  </fo:page-number-citation>
+</fo:block>
+<fo:block start-indent="10mm" text-align-last="justify">
+  <fo:basic-link internal-destination="N11">1.1 Section
+  </fo:basic-link>
+  <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+    leader-length.maximum="100%" leader-pattern="dots">
+  </fo:leader>
+  <fo:page-number-citation ref-id="N11">
+  </fo:page-number-citation>
+</fo:block>
+<fo:block start-indent="10mm" text-align-last="justify">
+  <fo:basic-link internal-destination="N19">1.2 Section
+  </fo:basic-link>
+  <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+    leader-length.maximum="100%" leader-pattern="dots">
+  </fo:leader>
+  <fo:page-number-citation ref-id="N19">
+  </fo:page-number-citation>
+</fo:block>
+<fo:block text-align-last="justify">
+  <fo:basic-link internal-destination="N28">2. Chapter
+  </fo:basic-link>
+  <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+    leader-length.maximum="100%" leader-pattern="dots">
+  </fo:leader>
+  <fo:page-number-citation ref-id="N28">
+  </fo:page-number-citation>
+</fo:block>
+<fo:block start-indent="10mm" text-align-last="justify">
+  <fo:basic-link internal-destination="N35">2.1 Section
+  </fo:basic-link>
+  <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+    leader-length.maximum="100%" leader-pattern="dots">
+  </fo:leader>
+  <fo:page-number-citation ref-id="N35">
+  </fo:page-number-citation>
+</fo:block>
+<fo:block start-indent="10mm" text-align-last="justify">
+  <fo:basic-link internal-destination="N43">2.2 Section
+  </fo:basic-link>
+  <fo:leader leader-length.minimum="12pt" leader-length.optimum="40pt"
+    leader-length.maximum="100%" leader-pattern="dots">
+  </fo:leader>
+  <fo:page-number-citation ref-id="N43">
+  </fo:page-number-citation>
+</fo:block>
+
+<fo:block id="N4">1. Chapter
+</fo:block>
+
+<fo:block>Text
+</fo:block>
+
+<fo:block id="N11">1.1 Section
+</fo:block>
+
+<fo:block>Text
+</fo:block>
+
+<fo:block id="N19">1.2 Section
+</fo:block>
+
+<fo:block>Text
+</fo:block>
+
+<fo:block id="N28">2. Chapter
+</fo:block>
+
+<fo:block>Text
+</fo:block>
+
+<fo:block id="N35">2.1 Section
+</fo:block>
+
+<fo:block>Text
+</fo:block>
+
+<fo:block id="N43">2.2 Section
+</fo:block>
+
+<fo:block>Text
+</fo:block>
+```
 
 ## See Also
 

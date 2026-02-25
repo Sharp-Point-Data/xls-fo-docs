@@ -56,7 +56,95 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## Code Samples
 
-No code samples in spec for this formatting object.
+The following three-part example demonstrates an ordered list transformed from source XML to XSL-FO using `fo:list-block`, with `provisional-distance-between-starts` and `provisional-label-separation` controlling list layout, and `label-end()`/`body-start()` functions for label and body indentation.
+
+Source XML ordered list:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<ol>
+<item>List item 1.</item>
+<item>List item 2.</item>
+<item>List item 3.</item>
+</ol>
+```
+
+XSLT stylesheet transforming the ordered list into `fo:list-block` with `fo:list-item` children. Uses `label-end()` and `body-start()` to set indentation, and `xsl:number` for automatic label generation:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<?xml version='1.0'?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version='1.0'>
+
+<xsl:template match="ol">
+  <fo:list-block provisional-distance-between-starts="15mm"
+   provisional-label-separation="5mm">
+    <xsl:apply-templates/>
+  </fo:list-block>
+</xsl:template>
+
+<xsl:template match="ol/item">
+  <fo:list-item>
+    <fo:list-item-label start-indent="5mm" end-indent="label-end()">
+      <fo:block>
+        <xsl:number format="a."/>
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>
+        <xsl:apply-templates/>
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+</xsl:template>
+
+</xsl:stylesheet>
+```
+
+Resulting XSL-FO output with `fo:list-block` containing three `fo:list-item` elements, each with a label (a., b., c.) and body:
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_conditional-table-footer-reference -->
+```xml
+<fo:list-block provisional-distance-between-starts="15mm"
+  provisional-label-separation="5mm">
+
+  <fo:list-item>
+    <fo:list-item-label start-indent="5mm" end-indent="label-end()">
+      <fo:block>a.
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>List item 1.
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+
+  <fo:list-item>
+    <fo:list-item-label start-indent="5mm" end-indent="label-end()">
+      <fo:block>b.
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>List item 2.
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+
+  <fo:list-item>
+    <fo:list-item-label start-indent="5mm" end-indent="label-end()">
+      <fo:block>c.
+      </fo:block>
+    </fo:list-item-label>
+    <fo:list-item-body start-indent="body-start()">
+      <fo:block>List item 3.
+      </fo:block>
+    </fo:list-item-body>
+  </fo:list-item>
+
+</fo:list-block>
+```
 
 ## See Also
 

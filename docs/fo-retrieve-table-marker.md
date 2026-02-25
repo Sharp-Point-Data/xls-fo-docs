@@ -53,7 +53,152 @@ EMPTY
 
 ## Code Samples
 
-No code samples in spec for this formatting object. See the "Table Markers" example in the "Other Formatting Objects" introduction section for a comprehensive demonstration of `fo:retrieve-table-marker` with subtotals and "Table continued..." captions.
+The following three-part example from the spec demonstrates `fo:retrieve-table-marker` used for subtotals and "Table continued..." captions: the source XML, the XSLT stylesheet, and the resulting XSL-FO output.
+
+**Source XML with numbered data:**
+
+<!-- Source: xslspec.xml line 17323 -->
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<numbers>
+  <number>1</number>
+  <number>2</number>
+  <!-- and so on... -->
+  <number>11</number>
+  <number>12</number>
+</numbers>
+```
+
+**XSLT stylesheet using `fo:marker` in table body rows and `fo:retrieve-table-marker` in the table footer to display running subtotals, a "Table continued..." caption, and a grand total on the last page:**
+
+<!-- Source: xslspec.xml line 17334 -->
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
+  <xsl:strip-space elements="*"/>
+
+  <xsl:template match="numbers">
+    <fo:table>
+      <fo:table-column/>
+      <fo:table-footer>
+        <fo:table-row>
+          <fo:table-cell font-weight="bold">
+            <fo:block>
+ <fo:retrieve-table-marker retrieve-class-name="subtotal-caption"
+retrieve-position-within-table="last-ending"/>
+ <fo:retrieve-table-marker retrieve-class-name="subtotal"
+retrieve-position-within-table="last-ending"/>
+            </fo:block>
+          </fo:table-cell>
+        </fo:table-row>
+        <fo:retrieve-table-marker retrieve-class-name="continued"
+          retrieve-position-within-table="last-ending"/>
+      </fo:table-footer>
+      <fo:table-body>
+        <fo:marker marker-class-name="continued">
+          <fo:table-row>
+            <fo:table-cell>
+              <fo:block>Table continued...</fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+        </fo:marker>
+        <fo:marker marker-class-name="subtotal-caption">
+                Subtotal:
+        </fo:marker>
+        <xsl:apply-templates/>
+      </fo:table-body>
+    </fo:table>
+  </xsl:template>
+
+  <xsl:template match="number">
+    <fo:table-row>
+      <fo:marker marker-class-name="subtotal">
+        <xsl:value-of select="sum(preceding::number)+text()"/>
+      </fo:marker>
+      <xsl:if test="position() = last()">
+        <fo:marker marker-class-name="continued"/>
+        <fo:marker marker-class-name="subtotal-caption">
+          Total:
+        </fo:marker>
+      </xsl:if>
+      <fo:table-cell>
+        <fo:block>
+          <xsl:apply-templates/>
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </xsl:template>
+
+</xsl:stylesheet>
+```
+
+**Resulting XSL-FO output with `fo:table`, `fo:marker` instances on each row, and `fo:retrieve-table-marker` in the footer retrieving subtotals and continuation captions:**
+
+<!-- Source: xslspec.xml line 17396 -->
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:table>
+  <fo:table-column/>
+  <fo:table-footer>
+    <fo:table-row>
+      <fo:table-cell font-weight="bold">
+        <fo:block>
+          <fo:retrieve-table-marker
+            retrieve-position-within-table="last-ending"
+            retrieve-class-name="subtotal-caption"/>
+          <fo:retrieve-table-marker
+            retrieve-position-within-table="last-ending"
+            retrieve-class-name="subtotal"/>
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+    <fo:retrieve-table-marker retrieve-class-name="continued"
+      retrieve-position-within-table="last-ending"/>
+  </fo:table-footer>
+  <fo:table-body>
+    <fo:marker marker-class-name="continued">
+      <fo:table-row>
+        <fo:table-cell>
+          <fo:block>Table continued...</fo:block>
+        </fo:table-cell>
+      </fo:table-row>
+    </fo:marker>
+    <fo:marker marker-class-name="subtotal-caption">
+      Subtotal:
+    </fo:marker>
+    <fo:table-row>
+      <fo:marker marker-class-name="subtotal">1</fo:marker>
+      <fo:table-cell>
+        <fo:block>1</fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row>
+      <fo:marker marker-class-name="subtotal">3</fo:marker>
+      <fo:table-cell>
+        <fo:block>2</fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+    <!-- and so on... -->
+    <fo:table-row>
+      <fo:marker marker-class-name="subtotal">66</fo:marker>
+      <fo:table-cell>
+        <fo:block>11</fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row>
+      <fo:marker marker-class-name="subtotal">78</fo:marker>
+      <fo:marker marker-class-name="continued"/>
+      <fo:marker marker-class-name="subtotal-caption">
+        Total:
+      </fo:marker>
+      <fo:table-cell>
+        <fo:block>12</fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+```
 
 ## See Also
 

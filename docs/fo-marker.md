@@ -44,7 +44,63 @@ The `fo:marker` does not directly produce any area. Its children may be retrieve
 
 ## Code Samples
 
-No code samples in spec for this formatting object. See the "Wrapper" and "Table Markers" examples in the "Other Formatting Objects" introduction section for comprehensive demonstrations of `fo:marker` usage.
+The following example from the spec shows `fo:marker` used in a multi-column table layout with `fo:retrieve-table-marker` in the table footer, demonstrating how marker retrieval interacts with column breaks and page breaks.
+
+**Complete FO example showing `fo:marker` in table body cells with `fo:retrieve-table-marker` in the footer, within a two-column `fo:region-body` layout:**
+
+<!-- Source: xslspec.xml line 17464 -->
+```xml
+<fo:root xmlns:fo=http://www.w3.org/1999/XSL/Format>
+  <fo:layout-master-set>
+    <fo:simple-page-master master-name="page ">
+      <fo:region-body region-name=" body"  column-count="2"/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+  <fo:page-sequence master-reference="page"
+    <fo:flow flow-name=" body">
+      <fo:table>
+        <fo:table-column/>
+        <fo:table-header>...</fo:table-header>
+          <fo:table-footer>
+            <fo:table-row>
+              <fo:table-cell>
+                <fo:block>
+                  <fo:retrieve-table-marker
+                    retrieve-class-name="marker-name"
+                    retrieve-position-within-table="See table for values..."
+                    retrieve-boundary-within-table="See table for values..."/>
+                </fo:block>
+              </fo:table-cell>
+            </fo:table-row>
+        </fo:table-footer>
+        <fo:table-body>
+          <fo:table-row>
+            <fo:table-cell>
+              <!-- cell 1 -->
+              <fo:marker marker-class-name="marker-name">
+                <!-- marker 1 -->
+                ...
+              </fo:marker>
+              ...
+            </fo:table-cell>
+          </fo:table-row>
+          <!-- and so on ... -->
+          <fo:table-row>
+            <fo:table-cell>
+              <!-- cell 14 -->
+              <fo:marker marker-class-name="marker-name">
+                <!-- marker 14 -->
+                ...
+              </fo:marker>
+              ...
+            </fo:table-cell>
+          </fo:table-row>
+        </fo:table-body>
+      </fo:table>
+    </fo:flow>
+  </fo:page-sequence>
+</fo:root>
+```
 
 ## See Also
 

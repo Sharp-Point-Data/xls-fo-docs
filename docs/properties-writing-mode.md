@@ -178,4 +178,4 @@ No code samples in spec for this property group.
 - [fo-block-container](fo-block-container.md) -- can override writing-mode
 - [fo-inline-container](fo-inline-container.md) -- can override writing-mode
 - [fo-bidi-override](fo-bidi-override.md) -- explicit bidi control
-- [properties-inline-level](properties-inline-level.md) -- baseline alignment properties
+- [properties-alignment](properties-alignment.md) -- baseline alignment properties

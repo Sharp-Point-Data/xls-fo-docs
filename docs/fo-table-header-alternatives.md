@@ -35,10 +35,33 @@ This formatting object has no directly applicable properties. The selection beha
 
 ## Code Samples
 
-<!-- Source: https://www.w3.org/TR/xslfo20/#fo_table-header-alternatives -->
+Table structure showing `fo:table-header-alternatives` with multiple `fo:conditional-table-header-reference` children, each specifying different header content for different boundary conditions (page, column):
+
+<!-- Source: https://www.w3.org/TR/xslfo20/#fo_ruby-text-container -->
 ```xml
-(conditional-table-header-reference
-+)
+<fo:table>
+ <fo:table-header>
+   <fo:table-header-alternatives>
+     <fo:conditional-table-header-reference>
+       ...
+     </fo:conditional-table-header-reference>
+     <fo:conditional-table-header-reference header-position="page">
+       ...
+     </fo:conditional-table-header-reference>
+     <fo:conditional-table-header-reference header-position="column">
+       ...
+     </fo:conditional-table-header-reference>
+     ...
+   </fo:table-header-alternatives>
+ </fo:table-header>
+ <fo:table-footer>
+   <fo:table-footer-alternatives>
+   </fo:table-footer-alternatives>
+ </fo:table-footer>
+ <fo:table-body>
+   ...
+ </fo:table-body>
+</fo:table>
 ```
 
 ## See Also
