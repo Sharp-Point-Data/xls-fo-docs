@@ -46,5 +46,5 @@ No code samples in spec for this formatting object. See the "Expandable/Collapsi
 
 ## See Also
 
-- `fo:multi-switch` -- ancestor formatting object that controls which multi-case is visible
-- `fo:multi-case` -- parent formatting object containing the alternative content sub-trees
+- [fo:multi-switch](fo-multi-switch.md) — ancestor formatting object that controls which multi-case is visible
+- [fo:multi-case](fo-multi-case.md) — parent formatting object containing the alternative content sub-trees

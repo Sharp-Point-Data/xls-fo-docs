@@ -44,5 +44,5 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:footnote` -- parent formatting object
-- `fo:inline` -- sibling providing the inline footnote citation
+- [fo:footnote](fo-footnote.md) — parent formatting object
+- [fo:inline](fo-inline.md) — sibling providing the inline footnote citation

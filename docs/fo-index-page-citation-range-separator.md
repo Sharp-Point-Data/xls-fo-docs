@@ -38,6 +38,6 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:index-page-citation-list` -- parent formatting object
-- `fo:index-page-citation-list-separator` -- sibling for list separators
-- `fo:index-key-reference` -- sibling that generates page citations
+- [fo:index-page-citation-list](fo-index-page-citation-list.md) — parent formatting object
+- [fo:index-page-citation-list-separator](fo-index-page-citation-list-separator.md) — sibling for list separators
+- [fo:index-key-reference](fo-index-key-reference.md) — sibling that generates page citations

@@ -1,0 +1,318 @@
+### axf:annotation-author
+
+Specifies the author of the annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-border-color
+
+Specifies the border color of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <color>
+Initial: the value for axf:annotation-text-color
+Inherited: no
+
+---
+
+### axf:annotation-border-style
+
+Specifies the border style of the free text annotation.
+The following can be specified for <border-style>: solid, dotted, dashed,
+dot-dash, dot-dot-dash. If anything else is specified, it is considered solid.
+Applies to: all block-level and inline-level formatting objects
+Values: <border-style>
+Initial: solid
+Inherited: no
+
+---
+
+### axf:annotation-border-width
+
+Specifies the border width of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <border-width>
+Initial: 0pt
+Inherited: no
+
+---
+
+### axf:annotation-color
+
+Specifies the color used for the background of the annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <color> | none
+Initial: none
+Inherited: no
+
+---
+
+### axf:annotation-contents
+
+Specifies the content of the annotation.
+Specifies the character string to be displayed for an <fo:basic-link> or
+HTML <a> or when axf:annotation-type specifies one of the following
+annotation types: Text, FreeText, Stamp, Fileattachment.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-createdate
+
+Specifies the annotation creation date.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-file-attachment
+
+Specifies the file with which file attachment annotation is related.
+Applies to: all block-level and inline-level formatting objects
+Values: <uri-specification>
+Initial: empty string
+
+Inherited: no
+The data scheme (defined in RFC397) can be specified. At that time,
+axf:annotation-file-name must be specified.
+
+---
+
+### axf:annotation-file-name
+
+Specifies the alternate file name to output when specifying the file
+attachment annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-flags
+
+Specifies the flag of the annotation. Specifies the following character
+sequences by enumerating using the white space: Invisible, Hidden,
+Print, NoZoom, NoRotate, NoView, ReadOnly, Locked, ToggleNoView, LockedContents.
+They are case insensitive. See also ISO 32000-1 or ISO 32000-2 to learn
+more.
+Applies to: See also ISO 32000-1 or ISO 32000-2 to learn more.
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-font-family
+
+Specifies the font family of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: depends on user agent (PDF-Reader)
+Inherited: no
+
+---
+
+### axf:annotation-font-size
+
+Specifies the font size of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <absolute-size> | <relative-size> | <length> | <percentage>
+Initial: depends on user agent (PDF-Reader)
+Inherited: no
+
+---
+
+### axf:annotation-font-style
+
+Specifies whether to make the font of the free text annotation italic.
+Applies to: all block-level and inline-level formatting objects
+Values: normal | italic
+
+Initial: normal
+Inherited: no
+
+---
+
+### axf:annotation-font-weight
+
+Specifies the font weight of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: normal | bold
+Initial: normal
+Inherited: no
+
+---
+
+### axf:annotation-height
+
+Specifies the height of the annotation. This property is used for the
+height of pop-up and the height of rubber stamp annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:annotation-icon-name
+
+Specifies the name of the icon used for displaying the annotation.
+Although arbitrary name can be specified for the icon used for the
+display of annotations, whether it can be displayed or not depends
+on the viewer application of a document. The annotation type
+(axf:annotation-type) shows the standard name which can be specified.
+‒
+Text:
+Standard names are as follows: Comment, Help, Insert, Key, NewParagraph,
+Note, Paragraph. Empty string is considered Note.
+‒
+Stamp:
+Standard names are as follows: Approved, AsIs, Confidential, Depart‐
+mental, Draft, Experimental, Expired, Final, ForComment, ForPublicRelease,
+
+NotApproved, NotForPublicRelease, Sold, TopSecret. Empty string is consi‐
+dered Draft.
+‒
+FileAttachment:
+Standard names are as follows: Graph, Paperclip, , Tag. Empty string is
+considered PushPin.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-modifydate
+
+Specifies the annotation modification date.
+It is the value of /M in the annotation dictionary. If omitted,
+it is considered the value of modifydate in <axf:document-info>. If
+axf:annotation-modifydate is older than axf:annotation-createdate, it will
+be adjusted to axf:annotation-createdate.
+The date format is a string in the ISO 8601 format. The following format
+of this standard is accepted:
+YYYY-MM-DD(Thh(:mm(:ss)?)?)?(Z|±hh(:mm)?)?
+The numbers 0 to 9 are given to Y, M, D, h, m and s, either “+” or “-” is
+given to “±”. Date “-” and time “:” separators may be omitted. When
+time zone is omitted, it is considered the system time zone (local time).
+Even dates that do not exist are appropriately corrected. The setting is
+ignored for dates before 1970, invalid strings, and dates that cannot be
+corrected.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-open
+
+Specifies the initial state of the annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: true | false
+Initial: false
+Inherited: no
+
+---
+
+### axf:annotation-position-horizontal
+
+Specifies the horizontal position of the annotation. The position
+specified is the distance from the left edge of the region and is used
+for the position of pop-up or icons and the position of rubber stamp
+annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length>
+Initial: 0pt
+Inherited: no
+
+---
+
+### axf:annotation-position-vertical
+
+Specifies the vertical position of the annotation. The position specified
+is the distance from the top edge of the region and is used for
+
+the position of pop-up or icons and the position of rubber stamp
+annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length>
+Initial: 0pt
+Inherited: no
+
+---
+
+### axf:annotation-text-align
+
+Specifies the alignment of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: left | center | right
+Initial: left
+Inherited: no
+
+---
+
+### axf:annotation-text-color
+
+Specifies the color of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <color>
+Initial: depends on user agent (PDF-Reader)
+Inherited: no
+
+---
+
+### axf:annotation-title
+
+Specifies the title of the annotation. This property is effective with
+PDF1.5 or later.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-type
+
+Specifies the type of the annotation.
+Any of the following types of the annotation can be specified:
+‒
+empty string: No annotations.
+‒
+Text: Text annotation.
+‒
+FreeText: Free text annotation.
+‒
+Stamp: Rubber stamp annotation.
+‒
+FileAttachment: File attachment annotation.
+Character strings are case insensitive.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:annotation-width
+
+Specifies the width of the annotation. This property is used for the
+width of pop-up and the width of rubber stamp annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length> | auto
+Initial: auto
+Inherited: no
+
+---
+

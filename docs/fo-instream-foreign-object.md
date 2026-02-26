@@ -62,5 +62,5 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- fo:external-graphic -- for graphics where the data resides outside the FO tree
-- fo:block -- used to wrap fo:instream-foreign-object for block-level placement
+- [fo:external-graphic](fo-external-graphic.md) — for graphics where the data resides outside the FO tree
+- [fo:block](fo-block.md) — used to wrap fo:instream-foreign-object for block-level placement

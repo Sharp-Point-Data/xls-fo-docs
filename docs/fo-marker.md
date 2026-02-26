@@ -104,5 +104,5 @@ The following example from the spec shows `fo:marker` used in a multi-column tab
 
 ## See Also
 
-- `fo:retrieve-marker` -- retrieves marker content for use in static-content (running headers/footers)
-- `fo:retrieve-table-marker` -- retrieves marker content for use in table headers/footers
+- [fo:retrieve-marker](fo-retrieve-marker.md) — retrieves marker content for use in static-content (running headers/footers)
+- [fo:retrieve-table-marker](fo-retrieve-table-marker.md) — retrieves marker content for use in table headers/footers

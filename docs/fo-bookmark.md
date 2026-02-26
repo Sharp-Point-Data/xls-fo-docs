@@ -48,6 +48,6 @@ No code samples in spec for this formatting object. For complete examples of `fo
 
 ## See Also
 
-- `fo:bookmark-tree` -- parent formatting object containing all bookmarks
-- `fo:bookmark-title` -- child providing the display text of the bookmark
-- `fo:basic-link` -- general-purpose link formatting object (of which `fo:bookmark` is a specialized form)
+- [fo:bookmark-tree](fo-bookmark-tree.md) — parent formatting object containing all bookmarks
+- [fo:bookmark-title](fo-bookmark-title.md) — child providing the display text of the bookmark
+- [fo:basic-link](fo-basic-link.md) — general-purpose link formatting object (of which fo:bookmark is a specialized form)

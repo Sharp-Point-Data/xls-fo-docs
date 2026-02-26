@@ -1,0 +1,2388 @@
+===PAGE 10===
+1 
+Formatting Objects, Properties,
+and XSL Functions
+SHORT and TIGHT
+The following reference contains all formatting objects, their properties
+and functions included in version 1.1 of the XSL Recommendation
+(XSL1.1). The only exceptions are the acoustic properties, which have
+no meaning for presentation media.
+1.1 
+Formatting Objects
+The XSL-FO objects ‒ called “formatting objects” in the standard ‒ are
+listed in alphabetical order. After a short description of the function the
+permitted attributes are enumerated, as well as the parent objects within
+which the given object may be used. And, if applicable, the child objects
+that the given object may contain.
+Furthermore, all extension properties are listed which are included in
+version 7.2 of the Antenna House XSL Formatter. Single objects that are
+not or extendedly supported by Antenna House, are marked.
+The referenced objects and properties are linked to their description.
+<fo:basic-link> 
+The object creates a link within a document and/or between
+documents. With the AH XSL Formatter it is possible to set internal
+Formatting Objects
+<fo:basic-link>
+10
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 11===
+and external PDF links with exact addressing. For details see the Online
+Manual on the extensions page under the title “Making Link” (file
+in the AH XSL Formatter installation directory: docs/ahf-ext.html#pdf-
+link).
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, destination-placement-offset,
+dominant-baseline, external-destination, id, indicate-destination,
+internal-destination, keep-together, keep-with-next, keep-with-previous,
+line-height, padding-before, padding-after, padding-start, padding-end,
+padding-top, padding-bottom, padding-left, padding-right, relative-position,
+role, show-destination, source-document, space-end, space-start,
+target-processing-context, target-presentation-context, target-stylesheet
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:action-type, axf:alttext, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+Formatting Objects
+<fo:basic-link>
+11
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 12===
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:folio-prefix>, <fo:folio-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:list-block>, <fo:multi-toggle>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:scaling-value-citation>, <fo:table-and-caption>, <fo:table>
+AHF Child Objects: <axf:ruby>
+<fo:bidi-override> 
+This object can be used to force a writing direction different from the
+general writing direction for a string if the Unicode algorithm (based
+on specific Unicode characters) for bi-directionality cannot be applied.
+Properties: color, direction, font-family, font-selection-strategy,
+font-size, font-stretch, font-size-adjust, font-style, font-variant,
+font-weight, id, letter-spacing, line-height, relative-position, score-spaces,
+unicode-bidi, word-spacing
+Shorthand Properties: font
+AHF Properties: axf:auto-letter-spacing, axf:letter-spacing-side
+Parent Objects: <fo:basic-link>,
+<fo:bidi-override>, <fo:block>, <fo:folio-prefix>,
+<fo:folio-suffix>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Formatting Objects
+<fo:basic-link>
+12
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 13===
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:index-page-citation-list>, <fo:index-range-begin>, <fo:index-range-end>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:list-block>, <fo:multi-toggle>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:scaling-value-citation>, <fo:table-and-caption>, <fo:table>
+AHF Child Objects: <axf:ruby>
+<fo:block> 
+The object creates regions for paragraphs, titles, headings, figures, table
+headings, etc. by using a block. It is the central block creating object.
+It can recursively be nested to any depth to provide spanning regions
+with specific properties by inheritance.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, break-after, break-before,
+color, country, end-indent, font-family, font-selection-strategy,
+font-size, font-stretch, font-size-adjust, font-style,
+font-variant, font-weight, hyphenate, hyphenation-character,
+hyphenation-push-character-count, hyphenation-remain-character-count,
+hyphenation-keep, hyphenation-ladder-count, id, intrusion-displace,
+keep-together, keep-with-next, keep-with-previous, language,
+Formatting Objects
+<fo:bidi-override>
+13
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 14===
+last-line-end-indent, letter-spacing, linefeed-treatment, line-height,
+line-height-shift-adjustment, line-stacking-strategy, margin-top,
+margin-bottom, margin-left, margin-right, orphans, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, relative-position, role, script, source-document,
+space-before, space-after, span, start-indent, text-align, text-align-last,
+text-altitude, text-depth, text-indent, visibility, white-space-collapse,
+white-space-treatment, widows, wrap-option
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, margin, padding
+AHF Properties: axf:abbreviation-character-count,
+axf:adjust-last-line-spacing, axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-createdate, axf:annotation-file-attachment,
+axf:annotation-flags, axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-modifydate,
+axf:annotation-open, axf:annotation-position-horizontal,
+axf:annotation-position-vertical, axf:annotation-text-align,
+axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:avoid-widow-words,
+axf:avoid-widow-words-cjk-punctuation, axf:balanced-text-align,
+axf:baseline-grid, axf:baseline-block-snap, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:destination-type,
+axf:diagonal-border-color, axf:diagonal-border-style,
+Formatting Objects
+<fo:block>
+14
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 15===
+axf:diagonal-border-width, axf:double-hyphen-translineation,
+axf:flush-zone, axf:hanging-punctuation, axf:hyphenate-caps-word,
+axf:hyphenate-hyphenated-word, axf:hyphenation-minimum-character-count,
+axf:hyphenation-zone, axf:index-page-citation-range-f-suffix,
+axf:index-page-citation-range-ff-suffix, axf:initial-letters,
+axf:initial-letters-first-line-head-height,
+axf:initial-letters-end-indent, axf:initial-letters-leading-punctuation,
+axf:initial-letters-leading-punctuation-position,
+axf:initial-letters-leading-punctuation-shift, axf:initial-letters-width,
+axf:initial-letters-text-align, axf:initial-letters-color,
+axf:initial-letters-start-intrusion, axf:justify-nbsp,
+axf:kansuji-grouping-letter, axf:kansuji-letter,
+axf:kansuji-style, axf:keep-together-within-dimension,
+axf:keep-together-within-inline-dimension, axf:kerning-mode,
+axf:leader-expansion, axf:ligature-mode,
+axf:line-number-except-continued-line, axf:line-break,
+axf:line-continued-mark, axf:line-continued-mark-background-color,
+axf:line-continued-mark-color, axf:line-continued-mark-font-family,
+axf:line-continued-mark-font-size, axf:line-continued-mark-font-style,
+axf:line-continued-mark-font-weight, axf:line-continued-mark-offset,
+axf:line-number, axf:line-number-background-color, axf:line-number-color,
+axf:line-number-display-align, axf:line-number-font-family,
+axf:line-number-font-size, axf:line-number-font-style,
+axf:line-number-font-weight, axf:line-number-offset,
+axf:line-number-position, axf:line-number-text-align,
+axf:line-number-text-decoration, axf:line-number-width, axf:normalize,
+axf:normalize-exclude, axf:number-transform, axf:overflow-align,
+axf:outline-color, axf:outline-expand, axf:outline-external-destination,
+axf:outline-font-style, axf:outline-font-weight, axf:outline-group,
+axf:outline-internal-destination, axf:outline-level, axf:outline-title,
+Formatting Objects
+<fo:block>
+15
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 16===
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:suppress-duplicate-marker-contents, axf:suppress-if-first-on-page,
+axf:tab-stops, axf:tab-treatment, axf:tab-overlap-treatment,
+axf:text-align-first, axf:text-align-string, axf:text-autospace,
+axf:text-autospace-width, axf:text-combine-horizontal,
+axf:text-indent-if-first-on-page, axf:text-justify, axf:text-justify-trim,
+axf:text-kashida-space, axf:text-line-color, axf:text-line-style,
+axf:text-line-width, axf:text-orientation, axf:text-overflow,
+axf:text-stroke, axf:text-stroke-width, axf:text-stroke-color,
+axf:text-underline-position, axf:transform, axf:transform-origin,
+axf:vertical-underline-side, axf:text-replace, axf:url-break,
+axf:word-break, axf:word-wrap
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:float>, <fo:flow>, <fo:footnote-body>, <fo:inline>,
+<fo:inline-container>, <fo:list-item-body>, <fo:list-item-label>,
+<fo:marker>, <fo:multi-case>, <fo:multi-toggle>, <fo:static-content>,
+<fo:table-caption>, <fo:table-cell>, <fo:wrapper>
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:change-bar-begin>, <fo:change-bar-end>,
+<fo:character>, <fo:external-graphic>, <fo:index-page-citation-list>,
+<fo:index-range-begin>, <fo:index-range-end>, <fo:instream-foreign-object>,
+<fo:inline>, <fo:inline-container>, <fo:leader>, <fo:list-block>,
+<fo:multi-toggle>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>, <fo:scaling-value-citation>,
+<fo:table-and-caption>, <fo:table>, <fo:wrapper>
+AHF Child Objects: <axf:form>, <axf:form-field>, <axf:ruby>, <axf:tab>
+Formatting Objects
+<fo:block>
+16
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 17===
+<fo:block-container> 
+ (AHF: extended supported)
+The object creates a container for blocks and other, more complex block
+objects, which can be positioned and dimensioned freely in the page, if
+necessary, also outside the text flow.
+Properties: absolute-position, background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, block-progression-dimension, break-after,
+break-before, border-before-color, border-before-style, border-before-width,
+border-after-color, border-after-style, border-after-width,
+border-start-color, border-start-style, border-start-width,
+border-end-color, border-end-style, border-end-width, border-top-color,
+border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, bottom, clip, display-align,
+end-indent, height, id, inline-progression-dimension, intrusion-displace,
+keep-together, keep-with-next, keep-with-previous, left, margin-top,
+margin-bottom, margin-left, margin-right, overflow, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, reference-orientation, right, space-before,
+space-after, span, start-indent, top, width, writing-mode, z-index
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, margin, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+Formatting Objects
+<fo:block-container>
+17
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 18===
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:baseline-grid,
+axf:baseline-block-snap, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius, axf:column-fill,
+axf:column-rule, axf:column-rule-align, axf:column-rule-color,
+axf:column-rule-display, axf:column-rule-length, axf:column-rule-style,
+axf:column-rule-width, axf:destination-type, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width, , axf:justify-nbsp,
+axf:kansuji-grouping-letter, axf:kansuji-letter, axf:kansuji-style,
+axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:overflow-condense, axf:overflow-condense-limit-font-size,
+axf:overflow-condense-limit-font-stretch,
+axf:overflow-condense-limit-line-height,
+axf:overflow-condense-limit-letter-spacing, axf:condensed-text-align-last,
+axf:overflow-limit, axf:overflow-limit-block, axf:overflow-limit-inline,
+axf:overflow-replace, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:suppress-if-first-on-page, axf:text-autospace, axf:text-autospace-width,
+axf:text-combine-horizontal, axf:text-indent-if-first-on-page,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-orientation, axf:text-replace, axf:transform, axf:transform-origin,
+axf:url-break, axf:word-break, axf:word-wrap
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:float>, <fo:flow>, <fo:footnote-body>, <fo:inline>,
+<fo:inline-container>, <fo:list-item-body>, <fo:list-item-label>,
+Formatting Objects
+<fo:block-container>
+18
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 19===
+<fo:marker>, <fo:multi-case>, <fo:multi-toggle>, <fo:static-content>,
+<fo:table-caption>, <fo:table-cell>, <fo:wrapper>
+Child Objects: <fo:block>, <fo:block-container>, <fo:change-bar-begin>,
+<fo:change-bar-end>, <fo:index-range-begin>, <fo:index-range-end>,
+<fo:list-block>, <fo:table-and-caption>, <fo:table>
+<fo:bookmark> 
+This object can be used to address an internal or external point, e.g.
+a chapter or a section, for generating a PDF bookmark. A given
+bookmark includes the bookmark title specification and, if necessary,
+child bookmarks in arbitrarily deep nesting.
+Properties: external-destination, internal-destination, role,
+source-document, starting-state
+Parent Objects: <fo:bookmark-tree>
+Child Objects: <fo:bookmark>, <fo:bookmark-title>
+<fo:bookmark-title> 
+Titling a PDF bookmark. This object must contain character data only.
+Properties: color, font-style (normal or italic), font-weight (normal or
+bold), role, source-document
+Parent Objects: <fo:bookmark>
+Child Objects: –
+<fo:bookmark-tree> 
+The object includes PDF bookmarks as a container object. As an
+alternative for this standard concept the extension concept of the AH
+XSL Formatter can be used which forms the PDF bookmark hierarchy
+with the axf:outline-level extension property. PDF output in multiple
+files with the Antenna House <axf:output-volume-info> extension is only
+possible with the Antenna House extension concept!
+Formatting Objects
+<fo:block-container>
+19
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 20===
+Properties: –
+Parent Objects: <fo:root>
+Child Objects: <fo:bookmark>
+<fo:change-bar-begin> 
+ (AHF: extended supported)
+The normally empty object denotes the beginning of a changed passage
+in the document. The end of the changed passage is marked with
+an <fo:change-bar-end> object that has the same value for the change-bar-
+class property and is in the same nesting level. The passage marked
+as changed is highlighted on the left or right by a change bar. For the
+positioning and design of the change bar there are the corresponding
+change-bar- properties.
+Properties: change-bar-class, change-bar-color, change-bar-offset,
+change-bar-placement, change-bar-style, change-bar-width, role,
+source-document, z-index
+Parent Objects: <fo:block>, <fo:block-container>, <fo:table-and-caption>,
+<fo:table>, <fo:list-block>
+Child Objects: <fo:float>
+<fo:change-bar-end> 
+The object denotes the end of a changed passage in the document for
+which the fo:change-bar-begin has the same value in the change-bar-class
+property. For design details see <fo:change-bar-begin>.
+Properties: change-bar-class, role, source-document
+Parent Objects: <fo:block>, <fo:block-container>, <fo:table-and-caption>,
+<fo:table>, <fo:list-block>
+Child Objects: –
+Formatting Objects
+<fo:bookmark-tree>
+20
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 21===
+<fo:character> 
+The object is used for special typographical treatment of individual
+characters or character strings.
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, country, character,
+color, font-family, font-selection-strategy, font-size,
+font-stretch, font-size-adjust, font-style, font-variant,
+font-weight, glyph-orientation-horizontal, glyph-orientation-vertical,
+hyphenate, hyphenation-character, hyphenation-push-character-count,
+hyphenation-remain-character-count, id, keep-with-next, keep-with-previous,
+language, letter-spacing, line-height, padding-before, padding-after,
+padding-start, padding-end, padding-top, padding-bottom, padding-left,
+padding-right, relative-position, script, score-spaces, space-end,
+space-start, suppress-at-line-break, text-altitude, text-decoration,
+text-depth, text-shadow, text-transform, treat-as-word-space, visibility,
+word-spacing
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+Formatting Objects
+<fo:character>
+21
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 22===
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:auto-letter-spacing,
+axf:letter-spacing-side, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+axf:hyphenate-hyphenated-word, axf:hyphenation-minimum-character-count, ,
+axf:justify-nbsp, axf:kansuji-grouping-letter, axf:kansuji-letter,
+axf:kansuji-style, axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:tab-treatment, axf:tab-overlap-treatment, axf:text-autospace,
+axf:text-autospace-width, axf:text-combine-horizontal, axf:quotetype,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-line-color, axf:text-line-style, axf:text-line-width,
+axf:text-stroke, axf:text-stroke-width, axf:text-stroke-color,
+axf:text-underline-position, axf:vertical-underline-side,
+axf:text-orientation, axf:text-replace, axf:url-break, axf:word-break,
+axf:word-wrap
+Formatting Objects
+<fo:character>
+22
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 23===
+Parent Objects: <fo:basic-link>,
+<fo:bidi-override>, <fo:block>, <fo:folio-prefix>,
+<fo:folio-suffix>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:index-range-begin>, <fo:index-range-end>,
+<fo:inline>, <fo:leader>, <fo:marker>, <fo:multi-case>, <fo:multi-toggle>,
+<fo:title>, <fo:wrapper>
+<fo:color-profile> 
+This object is used to specify a color profile.
+Properties: color-profile-name, rendering-intent, src
+Parent Objects: <fo:declarations>
+Child Objects: –
+<fo:conditional-page-master-reference> 
+This object is used to identify a page template that is applied if the
+according application conditions are given. This allows the application
+of different page templates within a page sequence template, e.g. for
+left and right pages, the first page in a page sequence, or for last blank
+pages. This application is typical for chapters of a book of which the
+first page should have a different layout than the other pages and
+where the header and footer areas on left and right pages should also
+have different contents and layouts.
+Properties: blank-or-not-blank, master-reference, odd-or-even, page-position
+Parent Objects: <fo:repeatable-page-master-alternatives>
+Child Objects: –
+<fo:declarations> 
+The object is used to group global declarations. fo:declarations is to be
+placed under (after) <fo:layout-master-set>.
+Formatting Objects
+<fo:character>
+23
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 24===
+Properties: –
+Parent Objects: <fo:root>
+Child Objects: <fo:color-profile>
+AHF Child Objects: <axf:counter-style>,
+<axf:custom-property>, <axf:font-face>, <axf:formatter-config>,
+<axf:hyphenation-info>, <axf:space-after-punctuation>,
+<axf:space-before-punctuation>, <axf:space-between-digit-and-punctuation>,
+<axf:space-between-punctuation-and-digit>
+<fo:external-graphic> 
+This object is used to embed and scale a referenced graphic or
+multimedia object (outside the XML or FO instance).
+Properties: alignment-adjust, alignment-baseline, allowed-height-scale,
+allowed-width-scale, background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, baseline-shift, block-progression-dimension,
+border-before-color, border-before-style, border-before-width,
+border-after-color, border-after-style, border-after-width,
+border-start-color, border-start-style, border-start-width,
+border-end-color, border-end-style, border-end-width, border-top-color,
+border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, content-height,
+content-type, content-width, display-align, dominant-baseline, height,
+id, inline-progression-dimension, keep-with-next, keep-with-previous,
+line-height, overflow, padding-before, padding-after, padding-start,
+padding-end, padding-top, padding-bottom, padding-left, padding-right,
+relative-position, role, scaling, scaling-method, source-document, space-end,
+space-start, src, text-align, width
+Formatting Objects
+<fo:declarations>
+24
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 25===
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:alttext, axf:background-image-resolution,
+axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style, axf:display-alttext,
+axf:diagonal-border-width, axf:image-orientation, , axf:image-resolution,
+axf:media-activation, axf:media-duration, axf:media-extraction-policy,
+axf:media-flash-context-menu, axf:media-flash-vars, axf:media-play-mode,
+axf:media-skin-auto-hide, axf:media-skin-color, axf:media-skin-control,
+axf:media-transparent-background, axf:media-volume, axf:media-window-height,
+axf:media-window-width, axf:multimedia-treatment, axf:poster-content-type,
+axf:poster-image, axf:pdftag, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width,
+axf:show-controls
+Parent Objects: <fo:basic-link>,
+<fo:bidi-override>, <fo:block>, <fo:folio-prefix>,
+<fo:folio-suffix>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: <fo:index-range-begin>, <fo:index-range-end>
+AHF Child Objects: <axf:form>
+<fo:float> 
+ (AHF: extended supported)
+This object can be used to place content relative to the display blocks.
+Typically, these are images that are surrounded by the text of the given
+Formatting Objects
+<fo:external-graphic>
+25
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 26===
+display block, or texts that are to be placed sideways as marginalia of
+the given display block.
+The AHF extensions: The axf:float-* extension properties provide the
+ability to freely position floating objects in the page. For spanning a
+flow object in a multi-column layout, there also is a specific unit of
+measurement gr (see ).
+Properties: clear, float
+AHF Properties: axf:float, axf:float-x, axf:float-y, axf:float-reference,
+axf:float-move, axf:float-wrap, axf:float-min-wrap-x, axf:float-min-wrap-y,
+axf:float-centering-x, axf:float-centering-y, axf:float-margin-x,
+axf:float-margin-y, axf:float-float-margin-x, axf:float-float-margin-y,
+axf:float-offset-x, axf:float-offset-y
+Parent Objects: <fo:change-bar-begin>, <fo:block> (nicht in
+<fo:table-cell> or <fo:block-container>)
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>
+<fo:flow> 
+This object forms the area where the block objects flow into the pages
+according to their order in the source data.
+Properties: flow-name
+AHF Properties: axf:baseline-grid, axf:baseline-block-snap
+Parent Objects: <fo:page-sequence>
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>, <fo:page-sequence> (see the AHF
+extension there).
+Formatting Objects
+<fo:float>
+26
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 27===
+<fo:flow-assignment> 
+This object is used to associate a sequence of text flows with a
+sequence of areas defined as flow areas (<fo:flow>) in page templates
+(<fo:simple-page-master>.
+Properties: flow-map-name
+Parent Objects: <fo:flow-map>
+Child Objects: <fo:flow-source-list>, gefolgt von <fo:flow-target-list>
+<fo:flow-map> 
+This object is used to assign text flows to areas defined as flow areas in
+page templates.
+Properties: flow-map-name
+Parent Objects: <fo:layout-master-set>
+Child Objects: <fo:flow-assignment>
+<fo:flow-name-specifier> 
+This object is used to name a flow in a <fo:flow-source-list>.
+Properties: flow-name-reference
+Parent Objects: <fo:flow-source-list>
+Child Objects: –
+<fo:flow-source-list> 
+This object is used to assign flows to a <fo:flow-assignment>.
+Properties: –
+Parent Objects: <fo:flow-assignment>
+Child Objects: <fo:flow-name-specifier>
+<fo:flow-target-list> 
+This object is used to specify areas to which flows are assigned within a
+given <fo:flow-assignment>.
+Formatting Objects
+<fo:flow-assignment>
+27
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 28===
+Properties: –
+Parent Objects: <fo:flow-assignment>
+Child Objects: <fo:region-name-specifier>
+<fo:folio-prefix> 
+This object can be used to prefix static strings, e.g. “page”, to page
+numbers.
+Properties: –
+Parent Objects: <fo:page-sequence>
+Child Objects: <fo:bidi-override>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:scaling-value-citation>, <fo:basic-link>,
+<fo:multi-toggle>, <fo:index-page-citation-list>
+<fo:folio-suffix> 
+This object can be used to suffix static strings to page numbers.
+Properties: –
+Parent Objects: <fo:page-sequence>
+Child Objects: <fo:bidi-override>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:scaling-value-citation>, <fo:basic-link>,
+<fo:multi-toggle>, <fo:index-page-citation-list>
+<fo:footnote> 
+This object is used to insert a footnote in the text flow, which is placed
+in the footnote area of the same page. For the specification of the
+footnote area see <fo:static-content>.
+Properties: role, source-document
+Formatting Objects
+<fo:flow-target-list>
+28
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 29===
+AHF Properties: axf:footnote-align,
+axf:footnote-keep, axf:footnote-position, axf:footnote-stacking,
+axf:suppress-duplicate-footnote
+Parent Objects: not exactly specified in the standard, practically
+always where <fo:inline> is also allowed.
+Child Objects: <fo:footnote-body>, <fo:inline>
+<fo:footnote-body> 
+ (AHF: extended supported)
+This object causes the content of a footnote to be displayed in the
+footnote area. The footnote content must be embedded in a block
+object.
+Properties: role, source-document
+Parent Objects: <fo:footnote>
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>
+AHF Child Objects: <axf:footnote-number-citation>
+<fo:index-key-reference> 
+This object is used to generate page references to all occurrences of the
+value specified in ref-index-key with the same value in index-key.
+Properties: page-number-treatment, ref-index-key
+Parent Objects: <fo:index-page-citation-list>
+Child Objects: <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>
+<fo:index-page-citation-list> 
+This object is used to group the page references generated by
+<fo:index-key-reference> and to merge them, if necessary.
+Properties: merge-ranges-across-index-key-references,
+merge-sequential-page-numbers, merge-pages-across-index-key-references
+Formatting Objects
+<fo:footnote>
+29
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 30===
+Parent Objects: <fo:title>, <fo:block>, <fo:bidi-override>,
+<fo:folio-prefix>, <fo:folio-suffix>, <fo:inline>, <fo:leader>
+Child Objects: <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-key-reference>
+<fo:index-page-citation-list-separator> 
+This object specifies characters, typically commas and spaces, that
+separate individual page numbers or page number ranges in a
+generated list of page numbers.
+Properties: –
+Parent Objects: <fo:index-page-citation-list>
+Child Objects: <fo:bidi-override>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>
+<fo:index-page-citation-range-separator> 
+This object specifies characters that allow two page number ranges
+to be distinguished in the index. This can be used to prefix the page
+numbers of a page sequence with a classifying text, such as “Appendix”,
+if this forms its own page sequence.
+Properties: –
+Parent Objects: <fo:index-page-citation-list>
+Child Objects: <fo:bidi-override>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>
+<fo:index-page-number-prefix> 
+This object is used to prefix a static character or string to page
+references generated by <fo:index-key-reference>.
+Properties: –
+Formatting Objects
+<fo:index-page-citation-list>
+30
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 31===
+Parent Objects: <fo:index-key-reference>
+Child Objects: <fo:bidi-override>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>
+<fo:index-page-number-suffix> 
+This object is used to suffix a static character or string to page
+references generated by <fo:index-key-reference>.
+Properties: –
+Parent Objects: <fo:index-key-reference>
+Child Objects: <fo:bidi-override>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>
+<fo:index-range-begin> 
+This object denotes the beginning of an index range marked
+by an index-key. The index range ends with a corresponding
+<fo:index-range-end>.
+Properties: id, index-key, index-class
+Parent Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>, <fo:bidi-override>, <fo:character>,
+<fo:external-graphic>, <fo:instream-foreign-object>, <fo:inline>,
+<fo:inline-container>, <fo:leader>
+Child Objects: –
+<fo:index-range-end> 
+This object denotes the end of an index range marked with an index-key.
+The index range starts with a corresponding <fo:index-range-begin>.
+Properties: ref-id
+Formatting Objects
+<fo:index-page-number-prefix>
+31
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 32===
+Parent Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>, <fo:bidi-override>, <fo:character>,
+<fo:external-graphic>, <fo:instream-foreign-object>, <fo:inline>,
+<fo:inline-container>, <fo:leader>
+Child Objects: –
+<fo:initial-property-set> 
+This object is used to define the specific typography features of the first
+line of a block.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, color, font-family,
+font-selection-strategy, font-size, font-stretch, font-size-adjust,
+font-style, font-variant, font-weight, id, letter-spacing, line-height,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, relative-position, role,
+score-spaces, source-document, text-decoration, text-shadow, text-transform,
+word-spacing
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:auto-letter-spacing,
+axf:letter-spacing-side, axf:border-radius, axf:border-bottom-left-radius,
+Formatting Objects
+<fo:index-range-end>
+32
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 33===
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width,
+axf:text-line-color, axf:text-line-style, axf:text-line-width,
+axf:text-underline-position, axf:vertical-underline-side
+Parent Objects: <fo:block>
+Child Objects: –
+<fo:inline> 
+This object can be used to design inline areas specifically and
+differently from the surrounding area, e.g. bold or italic.
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, block-progression-dimension, border-before-color,
+border-before-style, border-before-width, border-after-color,
+border-after-style, border-after-width, border-start-color,
+border-start-style, border-start-width, border-end-color, border-end-style,
+border-end-width, border-top-color, border-top-style, border-top-width,
+border-bottom-color, border-bottom-style, border-bottom-width,
+border-left-color, border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, color, dominant-baseline,
+font-family, font-selection-strategy, font-size, font-stretch,
+font-size-adjust, font-style, font-variant, font-weight, height,
+hyphenate, id, inline-progression-dimension, keep-together, keep-with-next,
+keep-with-previous, letter-spacing, line-height, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+Formatting Objects
+<fo:initial-property-set>
+33
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 34===
+padding-left, padding-right, relative-position, role, source-document,
+space-end, space-start, text-decoration, visibility, width, wrap-option
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:auto-letter-spacing,
+axf:letter-spacing-side, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+axf:indent-here, axf:intrude-into-punctuation, , axf:justify-nbsp,
+axf:kansuji-grouping-letter, axf:kansuji-letter, axf:kansuji-style,
+axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:text-autospace, axf:text-autospace-width, axf:text-combine-horizontal,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+Formatting Objects
+<fo:inline>
+34
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 35===
+axf:text-line-color, axf:text-line-style, axf:text-line-width,
+axf:text-stroke, axf:text-stroke-width, axf:text-stroke-color,
+axf:text-underline-position, axf:url-break, axf:vertical-underline-side,
+axf:text-orientation, axf:text-replace, axf:word-break, axf:word-wrap
+Parent Objects: <fo:basic-link>, <fo:bidi-override>,
+<fo:block>, <fo:folio-prefix>, <fo:folio-suffix>,
+<fo:footnote>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:index-page-citation-list>, <fo:index-range-begin>, <fo:index-range-end>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:list-block>, <fo:multi-toggle>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:scaling-value-citation>, <fo:table-and-caption>, <fo:table>
+AHF Child Objects: <axf:footnote-number> (only if within <fo:footnote>),
+<axf:ruby>
+<fo:inline-container> 
+This object is used to create a container within a line for processing
+subordinate block objects together. With inline-progression-dimension
+the width of an inline container can be specified and with block-
+progression-dimension the vertical extension.
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, block-progression-dimension, border-before-color,
+border-before-style, border-before-width, border-after-color,
+Formatting Objects
+<fo:inline>
+35
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 36===
+border-after-style, border-after-width, border-start-color,
+border-start-style, border-start-width, border-end-color, border-end-style,
+border-end-width, border-top-color, border-top-style, border-top-width,
+border-bottom-color, border-bottom-style, border-bottom-width,
+border-left-color, border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, display-align,
+dominant-baseline, height, id, inline-progression-dimension, keep-together,
+keep-with-next, keep-with-previous, line-height, overflow, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, reference-orientation, relative-position,
+space-end, space-start, width, writing-mode
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+axf:inline-overflow-align, , axf:justify-nbsp, axf:kansuji-grouping-letter,
+Formatting Objects
+<fo:inline-container>
+36
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 37===
+axf:kansuji-letter, axf:kansuji-style, axf:kerning-mode, axf:ligature-mode,
+axf:line-break, axf:number-transform, axf:punctuation-spacing,
+axf:punctuation-trim, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width,
+axf:soft-hyphen-treatment, axf:text-autospace, axf:text-autospace-width,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-replace, axf:url-break, axf:word-break, axf:word-wrap
+Parent Objects: <fo:basic-link>,
+<fo:bidi-override>, <fo:block>, <fo:folio-prefix>,
+<fo:folio-suffix>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: <fo:block>, <fo:block-container>, <fo:index-range-begin>,
+<fo:index-range-end>, <fo:list-block>, <fo:table-and-caption>, <fo:table>
+<fo:instream-foreign-object> 
+This object can be used to format graphics or other objects (e.g. math)
+embedded directly in the XML data. The object data are substructures
+of the fo:instream-foreign-object, typically again XML data (e.g. SVG or
+MathML), but also non-XML data (e.g. Encapsulated Postscript, EPS).
+The format-specific processing of this data depends on the formatter
+used!
+Properties: alignment-adjust, alignment-baseline, allowed-height-scale,
+allowed-width-scale, background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, baseline-shift, block-progression-dimension,
+border-before-color, border-before-style, border-before-width,
+border-after-color, border-after-style, border-after-width,
+border-start-color, border-start-style, border-start-width,
+Formatting Objects
+<fo:inline-container>
+37
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 38===
+border-end-color, border-end-style, border-end-width, border-top-color,
+border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, content-height,
+content-type, content-width, display-align, dominant-baseline, height,
+id, inline-progression-dimension, keep-with-next, keep-with-previous,
+line-height, overflow, padding-before, padding-after, padding-start,
+padding-end, padding-top, padding-bottom, padding-left, padding-right,
+relative-position, role, scaling, scaling-method, source-document, space-end,
+space-start, text-align, width
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:alttext, axf:background-image-resolution,
+axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:image-orientation, axf:image-resolution,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width
+Parent Objects: <fo:basic-link>,
+<fo:bidi-override>, <fo:block>, <fo:folio-prefix>,
+<fo:folio-suffix>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: <fo:index-range-begin>, <fo:index-range-end>
+Formatting Objects
+<fo:instream-foreign-object>
+38
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 39===
+<fo:layout-master-set> 
+This object forms the container for all page and page sequence
+templates used in the stylesheet.
+Properties: –
+Parent Objects: <fo:root>
+Child Objects: <fo:flow-map>, <fo:page-sequence-master>,
+<fo:simple-page-master>
+AHF Child Objects: <axf:spread-page-master>
+<fo:leader> 
+This object can be used to create lines with repeating characters or
+character patterns. It is typically used for leading lines connecting two
+in-line formatting objects (e.g. punctuation between heading and page
+number in tables of contents).
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, color, dominant-baseline,
+font-family, font-selection-strategy, font-size, font-stretch,
+font-size-adjust, font-style, font-variant, font-weight, id, keep-with-next,
+keep-with-previous, leader-alignment, leader-length, leader-pattern,
+letter-spacing, leader-pattern-width, line-height, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+Formatting Objects
+<fo:layout-master-set>
+39
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 40===
+padding-left, padding-right, relative-position, role, rule-style,
+rule-thickness, source-document, space-end, space-start, text-depth,
+text-altitude, text-shadow, visibility, word-spacing
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:auto-letter-spacing,
+axf:letter-spacing-side, axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:basic-link>,
+<fo:bidi-override>, <fo:block>, <fo:folio-prefix>,
+<fo:folio-suffix>, <fo:index-page-citation-list-separator>,
+<fo:index-page-citation-range-separator>, <fo:index-page-number-prefix>,
+<fo:index-page-number-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: <fo:basic-link>, <fo:bidi-override>,
+<fo:character>, <fo:external-graphic>, <fo:index-page-citation-list>,
+<fo:index-range-begin>, <fo:index-range-end>, <fo:instream-foreign-object>,
+<fo:inline>, <fo:inline-container>, <fo:leader>, <fo:multi-toggle>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:scaling-value-citation>
+<fo:list-block> 
+This object is used to create lists or enumerations whose list objects
+each consist of a list label and thereafter a block arranged on the same
+Formatting Objects
+<fo:leader>
+40
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 41===
+line. The list labels may consist of signs or icons repeated for each list
+object or sequential numbering or short texts.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, break-after, break-before,
+end-indent, id, intrusion-displace, keep-together, keep-with-next,
+keep-with-previous, margin-top, margin-bottom, margin-left,
+margin-right, padding-before, padding-after, padding-start,
+padding-end, padding-top, padding-bottom, padding-left, padding-right,
+provisional-distance-between-starts, provisional-label-separation,
+relative-position, role, source-document, space-before, space-after,
+start-indent
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, margin, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+Formatting Objects
+<fo:list-block>
+41
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 42===
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:baseline-grid,
+axf:baseline-block-snap, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:destination-type,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, , axf:justify-nbsp, axf:kansuji-grouping-letter,
+axf:kansuji-letter, axf:kansuji-style, axf:keep-together-within-dimension,
+axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:text-autospace, axf:text-autospace-width, axf:text-combine-horizontal,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-orientation, axf:text-overflow, axf:text-replace, axf:url-break,
+axf:word-break, axf:word-wrap
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:float>, <fo:flow>, <fo:footnote-body>, <fo:inline>,
+<fo:inline-container>, <fo:list-item-body>, <fo:list-item-label>,
+<fo:marker>, <fo:multi-case>, <fo:multi-toggle>, <fo:static-content>,
+<fo:table-caption>, <fo:table-cell>, <fo:wrapper>
+Child Objects: <fo:change-bar-begin>, <fo:change-bar-end>,
+<fo:index-range-begin>, <fo:index-range-end>, <fo:list-item>
+<fo:list-item> 
+This object forms a list or enumeration object that contains the list
+label and the body.
+Formatting Objects
+<fo:list-block>
+42
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 43===
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, break-after, break-before,
+end-indent, id, intrusion-displace, keep-together, keep-with-next,
+keep-with-previous, margin-top, margin-bottom, margin-left, margin-right,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, relative-position,
+relative-align, role, source-document, space-before, space-after, start-indent
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, margin, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+Formatting Objects
+<fo:list-item>
+43
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 44===
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width, , axf:justify-nbsp,
+axf:kansuji-grouping-letter, axf:kansuji-letter, axf:kansuji-style,
+axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:text-autospace, axf:text-autospace-width, axf:text-combine-horizontal,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-orientation, axf:text-replace, axf:url-break, axf:word-break,
+axf:word-wrap
+Parent Objects: <fo:list-block>
+Child Objects: <fo:list-item-label>, <fo:list-item-body>
+<fo:list-item-body> 
+This object encloses the body content of a list or enumeration object.
+The content must always be embedded in block-like subobjects. For
+the specification of the indent before the list body, the start-indent
+property is used with the body-start() function as value.
+Properties: id, keep-together, role, source-document,
+Parent Objects: <fo:list-item>
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>
+<fo:list-item-label> 
+This object encloses the list item label of a list or enumeration element.
+The content must always be enclosed in block-like subobjects. For
+specifying the minimum whitespace between the label on the right
+Formatting Objects
+<fo:list-item>
+44
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 45===
+and the list body, property end-indent with function label-end() serves
+as value.
+Properties: end-indent, id, keep-together, role, source-document
+Parent Objects: <fo:list-item>
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>
+<fo:marker> 
+This object is used to mark the content enclosed in it (typically
+headings for chapters, sections, or even keywords in dictionaries)
+for further use. The <fo:retrieve-marker> object can then be used
+to render the marked content as a living page heading. The
+<fo:retrieve-table-marker> object can be used to reproduce the marked
+content as a continuation note in multi-page tables.
+Properties: marker-class-name
+Parent Objects: –
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:list-block>, <fo:multi-toggle>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:scaling-value-citation>, <fo:table-and-caption>, <fo:table>
+<fo:multi-case> 
+ (AHF: not supported)
+The object contains all objects which can be displayed or hidden by the
+parent <fo:multi-switch> object. These are, for example, entries in the
+table of contents which can be expanded or collapsed by the parent
+object in an interactive, dynamic document usage (analogous to the
+handling of bookmarks in the PDF viewer).
+Properties: case-name, case-title, id, role, source-document, starting-state
+Formatting Objects
+<fo:list-item-label>
+45
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 46===
+Parent Objects: <fo:multi-switch>
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:list-block>, <fo:multi-toggle>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:scaling-value-citation>, <fo:table-and-caption>, <fo:table>
+<fo:multi-properties> 
+ (AHF: not supported)
+This object allows switching between two or more property sets
+(<fo:multi-property-set>s) in an interactive, dynamic document usage.
+Properties: id, role, source-document
+Parent Objects: all formatting objects
+Child Objects: <fo:multi-property-set>, <fo:wrapper>
+<fo:multi-property-set> 
+ (AHF: not supported)
+This object includes an alternate set of presentation properties that can
+be used in an interactive, dynamic document usage. A number of these
+sets must be embedded in <fo:multi-properties>.
+Properties: active-state, id, other properties not precisely specified in
+the standard
+Parent Objects: <fo:multi-properties>
+Child Objects: –
+<fo:multi-switch> 
+ (AHF: not supported)
+The object provides access to various subtrees of formatting objects
+contained in the <fo:multi-case> child objects. This can be used, for
+example, in the table of contents of an interactive, dynamic document
+application to expand and collapse the child entries (analogous to
+handling bookmarks in the PDF viewer).
+Formatting Objects
+<fo:multi-case>
+46
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 47===
+Properties: auto-restore, id, role, source-document
+Parent Objects: all formatting objects
+Child Objects: <fo:multi-case>
+<fo:multi-toggle> 
+ (AHF: not supported)
+With this object it is possible in an interactive dynamic document
+usage to change the state of the content of <fo:multi-case>.
+Properties: id, role, source-document, switch-to
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:inline>, <fo:leader>, <fo:marker>, <fo:multi-case>, <fo:multi-toggle>,
+<fo:title>, <fo:wrapper>
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:folio-prefix>, <fo:folio-suffix>, <fo:instream-foreign-object>,
+<fo:inline>, <fo:inline-container>, <fo:leader>, <fo:list-block>,
+<fo:multi-toggle>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>, <fo:scaling-value-citation>,
+<fo:table-and-caption>, <fo:table>
+<fo:page-number> 
+This object is used to generate the current page number at the position
+where fo:page-number is placed inline. Typically, the object is inside a
+<fo:static-content> of a page as pagination.
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+Formatting Objects
+<fo:multi-switch>
+47
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 48===
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, country, dominant-baseline,
+font-family, font-selection-strategy, font-size, font-stretch,
+font-size-adjust, font-style, font-variant, font-weight, format,
+grouping-separator, grouping-size, id, keep-with-next, keep-with-previous,
+language, letter-spacing, letter-value, line-height, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, relative-position, role, score-spaces,
+source-document, space-end, space-start, text-altitude, text-decoration,
+text-depth, text-shadow, text-transform, visibility, word-spacing, wrap-option
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+axf:number-type, axf:origin-id, axf:physical-page-number,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:reverse-page-number,
+axf:suppress-folio-prefix, axf:suppress-folio-suffix, axf:text-line-color,
+axf:text-line-style, axf:text-line-width, axf:text-underline-position,
+axf:vertical-underline-side
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:inline>, <fo:leader>, <fo:marker>, <fo:multi-case>, <fo:multi-toggle>,
+<fo:title>, <fo:wrapper>
+Formatting Objects
+<fo:page-number>
+48
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 49===
+Child Objects: –
+<fo:page-number-citation> 
+This object references the page number of a formatting object. If the
+formatting object, such as a chapter, is a multi-page object, the starting
+page number is displayed. Typically, this is how page numbers are
+generated for chapters and sections in a table of contents.
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, country, dominant-baseline,
+font-family, font-selection-strategy, font-size, font-stretch,
+font-size-adjust, font-style, font-variant, font-weight, format,
+grouping-separator, grouping-size, id, keep-with-next, keep-with-previous,
+language, letter-spacing, letter-value, line-height, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, ref-id, relative-position, role, score-spaces,
+source-document, space-end, space-start, text-altitude, text-decoration,
+text-depth, text-shadow, text-transform, visibility, word-spacing, wrap-option
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+Formatting Objects
+<fo:page-number>
+49
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 50===
+AHF Properties: axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+axf:number-type, axf:origin-id, axf:physical-page-number,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:reverse-page-number,
+axf:suppress-folio-prefix, axf:suppress-folio-suffix, axf:text-line-color,
+axf:text-line-style, axf:text-line-width, axf:text-underline-position,
+axf:vertical-underline-side
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:inline>, <fo:leader>, <fo:marker>, <fo:multi-case>, <fo:multi-toggle>,
+<fo:title>, <fo:wrapper>
+Child Objects: –
+<fo:page-number-citation-last> 
+This object references the page number of a formatting object. If the
+formatting object, such as a chapter, is a multi-page object, the ending
+page number is displayed. In conjunction with <fo:page-number-citation>,
+this allows the page numbers to be displayed from page x to page y.
+Properties: alignment-adjust, alignment-baseline, background-attachment,
+background-color, background-image, background-repeat,
+background-position-horizontal, background-position-vertical,
+baseline-shift, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+Formatting Objects
+<fo:page-number-citation>
+50
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 51===
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, country, dominant-baseline,
+font-family, font-selection-strategy, font-size, font-stretch,
+font-size-adjust, font-style, font-variant, font-weight, format,
+grouping-separator, grouping-size, id, keep-with-next, keep-with-previous,
+language, letter-spacing, letter-value, line-height, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, page-citation-strategy, ref-id,
+relative-position, role, score-spaces, source-document, space-end,
+space-start, text-altitude, text-decoration, text-depth, text-shadow,
+text-transform, visibility, word-spacing, wrap-option
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width,
+axf:number-type, axf:origin-id, axf:physical-page-number,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:reverse-page-number,
+axf:suppress-folio-prefix, axf:suppress-folio-suffix, axf:text-line-color,
+axf:text-line-style, axf:text-line-width, axf:text-underline-position,
+axf:vertical-underline-side
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:inline>, <fo:leader>, <fo:marker>, <fo:multi-case>, <fo:multi-toggle>,
+<fo:title>, <fo:wrapper>
+Formatting Objects
+<fo:page-number-citation-last>
+51
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 52===
+Child Objects: –
+<fo:page-sequence> 
+ (AHF: extended supported)
+This object designates a page sequence, for example for a
+chapter that starts with a new page and ends with one,
+possibly short page. The master-reference property specifies which
+page templates (<fo:simple-page-master>) or page sequence templates
+(<fo:page-sequence-master>) are used within this page sequence. fo:page-
+sequence includes an optional title (<fo:title>), optional static contents
+(<fo:static-content>), and the <fo:flow> object into which the actual
+content flows.
+The from-page-master-region() function allows to take the writing
+direction to be applied for the given page sequence from
+the specifications for writing-mode or reference-orientation in the
+<fo:region-body> main page area. The writing direction then applies
+equally to all page areas.
+Using an AHF extension, <fo:page-sequence> can be nested directly
+under <fo:flow>. Example:
+<fo:page-sequence A>
+<elements B>
+<fo:flow F>
+<elements C>
+<fo:page-sequence P>
+ ... 
+</fo:page-sequence>
+ <elements D>
+</fo:flow>
+</fo:page-sequence>
+This structure is processed as follows:
+Formatting Objects
+<fo:page-number-citation-last>
+52
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 53===
+<fo:page-sequence A>
+<elements B>
+<fo:flow F>
+<elements C>
+</fo:flow>
+</fo:page-sequence>
+<fo:page-sequence P>
+ ... 
+</fo:page-sequence>
+ <fo:page-sequence A-cloned>
+ <elements B-cloned>
+<fo:flow F-cloned>
+<elements D>
+</fo:flow>
+</fo:page-sequence>
+If <elements D> does not exist, then <fo:page-sequence A-cloned> is not
+generated; however, <fo:page-sequence A> is generated even if <elements
+C> does not exist.
+If an element with an attribute id is copied, this id is ignored.
+This structure cannot be used if <fo:page-sequence> is inside
+<fo:page-sequence-wrapper>.
+To note: The child <fo:page-sequence will try to read all FO-trees. This
+means that the memory requirements may reach their limits if a large
+<fo:page-sequence> is subordinated.
+This AHF extension allows a <fo:page-sequence> to remain empty, i.e.
+without <fo:flow>:
+(title?,folio-prefix?,folio-suffix?,static-content*,flow*)
+If force-page-count in <fo:page-sequence> is not equal to the no-force
+value, <fo:flow> can be omitted. This allows to adjust the page number
+of a given page.
+Formatting Objects
+<fo:page-sequence>
+53
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 54===
+Example: If the last <fo:page-sequence> is not specified and the last page
+number should be an even one, a blank page with <fo:page-sequence> as
+the last page can be inserted as follows:
+<fo:page-sequence master-reference="blank" 
+force-page-count="document 2"/>
+Properties: background, country, flow-map-reference, force-page-count,
+format, grouping-separator, grouping-size, id, index-class, index-key,
+initial-page-number, language, letter-value, master-reference,
+reference-orientation, writing-mode
+AHF Properties: axf:append-non-end-of-line-characters,
+axf:append-non-starter-characters, axf:background-clip,
+axf:background-content-type, axf:background-image-resolution,
+axf:background-origin, axf:background-size, axf:column-number-format,
+axf:except-non-end-of-line-characters, axf:except-non-starter-characters,
+axf:footnote-number-format, axf:footnote-number-initial,
+axf:footnote-number-reset, axf:line-number-format, axf:line-number-initial,
+axf:line-number-interval, axf:line-number-orientation,
+axf:line-number-prefix, axf:line-number-reset, axf:line-number-start,
+axf:output-volume-break, axf:output-volume-filename, axf:page-number-prefix,
+axf:printer-bin-selection, axf:printer-duplex, axf:reverse-page
+Parent Objects: <fo:root>, <fo:page-sequence-wrapper>
+Child Objects: <fo:flow>, <fo:folio-prefix>, <fo:folio-suffix>,
+<fo:static-content>, <fo:title>
+AHF Child Objects: <axf:document-info>
+<fo:page-sequence-master> 
+This object defines a page sequence template, including its
+order and conditions of use (e.g. the first page of a
+chapter, left and right pages, last, possibly blank page). The
+page templates to be used in the page sequence template
+Formatting Objects
+<fo:page-sequence>
+54
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 55===
+(<fo:simple-page-master>) can be specified within the child objects
+<fo:single-page-master-reference>, <fo:repeatable-page-master-reference>
+or <fo:repeatable-page-master-alternatives>.
+Properties: master-name
+AHF Properties: axf:repeat-page-sequence-master
+Parent Objects: <fo:layout-master-set>
+Child Objects: <fo:repeatable-page-master-reference>,
+<fo:repeatable-page-master-alternatives>,
+<fo:single-page-master-reference>
+<fo:page-sequence-wrapper> 
+This object can be used to group page sequences (<fo:page-sequence>).
+This grouping can be used to define a page sequence range beyond a
+single page sequence, which can be made visible in the display of page
+references in an index.
+Properties: id, index-class, index-key
+Parent Objects: <fo:root>, <fo:page-sequence-wrapper>
+Child Objects: <fo:page-sequence>, <fo:page-sequence-wrapper>
+<fo:region-after> 
+This object is used to specify the region after (under) the
+<fo:region-body> region within a page template (<fo:simple-page-master>).
+For the left-right writing mode, this is the footer region below the main
+area.
+In the XSL specification, the order of the page regions is fixed:
+(region-body+,region-before?,region-after?,region-start?,region-end?)
+The order of processing in the formatter is not defined. However,
+if parts of the regions overlap each other, it is important which
+region comes first. The AH XSL Formatter handles the processing
+of the regions in any order, but exactly in the given order. If the
+Formatting Objects
+<fo:page-sequence-master>
+55
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 56===
+<fo:region-body> is specified as the last region, then it will be above the
+other page regions.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, display-align, extent, overflow,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, precedence, region-name
+For reference-orientation and writing-mode see the notes in the
+description of these properties!
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:simple-page-master>
+Child Objects: –
+Formatting Objects
+<fo:region-after>
+56
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 57===
+<fo:region-before> 
+This object is used to specify the region before the <fo:region-body>
+region within a page master (<fo:simple-page-master>). For the left-right
+writing mode, this is the header region above the main region.
+In the XSL specification, the order of the page regions is fixed:
+(region-body+,region-before?,region-after?,region-start?,region-end?)
+The order of processing in the formatter is not defined. But if parts of
+the regions overlap each other, it is important which region comes first.
+The AH XSL Formatter handles the processing of the regions in any
+order, but exactly in the given order. If the <fo:region-body> is specified
+as the last region, then it will be above the other page regions.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, display-align, extent, overflow,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, precedence, region-name
+For reference-orientation and writing-mode see the notes in the
+description of these properties!
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+Formatting Objects
+<fo:region-before>
+57
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 58===
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:simple-page-master>
+Child Objects: –
+<fo:region-body> 
+This object defines the main region of a page template
+(<fo:simple-page-master>). The possibly specified page margins above
+<fo:region-before> and below <fo:region-after> delimit the main area
+from above and below, starting from the page height specified with
+the page-height property. The height of the main area is obtained by
+subtracting the top (margin-top) and bottom (margin-bottom) margins,
+if any, and the heights (extent) of the regions above and below, if
+any, from the specified page height (page-height). Analogously, this
+applies to the width of the main region starting from the page width
+(page-width) if left (margin-left) and right (margin-right) margins and left
+(margin-start) and right (margin-end) page outer regions are defined.
+In the XSL specification, the order of the page regions is fixed:
+(region-body+,region-before?,region-after?,region-start?,region-end?)
+The order of processing in the formatter is not defined. But if parts of
+the regions overlap each other, it is important which region comes first.
+The AH XSL Formatter handles the processing of the regions in any
+order, but exactly in the given order. If the <fo:region-body> is specified
+as the last region, then it will be above the other page regions.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+Formatting Objects
+<fo:region-before>
+58
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 59===
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, column-count, column-gap,
+display-align, end-indent, margin-top, margin-bottom, margin-left,
+margin-right, overflow, padding-before, padding-after, padding-start,
+padding-end, padding-top, padding-bottom, padding-left, padding-right,
+region-name, reference-orientation, space-before, space-after, start-indent
+For writing-mode see the notes in the description of this property!
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, margin, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:column-fill, axf:column-rule, axf:column-rule-align,
+axf:column-rule-color, axf:column-rule-display, axf:column-rule-length,
+axf:column-rule-style, axf:column-rule-width, axf:diagonal-border-color,
+axf:diagonal-border-style, axf:diagonal-border-width, axf:footnote-align,
+axf:footnote-keep, axf:footnote-max-height, axf:footnote-position,
+axf:footnote-stacking, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:simple-page-master>
+Child Objects: –
+Formatting Objects
+<fo:region-body>
+59
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 60===
+<fo:region-end> 
+This object is used to specify, within a page master
+(<fo:simple-page-master>), the region that lies behind the main region
+(<fo:region-body>) on the page along the primary writing direction. For
+the left-right writing mode, this is the right page region next to the
+main region.
+In the XSL specification, the order of the page regions is fixed:
+(region-body+,region-before?,region-after?,region-start?,region-end?)
+The order of processing in the formatter is not defined. But if parts of
+the regions overlap each other, it is important which region comes first.
+The AH XSL Formatter handles the processing of the regions in any
+order, but exactly in the given order. If the <fo:region-body> is specified
+as the last region, then it will be above the other page regions.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, display-align, extent, overflow,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, region-name
+For reference-orientation and writing-mode see the notes in the
+description of these properties!
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+Formatting Objects
+<fo:region-end>
+60
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 61===
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:simple-page-master>
+Child Objects: –
+<fo:region-start> 
+This object is used to specify, within a page master
+(<fo:simple-page-master>), the region that precedes the main region
+(<fo:region-body>) on the page along the primary writing direction. For
+the left-right writing mode, this is the left page region next to the main
+region.
+In the XSL specification, the order of the page regions is fixed:
+(region-body+,region-before?,region-after?,region-start?,region-end?)
+The order of processing in the formatter is not defined. However,
+if parts of the regions overlap each other, it is important which
+region comes first. The AH XSL Formatter handles the processing
+of the regions in any order, but exactly in the given order. If the
+<fo:region-body> is specified as the last region, then it will be above the
+other page regions.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+Formatting Objects
+<fo:region-end>
+61
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 62===
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, clip, display-align, extent, overflow,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right region-name
+For reference-orientation and writing-mode see the notes in the
+description of these properties!
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:simple-page-master>
+Child Objects: –
+<fo:region-name-specifier> 
+This object is used to specify a region in a <fo:flow-target-list>.
+Properties: region-name-reference
+Parent Objects: <fo:flow-target-list>
+Child Objects: –
+<fo:repeatable-page-master-alternatives> 
+This object is used to specify a combination of alternative page
+masters (<fo:page-sequence-master>) within a page sequence master
+Formatting Objects
+<fo:region-start>
+62
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 63===
+(<fo:simple-page-master>). The number of repetitions of the combination
+may be limited or unlimited. Which of the alternate page templates
+is applied at a point in the sequence is decided by the application
+conditions specified for a page template. A typical usage condition for
+a page template is the application as the first or last, left or right page
+in a page sequence. fo:repeatable-page-master-alternatives is the most
+complex and powerful way of arranging page templates for specifying
+a page sequence.
+Properties: maximum-repeats
+Parent Objects: <fo:page-sequence-master>
+Child Objects: <fo:conditional-page-master-reference>
+<fo:repeatable-page-master-reference> 
+This object is used to reference a single page template within a
+page sequence master (<fo:page-sequence-master>) that is to be used
+repeatedly. The number of allowed repetitions is specified with the
+maximum-repeats property.
+Properties: master-reference, maximum-repeats
+Parent Objects: <fo:page-sequence-master>
+Child Objects: –
+<fo:retrieve-marker> 
+This object uses the content stored with <fo:marker> (e.g. chapter or
+section headings), usually as a living page heading.
+Properties: retrieve-class-name, retrieve-position, retrieve-boundary
+Parent Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>, <fo:bidi-override>, <fo:character>,
+<fo:external-graphic>, <fo:instream-foreign-object>, <fo:inline>,
+<fo:inline-container>, <fo:leader>
+Child Objects: –
+Formatting Objects
+<fo:repeatable-page-master-alternatives>
+63
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 64===
+<fo:retrieve-table-marker> 
+This object is used in conjunction with <fo:marker> to create living
+headings in the header or footer of multi-page tables. Typical examples
+of use are subtotals in the last line of a page or table continuation notes
+indicating the continuation of the table on the following page.
+Properties: retrieve-class-name, retrieve-position-within-table,
+retrieve-boundary-within-table
+AHF Properties: axf:retrieve-table-rows
+Parent Objects: Only within <fo:table-cell> in the environments of
+<fo:table-footer> or <fo:table-header> and as child object in <fo:table>
+where fo:table-footer or fo:table-header is allowed.
+Child Objects: –
+<fo:root> 
+This object is the top-level document node of an XML-FO document. It
+includes the <fo:layout-master-set> object, the optional <fo:declarations>
+object, and one or more <fo:page-sequence> objects.
+Properties: media-usage
+AHF Properties: axf:layer-settings, axf:require
+Parent Objects: –
+Child Objects: <fo:declarations>, <fo:bookmark-tree>,
+<fo:layout-master-set>, <fo:page-sequence>, <fo:page-sequence-wrapper>
+AHF Child Objects: <axf:document-info>, <axf:output-volume-info>
+<fo:scaling-value-citation> 
+This object can be used to output the scaling factor of a graphic.
+Application example: Graphics or images should be rendered in their
+original size if possible, unless their width does not fit into the given
+page. In this case, they should be reduced in size, but not arbitrarily,
+but in specified reduction levels. The reduction level selected by the
+Formatting Objects
+<fo:retrieve-table-marker>
+64
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 65===
+formatter for the graphic is then to be output legibly with fo:scaling-
+value-citation. This is done by the following template:
+<xsl:template match="graphic">
+<fo:external-graphic src="{@fileref}" id="{generate-id()}"
+inline-progression-dimension.maximum="100%"
+inline-progression-dimension.optimum="auto"
+allowed-width-scale="100% 75% 50% 25% 10% any"
+content-width="scale-down-to-fit"/>
+<fo:scaling-value-citation ref-id="{generate-id()}"/><xsl:text>%</xsl:text>
+</xsl:template>
+If the images themselves should not have the original size, but only half
+the size, then one would specify fo:scaling-value-citation as follows:
+<fo:scaling-value-citation ref-id="{generate-id()}"
+intrinsic-scale-value="50%"/><xsl:text>%</xsl:text>
+If the 10% were then selected by the formatter for an image from the
+reduction levels specified above, then the reduction would be displayed
+as 5%.
+This example and the corresponding explanations reprinted here were
+kindly provided by the editor of the standard, Anders Berglund, IBM.
+The useful features for this are: format, grouping-size,
+grouping-separator, intrinsic-scale-value, letter-value, ref-id, scale-option
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:folio-prefix>, <fo:folio-suffix>, <fo:inline>, <fo:leader>, <fo:marker>,
+<fo:multi-case>, <fo:multi-toggle>, <fo:title>, <fo:wrapper>
+Child Objects: –
+<fo:simple-page-master> 
+ (AHF: extended supported)
+This object creates a page template that describes the page geometry.
+Such a page template must be created for each page with different page
+geometry. It can be divided into up to five regions, the main region
+Formatting Objects
+<fo:scaling-value-citation>
+65
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 66===
+(<fo:region-body>), the upper page outer region (<fo:region-before>), the
+lower page outer region (<fo:region-after>), the left page outer region
+(margin-start) and the right page outer region (margin-end).
+In the AH XSL Formatter, backgrounds or background images, even
+full-page ones, can also be added to a page template.
+Properties: background, end-indent, margin-top, margin-bottom, margin-left,
+margin-right, master-name, page-height, page-width, reference-orientation,
+space-before, space-after, start-indent, writing-mode
+Shorthand Properties: margin
+AHF Properties: axf:background-clip, axf:background-content-type,
+axf:background-image-resolution, axf:background-origin, axf:background-size,
+axf:bleed, axf:bleed-bottom, axf:bleed-left, axf:bleed-right,
+axf:bleed-top, axf:crop-area-visibility, axf:crop-offset,
+axf:crop-offset-bottom, axf:crop-offset-left, axf:crop-offset-right,
+axf:crop-offset-top, axf:printer-marks, axf:printer-marks-line-color,
+axf:printer-marks-line-length, axf:printer-marks-line-width,
+axf:printer-marks-over-content, axf:printer-marks-spine-width,
+axf:printer-marks-zero-margin
+Parent Objects: <fo:layout-master-set>
+Child Objects: <fo:region-body>, <fo:region-before>, <fo:region-after>,
+<fo:region-start>, <fo:region-end>
+<fo:single-page-master-reference> 
+This object is used to reference a single page master within
+a page sequence template (<fo:page-sequence-master>). fo:single-
+page-master-reference is the most restricted way to specify
+a page sequence (cf. <fo:repeatable-page-master-reference> and
+<fo:repeatable-page-master-alternatives>).
+Properties: master-reference
+Parent Objects: <fo:page-sequence-master>
+Formatting Objects
+<fo:simple-page-master>
+66
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 67===
+Child Objects: –
+<fo:static-content> 
+This object encloses the so-called static content, which is placed on
+each page or in a sequence of pages in the page outer regions
+(top, bottom, left, right). Using the flow-name property, whose value
+matches that of flow-name of the associated page outer area, e.g.
+<fo:region-before>, one assigns the object to the corresponding page
+outer area. The static content typically includes the specifications for
+sequential page numbers (<fo:page-number>) and living page headings
+(<fo:retrieve-marker>).
+Properties: flow-name
+AHF Properties: axf:baseline-grid, axf:baseline-block-snap
+Parent Objects: <fo:page-sequence>
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>
+<fo:table> 
+This object includes the tabularly arranged contents of a table (without
+a table caption!). Child objects are (in the order given here) the column
+specifications (<fo:table-column>; optional and as many as the table has
+columns), a table header (<fo:table-header>; optional), a table footer
+(<fo:table-footer>; optional), and the table body (<fo:table-body>). For
+tables that should have a table caption, use the table root object
+<fo:table-and-caption>!
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, block-progression-dimension,
+border-after-precedence, border-before-precedence, border-collapse,
+border-end-precedence, border-separation, border-start-precedence,
+Formatting Objects
+<fo:single-page-master-reference>
+67
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 68===
+break-after, break-before, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, end-indent, height, id,
+inline-progression-dimension, intrusion-displace, keep-together,
+keep-with-next, keep-with-previous, margin-top, margin-bottom, margin-left,
+margin-right, padding-before, padding-after, padding-start, padding-end,
+padding-top, padding-bottom, padding-left, padding-right, relative-position,
+role, source-document, space-before, space-after, start-indent, table-layout,
+table-omit-footer-at-break, table-omit-header-at-break, width
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, margin, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:baseline-grid,
+axf:baseline-block-snap, axf:base-uri, axf:border-connection-form,
+axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+Formatting Objects
+<fo:table>
+68
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 69===
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:destination-type, axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, , axf:justify-nbsp, axf:kansuji-grouping-letter,
+axf:kansuji-letter, axf:kansuji-style, axf:keep-together-within-dimension,
+axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:table-auto-layout-limit, axf:table-summary, axf:text-autospace,
+axf:text-autospace-width, axf:text-combine-horizontal, axf:text-justify,
+axf:text-justify-trim, axf:text-kashida-space, axf:text-orientation,
+axf:text-overflow, axf:text-replace, axf:word-break, axf:url-break,
+axf:word-wrap
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:float>, <fo:flow>, <fo:footnote-body>, <fo:inline>,
+<fo:inline-container>, <fo:list-item-body>, <fo:list-item-label>,
+<fo:marker>, <fo:multi-case>, <fo:multi-toggle>, <fo:static-content>,
+<fo:table-caption>, <fo:table-cell>, <fo:wrapper>
+Child Objects: <fo:change-bar-begin>, <fo:change-bar-end>,
+<fo:index-range-begin>, <fo:index-range-end>, <fo:table-column>,
+<fo:table-header>, <fo:table-footer>, <fo:table-body>,
+furthermore ‒ only there where fo:table-footer or fo:table-header are
+allowed: <fo:retrieve-table-marker>
+<fo:table-and-caption> 
+This object encloses the table caption (<fo:table-caption>) and then the
+actual table (<fo:table>).
+Formatting Objects
+<fo:table>
+69
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 70===
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, break-after, break-before,
+caption-side, end-indent, id, intrusion-displace, keep-together,
+keep-with-next, keep-with-previous, margin-top, margin-bottom, margin-left,
+margin-right, padding-before, padding-after, padding-start, padding-end,
+padding-top, padding-bottom, padding-left, padding-right, relative-position,
+role, source-document, space-before, space-after, start-indent, text-align
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, margin, padding
+AHF Properties: axf:annotation-author,
+axf:annotation-border-style, axf:annotation-border-width,
+axf:annotation-border-color, axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-flags,
+axf:annotation-font-family, axf:annotation-font-size,
+axf:annotation-font-style, axf:annotation-font-weight,
+axf:annotation-height, axf:annotation-icon-name, axf:annotation-open,
+axf:annotation-position-horizontal, axf:annotation-position-vertical,
+axf:annotation-text-align, axf:annotation-text-color, axf:annotation-title,
+axf:annotation-type, axf:annotation-width, axf:baseline-grid,
+axf:baseline-block-snap, axf:base-uri, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+Formatting Objects
+<fo:table-and-caption>
+70
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 71===
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-triple-thickness,
+axf:border-wave-form, axf:box-shadow, axf:destination-type,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, , axf:justify-nbsp, axf:kansuji-grouping-letter,
+axf:kansuji-letter, axf:kansuji-style, axf:keep-together-within-dimension,
+axf:kerning-mode, axf:ligature-mode, axf:line-break,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:pdftag, axf:punctuation-spacing, axf:punctuation-trim,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width, axf:soft-hyphen-treatment,
+axf:text-autospace, axf:text-autospace-width, axf:text-combine-horizontal,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-orientation, axf:text-overflow, axf:text-replace, axf:url-break,
+axf:word-break, axf:word-wrap
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:float>, <fo:flow>, <fo:footnote-body>, <fo:inline>,
+<fo:inline-container>, <fo:list-item-body>, <fo:list-item-label>,
+<fo:marker>, <fo:multi-case>, <fo:multi-toggle>, <fo:static-content>,
+<fo:table-caption>, <fo:table-cell>, <fo:wrapper>
+Child Objects: <fo:change-bar-begin>, <fo:change-bar-end>,
+<fo:index-range-begin>, <fo:index-range-end>, <fo:table-caption>,
+<fo:table>,
+also ‒ only if inside <fo:table-cell> ‒ <fo:retrieve-table-marker>
+<fo:table-body> 
+This object contains the table body, which may consist of one or
+more table rows (<fo:table-row>) or just one or more table cells
+(<fo:table-cell>).
+Formatting Objects
+<fo:table-and-caption>
+71
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 72===
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, border-after-precedence,
+border-before-precedence, border-end-precedence, border-start-precedence,
+id, padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, relative-position, role,
+source-document, visibility
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width,
+axf:table-row-orphans, axf:table-row-widows
+Parent Objects: <fo:table>
+Child Objects: <fo:table-row>, <fo:table-cell>
+Formatting Objects
+<fo:table-body>
+72
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 73===
+<fo:table-caption> 
+This object includes the caption or legend of a table
+(<fo:table-and-caption>).
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, block-progression-dimension,
+border-before-color, border-before-style, border-before-width,
+border-after-color, border-after-style, border-after-width,
+border-start-color, border-start-style, border-start-width,
+border-end-color, border-end-style, border-end-width, border-top-color,
+border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, height, id,
+inline-progression-dimension, intrusion-displace, keep-together,
+padding-before, padding-after, padding-start, padding-end, padding-top,
+padding-bottom, padding-left, padding-right, relative-position, role,
+source-document, width
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:table-and-caption>
+Formatting Objects
+<fo:table-caption>
+73
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 74===
+Child Objects: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-and-caption>, <fo:table>
+<fo:table-cell> 
+This object encloses the contents of table cells. If the table cells are not
+arranged in table rows (<fo:table-row>), the row structure can also be
+marked by the properties starts-row in the first cell and ends-row in the
+last cell of a row.
+For a number of properties here that are equally allowed in
+<fo:table-column>, the values specified in <fo:table-column> can be taken
+as the values of this cell using the from-table-column() function.
+The same sequential ordering of fo:table-column and fo:table-cell is
+sufficient.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, border-after-precedence,
+border-before-precedence, border-end-precedence, border-start-precedence,
+block-progression-dimension, column-number, display-align, empty-cells,
+ends-row, height, id, inline-progression-dimension, number-columns-spanned,
+number-rows-spanned, padding-before, padding-after, padding-start,
+padding-end, padding-top, padding-bottom, padding-left, padding-right,
+relative-position, relative-align, role, source-document, starts-row, width
+Formatting Objects
+<fo:table-caption>
+74
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 75===
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:headers, axf:pdftag,
+axf:repeat-cell-content-at-break, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width,
+axf:scope
+Parent Objects: <fo:table-body>, <fo:table-footer>, <fo:table-header>,
+<fo:table-row>
+Child Objects: <fo:marker> (if applicable as first object),
+<axf:table-cell-repeated-marker> (if applicable, directly after <fo:marker>
+otherwise as first object), <fo:block>, <fo:block-container>,
+<fo:list-block>, <fo:table-and-caption>, <fo:table>
+AHF Child Objects: <axf:table-cell-repeated-marker>
+<fo:table-column> 
+This object can be used to specify properties of table cells that are
+in the column designated by column-number. In the AH XSL Formatter,
+specifying the column-number is unnecessary. The column specifications
+are simply assigned to the columns automatically according to their
+order.
+The property values specified here for the columns can be applied
+to the table cells (<fo:table-cell>) of the given column using the
+from-table-column() function.
+Formatting Objects
+<fo:table-cell>
+75
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 76===
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-precedence,
+border-before-style, border-before-width, border-after-color,
+border-after-precedence, border-after-style, border-after-width,
+border-start-color, border-start-precedence, border-start-style,
+border-start-width, border-end-color, border-end-precedence,
+border-end-style, border-end-width, border-top-color, border-top-style,
+border-top-width, border-bottom-color, border-bottom-style,
+border-bottom-width, border-left-color, border-left-style,
+border-left-width, border-right-color, border-right-style,
+border-right-width, column-number, column-width, number-columns-repeated,
+number-columns-spanned, padding-before, padding-after, padding-start,
+padding-end, padding-top, padding-bottom, padding-left, padding-right,
+visibility
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:table>
+Child Objects: –
+Formatting Objects
+<fo:table-column>
+76
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 77===
+<fo:table-footer> 
+This object includes the contents of a table footer, which is
+automatically repeated on each page if the table is wrapped on multiple
+pages. Like the table body (<fo:table-body>), the table footer can consist
+of either one or more table rows (<fo:table-row>) or only table cells
+(<fo:table-cell>).
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-precedence,
+border-before-precedence, border-end-precedence, border-start-precedence,
+border-after-style, border-after-width, border-start-color,
+border-start-style, border-start-width, border-end-color, border-end-style,
+border-end-width, border-top-color, border-top-style, border-top-width,
+border-bottom-color, border-bottom-style, border-bottom-width,
+border-left-color, border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, id, padding-before, padding-after,
+padding-start, padding-end, padding-top, padding-bottom, padding-left,
+padding-right, relative-position, role, source-document, visibility
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:repeat-footnote-in-table-footer,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width
+Formatting Objects
+<fo:table-footer>
+77
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 78===
+Parent Objects: <fo:table>
+Child Objects: <fo:table-row>, <fo:table-cell>, there subordinated within
+a block object also <fo:retrieve-table-marker>
+<fo:table-header> 
+This object includes the contents of a table header, which is
+automatically repeated on each page if the table is wrapped on multiple
+pages. Like the table body (<fo:table-body>), the table header can consist
+of either one or more table rows (<fo:table-row>) or only table cells
+(<fo:table-cell>).
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-after-precedence,
+border-before-precedence, border-end-precedence, border-start-precedence,
+border-before-color, border-before-style, border-before-width,
+border-after-color, border-after-style, border-after-width,
+border-start-color, border-start-style, border-start-width,
+border-end-color, border-end-style, border-end-width, border-top-color,
+border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, id, padding-before, padding-after,
+padding-start, padding-end, padding-top, padding-bottom, padding-left,
+padding-right, relative-position, role, source-document, visibility
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+Formatting Objects
+<fo:table-footer>
+78
+© 2021 MID/Information Logistics ‒ All rights reserved
+

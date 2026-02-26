@@ -65,10 +65,10 @@ For complete examples of `fo:table-row` usage including alternating row colors w
 
 ## See Also
 
-- `fo:table` -- the parent table formatting object
-- `fo:table-header` -- table header section
-- `fo:table-footer` -- table footer section
-- `fo:table-body` -- table body section
-- `fo:table-cell` -- individual cell content
-- `starts-row` property
-- `ends-row` property
+- [fo:table](fo-table.md) — the parent table formatting object
+- [fo:table-header](fo-table-header.md) — table header section
+- [fo:table-footer](fo-table-footer.md) — table footer section
+- [fo:table-body](fo-table-body.md) — table body section
+- [fo:table-cell](fo-table-cell.md) — individual cell content
+- starts-row property
+- ends-row property

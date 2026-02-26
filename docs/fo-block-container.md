@@ -87,10 +87,10 @@ Any reference-level-out-of-line areas returned by the children of the fo:block-c
 
 ## See Also
 
-- fo:block — basic block-level formatting object used within block-container
-- fo:bidi-override — alternative for inline-progression-direction changes only
-- fo:float — handles out-of-line areas
-- fo:marker — can be used as initial children in non-absolutely-positioned block-containers
+- [fo:block](fo-block.md) — basic block-level formatting object used within block-container
+- [fo:bidi-override](fo-bidi-override.md) — alternative for inline-progression-direction changes only
+- [fo:float](fo-float.md) — handles out-of-line areas
+- [fo:marker](fo-marker.md) — can be used as initial children in non-absolutely-positioned block-containers
 - block-progression-dimension property
 - inline-progression-dimension property
 - reference-orientation property

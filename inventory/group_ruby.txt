@@ -1,0 +1,10 @@
+### axf:ruby-color
+
+The use of the Ruby extension is documented comprehensively and
+with examples in Ruby Extension in Features of the Online Manual. A
+description of the properties is omitted here.
+Applies to: <axf:ruby>
+Values: see above
+
+---
+

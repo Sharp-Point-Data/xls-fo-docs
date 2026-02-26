@@ -200,11 +200,11 @@ Same as `fo:region-body`.
 
 ## See Also
 
-- `fo:page-master` -- parent formatting object for XSL-FO 2.0 page layout
-- `fo:region-body` -- XSL-FO 1.1 central content region (similar behavior)
-- `fo:shape` -- defines SVG-based shapes for use in region shape specifiers
-- `fo:shape-name-specifier` -- specifies the content shape for a region
-- `fo:shape-path-specifier` -- specifies the intrusion path for a region
-- `fo:shape-border-specifier` -- specifies a non-rectangular border shape
-- `fo:shape-background-specifier` -- specifies a non-rectangular background shape
-- `fo:flow` -- provides flowing content that is distributed into regions
+- [fo:page-master](fo-page-master.md) — parent formatting object for XSL-FO 2.0 page layout
+- [fo:region-body](fo-region-body.md) — XSL-FO 1.1 central content region (similar behavior)
+- fo:shape — defines SVG-based shapes for use in region shape specifiers
+- fo:shape-name-specifier — specifies the content shape for a region
+- [fo:shape-path-specifier](fo-shape-path-specifier.md) — specifies the intrusion path for a region
+- [fo:shape-border-specifier](fo-shape-border-specifier.md) — specifies a non-rectangular border shape
+- [fo:shape-background-specifier](fo-shape-background-specifier.md) — specifies a non-rectangular background shape
+- [fo:flow](fo-flow.md) — provides flowing content that is distributed into regions

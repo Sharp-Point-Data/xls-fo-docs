@@ -68,10 +68,10 @@ EMPTY
 
 ## See Also
 
-- `fo:simple-page-master` -- parent formatting object that contains region definitions
-- `fo:region-body` -- the central content region
-- `fo:region-before` -- the "before" side region (header in lr-tb writing-mode)
-- `fo:region-after` -- the "after" side region (footer in lr-tb writing-mode)
-- `fo:region-start` -- the "start" side region (left sidebar in lr-tb writing-mode)
-- `fo:extension-region-end` -- the extension region on the end side for marginalia
-- `fo:static-content` -- provides repeating content assigned to regions
+- [fo:simple-page-master](fo-simple-page-master.md) — parent formatting object that contains region definitions
+- [fo:region-body](fo-region-body.md) — the central content region
+- [fo:region-before](fo-region-before.md) — the "before" side region (header in lr-tb writing-mode)
+- [fo:region-after](fo-region-after.md) — the "after" side region (footer in lr-tb writing-mode)
+- [fo:region-start](fo-region-start.md) — the "start" side region (left sidebar in lr-tb writing-mode)
+- [fo:extension-region-end](fo-extension-region-end.md) — the extension region on the end side for marginalia
+- [fo:static-content](fo-static-content.md) — provides repeating content assigned to regions

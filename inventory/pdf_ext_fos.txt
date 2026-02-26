@@ -1,0 +1,721 @@
+===PAGE 291===
+         sans-serif="Gulim"
+         monospace="BatangChe"/>
+      <script-font
+         script="Hans"
+         serif="SimSun"
+         sans-serif="SimHei"
+         monospace="SimSun"/>
+      <script-font
+         script="Hant"
+         serif="MingLiU"
+         sans-serif="MingLiU"
+         monospace="MingLiU"/>
+      <font-alias src="MS Mincho" dst="IPAMincho"/>
+      <font-alias src="MS Gothic" dst="IPAGothic"/>
+   </font-settings>
+   <xslt-settings command="xslt -o &#34;%3&#34; &#34;%1&#34; &#34;%2&#34;
+      %param" param-option="%p=%v">
+      <param name="foo" value="123"/>
+      <param name="bar" value="XYZ"/>
+   </xslt-settings>
+</formatter-config>
+.............................................................................
+2.2 
+AHF Extensions: Formatting Objects
+The extension objects are listed in alphabetical order. After a short func‐
+tion description, the permissible properties are enumerated, as well as
+Example of an Option Setting File
+291
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 292===
+the parent objects within which the given object may be used and, if
+applicable, the child objects which the given object may contain.
+The more detailed function descriptions and examples for the applica‐
+tion can be found in XSL/CSS Extensions in Features of the AHF Online
+Manual.
+2.2.1 
+Groups of Formatting Objects with AHF Extension Properties
+All Formatting Objects 
+Properties: axf:assumed-page-number, axf:background-clip,
+axf:background-content-type, axf:background-image-resolution,
+axf:background-origin, axf:background-size, axf:base-uri,
+axf:expansion-text, axf:font-feature-settings, axf:justify-nbsp,
+axf:overflow-limit, axf:overflow-limit-block, axf:overflow-limit-inline,
+axf:overprint, axf:pdftag, axf:suppress-duplicate-marker-contents,
+axf:suppress-duplicate-page-number, axf:text-emphasis-style,
+axf:text-emphasis-position, axf:text-emphasis-offset,
+axf:text-emphasis-skip
+All Block and Inline Level Formatting Objects 
+Properties: axf:annotation-author, axf:annotation-border-style,
+axf:annotation-border-width, axf:annotation-border-color,
+axf:annotation-color, axf:annotation-contents,
+axf:annotation-file-attachment, axf:annotation-file-name,
+axf:annotation-createdate, axf:annotation-modifydate,
+axf:annotation-font-family, axf:annotation-flags, axf:annotation-height,
+axf:annotation-font-size, axf:annotation-font-style,
+axf:annotation-font-weight, axf:annotation-height, axf:annotation-icon-name,
+Groups of Formatting Objects with AHF Extension Properties
+292
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 293===
+axf:annotation-open, axf:annotation-position-horizontal,
+axf:annotation-position-vertical, axf:annotation-text-align,
+axf:annotation-text-color, axf:annotation-title, axf:annotation-type,
+axf:annotation-width, axf:kansuji-grouping-letter, axf:kansuji-letter,
+axf:kansuji-style, axf:kerning-mode, axf:layer, axf:ligature-mode,
+axf:normalize, axf:normalize-exclude, axf:number-transform,
+axf:punctuation-spacing, axf:punctuation-trim, axf:soft-hyphen-treatment,
+axf:text-autospace, axf:text-autospace-width, axf:text-combine-horizontal,
+axf:text-justify, axf:text-justify-trim, axf:text-kashida-space,
+axf:text-orientation, axf:text-replace, axf:text-stroke,
+axf:text-stroke-color, axf:text-stroke-width, axf:url-break,
+axf:vertical-underline-side, axf:word-break, axf:word-wrap
+Block-level Formatting Objects 
+axf:baseline-block-snap, axf:baseline-grid, axf:condensed-text-align-last,
+axf:destination-type, axf:index-page-citation-range-f-suffix,
+axf:index-page-citation-range-ff-suffix,
+axf:keep-together-within-dimension,
+axf:keep-together-within-inline-dimension, axf:line-break,
+axf:outline-color, axf:outline-expand, axf:outline-external-destination,
+axf:outline-font-style, axf:outline-font-weight,
+axf:outline-group, axf:outline-internal-destination,
+axf:outline-level, axf:outline-title, axf:overflow-align,
+axf:overflow-condense, axf:overflow-condense-limit-font-size,
+axf:overflow-condense-limit-font-stretch,
+axf:overflow-condense-limit-line-height,
+axf:overflow-condense-limit-letter-spacing, axf:overflow-replace,
+axf:text-overflow
+Groups of Formatting Objects with AHF Extension Properties
+293
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 294===
+All Block-level Formatting Objects Descendants of <fo:flow>,
+<fo:table-column> 
+axf:line-continued-mark, axf:line-continued-mark-color,
+axf:line-continued-mark-background-color,
+axf:line-continued-mark-font-family, axf:line-continued-mark-font-size,
+axf:line-continued-mark-font-style, axf:line-continued-mark-font-weight,
+axf:line-continued-mark-offset, axf:line-number,
+axf:line-number-background-color, axf:line-number-color,
+axf:line-number-display-align, axf:line-number-except-continued-line,
+axf:line-number-font-family, axf:line-number-font-size,
+axf:line-number-font-style, axf:line-number-font-weight,
+axf:line-number-offset, axf:line-number-position,
+axf:line-number-text-align, axf:line-number-text-decoration,
+axf:line-number-width
+All Objects which can have Borders 
+axf:border-connection-form, axf:border-radius,
+axf:border-bottom-left-radius, axf:border-bottom-right-radius,
+axf:border-top-left-radius, axf:border-top-right-radius,
+axf:border-double-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Multi-column Objects 
+axf:column-fill
+All Objects with and Generated Content with Textual Content 
+axf:text-line-color, axf:text-line-style, axf:text-line-width,
+axf:text-underline-position
+Groups of Formatting Objects with AHF Extension Properties
+294
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 295===
+Transformable Objects 
+axf:transform, axf:transform-origin
+Emphasis Objects 
+axf:text-emphasis-font-family, axf:text-emphasis-font-size,
+axf:text-emphasis-font-style, axf:text-emphasis-font-weight,
+axf:text-emphasis-font-stretch, axf:text-emphasis-color
+Inline Formatting Objects 
+axf:auto-letter-spacing, axf:intrude-into-punctuation,
+axf:letter-spacing-side
+2.2.2 
+AHF Extension Objects
+<axf:counter-style> 
+With AH XSL Formatter, unique counter style can be defined.
+Common usage: Defining custom counter styles. This object does not
+generate area.
+Properties: name, system, negative, prefix, suffix, range, pad, fallback,
+symbols, additive-symbols (all AHF counterstyle specific)
+Parent Objects: <fo:declarations>
+<axf:custom-property> 
+Specifies the custom property in PDF. Effective with PDF1.4 or later.
+Invalid with PDF/A.
+Common Usage: Specifies the custom property. This object does not
+create an area.
+Properties: name (AHF specific), value (AHF specific)
+Groups of Formatting Objects with AHF Extension Properties
+295
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 296===
+Parent Objects: <fo:declarations>
+Child Objects: –
+<axf:document-info> 
+This empty extension object, in arbitrary accumulation, can be used
+to embed different document-related information in the PDF output.
+These are referred to as PDF keywords with the name property and
+written as CDATA contents or keywords in value. A distinction must
+be made between the situation of PDF output in one or more PDF
+documents: In the former case, this document must stand as a direct
+child object before all other child objects in <fo:root>. When outputting
+to multiple PDF files, <axf:document-info> must stand as the first child
+object under the <fo:page-sequence> object which constitutes the PDF
+document. Any axf:document-info objects standing under <fo:root> will
+be ignored.
+The supported bibliography related PDF keywords are: document-title;
+subject; author; author-title; description-writer; keywords; copyright-status
+with values Unknown, Copyrighted, or PublicDomain; copy-right-notice with
+the copyright information as value; copyright-info-url with the URL
+of the copyright information as value (treated as text only, does not
+generate access to the URL! ); xmp.
+The value of the xmp name is the URL of the external XMP file. The URL
+specification corresponds to the <uri-specification> of XSL. See also URI
+in the Online Manual, file ahf-tech.html#URI).
+If an XMP file is referenced, the author-title, description-writer,
+copyright-status, copyright-notice, and copyright-info-url names become
+invalid. Instead of referencing an XMP file, the AH extension object
+<axf:custom-property> can also be set.
+Keywords for display when the document is opened: pagemode with
+values UseNone, UseOutlines, UseThumbs, FullScreen or UseOC.
+AHF Extension Objects
+<axf:custom-property>
+296
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 297===
+Keywords for the page layout when the document is opened:
+pagelayout with values SinglePage, OneColumn, TwoColumnLeft, TwoColumnRight,
+TwoPageLeft or TwoPageRight.
+The display window related keywords: hidetoolbar with values true
+or false, the default is false; hidemenubar with values true or false,
+the default is false; hidewindowui with values true or false, the
+default is false; fitwindow with values true or false, the default is
+false; centerwindow with values true or false, the default is false;
+displaydoctitle with values true or false, the default is false; openaction
+with special application specifications.
+Date-related keywords: createdatedate or modifydate (see Online Manual,
+file ahf-ext.html/#axf.document-info).
+This extension is comprehensively documented in the Online Manual
+of the AH XSL Formatter with the specifics and limitations (file: ahf-
+ext.html).
+Properties: name (AHF specific), value (AHF specific)
+Parent Objects: <fo:root>, <fo:page-sequence> (see above)
+<axf:font-face> 
+In AH XSL Formatter, it is possible to add fonts you want to use in the
+document.
+Common usage: Specifies an additional font. This object does not
+generate area.
+Properties: src, font-family, font-style, font-weight, font-stretch,
+unicode-range, size-adjust
+Parent Objects: <fo:declarations>
+<axf:footnote-number> 
+With this empty extension object inside <fo:inline>, inside <fo:footnote>
+the footnote numbering can be generated by the AH XSL Formatter.
+AHF Extension Objects
+<axf:document-info>
+297
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 298===
+This also makes it possible to reset footnote counters at the page
+level. The control of footnote counting and footnote number design
+is done by axf:footnote-number-reset, axf:footnote-number-format and
+axf:footnote-number-initial in <fo:page-sequence>!
+Application example: The footnotes in a page sequence should be
+counted with asterisks (*), the count should be reset to one asterisk on
+each page. First the AHF extensions in <fo:page-sequence>:
+<fo:page-sequence axf:footnote-number-reset="page" 
+axf:footnote-number-format="**" axf:footnote-number-initial="1" . . .>
+The template for footnotes:
+<xsl:template match="footnote">
+<fo:footnote>
+<fo:inline><axf:footnote-number id="{generate-id()}"/></fo:inline>
+<fo:footnote-body>
+<fo:list-block><fo:list-item>
+<fo:list-item-label>
+<fo:block><axf:footnote-number-citation ref-id="{generate-id()}"/></fo:block>
+</fo:list-item-label>
+<fo:list-item-body><fo:block>. . .</fo:block></fo:list-item-body>
+</fo:list-item></fo:list-block></fo:footnote-body></fo:footnote>
+</xsl:template>
+Properties: id
+Parent Objects: <fo:inline> inside <fo:footnote>
+<axf:footnote-number-citation> 
+This extension can be used to reference the number of a footnote
+generated with <axf:footnote-number> and located in the same parent
+structure level. See the usage example in <axf:footnote-number>.
+Properties: ref-id
+Parent Objects: <fo:footnote-body>
+AHF Extension Objects
+<axf:footnote-number>
+298
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 299===
+<axf:form> 
+This extension object serves as a container object for a form action as
+an Acroform in the PDF output.
+Note: Inside an axf: extension object the axf: extension properties omit
+the namespace label axf:.
+For Acroforms see the detailed descriptions in Acroform within
+XSL/CSS Extensions within Features of the AHF Online Manual.
+Properties: external-destination, axf:field-submit-method,
+axf:field-submit-coordinates
+Parent Objects: <fo:block>
+Child Objects: <fo:block>
+<axf:form-field> 
+This extension object generates an inline Acroform form field in the
+PDF output. The form field is inactive if axf:form-field does not stand
+inside <axf:form> and the axf:action-type property has the value submit
+or reset. All other properties also work outside axf:form.
+Note: Inside an axf: extension object, the axf: extension properties omit
+the axf: namespace label.
+Properties: axf:action-type, axf:field-button-face,
+axf:field-button-face-down, axf:field-button-face-rollover,
+axf:field-button-icon, axf:field-button-icon-down,
+axf:field-button-icon-rollover, axf:field-button-layout, axf:field-checked,
+axf:field-checked-style, axf:field-default-text, axf:field-description,
+axf:field-editable, axf:field-flags, axf:field-font-size,
+axf:field-format, axf:field-format-category, axf:field-lock-document,
+axf:field-maxlen, axf:field-multiline, axf:field-multiple, axf:field-name,
+axf:field-name-suffix-page-number, axf:field-password, axf:field-readonly,
+axf:field-required, axf:field-scroll, axf:field-text-align,
+axf:field-top-index, axf:field-type, width, height
+AHF Extension Objects
+<axf:form>
+299
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 300===
+Parent Objects: <fo:block>, <axf:form>
+Child Objects: The object remains empty or contains any number of
+<axf:form-field-option> or/and <axf:form-field-event>.
+<axf:form-field-event> 
+This extension object is used to specify an action corresponding to the
+event. Both properties (name and axf:action-type) must be specified.
+The name property can take the following values: MouseUp, MouseDown,
+MouseEnter, MouseExit, OnFocus or OnBlur (not case-sensitive).
+If axf:action-type="javascript" is specified, the JavaScript program is
+processed in the content.
+Properties: name (see the values above), axf:action-type
+Parent Objects: <axf:form-field>
+<axf:form-field-option> 
+Common Usage: Specifies the component elements of the list box,
+combo box.
+Properties: axf:field-selected
+Parent Objects: <axf:form-field>
+<axf:formatter-config> 
+Common Usage: Specifies additional option setting information. This
+element does not generate an area.
+Properties: src
+Parent Objects: <fo:declarations>
+Childs: %axs-settings; is an element which belongs to the name space
+http://www.antennahouse.com/names/XSL/Settings. The properties in
+the Option Setting File are included in the name space, however
+currently only the following elements and their child elements can
+AHF Extension Objects
+<axf:form-field>
+300
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 301===
+be described. The other elements will be disregarded. Also, some
+specifications, such as those related to initialization, are ignored.
+‒
+<formatter-settings>
+‒
+<pdf-settings>
+‒
+<text-settings>
+‒
+<svg-settings>
+‒
+<ps-settings>
+‒
+<mathml-settings>
+‒
+<cgm-settings>
+Example:
+<fo:declarations>
+   <axf:formatter-config src="add-settings.xml"
+      xmlns:axs="http://www.antennahouse.com/names/XSL/Settings">
+      <axs:pdf-settings pdf-version="PDF1.6" tagged-pdf="true"/>
+   </axf:formatter-config>
+</fo:declarations>
+In this example, an additional option setting file, add-settings.xml is
+specified, and then PDF setting is added.
+Remarks:
+Usually, the additional setting by <axf:formatter-config> never influences
+the formatting process of the following document. However, when the
+following settings are done by GUI, the additional settings will be
+reflected on the default settings, then reflected on the formatting of the
+following document.
+‒
+Format Option Setting
+‒
+PDF Option Setting
+‒
+Other Settings
+‒
+Import Option Setting
+‒
+Export Option Setting
+AHF Extension Objects
+<axf:formatter-config>
+301
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 302===
+The addition option setting information by <axf:formatter-config> is not
+reflected in the AreaTree.
+When axf-formatter-config="false" is specified in the Option Setting File
+(see section 2.1), the contents of <axf:formatter-config> will be ignored.
+<axf:hyphenation-info> 
+Common Usage: Specifies additional hyphenation information. This
+element does not generate an area.
+The language property is required to indicate which language this
+element is associated with. It is not available to do hyphenation if the
+specified language is originally not hyphenated.
+The src property can optionally specify the exception dictionary. It's
+an additional setting to the original dictionary and effective only
+in this FO. There is no language dependency constraint for the file
+name unlike the original dictionary. It is a relative base-uri for the
+relative path. It's not a relative path to the environment valuable of
+the hyphenation dictionary. <exceptions> in the specified dictionary is
+evaluated. When multiple words of the same spelling are registered,
+the information on the last registered word becomes effective.
+Output Glyph by SOFT HYPHEN
+Generally SOFT HYPHEN (U+00AD) is displayed only when the line breaks
+and is not displayed when the line does not break. However in this
+processing, it is often the case that the glyph assigned to U+00AD
+may not be printed when the fonts such as pictographic characters
+are used. AH XSL Formatter implements the extension property
+axf:soft-hyphen-treatment which makes it possible to eliminate this
+problem.
+Example:
+<fo:block axf:soft-hyphen-treatment="preserve"
+   font-family="Wingdings">abcxyz</fo:block>
+AHF Extension Objects
+<axf:formatter-config>
+302
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 303===
+Properties: src, language
+Parent Objects: <fo:declarations>
+Childs: %axh-elements; is an element which belongs to the name
+space http://www.antennahouse.com/names/XSL/Hyphenations. The
+elements in the Hyphenation Exception Dictionary are included in the
+name space, however currently only <exceptions> (and its child element,
+<hyphen>) can be described.
+Example:
+<fo:declarations>
+   <axf:hyphenation-info language="eng" src="en-add.xml"
+      xmlns:axs="http://www.antennahouse.com/names/XSL/Hyphenations">
+      <axh:exceptions>
+      abc-defg
+      </axh:exceptions>
+   </axf:hyphenation-info>
+</fo:declarations>
+In this example, an additional exception dictionary, en-add.xml is
+specified for English language, and then the exception hyphenation
+is specified for the word spelled “abcdefg”.
+Caution: In the example above, do not use the following setting.
+(<hyphen/> is disregarded):
+abc<hyphen/>defg
+Instead, make sure to specify:
+abc<axh:hyphen/>defg
+<axf:output-volume-info> 
+This extension object allows PDF output in separate volumes at the
+level of a page sequence (<fo:page-sequence>). axf:output-volume-info is
+placed directly below <fo:root> at an arbitrary position before the first
+fo:page-sequence. The object is only effective if the PDF is stored in
+AHF Extension Objects
+<axf:hyphenation-info>
+303
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 304===
+files. The file names are automatically formed based on the output file
+name. In addition to the axf:output-volume-info specification in the FO,
+a multivol parameter must be set externally. When using the graphical
+user interface (GUI) this is done in the PDF Output Dialog.
+When you want to specify the language for each PDF output in
+separate volume, specify the language in <fo:page-sequence> with the
+language property.
+See also Multiple Separate Volume in XSL/CSS Extensions in Features
+of the AHF Online Manual.
+Properties: format, axf:bookmark-include, axf:initial-volume-number,
+axf:document-info-include
+Parent Objects: <fo:root>
+<axf:ruby> 
+Ruby is a typographic support for pronouncing complex characters
+in the CJK languages. Antennahouse provides the typographic
+implementation for different Ruby types. The use of Ruby extension
+is comprehensively documented with examples in Ruby Extension (file:
+ahf:ruby.html) in the AHF Online Manual. A description here is omitted.
+Properties: axf:ruby-align, axf:ruby-position, axf:ruby-offset,
+axf:ruby-overhang, axf:ruby-limit-overhang, axf:ruby-limit-space,
+axf:ruby-small-kana, axf:ruby-font-family, axf:ruby-font-size,
+axf:ruby-minimum-font-size, axf:ruby-font-style, axf:ruby-font-weight,
+axf:ruby-font-stretch, axf:ruby-condense, axf:ruby-color
+Parent Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:inline>
+Child Objects: <axf:ruby-base> followed by <axf:ruby-text> (the pairs
+may occur repeatedly)
+AHF Extension Objects
+<axf:output-volume-info>
+304
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 305===
+<axf:ruby-base> 
+The base characters annotated in the <axf:ruby-text> object are placed in
+this Ruby child object.
+Properties: none
+Parent Objects: <axf:ruby>
+<axf:ruby-text> 
+In this Ruby child object, the base characters contained in the
+<axf:ruby-base> object are annotated.
+Properties: none
+Parent Objects: <axf:ruby>
+<axf:script-font> 
+Specifies the generic font according to the script. This element does not
+generate area.
+The same setting of script-font in the Option Setting File can
+be specified. The specifiation of axf:script-font will be adopted in
+preference to the setting in the Option Setting File.
+Constraints:
+<!ELEMENT axf:script-font EMPTY>
+<!ATTLIST axf:script-font script CDATA #REQUIRED>
+<!ATTLIST axf:script-font serif CDATA #>IMPLIED>
+<!ATTLIST axf:script-font sans-serif CDATA #>IMPLIED>
+<!ATTLIST axf:script-font monospace CDATA #>IMPLIED>
+<!ATTLIST axf:script-font cursive CDATA #>IMPLIED>
+<!ATTLIST axf:script-font fantasy CDATA #>IMPLIED>
+<!ATTLIST axf:script-font fallback CDATA #>IMPLIED>
+Parent Objects: <fo:declarations>
+AHF Extension Objects
+<axf:ruby-base>
+305
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 306===
+<axf:space-after-punctuation> 
+<axf:space-before-punctuation> 
+<axf:space-between-digit-and-punctuation> 
+<axf:space-between-punctuation-and-digit> 
+These are extension objects, especially for European typography
+requirements: space before/after punctuation, space between numeral
+and punctuation, space between punctuation and numeral.
+An example of the spaces in a French-language text:
+<fo:declarations>
+<axf:space-before-punctuation code="?" space="1 div 3" language="fr"/>
+<axf:space-before-punctuation code="!" space="1 div 3" language="fr"/>
+<axf:space-before-punctuation code=";" space="1 div 3" language="fr"/>
+<axf:space-before-punctuation code=":" space="1 div 4" language="fr"/>
+<axf:space-before-punctuation code="»" space="1 div 4" language="fr"/>
+<axf:space-after-punctuation code="«" space="1 div 4" language="fr"/>
+<axf:space-between-punctuation-and-digit code="+" space="thin" language="fr"/>
+<axf:space-between-punctuation-and-digit code="−" space="thin" language="fr"/>
+<axf:space-between-punctuation-and-digit code="±" space="thin" language="fr"/>
+<axf:space-between-digit-and-punctuation code="%" space="thin" language="fr"/>
+<axf:space-between-digit-and-punctuation code="°C" space="thin" language="fr"/>
+<axf:space-between-digit-and-punctuation code="°F" space="thin" language="fr"/>
+</fo:declarations>
+These specifications can alternatively be made in the external file (see )
+with the option settings.
+Properties: language, space (AHF specific), code (AHF specific)
+Parent Objects: <fo:declarations>
+<axf:spread-page-master>
+Specifies the page master of a double page (two pages displayed
+facing). In addition to the page area specified with a page master
+AHF Extension Objects
+<axf:space-after-punctuation>
+306
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 307===
+(<fo:simple-page-master>), an area can also be specified for such double
+pages in which the contents span the width of both pages.
+Properties: end-indent, margin-top, margin-bottom, margin-left, margin-right,
+master-name, reference-orientation, space-before, space-after, start-indent,
+writing-mode
+AHF Properties: axf:left-page-master-reference,
+axf:right-page-master-reference
+Parent Objects: <fo:layout-master-set>
+Child Objects: <axf:spread-region>
+Application example: A document with a title page (right), a double
+page (left-right), and a page sequence with left and right pages, with a
+left page completing the document.The content flow goes through all
+pages of this page sequence.
+The wrapper for this document is the root element (<fo:root>) with the
+namespace declarations for XSL-FO and the AHF extensions:
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" 
+xmlns:axf="http://www.antennahouse.com/names/XSL/Extensions">
+</fo:root>
+The other specifications stand inside the root element <fo:root>.
+The fo:layout-master-set contains the page masters
+(<fo:simple-page-master>) for the title page, right and left pages, as
+well as the page master <axf:spread-page-master> with the layout
+specifications. In addition, there is a page sequence template
+(<fo:page-sequence-master>) for the right title page, a double page and
+following left and right pages:
+<fo:layout-master-set>
+<fo:simple-page-master master-name="Title" page-width="210mm" page-height="297mm">
+<fo:region-body margin="36pt" border="1pt solid black" padding="6pt"/>
+<fo:region-before region-name="Header-right" extent="36pt" padding-end="36pt" 
+AHF Extension Objects
+<axf:spread-page-master>
+307
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 308===
+display-align="center"/>
+<fo:region-after extent="36pt" padding-end="36pt" display-align="center"/>
+</fo:simple-page-master>
+<fo:simple-page-master master-name="Page-right" page-width="210mm" 
+page-height="297mm">
+<fo:region-body margin="36pt" border="1pt solid black" padding="6pt"/>
+<fo:region-before region-name="Header-right" extent="36pt" padding-end="36pt" 
+display-align="center"/>
+<fo:region-after extent="36pt" padding-end="36pt" display-align="center"/>
+</fo:simple-page-master>
+<fo:simple-page-master master-name="Page-left" page-width="210mm" 
+page-height="297mm">
+ <fo:region-body margin="36pt" border="1pt solid black" padding="6pt"/> 
+<fo:region-before region-name="Header-left" extent="36pt" padding-start="36pt" 
+display-align="center"/> 
+<fo:region-after extent="36pt" padding-start="36pt" display-align="center"/> 
+</fo:simple-page-master> 
+<!-- Page master for double pages -->
+<axf:spread-page-master master-name="Double-pages" 
+left-page-master-reference="Page-left" 
+right-page-master-reference="Page-right">
+<axf:spread-region region-name="spread" margin-top="36pt" margin-left="36pt" 
+margin-right="36pt" margin-bottom="48mm"/>
+</axf:spread-page-master>
+<!-- Double page sequence template -->
+<fo:page-sequence-master master-name="With-double-page">
+<fo:single-page-master-reference master-reference="Title"/>
+<fo:repeatable-page-master-reference master-reference="Double-pages" 
+maximum-repeats="2"/>
+<fo:repeatable-page-master-alternatives>
+AHF Extension Objects
+<axf:spread-page-master>
+308
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 309===
+<fo:conditional-page-master-reference master-reference="Page-left" 
+odd-or-even="even"/>
+<fo:conditional-page-master-reference master-reference="Page-right" 
+odd-or-even="odd"/>
+</fo:repeatable-page-master-alternatives>
+</fo:page-sequence-master>
+</fo:layout-master-set>
+Then follows the page sequence (<fo:page-sequence>) for the document,
+ending with a left page:
+<fo:page-sequence master-reference="With-double-page" 
+force-page-count="end-on-even">
+<fo:static-content flow-name="Header-left">
+<fo:block>left page heading</fo:block>
+</fo:static-content>
+<fo:static-content flow-name="Header-right">
+<fo:block text-align="right">right page heading</fo:block>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-after">
+<fo:block text-align="outside"><fo:page-number/></fo:block>
+</fo:static-content>
+<fo:flow flow-name="spread">
+<fo:block text-align="center" font-weight="bold">
+This is a Spanned Title
+</fo:block>
+ <fo:table width="100%" border="1pt solid red" space-before="12pt"
+background-color="yellow">
+<fo:table-column number-columns-repeated="10"
+column-width="10%" border-right="1pt solid black" />
+<fo:table-header>
+<fo:table-row border-bottom="1pt solid black">
+AHF Extension Objects
+<axf:spread-page-master>
+309
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 310===
+<fo:table-cell number-columns-spanned="10">
+<fo:block text-align="center" font-weight="bold">Table Caption</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-header>
+<fo:table-body>
+<fo:table-row border-bottom="1pt solid black">
+<fo:table-cell><fo:block text-align="center">Content</fo:block></fo:table-cell>
+<fo:table-cell/><fo:table-cell/><fo:table-cell/><fo:table-cell/><fo:table-cell/>
+<fo:table-cell/><fo:table-cell/><fo:table-cell/><fo:table-cell/>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:flow>
+<fo:flow flow-name="xsl-region-body">
+<fo:block text-align="center" font-weight="bold" color="red">Title</fo:block>
+<fo:block background-color="silver">
+<fo:block>Content Content Content Content Content Content</fo:block>
+<fo:block>[More content for more pages!] </fo:block>
+</fo:block>
+</fo:flow>
+</fo:page-sequence>
+Please note: The double page is generated only if the text flow contains
+enough material to fill the flow area.
+<axf:spread-region>
+This object sets the spanning area of a double page (two facing pages)
+within a double page template (<axf:spread-page-master>).
+Properties: absolute-position, background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+AHF Extension Objects
+<axf:spread-page-master>
+310
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 311===
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, bottom, end-indent, height,
+left, margin-top, margin-bottom, margin-left, margin-right,
+overflow, padding-before, padding-after, padding-start, padding-end,
+padding-top, padding-bottom, padding-left, padding-right, region-name,
+reference-orientation, right, space-before, space-after, start-indent, top,
+width
+For writing-mode see the notes in the description of this property!
+Parent Objects: <axf:spread-page-master>
+<axf:tab> 
+the tab character (U+0009) will be normalized to the white space (U+0020);
+therefore, the character normally has a meaning of just a white space.
+However, there are a lot of document structures that the tab character
+aligns the text, such as JIS X 4051:2004. AH XSL Formatter provides the
+extension that enables to express the tab structure.
+CAUTION: A line which contains a tab will be forced to
+text-align="start".
+CAUTION: We cannot guarantee the best result of a tab processing in
+case a text requires the BIDI processing.
+Common Usage: Places a white space up to a tab stop position. Specify
+the tab stop position with axf:tab-stops.
+Properties: axf:tab-align
+Parent Objects: practically useful in <fo:block>
+AHF Extension Objects
+<axf:spread-region>
+311
+© 2021 MID/Information Logistics ‒ All rights reserved
+

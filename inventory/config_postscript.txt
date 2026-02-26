@@ -1,0 +1,30 @@
+===PAGE 273===
+Attributes: font
+font
+The value of this attribute must be the font name of a font
+whose embedding is allowed. Licensed fonts may be declared as non-
+embeddable. The PDF generator of the AH XSL Formatter strictly
+observes this restriction.
+Applies to: <embed-font>
+Wert: <family-name>
+Default: none
+2.1.4 
+PostScript Output Settings
+<ps-settings> 
+These settings are used for PostScript® Output (see PostScript® Output
+in Output Formats of the Online Manual).
+Parent: <formatter-config>
+Attributes: noembed-font, transparency, use-launch-for-local-file
+2.1.5 
+SVG Output Settings
+<svg-settings> 
+These settings are used for SVG Output (see SVG Output in Output
+Formats of the Online Manual).
+Parent: <formatter-config>
+Attributes: copy-image-path, copy-image-prefix, create-copy-image-path,
+format, gzip-compression, image-conversion, image-processing, jpeg-quality,
+PostScript Output Settings
+<embed-font>
+273
+© 2021 MID/Information Logistics ‒ All rights reserved
+

@@ -1,0 +1,81 @@
+===PAGE 477===
+system
+Specifies the type of the counter system.
+Applies to: <axf:counter-style>
+Values: cyclic | numeric | alphabetic | symbolic | additive | [fixed
+<integer>?] | [ extends <counter-style-name> ]
+Initial: "symbolic"
+Inherited: no
+2.4 
+AHF Extensions: Functions
+cmyk() 
+The function cmyk() is equivalent to the function
+rgb-icc(#CMYK,<C>,<M>,<Y>,<K>) (see rgb-icc()).
+cmyka() 
+The cmyka() function has 5 arguments: cmyka(<C>,<M>,<Y>,<K>,<A>) (see
+also rgb-icc()).
+hsl() 
+hsl() is a function in CSS3 and specifies the hue saturation lightness
+(HSL). The 3 arguments to it are hsl(<H>,<S>,<L>). <H> is a number
+without a unit of measurement. For <S> and <L> percentage values or
+the values from 0.0 to 1.0 are allowed.
+hsla() 
+hsla() is a function in CSS3 and specifies the hue saturation lightness
+(HSL) with an additional alpha value. The 4 arguments for it are
+hsl(<H>,<S>,<L>,<A>). <H> is a number without a unit of measurement.
+AHF Extensions: Properties
+system
+477
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 478===
+For <S>, <L> and <A> percentage values or the values from 0.0 to 1.0 are
+allowed.
+rgb-icc() 
+The extension of Antenna House concerns the color formats initiated
+with # for gray values, four-color printing (CMYK), and spot colors.
+Argument names used in the following:
+‒
+<R>,<G>,<B> = %-values or integers from 0 to 255
+‒
+<C>,<M>,<Y>,<K> = %-values or numbers from 0.0 to 1.0
+‒
+<Scale> = %-value or 0.0 (black) to 1.0 (white)
+‒
+<Tint> = %-value or 0.0 (brightest value) to 1.0 (darkest value).
+Specify gray values. The intensity of the gray value is set with the
+<Scale> argument:
+rgb-icc(#Grayscale,<Scale>)
+Specification of four-color printing according to the CMYK format
+(cyan, magenta, yellow, black). If the RGB specification is missing, the
+RGB values are derived from the CMYK values:
+rgb-icc(<R>,<G>,<B>,#CMYK,<C>,<M>,<Y>,<K>)
+rgb-icc(#CMYK,<C>,<M>,<Y>,<K>)
+Specification of spot colors. The color name is specified as <Name>,
+e.g. as PANTONE 131 PC. The tint is entered as <Tint>. If <Tint> is not
+specified, the tint is assumed to be 1.0. Furthermore, RGB or CMYK
+must be specified. If the RGB specification is missing, the RGB values
+are derived from the CMYK values:
+rgb-icc(<R>,<G>,<B>,#Separation,<Name>,<Tint>,<C>,<M>,<Y>,<K>)
+rgb-icc(<R>,<G>,<B>,#Separation,<Name>,<Tint>)
+rgb-icc(<R>,<G>,<B>,#Separation,<Name>)
+rgb-icc(#Separation,<Name>,<Tint>,<C>,<M>,<Y>,<K>)
+rgb-icc(#Separation,<Name>,<Tint>)
+rgb-icc(#Separation,<Name>)
+AHF Extensions: Functions
+hsla()
+478
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 479===
+If the option "AH Formatter PANTONE®" is included in the license
+for the AH XSL Formatter, the PANTONE colors are automatically
+converted to RGB or CMYK values. Then you can write the function as
+follows:
+rgb-icc(#Separation, 'PANTONE 131 PC')
+ 
+AHF Extensions: Functions
+rgb-icc()
+479
+© 2021 MID/Information Logistics ‒ All rights reserved
+

@@ -44,6 +44,6 @@ No code samples in spec for this formatting object. See the "Styling an XLink Ba
 
 ## See Also
 
-- `fo:multi-property-set` -- child formatting object specifying property overrides for a particular active state
-- `fo:wrapper` -- child formatting object that applies merged properties to its descendants
-- `fo:basic-link` -- often wrapped by `fo:multi-properties` to provide state-dependent styling
+- [fo:multi-property-set](fo-multi-property-set.md) — child formatting object specifying property overrides for a particular active state
+- [fo:wrapper](fo-wrapper.md) — child formatting object that applies merged properties to its descendants
+- [fo:basic-link](fo-basic-link.md) — often wrapped by fo:multi-properties to provide state-dependent styling

@@ -1,0 +1,114 @@
+### axf:column-fill
+
+Specifies whether to balance the column height.
+Values have the following meanings:
+‒
+auto: Do not balance the height. However if span="all" is specified, it
+is balanced before the spanned column.
+‒
+balance: Balance the height.
+Applies to: multi-column elements
+Values: auto | balance
+Initial: balance
+Inherited: no
+
+---
+
+### axf:column-number-format
+
+Specifies the format of column number. It applies to the format
+of column number specified by axf:number-type property. It can be
+specified with the same way as format property.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: "A"
+Inherited: no
+
+---
+
+### axf:column-rule
+
+The shorthand is effective. axf:column-rule-display can be included.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <border-width> || <border-style> || <color> ||
+<axf:column-rule-display>
+Initial: see individual properties
+Inherited: no
+
+---
+
+### axf:column-rule-align
+
+Specifies the alignment of the column rule.
+
+Applies to: <fo:region-body>, <fo:block-container>
+Values: before | center | after
+Initial: center
+Inherited: no
+
+---
+
+### axf:column-rule-color
+
+Specifies the color of the column rule.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <color>
+Initial: the value of the color property
+Inherited: no
+
+---
+
+### axf:column-rule-display
+
+Specifies whether to also display a rule at the place where column gaps
+do not exist. Suppose contents are only in the left column of three
+columns.
+Values have the following meanings:
+‒
+gap: Displays a rule only between existing columns.
+‒
+end: Displays a rule at the end side of each existing column.
+However, the end side of the final column is not included.
+‒
+all: Displays rules even between non-existent columns at the end of
+a page, etc.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: gap | end | all
+Initial: gap
+Inherited: no
+
+---
+
+### axf:column-rule-length
+
+Specifies the length of the column rule.
+
+In case where the column is short by specifying span="all" in FO, that
+height of the column indicates 100%.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <length> | <percentage>
+Initial: 100%
+Inherited: no
+
+---
+
+### axf:column-rule-style
+
+Specifies the style of the column rule.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <border-style>
+Initial: none
+Inherited: no
+
+---
+
+### axf:column-rule-width
+
+Specifies the width of the column rule.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <border-width>
+Initial: medium
+Inherited: no
+
+---
+

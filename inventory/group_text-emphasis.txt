@@ -1,0 +1,162 @@
+### axf:text-emphasis-color
+
+Specifies the color of emphasis marks. If nothing is specified, it's
+considered the same as color.
+Applies to: emphasis elements
+Values: <color>
+Initial: empty
+Inherited: yes
+
+---
+
+### axf:text-emphasis-font-family
+
+Specifies the font family of emphasis marks. If nothing is specified, it's
+considered the same as font-family.
+Applies to: emphasis elements
+Values: [<family-name> | <generic-family>]#
+Initial: empty string
+Inherited: yes
+
+---
+
+### axf:text-emphasis-font-size
+
+Specifies the font size of emphasis marks. When specified using
+<number>, the value is what is obtained by multiplying font-size by the
+specified <number>.
+Applies to: emphasis elements
+Values: <number> | <absolute-size> | <relative-size> | <length> |
+<percentage>
+Initial: 0.5
+Inherited: yes
+
+---
+
+### axf:text-emphasis-font-stretch
+
+Specifies the font stretching of emphasis marks. If nothing is specified,
+it's considered the same as font-stretch.
+Applies to: emphasis elements
+Values: normal | wider | narrower | ultra-condensed | extra-condensed |
+condensed |
+semi-condensed | semi-expanded | expanded | extra-expanded | ultra-
+expanded | <percentage> | <number>
+Initial: empty
+Inherited: yes
+
+---
+
+### axf:text-emphasis-font-style
+
+Specifies whether emphasis marks are made italic. If nothing is
+specified, it's considered the same as font-style.
+Applies to: emphasis elements
+Values: normal | italic
+Initial: empty
+Inherited: yes
+
+---
+
+### axf:text-emphasis-font-weight
+
+Specifies the font weight of emphasis marks. If nothing is specified, it's
+considered the same as font-weight.
+Applies to: emphasis elements
+Values: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 |
+600 | 700 | 800 | 900 | 1000
+Initial: empty
+Inherited: yes
+
+---
+
+### axf:text-emphasis-offset
+
+Specifies the space between emphasis marks and the base characters.
+When specified using <number>, the value is what is obtained by
+multiplying axf:text-emphasis-font-size by the specified <number>. When
+ruby and emphasis marks are put on the same side, it is adjusted to the
+larger one of the specified value and the ruby height.
+Applies to: all elements
+Values: <number> | <length> | <percentage>
+Initial: 0pt
+Inherited: yes
+
+---
+
+### axf:text-emphasis-position
+
+Specifies on which side of base characters emphasis marks are put.
+Values have the following meanings:
+‒
+before: Emphasis marks are put on the before side.
+‒
+after: Emphasis marks are put on the after side.
+Applies to: all elements
+Values: before | after
+Initial: before
+Inherited: yes
+
+---
+
+### axf:text-emphasis-skip
+
+Specifies the character to which emphasis marks are not applied.
+Values have the following meanings:
+‒
+none: No character is excluded.
+‒
+spaces: White space characters are excluded.
+‒
+punctuation: Punctuation marks are excluded.
+‒
+symbols: Symbols are excluded.
+‒
+narrow: Non full width characters (half width characters, etc.) are
+excluded.
+
+Applies to: all elements
+Values: none | [spaces || punctuation || symbols || narrow]
+Initial: spaces
+Inherited: yes
+
+---
+
+### axf:text-emphasis-style
+
+Specifies the style of emphasis marks.
+Values have the following meanings:
+‒
+none: No emphasis marks.
+‒
+filled: Specifies a character with color-fill.
+‒
+open: Specifies a character with an outline without color-fill.
+‒
+dot: Specifies a filled dot. filled dot is U+2022 •, open dot is U+25E6 ◦.
+‒
+circle: Specifies a circle. filled circle is U+25CF ●, open circle is U+25CB
+○.
+‒
+double-circle: Specifies a double-circle. filled double-circle is U+25C9
+◉, open double-circle is U+25CE ◎.
+‒
+triangle: Specifies a triangle. filled triangle is U+25B2 ▲, open triangle
+is U+25B3 △.
+‒
+sesame: Specifies a sesame dot. filled sesame is U+FE45 ﹅, open sesame is
+U+FE46 ﹆.
+‒
+<string>: Specifies an arbitrary character string. When multiple cha‐
+racters are specified, overlapping of emphasis marks is not conside‐
+red though everything is displayed.
+When filled or open is not specified, it's considered filled. When filled
+or open is specified, it's considered circle in vertical writing mode.
+Applies to: all elements
+Values: none | [[filled | open] || [dot | circle | double-circle |
+triangle | sesame]] | <string>
+Initial: none
+Inherited: yes
+
+---
+

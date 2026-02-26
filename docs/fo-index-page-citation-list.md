@@ -51,8 +51,8 @@ No code samples in spec for this formatting object. See the "Formatting Objects 
 
 ## See Also
 
-- `fo:index-key-reference` -- child formatting object that generates cited page items for an index key
-- `fo:index-page-citation-list-separator` -- optional child for custom list separator
-- `fo:index-page-citation-range-separator` -- optional child for custom range separator
-- `fo:index-page-number-prefix` -- prefix for individual page numbers
-- `fo:index-page-number-suffix` -- suffix for individual page numbers
+- [fo:index-key-reference](fo-index-key-reference.md) — child formatting object that generates cited page items for an index key
+- [fo:index-page-citation-list-separator](fo-index-page-citation-list-separator.md) — optional child for custom list separator
+- [fo:index-page-citation-range-separator](fo-index-page-citation-range-separator.md) — optional child for custom range separator
+- [fo:index-page-number-prefix](fo-index-page-number-prefix.md) — prefix for individual page numbers
+- [fo:index-page-number-suffix](fo-index-page-number-suffix.md) — suffix for individual page numbers

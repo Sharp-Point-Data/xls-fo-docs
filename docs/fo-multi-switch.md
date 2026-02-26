@@ -55,6 +55,6 @@ No code samples in spec for this formatting object. See the "Expandable/Collapsi
 
 ## See Also
 
-- `fo:multi-case` -- child formatting object containing each alternative sub-tree
-- `fo:multi-toggle` -- triggers switching from one multi-case to another
-- `fo:basic-link` -- often used within multi-case content for navigation
+- [fo:multi-case](fo-multi-case.md) — child formatting object containing each alternative sub-tree
+- [fo:multi-toggle](fo-multi-toggle.md) — triggers switching from one multi-case to another
+- [fo:basic-link](fo-basic-link.md) — often used within multi-case content for navigation

@@ -1,0 +1,2612 @@
+===PAGE 213===
+2 
+Extensions in the Antenna House
+XSL Formatter
+SHORT and TIGHT
+The following sections cover system and option settings in the AH
+XSL Formatter, extension objects, extension properties, extended value
+ranges, and other extensions.
+To use the Antenna House extensions, the corresponding namespace
+must be added to the namespace declarations for XSLT (xsl:) and XSL-FO
+(fo:) as follows:
+.............................................................................
+xmlns:axf="http://www.antennahouse.com/names/XSL/Extensions"
+.............................................................................
+2.1 
+AHF System Settings and Options
+The AH XSL Formatter's system settings for formatting properties, font
+specifications, auxiliary systems, and output options are open and compre‐
+hensively documented. These system settings can be customized by the
+user to meet specific requirements. The following is an overview for the
+customization options.
+AHF System Settings
+system-font()
+213
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 214===
+The configuration for the formatter with the user-settings are summari‐
+zed in the file AHFSettings.xml. All details for editing this file can be found
+in the Online Manual of the AH XSL Formatter under the title "Option
+Setting File" (ahf-optset.html). The descriptions of Antenna House's own
+constructs are taken from the Online Manual for the AH XSL Formatter.
+<formatter-config> 
+This element forms the root element for the formatter configuration
+in the AHFsettings.xml file. The child elements concern formatter
+properties, font settings, output options for PDF, PostScript, SVG,
+CGM, InDesign, FrameMaker, and text output, math processing, XSLT
+preprocessing, and formatting analyses.
+Attributes: none
+Child Elements: <formatter-settings>, <font-settings>, <pdf-settings>,
+<ps-settings>, <svg-settings>, <text-settings>, <mathml-settings>,
+<cgm-settings>, <xslt-settings>, <analyzer-settings>
+2.1.1 
+Formatter Settings
+<formatter-settings> 
+These settings are used for the formatting.
+Attributes: abbreviation-character-count,
+append-non-end-of-line-characters, append-non-starter-characters,
+auto-break-footnote, auto-formatter-type, avoid-orphan-single-word,
+avoid-widow-words-cjk-punctuation, axf-formatter-config, baseline-mode,
+bold-ratio, border-medium-width, border-thick-width, border-thin-width,
+boxshadow-resolution-dpi, bpil, bpil-limit-chars, bpil-minimum-line-width,
+bpil-penalty-hyphenation, condensed-text-align-last, default-CJK,
+Formatter Settings
+<formatter-config>
+214
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 215===
+default-color, default-font-size, default-from-page-master-region,
+default-html-charset, default-lang, default-lang2,
+default-page-height, default-page-margin-bottom, default-page-margin-left,
+default-page-margin-right, default-page-margin-top, default-page-width,
+descendant-or-self-files, display-alttext, double-hyphen-translineation
+error-if-overflow, except-non-end-of-line-characters,
+except-non-starter-characters, external-entity, family-name-syntax,
+fixed-width-space-treatment, hair-space-width, href-page-link, hyphen-min,
+hyphenation-keep-mode, hyphenation-TeX, HyphenationOption, ignore-
+certificate-error, inherit-svg-fill-color, intrusion-displace-mode,
+issue-scale-to-fit, jamo-ligature, justify-leader, justify-rowspan-height,
+keep-footnote-anchor, latin-ligature, no-disp-warnings,
+non-starter-ideographic-space, normal-line-height, normalize, oblique-skew,
+overflow-limit-block, overflow-limit-inline, printer-marks-line-length,
+printer-marks-line-width, printer-marks-zero-margin, PrinterOrientation,
+PscriptPassThrough, pair-kerning, punctuation-spacing,
+punctuation-trim, pxpi, responsive-svg-size, ruby-align,
+SeparatePrinterDuplexJob, small-caps-emulation-always,
+small-caps-emulation-size, small-caps-emulation-x-height,
+tab-overlap-treatment, table-auto-layout-limit, table-is-reference-area,
+text-autospace, text-autospace-width, text-decoration-mode,
+text-justify-mode, text-kashida-space, text-orientation-mode,
+textshadow-resolution-minimum-dpi, textshadow-resolution-pixel-per-em,
+textshadow-blur-cannot-embed-font, text-underline-mode, thin-space-width,
+two-pass-formatting, unicode-bidi-rev, unresolved-internal-
+destination, use-default-page-margin-XSL, vertical-block-width-mode,
+vertical-underline-side, watermark-font-family, watermark-font-style,
+watermark-font-weight, watermark-text, watermark2-font-family,
+watermark2-font-style, watermark2-font-weight, watermark2-text,
+white-space-collapse-mode, zwsp-mode
+Formatter Settings
+<formatter-settings>
+215
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 216===
+Parent: <formatter-config>
+Childs: <list-style-type>, <quotationmark>,
+<script-chars>, <space-end-punctuation>,
+<space-start-punctuation>, <space-between-digit-and-punctuation>,
+<space-between-punctuation-and-digit>, <usercss>, <css>,
+<script-language-in-CJK>, <multimedia>, <GS1-128>, <UAX50>,
+<unbreakable-words>
+abbreviation-character-count
+Specify the number of characters considered an abbreviation when a
+line break is inserted. See also axf:abbreviation-character-count.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 3
+append-non-end-of-line-characters
+Specifies to append the non-end-of-line characters. White spaces
+are disregarded even though they are specified. See also
+axf:append-non-end-of-line-characters.
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+append-non-starter-characters
+Specifies to append the non-starter characters. White space
+characters are disregarded even though they are specified. See also
+axf:append-non-starter-characters.
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+Formatter Settings
+<formatter-settings>
+216
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 217===
+auto-break-footnote
+Specifies whether to break the footnote automatically when
+axf:footnote-max-height is specified.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+auto-formatter-type
+When the detection of formatting type is set automatically and the
+decision of XHTML or HTML is unclear, the priority can be given by
+specifying the following values: html or xhtml.
+Applies to: <formatter-settings>
+Values: html | xhtml
+Default: html
+avoid-orphan-single-word
+Polish, Hungarian, Czech, etc. are not allowed to have single letter
+words at the end of lines. Specify such languages separated by commas.
+You can cancel the process by specifying an empty string or false.
+Specify true to apply to all languages.
+Applies to: <formatter-settings>
+Values: pol | hun | ces | true | false | empty string
+Default: pol, hun, ces
+avoid-widow-words-cjk-punctuation
+Specifies the initial value when
+axf:avoid-widow-words-cjk-punctuation="auto" is specified. You can specify
+false, true, or any string.
+Applies to: <formatter-settings>
+Formatter Settings
+auto-break-footnote
+217
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 218===
+Values: false | true | <string>
+Default: false
+axf-formatter-config
+Specifies whether the use of <axf:formatter-config> is permitted by a
+value of true or false. When false is specified, <axf:formatter-config>
+will be ignored.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+baseline-mode
+In AH Formatter V6, there are some changes from XSL Formatter V4 in
+deciding the baseline in the text with different scripts like a mixture of
+Western and Japanese. The following values can be specified.
+4. Operates the same as XSL Formatter V4.
+5. Adds the improved operation by AH Formatter V5.
+6. Adds the improved operation by AH Formatter V6.
+In addition, when baseline-mode="4" is specified, the text-altitude and
+text-depth properties are invalid.
+Applies to: <formatter-settings>
+Values: 4 | 5 | 6
+Default: 6
+bold-ratio
+Specifies how thick a font should be displayed when bold is specified
+for fonts that do not have bold in the font family. When 1.0 is specified,
+only the amount decided by the system is made thicker. For instance,
+when 1.5 is specified, it is drawn 1.5 times thicker. When 0.0 or less is
+Formatter Settings
+avoid-widow-words-cjk-punctuation
+218
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 219===
+specified, it is considered 1.0 thick. This setting is effective with PDF
+Output and PostScript® Output.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 1.0
+border-medium-width
+Specifies the default border width in medium style with the real type
+numerical value.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 3pt
+border-thick-width
+Specifies the default border width in thick style with the real type
+numerical value.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 5pt
+border-thin-width
+Specifies the default border width in thin style with the real type
+numerical value.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 1pt
+Formatter Settings
+bold-ratio
+219
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 220===
+boxshadow-resolution-dpi
+Specifies the resolution of the image when setting the blurring in
+box-shadow with the unit of dpi. Values from 70 to 1440 are effective. If
+it is out of range, the default value is adopted.
+Applies to: <formatter-settings>
+Values: from 70 to 1440
+Default: 108
+bpil
+Specifies a language or script to apply Knuth-Plass Breaking
+Paragraphs into Lines [BPIL] to the line breaking algorithm by
+separating each code with a space. The following can be specified.
+When empty, it does not apply to any language.
+‒
+Language code defined in ISO 639 or ISO 639-2
+‒
+Code formed by combining the language code and the country code
+defined in ISO 3166 by a hyphen.
+‒
+Script code defined in ISO 15924
+When a script is specified, it is considered that the language for which
+it is a representative script has been specified.
+See also the notes on Line Breaking in the Technical Notes of the
+Online Manual.
+Applies to: <formatter-settings>
+Values: see above
+Default: Latn Grek Cyrl Armn Geor
+bpil-limit-chars
+Specifies the maximum number of characters to which [BPIL] applies.
+Approximately more than this number of blocks will not apply [BPIL].
+The value less than 1000 cannot be specified.
+Applies to: <formatter-settings>
+Formatter Settings
+boxshadow-resolution-dpi
+220
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 221===
+Values: <number>
+Default: 50000
+bpil-minimum-line-width
+Specifies the minimum line width to apply [BPIL] in units of em. The
+value less than 1 is considered 1.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 8
+bpil-penalty-hyphenation
+Specifies the frequency of hyphenation in [BPIL] with a value of 0 to
+1000. Hyphenation is more likely to occur with smaller values.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 100
+condensed-text-align-last
+Specifies the initial value when axf:condensed-text-align-last ="auto" is
+specified. You can specify false, true or justify.
+Applies to: <formatter-settings>
+Values: false | true | justify
+Default: justify
+default-CJK
+Specifies the language (such as jpn or kor) to be applied when a script
+is ambiguous for CJK. Although the default value is determined from
+the operating environment, Japanese language is assumed when the
+operating environment is other than CJK.
+Applies to: <formatter-settings>
+Formatter Settings
+bpil-limit-chars
+221
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 222===
+Values: chi | jpn | kor
+Default: jpn
+default-color
+Specifies the default color of text with the format of #RRGGBB. You can
+also specify the color name, rgb() or rgb-icc(). However, RGB cannot be
+omitted with rgb-icc().
+Applies to: <formatter-settings>
+Values: colors with the format of #RRGGBB
+Default: #000000 (schwarz)
+default-font-size
+Specifies the default font size with the real type numerical value.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 10pt
+default-from-page-master-region
+In XSL 1.1, there is no compatibility with XSL 1.0 in the method
+of evaluating writing-mode or reference-orientation. If true is specified,
+it becomes the same operation as the following are specified for
+<fo:page-sequence>.
+writing-mode="from-page-master-region()"
+reference-orientation="from-page-master-region()"
+For more details, see from-page-master-region().
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+Formatter Settings
+default-CJK
+222
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 223===
+default-html-charset
+Specifies the default encoding of HTML. This setting is applied to
+HTML with unknown encoding. When the setting is in HTML, or
+the encoding can be recognized by BOM, they are adopted. See also
+encoding of <text-settings>. Case insensitive.
+Applies to: <formatter-settings>
+Values: see encoding
+Default: UTF-8
+default-lang
+Specifies the default language code. The language code follows ISO
+639-2. There is no default value. default-lang specifies the language
+when FO doesn't have the language specification. This is outputted as
+the language information to the PDF. The default value of default-lang
+is empty. At this time, if the language is not specified for FO etc.,
+the language information is not outputted to the PDF. The language
+specified to default-lang2 is adopted when default-lang is empty.
+Applies to: <formatter-settings>
+Values: code according to ISO639-2
+Default: none
+default-lang2
+Specifies the language actually adopted when default-lang is empty.
+When default-lang2 is empty, it depends on the locale of the system.
+Applies to: <formatter-settings>
+Values: code according to ISO639-2
+Default: eng
+default-page-height
+Specifies the default page height with the real type numerical value.
+Formatter Settings
+default-html-charset
+223
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 224===
+Applies to: <formatter-settings>
+Values: <length>
+Default: 297mm (DIN A4 page height)
+default-page-margin-bottom
+Specifies a default page margin bottom with the real type numerical
+value. A percent value is considered a ratio out of the page width.
+Applies to: <formatter-settings>
+Values: <length> | <percentage>
+Default: 10%
+default-page-margin-left
+Specifies a default page margin left with the real type numerical value.
+A percent value is considered a ratio out of the page height.
+Applies to: <formatter-settings>
+Values: <length> | <percentage>
+Default: 10%
+default-page-margin-right
+Specifies a default page margin right with the real type numerical
+value. A percent value is considered a ratio out of the page height.
+Applies to: <formatter-settings>
+Values: <length> | <percentage>
+Default: 10%
+default-page-margin-top
+Specifies a default page margin top with the real type numerical value.
+A percent value is considered a ratio out of the page width.
+Applies to: <formatter-settings>
+Values: <length> | <percentage>
+Formatter Settings
+default-page-height
+224
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 225===
+Default: 10%
+default-page-width
+Specifies the default page width with the real type numerical value.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 210mm (DIN A4 page width)
+descendant-or-self-files
+When true is specified, the location of the external files that can be
+read is restricted to be within the same directory as the FO or HTML,
+or within a subdirectory of it. It isn't restricted by http: or https:. If
+disable-network is specified, all network access such as http: or https:
+are also restricted in addition to it.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+display-alttext
+Specifies whether to display an alternate text by axf:alttext or the
+alt attribute when there is no image in <fo:external-graphic> or HTML
+<img>. When true is specified, an alternate text is displayed. When false
+is specified and the src attribute is specified, an alternate image is
+displayed.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+Formatter Settings
+default-page-margin-top
+225
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 226===
+double-hyphen-translineation
+In Portuguese hyphenation, a hyphen is also placed at the start
+of the line when a line break occurs at a hyphen. With double-
+hyphen-translineation, specify comma-separated languages for such
+hyphenation. If you specify empty or false, you can cancel the process
+of placing a hyphen at the start of the line as well. It is invalid when
+hyphenate="false" is specified. ☞ axf:double-hyphen-translineation
+Applies to: <formatter-settings>
+Values: comma-separated languages for such hyphenation
+Default: por
+error-if-overflow
+Specifies whether to perform the same check as error-if-overflow and
+report an overflow error when overflow="auto" is specified.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+except-non-end-of-line-characters
+Specifies the except-non-end-of-line characters. This setting will be
+ignored even if white spaces are specified. See also the extension
+property axf:except-non-end-of-line-characters.
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+except-non-starter-characters
+Specifies the except-non-starter characters. This setting will be ignored
+even if white spaces are specified. See also the extension property
+axf:except-non-starter-characters.
+Formatter Settings
+double-hyphen-translineation
+226
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 227===
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+external-entity
+Specifies whether the external reference is allowed or not with
+<!ENTITY> of XML (FO, XHTML, SVG, MathML etc.) to be formatted.
+Note that it does not work on external XSLT processor called from AH
+Formatter V7.2. See also section 2.1.9.
+Applies to: <formatter-settings>
+Values: false | true
+Default: true
+family-name-syntax
+Specify whether to strictly check the syntax of the value of font-family.
+When strict is specified, it is evaluated exactly as Font family: the
+font-family property.
+Until AH Formatter V6.5, only a pretty loose check has been done, so
+even it is strictly an error, it does not become an error.
+For example, the following setting is strictly an error:
+font-family="Abc 123"
+You must specify it as follows:
+font-family="'Abc 123'"
+Specify loose if you want to loosen the check. If auto is specified, it is
+considered strict in CSS and it is considered loose in FO.
+Applies to: <formatter-settings>
+Values: strict | loose | auto
+Default: auto
+Formatter Settings
+except-non-starter-characters
+227
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 228===
+fixed-width-space-treatment
+Fonts seldom contain glyphs for characters, such as EM SPACE (U+2003)
+etc., that represent white space with fixed width. At that time, a
+substitution glyph is displayed and the white space is not shown
+correctly. fixed-width-space-treatment specifies the treatment of a fixed
+white space.
+‒
+false: Does nothing.
+‒
+true: Inserts a white space when there is no glyph in the font. When
+there is a glyph in the font, it will be used.
+‒
+always: Always inserts a white space without depending on the font.
+Even If there is a glyph in the font, it will not be used.
+The target characters and their widths are as follows (in units of em):
+U+2000 EN QUAD: 1/2
+U+2001 EM QUAD: 1
+U+2002 EN SPACE: 1/2
+U+2003 EM SPACE: 1
+U+2004 THREE-PER-EM SPACE: 1/3
+U+2005 FOUR-PER-EM SPACE: 1/4
+U+2006 SIX-PER-EM SPACE: 1/6
+U+2007 FIGURE SPACE: The same width of the figure “0”.
+U+2008 PUNCTUATION SPACE: The same width of the punctuation period “.”.
+U+2009 THIN SPACE: Depends on the setting of thin-space-width.
+U+200A HAIR SPACE: Depends on the setting of hair-space-width.
+U+205F MEDIUM MATHEMATICAL SPACE: 4/18
+Applies to: <formatter-settings>
+Values: true | false | always
+Default: true
+Formatter Settings
+fixed-width-space-treatment
+228
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 229===
+hair-space-width
+Specifies the character width of HAIR SPACE (U+200A) in units of em,
+when fixed-width-space-treatment="true" is specified.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 0.1
+href-page-link
+Unlike FO, HTML has id value that is not NCName, so id like "123" is
+allowed. Therefore, when <a href="#123"> is specified, the id "123" is the
+target. When href-page-link="true" is specified, it will be considered a
+page number and easily move to the specified page in HTML.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+hyphen-min
+Specifies whether to enable <hyphen-min> in the Hyphenation Exception
+Dictionary (see the notes on Hyphenation of the Online Manual).
+‒
+false: <hyphen-min> is ignored.
+‒
+true: The value of <hyphen-min> is the va‐
+lue when hyphenation-remain-character-count="auto" or
+hyphenation-push-character-count="auto" in XSL is specified. It is inva‐
+lid when any property other than auto is specified for these proper‐
+ties.
+‒
+without-exceptions: Same as true, but words specified in <exceptions>
+in the exception dictionary are excluded.
+Applies to: <formatter-settings>
+Values: true | false | without-exceptions
+Default: false
+Formatter Settings
+hair-space-width
+229
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 230===
+hyphenation-keep-mode
+Specifies the processing method when the word at the end of the page
+(column) is hyphenated by hyphenation-keep="page", etc. word pushes out
+the word to the next page (column). line pushed out that line to the
+next page (column). You need to be careful when you use word. See the
+notes on Hyphenation of the Online Manual. However, in <fo:float>
+where the value of axf:float-x is other than none and the value of
+axf:float-y is none, it is always considered line.
+Applies to: <formatter-settings>
+Values: word | line
+Default: word
+hyphenation-TeX
+When HyphenationOption="true" is specified, enumerates a comma-
+delimited list of languages that you want to hyphenate using a TeX
+dictionary, e.g.: hyphenation-TeX="ces,deu".
+Applies to: <formatter-settings>
+Values: short names for TeX dictionaries
+Default: none
+HyphenationOption
+Specifies whether to hyphenate words by using the custom processing
+that supports over 40 languages or to use TeX hyphenation
+dictionaries. If false is specified, words will be hyphenated by using
+TeX dictionaries. If so, only the languages that have a dictionary can be
+hyphenated.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+Formatter Settings
+hyphenation-keep-mode
+230
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 231===
+inherit-svg-fill-color
+In SVG, when “fill” in the root element is omitted, the value of “color”
+specified in the upper XML is inherited.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+intrusion-displace-mode
+In AH Formatter V6, there are some changes from AH Formatter V5 in
+the behavior of the intrusion-displace property. Specify when you want
+to make it the same as V5.
+5. Operates the same as AH Formatter V5.
+6. Adds the modified operation by AH Formatter V6.
+Applies to: <formatter-settings>
+Values: 5 | 6
+Default: 6
+issue-scale-to-fit
+Specifies whether to report the scale-change ratio when the scale ratio
+of the image is changed by scale-to-fit/scale-down-to-fit/scale-up-to-
+fit with the value of true or false. If true is specified, the level 1 is
+reported.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+jamo-ligature
+Specifies whether to process the ligature of Hangul Jamo (U+1100 to
+U+11FF) with the value of true or false. If true is specified, processes the
+ligature of Hangul Jamo. If false, does nothing. This setting affects the
+Formatter Settings
+inherit-svg-fill-color
+231
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 232===
+value of the extension property axf:ligature-mode="auto". This ligature
+uses jamo of GSUB feature in the OpenType font.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+justify-leader
+Although the leader functions in the justified line, the leader itself
+is not justified. leader-alignment="none" specifies whether the leader
+itself is justified or not when the contents are only the text, by
+leader-pattern="dots" or leader-pattern="use-content". If true is specified,
+the space may be generated between characters in the leader, the leader
+may become irregular against the other leaders. However, the space at
+the end of the leader will disappear.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+justify-rowspan-height
+When there is a cell with rowspan and the height of the cell is high,
+specifies whether the height of each row occupied by the cell should be
+as even as possible. When there is a row or cell with height specified,
+or when there is a cell whose text direction is rotating, it is processed
+so that only the height of the row after that row is even.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+Formatter Settings
+jamo-ligature
+232
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 233===
+keep-footnote-anchor
+When a block including a footnote anchor does not fit within the page,
+the lines up to the dividable position after the anchor are sent to the
+previous page.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+latin-ligature
+Specifies whether to process the ligature in European languages with
+the value of true or false. If true is specified, the ligature will be
+processed. If false is specified, it will not be processed. This setting
+affects the value of axf:ligature-mode="auto".
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+no-disp-warnings
+Suppress Error Messages that are output on GUI or Command-line.
+Specifies by enumerating the error code in decimal or hexadecimal
+as no-disp-warnings="10754 0x320D". No error message corresponding to
+the specified error code is output. It is invalid for errors where the
+processing is interrupted.
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+Formatter Settings
+keep-footnote-anchor
+233
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 234===
+non-starter-ideographic-space
+Specifies whether to treat the ideographic space as a non-starter
+character. See also Treatment of full-width white space in Technical
+Notes of the Online Manual.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+normal-line-height
+Specifies the default line height with the real type numerical value. A
+unit is not specified. The value means the ratio to the font size. The
+initial value is 1.2. Therefore, in case the font size is 10pt, the line height
+becomes 12pt.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 1.2
+normalize
+Specifies the method of the normalization to be adopted when
+axf:normalize="auto" is specified. The following values (case insensitive)
+can be specified:
+‒
+none: Does not normalize text.
+‒
+nfc: Performs NFC.
+‒
+nfd: Performs NFD.
+‒
+nfkc: Performs NFKC.
+‒
+nfkd: Performs NFKD.
+Applies to: <formatter-settings>
+Values: none | nfc | nfd | nfkc | nfkd
+Default: nfc
+Formatter Settings
+non-starter-ideographic-space
+234
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 235===
+oblique-skew
+Specifies the amount of the inclination when using font-style="oblique"
+or "backslant". When 0 or less is specified, it is considered the system
+default. The font is inclined by the system default whenever there is no
+italic in the font when using font-style="italic". This setting is effective
+in the following outputs:
+‒
+Graphical User Interface
+‒
+PDF Output
+‒
+PostScript® Output
+‒
+XPS Output
+Applies to: <formatter-settings>
+Values: <integer>
+Default: 0
+overflow-limit-block
+Specifies the default value of axf:overflow-limit-block.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 0pt
+overflow-limit-inline
+Specifies the default value of axf:overflow-limit-inline.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 0pt
+printer-marks-line-length
+Specifies the length of the printer marks. See Printer Marks in the
+XSL/CSS Extensions of the Online Manual.
+Applies to: <formatter-settings>
+Formatter Settings
+oblique-skew
+235
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 236===
+Values: <length>
+Default: 10mm
+printer-marks-line-width
+Specifies the width of the printer marks. See Printer Marks in the
+XSL/CSS Extensions of the Online Manual.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 0.24pt
+printer-marks-zero-margin
+Specifies the margin between the page and the printer marks when
+axf:bleed is 0.
+Applies to: <formatter-settings>
+Values: <length>
+Default: 3mm
+PrinterOrientation
+When the paper is placed in landscape in the PS Printer, there may
+be a case that the printer rotate-output the line and EPS incorrectly
+because some printers cannot get information. Possible to correct the
+rotation by specifying one of the following values (the value should be
+anti-clockwise rotation degree):
+‒
+auto
+‒
+0
+‒
+90
+‒
+270
+This setting is effective only with Windows version.
+Applies to: <formatter-settings>
+Values: auto | 0 | 90 | 270
+Formatter Settings
+printer-marks-line-length
+236
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 237===
+Default: auto
+PscriptPassThrough
+Possible to makes Pass Through output invalid when outputting to
+PS printer. If true is specified, Pass Through output is executed. If
+false is specified, Pass Through output is not executed but the output
+is executed only by GDI operator. This setting is effective only with
+Windows version.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+pair-kerning
+Specifies whether to process the pair kerning with the value of true
+or false. If true is specified, the ligature will be processed. If false
+is specified, it will not be processed. This setting affects the value of
+axf:kerning-mode="auto".
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+punctuation-spacing
+Specifies the space width between the adjacent Japanese full width
+characters with the percentage value. The value means the ratio to the
+font size. This setting affects the value of axf:punctuation-spacing="auto"
+in extended FO.
+Applies to: <formatter-settings>
+Values: <percentage>
+Default: 50%
+Formatter Settings
+PrinterOrientation
+237
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 238===
+punctuation-trim
+When Japanese full width characters (punctuation marks and brackets)
+are used in succession or come at the start of a line, you can specify
+whether to trim the letter spacing or keep the same letter spacing
+with the value of true or false. If the value is true, the letter spacing
+will be tracked narrow. If the value is false, it will be the same as
+that of other full width characters. This setting affects the values of
+axf:punctuation-trim="auto" and axf:text-justify-trim="auto" in extended
+FO.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+pxpi
+In XSL or CSS, you can specify (pixel) as a unit of measurement. pxpi
+specifies the coefficient, which converts the value of the specified px, as
+“the number of pixels per inch” (1 inch = 2,54cm) when formatting. It's
+specified with the real type numerical value.
+Applies to: <formatter-settings>
+Values: <integer>
+Default: 96
+responsive-svg-size
+Specifies whether the size matches the viewBox setting when the width
+and height of the root element are omitted in SVG. The following
+values can be specified:
+‒
+reference: It is considered width="100%" height="100%" according to the
+SVG specification.
+‒
+viewBox: If viewBox is specified as the root element, it is considered
+its size.
+Formatter Settings
+punctuation-trim
+238
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 239===
+Applies to: <formatter-settings>
+Values: reference | viewBox
+Default: reference
+ruby-align
+Specifies the arrangement when axf:ruby-align="auto" is specified.
+When nothing or auto is specified, it is considered space-around center.
+Applies to: <formatter-settings>
+Values: auto
+Default: none
+SeparatePrinterDuplexJob
+Specifies whether to batch print without interrupting a job for printing,
+even if the switching of the printer between simplex/duplex modes is
+set when axf:printer-duplex is specified. If true is specified, the file is
+split and outputted, if false is specified the file is batch printed.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+small-caps-emulation-always
+Specifies whether to always emulate small-caps. When true is specified,
+it always emulates and does not use the font information.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+small-caps-emulation-size
+Specifies the scale-down ratio when the font does not have small-caps
+when font-variant="small-caps" is specified.
+Formatter Settings
+responsive-svg-size
+239
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 240===
+Applies to: <formatter-settings>
+Values: <percentage>
+Default: 70%
+small-caps-emulation-x-height
+If the font has x-height and cap-height, the emulation magnification of
+small-caps is x-height/cap-height. If the font does not have them, it will
+be small-caps-emulation-size.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+tab-overlap-treatment
+Specifies a behavior when tab alignment makes letters
+overlapped, by selecting from either ignore-tab or next-tab. See
+axf:tab-overlap-treatment.
+Applies to: <formatter-settings>
+Values: ignore-tab | next-tab
+Default: ignore-tab
+table-auto-layout-limit
+When table-layout="auto" is specified, it is necessary to look ahead and
+read the table to decide the width of column. The number of row to
+read ahead can be limited because it takes a long time to read all rows
+in a too huge table. After reading ahead up to the number of rows
+specified here, the width of column is decided. If 0 is specified, all rows
+are read, and then the width of column is decided. For more details, see
+Table Auto Layout in the Technical Notes of the Online Manual.
+Applies to: <formatter-settings>
+Formatter Settings
+small-caps-emulation-size
+240
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 241===
+Values: <integer>
+Default: 100
+table-is-reference-area
+In XSL 1.1, there is no compatibility with XSL 1.0 about whether to
+make <fo:table> a reference area. If true is specified, fo:table will be
+made a reference area and its operation will be the same as XSL 1.0. For
+more details, see Incompatibility of fo:table in the Technical Notes of
+the Online Manual.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+text-autospace
+Specifies whether to insert spaces surrounding ideographic glyphs to
+make them look better with the value of true or false, in the document
+ideographic and non-ideographic glyphs are mixed. If the value is
+true, a space will be inserted to make them look better. If the value
+is false, a space won't be inserted. This setting affects the value of
+axf:text-autospace="auto" in extended FO.
+Applies to: <formatter-settings>
+Values: true | false
+Default: true
+text-autospace-width
+Specifies the space width surrounding ideographic glyphs characters
+with the percentage value. The value means the ratio to the font
+size. This setting affects the value of axf:text-autospace-width="auto" in
+extended FO.
+Applies to: <formatter-settings>
+Formatter Settings
+table-auto-layout-limit
+241
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 242===
+Values: <percentage>
+Default: 25%
+text-decoration-mode
+Specifies how much the underline, strikethrough and overline exceed
+the length of a word.
+0. Do not exceed the word length.
+1. Exceed half-length of the space between words.
+2. Do not exceed the start edge of a word, but exceed the end edge
+ of a word by the full space between words.
+Applies to: <formatter-settings>
+Values: 0 | 1 | 2
+Default: 1
+text-justify-mode
+In AH Formatter V5 or later, there are some changes from XSL
+Formatter V4 in trimming a line. Specify the value when you want
+to make it the same operation as V4. This adjusts the initial value when
+axf:text-justify-trim="auto" is specified. The following values can be
+specified:
+4. Operates the same as XSL Formatter V4. That is, it is considered that
+ ideograph and inter-word are specified.
+5. Adds the improved operation by AH Formatter V5.
+Applies to: <formatter-settings>
+Values: 4 | 5
+Default: 5
+Formatter Settings
+text-autospace-width
+242
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 243===
+text-kashida-space
+Specifies the percentage of the Kashida in Arabic justification. The
+value indicates the percentage of white space and Kashida. If the
+value is 0%, Kashida is not inserted and only the white space expands
+as well as the normal justification. If the value is 100%, Kashida
+is inserted as much as possible. This setting affects the value of
+axf:text-kashida-space="auto" in extended FO.
+Applies to: <formatter-settings>
+Values: <percentage>
+Default: 100%
+text-orientation-mode
+Specifies whether UAX#50: Unicode Vertical Text Layout is taken
+into consideration by the value of axf:text-orientation when rendering
+alphanumeric characters, etc. to be upright in vertical writing mode
+with the following values:
+5. UAX#50 is not taken into consideration.
+6. SVO and MVO are taken into consideration.
+7. In addition to 6, axf:text-orientation="auto" is treated as "mixed".
+Note:
+‒
+The layout of SVO/MVO do not match the one defined in UAX#50.
+See also Glyphs in Vertical Text in the Technical Notes of the
+Online Manual.
+‒
+SVO is applied to the text with axf:text-orientation="upright" speci‐
+fied in FO or text-orientation:upright; specified in CSS.
+‒
+MVO is applied to the text with axf:text-orientation="mixed" speci‐
+fied in FO or text-orientation:mixed; specified in CSS.
+‒
+This setting does not work with AH Formatter V7.2 Lite. It is always
+considered 5.
+Applies to: <formatter-settings>
+Formatter Settings
+text-kashida-space
+243
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 244===
+Values: 5 | 6 | 7
+Default: 6
+textshadow-resolution-minimum-dpi
+Specifies the minimum value of the resolution of the image when
+setting the blur in text-shadow with the unit of dpi. Only the integer
+value of greater than or equal to 1 is effective. Fractions below decimal
+point are rounded off to the nearest integer, if the value is less than 1,
+the default value is adopted.
+Applies to: <formatter-settings>
+Values: <integer>
+Default: 108
+textshadow-resolution-pixel-per-em
+Specifies the resolution of the image when setting the blur in
+text-shadow. Specifies the resolution by the number of pixels per
+1 font size. If the back-calculated dpi value is smaller than
+textshadow-resolution-minimum-dpi, the latter setting will take priority.
+Only the integer value of greater than or equal to 1 is effective.
+Fractions below decimal point are rounded off to the nearest integer, if
+the value is less than 1, the default value is adopted.
+Applies to: <formatter-settings>
+Values: <integer>
+Default: 100
+textshadow-blur-cannot-embed-font
+Selects whether to set the blur against the font that is not allowed to
+be embedded with the value of true or false in text-shadow. If true is
+specified, sets the blur.
+Applies to: <formatter-settings>
+Formatter Settings
+text-orientation-mode
+244
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 245===
+Values: true | false
+Default: false
+text-underline-mode
+Some improved changes have been added for the position of underline
+and overline with AH Formatter V6. Specify when you want to make it
+the same as V5.
+5. Operates the same as AH Formatter V5.
+6. Adds the improved operation by AH Formatter V6.
+Applies to: <formatter-settings>
+Values: 5 | 6
+Default: 6
+thin-space-width
+Specifies the character width of THIN SPACE (U+2009) in units of em,
+when fixed-width-space-treatment="true" is specified.
+Applies to: <formatter-settings>
+Values: <number>
+Default: 0.2
+two-pass-formatting
+When formatting a huge document with a large amount of unresolved
+<fo:page-number-citation>, a large amount of memories are consumed
+because the cancellation of the page information is impossible.
+Therefore, the limit is caused in the number of pages to format. This
+parameter solves that problem by making the formatting two passes.
+Although its processing time may be increased, only the page number
+information which should be solved will consume the memory and
+the memory consumption will be extremely decreased. This setting
+is invalid with CSS formatting. This setting is invalid with GUI. See
+Formatter Settings
+textshadow-blur-cannot-embed-font
+245
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 246===
+Formatting Large Document in the Technical Notes of the Online
+Manual.
+Applies to: <formatter-settings>
+Values: true | false
+Default: false
+unicode-bidi-rev
+Specifies the revision of UAX#9: Unicode Bidirectional Algorithm that
+AH Formatter conforms to. A value greater than or equal to 37 is
+considered 41. If the value is less than 37, it follows the algorithm
+compatible with V6.6 (about revision 27). At that time, the following
+control characters cannot be handled correctly. U+2066 is considered
+U+202D, U+2067 is considered U+202E and U+2069 is considered U+202C for
+each. If no value is set, the latest revision supported by AH Formatter
+is used. See also BIDI Algorithm Implementation Restrictions in the
+Technical Notes of the Online Manual for implementation restrictions
+when not V6.6 compatible.
+‒
+U+2066: LEFT-TO-RIGHT ISOLATE
+‒
+U+2067: RIGHT-TO-LEFT ISOLATE
+‒
+U+2068: FIRST STRONG ISOLATE
+‒
+U+2069: POP DIRECTIONAL ISOLATE
+Applies to: <formatter-settings>
+Values: U+2066 | U+2067 | U+2068 | U+2069
+Default: none
+use-default-page-margin-XSL
+Specifies whether default-page-margin-bottom, default-page-margin-top,
+default-page-margin-left and default-page-margin-right are adopted or not
+when there is no margin specification in <fo:simple-page-master> in XSL.
+Applies to: <formatter-settings>
+Formatter Settings
+two-pass-formatting
+246
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 247===
+Values: true | false
+Default: false
+vertical-block-width-mode
+The behavior of the auto value of the width of vertical-text block within
+horizontal-text flow (or the height of horizontal-text block within
+vertical-text flow) is changed with AH Formatter V6. Specify when
+you want to make it the same as V5.
+5. Operates the same as AH Formatter V5. The width of vertical-text
+ block is given by the width of the outer area.
+6. Adds the improved operation by AH Formatter V6. The width 
+ of vertical-text block shrinks to fit the content.
+Applies to: <formatter-settings>
+Values: 5 | 6
+Default: 6
+vertical-underline-side
+In the XSL specification, there is no description about the underline in
+vertical writing mode. The vertical-underline-side property is an option
+which specifies whether to place the underline in vertical writing mode
+on the right side or on the left side. If left or right is specified, the
+underline is placed on the left or on the right. If auto is specified,
+the underline is placed on the right side when the language property
+is Japanese (jpn) or Korean (kor). The underline is placed on the
+left side when the language property is other than Japanese (jpn) or
+Korean (kor). If there is no language properties specified, it depends on
+the default-CJK language setting. This setting affects the value of the
+extension property, axf:vertical-underline-side="auto".
+Applies to: <formatter-settings>
+Formatter Settings
+use-default-page-margin-XSL
+247
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 248===
+Values: auto | left | right
+Default: auto
+watermark-font-family
+Specifies the font family to the character string which you set to
+watermark-text.
+Applies to: <formatter-settings>
+Values: <family-name> | <generic-family>
+Default: sans-serif
+watermark-font-style
+Specifies the font style to the character string which you set to
+watermark-text. Possible to specify normal or italic.
+Applies to: <formatter-settings>
+Values: normal | italic
+Default: normal
+watermark-font-weight
+Specifies the font weight to the character string which you set to
+watermark-text. Possible to specify normal, bold or the numerical value
+from 1 to 1000.
+Applies to: <formatter-settings>
+Values: normal | bold | <integer> from 1 to 1000
+Default: normal
+watermark-text
+Displays the specified watermark text on each page. Possible to make
+it multiple lines by delimiting with the line feed “&#10;”. You will need
+to specify an appropriate according to the text you specify. Confirm it
+by outputting PDF. In addition, complex scripts such as Thai and Arabic
+Formatter Settings
+vertical-underline-side
+248
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 249===
+cannot be specified. The text that cannot be outputted by a single font
+cannot be specified..
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+watermark2-font-family
+Specifies the font family to the character string which you set to
+watermark2-text. If not specified, the default value is the same as
+watermark-font-family.
+Applies to: <formatter-settings>
+Values: <family-name> | <generic-family>
+Default: watermark-font-family
+watermark2-font-style
+Specifies the font style to the character string which you set to
+watermark2-text. Possible to specify normal or italic.
+Applies to: <formatter-settings>
+Values: normal | italic
+Default: normal
+watermark2-font-weight
+Specifies the font weight to the character string which you set to
+watermark2-text. Possible to specify normal, bold or the numerical value
+from 1 to 1000.
+Applies to: <formatter-settings>
+Values: normal | bold | <integer> from 1 to 1000
+Default: normal
+Formatter Settings
+watermark-text
+249
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 250===
+watermark2-text
+Displays the specified watermark text on each page. You will need
+to specify an appropriate watermark2-font-family according to the text
+you specify. Confirm it by outputting PDF. In addition, complex scripts
+such as Thai and Arabic cannot be specified. The text that cannot be
+outputted by a singl
+Applies to: <formatter-settings>
+Values: <string>
+Default: none
+white-space-collapse-mode
+The operation of white-space-collapse was corrected with AH Formatter
+V7. Specify as follows when you want the same operation as V6.
+6. Operates the same as AH Formatter V6.
+7. Adds the modified operation by AH Formatter V7.
+Applies to: <formatter-settings>
+Values: 6 | 7
+Default: 7
+zwsp-mode
+The operation of ZERO WIDTH SPACE (U+200B) was corrected with AH
+Formatter V6. It's compatible with V6 by default. Specify as follows
+when you want the same operation as V5.
+6. Operates the same as AH Formatter V5.
+7. Adds the modified operation by AH Formatter V6.
+Applies to: <formatter-settings>
+Values: 5 | 6
+Default: 6
+Formatter Settings
+watermark2-text
+250
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 251===
+<list-style-type>
+Specifies the character to use by list-style-type.
+Parent: <formatter-settings>
+Attributes: box | check | circle | diamond | disc | hyphen | square
+Values: <character>
+Defaults:
+‒
+box: U+25AB
+‒
+check: U+2713
+‒
+circle: U+25E6
+‒
+diamond: U+2666
+‒
+disc: U+2022
+‒
+hyphen: U+2043
+‒
+square: U+25AA
+<quotationmark>
+Changes the handling of Quotation Mark. Specify the language code
+for language, the character code of quotation marks for code, and specify
+one of the QU | OP | CL for quotetype. Only Western languages can be
+specified for the language code. CJK etc. cannot be specified.
+Parent: <formatter-settings>
+Attributes: language | code | quotetype
+Values: see above
+Defaults: none
+Formatter Settings
+<list-style-type>
+251
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 252===
+<script-chars>
+<space-end-punctuation>
+<space-start-punctuation>
+<space-between-digit-and-punctuation>
+<space-between-punctuation-and-digit>
+These objects are used to specify certain character and space mappings,
+especially for Asian languages. For details see the Online Manual of the
+AH XSL formatter (file: ahf-optset.html).
+Parent: <formatter-settings>
+<usercss>
+Specifies the CSS user stylesheet you want to add by <css>.
+Parent: <formatter-settings>
+Child: <css>
+<css>
+Specifies the path of the CSS user stylesheet.
+Parent: <usercss>
+Attribute: path
+Default: none
+<script-language-in-CJK>
+When the script specified to the script attribute appears in the sentence
+of CJK languages, the character string of the script is considered the
+language that is specified to the language attribute. For example:
+<script-language-in-CJK script="Latn" language="eng"/>
+The Latn character string that appears in Japanese or Chinese sentences
+can be recognized as English. If hyphenate="true" is specified, the
+hyphenation can be processed by considering this part as English.
+The CJK languages cannot be specified to language. When nothing is
+Formatter Settings
+<script-chars>
+252
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 253===
+specified to the language attribute, the language specification to the
+script attribute is canceled.
+Parent: <formatter-settings>
+Attributes: script, language
+Values: see above
+Defaults: none
+<multimedia>
+When specifying multimedia, such as audio or video as graphics, the
+setting of content-type is required. AH Formatter may sometimes
+not automatically recognize if a content-type other than “audio/*” or
+“video/*” formats indicates it is multimedia. For such content-type,
+specify audio, video or flash explicitly as follows:
+<multimedia flash="application/x-shockwave-flash"/>
+By default, “audio/*” is considered as audio, “video/*” as video,
+“application/x-shockwave-flash” as Flash.
+Parent: <formatter-settings>
+Attributes: video | audio | flash
+Defaults: see above
+<GS1-128>
+Registers the format of application identifier (AI) of GS1-128. Some
+formats of AI has been already registered, but you can specify when
+you change the format or the format is not registered. AI is a number
+with 2 to 4 digits. AI starting from 0 should be 2 digits. The last digit
+can be set as “*” if AI is a 3 or 4 digit number. For instance, AI="380*"
+indicates 3800 to 3809. The following formats can be specified to the
+format attribute:
+‒
+n3: 3-digit numbers
+‒
+x3: 3-digit arbitrary characters
+Formatter Settings
+<script-language-in-CJK>
+253
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 254===
+‒
+n-10: Numbers with greater than or equal to 1 and less than or equal
+to 10 digits.
+‒
+x3-10: Arbitrary characters with greater than or equal to 3 and less
+than or equal to 10 digits.
+For example, specify as follows:
+<GS1-128 AI="380*" format="n-15"/>
+For details see the Online Manual of the AH XSL formatter (file: ahf-
+barcode.html#GS1-128).
+Parent: <formatter-settings>
+Attributes: AI | format
+Values: see above
+Defaults: none
+<UAX50>
+Specifies the code point to code you change. The code point can be
+specified as follows:
+‒
+One character: ““” or “&#x201C;”, etc.
+‒
+4-digit hexadecimal numbers: 201C
+‒
+Set of 4-digit hexadecimal numbers: 202A - 202E
+Characters greater than or equal to U+10000 cannot be specified.
+U or R or V can be specified to SVO or MVO. It means that U renders
+upright, R rotates 90-degree clockwise. V is same as U, but when
+vertical writing glyph is designed to rotate 90-degree counterclockwise
+originally, it is displayed by rotating 90-degree clockwise. See also
+text-orientation-mode.
+Parent: <formatter-settings>
+Attributes: code | SVO | MVO
+Values: see above
+Defaults: none
+Formatter Settings
+<GS1-128>
+254
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 255===
+<unbreakable-words> 
+Lists the unbreakable words by the line break. The character string
+of each line will become unbreakable. For example, if you write as
+follows, two phrases will become unbreakable:
+<unbreakable-words>
+こんにちは
+Hello World
+</unbreakable-words>
+The leading and trailing white spaces (U+0009, U+0020) will be discarded.
+Consecutive white spaces (U+0009, U+0020) are grouped together and
+match consecutive white spaces (U+0009, U+000A, U+000D, U+0020) including
+line breaks. So taking the above example, any of the following will
+become unbreakable:
+Hello World
+Hello    World
+Hello
+World
+Because the first phrase found from the beginning of the character
+string is the target, if
+ABCD
+CDEF
+is specified, ABCD will be unbreakable for the character string of
+ABCDEFG. Since it is case sensitive, Abcd, etc. will not become
+unbreakable. Also, as AH Formatter tries to adopt as long a phrase
+as possible, if
+ABCD
+ABCDEF
+Formatter Settings
+<unbreakable-words>
+255
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 256===
+is specified, ABCDEF will become unbreakable for the character string
+of ABCDEFG. If
+cafe
+is specified, café and cafe&#x301; will not become unbreakable. To make
+all of these unbreakable, you should specify as follows:
+cafe
+café
+cafe&#x301;
+Note the following:
+‒
+This processing is performed for character string of input XML.
+In other words, it is performed before processing axf:normalize or
+axf:text-replace, etc. Therefore, unbreakable character strings may
+be processed by them.
+‒
+If a character string that causes ligature, for example, ffi is specified
+as unbreakable up to ff, ligature as ffi will not occur.
+Parent: <formatter-settings>
+Attributes: src
+src
+You can specify external XML for src. That XML looks the same as this
+element, but src cannot be specified.
+Applies to: <unbreakable-words>
+Values: <uri-specification>
+Default: none
+Formatter Settings
+<unbreakable-words>
+256
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 257===
+2.1.2 
+Font Settings
+<font-settings> 
+These settings are used for the fonts.
+Attributes: auto-fallback-font, barcode-text-font, default-font-family,
+emulated-italic, emulated-small-caps, fallback-glyph, font-selection-mode,
+font-stretch-mode, missing-font, missing-glyph, missing-glyph-all,
+Parent: <formatter-settings>
+Childs: <script-font>, <font-alias>
+auto-fallback-font
+Specifies whether to look for a fall back font automatically when a font
+with a glyph cannot be found in the font family which was specified by
+FO. See also Font Selection in the Technical Notes of the Online Manual
+to learn more about the fall back method.
+Applies to: <font-settings>
+Values: true | false
+Default: true
+barcode-text-font
+Specifies the font used when you add the text of an original code to the
+Linear Barcode with Barcode Generator Option of the Online Manual.
+Applies to: <font-settings>
+Values: see Linear Barcode in the Barcode Generator Option of the
+Online Manual.
+Default: none
+Font Settings
+<font-settings>
+257
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 258===
+default-font-family
+Specifies the default font family. Usually, it is one of the generic font
+families: serif, sans-serif, cursive, fantasy or monospace. See also Font
+Selection in the Technical Notes of the Online Manual.
+Applies to: <font-settings>
+Values: serif | sans-serif | cursive | fantasy | monospace
+Default: serif
+emulated-italic
+Specifies whether to report the error when italic is emulated in the
+selected font. Specify one of the following:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 0
+emulated-small-caps
+Specifies whether to report the error when small-caps is emulated in
+the selected font. Specify one of the following:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Font Settings
+default-font-family
+258
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 259===
+No error will be reported when small-caps-emulation-always="true" is
+specified.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 0
+fallback-glyph
+Specifies whether to report it or not when the glyph is found in a fall
+back font. When the glyph corresponding to the specified character in
+the font family is not found, if auto-fallback-font is specified, a fall back
+font will be looked for. The following either can be specified:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 1
+font-selection-mode
+Specifies the selection method of fonts. The following values can be
+specified:
+5. The setting of font-selection-strategy is disregarded 
+ and always considered auto.
+6. The first font that has a glyph is adopted.
+See also Font Selection in the Technical Notes of the Online Manual.
+Applies to: <font-settings>
+Font Settings
+emulated-small-caps
+259
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 260===
+Values: 5 | 6
+Default: 6
+font-stretch-mode
+Specifies whether the information on font-stretch is used when
+selecting fonts. The following values can be specified:
+5. The information on font-stretch will not be used. 
+ The operation is the same as AH Formatter V5.
+6. The information on font-stretch will be used.
+Applies to: <font-settings>
+Values: 5 | 6
+Default: 6
+missing-font
+Specifies whether to warn when a font is not found from the specified
+font family. The following either can be specified:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 1
+missing-glyph
+Specifies whether to warn when the glyph corresponding to the
+specified character is not found in the specified font family or the
+fallback font. The following either can be specified:
+Font Settings
+font-selection-mode
+260
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 261===
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 1
+missing-glyph-all
+Usually the report on missing-glyph is given only once to the same
+character. However, by specifying missing-glyph-all="true", the report
+can be given to all. Note that careless specification could cause huge
+amount of error. This setting is similarly applied to fallback-glyph as
+well.
+Applies to: <font-settings>
+Values: true | false
+Default: false
+<script-font>
+This element is used to specify the script and the generic fonts
+to be used for each language family, e.g. for languages with the
+Latin alphabet. For multilingual processing, repeat this specification
+according to the language requirements. In the default system setting,
+this element is set for a number of language families, for the languages
+with Latin alphabet without specification of the script attribute.
+Attributes: script, serif, sans-serif, monospace, cursive, fantasy, fallback
+Parent: <font-settings>
+Font Settings
+missing-glyph
+261
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 262===
+script
+Specifies the script codes for multilingual setting. The available scripts
+conform to ISO 15924. However, the AH Formatter V7.2 does not
+support all scripts. The scripts that can be specified here are scripts
+that are indicated in Scripts and Languages in the Overview of the
+Online Manual excluding Hira, Kana, and Hani. For generic fonts you
+may omit the setting of the script or specify as script="".
+Applies to: <script-font>
+Values: see Scripts and Languages in the Overview of the Online
+Manual.
+Default: none
+serif
+Specifies the generic serif font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+sans-serif
+Specifies the generic sans-serif font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+monospace
+Specifies the generic monospace font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+Font Settings
+script
+262
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 263===
+cursive
+Specifies the generic cursive font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+fantasy
+Specifies the generic font for fantasy when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+fallback
+Specifies the fall back font of the script when specified by the script.
+Two or more fonts can be enumerated by comma-separated values.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+<font-alias> 
+Formats the font name src (source) appearing in FO by replacing with
+dst (destination). This is achieved by specifying an arbitrary font name
+for src and dst. This makes it possible to substitute an unknown font
+in a document made in a different environment, without modifying the
+document. However, in the following sample:
+<font-alias src="A" dst="B">
+<font-alias src="B" dst="C">
+“A” would never be replaced with “C”. Moreover, the setting for <font-
+alias> doesn't affect the font name in the Option file.
+Font Settings
+cursive
+263
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 264===
+Parent: <font-settings>
+Attributes: src, dst
+2.1.3 
+PDF Output Settings
+<pdf-settings> 
+The PDF settings apply to the PDF output of the AH XSL Formatter. For
+the attributes not linked here, please refer to the section “PDF Output
+Settings” in the AH XSL Formatter Online Manual (file: ahf-optset.html).
+Properties: allow-deprecated-annotation, allow-embedding-lower-versions,
+allow-javascript, allow-nest-alt-text, check-tag-relationship, color-
+compression, color-compression-default, color-compression-minimum,
+color-conversion, color-downsampling, color-downsampling-above-dpi,
+color-downsampling-target-dpi, color-downsampling-default, color-
+downsampling-above-dpi-default, color-downsampling-target-dpi-default,
+color-downsampling-minimum, color-downsampling-above-dpi-minimum,
+color-downsampling-target-dpi-minimum, color-jpeg-quality, color-jpeg-
+quality-default, color-jpeg-quality-minimum, default-output-intent,
+embed-all-fonts, embed-font-encoding, embed-std-output-intent, embed-subset-
+font-percentage, encrypt-metadata, encryption-level, EPS-processor, error-
+on-embed-fault, error-on-missing-glyph, error-on-pdfx-fault, fallback-
+alttext, ghostscript, grayscale-compression, grayscale-compression-
+default, grayscale-compression-minimum, grayscale-downsampling, grayscale-
+downsampling-above-dpi, grayscale-downsampling-target-dpi, grayscale-
+downsampling-default, grayscale-downsampling-above-dpi-default, grayscale-
+downsampling-target-dpi-default, grayscale-downsampling-minimum, grayscale-
+downsampling-above-dpi-minimum, grayscale-downsampling-target-dpi-minimum,
+grayscale-jpeg-quality, grayscale-jpeg-quality-default, grayscale-jpeg-
+Font Settings
+<font-alias>
+264
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 265===
+quality-minimum, gs-options, image-color-profile, import-annotation-types,
+import-tagged-pdf, joboptions, linearized, mediabox-origin-zero, monochrome-
+compression, monochrome-compression-default, monochrome-compression-minimum,
+monochrome-downsampling, monochrome-downsampling-above-dpi, monochrome-
+downsampling-target-dpi, monochrome-downsampling-default, monochrome-
+downsampling-above-dpi-default, monochrome-downsampling-target-dpi-default,
+monochrome-downsampling-minimum, monochrome-downsampling-above-dpi-minimum,
+monochrome-downsampling-target-dpi-minimum, multimedia-treatment,
+new-tagging-mode, no-accessibility, no-adding-or-changing-comments, no-
+assemble-doc, no-changing, no-content-copying, no-fill-form, object-
+compression, object-compression-default, object-compression-minimum,
+overprint, owner-password, page-labels, pages-max-kids, pass-through,
+pass-through-default, pass-through-minimum, pdf-version, printing-
+allowed, rasterize-resolution, real-value-limit, real-value-limit-modify,
+reverse-page, tagged-pdf, text-and-lineart-compression, text-and-lineart-
+compression-default, text-and-lineart-compression-minimum, transparency,
+transparency-color-space, use-launch-for-local-file, user-password, xmp-
+padding
+Parent: <formatter-config>
+Child: <embed-font>
+allow-deprecated-annotation
+In PDF2.0, some annotations (Movie, Sound) are deprecated. These
+cannot be output. If you specify true, you will be able to output these in
+PDF2.0.
+Applies to: <pdf-settings>
+Values: false | true
+Default: false
+PDF Output Settings
+<pdf-settings>
+265
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 266===
+allow-embedding-lower-versions
+In PDF2.0, embedding of PDF1.X is deprecated. If you specify true, you
+will be able to embed PDF1.X in PDF2.0.
+Applies to: <pdf-settings>
+Values: false | true
+Default: false
+embed-all-fonts
+Specifies whether or not to embed in the PDF all fonts that are
+embeddable, with one of the following values:
+‒
+false: Only fonts specified in <embed-font> are embedded.
+‒
+true: All fonts that can be embedded will be embedded, except for
+the Standard 14 Fonts.
+‒
+base14: All fonts that can be embedded will be embedded, including
+the Standard 14 Fonts.
+In the GUI, this can be specified by selecting the Embed All
+Embeddable Fonts option.
+Applies to: <pdf-settings>
+Values: false | true | base14
+Default: true
+EPS-processor
+Specifies whether to output PDF after changing into PDF using an
+external processor when outputting EPS to PDF in the formatted result.
+The value is case-insensitive.
+‒
+none
+‒
+distiller
+‒
+ghostscript
+These have the following meanings:
+‒
+none: Use nothing. The same way in the past.
+PDF Output Settings
+allow-embedding-lower-versions
+266
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 267===
+‒
+distiller: Use Adobe Distiller in the environment where Adobe
+Distiller is installed. acrodist.exe is used. Effective only with the
+Windows version. PS support at this time has a little restrictions.
+•
+PS-Adobe-2.0 or later required.
+•
+%%BeginProlog and %%EndProlog should be included.
+☞ joboptions
+‒
+ghostscript: Use Ghostscript in the environment where Ghosts‐
+cript is installed. Use gswin32c.exe with the Windows version (use
+gswin64c.exe with Windows 64-bit) and use gs with non-Windows.
+Since the program is invoked by fork() etc. and used, there is no
+problem with GPL license.
+☞ ghostscript
+Invalid in the environment where each processor is not installed.
+Moreover, it's necessary to set the PATH etc. of the program to use.
+Applies to: <pdf-settings>
+Values: none | ghostscript | distiller
+Default: none
+ghostscript 
+When converting EPS into PDF using Ghostscript, the full path to
+Ghostscript can be specified. For example, specify as ghostscript="/usr/
+local/bin/gs". Thereby, Ghostscript can be invoked even if the PATH
+does not set to Ghostscript. Specify gswin32c.exe in Windows version
+(specify gswin64c.exe with Windows 64-bit).
+Applies to: <pdf-settings>
+Values: path to Ghostscript program
+Default: none
+PDF Output Settings
+EPS-processor
+267
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 268===
+gs-options
+When converting EPS into PDF using Ghostscript, AH Formatter V7.2
+specifies the following parameters and starts Ghostscript by default:
+-dPDFSETTINGS=/printer
+-dNOPAUSE
+-dBATCH
+-dSAFER
+-sDEVICE=pdfwrite
+-dDEVICEWIDTHPOINTS=%width
+-dDEVICEHEIGHTPOINTS=%height
+-dEPSFitPage
+-dCompatibilityLevel=1.3
+-dAutoRotatePages=/None
+-q
+-sOutputFile=%temp
+-c
+.setpdfwrite
+-f
+%eps
+The next four starting with % are replaced by their respective values by
+AH Formatter V7.2.
+‒
+%width: Width of EPS
+‒
+%height: Height of EPS
+‒
+%eps: Input EPS
+‒
+%temp: Temporary Output File
+You can specify any parameter with gs-options. Specify multiple
+parameters separated by U+000A. The gs-options setting completely
+replaces the above settings and launches Ghostscript. The setting of
+-sOutputFile is always considered to be -sOutputFile=%temp. If %temp is not
+included, it will be added. If %eps is not included, it will be added at
+PDF Output Settings
+gs-options
+268
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 269===
+the end. The operation is not guaranteed when invalid parameters are
+specified.
+Applies to: <pdf-settings>
+Values: if necessary, other parameters, separated by the character
+U+000A.
+Default: none
+import-annotation-types
+Annotations contained in the embedded PDF is embeddable directly
+in PDF. Specify the following character strings (case insensitive)
+separated by white spaces:
+All | Text | Link | FreeText | Line | Square | Circle | Polygon | PolyLine |
+Highlight | Underline | Squiggly | StrikeOut | Stamp | Caret | Ink | Popup |
+FileAttachment | Sound | Movie | Screen | 3D | RichMedia | Other
+Specify Other when you embed annotations with no type written.
+When All is specified, all the annotations are embedded. In GUI, it
+can be specified by selecting the Import All Annotations option. For more
+details, see also PDF Embedding in PDF Output of the Online Manual.
+Applies to: <pdf-settings>
+Values: see above
+Default: none
+import-tagged-pdf
+Specifies whether to permit embedding tagged PDF in tagged PDF. If
+true is specified, the tagged PDF is embedded “as is” without producing
+an error. In GUI, you can change the setting at Allow Importing Tagged
+PDF. For more details, see also PDF Embedding in PDF Output of the
+Online Manual.
+Applies to: <pdf-settings>
+Values: false | true
+PDF Output Settings
+gs-options
+269
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 270===
+Default: false
+multimedia-treatment
+Specifies whether to embed multimedia (see Multimedia in PDF Output
+of the Online Manual) in PDF in case of axf:multimedia-treatment="auto",
+with one of the following values:
+‒
+embed
+‒
+absolute-link
+‒
+relative-link
+‒
+richmedia
+‒
+richmedia-windowed
+Applies to: <pdf-settings>
+Values: embed | absolute-link | relative-link | richmedia | richmedia-
+windowed
+Default: embed
+new-tagging-mode
+If true is specified, when explicitly specifying an empty string such
+as axf:pdftag="''", that element does not create a tag but belongs to
+the tag to which the parent area belongs. In addition, the Role Map is
+also enabled, and maps from nonstandard tag names to standard tag
+names are valid. Specifying axf:pdftag="''" on the root element has no
+effect since the root element does not have a parent: a Document tag is
+always created.
+Applies to: <pdf-settings>
+Values: true | false
+Default: false
+PDF Output Settings
+import-tagged-pdf
+270
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 271===
+overprint
+Specifies the overprint. Any values of axf:overprint other than auto can
+be specified.
+Applies to: <pdf-settings>
+Values: see axf:overprint
+Default: none
+pdf-version
+Specifies the version of the PDF to create with one of the following
+values:
+‒
+PDF1.3
+‒
+PDF1.4
+‒
+PDF1.5 (system setting)
+‒
+PDF1.6
+‒
+PDF1.7 (can be read with Adobe Acrobat Reader, version 8.0 or hig‐
+her)
+‒
+PDF2.0 (compliant with ISO 32000-2:2017)
+‒
+PDF/X (optimized for print output) with the variants 1a:2001, 3:2002,
+1a:2003, 2:2003, 3:2003, 4:2010 and 4p:2010 (ISO 15930-7:2010)
+‒
+PDF/A (optimized for archiving) with the variants 1a:2005 and 1b:2005)
+‒
+PDF1.4/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF1.5/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF1.6/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF1.7/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF/UA (Universal Accessibility; optimized for facilitated content ac‐
+cessibility). Alternative textual descriptions (required for graphics
+PDF Output Settings
+overprint
+271
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 272===
+and numeric formulas) can be specified with the axf:alttext exten‐
+sion, links with axf:annotation-contents:
+PDF1.5/UA-1:2014
+PDF1.6/UA-1:2014
+PDF1.7/UA-1:2014
+In GUI, it can be specified by selecting the PDF Version option.
+Applies to: <pdf-settings>
+Values: see the versions above
+Default: PDF1.5
+tagged-pdf
+Specifies whether to make the Tagged PDF file or not. PDF may not
+be able to be tagged depending on the PDF versions. In this case this
+setting will be ignored. In GUI, it can be specified by selecting the
+Tagged PDF option.
+Applies to: <pdf-settings>
+Values: true | false
+Default: false
+<embed-font>
+Specifies the fonts that are embedded in the PDF. This element
+can be specified without limit and is effective only when
+embed-all-fonts="false" is specified. When embed-all-fonts="false" is
+specified and this element is not specified, only the glyphs of the
+characters that are needed in the PDF output are embedded. When
+this element is specified and if the font indicated here is used within
+the formatted results, the glyph of the character currently used will
+be embedded. For a font that is not specified, embedding is performed
+only for the glyphs of the characters that are needed in the PDF output.
+Parent: <pdf-settings>
+PDF Output Settings
+pdf-version
+272
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 273===
+Attributes: font
+font
+The value of this attribute must be the font name of a font
+whose embedding is allowed. Licensed fonts may be declared as non-
+embeddable. The PDF generator of the AH XSL Formatter strictly
+observes this restriction.
+Applies to: <embed-font>
+Wert: <family-name>
+Default: none
+2.1.4 
+PostScript Output Settings
+<ps-settings> 
+These settings are used for PostScript® Output (see PostScript® Output
+in Output Formats of the Online Manual).
+Parent: <formatter-config>
+Attributes: noembed-font, transparency, use-launch-for-local-file
+2.1.5 
+SVG Output Settings
+<svg-settings> 
+These settings are used for SVG Output (see SVG Output in Output
+Formats of the Online Manual).
+Parent: <formatter-config>
+Attributes: copy-image-path, copy-image-prefix, create-copy-image-path,
+format, gzip-compression, image-conversion, image-processing, jpeg-quality,
+PostScript Output Settings
+<embed-font>
+273
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 274===
+rename-copy-image, singlefile, singlefile-number, rasterize-resolution, svg-
+version
+2.1.6 
+Text Output Settings
+<text-settings> 
+These settings are used for TEXT Output (see TEXT Output in Output
+Formats of the Online Manual).
+Parent: <formatter-config>
+Attributes: encoding, eol-marker
+encoding
+Specifies the encoding of the output text. The following encodings
+are available (case insensitive): UTF-8 (system setting), UTF-16, UTF-16BE,
+UTF-16LE, UTF-32, UTF-32BE, UTF-32LE, ISO-10646-UCS-2, ISO-10646-UCS-4,
+ANSI_X3.4, ISO_646.irv, ISO646-US, US-ASCII, ISO_8859-1, latin1, Windows-31J,
+Shift_JIS, EUC-JP, ISO-2022-JP. Endian of UTF-16, UTF-32 etc. depends on
+the processor in the operating system.
+Applies to: <text-settings>
+Values:see above
+Default: UTF-8
+eol-marker
+Specifies the linefeed code of the output text. The following can be
+specified (case insensitive):
+‒
+CRLF
+‒
+LF
+‒
+CR
+SVG Output Settings
+<svg-settings>
+274
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 275===
+Applies to: <text-settings>
+Values: CRLF | LF | CR
+Default: CRLF in Windows, LF in others.
+2.1.7 
+MathML Settings
+<mathml-settings> 
+These settings are used for MathML (see MathML Conformance in
+Conformance of the Online Manual).
+Parent: <formatter-config>
+Attributes: mathDisplay, scriptsizemultiplier,
+scriptsizemultiplierMscarries, scriptminsize, scriptmaxsize,
+largeopmultiplier, largeopmultiplierInt, mathsizeSmall, mathsizeBig,
+enQuad, emQuad, enSpace, emSpace, thinSpace, hairSpace,
+veryverythinmathspace, verythinmathspace, thinmathspace, mediummathspace,
+thickmathspace, verythickmathspace, veryverythickmathspace, accentOffset,
+defaultLSpace, defaultRSpace, defaultMinsize, defaultLineleading,
+mathLeading, linebreakingHeightAdjust, indentingnewline, applyFunctionSpace,
+invisibleTimesSpace, scriptAlignMode, italicSubscriptShift,
+integralSubscriptShift, integralSuperscriptShift, integralUnderOverShift,
+thinLine, mediumLine, thickLine, fracLineExtend, fracLineSpace,
+fracLineOverGap, fracLineUnderGap, bevelledAngle, bevelledHeight,
+rootPosition1x, rootPosition1y, rootPosition2x, rootPosition2y,
+rootPosition3x, rootPosition3y, rootPosition4x, rootPosition4y,
+rootThickness1, rootThickness2, rootThickness3, rootThickness4,
+rootRoundRadius, encloseLineThickness, encloseCircle, roundedboxRadius,
+columnspacing, rowspacing, framespacing, columnlineThickness,
+rowlineThickness, framelineThickness, charspacingTight, charspacingMedium,
+Text Output Settings
+eol-marker
+275
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 276===
+charspacingLoose, overlapMsline, mslineOverGap, mslineUnderGap,
+crossoutThickness, errorColor, errorBackground, escapingMs, italicizeMi,
+stylisticMi, substKeyboardCharacters, pseudoScripts, inheritFontweight,
+enableOpenTypeMATH, exceptOpenTypeMATHVariants, mathmlSettingsMode
+Childs: <variant-font>, <operator-dictionary>
+<variant-font>
+Specifies the font corresponding to mathvariant. A ny number of this
+element can be specified. See also Fonts for Math Expression in the
+Online Manual.
+Parent: <mathml-settings>
+Attributes: mathvariant, fontfamily, center-shift
+Child: <font-entry>
+<font-entry>
+Specifies the font that corresponds to the script or Unicode Range.
+This setting can change a part of fonts specified by fontfamily of
+<variant-font>. Any number of this element can be specified.
+Either script or unicode-range must be specified. The effect is not
+guaranteed when both are specified.
+Parent: <variant-font>
+Attributes: fontfamily, script, unicode-range, mathvariant, center-shift
+<operator-dictionary>
+operator-dictionary is specified in order to change the contents of
+the default operator dictionary. Any number of this element can be
+specified and is evaluated in order. See also MathML Conformance in
+Conformance of the Online Manual to learn more about the operator
+dictionary.
+Parent: <mathml-settings>
+MathML Settings
+<mathml-settings>
+276
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 277===
+Attributes: src
+Child: <entry>
+<entry>
+Any number of this element can be specified and is evaluated in order.
+If the setting is the same, latter one will take precedence. The default
+value is the one when the new unregistered operator is specified. When
+the operator is already registered, omitted attribute values will not
+be changed. <entry> is disregarded when src of <operator-dictionary> is
+specified.
+Parent: <operator-dictionary>
+Attributes: operator, form, priority, lspace, rspace, minsize, maxsize, accent,
+fence, separator, stretchy, symmetric, largeop, movablelimits, linebreakstyle
+2.1.8 
+CGM Settings
+<cgm-settings> 
+These settings are used for CGM (see CGM Conformance in
+Conformance of the Online Manual).
+Parent: <formatter-config>
+Attributes: issue-unknown-element, issue-unsupported-element, default-line-
+cap, default-edge-cap, default-line-join, default-edge-join, default-mitre-
+limit, default-restricted-text-type, fallback-font, aci
+CGM Settings
+<operator-dictionary>
+277
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 278===
+2.1.9 
+XSLT Settings
+<xslt-settings> 
+These settings are used for XSLT Processor.
+Parent: <formatter-config>
+Attributes: msxml, msxmlver, command, param-option
+Childs: <param>, <stylesheet>, <msxml>
+msxml
+Specifies whether to use MSXML or not. If true is specified, MSXML
+is used as an XSLT Processor. Specification of command is disregarded at
+this time. If false is specified, the external XSLT Processor specified
+from command will be used, but when nothing is specified from command,
+it is considered that true is specified and MSXML is used. The version
+of MSXML actually used can be checked in the GUI on the XSLT
+page of the Format Option Setting Dialog. This setting is ignored in
+non-Windows environment.
+Applies to: <xslt-settings>
+Values: true | false
+Default: true
+msxmlver
+Specifies the maximum version of MSXML used internally when
+msxml="true" is specified. Any version from 6 to 3 can be specified.
+For example, when 5 is specified, AH Formatter searches MSXML in
+order of MSXML5 → MSXML4 → MSXML3 and adopts the first found
+MSXML. If nothing is specified or the specified value is incorrect (such
+as 0), the version will be considered 6. This setting is effective only with
+Windows version.
+Applies to: <xslt-settings>
+XSLT Settings
+<xslt-settings>
+278
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 279===
+Values: true | false
+Default: 0
+command
+The command line of the External XSLT Processor is specified here. The
+command line strings must include at least three identifiers, %1, %2 and
+%3.
+‒
+%1: XML document
+‒
+%2: XSL stylesheet
+‒
+%3: XSLT Output File
+‒
+%param: Parameter of xsl:param
+If nothing is specified, or “@MSXML” is specified, the external processor
+is not used but the internal processor, MSXML is used. This setting
+is effective only with Windows version. It's an initial setting of XSLT
+Processor with all kinds of interfaces. If nothing is specified in non-
+Windows environment, XSLT transformation is not performed.
+Applies to: <xslt-settings>
+Values: a command line for the XSLT processor
+Default: none
+param-option
+Specifies the parameter type of xsl:param given to the external XSLT
+Processor. The strings must include at least two identifiers, %p and %v.
+These values are as follows:
+‒
+%p: Value of name of <param>
+‒
+%v: Value of value of <param>
+These values affect the part of %param in the command strings. When two
+or more <param>s are specified, they are divided by the white space and
+repeated.
+Applies to: <xslt-settings>
+XSLT Settings
+msxmlver
+279
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 280===
+Values: see above
+Default: none
+<param>
+Parent: <xslt-settings>
+Attributes: name, value
+name
+Specifies the parameter name of xsl:param for XSLT Processor.
+Applies to: <param>
+Values: see above
+Default: none
+value
+Specifies the parameter value of xsl:param for XSLT Processor. When
+the value includes a white space, since the quotation marks will not be
+processed, explicitly enclose in quotation marks.
+Applies to: <param>
+Values: see above
+Default: none
+<stylesheet>
+Parent: <xslt-settings>
+Attributes: ns, href
+ns
+href
+Possible to specify the stylesheet applied to a specific XML document.
+Specifies the name space of the XML document by ns, and specifies
+XSLT Settings
+param-option
+280
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 281===
+the URI of the stylesheet by href. The following shows the example of
+XHTML and WordML:
+<stylesheet ns="http://www.w3.org/1999/xhtml" href="xhtml2fo.xsl"/>
+<stylesheet ns="http://schemas.microsoft.com/office/word/2003/wordml"
+   href="[WordMLToFO install directory]/WordMLToFO.xsl"/>
+If the XML document has the name space specified here, it can be
+formatted by itself, without specifying the stylesheet. If the stylesheet
+is specified when formatting or the stylesheet is specified in the XML
+document, these are adopted and the setting here will be ignored.
+Applies to: <stylesheet>
+Values: see above
+Default: none
+<msxml>
+Parent: <xslt-settings>
+Attributes: name, value
+name
+value
+Specifies the property of MSXML when msxml="true" is specified. The
+property name is specified by name and the value is specified by value.
+For the moment, only true or false can be specified as value. That is,
+the property which needs the other value cannot be specified. There are
+two types of properties available.
+‒
+Properties specified by the setProperty() method like,
+setProperty("AllowXsltScript", true);.
+‒
+Properties specified by the value directly like,
+resolveExternals = true;.
+name interpreted as the latter one are as follows:
+‒
+preserveWhiteSpace
+XSLT Settings
+ns
+281
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 282===
+‒
+validateOnParse
+‒
+resolveExternals
+In any case other than these, the value is set via the setProperty()
+method. The character string of name is not checked. It is considered that
+the following are set as default:
+<msxml name="preserveWhiteSpace" value="true"/>
+<msxml name="validateOnParse" value="false"/>
+<msxml name="resolveExternals" value="true"/>
+<msxml name="ServerHTTPRequest" value="true"/>
+<msxml name="ProhibitDTD" value="false"/>>
+<msxml name="AllowDocumentFunction" value="true"/>
+<msxml name="AllowXsltScript" value="false"/>
+From MSXML6.0, resolveExternals became ResolveExternals (AH
+Formatter V7.2 accepts both). Also, the default value of this is false
+when external-entity="false" is specified.
+See also MSXML Security Overview. The settings are ignored with
+non-Windows versions.
+Applies to: <msxml>
+Values: see above
+Default: none
+Suppose XSLT setting is as follows:
+.............................................................................
+<xslt-settings command="xslt -o &#34;%3&#34; &#34;%1&#34; &#34;%2&#34;
+%param" param-option="%p=%v">
+   <param name="foo" value="123"/>
+   <param name="bar" value="&#34;Hello, World&#34;"/>
+</xslt-settings>
+.............................................................................
+XSLT Settings
+name
+282
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 283===
+XSLT Processor executes as follows in order to transform file.xml and
+file.xsl into file.fo:
+.............................................................................
+xslt -o "file.fo" "file.xml" "file.xsl" foo=123 bar="Hello, World"
+.............................................................................
+As described in the example here, the actual file name given to %1 or %2
+includes white space, it's necessary to enclose the file name with quotation
+mark, “&#34;”.
+2.1.10 
+Analyzer Settings
+<analyzer-settings> 
+These settings are used for automated analysis of the Area Tree (see
+Automated Analysis in Features of the Online Manual).
+Parent: <formatter-config>
+Attributes: analyze, end-blank-pages, end-blank-pages-limit, hyphen,
+hyphen-limit, line-start-end, line-start-limit, line-start-repeat-limit,
+line-end-limit, line-end-repeat-limit, lines-after, lines-before,
+page-widow, page-widow-limit-em, page-widow-limit-percent, paragraph-widow,
+paragraph-widow-limit-em, paragraph-widow-limit-percent, river, river-zone,
+unbalanced-spread, unbalanced-spread-limit, white-space
+analyze
+Specifies whether or not to perform analysis checks.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+XSLT Settings
+<analyzer-settings>
+283
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 284===
+end-blank-pages
+Specifies whether or not to analyze the number of blank pages at the
+end of the document.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+end-blank-pages-limit
+Allowed number of blank pages at the end of document.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 2
+hyphen
+Specifies whether or not to analyze the number of consecutive lines
+that end with a hyphen.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+hyphen-limit
+Allowed number of consecutive lines that end with a hyphen.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 3
+line-start-end
+Specifies whether or not to analyze consecutive lines that start, or that
+end, with the same word.
+Applies to: <analyzer-settings>
+Analyzer Settings
+end-blank-pages
+284
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 285===
+Values: false | true
+Default: true
+line-start-limit
+Maximum number of characters to compare at the start of a line.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 8
+line-start-repeat-limit
+Allowed number of lines that start with the same word.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 2
+line-end-limit
+Maximum number of characters to compare at the end of a line.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 8
+line-end-repeat-limit
+Allowed number of lines that end with the same word.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 2
+lines-after
+Specifies whether or not to analyze the number of lines after a block.
+Applies to: <analyzer-settings>
+Analyzer Settings
+line-start-end
+285
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 286===
+Values: false | true
+Default: true
+lines-before
+Specifies whether or not to analyze the number of lines before a block.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+page-widow
+Specifies whether or not to analyze pages that start with a page-level
+widow.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+page-widow-limit-em
+Minimum width, in 'em' for the current block, of a widow line at the
+start of a page. If the value is 0, this setting is ignored. A negative value
+is treated as 0.
+Applies to: <analyzer-settings>
+Values: <number>
+Default: 2.5
+page-widow-limit-percent
+Minimum width, in percent of the current block width, of a widow line
+at the start of a page. If the value is 0, this setting is ignored. A negative
+value is treated as 0.
+Applies to: <analyzer-settings>
+Analyzer Settings
+lines-after
+286
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 287===
+Values: <integer>
+Default: 15
+paragraph-widow
+Specifies whether or not to analyze paragraphs that end with a
+paragraph-level widow.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+paragraph-widow-limit-em
+Minimum width, in 'em' for the current block, of a widow line at the
+start of a paragraph. If the value is 0, this setting is ignored. A negative
+value is treated as 0.
+Applies to: <analyzer-settings>
+Values: <number>
+Default: 2.5
+paragraph-widow-limit-percent
+Minimum width, in percent of the current block width, of a widow line
+at the start of a paragraph. If the value is 0, this setting is ignored. A
+negative value is treated as 0.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 15
+river
+Either the maximum allowed cumulative width, in 'em' or as an absolute
+length, for a river of white-space within a block or the value none to
+disable river analysis.
+Analyzer Settings
+page-widow-limit-percent
+287
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 288===
+Applies to: <analyzer-settings>
+Values: <length> | <integer>em | none
+Default: 1em
+river-zone
+Maximum allowed width between two non-overlapping spaces on
+consecutive lines for the spaces to be considered a part of the same
+river. This setting is ignored when river is none.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 0
+unbalanced-spread
+Specifies whether or not to analyze unbalanced spreads.
+Applies to: <analyzer-settings>
+Values: false | true
+Default: true
+unbalanced-spread-limit
+Allowed height difference, in 'pt', for an unbalanced spread. A negative
+value is treated as 0.
+Applies to: <analyzer-settings>
+Values: <integer>
+Default: 0
+white-space
+Either the maximum width, in 'em' or as an absolute length, for white-
+space between consecutive words on a line or the value none to disable
+white-space analysis.
+Applies to: <analyzer-settings>
+Analyzer Settings
+river
+288
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 289===
+Values: <length> | <integer>em | none
+Default: 0.40em
+2.1.11 
+Example of an Option Setting File
+.............................................................................
+<?xml version="1.0"?>
+<formatter-config>
+   <formatter-settings
+      default-page-width="210mm"
+      default-page-height="297mm"
+      default-font-size="10pt"
+      normal-line-height="1.2"
+      default-color="#000000"
+      border-thin-width="1pt"
+      border-medium-width="3pt"
+      border-thick-width="5pt"
+      pxpi="96"
+      default-lang=""
+      default-CJK="ja"
+      punctuation-trim="true"
+      text-autospace="true"
+      vertical-underline-side="auto"
+      punctuation-spacing="0.5"
+      text-autospace-width="0.25"/>
+   <pdf-settings
+      embed-all-fonts="false"
+Analyzer Settings
+white-space
+289
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 290===
+      error-on-embed-fault="false"
+      user-password=""
+      master-password=""
+      no-printing="false"
+      no-changing="false"
+      no-content-copying="false"
+      no-adding-or-changing-comments="false"
+      color-compression="auto"
+      color-jpeg-quality="80"
+      text-and-lineart-compression="true"
+      use-launch-for-local-file="true"
+      rasterize-resolution="108">
+      <embed-font font="Arial"/>
+      <embed-font font="Courier New"/>
+   </pdf-settings>
+   <font-settings default-font-family="serif">
+      <script-font
+         serif="Times New Roman"
+         sans-serif="Arial"
+         monospace="Courier New"
+         cursive="Times New Roman"
+         fantasy="Times New Roman"/>
+      <script-font
+         script="Jpan"
+         serif="IPAMincho"
+         sans-serif="IPAGothic"
+         monospace="IPAMincho"/>
+      <script-font
+         script="Hang"
+         serif="Batang"
+Example of an Option Setting File
+290
+© 2021 MID/Information Logistics ‒ All rights reserved
+

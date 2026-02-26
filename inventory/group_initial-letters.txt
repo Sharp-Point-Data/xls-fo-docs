@@ -1,0 +1,271 @@
+### axf:initial-letters
+
+Creates drop initials.
+
+A dropped initial is selected from the first text by tracing the children
+of the element for which axf:initial-letters is specified. axf:initial-
+letters is ignored if the following elements appear before text:
+‒
+<fo:block> with axf:initial-letters specified
+‒
+<fo:block> within inline elements
+‒
+Block elements other than <fo:block>
+‒
+<fo:inline-container>
+‒
+<fo:bidi-override>
+‒
+<fo:page-number>
+‒
+<fo:page-number-citation>
+‒
+<fo:page-number-citation-last>
+‒
+<axf:footnote-number>
+‒
+<axf:footnote-number-citation>
+Values have the following meanings:
+‒
+normal: Does nothing.
+‒
+<number>: Specifies the letter size of a dropped initial by number of
+lines. When the value is less than 1, it is invalid.
+‒
+<length>: Specifies the letter size of a dropped initial by actual di‐
+mensions. The specified dimension is converted to how many lines
+it corresponds to. When it is less than 1 line, it is invalid.
+‒
+<integer>: Specifies the number of lines a dropped initial should
+sink. When the value is omitted, it is considered a value obtained by
+rounding down the number of lines to an integer. When the value is
+less than 1, it is invalid.
+‒
+drop: Equivalent to specifying a value of the number of lines roun‐
+ded down to an integer to <integer>.
+‒
+raise: Equivalent to specifying 1 to <integer>.
+‒
+adjacent: Indents all lines in the block, not just the letter of a drop‐
+ped initial.
+
+‒
+<integer2>: Similar to adjacent, but indents the lines after the part of
+dropped initial by the specified number of lines. When the value is
+omitted, it is considered 0. When the value is negative, it is invalid.
+A float with axf:float-x="start" within the number of lines of the
+dropped initial is placed on the start side of the dropped initial when
+its anchor is included at the start of the block. Otherwise, it will be
+pushed out and placed on the after side of the dropped initial. ☞
+axf:initial-letters-start-intrusion.
+For more details see axf:initial-letters in XSL/CSS Extensions in
+Features of the Online Manual.
+Applies to: <fo:block>
+Values: normal | [[<number> | <length>] <integer>? | [<number> |
+<length>] && [drop | raise]] [adjacent | <integer2>]?
+Initial: normal
+Inherited: no
+
+---
+
+### axf:initial-letters-color
+
+Specifies the text color of a dropped initial.
+Applies to: <fo:block>
+Values: <color>
+Initial: the value of the color property
+Inherited: yes
+
+---
+
+### axf:initial-letters-end-indent
+
+Specifies the space on the end side of a dropped initial.
+Multiple values can be specified. The first value applies to the first line
+and the second value applies to the next line. The last value applies
+after the corresponding line.
+Applies to: <fo:block>
+Values: <length>+
+Initial: 0pt
+Inherited: yes
+
+---
+
+### axf:initial-letters-first-line-head-height
+
+Specifies where the height of a dropped initial should be adjusted.
+CAUTION: This property is not effective when the document is vertical
+writing or CJK.
+Values have the following meanings:
+‒
+cap-height: Adjusts the height to cap-height on the first line. For an
+illustrated example, see axf:initial-letters-first-line-head-height in
+the Online Manual.
+‒
+x-height: Adjusts the height to x-height on the first line. For an
+illustrated example, see axf:initial-letters-first-line-head-height in
+the Online Manual.
+‒
+auto: Adjusts the height to x-height under the following conditions:
+
+•
+When the next character of a dropped initial character or image
+is lowercase small-caps (provided that the character or image to
+be a dropped initial and the next character belong to the same
+element).
+•
+When the number of lines of a dropped initial is equal to the
+number of lines a dropped initial should sink (provided that the
+number of lines is specified without units).
+Otherwise, adjusts to cap-height.
+Applies to: <fo:block>
+Values: cap-height | x-height | auto
+Initial: auto
+Inherited: yes
+
+---
+
+### axf:initial-letters-leading-punctuation
+
+Specifies the size of the leading punctuation of a dropped initial, etc.
+Values have the following meanings:
+‒
+normal: Does nothing special.
+‒
+hide: Does not display the leading punctuation.
+‒
+<length>: Specifies the font size of the leading punctuation.
+‒
+<color>: Specifies the color of the leading punctuation.
+
+Applies to: <fo:block>
+Values: normal | hide | [<length> || <color>]
+Initial: normal
+Inherited: yes
+
+---
+
+### axf:initial-letters-leading-punctuation-position
+
+Specifies the position of the leading punctuation of a dropped initial in
+the inline progression direction.
+Values have the following meanings:
+‒
+normal: Does nothing special.
+‒
+hang: Protrudes the leading punctuation to the start side.
+axf:hanging-punctuation="start" protrudes one-character punctuation,
+but the hang setting protrudes all punctuations.
+‒
+intrude: Penetrates and overlaps the leading punctuation with the
+dropped initial.
+‒
+<length>: Adjusts the position of the leading punctuation. hang or
+intrude must be specified. Shifts the punctuation from that position
+by the specified length in the inline progression direction.
+Applies to: <fo:block>
+Values: normal | [[hang | intrude] && <length>?]
+Initial: normal
+Inherited: yes
+
+---
+
+### axf:initial-letters-leading-punctuation-shift
+
+Specifies the position of the leading punctuation of a dropped initial in
+the block progression direction.
+Values have the following meanings:
+‒
+normal: Does nothing special. Aligns the leading punctuation with
+the baseline for horizontal writing and aligns it with the center for
+vertical writing.
+
+‒
+baseline: Aligns the leading punctuation with the baseline of the last
+line.
+‒
+before: Aligns the leading punctuation with the before side of the
+dropped initial.
+‒
+middle: Aligns the leading punctuation with the center of the drop‐
+ped initial.
+‒
+after: Aligns the leading punctuation with the after side of the
+dropped initial.
+‒
+<length>: Specifies the baseline-shift amount of the leading punctua‐
+tion. If it is specified at the same time as baseline, before, middle, and
+after, it is the shift amount from that position.
+Applies to: <fo:block>
+Values: normal | [[baseline | before | middle | after] || <length>]
+Initial: normal
+Inherited: yes
+
+---
+
+### axf:initial-letters-start-intrusion
+
+Specifies the alignment of a float on the start side of the dropped initial.
+Applies to: <fo:block>
+Values: none | first-line
+Initial: none
+Inherited: yes
+Values have the following meanings:
+‒
+none: Aligns the float on the after side, avoiding the dropped initial.
+‒
+first-line: If the anchor of the <fo:float> is after the dropped initial
+and at the start line of the block, aligns the float on the start side of
+the dropped initial. If this is not the case, aligns it on the after side,
+avoiding the dropped initial. However, if the following conditions
+are not met, it is considered axf:initial-letters-start-intrusion="no‐
+ne" and aligned on the after side.
+AHF Extensions: Properties
+axf:initial-letters-leading-punctuation-shift 384
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+•
+When axf:float-x is other than none
+•
+When axf:float-wrap is wrap
+Specifies the alignment of a float when the anchor of the float, that
+has axf:float-x="start" and is included in the block with dropped
+initial specified, exists after the dropped initial. A float with an
+anchor before the dropped initial will be aligned on the start side
+regardless of this setting.
+This property is not effective when intrusion-displace="block" is spe‐
+cified, because floats are always aligned outside the block.
+
+---
+
+### axf:initial-letters-text-align
+
+Specifies the alignment of a dropped initial.
+When the value of axf:initial-letters-width is auto, it has no effect
+because there is no room for right alignment.
+Applies to: <fo:block>
+Values: start | center | end | left | right
+Initial: end
+
+Inherited: yes
+
+---
+
+### axf:initial-letters-width
+
+Specifies the width of a dropped initial.
+Values have the following meanings:
+‒
+auto: The width of a dropped initial is calculated from the included
+character string or image.
+‒
+<length>
+<percentage>: Forces the width of a dropped initial to the specified
+width.
+Applies to: <fo:block>
+Values: auto | <length> | <percentage>
+Initial: auto
+Inherited: yes
+
+---
+

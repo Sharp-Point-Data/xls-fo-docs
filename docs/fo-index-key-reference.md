@@ -48,7 +48,7 @@ No code samples in spec for this formatting object. See the "Formatting Objects 
 
 ## See Also
 
-- `fo:index-page-citation-list` -- parent formatting object that groups and formats page citations
-- `fo:index-page-number-prefix` -- optional child for static prefix text
-- `fo:index-page-number-suffix` -- optional child for static suffix text
-- `fo:index-range-begin` -- marks the start of an index range
+- [fo:index-page-citation-list](fo-index-page-citation-list.md) — parent formatting object that groups and formats page citations
+- [fo:index-page-number-prefix](fo-index-page-number-prefix.md) — optional child for static prefix text
+- [fo:index-page-number-suffix](fo-index-page-number-suffix.md) — optional child for static suffix text
+- [fo:index-range-begin](fo-index-range-begin.md) — marks the start of an index range

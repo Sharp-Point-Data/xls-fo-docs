@@ -69,10 +69,10 @@ For comprehensive examples of conditional page layouts using `fo:page-sequence-m
 
 ## See Also
 
-- fo:layout-master-set -- parent container
-- fo:single-page-master-reference -- references a single page-master for one page
-- fo:repeatable-page-master-reference -- references a page-master for repeated use
-- fo:repeatable-page-master-alternatives -- conditional page-master selection
-- fo:simple-page-master -- defines the actual page geometry
-- fo:page-master -- defines arbitrary page geometry
-- fo:page-sequence -- references this master via master-reference
+- [fo:layout-master-set](fo-layout-master-set.md) — parent container
+- [fo:single-page-master-reference](fo-single-page-master-reference.md) — references a single page-master for one page
+- [fo:repeatable-page-master-reference](fo-repeatable-page-master-reference.md) — references a page-master for repeated use
+- [fo:repeatable-page-master-alternatives](fo-repeatable-page-master-alternatives.md) — conditional page-master selection
+- [fo:simple-page-master](fo-simple-page-master.md) — defines the actual page geometry
+- [fo:page-master](fo-page-master.md) — defines arbitrary page geometry
+- [fo:page-sequence](fo-page-sequence.md) — references this master via master-reference

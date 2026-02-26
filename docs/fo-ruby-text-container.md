@@ -57,9 +57,9 @@ One or more `fo:ruby-text` children.
 
 ## See Also
 
-- `fo:ruby` -- the parent formatting object
-- `fo:ruby-text` -- individual annotation text segments
-- `fo:ruby-base-container` -- the sibling container for base texts
-- `fo:ruby-base` -- individual base text segments
-- `ruby-position` property
-- `ruby-overhang` property
+- [fo:ruby](fo-ruby.md) — the parent formatting object
+- [fo:ruby-text](fo-ruby-text.md) — individual annotation text segments
+- fo:ruby-base-container — the sibling container for base texts
+- [fo:ruby-base](fo-ruby-base.md) — individual base text segments
+- ruby-position property
+- ruby-overhang property

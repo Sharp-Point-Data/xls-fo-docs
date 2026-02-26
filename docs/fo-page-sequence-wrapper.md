@@ -69,6 +69,6 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:root -- parent element that may contain fo:page-sequence-wrapper
-- fo:page-sequence -- the primary content-bearing child
-- fo:layout-master-set -- may appear as a child within the wrapper
+- [fo:root](fo-root.md) — parent element that may contain fo:page-sequence-wrapper
+- [fo:page-sequence](fo-page-sequence.md) — the primary content-bearing child
+- [fo:layout-master-set](fo-layout-master-set.md) — may appear as a child within the wrapper

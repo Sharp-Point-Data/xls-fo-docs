@@ -1,0 +1,67 @@
+===PAGE 275===
+Applies to: <text-settings>
+Values: CRLF | LF | CR
+Default: CRLF in Windows, LF in others.
+2.1.7 
+MathML Settings
+<mathml-settings> 
+These settings are used for MathML (see MathML Conformance in
+Conformance of the Online Manual).
+Parent: <formatter-config>
+Attributes: mathDisplay, scriptsizemultiplier,
+scriptsizemultiplierMscarries, scriptminsize, scriptmaxsize,
+largeopmultiplier, largeopmultiplierInt, mathsizeSmall, mathsizeBig,
+enQuad, emQuad, enSpace, emSpace, thinSpace, hairSpace,
+veryverythinmathspace, verythinmathspace, thinmathspace, mediummathspace,
+thickmathspace, verythickmathspace, veryverythickmathspace, accentOffset,
+defaultLSpace, defaultRSpace, defaultMinsize, defaultLineleading,
+mathLeading, linebreakingHeightAdjust, indentingnewline, applyFunctionSpace,
+invisibleTimesSpace, scriptAlignMode, italicSubscriptShift,
+integralSubscriptShift, integralSuperscriptShift, integralUnderOverShift,
+thinLine, mediumLine, thickLine, fracLineExtend, fracLineSpace,
+fracLineOverGap, fracLineUnderGap, bevelledAngle, bevelledHeight,
+rootPosition1x, rootPosition1y, rootPosition2x, rootPosition2y,
+rootPosition3x, rootPosition3y, rootPosition4x, rootPosition4y,
+rootThickness1, rootThickness2, rootThickness3, rootThickness4,
+rootRoundRadius, encloseLineThickness, encloseCircle, roundedboxRadius,
+columnspacing, rowspacing, framespacing, columnlineThickness,
+rowlineThickness, framelineThickness, charspacingTight, charspacingMedium,
+Text Output Settings
+eol-marker
+275
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 276===
+charspacingLoose, overlapMsline, mslineOverGap, mslineUnderGap,
+crossoutThickness, errorColor, errorBackground, escapingMs, italicizeMi,
+stylisticMi, substKeyboardCharacters, pseudoScripts, inheritFontweight,
+enableOpenTypeMATH, exceptOpenTypeMATHVariants, mathmlSettingsMode
+Childs: <variant-font>, <operator-dictionary>
+<variant-font>
+Specifies the font corresponding to mathvariant. A ny number of this
+element can be specified. See also Fonts for Math Expression in the
+Online Manual.
+Parent: <mathml-settings>
+Attributes: mathvariant, fontfamily, center-shift
+Child: <font-entry>
+<font-entry>
+Specifies the font that corresponds to the script or Unicode Range.
+This setting can change a part of fonts specified by fontfamily of
+<variant-font>. Any number of this element can be specified.
+Either script or unicode-range must be specified. The effect is not
+guaranteed when both are specified.
+Parent: <variant-font>
+Attributes: fontfamily, script, unicode-range, mathvariant, center-shift
+<operator-dictionary>
+operator-dictionary is specified in order to change the contents of
+the default operator dictionary. Any number of this element can be
+specified and is evaluated in order. See also MathML Conformance in
+Conformance of the Online Manual to learn more about the operator
+dictionary.
+Parent: <mathml-settings>
+MathML Settings
+<mathml-settings>
+276
+© 2021 MID/Information Logistics ‒ All rights reserved
+

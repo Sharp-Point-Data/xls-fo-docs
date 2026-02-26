@@ -1,0 +1,4240 @@
+===PAGE 79===
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:repeat-footnote-in-table-header,
+axf:reverse-diagonal-border-color, axf:reverse-diagonal-border-style,
+axf:reverse-diagonal-border-width
+Parent Objects: <fo:table>
+Child Objects: <fo:table-row>, <fo:table-cell>, there subordinated within
+a block object also <fo:retrieve-table-marker>
+<fo:table-row> 
+This object is used to concatenate table cells (<fo:table-cell>) into a
+table row.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, block-progression-dimension,
+border-before-color, border-before-style, border-before-width,
+border-after-color, border-after-precedence, border-before-precedence,
+border-end-precedence, border-start-precedence, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, break-after, break-before, id,
+height, keep-together, keep-with-next, keep-with-previous, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, relative-position, role, source-document,
+visibility
+Formatting Objects
+<fo:table-header>
+79
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 80===
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:table-body>, <fo:table-footer>, <fo:table-header>
+Child Objects: <fo:table-cell>
+<fo:title> 
+This object allows to add a title to a page sequence.
+Properties: background-attachment, background-color,
+background-image, background-repeat, background-position-horizontal,
+background-position-vertical, border-before-color, border-before-style,
+border-before-width, border-after-color, border-after-style,
+border-after-width, border-start-color, border-start-style,
+border-start-width, border-end-color, border-end-style, border-end-width,
+border-top-color, border-top-style, border-top-width, border-bottom-color,
+border-bottom-style, border-bottom-width, border-left-color,
+border-left-style, border-left-width, border-right-color,
+border-right-style, border-right-width, color, font-family,
+font-selection-strategy, font-size, font-stretch, font-size-adjust,
+font-style, font-variant, font-weight, line-height, padding-before,
+padding-after, padding-start, padding-end, padding-top, padding-bottom,
+padding-left, padding-right, role, source-document, space-end, space-start,
+visibility
+Formatting Objects
+<fo:table-row>
+80
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 81===
+Shorthand Properties: background, background-position, border,
+border-bottom, border-color, border-left, border-right, border-style,
+border-top, border-width, font, padding
+AHF Properties: axf:border-radius, axf:border-bottom-left-radius,
+axf:border-bottom-right-radius, axf:border-top-left-radius,
+axf:border-top-right-radius, axf:border-double-thickness,
+axf:border-triple-thickness, axf:border-wave-form, axf:box-shadow,
+axf:diagonal-border-color, axf:diagonal-border-style,
+axf:diagonal-border-width, axf:pdftag, axf:reverse-diagonal-border-color,
+axf:reverse-diagonal-border-style, axf:reverse-diagonal-border-width
+Parent Objects: <fo:page-sequence>
+Child Objects: <fo:basic-link>, <fo:bidi-override>,
+<fo:character>, <fo:external-graphic>, <fo:index-page-citation-list>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:multi-toggle>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>, <fo:scaling-value-citation>
+<fo:wrapper> 
+This object is used to specify inheritable properties for a group of child
+formatting objects. With the index-key property, <fo:wrapper> wraps a
+tab term in the text flow. Thus, although the index term is not visible
+in the text flow, it is physically present for page referencing from the
+index.
+Properties: id, index-key
+Parent Objects: <fo:block>
+Child Objects: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:instream-foreign-object>, <fo:inline>, <fo:inline-container>,
+<fo:leader>, <fo:list-block>, <fo:multi-toggle>, <fo:page-number>,
+Formatting Objects
+<fo:title>
+81
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 82===
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:table-and-caption>, <fo:table>, <fo:scaling-value-citation>
+1.2 
+Properties
+The XSL-FO properties are sorted alphabetically. After a short description
+of the function, the objects with which the given property can be used
+are listed. In addition, the value range, the default value, if any, and the
+inheritance feature are mentioned.
+As far as properties in the Antenna House XSL Formatter are not
+supported or are supported in an extended way, this is marked in each
+case.
+The referenced objects and properties are linked to their description.
+Only those XSL-FO properties are taken into account that refer to PDF
+or print generation.
+First, the syntax for representing the range of property values is explai‐
+ned. Then the data types standing for complex property values are briefly
+described.
+1.2.1 
+The Syntax for the Property Value Types
+<>
+The angle brackets enclose a property data type that is generally
+defined and specified in the standard. Individual and concrete attribute
+values are not enclosed in angle brackets. The angle brackets are not to
+be confused with delimiters for XML element tags.
+Formatting Objects
+<fo:wrapper>
+82
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 83===
+|
+stands between alternatives. Only one of which may be used (according
+to the XML DTD syntax).
+||
+stands between options. One or more of which can be used in any
+order.
+[]
+encloses group instructions for property values (according to the round
+brackets in the XML DTD syntax).
+*
+specifies that the preceding expression is optional, but can also be
+specified repeatedly (according to the XML DTD syntax).
++
+specifies that the preceding expression can be specified once or
+repeatedly (according to the XML DTD syntax).
+?
+specifies that the preceding expression is optional (according to the
+XML DTD syntax).
+{}
+encloses a pair of numbers that specifies with minimum and maximum
+value how often an expression may occur.
+The Syntax for the Property Value Types
+|
+83
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 84===
+1.2.2 
+Value Types
+The following is a list of property data types that denote complex ranges
+of values.
+<absolute-size> 
+Absolute font sizes: xx-small, x-small, small, medium, large, x-large, xxlarge.
+The allocation of the real font sizes is left to the formatter product.
+<angle> 
+An angle specification. Permissible values are 0, 90, 180 or 270 degrees.
+<border-style> 
+Border style of a block: none, dotted, dashed, solid, double, groove, ridge,
+inset or outset.
+AHF Extensions: hidden, thin-thick-thin, triple, thick-thin, thin-thick,
+dot-dash, dot-dot-dash, emboss, imprint, double-wave and wave.
+<border-width> 
+Border width of a block: thin | medium | thick. The allocation of the real
+width is left to the formatter product.
+<character> 
+Specification of a Unicode character, either as a literal character or as
+an XML character reference, e.g. &#x20AC; for the € character.
+<color> 
+Color: a predefined color value or a color value in one of the supported
+color profiles.
+Value Types
+<absolute-size>
+84
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 85===
+<language-country> 
+A language key according to ISO 639 (<language>), optionally also a
+country key according to ISO 3166 (<country>).
+<family-name> 
+Font name: e.g. Arial Unicode MS, Helvetica, Courier New and others.
+<generic-family> 
+Generic font name: e.g. serif (serif font, antiqua), sans-serif (sans-serif
+font), and monospace (monospace font).
+<integer> 
+An integer numerical value.
+<keep> 
+A value for keeping formatting objects together. With the additional
+qualifier .within-line it applies to keeping together in the line,
+with .within-column in the column, with .within-page in the page. The
+value auto causes no keeping together, the value always causes keeping
+together without constraints. A value <integer> causes restricted
+keeping together. The degree of constraint by a numeric value is
+determined by conflicting keep-together values.
+<language> 
+A language key according to ISO 639 (<language>), e.g. de for German, en
+for English.
+<length> 
+Length. The value can start with + or −, then a number, also with
+decimal point, followed by a unit identifier: em (width of an M in the
+Value Types
+<language-country>
+85
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 86===
+font size used), ex (height of the x character of the font), px (pixels), pt
+(points, 1/72 inch), in (inches), cm (centimeters), mm (millimeters), or pc
+(picas, 1/6 inch).
+In the AH XSL Formatter, a number of other measurement units are
+added.
+<length-bp-ip-direction> 
+A combined length specification consisting of the one for the writing
+direction of blocks (vertical, in left-right writing direction) and the one
+for inline objects (horizontal, in left-right writing direction).
+<length-conditional> 
+Conditional length specification with .length and .conditionality
+components. The .length component is a value of type <length>.
+The .conditionality component is either discard (the value is ignored
+under certain surrounding conditions) or retain (the value is valid
+under all conditions).
+<length-range> 
+Length specification with an additional marking as minimum value
+(.minimum) or optimum value (.optimum) or maximum value (.maximum).
+<margin-width> 
+Margin width consisting of a length value (<length>), a percentage value
+(<percentage>), or auto. The auto value is context-dependent.
+<name> 
+A name that formally complies with the XML syntax.
+Value Types
+<length>
+86
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 87===
+<number> 
+A real number, possibly prefixed by a plus or minus sign, and possibly
+delimited by decimal points. For attributes where <number> is allowed
+as a value range, plus or minus restrictions may be specified. Also,
+the value range may be restricted to integer numeric values (without
+decimal point).
+<padding-width> 
+A length specification (<length>) or percentage specification
+(<percentage>).
+<percentage> 
+A number that can have a prefix followed by percent sign (%).
+<relative-size> 
+A font size relative to the font size of the parent object: larger or
+smaller.
+<shape> 
+Description of the rectangular cropping of a formatting object,
+typically an image: rect (<top> <right> <bottom> <left>). <top>, <right>,
+<bottom> and <left> specify a distance from the outer edge of the
+formatting object. <top>, <right>, <bottom> and <left> can have a value
+of type <length>, possibly a negative one, or the value auto. auto is
+equivalent to the value 0pt.
+<space> 
+Space. The components .minimum, .optimum and .maximum are <length>
+values. The values for component .precedence are either force or an
+Value Types
+<number>
+87
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 88===
+<integer>. The values for component .conditionality are either discard or
+retain.
+<string> 
+A string of any characters.
+<symbol> 
+A sign or symbol.
+<uri-specification> 
+Uniform Resource Identifier (URI): e.g. an address of an external
+resource, e.g. a graphic or an external reference destination that
+complies with the URI syntax.
+<value> 
+Alternatively, the data type value can be a data type <number> or
+<length>.
+1.2.3 
+Properties
+absolute-position 
+The property positions a block container in the page. With the
+default value auto the block container is positioned in the text flow
+according to the given arrangement of the blocks (vertically, in the
+usual arrangement for European languages). With the value absolute
+the block container will be positioned fixed within its region, with
+the value fixed within the page (without taking into account the
+surrounding region).
+Value Types
+<space>
+88
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 89===
+Applies to: <fo:block-container>
+Values: auto | absolute | fixed
+Initial: auto
+Inherited: no
+active-state 
+ (AHF: not supported) 
+This property sets which of the child flow objects can be processed
+with <fo:multi-property-set>. The property is relevant only in dynamic
+uses of the formatted result.
+Applies to: <fo:multi-property-set>
+Values: link | visited | active | hover | focus
+Initial: none
+Inherited: no
+alignment-adjust 
+This property sets the alignment baseline position for objects without
+a baseline table, e.g. graphics. The alignment-adjust property must be
+seen in conjunction with the alignment-baseline property. The latter
+determines the alignment to the dominant baseline (in alphabet
+environments, this is the line on which characters without descender
+are placed). With alignment-adjust the alignment defined by alignment-
+baseline can be corrected. For this purpose, the values that are also
+defined for alignment-baseline can be used. In addition, these corrections
+can also be defined by relative or fixed dimensions. For example, if
+alignment-baseline="baseline" and alignment-adjust="2mm" are set, then the
+graphic will be aligned with the bottom edge 2 mm above the dominant
+baseline.
+Applies to: <fo:basic-link>, <fo:character>, <fo:external-graphic>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+Properties
+absolute-position
+89
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 90===
+<fo:leader>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>
+Values: auto | baseline | before-edge | text-before-edge | middle |
+central |
+after-edge | text-after-edge | ideographic | alphabetic | hanging |
+mathematical |
+<percentage> | <length>
+Initial: auto
+Inherited: no
+alignment-baseline 
+This property sets the alignment of the baseline position of an object
+without a baseline table, e.g. a graphic, relative to that of its parent
+object. In the case of the Latin alphabet, this is based on the line
+on which the characters without descender are placed. The following
+refers exclusively to alphabet environments. This line is the dominant
+baseline. If you set the values auto (default value), baseline or alphabetic,
+then the lower border of the graphic will be set to this dominant
+baseline. If one selects the values before-edge, text-before-edge or hanging,
+then the graphic will be displayed at the header line with the upper
+border. For most fonts, the header line is slightly above the upper
+border of the characters with ascender. With the values after-edge, text-
+after-edge, or ideographic the graphic is placed on the footer line. this
+is the line to which the character descenders approximately extend.
+With the value central, the graphic is placed halfway between the
+text-before-edge and the text-after-edge line. The middle value aligns the
+graphic vertically at half the height of the x character (font-dependent).
+The mathematical value is used only for mathematical symbols. These are
+vertically aligned slightly higher than half the height of the x character.
+Properties
+alignment-adjust
+90
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 91===
+Applies to: <fo:basic-link>, <fo:character>, <fo:external-graphic>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:page-number>, <fo:page-number-citation>
+Values: auto | baseline | before-edge | text-before-edge | middle |
+central | after-edge | text-after-edge |
+ideographic | alphabetic | hanging | mathematical
+Initial: auto
+Inherited: no
+allowed-height-scale 
+This property sets a list of scaling constraints if graphics are to be
+scaled in height. With the default value any no constraints are imposed
+on the scaling.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: [ any | <percentage> ]*
+Initial: any
+Inherited: yes
+allowed-width-scale 
+This property sets a list of scaling constraints if graphics are to be
+scaled in width. With the default value any no constraints are imposed
+on the scaling.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: [ any | <percentage> ]*
+Initial: any
+Inherited: yes
+Properties
+alignment-baseline
+91
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 92===
+auto-restore 
+ (AHF: not supported) 
+This property allows to restore a <fo:multi-case> object as soon as the
+<fo:multi-switch> becomes invisible (relevant only in dynamic uses of
+the formatted result).
+Applies to: fo:multi-switch
+Values: true | false
+Initial: false
+Inherited: yes
+background 
+ (AHF: extended supported)
+This shorthand property simultaneously sets the corresponding
+background properties instead of the individual properties, either for
+color (background-color), or for a background image (background-image),
+for image tiling (background-repeat), for image anchoring
+(background-attachment) and image positioning (background-position).
+In the AH XSL Formatter, a background can also be underlayed
+in page templates (<fo:simple-page-master>) and page sequences
+(<fo:page-sequence>). In addition, according to the CSS concept for
+backgrounds, there is the possibility to display a number of images
+in one background. For each image can thereby be specified: the
+path (background-image), the positioning in the page (background-position),
+the tiling (background-repeat), the fixation background-attachment, the clip
+area axf:background-clip and the positioning of the image original
+axf:background-origin. The specifications for individual images with
+their properties must be separated by commas, the property values
+by spaces. According to the order of the images with their specific
+settings, they are arranged in the background in descending order. The
+last arrangement level can be a color (background-color), which is subject
+to the whole background.
+Properties
+auto-restore
+92
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 93===
+If a background is defined for a page master (<fo:simple-page-master>),
+the background set for a page sequence (<fo:page-sequence>) is ignored.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ background-color background-color || background-image ||
+background-repeat || background-attachment || background-position ]
+Values, AH XSL Formatter only: [ <bg-layer>, ]* <final-bg-layer>
+<bg-layer> = <background-image> || <background-position> [ /
+<axf:background-size> ]? || <background-repeat> || <background-attachment>
+|| <axf:background-clip> || <axf:background-origin>
+<final-bg-layer> = <bg-layer> || <background-color>
+Initial: see the corresponding single properties.
+Inherited: no
+background-attachment 
+This property sets to what extent the background should be scrolled.
+With the fixed value, the background is fixed in position if the
+foreground object is scrolled. With the default value scroll, the
+background scrolls with the foreground object. With the local value,
+the background is bound to the pictorial objects.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+Properties
+background
+93
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 94===
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: scroll | fixed | local
+Initial: scroll
+Inherited: no
+background-color 
+This property sets the background color.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: transparent
+Inherited: no
+background-image 
+ (AHF: extended supported)
+This property sets the background image. The URI specification
+is used to reference the external image. The functions
+linear-gradient(), radial-gradient(), repeating-linear-gradient() or
+Properties
+background-attachment
+94
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 95===
+repeating-radial-gradient() can be used to specify a complex gradient
+instead of an image.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <uri-specification> | none
+Initial: none
+Inherited: no
+background-position 
+This shorthand property sets the positioning of a background image
+(background-position-horizontal, background-position-vertical). If only a
+percentage value is set, then this is taken for the horizontal positioning.
+The missing value for vertical positioning is assumed to be 50%. If two
+values are set, the first applies to horizontal positioning, the second to
+vertical positioning. The combination of relative and absolute values is
+allowed.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+Properties
+background-image
+95
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 96===
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [[ <percentage> | <length> | left | center | right | top | bottom]
+{1,2} ]#
+Initial: 0% 0%
+Inherited: no
+background-position-horizontal 
+This property sets the horizontal positioning of a background image.
+The value left corresponds to 0%, center corresponds to 50%, right
+corresponds to 100%.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <percentage> | <length> | left | center | right ]#
+Initial: 0%
+Inherited: no
+background-position-vertical 
+This property sets the vertical positioning of a background image.
+The value top corresponds to 0%, center corresponds to 50%, bottom
+corresponds to 100%.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+Properties
+background-position
+96
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 97===
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <percentage> | <length> | top | center | bottom ]#
+Initial: 0%
+Inherited: no
+background-repeat 
+This property sets the characteristics of tiling (repeating the
+background image) for the background. With the default value repeat
+the background image is repeated both horizontally and vertically
+within the given block, with the value repeat-x only in horizontal
+direction, with repeat-y only in vertical direction. If you want to avoid
+the repetition, set the value no-repeat.
+The paginate value has an effect when embedding multiple PDF pages.
+Thus each embedded PDF page also creates a page in the PDF output.
+For other formats the paginate value corresponds to no-repeat.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, <fo:basic-link>,
+<fo:block>, <fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:initial-property-set>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Properties
+background-position-vertical
+97
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 98===
+Values: [ repeat-x | repeat-y | paginate | [repeat | space | round |
+no-repeat]{1,2} ]#
+Initial: repeat
+Inherited: no
+baseline-shift 
+This property sets the dominant baseline of a child object (an inline
+markup) relative to the dominant baseline of the parent object. For
+alphabet environments, the dominant baseline is the line on which
+characters without descenders are placed. With the default value
+baseline, the dominant baseline remains in the position of the dominant
+baseline of the parent object. With the sub value, the dominant baseline
+is shifted down, so the contents of the child object are subscript relative
+to the environment. With the value super the content is superscripted.
+The amount of shifting is font and formatter dependent. If a percentage
+value is specified, this percentage value is related to the line height of
+the parent object. A positive value will shift up, a negative value will
+shift down. If an absolute unit of measurement is specified, a positive
+value is shifted up accordingly, and a negative value is shifted down
+accordingly.
+Applies to: <fo:basic-link>, <fo:character>, <fo:external-graphic>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>
+Values: baseline | sub | super | <percentage> | <length>
+Initial: baseline
+Inherited: no
+Properties
+background-repeat
+98
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 99===
+blank-or-not-blank 
+As part of a page-master application rule (<fo:simple-page-master>), the
+property sets whether the referenced page master is selected at a
+particular point in the page sequence. With the blank value, the page
+template is only used if a page without flowing content needs to be
+generated (this is typically a left page) so that the following page
+sequence can start with a right page. With the not-blank value, the page
+template is used only if the page contains flowing content. For the
+default value any, the page template is used whether or not it contains
+flowing content.
+Applies to: <fo:conditional-page-master-reference>
+Values: blank | not-blank | any
+Initial: any
+Inherited: no
+block-progression-dimension 
+This property sets the height (in the left-right-top-bottom writing
+direction common for European languages) for the objects below. This
+property does not take effect if the height for this object is set by line-
+height. With the default value auto, no constraints are set for the height.
+The formatter calculates the height by the other constraints set for this
+environment. A fixed value in one of the valid units of measurement
+can be used to specify the exact height. A percentage value can be used
+to specify the height relative to the corresponding dimension of the
+nearest ancestor area formed by a block object. By specifying the block-
+progression-dimension property and appending the .minimum, .optimum,
+and .maximum components, the value can be flexibly specified in the
+minimum-maximum constraints and the specification of an optimum
+height.
+Properties
+blank-or-not-blank
+99
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 100===
+Applies to: <fo:block-container>, <fo:external-graphic>, <fo:inline>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:table>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-row>
+Values: auto | <length> | <percentage> | <length-range>
+Initial: auto
+Inherited: no
+border 
+This shorthand property simultaneously sets the width, color, and style
+properties (border-width, border-color, and border-style) for the border of
+all four sides of a block.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <border-width> || <border-style> || [ <color> | transparent ]]
+Initial: see the corresponding single properties.
+Inherited: no
+border-after-color 
+This property sets the color of the after border. With the value
+transparent the border is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+Properties
+block-progression-dimension
+100
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 101===
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: <color> value
+Inherited: no
+border-after-precedence 
+This property sets the precedence of the border specification over
+a conflicting specification for the after border within a table. The
+force value sets precedence over all numeric values. A higher integer
+numeric value defines precedence over a lower value.
+Applies to: <fo:table>, <fo:table-body>, <fo:table-cell>, <fo:table-column>,
+<fo:table-footer>, <fo:table-header>, <fo:table-row>
+Values: force | <integer>
+Initial: <fo:table>: 6, <fo:table-cell>: 5, <fo:table-column>: 4, <fo:table-
+row>: 3, <fo:table-body>: 2, <fo:table-header>: 1, <fo:table-footer>: 0
+Inherited: no
+border-after-style 
+ (AHF: extended supported)
+This property sets the style of the after border. Additional border styles
+are available for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+Properties
+border-after-color
+101
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 102===
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-after-width 
+This property sets the width of the after border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width> | <length-conditional>
+Initial: medium
+Inherited: no
+border-before-color 
+This property sets the color of the before border. With the value
+transparent the border is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+Properties
+border-after-style
+102
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 103===
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Initial: <color> value
+Values: <color> | transparent
+Inherited: no
+border-before-precedence 
+This property sets the precedence of the border specification over
+a conflicting specification for the before border within a table. The
+force value sets precedence over all numeric values. A higher integer
+numeric value defines precedence over a lower value.
+Applies to: <fo:table>, <fo:table-body>, <fo:table-cell>, <fo:table-column>,
+<fo:table-footer>, <fo:table-header>, <fo:table-row>
+Values: force | <integer>
+Initial: <fo:table>: 6, <fo:table-cell>: 5, <fo:table-column>: 4, <fo:table-
+row>: 3, <fo:table-body>: 2, <fo:table-header>: 1, <fo:table-footer>: 0
+Inherited: no
+border-before-style 
+ (AHF: extended supported)
+This property sets the style of the before border. Additional border
+styles are available for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+Properties
+border-before-color
+103
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 104===
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-before-width 
+This property sets the width of the before border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width> | <length-conditional>
+Initial: medium
+Inherited: no
+border-bottom 
+This shorthand property sets the width, color, and style properties
+(border-width, border-color, and border-style) for the bottom border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+Properties
+border-before-style
+104
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 105===
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <border-width> || <border-style> || [ <color> | transparent ]]
+Initial: see the corresponding single properties.
+Inherited: no
+border-bottom-color 
+This property sets the color of the bottom border. With the value
+transparent the border is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: <color> value
+Inherited: no
+border-bottom-style 
+ (AHF: extended supported)
+This property sets the style of the bottom border. Additional border
+styles are available for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+Properties
+border-bottom
+105
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 106===
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-bottom-width 
+This property sets the width of the bottom border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width>
+Initial: medium
+Inherited: no
+border-collapse 
+This property sets the border model of a table. With the collapse value
+the adjacent border collapse, with separate the borders are each treated
+separately. The space between adjacent borders is background between
+table rows and cells.
+Properties
+border-bottom-style
+106
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 107===
+Applies to: <fo:table>
+Values: collapse | separate
+Initial: collapse
+Inherited: yes
+border-color 
+This shorthand property simultaneously sets the color for the border
+of all four sides of a block. With the value transparent the border is
+transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <color> | transparent ] {1,4}
+Initial: see the corresponding single properties.
+Inherited: no
+border-end-color 
+This property sets the color of the end border (with writing direction
+left-right this is the right border). With the value transparent the border
+is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+Properties
+border-collapse
+107
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 108===
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: <color> value
+Inherited: no
+border-end-precedence 
+This property sets the precedence of the border specification over
+a conflicting specification for the end border within a table (with
+writing direction left-right this is the right border). The force value sets
+precedence over all numeric values. A higher integer numeric value
+defines precedence over a lower value.
+Applies to: <fo:table>, <fo:table-body>, <fo:table-cell>, <fo:table-column>,
+<fo:table-footer>, <fo:table-header>, <fo:table-row>
+Values: force | <integer>
+Initial: <fo:table>: 6, <fo:table-cell>: 5, <fo:table-column>: 4, <fo:table-
+row>: 3, <fo:table-body>: 2, <fo:table-header>: 1, <fo:table-footer>: 0
+Inherited: no
+border-end-style 
+ (AHF: extended supported)
+This property sets the style of the end border (with writing direction
+left-right this is the right border). Additional border styles are available
+for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+Properties
+border-end-color
+108
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 109===
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-end-width 
+This property sets the width of the end border (with writing direction
+left-right this is the right border).
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width> | <length-conditional>
+Initial: medium
+Inherited: no
+border-left 
+This shorthand property sets the width, color, and style properties
+(border-width, border-color, and border-style) of the left border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+Properties
+border-end-style
+109
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 110===
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <border-width> || <border-style> || [ <color> | transparent ]]
+Initial: see the corresponding single properties.
+Inherited: no
+border-left-color 
+This property sets the color of the left border. With the value
+transparent the border is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: <color>> value
+Inherited: no
+border-left-style 
+ (AHF: extended supported)
+This property sets the style of the left border. Additional border styles
+are available for selection in the AH XSL Formatter.
+Properties
+border-left
+110
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 111===
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-left-width 
+This property sets the width of the left border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width>
+Initial: medium
+Inherited: no
+Properties
+border-left-style
+111
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 112===
+border-right 
+This shorthand property sets the width, color, and style properties
+(border-width, border-color, and border-style) of the right border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ border-top-width || <border-style> || [ <color> | transparent ]]
+Initial: see the corresponding single properties.
+Inherited: no
+border-right-color 
+This property sets the color of the right border. With the value
+transparent the border is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Properties
+border-right
+112
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 113===
+Initial: <color> value
+Inherited: no
+border-right-style 
+ (AHF: extended supported)
+This property sets the style of the right border. Additional border styles
+are available for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-right-width 
+This property sets the width of the right border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Properties
+border-right-color
+113
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 114===
+Values: <border-style>
+Initial: medium
+Inherited: no
+border-separation 
+This property sets the width/height between adjacent cells/rows in a
+table.
+Applies to: <fo:table>
+Values: <length-bp-ip-direction>
+Initial: border-separation.block-progression-direction="0pt", border-
+separation.inline-progression-direction="0pt"
+Inherited: yes
+border-spacing 
+This property sets the spacing between adjacent cells/rows in a table. If
+only one value is specified, it applies to both horizontal and vertical
+spacing. If two values are specified, the first value applies to the
+horizontal, the second to the vertical spacing.
+Applies to: <fo:table>
+Values: <length> <length>?
+Initial: 0pt
+Inherited: yes
+border-start-color 
+This property sets the color of the start border (with writing direction
+left-right this is the left border). With the value transparent the border is
+transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+Properties
+border-right-width
+114
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 115===
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: <color> value
+Inherited: no
+border-start-precedence 
+This property sets the precedence of the border specification over
+a conflicting specification for the start border within a table (with
+writing direction left-right this is the left border). The force value sets
+precedence over all numeric values. A higher integer numeric value
+defines precedence over a lower value.
+Applies to: <fo:table>, <fo:table-body>, <fo:table-cell>, <fo:table-column>,
+<fo:table-footer>, <fo:table-header>, <fo:table-row>
+Values: force | <integer>
+Initial: <fo:table>: 6, <fo:table-cell>: 5, <fo:table-column>: 4, <fo:table-
+row>: 3, <fo:table-body>: 2, <fo:table-header>: 1, <fo:table-footer>: 0
+Inherited: no
+border-start-style 
+ (AHF: extended supported)
+This property sets the style of the start border (with writing direction
+left-right this is the left border). Additional border styles are available
+for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+Properties
+border-start-color
+115
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 116===
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Initial: none
+Inherited: no
+border-start-width 
+This property sets the width of the start border (with writing direction
+left-right this is the left border).
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width> | <length-conditional>
+Initial: medium
+Inherited: no
+border-style 
+ (AHF: extended supported)
+This shorthand property simultaneously sets the style for the border
+of all four sides of a block. Additional border styles are available for
+selection in the AH XSL Formatter.
+Properties
+border-start-style
+116
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 117===
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style> {1,4}
+Initial: see the corresponding single properties.
+Inherited: no
+border-top 
+This shorthand property simultaneously sets the width, color, and style
+properties (border-width, border-color, and border-style) of the top border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: [ <border-width> || <border-style> || [ <color> | transparent ]]
+Initial: see the corresponding single properties.
+Inherited: no
+Properties
+border-style
+117
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 118===
+border-top-color 
+This property sets the color of the top border. With the value
+transparent the border is transparent, nevertheless it may have a width.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <color> | transparent
+Initial: <color> value
+Inherited: no
+border-top-style 
+ (AHF: extended supported)
+This property sets the style of the top border. Additional border styles
+are available for selection in the AH XSL Formatter.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-style>
+Properties
+border-top-color
+118
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 119===
+Initial: none
+Inherited: no
+border-top-width 
+This property sets the width of the top border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <border-width>
+Initial: medium
+Inherited: no
+border-width 
+This shorthand property simultaneously sets the width of the border of
+all four sides of a block.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Properties
+border-top-style
+119
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 120===
+Values: <border-width> {1,4}
+Initial: see the corresponding single properties.
+Inherited: no
+bottom 
+This property sets the bottom border for positioned objects (block
+containers) within the block or area containing the object.
+Applies to: positioned objects, especially <fo:block-container>.
+Values: <length> | <percentage> | auto
+Initial: auto
+Inherited: no
+break-after 
+This property specifies to what extent the column or page should be
+wrapped after the given block is completed. With the default value auto
+no break is forced. The column value will break to the following column,
+the page value will break to the following page, the even-page value will
+break to the following left page, and the odd-page value will break to the
+following right page.
+even-document: Page breaks at even-numbered pages counting from the
+beginning of the document.
+odd-document: Page breaks at odd-numbered pages counting from the
+beginning of the document.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:table>, <fo:table-and-caption>, <fo:table-row>
+Values: auto | column | page | even-page | odd-page | even-document |
+odd-document
+Initial: auto
+Inherited: no
+See also axf:break-distance
+Properties
+border-width
+120
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 121===
+break-before 
+This property specifies to what extent the given block should start with
+a new column or page. With the default value auto no break is forced.
+With the column value wrapping is forced to the following column,
+with the page value wrapping is forced to the following page, with the
+even-page value wrapping is forced to the following left page and with
+the odd-page value wrapping is forced to the following right page.
+even-document: Page breaks at even-numbered pages counting from the
+beginning of the document.
+odd-document: Page breaks at odd-numbered pages counting from the
+beginning of the document.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:table>, <fo:table-and-caption>, <fo:table-row>
+Values: auto | column | page | even-page | odd-page | even-document |
+odd-document
+Initial: auto
+Inherited: no
+See also axf:break-distance
+caption-side 
+This property sets the position of a table caption. With the default
+value before or top it is placed above the table. With the value after
+or bottom it is placed below the table. With the value left or start it is
+placed to the left of the table, with the value right or end it is placed to
+the right of the table.
+Applies to: <fo:table-and-caption>
+Values: before | after | start | end | top | bottom | left | right
+Initial: before
+Inherited: yes
+Properties
+break-before
+121
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 122===
+case-name 
+ (AHF: not supported) 
+This property sets the name of a <fo:multi-case> object (only significant
+in dynamic uses of the formatted result).
+Applies to: <fo:multi-case>
+Values: <name>
+Initial: none, a value must be specified.
+Inherited: no
+case-title 
+ (AHF: not supported) 
+This property sets the title of a <fo:multi-case> object (only significant
+in dynamic uses of the formatted result).
+Applies to: <fo:multi-case>
+Values: <string>
+Initial: none, a value must be specified.
+Inherited: no
+change-bar-class 
+This property assigns a name to a pair of <fo:change-bar-begin>
+and <fo:change-bar-end>, which identifies the named start-end pair if
+overlapped by other change-bar pairs.
+Applies to: <fo:change-bar-begin>, <fo:change-bar-end>
+Values: <name>
+Initial: none, a value must be specified.
+Inherited: no
+change-bar-color 
+This property sets the color of the change bar.
+Applies to: <fo:change-bar-begin>
+Values: <color>
+Initial: the color value in the environment.
+Properties
+case-name
+122
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 123===
+Inherited: yes
+change-bar-offset 
+This property sets the space of the change bar from the text flow.
+Relative values (percentages or em values) are not allowed for this
+property.
+Applies to: <fo:change-bar-begin>
+Values: <length>
+A positive value moves the change bar away from the text flow, no
+matter how the change-bar-placement property is set.
+Initial: 6pt
+Inherited: yes
+change-bar-placement 
+This property sets where ‒ in relation to the text flow ‒ the change
+bar is located (in the left-right writing direction): left, right, inside or
+outside. With the alternate value, in a two-column layout, the change
+bar is found on the left of the first column and on the right of the
+second column.
+Applies to: <fo:change-bar-begin>
+Values: start | end | left | right | inside | outside | alternate
+Initial: start
+Inherited: yes
+change-bar-style 
+This property sets the line type (solid, dotted, etc.).
+Applies to: <fo:change-bar-begin>
+Values: border-style
+Initial: none
+Inherited: yes
+Properties
+change-bar-color
+123
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 124===
+change-bar-width 
+This property sets the width of the change bar. The thin, medium, and
+thick widths are specified in the formatter products. The <length> value
+is not allowed.
+Applies to: <fo:change-bar-begin>
+Values: thin | medium | thick | <length>
+Initial: medium
+Inherited: yes
+character 
+This property specifies a Unicode character to be inserted.
+Applies to: <fo:character>
+Values: <character>
+Initial: none, a value must be specified.
+Inherited: no
+clear 
+This property specifies the side of a floating block with which it
+must not connect to a preceding floating block. This property is only
+important if several floating blocks are to be arranged in relation to
+each other.
+Applies to: <fo:float>
+Values: start | end | left | right | both | none
+Initial: none
+Inherited: no
+clip 
+This property sets clipping properties if the given object exceeds the
+height and/or width of the given area.
+Properties
+change-bar-width
+124
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 125===
+Applies to: <fo:block-container>, <fo:external-graphic>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:region-after>,
+<fo:region-before>, <fo:region-body>, <fo:region-end>, <fo:region-start>
+Values: <shape> | auto
+Initial: auto
+Inherited: no
+color 
+This property sets the foreground color of the content.
+Applies to: <fo:bidi-override>, <fo:bookmark-title>, <fo:block>,
+<fo:character>, <fo:initial-property-set>, <fo:inline>, <fo:leader>,
+<fo:title>
+Values: <color>
+Initial: set by the formatter product.
+Inherited: yes
+color-profile-name 
+This property sets the name of an ICC color profile.
+Applies to: <fo:color-profile>
+Values: <name>
+Initial: none, a value must be specified.
+Inherited: no
+column-count 
+ (AHF: extended supported)
+This property sets the number of columns in the main page area within
+a page sequence.
+Applies to: <fo:region-body>
+Values: <number>
+Initial: 1
+Inherited: no
+Properties
+clip
+125
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 126===
+column-gap 
+ (AHF: extended supported)
+This property sets the spacing between columns in case of multiple
+columns.
+Applies to: <fo:region-body>
+Values: <length> | <percentage>
+Initial: 12.0pt
+Inherited: no
+column-number 
+This property assigns a sequential number to the columns of a table
+starting with 1, which can be used to link the specifications in
+<fo:table-column> to the corresponding table cells.
+Applies to: <fo:table-cell>, <fo:table-column>
+Values: <number>
+Initial: 1 plus the value of the preceding column (if there is one).
+Inherited: no
+column-width 
+This property sets the width of a table column. This can be
+set proportionally to the width of the other columns with the
+proportional-column-width() function, relative to the width of the entire
+table, and absolutely in the allowed measurement units.
+Applies to: <fo:table-column>
+Values: <length> | <percentage>
+Initial: A value must be specified for each column, unless the automatic
+table layout (table-layout with the default value auto) is used.
+Inherited: no
+content-height 
+This property sets the height of an object, e.g. a graphic.
+Properties
+column-gap
+126
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 127===
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: auto | scale-to-fit | <length> | <percentage>
+Initial: auto
+Inherited: no
+content-type 
+ (AHF: extended supported)
+This property specifies the format of a content object (graphic,
+multimedia object) that instructs the given processing system with
+which specific processor the object can be processed.
+For graphics processed with the AH XSL Formatter, the format does
+not need to be specified.
+For multimedia objects, the AH XSL Formatter detects the following
+formats:
+‒
+audio/*
+‒
+video/*
+‒
+application/x-shockwave-flash.
+Other formats can be explicitly specified with <multimedia> in the AHF
+system settings.
+The extent to which a multimedia object is rendered correctly depends
+on the PDF reader.
+Constraints:
+‒
+Multimedia objects can be embedded in PDF 1.5 or higher.
+‒
+Multimedia objects cannot be embedded as background images.
+‒
+Multimedia objects cannot be embedded as posters
+(axf:poster-image).
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: <string> | auto
+Initial: auto
+Inherited: no
+Properties
+content-height
+127
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 128===
+content-width 
+This property sets the width of an object, e.g. a graphic. With the
+default value auto the given width of the object is used. With the
+scale-to-fit value, the width of the object is adjusted to the width of
+the area in which the object is placed. With <length> a fixed width is
+given for the object (scaling is implied). With <percentage> a scaling
+factor is specified.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: auto | scale-to-fit | <length> | <percentage>
+Initial: auto
+Inherited: no
+country 
+This property specifies a country key according to ISO 3166.
+This specification is used for country-specific typesetting (line
+alignment, hyphenation, etc.). For the designation of language-specific
+hyphenation rules it is better to specify the language property.
+Applies to: <fo:block>, <fo:character>, <fo:page-sequence>
+Values: none | <country>
+Initial: none
+Inherited: yes
+destination-placement-offset 
+ (AHF: not supported)
+In a dynamic application for a link target this property specifies where
+to navigate in the page if the link target is not explicitly included in a
+text line. This navigation replaces the regular navigation to the actual
+link target (fallback navigation).
+Applies to: <fo:basic-link>
+Values: <length>
+Initial: 0pt
+Properties
+content-width
+128
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 129===
+Inherited: no
+direction 
+This property specifies whether the content should be written from
+left to right (ltr) or from right to left (rtl). This corrects the writing
+direction specified in Unicode.
+Applies to: <fo:bidi-override>
+Values: ltr | rtl
+Initial: ltr
+Inherited: yes
+display-align 
+ (AHF: extended supported)
+This property sets the vertical alignment of objects within the reference
+area. For example, this applies to text within table cells: aligned
+up (before), aligned to the center (center), or aligned down (after).
+The default value auto is normally the same as before, unless the
+relative-align property applies to this object.
+In the AH XSL Formatter the value justify is added.
+Applies to: <fo:block-container>, <fo:external-graphic>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:region-after>,
+<fo:region-before>, <fo:region-body>, <fo:region-end>, <fo:region-start>,
+<fo:table-cell>
+Values: auto | before | center | after | justify
+Initial: auto
+Inherited: yes
+dominant-baseline 
+This property allows baseline shifting for inline objects such as
+mathematical expressions or ideographic characters. A detailed
+description of this property and its possible uses is not possible here
+Properties
+destination-placement-offset
+129
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 130===
+for reasons of scope, but it is also irrelevant when using the horizontal
+writing direction and alphabetic characters.
+Applies to: <fo:basic-link>, <fo:character>, <fo:external-graphic>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>
+Values: auto | use-script | no-change | reset-size | ideographic |
+alphabetic |
+hanging | mathematical
+Initial: auto
+Inherited: no
+empty-cells 
+ (AHF: not supported)
+This property controls the handling of table cells without content in
+tables where the cells are displayed with their borders each with a
+space between them. With the hide value empty cells are not displayed,
+however their background that also appears between adjacent cells.
+Applies to: <fo:table-cell>
+Values: show | hide
+Initial: show
+Inherited: yes
+end-indent 
+This property sets the space between the right edge of a block and
+the right edge of the corresponding reference area. The block is thus
+indented on the right which applies to the writing direction left-right.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <length>
+Properties
+dominant-baseline
+130
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 131===
+Initial: 0pt
+Inherited: yes
+ends-row 
+If necessary, this property specifies whether the given table cell ends a
+table row. With the default value false the cell does not end the given
+table row. With true the table row is ended without a tag in the XML
+source document.
+Applies to: <fo:table-cell>
+Values: true | false
+Initial: false
+Inherited: no
+extent 
+This property sets the width of a start/end region (for left-right writing
+direction, this is the area to the left and right of the main area of
+a page) or the height of a before/after region (the header and footer
+area).
+Applies to: <fo:region-after>, <fo:region-before>, <fo:region-end>,
+<fo:region-start>
+Values: <length> | <percentage>
+Initial: 0.0pt
+Inherited: no
+external-destination 
+This property sets the resource target of a <fo:basic-link>, a
+<fo:bookmark> or a <axf:form> object.
+Applies to: <fo:basic-link>, <fo:bookmark>, <axf:form>
+Values: <uri-specification>
+Properties
+end-indent
+131
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 132===
+Initial: empty string
+Inherited: no
+float 
+This property sets the floating properties of a block that is not
+positioned absolutely. With the default value none the block does not
+float, so it is placed in the normal text flow. With the value before the
+block floats into the head of the main page area. The value left makes
+the block float to the left, the value right to the right. For left-right
+writing direction, the start value corresponds to the left value, the end
+value corresponds to the right value.
+The two values inside and outside are proprietary extensions of the AH
+XSL formatter: with inside the block floats to the left in right pages, to
+the right in left pages, with outside to the right in right pages and to the
+left in left pages.
+Applies to: <fo:float>
+Values: before | start | end | left | right | inside | outside | none
+Initial: none
+Inherited: no
+flow-map-name 
+This property is used to set the unique name for a <fo:flow-map> object
+referenced as the value of flow-map-reference of a <fo:page-sequence>
+object.
+Applies to: <fo:flow-assignment>, <fo:flow-map>
+Values: <name>
+Initial: none, a name must be specified.
+Inherited: no
+Properties
+external-destination
+132
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 133===
+flow-map-reference 
+This property is used to specify the <fo:flow-map> to be used in a
+page sequence. If no flow-map-reference is set for a page sequence
+(<fo:page-sequence>), the fo:flow-map implicitly defined in the standard
+is effective. Practically, this means that the flow-map-reference property
+need not be set if no fo:flow-map is specified.
+Applies to: <fo:page-sequence>
+Values: <name>
+Initial: none, a name must be specified.
+Inherited: no
+flow-name 
+This property sets the name of a text flow.
+Applies to: <fo:flow>, <fo:static-content>
+Values: <name>
+Initial: empty name
+Inherited: no
+flow-name-reference 
+This property is used to specify a text flow (<fo:flow>) to be used in a
+<fo:flow-source-list> object.
+Applies to: <fo:flow-name-specifier>
+Values: <name>
+Initial: none, a name must be specified.
+Inherited: no
+font 
+This shorthand property simultaneously specifies the font
+characteristics of font-style, font-variant, font-weight, font-size,
+line-height, and font-family. The caption, icon, menu, message-box, small-
+Properties
+flow-map-reference
+133
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 134===
+caption, and status-bar values specify system fonts in a given computer
+environment.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>
+Values: [[ font-style || font-variant || font-weight ]? font-size
+[ line-height ]? font-family ] | caption | icon | menu | message-box |
+small-caption | status-bar
+Initial: see the corresponding single properties.
+Inherited: yes
+font-family 
+This property specifies a priority list of font names to be used
+according to their order. This allows characters to be used that are
+not included in the first named font, but in a font named next.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>,
+<axf:font-face>
+Values: [[ <family-name> | <generic-family> ],]* [ <family-name> |
+<generic-family> ]
+Initial: system-dependent
+Inherited: yes
+font-selection-strategy 
+This property specifies the procedure for selecting a font if the
+specified font is not available and a font as similar as possible should be
+used instead.
+Properties
+font
+134
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 135===
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>
+Values: auto | character-by-character
+Initial: auto
+Inherited: yes
+font-size 
+This property sets the font size. The actual font size may also be
+affected by font-size-adjust and/or by the unavailability of certain font
+sizes. The font size can be specified either with an absolute size, or in a
+relative size with reference to the font size used in the environment.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>
+Values: <relative-size> | <absolute-size> | <length> | <percentage>
+Initial: medium
+Inherited: yes
+font-size-adjust 
+This property adjusts the font size. It is used to adjust fonts that appear
+too large / too small in comparison to the perceived font size of the
+surrounding font.
+In the AH XSL Formatter the value <string> is added.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>
+Values: <number> | <string> | none
+Initial: none
+Inherited: yes
+Properties
+font-selection-strategy
+135
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 136===
+font-stretch 
+This property specifies the choice between a normal-width, a narrower-
+width, and a wider-width font face. For gradations, see the allowed
+property values.
+The two values <percentage> and <number> are proprietary extensions to
+the AH XSL formatter: <percentage> specifies the font run width relative
+to the normal run width, <number> does the same without specifying the
+% sign.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>
+Values: normal | wider | narrower | ultra-condensed | extra-condensed |
+condensed |
+semi-condensed | semi-expanded | expanded | extra-expanded | ultra-
+expanded | <percentage> | <number>
+Initial: normal
+Inherited: yes
+unicode-range 
+Specifies the Unicode Range to which this font applies.
+Applies to: <axf:font-face>
+Values: <urange># | all
+Initial: all
+Inherited: no
+size-adjust 
+Adjusts the size of this font.
+Numeric values without units can be specified. 1 is equivalent to 100%.
+Negative values are not allowed.
+Applies to: <axf:font-face>
+Properties
+font-stretch
+136
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 137===
+Values: normal | <percentage> | <number>
+Initial: normal
+Inherited: no
+font-style 
+ (AHF: extended supported)
+This property specifies the font style for the slant of a font, normal for
+straight, italic for italic with its own font face, oblique for right slant
+based on the straight font face, backslant for left slant based on the
+straight font face.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:bookmark-title>
+(normal oder italic), <fo:character>, <fo:initial-property-set>,
+<fo:inline>, <fo:leader>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>, <fo:title>
+Values: normal | italic | oblique | backslant
+Initial: normal
+Inherited: yes
+font-variant 
+This property causes a small cap variant to be displayed instead of
+the text set with normal upper and lower case letters. Small caps
+are uppercase letters at the same height as lowercase letters, with
+proportions adjusted accordingly.
+In addition to the values mentioned above, the AH XSL Formatter
+supports the GSUB (Glyph Substitution) concept to a limited extent in
+conjunction with OpenType fonts. See details in the Online Manual of
+the AH XSL Formatter (file: index.html/ahf-ext.html#axf.font-variant).
+Applies to: <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:initial-property-set>, <fo:inline>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>, <fo:title>
+Values: normal | small-caps
+Properties
+size-adjust
+137
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 138===
+Initial: normal
+Inherited: yes
+font-weight 
+This property sets the boldness level of a font. normal corresponds to the
+numeric value 400, bold to the value 700, bolder to the value 900, lighter
+to the value 100.
+Applies to: <fo:bidi-override>, <fo:block>, <fo:bookmark-title>
+(normal oder bold), <fo:character>, <fo:initial-property-set>,
+<fo:inline>, <fo:leader>, <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>, <fo:title>
+Values: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500
+|600 | 700 |
+800 | 900
+Initial: normal
+Inherited: yes
+force-page-count 
+ (AHF: extended supported)
+This property specifies for a page sequence whether and how pages
+with an odd/even page number should be generated. With auto an odd
+number of pages is generated for a page sequence which is followed by
+another page sequence that should start with an even page number. If
+the subsequent page sequence is to start with an odd page number, the
+preceding page sequence will end with an even page number. If there
+is no subsequent page sequence, as many pages are generated as are
+needed for the content (equivalent to the no-force value). With even an
+even number of pages is generated, with odd an odd number of pages.
+With end-on-even the last page is one with an even page number, with
+end-on-odd a last page with an odd page number.
+Properties
+font-variant
+138
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 139===
+In the AH XSL Formatter further values are added for the flexible
+definition of page counts. See details at and in the Online Manual of the
+AH XSL Formatter (file: index.html/ahf-ext.html#force-page-count).
+Applies to: <fo:page-sequence>
+Values: auto | even | odd | end-on-even | end-on-odd | no-force
+AHF-Erweiterungen: doubly-even | end-on-doubly-even | even-document |
+odd-document |
+doubly-even-document | [ end-on | document ] <number> [ <number>]
+Initial: auto
+Inherited: no
+format 
+ (AHF: extended supported)
+This property is defined in XSLT. It concerns number to string
+conversion for page number format. Example: format="i" displays the
+page numbers as small Roman numerals.
+More values for formatting counters are added in the AH XSL
+Formatter. See details in the Online Manual of the AH XSL Formatter
+(file: index.html/ahf-ext.html#format).
+Instead of the counter styles described there, the concept of predefined
+counter styles can also be used. These counter styles are listed
+completely under the counter style names (name).
+Applies to: <fo:page-sequence>, <fo:scaling-value-citation>
+Values: <string>
+Initial: 1
+Inherited: no
+glyph-orientation-horizontal 
+This property sets the orientation of characters in horizontal writing
+mode. It can only be rotated in 90° increments. For example, a 180deg
+Properties
+force-page-count
+139
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 140===
+value turns a character upside down. If a string is marked like this, the
+order of the characters remains unchanged.
+Applies to: <fo:character>
+Values: <angle>
+Initial: 0deg
+Inherited: yes
+glyph-orientation-vertical 
+This property sets the orientation of characters in vertical writing
+mode (running from top to bottom or bottom to top).
+Applies to: <fo:character>
+Values: <angle>
+Initial: auto
+Inherited: yes
+grouping-separator 
+This property is defined in XSLT. It concerns number to string
+conversion for the format of numeric expressions. Example: grouping-
+separator=",". The application is only useful in conjunction with
+grouping-size. It can also be used in FO for formatting page numbers.
+Applies to: <fo:page-sequence>, <fo:scaling-value-citation>
+Values: <character>
+Initial: no separator
+Inherited: no
+grouping-size 
+This property is defined in XSLT. It concerns number to string
+conversion for the format of numeric expressions. Example: grouping-
+size="3". If grouping-separator="," is set, the number '50001' will be
+Properties
+glyph-orientation-horizontal
+140
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 141===
+displayed as '50,001', the number '2000001' as '2,000,001'. It can also be
+used in FO for formatting page numbers.
+Applies to: <fo:page-sequence>, <fo:scaling-value-citation>
+Values: <number>
+Initial: no grouping
+Inherited: no
+height 
+This property sets the height of blocks. If the height is specified
+as a relative value (<percentage>), this value refers to the height of
+the surrounding block. If the height of the surrounding block is not
+explicitly defined, then this relative value corresponds to the default
+auto value, i.e. the height is set by other specifications.
+Applies to: <fo:block-container>, <fo:external-graphic>, <fo:inline>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:table>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-row>
+Values: <length> | <percentage> | auto
+Initial: auto
+Inherited: no
+hyphenate 
+This property decides the hyphenation for line breaks. With true
+hyphenation is generally activated.
+Applies to: <fo:block>, <fo:character>, <fo:inline>
+Values: true | false
+Initial: false
+Inherited: yes
+hyphenation-character 
+This property specifies the Unicode character to be used as hyphen.
+Properties
+grouping-size
+141
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 142===
+Applies to: <fo:block>, <fo:character>
+Values: <character>
+Initial: Unicode character U+002D (the common hyphen)
+Inherited: yes
+hyphenation-keep 
+This property controls hyphenation in the last line of a column or page.
+The default value auto sets no constraints on hyphenation. column avoids
+hyphenation in the last line of a column, page one in the last line of a
+page.
+Applies to: <fo:block>
+Values: auto | column | page
+Initial: auto
+Inherited: yes
+hyphenation-ladder-count 
+This property sets the maximum number of consecutive hyphenated
+lines. Thus, with a value of 3, a maximum of three consecutive
+hyphenated lines will be generated. With the default value no-limit
+the number of consecutive hyphenations is not limited.
+Applies to: <fo:block>
+Values: no-limit | <number>
+Initial: no-limit
+Inherited: yes
+hyphenation-push-character-count 
+This property sets the minimum number of characters in a hyphenated
+word after the hyphen. In the AH XSL Formatter this value can be set
+in the Hyphenation Exception Dictionary. If in element <hyphen-min> a
+value for after is set, this value applies, otherwise 2.
+Properties
+hyphenation-character
+142
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 143===
+Applies to: <fo:block>, <fo:character>
+Values: <number> | auto
+Initial: if in the AHF Hyphenation Exception Dictionary in element
+<hyphen-min> a value for after is set, this value applies, otherwise 2.
+Inherited: yes
+hyphenation-remain-character-count 
+This property sets the minimum number of characters in a hyphenated
+word before the hyphen. In the AH XSL Formatter this value can be set
+in the Hyphenation Exception Dictionary. If in element <hyphen-min> a
+value for before is set, this value applies, otherwise 2.
+Applies to: <fo:block>, <fo:character>
+Values: <number>
+Initial: if in the AHF Hyphenation Exception Dictionary in element
+<hyphen-min> a value for before is set, this value applies, otherwise 2.
+Inherited: yes
+id 
+This property specifies the identifier that is unique among all objects
+in a result tree (XML FO document). The object so named can be
+referenced by other objects. Such an identifier can be generated with
+the generate-id() function in the XSLT process. In <fo:index-range-begin>
+the value of id indicates the beginning of an index range, which ends at
+the position of <fo:index-range-end> with the value of the same name in
+ref-id.
+Applies to: <fo:basic-link>, <fo:bidi-override>, <fo:block>,
+<fo:block-container>, <fo:character>, <fo:external-graphic>,
+<fo:index-range-begin>, <fo:initial-property-set>, <fo:inline>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:leader>,
+<fo:list-block>, <fo:list-item>, <fo:list-item-body>,
+Properties
+hyphenation-push-character-count
+143
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 144===
+<fo:list-item-label>, <fo:multi-case>, <fo:multi-properties>
+<fo:multi-property-set>, <fo:multi-switch>, <fo:multi-toggle>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:page-sequence>, <fo:page-sequence-wrapper>, <fo:table>,
+<fo:table-and-caption>, <fo:table-body>, <fo:table-caption>,
+<fo:table-cell>, <fo:table-footer>, <fo:table-header>, <fo:table-row>,
+<fo:wrapper>
+Values: <id>
+Initial: none
+Inherited: no
+index-class 
+This property assigns an index class to a formatting object for which an
+index key (index-key) is also set. Such index class values are responsible
+for the assignment of page numbers to page number ranges. Page
+numbers of different index classes are assigned to different page
+number ranges. So, for example, if the preface and the subsequent
+chapter are in one page number range and the referenced page
+numbers are continuous from page 'vi' of the preface to page '4' of
+the first chapter, then the page number range will be represented as
+'vi-4'. If the preface and the following chapter are in different index
+classes, then 'vi-xx, 1-4' will be displayed.
+Applies to: <fo:index-range-begin>, <fo:page-sequence>,
+<fo:page-sequence-wrapper>
+Values: <string>
+Initial: empty string
+Inherited: no
+Properties
+id
+144
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 145===
+index-key 
+This property is used to assign an index key to a formatting object. All
+index keys with the same value identify an index term for which a list
+of page number references can be generated.
+Applies to: <fo:index-range-begin>, <fo:page-sequence>,
+<fo:page-sequence-wrapper>
+Values: <string>
+Initial: none
+Inherited: no
+indicate-destination 
+ (AHF: not supported)
+In an interactive application, this property specifies whether the target
+of the link should be displayed or not.
+Applies to: <fo:basic-link>
+Values: true | false
+Initial: false
+Inherited: no
+initial-page-number 
+This property sets the starting page number for a page sequence. With
+auto the page count will start with 1 if this page sequence is not
+preceded by another one. For auto-odd, a 1 is added to the last page
+number of the preceding page sequence, if necessary, to allow the
+given page sequence to start with an odd page number. For auto-even,
+the same applies for starting with an even page number. For <number> it
+is possible to start with any page number.
+auto-odd-if-only: a page-sequence with only one page behaves like auto-
+odd. Otherwise it is considered auto.
+Applies to: <fo:page-sequence>
+Values: auto | auto-odd | auto-even | <number> | auto-odd-if-only
+Properties
+index-key
+145
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 146===
+Initial: auto
+Inherited: no
+inline-progression-dimension 
+This property specifies for the typeset, possibly deviating from the
+normal behavior of the formatter, how wide ‒ in writing direction ‒
+it should set the box for the content. With the default value auto no
+deviation from the normal behavior of the formatter is caused. With a
+fixed value (<length>) the specified width is set. For content that takes
+less than this width, a blank space is created in the writing direction
+(right). If the content takes more than this width, the content following
+in the line starts at the right end of the rectangle (overlapping the
+content, if necessary!). With a relative value (<percentage>) the width is
+set in relation to the direct parent object with an explicit width. With
+a width range (<length-range>) the width can be set within certain limits
+depending on the content.
+An example:
+inline-progression-dimension.minimum="20mm"
+inline-progression-dimension.optimum="25mm"
+inline-progression-dimension.maximum="30mm".
+Applies to: <fo:block-container>, <fo:external-graphic>, <fo:inline>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:table>,
+<fo:table-caption>, <fo:table-cell>
+Values: auto | <length> | <percentage> | <length-range>
+Initial: auto
+Inherited: no
+internal-destination 
+ (AHF: extended supported)
+This property sets the document internal <fo:basic-link> or
+<fo:bookmark> target object.
+Properties
+initial-page-number
+146
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 147===
+The AH XSL Formatter adds the <number-with-fragment> and <named-
+action> values which can be used to set the behavior of a PDF link more
+precisely. For more details see the AH XSL Formatter Online Manual
+(file: index.html/ahf-ext.html/#axf.internal-destination).
+Applies to: <fo:basic-link>, <fo:bookmark>
+Values: empty-string | <id-ref> | <number-with-fragment> | <named-action>
+Initial: empty string
+Inherited: no
+intrinsic-scale-value 
+This assigns a general scaling factor to graphics relative to their
+original size.
+Applies to: <fo:scaling-value-citation>
+Values: <percentage>
+Initial: 100%
+Inherited: yes
+intrusion-displace 
+For embedding a float object in a block, this property specifies the
+space it clears for the embedding. For the line value, just as many
+lines of the block are indented for the embedding as required by the
+embedded object. With block, the entire block is indented according to
+the width of the embedded object. The space below the object that is
+not needed remains free.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:table>, <fo:table-and-caption>, <fo:table-caption>
+Values: auto | none | line | indent | block
+Initial: auto
+Inherited: yes
+Properties
+internal-destination
+147
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 148===
+keep-together 
+This property specifies the extent to which the object in question
+should be kept together (not wrapped). Note the three components
+of this property: .within-line, .within-column and .within-page. With the
+auto value, no constraints are placed on wrapping, and with always the
+object is never broken. With an integer value, e.g. 1, it is weighed
+whether this value is against a higher numerical value to keep the
+given objects together.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>, <fo:inline>,
+<fo:inline-container>, <fo:list-block>, <fo:list-item>, <fo:list-item-body>,
+<fo:list-item-label>, <fo:table>, <fo:table-and-caption>,
+<fo:table-caption>, <fo:table-row>
+Values: <keep>
+Values for the components: auto | always | <integer>
+Initial: keep-together.within-line="auto", keep-together.within-
+column="auto", keep-together.within-page="auto"
+Inherited: yes
+keep-with-next 
+This property specifies the extent to which the object in question
+should be kept together with the object immediately following it.
+Note the three components of this property: .within-line, .within-column,
+and .within-page. With the component value auto no constraints are set
+for wrapping, with always wrapping is never done between the two
+objects. With an integer value, e.g. 3, it is weighed whether this value is
+against a higher numerical value to keep the given object with the next
+one.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+Properties
+keep-together
+148
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 149===
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:table>, <fo:table-and-caption>, <fo:table-row>
+Values: <keep>
+Values for the components: auto | always | <integer>
+Initial: keep-with-next.within-line="auto", keep-with-next.within-
+column="auto", keep-with-next.within-page="auto"
+Inherited: no
+keep-with-previous 
+This property specifies to what extent the object in question should
+be kept together with the immediately preceding object. The further
+explanations for keep-with-next apply analogously.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:inline>, <fo:inline-container>,
+<fo:instream-foreign-object>, <fo:leader>, <fo:list-block>, <fo:list-item>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:table>, <fo:table-and-caption>, <fo:table-row>
+Values: <keep>
+Values for the components: auto | always | <integer>
+Initial: keep-with-previous.within-line="auto", keep-with-previous.within-
+column="auto", keep-with-previous.within-page="auto"
+Inherited: no
+language 
+Indicates the language according to whose rules line formation, line
+breaks and hyphenation are to take place. The value for <language> is a
+language key according to ISO 639, for example fr for French.
+Applies to: <fo:block>, <fo:character>,
+<fo:page-sequence>, <axf:hyphenation-info>, <axf:space-after-punctuation>,
+Properties
+keep-with-next
+149
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 150===
+<axf:space-before-punctuation>, <axf:space-between-digit-and-punctuation>,
+<axf:space-between-punctuation-and-digit>
+Values: none | <language>
+Initial: none
+Inherited: yes
+last-line-end-indent 
+This property specifies to what extent the last line of a block is to be
+indented on the right (for left-right writing direction). Exceeding text
+in the last line is wrapped, if necessary and thus forms another line.
+Applies to: <fo:block>
+Values: <length> | <percentage>
+Initial: 0pt
+Inherited: yes
+leader-alignment 
+ (AHF: extended supported)
+This property specifies the alignment of leader-pattern fill characters. If
+the leader-pattern property is set to dots, then the fill characters are not
+typeset justified, but are aligned to the left with the value start, with
+center to the center, and with end to the right.
+Applies to: <fo:leader>
+Values: none | reference-area | page | start | center | end
+Initial: none
+Inherited: yes
+leader-length 
+This property specifies the length of a leader line. The .minimum, .optimum
+and .maximum components can be used to set a length range. If these
+components are not used, a fixed length is set.
+Applies to: <fo:leader>
+Properties
+language
+150
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 151===
+Values: <length-range>
+Values for the components: <length>
+Initial: leader-length.minimum="0pt", leader-length.optimum="12.0"pt,
+leader-length.maximum="100%"
+Inherited: yes
+leader-pattern 
+This property specifies the fill character pattern of a leader line. With
+the space, rule and dots values the <fo:leader> object has no content. The
+use-content value sets as pattern the content of the fo:leader object.
+Applies to: <fo:leader>
+Values: space | rule | dots | use-content
+Initial: space
+Inherited: yes
+leader-pattern-width 
+This property specifies the width of the fill pattern of a leader line. If
+necessary, the pattern will be letter spaced. With the use-font-metrics
+value the characters of the pattern are set according to their font
+metrics.
+Applies to: <fo:leader>
+Values: use-font-metrics | <length>
+Initial: use-font-metrics
+Inherited: yes
+left 
+This property specifies the left border for positioned objects (block
+containers) within the block or area containing the object.
+Applies to: positioned objects, especially <fo:block-container>
+Values: <length> | <percentage> | auto
+Properties
+leader-length
+151
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 152===
+Initial: auto
+Inherited: no
+letter-spacing 
+This property specifies to what extent characters should be spaced
+beyond the font-given, normal character spacing. With a fixed value
+(<length>) a constant character spacing is specified. The <space> value
+can be used to specify more complex character spacing adjustments.
+Applies to: <fo:block>, <fo:inline>, <fo:character>
+Values: normal | <length> | <space>
+Initial: normal
+Inherited: yes
+letter-value 
+ (AHF: partially supported) 
+This property is defined in XSLT. Concerns number-to-string
+conversion and has no meaning in languages based on the Latin
+alphabet.
+Applies to: <fo:page-sequence>, <fo:scaling-value-citation>
+Values: auto | alphabetical | traditional
+Initial: auto
+Inherited: no
+linefeed-treatment 
+This property specifies the handling of the Unicode character U+000A
+(linefeed). With the ignore value, this character is ignored in processing.
+With the preserve value, the linefeed character in the XML source text
+is converted to a carriage return (line break) during typesetting. With
+the default value treat-as-space, the linefeed character is interpreted as
+a space. With the treat-as-zero-width-space value, the linefeed character
+is translated to the Unicode character U+000B (zero-width space).
+Properties
+left
+152
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 153===
+Applies to: <fo:block>
+Values: ignore | preserve | treat-as-space | treat-as-zero-width-space
+Initial: treat-as-space
+Inherited: yes
+line-height 
+This property specifies the height of a text line. For block objects
+this means the minimum line height, for inline objects the exact
+line height. The default for the normal value assumes the given font
+size is specified in the formatter presettings, and typically ranges
+between a factor value of 1.0 to 1.2. This factor value can also
+be specified by the <number> value. With <length> an arbitrary value
+can be set in a valid unit of measurement. With <space> the line
+height can be specified in terms of minimum, maximum and optimum
+height. Additionally, the conditionality and precedence can be set.
+For this purpose, the following components are added to the value
+name: .minimum, .maximum, .optimum, .conditionality and .precedence.
+Applies to: <fo:basic-link>, <fo:bidi-override>, <fo:block>, <fo:character>,
+<fo:external-graphic>, <fo:initial-property-set>, <fo:inline>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:leader>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:title>
+Values: normal | <length> | <number> | <percentage> | <space>
+Initial: normal
+Inherited: yes
+line-height-shift-adjustment 
+This property specifies whether or not to adjust the line height for
+content with baseline-shift. An example of usage: with the default
+value consider-shifts, the line height is extended by superscript
+Properties
+linefeed-treatment
+153
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 154===
+or subscript characters (exponents or indexes, respectively). With
+disregard-shifts the given line height remains unaffected. However,
+these characters can then extend into the preceding or following line.
+Applies to: <fo:block>
+Values: consider-shifts | disregard-shifts
+Initial: consider-shifts
+Inherited: yes
+line-stacking-strategy 
+This property specifies the strategy for lining up the lines in the
+typeset. An XSL formatter must support at least the max-height and font-
+height values. It can interpret line-height as max-height. When setting
+line-height in the AH XSL Formatter, all lines are set according to the
+setting of the line-height property.
+Applies to: <fo:block>
+Values: line-height | font-height | max-height
+Initial: max-height
+Inherited: yes
+margin 
+This shorthand property simultaneously specifies the properties of
+margin-top, margin-right, margin-bottom, and margin-left. If only one value
+is given for the margins, then it applies to all four sides. If two values
+are given, then the first applies to the top and bottom margins, and
+the second applies to the right and left. If three values are given, the
+first applies to the top, the second to the left and right, and the third
+to the bottom. For four values, they are used in the given order for top,
+right, bottom, and left. For the use of this property, see also the notes at
+margin-top or margin-bottom.
+Properties
+line-height-shift-adjustment
+154
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 155===
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width> {1,4}
+Initial: none
+Inherited: no
+margin-bottom 
+This property specifies the bottom margin of a block. For margin-width
+any value can be set in a valid unit of measurement. Negative values
+are allowed. However, there may be constraints in an XSL formatter
+that exclude the use of these negative values.
+This property has been adopted in XSL-FO only for the sake of
+compatibility with CSS2. Instead of margin-bottom, better use space-after
+because the latter is easier to control in nesting blocks. Within
+the objects <fo:simple-page-master> and <fo:region-*> the usage is
+unproblematic.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width>
+Initial: 0pt
+Inherited: no
+margin-end 
+This property specifies the right margin of a block (for left-right
+writing direction). For <margin-width> any value can be set in a valid unit
+of measurement. Negative values are allowed. However, there may be
+restrictions in an XSL formatter that excludes the use of these negative
+values.
+Properties
+margin
+155
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 156===
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width>
+Initial: 0pt
+Inherited: no
+margin-left 
+This property specifies the left margin of a block. For <margin-width> any
+value can be set in a valid unit of measurement. Negative values are
+allowed. However, there may be restrictions in an XSL formatter that
+excludes the use of these negative values.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width>
+Initial: 0pt
+Inherited: no
+margin-right 
+This property specifies the right margin of a block. For <margin-width>
+any value can be set in a valid unit of measurement. Negative values
+are allowed. However, there may be restrictions in an XSL formatter
+that excludes the use of these negative values.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width>
+Initial: 0pt
+Inherited: no
+Properties
+margin-end
+156
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 157===
+margin-start 
+This property specifies the left margin of a block (for left-right writing
+direction). For <margin-width> any value can be set in a valid unit of
+measurement. Negative values are allowed. However, there may be
+restrictions in an XSL formatter that excludes the use of these negative
+values.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width>
+Initial: 0pt
+Inherited: no
+margin-top 
+This property specifies the top margin of a block. For margin-width any
+value can be set in a valid unit of measurement. Negative values are
+allowed. However, there may be constraints in an XSL formatter that
+exclude the use of these negative values.
+This property has been adopted in XSL-FO only for the sake of
+compatibility with CSS2. Instead of margin-top, better use space-before
+because the latter is easier to control in nesting blocks. Within
+the objects <fo:simple-page-master> and <fo:region-*> the usage is
+unproblematic.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:list-item>, <fo:region-body>, <fo:simple-page-master>, <fo:table>,
+<fo:table-and-caption>
+Values: <margin-width>
+Initial: 0pt
+Inherited: no
+Properties
+margin-start
+157
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 158===
+marker-class-name 
+This property specifies the unique identifier of <fo:marker> objects that
+can be retrieved by <fo:retrieve-marker> objects and have identical
+values as the retrieve-class-name property.
+Applies to: <fo:marker>
+Values: <name>
+Initial: empty name
+Inherited: no
+master-name 
+This property specifies the unique identifier of page templates and
+page sequence templates. This allows the master-reference property to
+be used to reference the page templates and page sequence templates in
+the page sequence specifications.
+Applies to: <fo:page-sequence-master>, <fo:simple-page-master>
+Values: <name>
+Initial: empty name
+Inherited: no
+master-reference 
+This property is used to reference page templates in page sequence
+templates as well as page templates and page sequence templates in
+page sequences. The <name> value here is the identical value of the
+master-name property of page templates or page sequence templates.
+Applies to: <fo:conditional-page-master-reference>, <fo:page-sequence>,
+<fo:repeatable-page-master-reference>, <fo:single-page-master-reference>
+Values: <name>
+Initial: empty name
+Inherited: no
+Properties
+marker-class-name
+158
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 159===
+max-height 
+This property allows to specify the maximum height of a box.
+The <length> value may be any positive value in a valid unit of
+measurement.
+Applies to: all formatting objects, but not for table objects
+Values: <length> | <percentage> | none
+Initial: 0pt
+Inherited: no
+max-width 
+This property allows to specify the maximum width of a box.
+The <length> value may be any positive value in a valid unit of
+measurement. With the default value none the width is not limited.
+Applies to: all formatting objects, but not for table objects
+Values: <length> | <percentage> | none
+Initial: none
+Inherited: no
+maximum-repeats 
+This property specifies the maximum number of pages to be created
+within a <fo:page-sequence> object. According to the default no-limit
+value, the number of pages is not limited. To note: The formatter will
+not abort formatting if the maximum value is reached, but it will issue
+an appropriate warning.
+Applies to: <fo:repeatable-page-master-alternatives>,
+<fo:repeatable-page-master-reference>
+Values: <number> | no-limit
+Initial: no-limit
+Inherited: no
+Properties
+max-height
+159
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 160===
+media-usage 
+ (AHF: not supported) 
+This property controls page output in a medium with unspecified page
+dimensions. With the paginate value a sequence of pages is output.
+With bounded-in-one-dimension the entire content of a page sequence
+is written to a page. Either the page height or the page width must
+be specified in the first-used page template. The unbounded value also
+writes the entire contents of a page sequence to a page. Specifying page
+height or page width here will be treated as an error by the formatter.
+Page height and width are thus set by the output medium. With the
+default value auto the formatter sets how the page output should look
+like. Typically, this value is identical to the paginate value.
+Applies to: <fo:root>
+Values: auto | paginate | bounded-in-one-dimension | unbounded
+Initial: auto
+Inherited: no
+merge-pages-across-index-key-references 
+This property is used to set whether references to an index term that
+occur multiple times on a page should appear separately in the index or
+be merged into a single page number reference. With the default value
+merge the references are merged. If this is not wanted, this property
+must be specified with the leave-separate value.
+Applies to: <fo:index-page-citation-list>
+Values: merge | leave-separate
+Initial: merge
+Inherited: yes
+merge-ranges-across-index-key-references 
+This property sets whether consecutive page number references to
+an index term should appear in the index in individual page number
+Properties
+media-usage
+160
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 161===
+ranges or be merged. With the default value merge the references are
+merged. If this is not desired, this property must be specified with the
+leave-separate value.
+Applies to: <fo:index-page-citation-list>
+Values: merge | leave-separate
+Initial: merge
+Inherited: yes
+merge-sequential-page-numbers 
+ (AHF: extended supported)
+This property sets whether consecutive page number references should
+be merged. With the default value merge, page numbers are merged if
+the consecutive page numbers are greater than or equal to 3. This case
+is seen as axf:suppress-duplicate-page-number="true". The separator can be
+changed by <fo:index-page-citation-range-separator>.
+The merge-f value merges two consecutive page numbers and appends
+the suffix specified by axf:index-page-citation-range-f-suffix. It applies
+the merge value to three or more consecutive page numbers.
+The merge-ff value merges three consecutive page numbers and
+appends the suffix specified by axf:index-page-citation-range-ff-suffix.
+It applies the merge value to four or more consecutive page numbers.
+Applies to: <fo:index-page-citation-list>
+Values: merge | merge-f | merge-ff
+Initial: merge
+Inherited: yes
+min-height 
+This property allows to specify the minimum height of a box.
+The <length> value may be any positive value in a valid unit of
+measurement.
+Applies to: all formatting objects, but not for table objects
+Properties
+merge-ranges-across-index-key-references
+161
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 162===
+Values: <length> | <percentage>
+Initial: 0pt
+Inherited: no
+min-width 
+This property allows to specify the minimum width of a box.
+The <length> value may be any positive value in a valid unit of
+measurement.
+Applies to: all formatting objects, but not for table objects
+Values: <length> | <percentage>
+Initial: none
+Inherited: no
+number-columns-repeated 
+This property specifies how often the column specification of
+<fo:table-column> should be applied repeatedly.
+Applies to: <fo:table-column>
+Values: <number>
+Initial: 1
+Inherited: no
+number-columns-spanned 
+This property specifies the number of columns to be spanned by a
+table cell. Note the scope: for cells (<fo:table-cell>) the property applies
+to the given cell within a table row, for columns (<fo:table-column>) it
+applies to columns.
+Applies to: <fo:table-cell>, <fo:table-column>
+Values: <number>
+Initial: 1
+Inherited: no
+Properties
+min-height
+162
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 163===
+number-rows-spanned 
+This property specifies the number of rows to be spanned by a table
+cell.
+Applies to: <fo:table-cell>
+Values: <number>
+Initial: 1
+Inherited: no
+odd-or-even 
+ (AHF: extended supported) 
+This property sets to what extent the referenced page template
+(<fo:simple-page-master>) should be used at this point in the page
+sequence. The odd value selects the page template if the given page
+within the page sequence has an odd page number (is a right page),
+the even value if the page is a left page. With any the page template is
+applied regardless of whether the given page is a right or left page.
+The odd-document and even-document values are extensions of the AH XSL
+formatter. If odd-document is selected, the page template will be assigned
+to a document starting with an odd page number, with even-document to
+a document starting with an even page number.
+Applies to: <fo:conditional-page-master-reference>
+Values: odd | even | odd-document | even-document | any
+Initial: any
+Inherited: no
+orphans 
+This property specifies the minimum number of lines of a block before
+breaking the block to a new column or page. The default value 2 keeps
+at least two lines of a paragraph together at the end of the column or
+page.
+Applies to: <fo:block>
+Properties
+number-rows-spanned
+163
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 164===
+Values: <integer>
+Initial: 2
+Inherited: yes
+overflow 
+ (AHF: extended supported)
+This property specifies whether the content of a block object is
+truncated or not in case of overhang (content that does not fit
+into the box specified in its dimensions). With the value visible the
+content is not truncated, it goes beyond the given box. With hidden
+the content is truncated, without scroll mechanism. With scroll the
+content can be scrolled within the given box (system-dependent,
+irrelevant in print output and with the AH XSL Formatter). At error-if-
+overflow an error message is generated by the formatter. For hidden
+the content is truncated. The default value auto is handled by the
+system. For the objects <fo:block-container> and <fo:inline-container>
+Antenna House has extended the range of values in the XSL
+Formatter by two values. The replace value replaces the content of
+the container in the overflow situation with the content contained in
+axf:overflow-replace. This repeats the content until the container is filled
+with the replacement content. The condense value is used to force the
+contents of the container into the container dimensions, as is set with
+axf:overflow-condense.
+Applies to: <fo:block-container>, <fo:external-graphic>,
+<fo:inline-container>, <fo:instream-foreign-object>, <fo:region-after>,
+<fo:region-before>, <fo:region-body>, <fo:region-end>, <fo:region-start>
+Values: visible | hidden | scroll | error-if-overflow | auto | replace |
+condense
+Initial: auto
+Inherited: no
+Properties
+orphans
+164
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 165===
+padding 
+This is the shorthand property for the inner spacing of a box.
+This property simultaneously specifies the properties of padding-top,
+padding-left, padding-bottom and padding-right. If only one value is given
+for the spacing, then it applies to all four sides. If two values are given,
+then the first applies to the top and bottom spacing, and the second
+applies to the right and left. If three values are given, the first applies to
+the top, the second to the left and right, and the third to the bottom. If
+four values are given, they are used in their given order for top, right,
+bottom and left.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width> {1,4}
+Initial: see the corresponding single properties.
+Inherited: no
+padding-after 
+This property specifies the internal spacing at the after border of a box.
+For left-right writing direction, this is the bottom border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+Properties
+padding
+165
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 166===
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width> | <length-conditional>
+Initial: 0pt
+Inherited: no
+padding-before 
+This property specifies the internal spacing at the before border of a
+box. For left-right writing direction, this is the top border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width> | <length-conditional>
+Initial: 0pt
+Inherited: no
+padding-bottom 
+This property specifies the internal spacing at the bottom border of a
+box.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+Properties
+padding-after
+166
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 167===
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width>
+Initial: 0pt
+Inherited: no
+padding-end 
+This property specifies the internal spacing at the end border of a box.
+For left-right writing direction, this is the right border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width> | <length-conditional>
+Initial: 0pt
+Inherited: no
+padding-left 
+This property specifies the inner spacing at the left border of a box.
+Properties
+padding-bottom
+167
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 168===
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width>
+Initial: 0pt
+Inherited: no
+padding-right 
+This property specifies the inner spacing at the right border of a box.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width>
+Initial: 0pt
+Inherited: no
+Properties
+padding-left
+168
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 169===
+padding-start 
+This property specifies the internal spacing at the start border of a box.
+For left-right writing direction, this is the left border.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width> | <length-conditional>
+Initial: 0pt
+Inherited: no
+padding-top 
+This property specifies the internal spacing at the top border of a box.
+Applies to: <fo:basic-link>, <fo:block>, <fo:block-container>,
+<fo:character>, <fo:external-graphic>, <fo:initial-property-set>,
+<fo:inline>, <fo:inline-container>, <fo:instream-foreign-object>,
+<fo:leader>, <fo:list-block>, <fo:list-item>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:table>, <fo:table-and-caption>, <fo:table-body>,
+<fo:table-caption>, <fo:table-cell>, <fo:table-column>, <fo:table-footer>,
+<fo:table-header>, <fo:table-row>, <fo:title>
+Values: <padding-width>
+Initial: 0pt
+Inherited: no
+Properties
+padding-start
+169
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 170===
+page-break-after 
+This property specifies whether or not a page break should occur after
+the given block. A potential page break is typically also affected by the
+page-break-inside property of the parent object, the page-break-after of
+the preceding block, and the page-break-before of the following block. If
+these properties have a value other than auto, the always, left, and right
+values take precedence over avoid. With the auto value, a page break is
+neither forced nor forbidden. With always a page break is forced after
+the given block. With avoid a page break is avoided. With left a page
+break to a left page (with even page number) is forced (if necessary an
+empty right page is generated before). With right the page break to a
+right page (with an odd page number) is forced.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-row>
+Values: auto | always | avoid | left | right
+Initial: auto
+Inherited: no
+page-break-before 
+This property specifies whether or not a page break should occur
+before the given block. A potential page break is typically also
+affected by the page-break-inside property of the parent object, the
+page-break-after of the preceding block, and the page-break-before of the
+following block. If these properties have a value other than auto, the
+always, left, and right values take precedence over avoid. With the auto
+value, a page break is neither forced nor forbidden. With always a page
+break is forced before the given block. With avoid a page break is
+avoided. With left a page break to a left page (with even page number)
+is forced (if necessary an empty right page is generated before). With
+Properties
+page-break-after
+170
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 171===
+right the page break to a right page (with an odd page number) is
+forced.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-row>
+Values: auto | always | avoid | left | right
+Initial: auto
+Inherited: no
+page-break-inside 
+This property specifies whether or not a page break should occur
+within the given block. A potential page break is typically also
+affected by the page-break-inside property of the parent object, the
+page-break-after of the preceding block, and the page-break-before of the
+following block. If these properties have a value other than auto, the
+always, left, and right values take precedence over avoid. With the auto
+value, a page break is neither forced nor forbidden. With avoid a page
+break is avoided.
+Applies to: <fo:block>, <fo:block-container>, <fo:list-block>,
+<fo:table-row>
+Values: auto | avoid
+Initial: auto
+Inherited: yes
+page-citation-strategy 
+This property sets which page should be displayed as the last page of a
+formatting object (typically chapters, sections, etc.) in the page number
+reference. With the default value all, any blank pages generated at
+the end will be treated as the last page. With the normal value, the
+page where the referenced object (chapter, section, etc.) actually ends
+is referenced as the last one. With the non-blank value, pages containing
+Properties
+page-break-before
+171
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 172===
+content outside the text flow (<fo:footnote>, <fo:float>) are also included
+in the referencing.
+Applies to: <fo:page-number-citation-last>
+Values: all | normal | non-blank
+Initial: all
+Inherited: no
+page-height 
+This property specifies the height of a page (sheet size). With the value
+<length> any height can be given in a valid unit of measurement. With
+the default value auto the height specified in the formatter is used. The
+indefinite value is not supported in practice.
+Applies to: <fo:simple-page-master>
+Values: auto | indefinite | <length>
+Initial: auto
+Inherited: no
+page-number-treatment 
+This property can be used to specify the page references in an index as
+active links. With the default value no-link the page references are no
+links. With the alternative value link the page references are configured
+as links to the corresponding page.
+Applies to: <fo:index-key-reference>
+Values: link | no-link
+Initial: no-link
+Inherited: yes
+page-position 
+This property sets to what extent the referenced page template
+(<fo:simple-page-master>) is appropriate at this point in the page
+Properties
+page-citation-strategy
+172
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 173===
+sequence. The value only is applicable if the document consists of only
+one page. The first value selects the page template if the given page
+within the page sequence is the first page, the last value if the page
+is the last page. With rest the page template is applied if the page is
+neither a first nor a last page. With any the page template is selected
+regardless of the page positioning.
+The value second takes the second page (the page after first). <An+B>
+means, you can specify in the same format as :nth() in CSS.
+Applies to: <fo:conditional-page-master-reference>
+Values: only | first | last | rest | any | second | <An+B>
+Initial: any
+Inherited: no
+page-width 
+This property specifies the width of a page (sheet size). With the value
+<length> any width can be given in a valid unit of measurement. With
+the default value auto the width specified in the formatter is used. The
+indefinite value is not supported in practice.
+Applies to: <fo:simple-page-master>
+Values: auto | indefinite | <length>
+Initial: auto
+Inherited: no
+position 
+This property specifies the positioning scheme to be used. The default
+value static says that the given box is to be treated as a normal box
+within the text flow. The top, right, bottom, and left properties are
+irrelevant with this value. With the relative value, the positioning of
+the given box is initially set by the normal text flow as well. Based
+on this, the box is moved accordingly. The following box is positioned
+Properties
+page-position
+173
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 174===
+as if its predecessor had not been moved. At the absolute value, the
+box is positioned according to the top, right, bottom, and left properties.
+These properties start from the box that contains the given box. With
+the fixed value, the box is also positioned according to the top, right,
+bottom and left properties, except that here the reference is not the
+surrounding box, but the page (in the case of a page output medium) in
+which the box is contained.
+Applies to: all formatting objects
+Values: static | relative | absolute | fixed
+Initial: static
+Inherited: no
+precedence 
+This property specifies the precedence of certain
+regions (<fo:region-before>, <fo:region-after>, <fo:region-start> or
+<fo:region-end>) over neighboring regions. The property can only be
+applied to the <fo:region-before> (header region) and/or the <fo:region-
+after> (footer region)! The default value false causes the <fo:region-
+start> (left page area) and <fo:region-end> (right page area) to take
+precedence over the header and footer areas, i.e. to occupy the entire
+page height. In the opposite case (true), the header and footer have
+precedence over the page regions. Thus, the header and footer extend
+to the entire page width.
+Applies to: <fo:region-after>, <fo:region-before>
+Values: true | false
+Initial: false
+Inherited: no
+Properties
+position
+174
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 175===
+provisional-distance-between-starts 
+This property specifies the distance between the start of the list label
+and the start of the list body. The property value is not processed
+directly, but is taken into account in the calculation of the body-start()
+function. body-start() (the indentation of the list body) is equal to the
+left indentation for the given list within the parent box, if any, plus
+the indentation for float blocks, if any, plus the value for provisional-
+distance-between-starts.
+Applies to: <fo:list-block>
+Values: <length>
+Initial: 24.0pt
+Inherited: yes
+provisional-label-separation 
+This property specifies the distance between the end of the list label
+and the beginning of the list body. The property value is not processed
+directly in the formatting, but is taken into account in the calculation of
+the label-end() function. Considering that the list label and the list body
+are both left-aligned, the <length> value specifies the minimum distance
+between the two list objects.
+Applies to: <fo:list-block>
+Values: <length>
+Initial: 6.0pt
+Inherited: yes
+reference-orientation 
+This property specifies the Top of an area compared to the current
+writing direction. The property is used to rotate content in 90°
+increments. For left-right writing direction, the value 90 causes the
+Properties
+provisional-distance-between-starts
+175
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 176===
+contents to be rotated to the left (Top is left). It should be noted that the
+property is only applicable to objects that form reference areas.
+As of the standard V.1.1, the specification of reference-orientation
+in <fo:region-*> has no effect unless it is repeatedly specified
+in <fo:page-sequence> with the value of the from-page-master-region()
+function.
+Applies to: <fo:block-container>, <fo:inline-container>, <fo:page-sequence>,
+<fo:region-after>, <fo:region-before>, <fo:region-body>, <fo:region-end>,
+<fo:region-start>, <fo:simple-page-master>
+Values: 0 | 90 | 180 | 270 | -90 | -180 | -270
+Initial: 0
+Inherited: yes
+ref-id 
+This property specifies in directories the reference to the object that
+has the specified unique identifier in the id property. The reference can
+be generated by the XSLT function. For index ranges, the value of the
+property in <fo:index-range-end> refers to the value of the same name of
+the id property in <fo:index-range-begin>. Both objects thus enclose an
+index range. Otherwise, the reference is to any id object with the same
+name.
+Applies to: <fo:index-range-end>, <fo:page-number-citation>,
+<fo:page-number-citation-last>, <fo:scaling-value-citation>
+Values: <idref>
+Initial: none
+Inherited: no
+ref-index-key 
+This property is used to reference a index-key. It is an error if there is no
+text identical index-key for the specified ref-index-key.
+Properties
+reference-orientation
+176
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 177===
+Applies to: <fo:index-key-reference>
+Values: <string>
+Initial: None, a value (string) must be specified.
+Inherited: no
+region-name 
+This property specifies the name for a region within a page template
+(<fo:simple-page-master>). All values except <name> are reserved names
+for the regions named by the values, which must not be used
+for other regions. xsl-region-body stands for the main region of
+a page (<fo:region-body>), xsl-region-start for the left page region
+(for left-right writing direction) (<fo:region-start>), xsl-region-end for
+the right page region (<fo:region-end>, xsl-region-after for the footer
+region (<fo:region-after>), xsl-region-before for the header region
+(<fo:region-before>), xsl-before-float-separator for the region between
+a float object and the adjacent content, xsl-footnote-separator between
+the normal text flow and the following footnotes. <name> is used to
+specify a region which must be unique and valid only within the given
+page template.
+Applies to: <fo:region-after>, <fo:region-before>, <fo:region-body>,
+<fo:region-end>, <fo:region-start>
+Values: xsl-region-body | xsl-region-start | xsl-region-end | xsl-region-
+after |
+xsl-region-before | xsl-before-float-separator | xsl-footnote-separator |
+<name>
+Initial: none
+Inherited: no
+Properties
+ref-index-key
+177
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 178===
+region-name-reference 
+This property is used to specify a text flow (<fo:flow>) to be used in a
+<fo:flow-target-list> object.
+Applies to: <fo:region-name-specifier>
+Values: <name>
+Initial: None, a name must be specified.
+Inherited: no
+relative-align 
+This property specifies the alignment of list objects and table cells
+in vertical direction (for left-right writing direction). This property is
+ignored if the display-align property with a value other than auto is
+specified for the object in question at the same time. For the baseline
+value, the alignment is done to the baseline of the parent object (table
+row). The default value is before, which aligns the given object to the
+top.
+Applies to: <fo:list-item>, <fo:table-cell>
+Values: before | baseline
+Initial: before
+Inherited: yes
+relative-position 
+This property stands for positioning with limited positioning
+possibilities compared to the position property. Only relative
+positioning is possible.
+Applies to: all block objects (except <fo:block-container>) and inline
+objects
+Values: static | relative
+Initial: static
+Inherited: no
+Properties
+region-name-reference
+178
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 179===
+rendering-intent 
+ (AHF: not supported)
+This property specifies a different rendering plan for a color profile
+than the default one. The property and its values can be used primarily
+for CMYK-based color profiles. The effects of the property values are
+strongly system-related.
+Applies to: <fo:color-profile>
+Values: auto | perceptual | relative-colorimetric | saturation |
+absolute-colorimetric
+Initial: auto
+Inherited: no
+retrieve-boundary 
+This property specifies the bounds for rendering live page headings.
+With the page value, the content of a <fo:marker> object occurring on
+the given page is used. With the default value page-sequence, the live
+page heading is repeated until a new <fo:marker> object with the same
+marker-class-name occurs. With document, the live page heading is kept for
+the document scope.
+Applies to: <fo:retrieve-marker>,
+Values: page | page-sequence | document
+Initial: page-sequence
+Inherited: no
+retrieve-class-name 
+This property in the <fo:retrieve-marker> object references an <fo:marker>
+object with the same value for the marker-class-name property. marker-
+class-name and retrieve-class-name have a corresponding reference
+relationship as id and ref-id.
+Applies to: <fo:retrieve-marker>,, <fo:retrieve-table-marker>
+Values: <name>
+Properties
+rendering-intent
+179
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 180===
+Initial: empty name
+Inherited: no
+retrieve-position 
+This property specifies the preference for taking a <fo:marker> content
+as a living page heading. For the default value first-starting-within-
+page, the <fo:marker> object that occurs first on the given page,
+for example a section starting on that page, is preferred. For first-
+including-carryover, the section that wraps from the previous page to
+the given page is preferentially rendered as the page heading. Forlast-
+starting-within-page, the last <fo:marker> object starting on the given
+page (for example, a section) is preferred. For last-ending-within-page,
+the <fo:marker> object ending on the given page is preferably chosen.
+This only works if the <fo:marker> object stands inside a container object
+that denotes the scope for <fo:marker>. For example, this is a section,
+and the <fo:marker> content is the section heading for use as living page
+heading.
+Applies to: <fo:retrieve-marker>,
+Values: first-starting-within-page | first-including-carryover |
+last-starting-within-page | last-ending-within-page
+Initial: first-starting-within-page
+Inherited: no
+retrieve-boundary-within-table 
+This property corresponds to retrieve-boundary, with the difference of
+the restriction of application in tables.
+Applies to: <fo:retrieve-table-marker>
+Values: table | table-fragment | page
+Initial: table
+Inherited: no
+Properties
+retrieve-class-name
+180
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 181===
+retrieve-position-within-table 
+This property corresponds to retrieve-position, with the difference of
+the restriction of the application in tables.
+Applies to: <fo:retrieve-table-marker>
+Values: first-starting | first-including-carryover | last-starting |
+last-ending
+Initial: first-starting
+Inherited: no
+right 
+This property specifies the right border for positioned objects within
+the block or area containing the object.
+Applies to: <fo:block-container>
+Values: <length> | <percentage> | auto
+Initial: auto
+Inherited: no
+role 
+The property can be used to include content-related identifiers. This
+can then be used to handle the content for alternative outputs (e.g.
+speech output) in a specific way. The <string> value is used to
+specify the desired content-related identifier. With <uri-specification>
+an RDF resource (XML object, syntactically valid according to the RDF
+grammar) is specified.
+Applies to: all formatting objects that can be generated directly from
+the XML source data
+Values: <string> | <uri-specification> | none
+Initial: none
+Inherited: no
+Properties
+retrieve-position-within-table
+181
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 182===
+rule-style 
+This property specifies the line pattern for leaders. The property is only
+applicable if at the same time the leader-pattern property has the rule
+value. For the none value, no line or one with width of 0pt is created. At
+dotted, the pattern consists of a sequence of dots. For dashed, the pattern
+consists of a sequence of short line segments. For the default value
+solid, the pattern consists of one continuous line. With double, a double
+line is created. The sum of the two lines and the spacing between them
+is equal to the value of the rule-thickness property. With groove the
+upper part of the line is displayed in full color (usually black) and the
+lower part of the line is lightened according to the line thickness. ridge
+corresponds to the groove value with the difference that the line appears
+full-color at the bottom and lightened at the top.
+Applies to: <fo:leader>
+Values: none | dotted | dashed | solid | double | groove | ridge
+Initial: solid
+Inherited: yes
+rule-thickness 
+This property specifies the width of a leader pattern. The property is
+only applicable if at the same time the leader-pattern property has the
+rule value. The <length> value can be specified with any value in a valid
+unit of measurement.
+Applies to: <fo:leader>
+Values: <length>
+Initial: 1.0pt
+Inherited: yes
+Properties
+rule-style
+182
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 183===
+scale-option 
+This property sets whether the scaling factor for graphics should be
+based on width or height. With the default value (width) it refers to the
+width.
+Applies to: <fo:scaling-value-citation>
+Values: width | height
+Initial: width
+Inherited: yes
+scaling 
+This property specifies whether the specified ratio of height and width
+must be maintained or can be changed when scaling, for example, a
+graphic. With the default value uniform the height-width ratio is kept,
+with non-uniform the ratio can be changed when resizing.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: uniform | non-uniform
+Initial: uniform
+Inherited: no
+scaling-method 
+ (AHF: not supported)
+This property specifies a preference for the scaling method of bitmap
+graphics. With the default value auto it is up to the formatter which
+method is used to scale the graphics. The integer-pixels value is
+intended to cause the formatter to scale each pixel in the original to the
+nearest integer number of pixels output to achieve a smaller or equal
+image size, taking into account height, width, and scaling instructions.
+With the resample-any-method value, the formatter shall use a method of
+its choice to handle the image according to height, width, and scaling
+instructions.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Properties
+scale-option
+183
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 184===
+Values: auto | integer-pixels | resample-any-method
+Initial: auto
+Inherited: no
+score-spaces 
+This property specifies whether the setting of the text-decoration
+property is also valid for spaces. With the default value true spaces get
+the same text-decoration as the other characters. With the value false
+one achieves that the blanks are excluded from the text decoration.
+Applies to: <fo:bidi-override>, <fo:character>, <fo:initial-property-set>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>
+Values: true | false
+Initial: true
+Inherited: yes
+script 
+ (AHF: extended supported) 
+This property specifies for certain language families whether and if so
+which script should be used to support line alignment, line breaking,
+and hyphenation. With the default value auto the script is set by the
+script identifier which is set for the character set in Unicode. With the
+none value, the script is set to undefined or irrelevant for processing.
+To specify the <script> value, set a script specification according
+to ISO 15924. See the scripts supported by the AH XSL Formatter
+(<script-font>) and how to use them.
+Applies to: <fo:block>, <fo:character>
+Values: none | auto | <script>
+Initial: auto
+Inherited: yes
+Properties
+scaling-method
+184
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 185===
+show-destination 
+This property specifies how the target of a reference/link should be
+displayed in an interactive application. The default value replace causes
+the given document view to be replaced by the link target or to scroll
+to the link target. With new an additional view is opened.
+Applies to: <fo:basic-link>
+Values: replace | new
+Initial: replace
+Inherited: no
+size 
+This property is used to specify the page size and page orientation in
+CSS. In XSL-FO the properties page-height and page-width are defined for
+this purpose.
+Applies to: CSS
+Values: <length> {1,2} | auto | landscape | portrait
+Initial: auto
+Inherited: no
+source-document 
+This property sets a pointer back to the source XML document.
+Applies to: <fo:basic-link>, <fo:block>, <fo:bookmark>, <fo:bookmark-title>,
+<fo:change-bar-begin>, <fo:change-bar-end>, <fo:external-graphic>,
+<fo:footnote>, <fo:footnote-body>, <fo:initial-property-set>,
+<fo:inline>, <fo:instream-foreign-object>, <fo:leader>, <fo:list-block>,
+<fo:list-item>, <fo:list-item-body>, <fo:list-item-label>, <fo:multi-case>,
+<fo:multi-properties> <fo:multi-switch>, <fo:multi-toggle>,
+<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>,
+<fo:table>, <fo:table-and-caption>, <fo:table-body>, <fo:table-caption>,
+Properties
+show-destination
+185
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 186===
+<fo:table-cell>, <fo:table-footer>, <fo:table-header>, <fo:table-row>,
+<fo:title>
+Values: <uri-specification> [ <uri-specification> ]* | none
+Initial: none
+Inherited: no
+space-after 
+This property specifies the spacing between the given and the
+immediately following block (spacing down in the left-right write
+direction). Using <space> as a positive value in a valid unit of
+measure specifies the distance measure. Adding the .minimum component
+specifies a minimum spacing, .maximum specifies the maximum
+spacing, and .optimum specifies the optimum spacing. Applying these
+components gives the so-called vertical wedge, i.e. pages of equal
+height with different spacing between blocks for which these
+component specifications are given. With .conditionality and the value
+discard it is specified that the spacing specification should be ignored
+at a page break. With the retain value, the spacing will be maintained
+even if a page break occurs at the top of a new page. With .precedence
+and an integer value, precedence or subordination to a space-before
+specification is specified in the following block.
+Applies to: all block objects
+Values: <space>
+Initial: space-after.minimum="0pt", space-after.optimum="0pt",
+space-after.maximum="0pt", space-after.conditionality="discard", space-
+after.precedence="0"
+Inherited: no
+Properties
+source-document
+186
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 187===
+space-before 
+This property specifies the spacing between the given and the
+immediately preceding block (spacing up in the left-right write
+direction). Using <space> as a positive value in a valid unit of
+measure specifies the distance measure. Adding the .minimum component
+specifies a minimum spacing, .maximum specifies the maximum
+spacing, and .optimum specifies the optimum spacing. Applying these
+components gives the so-called vertical wedge, i.e. pages of equal
+height with different spacing between blocks for which these
+component specifications are given. With .conditionality and the value
+discard it is specified that the spacing specification should be ignored
+at a page break. With the retain value, the spacing will be maintained
+even if a page break occurs at the top of a new page. With .precedence
+and an integer value, precedence or subordination to a space-after
+specification is specified in the preceding block.
+Applies to: all block objects
+Values: <space>
+Initial: space-before.minimum="0pt", space-before.optimum="0pt",
+space-before.maximum="0pt", space-before.conditionality="discard", space-
+before.precedence="0"
+Inherited: no
+space-end 
+This property specifies the spacing between the given and the
+immediately following inline block in the writing direction (spacing to
+the right in the left-right writing direction). Using <space> as a positive
+value in a valid unit of measure specifies the distance measure. Adding
+the .minimum component specifies a minimum spacing, .maximum specifies
+the maximum spacing, and .optimum specifies the optimum spacing. The
+Properties
+space-before
+187
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 188===
+spacing can also be specified as a percentage. This refers to the width of
+the parent block.
+Applies to: all inline objects
+Values: <space> | <percentage>
+Initial: space-end.minimum="0pt", space-end.optimum="0pt",
+space-end.maximum="0pt", space-end.conditionality="discard", space-
+end.precedence="0"
+Inherited: no
+space-start 
+This property specifies the spacing between the given and the
+immediately preceding inline block in the writing direction (spacing
+to the left in the left-right writing direction). Using <space> as a positive
+value in a valid unit of measure specifies the distance measure. Adding
+the .minimum component specifies a minimum spacing, .maximum specifies
+the maximum spacing, and .optimum specifies the optimum spacing. The
+spacing can also be specified as a percentage. This refers to the width of
+the parent block.
+Applies to: all inline objects
+Values: <space> | <percentage>
+Initial: space-start.minimum="0pt", space-start.optimum="0pt",
+space-start.maximum="0pt", space-start.conditionality="discard", space-
+start.precedence="0"
+Inherited: no
+span 
+This property specifies whether a block object should span all columns
+of a multi-column area or fit into the given column. The property
+can be set only for blocks that are direct child objects of a text flow
+Properties
+space-end
+188
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 189===
+(<fo:flow>). With the default value none the block fits into the given
+column, with all the block spans all columns, so it is set page-wide.
+Applies to: <fo:block>, <fo:block-container>
+Values: none | all
+Initial: none
+Inherited: no
+src in <fo:external-graphic> 
+This property references an external resource (e.g. a graphic or
+multimedia object) to be embedded or referenced at this point.
+Applies to: <fo:external-graphic>, <fo:color-profile>,
+<axf:formatter-config>, <axf:hyphenation-info>
+Values: <uri-specification>
+Initial: none
+Inherited: no
+src in <axf:font-face> 
+ (AHF: extended supported) 
+This property references an additional, separately stored font resource
+to be included in the formatting.
+Applies to: <axf:font-face>
+Values: [ <uri-specification> [format(<string>)]? | <font-face-name> ]#
+Initial: none
+Inherited: no
+start-indent 
+This property sets the space between the left edge of a block and
+the left edge of the corresponding reference area. The block is thus
+indented on the left which applies to the writing direction left-right.
+Properties
+span
+189
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 190===
+Applies to: <fo:block>, <fo:block-container>,
+<fo:list-block>, <fo:list-item>, <fo:list-item-body><fo:region-body>,
+<fo:simple-page-master>, <fo:table>, <fo:table-and-caption>
+Values: <length>
+Initial: 0pt
+Inherited: yes
+starting-state 
+ (AHF: not supported) 
+This property concerns an interactive output: the parent
+<fo:multi-switch> object should display the contents of the first-
+occurring <fo:multi-case> object first for the default value show. For hide,
+it should not be displayed. The same applies to <fo:bookmark>.
+Applies to: <fo:multi-case>, <fo:bookmark>
+Values: show | hide
+Initial: show
+Inherited: no
+starts-row 
+This property specifies whether the given cell forms the beginning of
+a new table row. With the default value false the cell does not start
+a new table row. With true a new table row is generated without
+there being a tag for the start of a new table row in the XML source
+document.
+Applies to: <fo:table-cell>
+Values: true | false
+Initial: false
+Inherited: no
+Properties
+start-indent
+190
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 191===
+suppress-at-line-break 
+ (AHF: not supported)
+This property specifies the circumstances of suppressing characters
+immediately before line breaks. With the default value auto the space
+character (U+0020) is suppressed, all other characters are displayed. With
+suppress characters that stand at the beginning or end of a line are
+suppressed. With retain the characters are displayed, even if they stand
+at the beginning or end of a line.
+Applies to: <fo:character>
+Values: auto | suppress | retain
+Initial: auto
+Inherited: no
+switch-to 
+ (AHF: not supported) 
+This property specifies in an interactive application which
+<fo:multi-toggle> object to switch to. For the xsl-preceding value, the
+given fo:multi-case object is replaced by its direct predecessor when
+the switch is activated, for xsl-following by its direct successor. With
+xsl-any, the user is free to choose any neighbor. With <name> one or
+more fo:multi-case objects are specified to switch to.
+Applies to: <fo:multi-toggle>
+Values: xsl-preceding | xsl-following | xsl-any | <name> | [ <name> ]*
+Initial: xsl-any
+Inherited: no
+table-layout 
+This property specifies an algorithm for the layout of table cells, table
+rows and table columns. With the fixed value, the horizontal layout of
+the table is based solely on the user's specifications for table width,
+column widths, and the border or space between cells, not on the
+contents of the cells. With the default value auto, the column widths
+Properties
+suppress-at-line-break
+191
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 192===
+are calculated using a complex algorithm, similar to HTML browsers,
+taking into account the cell contents.
+Applies to: <fo:table>
+Values: auto | fixed
+Initial: auto
+Inherited: no
+table-omit-footer-at-break 
+ (AHF: extended supported) 
+Setting this property to the value true avoids that the table footer
+(<fo:table-footer>) is set repeatedly at the end of each column and page
+for a table that is wrapped to several columns or pages due to its size.
+With the default value false the footer is repeated at the end of each
+column and page.
+In the AH XSL Formatter the value column is added. Setting this value
+omits footer on column breaks, but not on page breaks.
+Applies to: <fo:table>
+Values: true | false | column
+Initial: false
+Inherited: no
+table-omit-header-at-break 
+ (AHF: extended supported) 
+Setting this property to the value true avoids that the table header
+(<fo:table-header>) is set repeatedly at the start of each column and page
+for a table that is wrapped to several columns or pages due to its size.
+With the default value false the header is repeated at the start of each
+column and page.
+In the AH XSL Formatter the value column is added. Setting this value
+omits header on column breaks, but not on page breaks.
+Applies to: <fo:table>
+Values: true | false | column
+Properties
+table-layout
+192
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 193===
+Initial: false
+Inherited: no
+target-presentation-context 
+ (AHF: not supported)
+This property specifies the limited context of the presentation resource
+in an interactive application. The default value use-target-processing-
+context specifies the application of the target-processing-context
+property.
+Applies to: <fo:basic-link>
+Values: use-target-processing-context | <uri-specification>
+Initial: use-target-processing-context
+Inherited: no
+target-processing-context 
+ (AHF: not supported)
+In an interactive application, this property specifies the root of a
+virtual document to be processed by the processor if it is a structured
+resource (e.g. XML, SVG). The default value document-root selects the
+root element of the reference target (topmost element of the external
+document) for processing. With <uri-specification> other nodes can be
+specified.
+Applies to: <fo:basic-link>
+Values: document-root | <uri-specification>
+Initial: document-root
+Inherited: no
+target-stylesheet 
+ (AHF: not supported)
+This property specifies the stylesheet to be used for a document in
+an interactive application. With the default value use-normal-stylesheet,
+the application will use the usual methods of stylesheet selection.
+Alternative stylesheets can be addressed with <uri-specification>.
+Properties
+table-omit-header-at-break
+193
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 194===
+Applies to: <fo:basic-link>
+Values: use-normal-stylesheet | <uri-specification>
+Initial: use-normal-stylesheet
+Inherited: no
+text-align 
+This property specifies the alignment of the lines within a block.
+With the default value start the alignment is left-aligned (for left-right
+writing direction), with center the alignment is centered, with end the
+alignment is right-aligned (for left-right writing direction), with justify
+the lines are expanded to the block width. With inside, lines are right-
+aligned on a left page, left-aligned on a right page, and vice versa with
+outside. For left left alignment is used, for right right alignment is used.
+Only for blocks that are immediate child objects in table cells: The
+<string> value can be used to specify any character (e.g. a dot) or string
+to which the contents in a table column should be aligned.
+Applies to: all block objects
+Values: start | center | end | justify | inside | outside | left | right
+| <string>
+Initial: start
+Inherited: yes
+text-align-last 
+This property specifies the alignment of the last line of a block. With
+the default value relative, if text-align="justify" is set, the last line is
+left-aligned. If the alignment of a block has values other than justify,
+the alignment is according to the value of text-align. If startis set left-
+aligned (for left-right writing direction), if center is set center-aligned,
+if end is set right-aligned (for left-right writing direction), if justify
+is set, the line is expanded to block width. With inside the line is
+Properties
+target-stylesheet
+194
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 195===
+right-aligned on a left page, left-aligned on a right page, with outside
+vice versa. For left left alignment is used, for right right alignment is
+used.
+Applies to: <fo:block>
+Values: relative | start | center | end | justify | inside | outside |
+left | right | <string>
+Initial: relative
+Inherited: yes
+text-altitude 
+This property specifies the text height above the baseline different from
+the font metrics. With the default value use-font-metrics the text height
+is used according to the font metrics. With <length> a different text
+height can be specified.
+Applies to: <fo:block>, <fo:character>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>
+Values: use-font-metrics | <length>
+Initial: use-font-metrics
+Inherited: no
+text-decoration 
+This property specifies decorations (typically underlines, overlines,
+strikethroughs) that can be added to the text of an object. The default
+value none negates any decoration. The other values, as long as they are
+not mutually exclusive, can be used in combination: underline causes
+an underline, overline causes an overline, and line-through causes a
+strike-through. The blink value is only useful in interactive applications.
+The values with the no- prefix cause suppression of the decoration in
+question.
+Applies to: all formatting objects
+Properties
+text-align-last
+195
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 196===
+Values: none | [[ underline | no-underline ] || [ overline |no-overline ]
+||
+[ line-through | no-line-through ] || [ blink | no-blink ]]
+Initial: none
+Inherited: in principle no. However, if the decoration is applied to
+block objects, then it applies to the child inline objects as well. If
+the decoration is applied to inline objects, then it applies to all boxes
+(characters) of their content.
+text-depth 
+This property specifies the text height below the baseline different from
+the font metrics. With the default value use-font-metrics the text height
+is used according to the font metrics. With <length> a different text
+height can be specified.
+Applies to: <fo:block>, <fo:character>, <fo:leader>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>
+Values: use-font-metrics | <length>
+Initial: use-font-metrics
+Inherited: no
+text-indent 
+This property specifies the indentation of the first line of text in a
+block. The <length> value can be used to specify any value in a valid
+unit of measure. Positive values create an indent, negative values create
+a hanging indent. With <percentage> a relative value can be specified
+which refers to the width of the block.
+Applies to: all block objects
+Values: <length> | <percentage>
+Initial: 0pt
+Inherited: yes
+Properties
+text-decoration
+196
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 197===
+text-shadow 
+This property specifies a list of shadow effects that will be applied
+to the text of an object. With the default value none no shadow is
+created. With the values <color> the shadow color is defined, to which
+values of type <length> are added. A shadow is positioned by two length
+measures relative to the position of the normal text character: The
+first length specifies the horizontal distance (with positive values to
+the right, with negative to the left), the second the vertical distance
+(with positive values down, with negative up). Optionally, a blur
+dimension can be specified with the third length (ignored by the AH
+XSL Formatter). The length groups of a color are separated by commas.
+The constraints of this feature are described in the Online Manual at
+text-shadow. They concern some output formats, font aspects and others.
+Applies to: all which can have borders
+Values: none | [ <length>{2,3} && <color>? ]#
+Initial: none
+Inherited: no
+text-transform 
+ (AHF: extended supported) 
+This property controls the transformation from upper to lower case
+or vice versa of a text. With the default value none no character
+transformation is performed. With capitalize each initial letter of a
+word is rendered as a capital letter. With uppercase all characters are
+rendered as uppercase, with lowercase as lowercase.
+Three values are added in the AH XSL Formatter: capitalize-lowercase,
+fullwidth und fullwidth-if-vertical.
+Applies to: all elements
+Values: none | [[ capitalize | uppercase | lowercase | capitalize-
+lowercase ] ||
+[ fullwidth | fullwidth-if-vertical ]]]
+Properties
+text-shadow
+197
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 198===
+Initial: none
+Inherited: yes
+top 
+This property specifies the top border for positioned objects (block
+containers) within the block or area containing the object.
+Applies to: <fo:block-container>
+Values: <length> | <percentage> | auto
+Initial: auto
+Inherited: no
+treat-as-word-space 
+ (AHF: not supported)
+This property specifies whether a character is to be treated as a space
+or as a normal letter. With the default value auto only the space and
+the permanent space (U+0020 and U+00A0) are treated as word separators.
+In a font, other characters may be classified as word separators. These
+characters are treated as if the true value is specified, i.e. they are used
+to expand lines to equal width if necessary (justification). With true the
+designated character is specified as word separator. With false the use
+for expanding the line is prevented.
+Applies to: <fo:character>
+Values: auto | true | false
+Initial: auto
+Inherited: no
+unicode-bidi 
+This property specifies a new writing direction of a string within a
+given writing direction. With the default value normal nothing happens.
+With the embed value, an additional embedding layer is opened for
+an inline object according to the Unicode bidirectional algorithm. The
+Properties
+text-transform
+198
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 199===
+writing direction of this embedding layer is set by the value of the
+direction property. The bidi-override value is used to override ordering
+in inline objects or block objects that contain only inline objects. This
+means that the ordering within the object strictly matches the value
+of the direction property. The implicit part of the Unicode bidirectional
+algorithm is ignored.
+Applies to: all objects
+Values: normal | embed | bidi-override
+Initial: normal
+Inherited: no
+vertical-align 
+This property specifies the vertical alignment of inline blocks and
+within table cells. With the baseline value, the baseline of the given
+block is aligned with that of the parent object. With middle, the vertical
+center of the given block is aligned with the baseline of the parent
+object plus half the height of a lowercase letter in the parent object.
+With sub, the baseline of the given block is lowered relative to the
+baseline of the parent object for subscript text, and raised for super
+for superscript text. This does not reduce the size of the font! With
+text-top the text of the given object is aligned to the parent object's top
+line, with text-bottom to the bottom line. With top the text is aligned
+to the headline of the line, with bottom to the footline of the line. With
+<percentage> a relative value is specified. If this is a positive value, the
+baseline will be moved up according to the line height, if negative,
+it will be moved down. A value of 0% is equivalent to baseline. An
+absolute value is specified with <length>. If this is a positive value, the
+baseline will be moved up according to the line height; if negative, it
+will be moved down. A value of 0mm corresponds to the value baseline.
+Applies to: inline objects and table cell objects
+Properties
+unicode-bidi
+199
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 200===
+Values: baseline | middle | sub | super | text-top | text-bottom |
+<percentage> | <length> | top | bottom
+Initial: baseline
+Inherited: no
+visibility 
+This property specifies the display or suppression of the display.
+With the default value visible the content is processed normally
+and displayed in its box. With hidden the generated box is invisible
+(transparent), but it is included in typeset and pagination. With collapse
+the invisible box also no longer takes up any space.
+Applies to: all objects
+Values: visible | hidden | collapse
+Initial: visible
+Inherited: no
+white-space 
+This property specifies the treatment of whitespace characters within
+the text. With the default value normal sequences of whitespace
+characters are reduced to one space. The whitespace characters are
+used for line breaks, if necessary, and eliminated in the process.
+Additional line breaks can be generated by inserting \A in the text flow.
+Space reduction is avoided with pre. Line breaks are generated only
+where line breaks or \A stand in the text flow. With nowrap, sequences
+of spaces are reduced to one (like normal). However, spaces are not used
+for line breaks. Only at \A in the text flow are line breaks set.
+Applies to: <fo:block>
+Values: normal | pre | nowrap
+Initial: normal
+Inherited: yes
+Properties
+vertical-align
+200
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 201===
+white-space-collapse 
+This property specifies the handling of multiple, directly consecutive
+spaces in the text flow. With the default value true, consecutive
+whitespace characters are reduced to one space. Spaces that stand
+directly before a linefeed character are eliminated. With false no
+whitespace treatment is performed.
+Applies to: <fo:block>
+Values: false | true
+Initial: true
+Inherited: yes
+white-space-treatment 
+This property specifies how whitespace and corresponding characters
+with whitespace character should be handled in the text flow. With the
+default value ignore-if-surrounding-linefeed all whitespace characters
+immediately preceding or following the linefeed character are
+eliminated. With ignore, only the whitespace characters preceding the
+linefeed character are eliminated. With preserve, all space-characters
+are converted to spaces (U+0020) and preserved. With ignore-if-before-
+linefeed, the spaces before the linefeed character are eliminated and the
+spaces after are preserved, vice versa for ignore-if-after-linefeed.
+Applies to: <fo:block>
+Values: ignore | preserve | ignore-if-before-linefeed | ignore-if-after-
+linefeed |
+ignore-if-surrounding-linefeed
+Initial: ignore-if-surrounding-linefeed
+Inherited: yes
+Properties
+white-space-collapse
+201
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 202===
+widows 
+This property specifies the minimum number of lines of a block after
+breaking the block to a new column or page. The default value 2 keeps
+at least two lines of a paragraph together at the top of the following
+column or page.
+Applies to: <fo:block>
+Values: <integer>
+Initial: 2
+Inherited: yes
+width 
+This property specifies the content width of blocks. The default value
+auto says that the width is set by other properties. With <length> a
+width is set in a valid unit of measurement. With <percentage> a relative
+width with respect to the parent object is specified.
+Applies to: all block objects
+Values: <length> | <percentage> | auto
+Initial: auto
+Inherited: no
+word-spacing 
+This property specifies the spacing between words. The spacing is
+system-dependent and is also influenced by the alignment of the lines.
+The default value normal denotes normal spacing, which is affected by
+font, font size, and typesetting system defaults. The <length> specifies
+a value in a valid unit of measurement, which is added to the default
+word spacing. Negative values can also be specified, but there may be
+system constraints on these. <space> allows to define a range for word
+spacing which is added to the default word spacing. The minimum
+and maximum values denote the limits for adjusting the word spacing.
+Properties
+widows
+202
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 203===
+The following components can be used for range specification: word-
+spacing.minimum (minimum value), word-spacing.maximum (maximum value),
+word-spacing.optimum (optimum value).
+Applies to: all objects
+Values: normal | <length> | <space>
+Initial: normal
+Inherited: yes
+wrap-option 
+This property specifies how a line break is treated. With the default
+value wrap the lines are broken if the content exceeds the specified
+block width. With no-wrap, the content is not wrapped to lines. The
+content exceeding the given block width will be treated according to
+the overflow properties of the reference area.
+Applies to: <fo:block>, <fo:inline>, <fo:page-number>,
+<fo:page-number-citation>, <fo:page-number-citation-last>
+Values: no-wrap | wrap
+Initial: wrap
+Inherited: yes
+writing-mode 
+ (AHF: partially supported)
+This property specifies the writing direction for reference
+area forming objects. Applying writing-mode to page templates
+(<fo:simple-page-master>) sets the top, bottom, right, and left placement
+of page areas. The writing direction within the areas sets the direction
+of the text flow and how blocks are lined up. With the default value lr-
+tb, the writing direction goes from left to right and from top to bottom.
+Changing the writing direction within a page area is possible within
+<fo:block-container> and <fo:inline-container> objects. In tables, writing-
+mode causes horizontal alignment of columns or cells, corresponding to
+Properties
+word-spacing
+203
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 204===
+vertical alignment of table rows. This allows tables to be rotated. The
+rl-tb value specifies the writing direction for Arabic and Hebrew (right
+to left and top to bottom). tb-rl specifies the writing direction from top
+to bottom and right to left (for Chinese and Japanese). lr is a shorthand
+for lr-tb, rl one for rl-tb, tb one for tb-rl.
+As of the standard V.1.1, the specification of writing-mode
+in <fo:region-*> has no effect unless it is repeatedly specified
+in fo:page-sequence with the value of the from-page-master-region()
+function.
+Applies to: <fo:page-sequence>, <fo:simple-page-master>, <fo:region-after>,
+<fo:region-before>, <fo:region-body>, <fo:region-end>, <fo:region-start>,
+<fo:block-container>, <fo:inline-container>
+Values: lr-tb | rl-tb | tb-rl | lr | rl | tb
+Initial: lr-tb
+Inherited: yes
+xml:lang 
+This property specifies the language and country according to whose
+rules hyphenation and line breaks should be handled. The language is
+denoted by the <language-country> value. The value for language is a two-
+or three-letter abbreviation according to ISO 639-2:1998, for example
+for German de(u), for English en(g) and for French fr(a). The value
+for country is optional. The functionality is equivalent to the language
+property. The use of language is preferred.
+Applies to: <fo:block>, <fo:character>,
+<fo:page-sequence>, <axf:hyphenation-info>, <axf:space-after-punctuation>,
+<axf:space-before-punctuation>, <axf:space-between-digit-and-punctuation>,
+<axf:space-between-punctuation-and-digit>
+Values: <language-country>
+Properties
+writing-mode
+204
+© 2021 MID/Information Logistics ‒ All rights reserved
+

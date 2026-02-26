@@ -235,7 +235,23 @@ A potential page break location is typically under the influence of the parent e
 
 ## Code Samples
 
-No code samples in spec for this property group.
+### Spec Example: keep-together shorthand and expanded form
+
+<!-- Source: xslspec.xml line 5919 -->
+```xml
+keep-together="always"
+```
+
+is equivalent to:
+
+<!-- Source: xslspec.xml line 5923 -->
+```xml
+keep-together.within-line="always"
+keep-together.within-column="always"
+keep-together.within-page="always"
+```
+
+For complete working examples including page break handling, keep-together on blocks, heading-to-paragraph keeps, table row keeps, widow/orphan control, and column breaks, see **guide-keeps-breaks**.
 
 ## See Also
 

@@ -100,17 +100,17 @@ For complete examples of `fo:table-cell` usage including column and row spanning
 
 ## See Also
 
-- `fo:table` -- the parent table formatting object
-- `fo:table-row` -- groups cells into rows
-- `fo:table-body` -- table body section
-- `fo:table-header` -- table header section
-- `fo:table-footer` -- table footer section
-- `fo:table-column` -- column specifications
-- `column-number` property
-- `number-columns-spanned` property
-- `number-rows-spanned` property
-- `display-align` property
-- `empty-cells` property
-- `starts-row` property
-- `ends-row` property
-- `border-collapse` property
+- [fo:table](fo-table.md) — the parent table formatting object
+- [fo:table-row](fo-table-row.md) — groups cells into rows
+- [fo:table-body](fo-table-body.md) — table body section
+- [fo:table-header](fo-table-header.md) — table header section
+- [fo:table-footer](fo-table-footer.md) — table footer section
+- [fo:table-column](fo-table-column.md) — column specifications
+- column-number property
+- number-columns-spanned property
+- number-rows-spanned property
+- display-align property
+- empty-cells property
+- starts-row property
+- ends-row property
+- border-collapse property

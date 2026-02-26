@@ -37,6 +37,6 @@ No code samples in spec for this formatting object. See the "Formatting Objects 
 
 ## See Also
 
-- `fo:index-key-reference` -- parent formatting object
-- `fo:index-page-number-suffix` -- sibling for static suffix text
-- `fo:index-page-citation-list` -- grandparent that formats the final page number list
+- [fo:index-key-reference](fo-index-key-reference.md) — parent formatting object
+- [fo:index-page-number-suffix](fo-index-page-number-suffix.md) — sibling for static suffix text
+- [fo:index-page-citation-list](fo-index-page-citation-list.md) — grandparent that formats the final page number list

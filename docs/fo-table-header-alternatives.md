@@ -66,7 +66,7 @@ Table structure showing `fo:table-header-alternatives` with multiple `fo:conditi
 
 ## See Also
 
-- `fo:table-header` -- the parent formatting object
-- `fo:conditional-table-header-reference` -- specifies conditional header content
-- `fo:table-footer-alternatives` -- the equivalent for footers
-- `header-position` property
+- [fo:table-header](fo-table-header.md) — the parent formatting object
+- [fo:conditional-table-header-reference](fo-conditional-table-header-reference.md) — specifies conditional header content
+- [fo:table-footer-alternatives](fo-table-footer-alternatives.md) — the equivalent for footers
+- header-position property

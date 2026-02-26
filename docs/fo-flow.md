@@ -47,8 +47,8 @@ The flow-map determines the assignment of the content of the `fo:flow` to a regi
 
 ## See Also
 
-- `fo:page-sequence` -- parent formatting object that contains flows
-- `fo:static-content` -- provides repeating content (headers, footers) that does not flow across pages
-- `fo:region-body` -- the default region that receives flow content
-- `fo:flow-map` -- explicitly assigns flows to regions
-- `fo:marker` -- creates named content snippets that can be retrieved by `fo:retrieve-marker`
+- [fo:page-sequence](fo-page-sequence.md) — parent formatting object that contains flows
+- [fo:static-content](fo-static-content.md) — provides repeating content (headers, footers) that does not flow across pages
+- [fo:region-body](fo-region-body.md) — the default region that receives flow content
+- [fo:flow-map](fo-flow-map.md) — explicitly assigns flows to regions
+- [fo:marker](fo-marker.md) — creates named content snippets that can be retrieved by fo:retrieve-marker

@@ -45,8 +45,8 @@ EMPTY
 
 ## See Also
 
-- fo:shape-background-specifier — specifies the background shape design
-- fo:shape-border-specifier — specifies the border shape design
+- [fo:shape-background-specifier](fo-shape-background-specifier.md) — specifies the background shape design
+- [fo:shape-border-specifier](fo-shape-border-specifier.md) — specifies the border shape design
 - Common Relative Position Properties
 - display-align property
 - height property

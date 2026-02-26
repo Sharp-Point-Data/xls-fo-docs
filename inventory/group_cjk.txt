@@ -1,0 +1,249 @@
+### axf:append-non-end-of-line-characters
+
+Specifies the non-end-of-line-characters to append. The characters
+included in <string> can be eliminated from the non-starter-
+characters. If the specified characters are also specified to
+axf:append-non-starter-characters in the same tag as well, the effect is
+not guaranteed. White space characters are disregarded even though
+they are specified. The initial value of non-starter-characters can be set
+by append-non-starter-characters in the Option Setting File.
+
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:append-non-starter-characters
+
+Specifies the non-starter-characters to append. The characters
+included in <string> can be appended to the non-starter-
+characters. If the specified characters are also specified in
+axf:except-non-starter-characters as well in the same tag, the effect
+could be wrong. White space characters are disregarded even though
+they are specified. Closing parentheses and punctuation marks are
+automatically treated as except-non-starter characters without adding
+them. The initial value of non-starter-characters can be set by
+append-non-starter-characters in the Option Setting File.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:except-non-end-of-line-characters
+
+Specifies the non-end-of-line-characters to eliminate.
+The characters included in <string> can be eliminated from the non-
+end-of-line-characters. If the specified characters are also specified to
+axf:append-non-end-of-line-characters in the same tag as well, the effect
+is not guaranteed. White space characters are disregarded even though
+they are specified. The initial value of non-end-of-line-characters can
+be set by append-non-end-of-line-characters in the Option Setting File.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:except-non-starter-characters
+
+Specifies the non-starter-characters to eliminate.
+The characters included in <string> can be eliminated from the non-
+starter-characters. If the specified characters are also specified to
+axf:append-non-starter-characters in the same tag as well, the effect is
+not guaranteed. White space characters are disregarded even though
+they are specified. The initial value of non-starter-characters can be set
+by append-non-starter-characters in the Option Setting File.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:hanging-punctuation
+
+Specifies whether to hang punctuation marks at the start of the line or
+end of the line.
+Values have the following meanings:
+‒
+none: Do not hang punctuation marks at the start of the line or end
+of the line.
+‒
+start: Hangs punctuation marks at the start of the line. If the target
+character for hanging appears at the start of the line, the character
+is forced to hang.
+‒
+first: Behaves as the same as the start value only with the start line
+of a paragraph.
+‒
+force-end: Hangs punctuation marks at the end of the line. When
+text-align="right" or text-align="justify" (or text-align-last="justi‐
+fy") is specified and a target character for hanging appears at the
+end of the line, the character is hanged forcibly. When anything else
+is specified to text-align, the character is hung naturally.
+‒
+allow-end: Hangs punctuation marks at the end of the line. When
+text-align="right" or text-align="justify" (or text-align-last="justi‐
+
+fy") is specified and a target character for hanging comes to the end
+of the line, the character is not hung if text fits into one line, but the
+character is hung if text does not fit into one line. When anything
+else is specified to text-align, the character is hung naturally.
+‒
+last: Behaves the same as the force-end value only with the end of
+the line of a paragraph.
+The target punctuation marks is as follows:
+‒
+force-end, allow-end:
+Japanese or Simplified Chinese:
+U+3001 IDEOGRAPHIC COMMA 、
+U+3002 IDEOGRAPHIC FULL STOP 。
+U+FF0C FULLWIDTH COMMA ，
+U+FF0E FULLWIDTH FULL STOP ．
+Traditional Chinese:
+U+FE50 SMALL COMMA ﹐
+U+FE51 SMALL IDEOGRAPHIC ﹑
+U+FE52 SMALL FULL STOP ﹒
+U+FF64 HALFWIDTH IDEOGRAPHIC COMMA ､
+Other languages Same as the last value.
+‒
+last: quotation marks, closing parentheses, period, comma and hy‐
+phen.
+‒
+start, first: quotation marks, closing parentheses and bullet.
+Applies to: <fo:block>
+Values: none | [ start || first || [ force-end | allow-end ] || last ]
+Initial: none
+Inherited: yes
+
+---
+
+### axf:kansuji-grouping-letter
+
+Specifies the grouping character used for Japanese numerals. For
+details, see axf:kansuji-grouping-letter in XSL/CSS Extensions in
+Features of the Online Manual.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: yes
+
+---
+
+### axf:kansuji-letter
+
+Specifies the character used for Japanese numerals. For details, see
+axf:kansuji-letter in XSL/CSS Extensions in Features of the Online
+Manual.
+
+Applies to: all block-level and inline-level formatting objects
+Values: kanji | latin | <string>
+Initial: kanji
+Inherited: yes
+
+---
+
+### axf:kansuji-style
+
+Specifies the style used for Japanese numerals. For details, see
+axf:kansuji-style in XSL/CSS Extensions in Features of the Online
+Manual.
+Applies to: all block-level and inline-level formatting objects
+Values: simple | grouping | readable
+Initial: simple
+Inherited: yes
+
+---
+
+### axf:number-transform
+
+Converts the number sequence in the character string.
+Values have the following meanings:
+‒
+none: Does nothing.
+‒
+kansuji: Converts the contained number sequence into Japa‐
+nese numerals. The details of the Japanese numeral format
+can be specified by axf:kansuji-style, axf:kansuji-letter and
+axf:kansuji-grouping-letter.
+‒
+kansuji-if-vertical: Only with the vertical writing, such as
+writing-mode="tb-rl", axf:number-transform="kansuji" is applied. Does
+no conversion when it's not the vertical writing.
+
+‒
+<list-style-type>: The same value as list-style-type can be specified.
+The range of the value that can be converted varies depending on
+the style.
+‒
+<string>: When a character string is specified, the behavior is same
+as when the character string is specified by format.
+A number sequence (number) here indicates character strings of the
+following forms:
+   number ::= '-'? digits
+   digits ::= [0-9]+
+When it is simultaneously specified with text-transform or
+axf:text-replace, axf:number-transform is evaluated first. When a counter
+style which was specified with <axf:counter-style> or symbols() is used,
+prefix/suffix will not be added.
+Applies to: all block-level and inline-level formatting objects
+Values: none | kansuji | kansuji-if-vertical | <list-style-type> |
+<string>
+Initial: none
+Inherited: yes
+
+---
+
+### axf:punctuation-spacing
+
+Specifies the trimming spacing between a full width punctuation and a
+full width character in Japanese.
+This space is used for the following space amount specified by
+axf:punctuation-trim="adjacent".
+‒
+Between full width close parenthesis and full width open parenthe‐
+sis.
+‒
+Between full width close parenthesis and full width non punctua‐
+tion characters.
+‒
+Between full width non punctuation character and full width open
+parenthesis.
+The initial value of this space can be set by punctuation-spacing in the
+Option Setting File.
+
+Values have the following meanings:
+‒
+<length>: Specifies the amount of the trimming space with an abso‐
+lute value.
+‒
+<percentage>: It's a relative setting to the font size when actually
+applied.
+‒
+auto: Dependent on the system setting. This is the value specified by
+punctuation-spacing in the Option Setting File.
+Applies to: all block-level and inline-level formatting objects
+Values: <length> | <percentage> | auto
+Initial: auto
+Inherited: yes
+
+---
+
+### axf:punctuation-trim
+
+Specifies whether to treat full width punctuations in Japanese.
+For more details see axf:punctuation-trim in XSL/CSS Extensions in
+Features of the Online Manual.
+Applies to: all block-level and inline-level formatting objects
+Values: [none | auto | all |[[ start | start-except-first ] || [ end |
+allow-end | end-except-fullstop ] || adjacent ]] || <string>
+Initial: auto
+Inherited: yes
+
+---
+

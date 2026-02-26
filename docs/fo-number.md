@@ -61,5 +61,5 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- fo:retrieve-number -- retrieves and displays the current value of an fo:number sequence
-- fo:page-number -- for displaying the current page number (different mechanism)
+- [fo:retrieve-number](fo-retrieve-number.md) — retrieves and displays the current value of an fo:number sequence
+- [fo:page-number](fo-page-number.md) — for displaying the current page number (different mechanism)

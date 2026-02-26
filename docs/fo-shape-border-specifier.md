@@ -39,8 +39,8 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- fo:shape-path-specifier — specifies the intrusion path shape
-- fo:shape-background-specifier — specifies the background shape design
+- [fo:shape-path-specifier](fo-shape-path-specifier.md) — specifies the intrusion path shape
+- [fo:shape-background-specifier](fo-shape-background-specifier.md) — specifies the background shape design
 - Common Relative Position Properties
 - height property
 - width property

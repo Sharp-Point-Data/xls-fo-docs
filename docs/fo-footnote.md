@@ -134,6 +134,6 @@ Thai Money, from Earliest Times to King Rama V, p. 203.
 
 ## See Also
 
-- `fo:footnote-body` -- child formatting object containing the footnote content
-- `fo:inline` -- first child providing the inline footnote citation
-- `fo:float` -- another out-of-line formatting object
+- [fo:footnote-body](fo-footnote-body.md) — child formatting object containing the footnote content
+- [fo:inline](fo-inline.md) — first child providing the inline footnote citation
+- [fo:float](fo-float.md) — another out-of-line formatting object

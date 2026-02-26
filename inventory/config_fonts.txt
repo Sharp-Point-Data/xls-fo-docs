@@ -1,0 +1,228 @@
+===PAGE 257===
+2.1.2 
+Font Settings
+<font-settings> 
+These settings are used for the fonts.
+Attributes: auto-fallback-font, barcode-text-font, default-font-family,
+emulated-italic, emulated-small-caps, fallback-glyph, font-selection-mode,
+font-stretch-mode, missing-font, missing-glyph, missing-glyph-all,
+Parent: <formatter-settings>
+Childs: <script-font>, <font-alias>
+auto-fallback-font
+Specifies whether to look for a fall back font automatically when a font
+with a glyph cannot be found in the font family which was specified by
+FO. See also Font Selection in the Technical Notes of the Online Manual
+to learn more about the fall back method.
+Applies to: <font-settings>
+Values: true | false
+Default: true
+barcode-text-font
+Specifies the font used when you add the text of an original code to the
+Linear Barcode with Barcode Generator Option of the Online Manual.
+Applies to: <font-settings>
+Values: see Linear Barcode in the Barcode Generator Option of the
+Online Manual.
+Default: none
+Font Settings
+<font-settings>
+257
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 258===
+default-font-family
+Specifies the default font family. Usually, it is one of the generic font
+families: serif, sans-serif, cursive, fantasy or monospace. See also Font
+Selection in the Technical Notes of the Online Manual.
+Applies to: <font-settings>
+Values: serif | sans-serif | cursive | fantasy | monospace
+Default: serif
+emulated-italic
+Specifies whether to report the error when italic is emulated in the
+selected font. Specify one of the following:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 0
+emulated-small-caps
+Specifies whether to report the error when small-caps is emulated in
+the selected font. Specify one of the following:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Font Settings
+default-font-family
+258
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 259===
+No error will be reported when small-caps-emulation-always="true" is
+specified.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 0
+fallback-glyph
+Specifies whether to report it or not when the glyph is found in a fall
+back font. When the glyph corresponding to the specified character in
+the font family is not found, if auto-fallback-font is specified, a fall back
+font will be looked for. The following either can be specified:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 1
+font-selection-mode
+Specifies the selection method of fonts. The following values can be
+specified:
+5. The setting of font-selection-strategy is disregarded 
+ and always considered auto.
+6. The first font that has a glyph is adopted.
+See also Font Selection in the Technical Notes of the Online Manual.
+Applies to: <font-settings>
+Font Settings
+emulated-small-caps
+259
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 260===
+Values: 5 | 6
+Default: 6
+font-stretch-mode
+Specifies whether the information on font-stretch is used when
+selecting fonts. The following values can be specified:
+5. The information on font-stretch will not be used. 
+ The operation is the same as AH Formatter V5.
+6. The information on font-stretch will be used.
+Applies to: <font-settings>
+Values: 5 | 6
+Default: 6
+missing-font
+Specifies whether to warn when a font is not found from the specified
+font family. The following either can be specified:
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 1
+missing-glyph
+Specifies whether to warn when the glyph corresponding to the
+specified character is not found in the specified font family or the
+fallback font. The following either can be specified:
+Font Settings
+font-selection-mode
+260
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 261===
+0. No error message will be reported.
+1. The level 1 error message will be reported.
+2. The level 2 error message will be reported.
+3. The level 3 error message will be reported.
+4. The level 4 error message will be reported.
+Applies to: <font-settings>
+Values: 0 | 1 | 2 | 3 | 4
+Default: 1
+missing-glyph-all
+Usually the report on missing-glyph is given only once to the same
+character. However, by specifying missing-glyph-all="true", the report
+can be given to all. Note that careless specification could cause huge
+amount of error. This setting is similarly applied to fallback-glyph as
+well.
+Applies to: <font-settings>
+Values: true | false
+Default: false
+<script-font>
+This element is used to specify the script and the generic fonts
+to be used for each language family, e.g. for languages with the
+Latin alphabet. For multilingual processing, repeat this specification
+according to the language requirements. In the default system setting,
+this element is set for a number of language families, for the languages
+with Latin alphabet without specification of the script attribute.
+Attributes: script, serif, sans-serif, monospace, cursive, fantasy, fallback
+Parent: <font-settings>
+Font Settings
+missing-glyph
+261
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 262===
+script
+Specifies the script codes for multilingual setting. The available scripts
+conform to ISO 15924. However, the AH Formatter V7.2 does not
+support all scripts. The scripts that can be specified here are scripts
+that are indicated in Scripts and Languages in the Overview of the
+Online Manual excluding Hira, Kana, and Hani. For generic fonts you
+may omit the setting of the script or specify as script="".
+Applies to: <script-font>
+Values: see Scripts and Languages in the Overview of the Online
+Manual.
+Default: none
+serif
+Specifies the generic serif font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+sans-serif
+Specifies the generic sans-serif font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+monospace
+Specifies the generic monospace font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+Font Settings
+script
+262
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 263===
+cursive
+Specifies the generic cursive font when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+fantasy
+Specifies the generic font for fantasy when specified by the script.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+fallback
+Specifies the fall back font of the script when specified by the script.
+Two or more fonts can be enumerated by comma-separated values.
+Applies to: <script-font>
+Values: <family-name>
+Default: none
+<font-alias> 
+Formats the font name src (source) appearing in FO by replacing with
+dst (destination). This is achieved by specifying an arbitrary font name
+for src and dst. This makes it possible to substitute an unknown font
+in a document made in a different environment, without modifying the
+document. However, in the following sample:
+<font-alias src="A" dst="B">
+<font-alias src="B" dst="C">
+“A” would never be replaced with “C”. Moreover, the setting for <font-
+alias> doesn't affect the font name in the Option file.
+Font Settings
+cursive
+263
+© 2021 MID/Information Logistics ‒ All rights reserved
+

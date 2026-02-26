@@ -74,6 +74,6 @@ In addition, this formatting object may have a sequence of zero or more fo:marke
 
 ## See Also
 
-- fo:inline -- for inline-level formatting without a separate reference-area
-- fo:block-container -- the block-level counterpart for generating reference-areas
-- fo:bidi-override -- for overriding bidirectional text rendering
+- [fo:inline](fo-inline.md) — for inline-level formatting without a separate reference-area
+- [fo:block-container](fo-block-container.md) — the block-level counterpart for generating reference-areas
+- [fo:bidi-override](fo-bidi-override.md) — for overriding bidirectional text rendering

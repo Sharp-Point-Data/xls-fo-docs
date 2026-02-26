@@ -45,6 +45,6 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:list-item` -- parent formatting object
-- `fo:list-item-body` -- sibling containing the body content
-- `fo:list-block` -- grandparent that sets provisional distances
+- [fo:list-item](fo-list-item.md) — parent formatting object
+- [fo:list-item-body](fo-list-item-body.md) — sibling containing the body content
+- [fo:list-block](fo-list-block.md) — grandparent that sets provisional distances

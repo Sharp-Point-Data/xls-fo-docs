@@ -150,12 +150,12 @@ For comprehensive examples of conditional page layouts with multiple page-master
 
 ## See Also
 
-- fo:layout-master-set -- parent container
-- fo:region-body -- the main content region
-- fo:region-before -- the before (header) region
-- fo:region-after -- the after (footer) region
-- fo:region-start -- the start (left in lr-tb) region
-- fo:region-end -- the end (right in lr-tb) region
-- fo:page-master -- alternative page-master with arbitrary region layout
-- fo:page-sequence -- references this master via master-reference
-- fo:page-sequence-master -- orchestrates page-master selection
+- [fo:layout-master-set](fo-layout-master-set.md) — parent container
+- [fo:region-body](fo-region-body.md) — the main content region
+- [fo:region-before](fo-region-before.md) — the before (header) region
+- [fo:region-after](fo-region-after.md) — the after (footer) region
+- [fo:region-start](fo-region-start.md) — the start (left in lr-tb) region
+- [fo:region-end](fo-region-end.md) — the end (right in lr-tb) region
+- [fo:page-master](fo-page-master.md) — alternative page-master with arbitrary region layout
+- [fo:page-sequence](fo-page-sequence.md) — references this master via master-reference
+- [fo:page-sequence-master](fo-page-sequence-master.md) — orchestrates page-master selection

@@ -53,6 +53,6 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:marginalia-body` -- child formatting object containing the marginalia content
-- `fo:footnote` -- another out-of-line formatting object for page-bottom notes
-- `fo:float` -- out-of-line formatting object for floating content
+- [fo:marginalia-body](fo-marginalia-body.md) — child formatting object containing the marginalia content
+- [fo:footnote](fo-footnote.md) — another out-of-line formatting object for page-bottom notes
+- [fo:float](fo-float.md) — out-of-line formatting object for floating content

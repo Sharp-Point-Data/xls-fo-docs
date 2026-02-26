@@ -43,5 +43,5 @@ No code samples in spec for this formatting object. See the "Styling an XLink Ba
 
 ## See Also
 
-- `fo:multi-properties` -- parent formatting object that groups property sets with a wrapper
-- `fo:wrapper` -- sibling formatting object that applies the merged property values
+- [fo:multi-properties](fo-multi-properties.md) — parent formatting object that groups property sets with a wrapper
+- [fo:wrapper](fo-wrapper.md) — sibling formatting object that applies the merged property values

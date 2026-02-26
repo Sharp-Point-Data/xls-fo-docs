@@ -251,6 +251,6 @@ The following three-part example from the spec demonstrates how fo:marker and fo
 
 ## See Also
 
-- `fo:marker` -- defines the content that can be retrieved
-- `fo:retrieve-table-marker` -- retrieves marker content within table headers/footers
-- `fo:static-content` -- the context in which retrieve-marker must appear
+- [fo:marker](fo-marker.md) — defines the content that can be retrieved
+- [fo:retrieve-table-marker](fo-retrieve-table-marker.md) — retrieves marker content within table headers/footers
+- [fo:static-content](fo-static-content.md) — the context in which retrieve-marker must appear

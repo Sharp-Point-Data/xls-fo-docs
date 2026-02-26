@@ -118,6 +118,6 @@ The following three-part example from the spec shows how fo:external-graphic is 
 
 ## See Also
 
-- fo:instream-foreign-object -- for inline graphics where data is embedded in the FO tree
-- fo:block -- used to wrap fo:external-graphic for block-level placement
-- fo:scaling-value-citation -- to obtain the scale-factor applied to a cited fo:external-graphic
+- [fo:instream-foreign-object](fo-instream-foreign-object.md) — for inline graphics where data is embedded in the FO tree
+- [fo:block](fo-block.md) — used to wrap fo:external-graphic for block-level placement
+- [fo:scaling-value-citation](fo-scaling-value-citation.md) — to obtain the scale-factor applied to a cited fo:external-graphic

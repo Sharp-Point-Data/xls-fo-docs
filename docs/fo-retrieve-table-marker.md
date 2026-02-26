@@ -202,7 +202,7 @@ retrieve-position-within-table="last-ending"/>
 
 ## See Also
 
-- `fo:marker` -- defines the content that can be retrieved
-- `fo:retrieve-marker` -- retrieves marker content within static-content (page headers/footers)
-- `fo:table-header` -- typical location for retrieve-table-marker
-- `fo:table-footer` -- typical location for retrieve-table-marker
+- [fo:marker](fo-marker.md) — defines the content that can be retrieved
+- [fo:retrieve-marker](fo-retrieve-marker.md) — retrieves marker content within static-content (page headers/footers)
+- [fo:table-header](fo-table-header.md) — typical location for retrieve-table-marker
+- [fo:table-footer](fo-table-footer.md) — typical location for retrieve-table-marker

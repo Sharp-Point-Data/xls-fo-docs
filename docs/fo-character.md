@@ -65,6 +65,6 @@ EMPTY
 
 ## See Also
 
-- fo:inline -- for formatting portions of text with borders or backgrounds
-- fo:page-number -- generates inline-areas whose content is the page number
-- fo:page-number-citation -- generates inline-areas citing a page number
+- [fo:inline](fo-inline.md) — for formatting portions of text with borders or backgrounds
+- [fo:page-number](fo-page-number.md) — generates inline-areas whose content is the page number
+- [fo:page-number-citation](fo-page-number-citation.md) — generates inline-areas citing a page number

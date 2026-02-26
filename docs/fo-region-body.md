@@ -95,11 +95,11 @@ EMPTY
 
 ## See Also
 
-- `fo:simple-page-master` -- parent formatting object that contains region definitions
-- `fo:region-before` -- the "before" side region (header in lr-tb writing-mode)
-- `fo:region-after` -- the "after" side region (footer in lr-tb writing-mode)
-- `fo:region-start` -- the "start" side region (left sidebar in lr-tb writing-mode)
-- `fo:region-end` -- the "end" side region (right sidebar in lr-tb writing-mode)
-- `fo:flow` -- provides flowing content that is distributed into regions
-- `fo:static-content` -- provides repeating content assigned to regions
-- `fo:region` -- XSL-FO 2.0 absolutely-positioned region within `fo:page-master`
+- [fo:simple-page-master](fo-simple-page-master.md) — parent formatting object that contains region definitions
+- [fo:region-before](fo-region-before.md) — the "before" side region (header in lr-tb writing-mode)
+- [fo:region-after](fo-region-after.md) — the "after" side region (footer in lr-tb writing-mode)
+- [fo:region-start](fo-region-start.md) — the "start" side region (left sidebar in lr-tb writing-mode)
+- [fo:region-end](fo-region-end.md) — the "end" side region (right sidebar in lr-tb writing-mode)
+- [fo:flow](fo-flow.md) — provides flowing content that is distributed into regions
+- [fo:static-content](fo-static-content.md) — provides repeating content assigned to regions
+- [fo:region](fo-region.md) — XSL-FO 2.0 absolutely-positioned region within fo:page-master

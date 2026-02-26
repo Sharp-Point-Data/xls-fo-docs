@@ -73,8 +73,8 @@ No code samples in spec for this formatting object's own section. For complete e
 
 ## See Also
 
-- fo:page-sequence-master -- parent container
-- fo:conditional-page-master-reference -- child elements specifying conditions and page-master references
-- fo:single-page-master-reference -- for exactly one page with a given master
-- fo:repeatable-page-master-reference -- for unconditional repeated use of a single master
-- fo:simple-page-master -- the page-master referenced by the alternatives
+- [fo:page-sequence-master](fo-page-sequence-master.md) — parent container
+- [fo:conditional-page-master-reference](fo-conditional-page-master-reference.md) — child elements specifying conditions and page-master references
+- [fo:single-page-master-reference](fo-single-page-master-reference.md) — for exactly one page with a given master
+- [fo:repeatable-page-master-reference](fo-repeatable-page-master-reference.md) — for unconditional repeated use of a single master
+- [fo:simple-page-master](fo-simple-page-master.md) — the page-master referenced by the alternatives

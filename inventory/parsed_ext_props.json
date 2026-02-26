@@ -1,0 +1,2290 @@
+{
+  "axf:abbreviation-character-count": {
+    "desc": "Specifies the maximum number of characters considered an\nabbreviation.\n\nValues have the following meanings:\nauto: The value specified by abbreviation-character-count in the Option\nSetting File is adopted.\n<number>: Specifies the number of characters considered an abbreviation.",
+    "applies_to": "<fo:block>",
+    "values": "auto | <number>",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 313
+  },
+  "axf:action-type": {
+    "desc": "This extension is used to set the behavior of an external hyperlink or\nform action.\nThe goto value causes an internal link, gotor causes a link into a PDF\ndocument. launch opens the target as a file. uri opens the target as a\nURI (on the web). The reset and submit values can only be used for\nthe <ax",
+    "applies_to": "<fo:basic-link>, <axf:form-field>, <axf:form-field-event>",
+    "values": "goto | gotor | launch | uri | reset | submit | javascript | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 314
+  },
+  "axf:adjust-last-line-spacing": {
+    "desc": "Adjusts the spacing on the last line.\nValues have the following meanings:\n‒\nfalse: Does nothing.\n‒\ntrue: Reduces the difference between the spacing on the last line and\nthe spacing on the second-last line.\nThis processing applies under the following conditions:\n‒\ntext-align is \"justify\"\n‒\ntext-align",
+    "applies_to": "<fo:block>",
+    "values": "false | true",
+    "initial": "false",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:alttext": {
+    "desc": "Specifies the alternate text of an image or link. Effective when\noutputting Tagged PDF.",
+    "applies_to": "<fo:external-graphic>, <fo:instream-foreign-object>, <fo:basic-link>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 315
+  },
+  "axf:annotation-border-style": {
+    "desc": "Specifies the border style of the free text annotation.\nThe following can be specified for <border-style>: solid, dotted, dashed,\ndot-dash, dot-dot-dash. If anything else is specified, it is considered solid.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<border-style>",
+    "initial": "solid",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-border-width": {
+    "desc": "Specifies the border width of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<border-width>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-border-color": {
+    "desc": "Specifies the border color of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<color>",
+    "initial": "the value for axf:annotation-text-color",
+    "inherited": "no",
+    "page": 316
+  },
+  "axf:annotation-contents": {
+    "desc": "Specifies the content of the annotation.\nSpecifies the character string to be displayed for an <fo:basic-link> or\nHTML <a> or when axf:annotation-type specifies one of the following\nannotation types: Text, FreeText, Stamp, Fileattachment.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-file-name": {
+    "desc": "Specifies the alternate file name to output when specifying the file\nattachment annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-file-attachment": {
+    "desc": "Specifies the file with which file attachment annotation is related.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<uri-specification>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 317
+  },
+  "axf:annotation-createdate": {
+    "desc": "Specifies the annotation creation date.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-modifydate": {
+    "desc": "Specifies the annotation modification date.\nIt is the value of /M in the annotation dictionary. If omitted,\nit is considered the value of modifydate in <axf:document-info>. If\naxf:annotation-modifydate is older than axf:annotation-createdate, it will\nbe adjusted to axf:annotation-createdate.\nThe dat",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 318
+  },
+  "axf:annotation-font-family": {
+    "desc": "Specifies the font family of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "depends on user agent (PDF-Reader)",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-font-size": {
+    "desc": "Specifies the font size of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<absolute-size> | <relative-size> | <length> | <percentage>",
+    "initial": "depends on user agent (PDF-Reader)",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-font-style": {
+    "desc": "Specifies whether to make the font of the free text annotation italic.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "normal | italic",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 319
+  },
+  "axf:annotation-font-weight": {
+    "desc": "Specifies the font weight of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "normal | bold",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-height": {
+    "desc": "Specifies the height of the annotation. This property is used for the\nheight of pop-up and the height of rubber stamp annotations.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length> | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-icon-name": {
+    "desc": "Specifies the name of the icon used for displaying the annotation.\nAlthough arbitrary name can be specified for the icon used for the\ndisplay of annotations, whether it can be displayed or not depends\non the viewer application of a document. The annotation type\n(axf:annotation-type) shows the standa",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 320
+  },
+  "axf:annotation-open": {
+    "desc": "Specifies the initial state of the annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-position-horizontal": {
+    "desc": "Specifies the horizontal position of the annotation. The position\nspecified is the distance from the left edge of the region and is used\nfor the position of pop-up or icons and the position of rubber stamp\nannotations.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-position-vertical": {
+    "desc": "Specifies the vertical position of the annotation. The position specified\nis the distance from the top edge of the region and is used for\n\nthe position of pop-up or icons and the position of rubber stamp\nannotations.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 321
+  },
+  "axf:annotation-text-align": {
+    "desc": "Specifies the alignment of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "left | center | right",
+    "initial": "left",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-text-color": {
+    "desc": "Specifies the color of the free text annotation.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<color>",
+    "initial": "depends on user agent (PDF-Reader)",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:annotation-title": {
+    "desc": "Specifies the title of the annotation. This property is effective with\nPDF1.5 or later.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 322
+  },
+  "axf:annotation-width": {
+    "desc": "Specifies the width of the annotation. This property is used for the\nwidth of pop-up and the width of rubber stamp annotations.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length> | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:append-non-end-of-line-characters": {
+    "desc": "Specifies the non-end-of-line-characters to append. The characters\nincluded in <string> can be eliminated from the non-starter-\ncharacters. If the specified characters are also specified to\naxf:append-non-starter-characters in the same tag as well, the effect is\nnot guaranteed. White space character",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 323
+  },
+  "axf:append-non-starter-characters": {
+    "desc": "Specifies the non-starter-characters to append. The characters\nincluded in <string> can be appended to the non-starter-\ncharacters. If the specified characters are also specified in\naxf:except-non-starter-characters as well in the same tag, the effect\ncould be wrong. White space characters are disre",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:assumed-page-number": {
+    "desc": "Specifies the assumed page number. When <fo:page-number-citation>\nappears, the reference area is sometimes undecided. In evaluation of\nfo:page-number-citation, the temporary area is secured first, and when\na page number is decided, it is adjusted to the right contents. Since\nthe size of an area may ",
+    "applies_to": "all formatting objects",
+    "values": "<number>",
+    "initial": "N/A",
+    "inherited": "yes",
+    "page": 324
+  },
+  "axf:avoid-widow-words": {
+    "desc": "Specifies spacing behavior between words or characters so that the last\nline of the paragraph does not have only one word left (one character\nfor CJK).\nValues have the following meanings:\nfalse does nothing.\ntrue adjusts the spacing so that the last line of the paragraph\ndoes not have only one word ",
+    "applies_to": "<fo:block>",
+    "values": "false | true | <length> | <percentage>",
+    "initial": "false",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:avoid-widow-words-cjk-punctuation": {
+    "desc": "Specifies whether to include the last punctuation mark and count them\nin one character when =\"true\" is specified in CJK. For the meaning\n\nof the values, see the corresponding specifications in the AHF Online\nManual.",
+    "applies_to": "<fo:block>",
+    "values": "auto | true | false <string>",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 325
+  },
+  "axf:intrude-into-punctuation": {
+    "desc": "Intrudes the inline element into the punctuation. For the meaning of\nthe values, see the corresponding specifications in the AHF Online\nManual.",
+    "applies_to": "inline elements",
+    "values": "none | [start || end]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:auto-letter-spacing": {
+    "desc": "Changes letter-spacing depending on the number of characters. For the\nmeaning of the values, see the corresponding specifications in the AHF\nOnline Manual.",
+    "applies_to": "inline-level formatting objects",
+    "values": "[none | <length> | <percentage> ]*",
+    "initial": "none",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:background-clip": {
+    "desc": "This property specifies the display area of the image (box or content\nonly).",
+    "applies_to": "<fo:simple-page-master>, <fo:page-sequence>, all formatting objects",
+    "values": "[ border-box | padding-box | content-box ]#",
+    "initial": "padding-box",
+    "inherited": "no",
+    "page": 326
+  },
+  "axf:background-image-resolution": {
+    "desc": "Specifies the resolution of a background image.\nValues have the following meanings:\nnormal: Depends on the default value of the system. It's the value\nspecified as pxpi in the Option Setting File. Ignores the actual resolution\nof an image.\nfrom-image uses the actual resolution of an image. When an i",
+    "applies_to": "<fo:simple-page-master>, <fo:page-sequence>, all formatting objects",
+    "values": "[normal | [ from-image || <dpi> ]]#",
+    "initial": "from-image",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:background-origin": {
+    "desc": "This property specifies the positioning of the original image. If this\nproperty is set, the simultaneous setting of background-attachment is\ncontradictory.",
+    "applies_to": "<fo:simple-page-master>, <fo:page-sequence>, all formatting objects",
+    "values": "[ border-box | padding-box | content-box ]#",
+    "initial": "padding-box",
+    "inherited": "no",
+    "page": 327
+  },
+  "axf:background-content-type": {
+    "desc": "Specifies the content type of a background image.",
+    "applies_to": "<fo:simple-page-master>, <fo:page-sequence>, all formatting objects",
+    "values": "[<string> | auto]#",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:background-size": {
+    "desc": "See https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#the-\nbackground-size",
+    "applies_to": "<fo:simple-page-master>, <fo:page-sequence>, all formatting objects",
+    "values": "[ [ <length> | <percentage> | auto ]{1,2} | cover | contain ]#",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:balanced-text-align": {
+    "desc": "Specifies whether to balance the entire block including the last line.\nValues have the following meanings:\n‒\ntrue: The entire block is adjusted to be balanced including the last\nline.\n‒\nfalse: Does not balance the last line.\n‒\nauto: When applied to a block with any of the following conditions,\nthe e",
+    "applies_to": "<fo:block>",
+    "values": "true | false | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 328
+  },
+  "axf:baseline-block-snap": {
+    "desc": "This property specifies how to align blocks other than normal line\nboxes, such as headings, figures and tables, on the baseline grid.\nSee axf:baseline-grid for usage.\nValues have the following meanings:\n‒\nnone: The block is not aligned with the baseline grid.\n‒\nauto: Same as before on top of column,",
+    "applies_to": "block-level-elements",
+    "values": "none | [auto | before | after | center] || [border-box | margin-box]",
+    "initial": "auto border-box",
+    "inherited": "no",
+    "page": 329
+  },
+  "axf:baseline-grid": {
+    "desc": "Sets or clears the baseline grid.\nInside the area line that a baseline grid is set, the lines are aligned with\nbaselines on the baseline grid. Half-leading is not added before the first\nline and after the last line so that the em-box edges are aligned with the\nbefore and after edges of the content b",
+    "applies_to": "block-level formatting objects, <fo:flow>, and <fo:static-content>/block-containers",
+    "values": "normal | none | root | new",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 330
+  },
+  "axf:bleed-top": {
+    "desc": "Specifies the width of the bleed area for cutting off.\nThe area of the bleed is taken outside the trim size. In order to specify\nthe same values vertically and horizontally, axf:bleed can be used.\nIn order to specify individual values, axf:bleed-top, axf:bleed-bottom,\naxf:bleed-left and axf:bleed-ri",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 331
+  },
+  "axf:border-connection-form": {
+    "desc": "Specifies the shape of the connecting portion of borders.\nIn the table of border-collapse=\"collapse\", axf:border-connection-form\nspecified in <fo:table-row>, <fo:table-cell>, etc. in that table is invalid.\nThe one specified in <fo:table> is adopted.\nValues have the following meanings:\n‒\nwedge: Conne",
+    "applies_to": "all elements",
+    "values": "wedge | mixed | precedence",
+    "initial": "mixed",
+    "inherited": "yes",
+    "page": 332
+  },
+  "axf:border-top-right-radius": {
+    "desc": "Specifies the radii of the rounded corners.\nThe first value is the horizontal radius (or vertical if vertical writing).\nThe second value is the other radius. If the second length is omitted\nit is equal to the first. If either length is less or equal 0, the corner is\nsquare, not rounded. When specify",
+    "applies_to": "all elements which can have borders",
+    "values": "[<length>|<percentage>][<length>|<percentage>]? diagonal?",
+    "initial": "0",
+    "inherited": "no",
+    "page": 333
+  },
+  "axf:border-triple-thickness": {
+    "desc": "Specifies the line thickness of border-style=\"triple\".\nIn <value>, either <number> or <length> can be specified. The values are\noutside line width, spacing, middle line width, spacing, and inside\nline width in order from left to right. If the value is omitted, it is\nconsidered to be equivalent to th",
+    "applies_to": "all elements Value: <value> {1,5} Initial: 1 Inherited: yes",
+    "values": "",
+    "initial": "1",
+    "inherited": "yes",
+    "page": 334
+  },
+  "axf:border-wave-form": {
+    "desc": "Specifies the wave form of border-style=\"wave\", border-style=\"double-\nwave\".\nIn <value>, either <number> or <length> or auto can be specified. The values\nare wave form and line width in order from left to right. If the value\nis auto or omitted, it is considered 6 and 0.125 each. Negative values are\n",
+    "applies_to": "all elements",
+    "values": "<value>{1,3}",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:box-shadow": {
+    "desc": "Specifies the box shadow.\nValues have the following meanings:\n‒\nnone: No shadow is displayed.\n‒\ninset: An inner shadow is displayed.\nThe meanings of <length>s and a <color> are as follows:\n‒\nThe first <length> is an offset of a horizontal shadow. It becomes a\nright-side shadow of a region when a pos",
+    "applies_to": "all elements which can have borders",
+    "values": "none |[inset? &&[ <length>{2,4} && <color>?]]#",
+    "initial": "none",
+    "inherited": "no",
+    "page": 335
+  },
+  "axf:break-distance": {
+    "desc": "Specifies effective heights for break-after and break-before.",
+    "applies_to": "block-level formatting objects",
+    "values": "always | <length> | <percentage> The value percentage refer to the height of containing block. Values have the following meanings: always: break-after and break-before are always effective. <length> |",
+    "initial": "always",
+    "inherited": "no",
+    "page": 336
+  },
+  "axf:column-number-format": {
+    "desc": "Specifies the format of column number. It applies to the format\nof column number specified by axf:number-type property. It can be\nspecified with the same way as format property.",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "\"A\"",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:column-rule": {
+    "desc": "The shorthand is effective. axf:column-rule-display can be included.",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "<border-width> || <border-style> || <color> || <axf:column-rule-display>",
+    "initial": "see individual properties",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:column-rule-align": {
+    "desc": "Specifies the alignment of the column rule.",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "before | center | after",
+    "initial": "center",
+    "inherited": "no",
+    "page": 337
+  },
+  "axf:column-rule-color": {
+    "desc": "Specifies the color of the column rule.",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "<color>",
+    "initial": "the value of the color property",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:column-rule-display": {
+    "desc": "Specifies whether to also display a rule at the place where column gaps\ndo not exist. Suppose contents are only in the left column of three\ncolumns.\nValues have the following meanings:\n‒\ngap: Displays a rule only between existing columns.\n‒\nend: Displays a rule at the end side of each existing colum",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "gap | end | all",
+    "initial": "gap",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:column-rule-length": {
+    "desc": "Specifies the length of the column rule.\n\nIn case where the column is short by specifying span=\"all\" in FO, that\nheight of the column indicates 100%.",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "<length> | <percentage>",
+    "initial": "100%",
+    "inherited": "no",
+    "page": 338
+  },
+  "axf:column-rule-style": {
+    "desc": "Specifies the style of the column rule.",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "<border-style>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:column-rule-width": {
+    "desc": "Specifies the width of the column rule.",
+    "applies_to": "<fo:region-body>, <fo:block-container>",
+    "values": "<border-width>",
+    "initial": "medium",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:condensed-text-align-last": {
+    "desc": "Specifies whether to set text-align-last=\"justify\" automatically after\ncondensing the overflow.\nThis feature is only available when:\n‒\nCondensing in the block progression dimension.\n‒\nfont-size or font-stretch condensing is occurring by\naxf:overflow-condense.\n‒\ntext-align-last is not explicitly spec",
+    "applies_to": "all block-level formatting objects",
+    "values": "false | true | justify | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 339
+  },
+  "axf:crop-area-visibility": {
+    "desc": "Specifies whether to display the area that is extended beyond the trim\nsize. Specifies whether the area that overflows on the margin specified\nwith axf:crop-offset is clipped with the trim size, if there is a bleed\narea, clipped with the bleed area, or the extended area is displayed.",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "hidden | visible",
+    "initial": "hidden",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:crop-offset-top": {
+    "desc": "Specifies the distance from the physical end to the trim size of the\noutput medium.\n\nThe trim size is specified by the page-width and page-height properties.\naxf:crop-offset is for specifying how much the space is taken outside\nthe trim size. In order to specify the same values vertically and\nhorizo",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 340
+  },
+  "axf:destination-type": {
+    "desc": "Specifies the way a link opens in a link destination.\nIf nothing specified, it's accounted as axf:destination-type=\"xyz-top\". The\ncase sensitivity is ignored.\nThe destination type options are described in detail in Bookmark and\nLink in XSL/CSS Extensions of the Online Manual.",
+    "applies_to": "block level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:diagonal-border-color": {
+    "desc": "Specifies the color of the diagonal border.",
+    "applies_to": "all elements which can have borders",
+    "values": "<color>",
+    "initial": "the value of the color property",
+    "inherited": "yes",
+    "page": 341
+  },
+  "axf:diagonal-border-style": {
+    "desc": "Specifies the style of the diagonal border.",
+    "applies_to": "all elements which can have borders",
+    "values": "<border-style>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:diagonal-border-width": {
+    "desc": "Specifies the width of the diagonal border.",
+    "applies_to": "all elements which can have borders",
+    "values": "<border-width>",
+    "initial": "medium",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:display-alttext": {
+    "desc": "Specifies whether to display the alternate text of an image.\nValues have the following meanings:\n‒\nfalse: The alternate text is not displayed.\n‒\ntrue: The alternate text is displayed when the alternate text is speci‐\nfied and no image exists.\n‒\nauto: The value specified by display-alttext in the Opt",
+    "applies_to": "<fo:external-graphic> (<img> in HTML)",
+    "values": "false | true | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 342
+  },
+  "axf:document-info-include": {
+    "desc": "Specifies how to include document information in multi separate\nvolume.\nValues have the following meanings:\n‒\nfirst: Adds document information to the first separate volume.\n‒\nall: Adds document information to all the separate volumes.\nSee <axf:document-info>.",
+    "applies_to": "<axf:output-volume-info>",
+    "values": "first | all",
+    "initial": "first",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:double-hyphen-translineation": {
+    "desc": "Specifies whether to place a hyphen also at the start of the line when\nbreaking lines at a hyphen.",
+    "applies_to": "<fo:block>",
+    "values": "auto | true | false",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 343
+  },
+  "axf:except-non-end-of-line-characters": {
+    "desc": "Specifies the non-end-of-line-characters to eliminate.\nThe characters included in <string> can be eliminated from the non-\nend-of-line-characters. If the specified characters are also specified to\naxf:append-non-end-of-line-characters in the same tag as well, the effect\nis not guaranteed. White spac",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:except-non-starter-characters": {
+    "desc": "Specifies the non-starter-characters to eliminate.\nThe characters included in <string> can be eliminated from the non-\nstarter-characters. If the specified characters are also specified to\naxf:append-non-starter-characters in the same tag as well, the effect is\nnot guaranteed. White space characters",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 344
+  },
+  "axf:field-button-face": {
+    "desc": "This property is used to specify the label of a form field marked as a\npush button.",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-button-face-down": {
+    "desc": "This property is used to specify the labeling of a form field marked as a\npush button after activation.",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-button-face-rollover": {
+    "desc": "This property is used to specify the labeling of a form field marked as a\npush button when the cursor is moved over the form field.",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 345
+  },
+  "axf:field-button-icon": {
+    "desc": "This property specifies the icon of a form field marked as a push button.",
+    "applies_to": "<axf:form-field>",
+    "values": "<uri-specification>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-button-icon-down": {
+    "desc": "This property is used to specify the icon of a form field marked as a\npush button after activation.",
+    "applies_to": "<axf:form-field>",
+    "values": "<uri-specification>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-button-icon-rollover": {
+    "desc": "This property specifies the icon of a form field marked as a push button\nwhen the cursor is moved over the form field.",
+    "applies_to": "<axf:form-field>",
+    "values": "<uri-specification>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-button-layout": {
+    "desc": "This property specifies where the label of a form field marked as a push\nbutton should be placed in relation to the icon. With the default value\n\ncaption only the label is displayed, not the icon. With the icon value,\nonly the icon is displayed, not the label; with the caption-below-icon\nvalue, the ",
+    "applies_to": "<axf:form-field>",
+    "values": "caption | icon | caption-below-icon | caption-above-icon | icon-caption | caption-icon | caption-over-icon",
+    "initial": "caption",
+    "inherited": "no",
+    "page": 346
+  },
+  "axf:field-checked": {
+    "desc": "This property is used to specify the initial state of form fields that have\ncheckbox or radio for the axf:field-type property. If the default value is\nfalse, the initial state is unchecked. If in axf:field-flags=\"Checked\" is set,\nthe setting =\"true\" is ignored here.",
+    "applies_to": "<axf:form-field>",
+    "values": "false | true",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-checked-style": {
+    "desc": "This property sets the appearance of form fields that have the checkbox\nor radio value for the axf:field-type property. For the default value\ncheckmark a checkmark is displayed, for the value circle a circle, for\nsquare a square, for cross a cross and for star an asterisk.",
+    "applies_to": "<axf:form-field>",
+    "values": "checkmark | circle | square | cross | star",
+    "initial": "checkmark",
+    "inherited": "no",
+    "page": 347
+  },
+  "axf:field-description": {
+    "desc": "This property is used to add a description to a form field.",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-editable": {
+    "desc": "With this property one opens in form fields, which have for the\nproperty axf:field-type the value combobox, the possibility to change the\ndisplayed value. With the default value false editing is excluded. If\naxf:field-flags=\"Editable\" is set, the =\"true\" setting is ignored here.",
+    "applies_to": "<axf:form-field>",
+    "values": "false | true",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-selected": {
+    "desc": "Specifies the first selected item in the list box, combo box.",
+    "applies_to": "<axf:form-field-option>",
+    "values": "false | true",
+    "initial": "false",
+    "inherited": "no",
+    "page": 348
+  },
+  "axf:field-flags": {
+    "desc": "With this property the form field is given a usage identifier:\nWith Readonly the field becomes read-only, with Required it becomes\nmandatory, with Hidden the field is not displayed. In this case the size is\nkept, backgrounds and frames are shown. In version 6.6, the following\nidentifiers have been a",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-font-size": {
+    "desc": "This property assigns a desired font size to the content of the form\nfield. The auto value uses the font size of the environment. The default\nvalue font-size sets the value set with the font-size property.",
+    "applies_to": "<axf:form-field>",
+    "values": "font-size | auto | <length>",
+    "initial": "font-size",
+    "inherited": "no",
+    "page": 349
+  },
+  "axf:field-format-category": {
+    "desc": "This property assigns a format type to the form field. The formatting\nitself is specified with axf:field-format.\nIf a string is specified as a default value in the text field with\naxf:field-default-text, the format validity is checked. Non-compliant\ndefault values are ignored.",
+    "applies_to": "<axf:form-field>",
+    "values": "none | number | percentage | date | time",
+    "initial": "none",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-lock-document": {
+    "desc": "This property is used to indicate whether the document should be\nclosed with the signature. With the default value auto the PDF reader\nwill ask whether the document should be closed.\nEffective as of PDF 1.7.",
+    "applies_to": "<axf:form-field>",
+    "values": "auto | false | true",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 350
+  },
+  "axf:field-maxlen": {
+    "desc": "This property is used to specify the maximum number of characters\nallowed for input in a form field marked as a text field. If the default\nvalue is 0, or the property is not specified, or a negative number is\nspecified, then the number of characters allowed is not restricted.\nIf the maximum number o",
+    "applies_to": "<axf:form-field>",
+    "values": "<number>",
+    "initial": "0",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-multiline": {
+    "desc": "This property sets whether a form field marked as a text field allows\ninput in a single line or in multiple lines. The default value false allows\nonly one line. If axf:field-flags=\"Multiline\" is set, the setting =\"true\" is\nignored here.",
+    "applies_to": "<axf:form-field>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-multiple": {
+    "desc": "This property sets whether only one or a number of options can be\nselected for form fields that have the listbox value for theaxf:field-type\nproperty. With the default value false, the choice is limited to one\n\noption in the list. If axf:field-flags=\"Multiple\" is set, the =\"true\" setting\nis ignored ",
+    "applies_to": "<axf:form-field>",
+    "values": "false | true",
+    "initial": "false",
+    "inherited": "no",
+    "page": 351
+  },
+  "axf:field-name": {
+    "desc": "This property defines the name of a form field.",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "none, a name must be entered as a value.",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-name-suffix-page-number": {
+    "desc": "This property is used to add a page number to the form field name.\nIt is assumed that a axf:field-name is defined. If the value is an empty\nstring, nothing is added. This property is used with a form inside the\n<fo:static-content> if a separate form is to be generated for each page.",
+    "applies_to": "<axf:form-field>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-password": {
+    "desc": "With this property one marks by the value true a form field marked\nas text field as input field for a password. Each character entered is\nrepresented by a \"*\" character. If axf:field-flags=\"Password\" is set, the\n=\"true\" setting is ignored here.",
+    "applies_to": "<axf:form-field>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 352
+  },
+  "axf:field-readonly": {
+    "desc": "The true value for this property marks the form field as \"read only\". If\naxf:field-flags=\"ReadOnly\" is set, the =\"true\" setting is ignored here.",
+    "applies_to": "<axf:form-field>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-required": {
+    "desc": "The true value for this property is used to mark the form field as\n\"mandatory to fill\". If axf:field-flags=\"Required\" is set, the =\"true\" setting\nis ignored here.",
+    "applies_to": "<axf:form-field>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-scroll": {
+    "desc": "This property sets whether a form field marked as a text field gets\na scroll bar or not. The default value false makes the text field not\nscrollable. If axf:field-flags=\"Scroll\" is set, the setting =\"true\" is ignored\nhere.",
+    "applies_to": "<axf:form-field>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 353
+  },
+  "axf:field-submit-method": {
+    "desc": "Specifies the way to send the information when submitting a form\nfield.\nValues have the following meanings:\n‒\nget: Sends out a form as GET request.\n‒\npost: Sends out a form as POST request.",
+    "applies_to": "<axf:form>",
+    "values": "get | post",
+    "initial": "get",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:field-text-align": {
+    "desc": "This property sets the horizontal alignment of the content in a text\nfield.",
+    "applies_to": "<axf:form-field>",
+    "values": "left | center | right",
+    "initial": "left",
+    "inherited": "no",
+    "page": 354
+  },
+  "axf:field-type": {
+    "desc": "This property is used to set the type of a form field. The possible values:\ntext for a text field, button for a push button to start an action, checkbox\nfor a box to select an option, radio for a button usually placed in a\ngroup of such buttons where only one of the buttons can be selected,\nlistbox ",
+    "applies_to": "<axf:form-field>",
+    "values": "text | button | checkbox | radio | listbox | combobox | signature",
+    "initial": "none, a value must be selected.",
+    "inherited": "no",
+    "page": 355
+  },
+  "axf:field-value": {
+    "desc": "Specifies the value used when submitting a form field, etc.",
+    "applies_to": "<axf:form-field>, <axf:form-field-option>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:float-move": {
+    "desc": "Specifies whether the float moves to the next page (or column).\nValues have the following meanings:\n‒\nauto: Same as keep if axf:float-y is none, same as auto-next otherwise.\n‒\nnext: The float is moved to the next page (or column).\n\n‒\nauto-next: The float is moved to the next page (or column) if ther",
+    "applies_to": "<fo:float>",
+    "values": "auto | normal | page | multicol | column",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 360
+  },
+  "axf:float-x": {
+    "desc": "Specifies horizontal (or vertical if writing-mode is vertical) float\nalignment.\nValues have the following meanings:\n‒\nnone: Not floated horizontally (or vertically if writing-mode is verti‐\ncal).\n\n‒\nstart: Floated to the start side. Same as left in horizontal left-to-\n-right writing-mode.\n‒\nend: Flo",
+    "applies_to": "<fo:float>",
+    "values": "none | start | end | left | right | top | bottom | center | inside | outside | alternate | column-outside",
+    "initial": "none",
+    "inherited": "no",
+    "page": 357
+  },
+  "axf:float-y": {
+    "desc": "Specifies vertical (or horizontal if writing-mode is vertical) float\nalignment.\nValues have the following meanings:\n‒\nnone: Not floated vertically (or horizontally if writing-mode is verti‐\ncal).\n‒\nbefore: Floated to the before side. Same as top in horizontal left-to-\n-right writing-mode.\n‒\nafter: F",
+    "applies_to": "<fo:float>",
+    "values": "none | before | after | top | bottom | left | right | center | inside | outside | anchor",
+    "initial": "none",
+    "inherited": "no",
+    "page": 359
+  },
+  "axf:float-reference": {
+    "desc": "Specifies reference area where the float is placed.\nValues have the following meanings:\n‒\nauto: Same as normal.\n‒\nnormal: The float is placed in the current reference area.\n‒\npage: The float is placed in the page area (<fo:region-body>).\n‒\nmulticol: The float is placed in the multi-column area.\n‒\nco",
+    "applies_to": "<fo:float>",
+    "values": "auto | normal | page | multicol | column",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:float-min-wrap-x": {
+    "desc": "Specifies the minimum width for the text wrapping around the float.\nIf the width for the text wrapping around the float is smaller than the\nwidth specified by this property, the text doesn't wrap.\nThe initial value, normal is minimum wrapping width of normal floats. It\nis same as 0pt.",
+    "applies_to": "<fo:float>",
+    "values": "normal | <length> | <percentage>",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:float-min-wrap-y": {
+    "desc": "Specifies the minimum extent for the text placed before and after the\nfloat.\n\nWhen the axf:float-y value is not none and there is remaining space to\nplace the text before or after the float within the formatting target area,\nif the extent of that space is smaller than the extent specified by this\npr",
+    "applies_to": "<fo:float>",
+    "values": "normal | <length> | <percentage>",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 362
+  },
+  "axf:float-centering-x": {
+    "desc": "Specifies whether the float is centered when the width for the text\nwrapping around the float is insufficient.\n\nValues have the following meanings:\n‒\nnone: The float is not centered.\n‒\nauto: The float is centered when the width for the text wrap‐\nping around the float is less than the width specifie",
+    "applies_to": "<fo:float>",
+    "values": "none | auto | <length> | <percentage>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 363
+  },
+  "axf:float-centering-y": {
+    "desc": "Specifies whether the float is centered when the extent for the text\nplaced before and after the float is insufficient.\nValues have the following meanings:\n‒\nnone: The float is not centered.\n‒\nauto: The float is centered when the extent for the text placed\nbefore and after the float is less than the",
+    "applies_to": "<fo:float>",
+    "values": "none | auto | <length> | <percentage>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 364
+  },
+  "axf:float-margin-y": {
+    "desc": "Specifies the space between the float and the text before and after the\nfloat (in y-axis).\nWhen two values are specified, the first one will be the value of the\nbefore side, the next one will be the value of the after side.",
+    "applies_to": "<fo:float>",
+    "values": "[<length> | <percentage>] [<length> | <percentage>]?",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:float-float-margin-x": {
+    "desc": "Specifies the space between the float and another neighboring float (in\nx-axis).\nThe initial value auto is same as the axf:float-margin-x value. When two\nvalues are specified, the first one will be the value of the start side, the\nnext one will be the value of the end side.\nThe axf:float-float-margi",
+    "applies_to": "<fo:float>",
+    "values": "auto | [[<length> | <percentage>] [<length> | <percentage>]?]",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 365
+  },
+  "axf:float-float-margin-y": {
+    "desc": "Specifies the space between the float and another neighboring float (in\ny-axis).\nThe initial value auto is same as the axf:float-margin-y value. When two\nvalues are specified, the first one will be the value of the before side,\nthe next one will be the value of the after side.\nThe axf:float-float-ma",
+    "applies_to": "<fo:float>",
+    "values": "auto | [[<length> | <percentage>] [<length> | <percentage>]?]",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:float-offset-x": {
+    "desc": "Specifies the offset placement for the float (in x-axis).\nIf axf:float-x is start, the offset to the end side is specified. If it is end,\nthe offset to the start side is specified.",
+    "applies_to": "<fo:float>",
+    "values": "<length> | <percentage>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:float-offset-y": {
+    "desc": "Specifies the offset placement for the float (in y-axis).\nIf axf:float-y is before, the offset to the after side is specified. If it is\nafter, the offset to the before side is specified.",
+    "applies_to": "<fo:float>",
+    "values": "<length> | <percentage>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 366
+  },
+  "axf:flush-zone": {
+    "desc": "Adjusts the space at the end of the last line.\nValues have the following meanings:\n‒\nnone: Does nothing.\n‒\n<length>\n<percentage>: If text-align=\"justify\" is specified but\ntext-align-last=\"justify\" are not specified, and the space at the end\nof the last line is less than or equal to the specified val",
+    "applies_to": "<fo:block>",
+    "values": "none | <length> | <percentage>",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:font-feature-settings": {
+    "desc": "Controls the feature of OpenType fonts.\nValues have the following meanings:\n‒\nnormal: Does nothing.\n‒\n<feature-tag-value>: Specifies the tag of OpenType GSUB/GPOS with\nthe following format:\n<feature-tag-value> = <string> [ <integer> | on | off ]?\nFor more details see XSL/CSS Extensions in Features o",
+    "applies_to": "all elements",
+    "values": "normal | <feature-tag-value>#",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 367
+  },
+  "axf:footnote-align": {
+    "desc": "Specifies the alignment of the footnotes.\nSpecifies the method of arrangement of footnotes or sidenotes.\nWhen it is sidenotes (footnote arrangement into <fo:region-start> or\n<fo:region-end> is specified by axf:footnote-position), it's possible to\nspecify whether it is arranged automatically, or it i",
+    "applies_to": "<fo:region-body>, <fo:footnote>",
+    "values": "auto | before | after",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 368
+  },
+  "axf:footnote-number-initial": {
+    "desc": "Specifies the initial footnote number.\nValues have the following meanings:\n‒\nauto: Succeeded from the before existing <fo:page-sequence> without\ninitializing a footnote number. When <fo:page-sequence> does not\nexist before, it is set to 1.\n‒\n<number>: Initializes the footnote number with the specifi",
+    "applies_to": "<fo:page-sequence>",
+    "values": "auto | <number>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:footnote-number-reset": {
+    "desc": "Resets the footnote numbering.\nA footnote number is reset by the value specified by\naxf:footnote-number-initial.\n‒\nauto: Succeeded from the before existing <fo:page-sequence>. When\n<fo:page-sequence> does not exist before, it is set to none.\n‒\nnone: Does not reset the footnote number.\n\n‒\npage: Reset",
+    "applies_to": "<fo:page-sequence>",
+    "values": "auto | none | page | odd-page | even-page | column",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 369
+  },
+  "axf:footnote-keep": {
+    "desc": "Specifies whether to arrange a footnote and an anchor in the same\npage.\nValues have the following meanings:\n‒\nauto: When a footnote does not fit within the column, it is sent to\nthe next page or the next column.\n‒\nalways: When a footnote does not fit within the column, the line of\nthe anchor and the",
+    "applies_to": "<fo:region-body>, <fo:footnote>",
+    "values": "auto | always | none",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 370
+  },
+  "axf:footnote-position": {
+    "desc": "Specifies the location to place the footnote.\nValues have the following meanings:\n‒\npage: Footnotes are placed on the after side of each page in\n<fo:region-body>. This is the standard layout of XSL specification.\n‒\nodd-page: Footnotes are placed on the after side of each odd page in\n<fo:region-body>",
+    "applies_to": "<fo:region-body>, <fo:footnote>",
+    "values": "page | odd-page | even-page | start | end | inside | outside | column | start-column | end-column | inside-column | outside-column",
+    "initial": "page",
+    "inherited": "no",
+    "page": 372
+  },
+  "axf:footnote-stacking": {
+    "desc": "Specifies the method to layout the footnote.\nValues have the following meanings:\n‒\nblock: Arranges the footnotes in the block progression direction.\n‒\ninline: Arranges the footnotes in the inline progression direction.",
+    "applies_to": "<fo:region-body>, <fo:footnote>",
+    "values": "block | inline",
+    "initial": "block",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:hanging-punctuation": {
+    "desc": "Specifies whether to hang punctuation marks at the start of the line or\nend of the line.\nValues have the following meanings:\n‒\nnone: Do not hang punctuation marks at the start of the line or end\nof the line.\n‒\nstart: Hangs punctuation marks at the start of the line. If the target\ncharacter for hangi",
+    "applies_to": "<fo:block>",
+    "values": "none | [ start || first || [ force-end | allow-end ] || last ]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 374
+  },
+  "axf:headers": {
+    "desc": "Specifies the table header cells associated with this cell. It is the same\nas the headers attribute in HTML.",
+    "applies_to": "<fo:table-cell>",
+    "values": "<idrefs>",
+    "initial": "empty",
+    "inherited": "no",
+    "page": 375
+  },
+  "axf:hyphenate-caps-word": {
+    "desc": "Specifies whether to hyphenate words consisting only of uppercase\nletters.\nA phrase like ANTENNA-HOUSE with hyphens is considered multiple\nwords. There is a possibility of a line break at the hyphen position.\nEven letters processed as small-caps are considered lowercase if\nthe original letters are l",
+    "applies_to": "<fo:block>",
+    "values": "true | false | false-all",
+    "initial": "true",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:hyphenate-hyphenated-word": {
+    "desc": "Specifies whether to hyphenate the already hyphenated word or not.\nThis setting is invalid when hyphenate=\"false\" is specified.\nValues have the following meanings:\n‒\ntrue: Hyphenates a word.\n\n‒\nfalse: Does not hyphenate a word. The line may break only at the\nhyphen position.\nThe following are recogn",
+    "applies_to": "<fo:block>",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "yes",
+    "page": 376
+  },
+  "axf:hyphenation-minimum-character-count": {
+    "desc": "Specifies the minimum number of characters a word must have before\nit can be hyphenated. The axf:hyphenation-minimum-character-count must\nbe an integer number of 1 or more.",
+    "applies_to": "<fo:block>, <fo:character>",
+    "values": "<integer>",
+    "initial": "1",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:hyphenation-zone": {
+    "desc": "Limits the range where a hyphenation is available.\nValues have the following meanings:\n‒\nnone: Nothing is limited in hyphenation.\n‒\n<length>: If the length from the end of a word to the end of line\nis less or equal to the specified value, the following word is not\nhyphenated. It is invalid when 0 or",
+    "applies_to": "<fo:block>",
+    "values": "none | <length> | <percentage>",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 377
+  },
+  "axf:image-resolution": {
+    "desc": "Specifies the resolution of an image.\nThe resolution of a background image is specified by\naxf:background-image-resolution. In case of vector images, such as SVG, it\nis applied to numerical values with no units. from-image is ignored.\nValues have the following meanings:\n‒\nnormal: Depends on the defa",
+    "applies_to": "<fo:external-graphic>, <fo:instream-foreign-object>",
+    "values": "normal | [ from-image || <dpi> ]",
+    "initial": "from-image",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:image-orientation": {
+    "desc": "Rotates the image.\nValues have the following meanings:\nfrom-image: Follows the image information (such as the orientation\nspecified in metadata).\nnone: Does not rolate the image.\n\n[ 0 | 90 | 180 | 270 ] flip?: Rotates the image by the specified angle.\nIf flip is specified, the image will be horizont",
+    "applies_to": "<fo:external-graphic>, <fo:instream-foreign-object>",
+    "values": "from-image | none | [ 0 | 90 | 180 | 270 ] flip?",
+    "initial": "from-image",
+    "inherited": "yes",
+    "page": 378
+  },
+  "axf:image-preproc": {
+    "desc": "Preprocesses the image.",
+    "applies_to": "<fo:external-graphic> Value: <string> Initial: empty string Inherited: no The following can be specified for <string>: ‒ OSDC [params]: The data specified to src for <fo:external-graphic> is converted",
+    "values": "",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:indent-here": {
+    "desc": "Aligns the indent position to the region position when a line break\noccurs.\nIn order to indent lines, specify <fo:inline> which contains this\nproperty as follows:\n‒\n<fo:block>Indent-here: <fo:inline axf:indent-here=\"0pt\"/>The quick\nbrown fox jumps over the lazy dog ...</fo:block>\nThe start position ",
+    "applies_to": "<fo:inline>",
+    "values": "none | <length>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 379
+  },
+  "axf:index-page-citation-range-f-suffix": {
+    "desc": "Specifies the suffix when merging 2 consecutive page numbers.\nIt is used in the same way as <fo:index-page-citation-range-separator>.\nThe content is (#PCDATA|%inline;)*. If omitted, it is considered \"f.\".",
+    "applies_to": "block level elements",
+    "values": "<string>",
+    "initial": "\"f.\"",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:index-page-citation-range-ff-suffix": {
+    "desc": "Specifies the suffix when merging 3 consecutive page numbers.\nIt is used in the same way as <fo:index-page-citation-range-separator>.\nThe content is (#PCDATA|%inline;)*. If omitted, it is considered \"ff.\".",
+    "applies_to": "block level elements",
+    "values": "<string>",
+    "initial": "\"ff.\"",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:initial-letters": {
+    "desc": "Creates drop initials.\n\nA dropped initial is selected from the first text by tracing the children\nof the element for which axf:initial-letters is specified. axf:initial-\nletters is ignored if the following elements appear before text:\n‒\n<fo:block> with axf:initial-letters specified\n‒\n<fo:block> with",
+    "applies_to": "<fo:block>",
+    "values": "normal | [[<number> | <length>] <integer>? | [<number> | <length>] && [drop | raise]] [adjacent | <integer2>]?",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 380
+  },
+  "axf:initial-letters-first-line-head-height": {
+    "desc": "Specifies where the height of a dropped initial should be adjusted.\nCAUTION: This property is not effective when the document is vertical\nwriting or CJK.\nValues have the following meanings:\n‒\ncap-height: Adjusts the height to cap-height on the first line. For an\nillustrated example, see axf:initial-",
+    "applies_to": "<fo:block>",
+    "values": "cap-height | x-height | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 382
+  },
+  "axf:initial-letters-end-indent": {
+    "desc": "Specifies the space on the end side of a dropped initial.\nMultiple values can be specified. The first value applies to the first line\nand the second value applies to the next line. The last value applies\nafter the corresponding line.",
+    "applies_to": "<fo:block>",
+    "values": "<length>+",
+    "initial": "0pt",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:initial-letters-leading-punctuation": {
+    "desc": "Specifies the size of the leading punctuation of a dropped initial, etc.\nValues have the following meanings:\n‒\nnormal: Does nothing special.\n‒\nhide: Does not display the leading punctuation.\n‒\n<length>: Specifies the font size of the leading punctuation.\n‒\n<color>: Specifies the color of the leading",
+    "applies_to": "<fo:block>",
+    "values": "normal | hide | [<length> || <color>]",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 383
+  },
+  "axf:initial-letters-leading-punctuation-position": {
+    "desc": "Specifies the position of the leading punctuation of a dropped initial in\nthe inline progression direction.\nValues have the following meanings:\n‒\nnormal: Does nothing special.\n‒\nhang: Protrudes the leading punctuation to the start side.\naxf:hanging-punctuation=\"start\" protrudes one-character punctua",
+    "applies_to": "<fo:block>",
+    "values": "normal | [[hang | intrude] && <length>?]",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:initial-letters-leading-punctuation-shift": {
+    "desc": "Specifies the position of the leading punctuation of a dropped initial in\nthe block progression direction.\nValues have the following meanings:\n‒\nnormal: Does nothing special. Aligns the leading punctuation with\nthe baseline for horizontal writing and aligns it with the center for\nvertical writing.\n\n",
+    "applies_to": "<fo:block>",
+    "values": "normal | [[baseline | before | middle | after] || <length>]",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 384
+  },
+  "axf:initial-letters-start-intrusion": {
+    "desc": "Specifies the alignment of a float on the start side of the dropped initial.",
+    "applies_to": "<fo:block>",
+    "values": "none | first-line",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 385
+  },
+  "axf:initial-letters-width": {
+    "desc": "Specifies the width of a dropped initial.\nValues have the following meanings:\n‒\nauto: The width of a dropped initial is calculated from the included\ncharacter string or image.\n‒\n<length>\n<percentage>: Forces the width of a dropped initial to the specified\nwidth.",
+    "applies_to": "<fo:block>",
+    "values": "auto | <length> | <percentage>",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:initial-letters-text-align": {
+    "desc": "Specifies the alignment of a dropped initial.\nWhen the value of axf:initial-letters-width is auto, it has no effect\nbecause there is no room for right alignment.",
+    "applies_to": "<fo:block>",
+    "values": "start | center | end | left | right",
+    "initial": "end",
+    "inherited": "yes",
+    "page": 386
+  },
+  "axf:initial-letters-color": {
+    "desc": "Specifies the text color of a dropped initial.",
+    "applies_to": "<fo:block>",
+    "values": "<color>",
+    "initial": "the value of the color property",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:initial-volume-number": {
+    "desc": "Specifies the initial volume number in multi separate volume.\nThis value is applied for the format property and utilized for the PDF file\nname to output. In the following example, the file name of the separate\nvolume is document-2.pdf, document-3.pdf, document-4.pdf, and so on:\n   <axf:output-volume",
+    "applies_to": "<axf:output-volume-info>",
+    "values": "<number>",
+    "initial": "1",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:inline-overflow-align": {
+    "desc": "Makes adjustments when the blocks in <fo:inline-container> overflow.\nValues have the following meanings:\n‒\nnormal: Does nothing. axf:inline-overflow-align is invalid.\n‒\nstart\nend\nleft\nright: Shifts the blocks on the specified side of the reference area\nthat contains <fo:inline-container>.",
+    "applies_to": "<fo:inline-container>",
+    "values": "normal | start | end | left | right",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 387
+  },
+  "axf:justify-nbsp": {
+    "desc": "Specifies whether to justify NON-BREAKING SPACE or not.\nGenerally, NON-BREAKING SPACE (U+00A0) is intended for\njustification. The axf:justify-nbsp property can be used when you want\nto check off U+00A0 from justification.\nValues have the following meanings:\n‒\ntrue: NON-BREAKING SPACE is included for",
+    "applies_to": "all formatting objects",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:kansuji-grouping-letter": {
+    "desc": "Specifies the grouping character used for Japanese numerals. For\ndetails, see axf:kansuji-grouping-letter in XSL/CSS Extensions in\nFeatures of the Online Manual.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:kansuji-letter": {
+    "desc": "Specifies the character used for Japanese numerals. For details, see\naxf:kansuji-letter in XSL/CSS Extensions in Features of the Online\nManual.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "kanji | latin | <string>",
+    "initial": "kanji",
+    "inherited": "yes",
+    "page": 388
+  },
+  "axf:kansuji-style": {
+    "desc": "Specifies the style used for Japanese numerals. For details, see\naxf:kansuji-style in XSL/CSS Extensions in Features of the Online\nManual.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "simple | grouping | readable",
+    "initial": "simple",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:keep-together-within-dimension": {
+    "desc": "Specifies the upper limit height of the keep-together condition.\nIf keep-together.within-page or .within-column is not auto, you can specify\nthe height for keep-together to apply to that block. When it is all,\nthe height is not restricted. If you specify a height with <length>,\nkeep-together will be",
+    "applies_to": "block level formatting object",
+    "values": "all | <length>",
+    "initial": "all",
+    "inherited": "no",
+    "page": 389
+  },
+  "axf:kerning-mode": {
+    "desc": "Specifies whether to process the kerning.\nYou can specify whether pair kerning is performed or not by\npair-kerning in the Option Setting File. This can also be set in the\nFormat Option Setting dialog in GUI.\nValues have the following meanings:\n‒\nnone: The kerning is not processed.\n‒\npair: The pair k",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "none | pair | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:layer": {
+    "desc": "Specifies to which layer the area is arranged.\nValues have the following meanings:\n\n‒\nnone: The area is arranged to no layer.\n‒\n<layer-name>: The area is arranged to the layer with the name\nspecified by axf:layer-settings.",
+    "applies_to": "formatting object that generates area",
+    "values": "none | <layer-name>",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 390
+  },
+  "axf:layer-settings": {
+    "desc": "Defines layers.\n‒\n<layer-setting> = <layer-name> [on | off]? [ intent [view | design]\n|| view [on | off] || print [on | off] || export [on | off] || lang\n<string> preferred? || zoom <number> <number>? || locked ]?\n‒\n<layer-name> = <string>\nValues have the following meanings:\n‒\nnone: No definition.\n‒",
+    "applies_to": "<fo:root>",
+    "values": "none | <layer-setting>#",
+    "initial": "none",
+    "inherited": "no",
+    "page": 391
+  },
+  "axf:leader-expansion": {
+    "desc": "Specifies whether to expand a leader forcibly.\nValues have the following meanings:\n‒\nauto: Operates as usual by specifying text-align.\n‒\nforce: Considers a line with leaders as text-align=\"justify\". Conse‐\nquently, leaders will expand.\nFor illustrated examples, see axf:leader-expansion in XSL/CSS\nEx",
+    "applies_to": "<fo:block>",
+    "values": "auto | force",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 392
+  },
+  "axf:left-page-master-reference": {
+    "desc": "Master name of the page master for the left page of a two-page spread.\naxf:left-page-master-reference refers to the page master that defines\nthe page size and the non-spread regions for the left-hand page of a\ntwo-page spread.\nValues have the following meanings:\n‒\n<name>: The name must refer to a ma",
+    "applies_to": "<axf:spread-page-master>",
+    "values": "<name>",
+    "initial": "N/A, a value is required",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:letter-spacing-side": {
+    "desc": "Specifies on which side of the character the space by letter-spacing is\ndistributed.\nValues have the following meanings:\n‒\nboth: Half the amount of space is distributed on both side of the\ncharacter for each.\n‒\nstart: The space is distributed only on the start side of the character.\n‒\nend: The space",
+    "applies_to": "inline-level formatting objects",
+    "values": "both | start | end",
+    "initial": "both",
+    "inherited": "yes",
+    "page": 393
+  },
+  "axf:line-continued-mark": {
+    "desc": "When the line with long text strings is broken and continues to the\nnext line, line continued marks can be applied to the end of line. It is\ninvalid inside <fo:float> or <fo:footnote>.\nValues have the following meanings:\n‒\n<string>: Line continued marks with the specified character strings\nare shown",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "yes",
+    "page": 398
+  },
+  "axf:line-continued-mark-background-color": {
+    "desc": "Specifies the background color of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "<color>",
+    "initial": "transparent",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-continued-mark-color": {
+    "desc": "Specifies the color of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "<color>",
+    "initial": "depends on the current line area",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-continued-mark-font-family": {
+    "desc": "Specifies the font family of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "[ <family-name> | <generic-family> ]#",
+    "initial": "depends on the current line area",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-continued-mark-font-size": {
+    "desc": "Specifies the font size of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "<absolute-size> | <relative-size> | <length> | <percentage>",
+    "initial": "depends on the current line area",
+    "inherited": "yes",
+    "page": 399
+  },
+  "axf:line-continued-mark-font-style": {
+    "desc": "Specifies whether to make the font style italic of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "normal | italic",
+    "initial": "depends on the current line area",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-continued-mark-font-weight": {
+    "desc": "Specifies the font weight of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000",
+    "initial": "depends on the current line area",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-continued-mark-offset": {
+    "desc": "Specifies the offset of line continued marks.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "yes",
+    "page": 400
+  },
+  "axf:line-number-background-color": {
+    "desc": "Specifies the background color of line numbers.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "<color>",
+    "initial": "transparent",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-number-color": {
+    "desc": "Specifies the color of line numbers.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "<color>",
+    "initial": "the value of the ‘color’ property",
+    "inherited": "yes",
+    "page": 402
+  },
+  "axf:line-number-display-align": {
+    "desc": "Specifies the alignment, in the block-progression-direction, of line\nnumbers in the line area.\nValues have the following meanings:\n‒\nbefore: Align the line numbers in the upper end of the line area.\n‒\ncenter: Align the line numbers in the middle of the line area.\n‒\nafter: Align the line numbers in t",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "auto | before | center | after",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-number-except-continued-line": {
+    "desc": "Specifies whether to add line numbers except for continued lines.\nValues have the following meanings:\n‒\ntrue: When a long line wraps, only the first line is numbered. At this\ntime, the continued lines is not counted in the number of lines.\n‒\nfalse: Adds line numbers to all lines.",
+    "applies_to": "all block-level formatting objects that are descendants of fo:flow, fo:table-column",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "yes",
+    "page": 403
+  },
+  "axf:line-number-font-size": {
+    "desc": "Specifies the font size of line numbers.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "<absolute-size> | <relative-size> | <length> | <percentage>",
+    "initial": "medium",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-number-font-style": {
+    "desc": "Specifies whether to make the font style italic.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "normal | italic",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-number-font-weight": {
+    "desc": "Specifies the font weight of line numbers.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 404
+  },
+  "axf:line-number-format": {
+    "desc": "Specifies the format of line numbers. Line numbers are shown as the\nspecified format. The way to specify is the same as that for the format\nproperty.",
+    "applies_to": "<fo:page-sequence>, <fo:table-column>",
+    "values": "<string>",
+    "initial": "1",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:line-number-initial": {
+    "desc": "Specifies the line number of the first line.\nValues have the following meanings:\n‒\nauto: Line numbers are not initialized, and it is succeeded from\nprevious <fo:page-sequence>. When previous <fo:page-sequence> does\nnot exist, it becomes 1.\n‒\n<number>: Initializes the line number with the specified v",
+    "applies_to": "<fo:page-sequence>, <fo:table-column>",
+    "values": "auto | <number> | #<id>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 405
+  },
+  "axf:line-number-offset": {
+    "desc": "Specifies the offset of line numbers.",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:line-number-orientation": {
+    "desc": "Rotates line numbers with specified degrees.",
+    "applies_to": "<fo:page-sequence>, <fo:table-column>",
+    "values": "0 | 90 | 180 | 270 | -90 | -180 | -270",
+    "initial": "0",
+    "inherited": "no",
+    "page": 406
+  },
+  "axf:line-number-prefix": {
+    "desc": "Specifies the prefix for line numbers. Specified string will be output\nbefore each line number generated by axf:line-number.",
+    "applies_to": "<fo:page-sequence>, <fo:table-column>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:line-number-reset": {
+    "desc": "Resets line numbering.\nLine numbers are reset to the value specified to axf:line-number-initial.\nValues have the following meanings:\n\n‒\nauto: The specification of previous <fo:page-sequence> is succeeded.\nWhen the previous <fo:page-sequence> does not exist, it will become\nnone.\n‒\nnone: Line numbers ",
+    "applies_to": "<fo:page-sequence>, <fo:block>, <fo:table-column>",
+    "values": "auto | none | page | column | force",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 407
+  },
+  "axf:line-number-show": {
+    "desc": "Specifies the line number to be always output. Always outputs\nthe numbers specified here even if numbers are not outputted by\naxf:line-number-interval, etc.",
+    "applies_to": "<fo:page-sequence>, <fo:table-column>",
+    "values": "<number>*",
+    "initial": "empty",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:line-number-start": {
+    "desc": "Specifies the starting line number. Line numbers are shown when\nthe value is greater than or equal to the value specified here. When\naxf:line-number-initial=\"1\" axf:line-number-start=\"5\" are specified, the\nfirst 4 line numbers are not shown but the 5th line number will be\noutputted as the beginning ",
+    "applies_to": "<fo:page-sequence>",
+    "values": "auto | <number>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 408
+  },
+  "axf:line-number-text-align": {
+    "desc": "Specifies the alignment of line numbers in the line area.\nValues have the following meanings:\n‒\nstart | center | end | inside | outside | left | right: Same as\ntext-align.\n‒\nauto: When the position of the line numbers is in the start side, it is\nconsidered end. When the position of the line numbers ",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "auto | start | center | end | inside | outside | left | right",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 409
+  },
+  "axf:line-number-width": {
+    "desc": "Specifies the width of line numbers.\nValues have the following meanings:\n‒\nauto: The width of line numbers becomes the width of the text of the\nline.\n‒\n<length>: When specifying the arrangement of line numbers by\naxf:line-number-text-align, the value other than auto should be speci‐\nfied for the wid",
+    "applies_to": "all block-level formatting objects that are descendants of <fo:flow>, <fo:table-column>",
+    "values": "auto | <length>",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:media-activation": {
+    "desc": "Specifies when to activate / deactivate the rich media.\nValues have the following meanings (values are case insensitive, values\nother than these are ignored):\n‒\nExplicitlyActivated: Activates when the content is clicked. It can be\nabbreviated as XA.\n\n‒\nPageOpen: Activates when the page containing th",
+    "applies_to": "<fo:external-graphic>",
+    "values": "[ ExplicitlyActivated | PageOpen | PageVisible ]? [ ExplicitlyDeactivated | PageClose | PageInvisible ]?",
+    "initial": "empty",
+    "inherited": "no",
+    "page": 410
+  },
+  "axf:media-duration": {
+    "desc": "Specifies the duration of a time period of the multimedia.\nCAUTION: Whether the setting is effective or not depends on the\nmultimedia data, the viewer or the player. This setting is invalid with\nthe rich media.\nValues have the following meanings:\n‒\nintrinsic: Plays the multimedia only the period of ",
+    "applies_to": "<fo:external-graphic>",
+    "values": "intrinsic | infinity | <number>",
+    "initial": "intrinsic",
+    "inherited": "no",
+    "page": 411
+  },
+  "axf:media-extraction-policy": {
+    "desc": "Specifies whether the creation of temporary files is allowed or not\nwhen playing the multimedia.\nCAUTION: Whether the setting is effective or not depends on the\nmultimedia data, the viewer or the player. This setting is invalid with\nthe rich media.\nValues have the following meanings:\n‒\ntempnever: Th",
+    "applies_to": "<fo:external-graphic>",
+    "values": "tempnever | tempextract | tempaccess | tempalways",
+    "initial": "tempaccess",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:media-flash-context-menu": {
+    "desc": "Specifies whether to display the context menu of Flash When\nembedding Flash in the rich media.\nThis setting is effective when embedding Flash in the Rich media.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "no",
+    "page": 412
+  },
+  "axf:media-flash-vars": {
+    "desc": "Specifies the variable when embedding Flash in the rich media.\nThis setting is effective when embedding Flash in the Rich media.\nCAUTION: Even if there are some errors in the described content,\nthese are not detected and output to PDF as is.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:media-play-mode": {
+    "desc": "Specifies the number of times to play the multimedia.\nCAUTION: Whether the setting is effective or not depends on the\nmultimedia data, the viewer or the player. This setting is invalid with\nthe rich media.\nValues have the following meanings:\n‒\nonce: Plays the multimedia only one time.\n‒\ncontinuously",
+    "applies_to": "<fo:external-graphic>",
+    "values": "once | continuously | <number>",
+    "initial": "once",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:media-skin-auto-hide": {
+    "desc": "Specifies whether to automatically hide Rich Media skins or not.\nThis setting is effective when the Rich Media is activated.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "no",
+    "page": 413
+  },
+  "axf:media-skin-color": {
+    "desc": "Specifies the skin color of the Rich Media.\nWhen the color does not contain the α value, the default α value is\nadopted. When α value is specified, that value is adopted. This setting is\neffective when the Rich media is activated.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "auto | <color>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:media-skin-control": {
+    "desc": "Specifies the skin control of the Rich Media.\nValues have the following meanings:\n‒\nnone: No controls are displayed.\n‒\nall: All controls are displayed.\n‒\nplay: The playback control is displayed.\n‒\nstop: The stop control is displayed.\n‒\nforward: The fast-forward control is displayed.\n‒\nrewind: The re",
+    "applies_to": "<fo:external-graphic>",
+    "values": "none | all | [ play || stop || forward || rewind || seek || mute || volume ]",
+    "initial": "all",
+    "inherited": "no",
+    "page": 414
+  },
+  "axf:media-volume": {
+    "desc": "Specifies the volume of the sound when playing the multimedia.\nCAUTION: Whether the setting is effective or not depends on the\nmultimedia data, the viewer or the player. It is effective also with the\nrich media, but when editing the multimedia with Acrobat, this setting\nseems to be canceled.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "<percentage> | <number> | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:media-transparent-background": {
+    "desc": "Specifies whether to make the background transparent when\nembedding Flash in the Rich Media.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:media-window-height": {
+    "desc": "Specifies the height of the window when\naxf:multimedia-treatment=\"richmedia-windowed\" is specified. This setting is\neffective when the Rich media is activated.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "auto | <length>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 415
+  },
+  "axf:media-window-width": {
+    "desc": "Specifies the width of the window when\naxf:multimedia-treatment=\"richmedia-windowed\" is specified. This setting is\neffective when the Rich media is activated.",
+    "applies_to": "<fo:external-graphic>",
+    "values": "auto | <length>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:multimedia-treatment": {
+    "desc": "Specifies whether to embed Multimedia in PDF.\nValues have the following meanings:\n‒\nauto: The value specified by multimedia-treatment in the Option Set‐\nting File is adopted.\n‒\nembed: Embeds the multimedia objects in PDF. It is not recommended\nfor PDF 2.0 or later.\n‒\nabsolute-link: Links the multime",
+    "applies_to": "<fo:external-graphic>",
+    "values": "auto | embed | absolute-link | relative-link | richmedia | richmedia-windowed",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 416
+  },
+  "axf:normalize": {
+    "desc": "Specifies the normalization of text.\nSpecifies whether the normalization defined in UAX#15: Unicode\nNormalization Forms is performed. The normalization is performed\nto the character strings described in the text area. If you use only\nthe normalized code from the start, it is not necessary to specify",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "auto | none | nfc | nfkc | nfd | nfkd",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 417
+  },
+  "axf:normalize-exclude": {
+    "desc": "Specifies whether Composition Exclusions are excluded or not when\nthe normalization (axf:normalize) is specified.\nValues have the following meanings:\n‒\nfull-composition-exclusion: Excludes all the characters specified in\nComposition Exclusions.\n‒\nnone: Does not exclude.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "full-composition-exclusion | none",
+    "initial": "full-composition-exclusion",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:number-transform": {
+    "desc": "Converts the number sequence in the character string.\nValues have the following meanings:\n‒\nnone: Does nothing.\n‒\nkansuji: Converts the contained number sequence into Japa‐\nnese numerals. The details of the Japanese numeral format\ncan be specified by axf:kansuji-style, axf:kansuji-letter and\naxf:kan",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "none | kansuji | kansuji-if-vertical | <list-style-type> | <string>",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 418
+  },
+  "axf:number-type": {
+    "desc": "Specifies whether to output the page number or to output the column\nnumber.\nIt can be specified to <fo:page-number>, etc. and the column number\ncan be outputted instead of the page number. While format property\nis applied to the format of the page number, axf:column-number-format\nproperty is applied",
+    "applies_to": "<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>",
+    "values": "page | column | page-and-column",
+    "initial": "page",
+    "inherited": "no",
+    "page": 419
+  },
+  "axf:origin-id": {
+    "desc": "Specifies the origin of the page number.\nID for the origin of the page number can be specified in <fo:page-number>\nor <fo:page-number-citation>. The output page number is as follows:\n   [ref-id page] - [origin-id page] + 1\nIf the specified Page is after the ref-id page, the value becomes 0.\nIn <fo:p",
+    "applies_to": "<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>",
+    "values": "<idref>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:outline-color": {
+    "desc": "Specifies the color which appears as a title of bookmarks. When\ntransparent is specified, the color information is not set to PDF. This\nproperty is effective with PDF1.4 or later.",
+    "applies_to": "block-level formatting objects",
+    "values": "<color>",
+    "initial": "transparent",
+    "inherited": "no",
+    "page": 420
+  },
+  "axf:outline-expand": {
+    "desc": "Specifies whether to display the lower hierarchy of bookmark items or\nnot.\ntrue specifies to display the lower hierarchy in the expanded state. false\nspecifies to display in the collapsed state.",
+    "applies_to": "block-level formatting objects",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:outline-external-destination": {
+    "desc": "Sets the external link in the PDF bookmark.\nValues have the following meanings:\n‒\n<uri-specification>: Specifies the URI of the link destination.",
+    "applies_to": "block-level formatting objects",
+    "values": "<uri-specification>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:outline-font-style": {
+    "desc": "Specifies the font style which appears as a title of bookmarks. This\nproperty is effective with PDF1.4 or later.\nValues have the following meanings:\n‒\nnormal: Specifies normal style.\n‒\nitalic: Specifies italic.",
+    "applies_to": "block-level formatting objects",
+    "values": "normal | italic",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 421
+  },
+  "axf:outline-font-weight": {
+    "desc": "Specifies the font weight which appears as a title of bookmarks. This\nproperty is effective with PDF1.4 or later.\nValues have the following meanings:\n‒\nnormal: Specifies normal weight.\n‒\nbold: Specifies bold weight.",
+    "applies_to": "block-level formatting objects",
+    "values": "normal | bold",
+    "initial": "normal",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:outline-group": {
+    "desc": "Groups bookmark items, and outputs them collectively.\nIf this property is omitted or specifies empty string, bookmark items\nare not grouped. If this specifies any string, the string is used as the\nname of group. The group with the same name is outputted collectively.\nThe non-grouped bookmark is outp",
+    "applies_to": "block-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:outline-internal-destination": {
+    "desc": "Sets the internal link in the PDF bookmark.\nValues have the following meanings:\n‒\n<idref>: Specifies the ID of the link destination.\n\n‒\n<number-with-fragment>: Specifies the page number of the link desti‐\nnation. This string is simple numeric characters or the following\nstring that combines numeric ",
+    "applies_to": "block-level formatting objects",
+    "values": "<idref> | <number-with-fragment>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 422
+  },
+  "axf:outline-level": {
+    "desc": "Indicates the hierarchy level of bookmark items.\nThe <number> must be a non-negative integer. Initial value is 0 and\nit means that bookmarks should not be created. The highest level of\nbookmarks is 1 and it becomes 2 or more according to the hierarchy\nlevel of the bookmarks.",
+    "applies_to": "block-level formatting objects",
+    "values": "<number>",
+    "initial": "0",
+    "inherited": "no",
+    "page": 423
+  },
+  "axf:output-volume-break": {
+    "desc": "Separates the file in multi volume.\nSpecifies axf:output-volume-break=\"true\" to <fo:page-sequence> where you\nwant to start separating the volume. The document number increases\none by one. When separating the volume, axf:output-volume-break=\"true\"\nis considered to be always being specified to the fir",
+    "applies_to": "<fo:page-sequence>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:output-volume-filename": {
+    "desc": "Specifies the document file name in multi separate volume.\n\nIf nothing specified, the automatic file name using the format property\nis adopted. If this property is specified, the specified name is adopted.\nThis property is effective only with the top <fo:page-sequence> or with\nthe <fo:page-sequence>",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 424
+  },
+  "axf:overflow-align": {
+    "desc": "Specifies the alignment of the overflowed block.\nThis setting is invalid when overflow=\"condense\" is specified.\nValues have the following meanings:\n‒\nnormal: Specifies the alignment of the block according to the\ntext-align setting.\n‒\nstart: Specifies the alignment of the block to the start side.\n‒\ne",
+    "applies_to": "block-level formatting objects",
+    "values": "normal | start | end | center",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:overflow-condense": {
+    "desc": "Specifies how to condense the overflowed text within the region.\nWhen overflow=\"condense\" is specified, the text within the region can be\ncondensed by the way specified in the axf:overflow-condense property.\nThe adjustment for condensing the text includes both the inline\n\nprogression direction and t",
+    "applies_to": "all block-level formatting objects",
+    "values": "[ font-size | font-stretch | line-height | letter-spacing ]+ | auto | none",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 425
+  },
+  "axf:overflow-condense-limit-font-size": {
+    "desc": "Specifies the lower limit font size when axf:overflow-condense=\"font-\nsize\" is specified.\nWhen the content exceeds the limit shown by <length>, the region still\noverflows. Then a solution can be specified as follows:\n   axf:overflow-condense-limit-font-size=\"4pt hidden\"\nHowever, it is ignored when t",
+    "applies_to": "all block-level formatting objects",
+    "values": "<length> none | [ <length> [ visible | hidden | error-if-overflow | repeat ]? ]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:overflow-condense-limit-font-stretch": {
+    "desc": "Specifies the lower limit value when axf:overflow-condense=\"font-\nstretch\" is specified.\nWhen the content exceeds the limit shown by <percentage> or <number>,\nthe region still overflows. Then a solution can be specified as follows:\n   axf:overflow-condense-limit-font-stretch=\"30% hidden\"\nHowever, it",
+    "applies_to": "all block-level formatting objects",
+    "values": "none | [ [ <number> | <percentage> ] [ visible | hidden | error- if-overflow | repeat ]? ]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 427
+  },
+  "axf:overflow-condense-limit-line-height": {
+    "desc": "Specifies the lower limit value when axf:overflow-condense=\"line-height\"\nis specified.\nValues have the following meanings:\n‒\nnone: It is considered that 0 is specified.\n‒\n<number>: Specifies the lower limit value of line-height. line-height is\nnot made smaller than that value. The value is a percent",
+    "applies_to": "all block-level formatting objects",
+    "values": "none | [ <number> [ visible | hidden | error-if-overflow | repeat ]? ]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 428
+  },
+  "axf:overflow-condense-limit-letter-spacing": {
+    "desc": "Specifies the lower limit value when axf:overflow-condense=\"letter-\nspacing\" is specified.\nValues have the following meanings:\n‒\nnone: It is considered that -1em is specified.\n‒\n<length>: Specifies the lower limit value of letter-spacing. letter-spa‐\ncing is not made smaller than that value.\nWhen th",
+    "applies_to": "all block-level formatting objects",
+    "values": "none | [ <length> [ visible | hidden | error-if-overflow | repeat ]? ]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:overflow-limit": {
+    "desc": "Specifies the overflow limit value with <length>. If a single <length>\nvalue is specified, it gives both the inline and block overflow limit\nvalues. If two <length> values are specified, the first gives the inline\noverflow limit value and the second gives the block overflow limit\nvalue. Negative val",
+    "applies_to": "all formatting objects",
+    "values": "<length>{1,2}",
+    "initial": "depends on system",
+    "inherited": "yes",
+    "page": 429
+  },
+  "axf:overflow-limit-block": {
+    "desc": "Specifies the block overflow limit value with <length>. Negative values\nare invalid.\nFor more details, see axf:overflow-limit.",
+    "applies_to": "all formatting objects",
+    "values": "<length>",
+    "initial": "depends on system",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:overflow-limit-inline": {
+    "desc": "Specifies the inline overflow limit value with <length>. Negative values\nare invalid.\nFor more details, see axf:overflow-limit.",
+    "applies_to": "all formatting objects",
+    "values": "<length>",
+    "initial": "depends on system",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:overflow-replace": {
+    "desc": "Specifies an alternative character string for the overflowed text.\n\nWhen overflow=\"replace\" is specified, the overflowed text is replaced by\nrepeating the specified string. A complex character string cannot be\nspecified.",
+    "applies_to": "all block-level formatting objects",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "yes",
+    "page": 430
+  },
+  "axf:overprint": {
+    "desc": "Specifies the overprint.\nValues have the following meanings:\n‒\nauto: The setting of the overprint in the Option Setting File is adop‐\nted. If you specify overprint=\"k100\" in the Option Setting File, even\nif nothing is specified in FO, black overprinting will be done on all\npages.\n‒\n<color>: Specifie",
+    "applies_to": "all formatting objects",
+    "values": "auto | <overprint># <overprint> = <opcolor> [[stroke || paint || [full | nonzero]] | none]? <opcolor> = <color> | k100 | separation | all",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 431
+  },
+  "axf:page-number-prefix": {
+    "desc": "Sets the prefix of page number.\nCAUTION: A similar function is provided in XSL 1.1. Use\n<fo:folio-prefix>.\nSpecifies the prefix for page numbers. Specified string will\nbe outputted before the page number by <fo:page-number> and\n<fo:page-number-citation>. Also this string will be used as the page lab",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 432
+  },
+  "axf:physical-page-number": {
+    "desc": "Gets physical page number.\nThe value of initial-page-number property is disregarded and the\nphysical page number that is not affected by the page-sequence is\nobtained. In order to obtain the total number of pages, ID is given to\nthe last page per the following example:\n<fo:page-number-citation ref-i",
+    "applies_to": "<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 433
+  },
+  "axf:poster-image": {
+    "desc": "Specifies the poster image for embedded multimedia.\nValues have the following meanings:\n‒\n<uri-specification>: Specifies the URL of the poster image. Multime‐\ndia, such as video or audio, cannot be specified.\n‒\nnone: Specifies no poster images.\n‒\nauto: Uses the plain fallback image for the poster im",
+    "applies_to": "<fo:external-graphic>",
+    "values": "<uri-specification> | none | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:printer-bin-selection": {
+    "desc": "Selects the printer tray.\n\nEffective only with the Windows version and functions when\noutputting to a printer. Whether it is effective also depends on a\nprinter. What can be specified by the character string is the tray name\nwhich comes out in each printer setting dialog. This is the tray name\nacqui",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<string> | <integer>",
+    "initial": "depends on the environment",
+    "inherited": "no",
+    "page": 434
+  },
+  "axf:printer-duplex": {
+    "desc": "Specifies to print in duplex mode.\nEffective only with the Windows version and functions when\noutputting to a printer. Whether it is effective also depends on a\nprinter. Specify the value that is specified by the printer driver. Most\nprinters support following integer values:\n1: Simplex Printing.\n2:",
+    "applies_to": "<fo:page-sequence>",
+    "values": "<integer>",
+    "initial": "depends on the environment",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:printer-marks": {
+    "desc": "Specifies the Printing marks, such as a crop mark. Specifies the action\nof external link.\n\nValues have the following meanings:\n‒\ncrop: Outputs corner marks. Outputs corner marks to the position of\nthe trim size and the position of the bleed area if it exists. When\ncorner marks are output to both the",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "[ [ crop | crop-trim ] || [ cross | cross-circle | cross- registration ] || <uri-specification>+ ] | none",
+    "initial": "none",
+    "inherited": "no",
+    "page": 435
+  },
+  "axf:printer-marks-line-color": {
+    "desc": "Specifies the line color of printer marks. When the value is auto, the\ncolor is considered the registration color.",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "<color> | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 436
+  },
+  "axf:printer-marks-line-width": {
+    "desc": "Specifies the line width of printer marks. When the value is auto, the\nwidth depends on the system setting. The default width of a printer\nmark is 0.24pt, it can be adjusted in the Option Setting File.",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "<length> | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:printer-marks-over-content": {
+    "desc": "Specifies whether printer marks are drawn over the page content.",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "false | true",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:printer-marks-spine-width": {
+    "desc": "Specifies the spine width of the facing page. When a value greater\nthan 0pt is specified, the printing image is assumed to be constructed\n\nas facing pages, the center mark of the spine will be outputted as a\nspine-width printer mark.",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "no",
+    "page": 437
+  },
+  "axf:printer-marks-zero-margin": {
+    "desc": "Specifies the margin between the page and the printer marks when\naxf:bleed is 0. When the value is auto, the margin depends on the\nsystem setting. The default margin is 3mm, it can be adjusted in the\nOption Setting File.",
+    "applies_to": "<fo:simple-page-master>",
+    "values": "<length> | auto",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:punctuation-spacing": {
+    "desc": "Specifies the trimming spacing between a full width punctuation and a\nfull width character in Japanese.\nThis space is used for the following space amount specified by\naxf:punctuation-trim=\"adjacent\".\n‒\nBetween full width close parenthesis and full width open parenthe‐\nsis.\n‒\nBetween full width close",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length> | <percentage> | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 438
+  },
+  "axf:punctuation-trim": {
+    "desc": "Specifies whether to treat full width punctuations in Japanese.\nFor more details see axf:punctuation-trim in XSL/CSS Extensions in\nFeatures of the Online Manual.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "[none | auto | all |[[ start | start-except-first ] || [ end | allow-end | end-except-fullstop ] || adjacent ]] || <string>",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:quotetype": {
+    "desc": "Specifies the direction of the quotes.\nFor non-directional quotation marks such as U+0022, explicitly specify\nthe direction as follows to encourage proper line breaks:\nLorem\n<fo:character character=\"&#x22;\" \n   axf:quotetype=\"OP\"/>ipsum<fo:character character=\"&#x22;\" \n\n   axf:quotetype=\"CL\"/>\ndolor",
+    "applies_to": "<fo:character>",
+    "values": "QU | OP | CL",
+    "initial": "empty",
+    "inherited": "no",
+    "page": 439
+  },
+  "axf:repeat-cell-content-at-break": {
+    "desc": "Specifies whether to copy the contents of a cell when a cell breaks.\nValues have the following meanings:\n‒\ntrue: When the content of table cell fits in table-cell-area without\nbreaking and table-cell-area breaks according to the break of other\ntable-cell in the same row, or according to the break am",
+    "applies_to": "<fo:table-cell>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 440
+  },
+  "axf:repeat-footnote-in-table-header": {
+    "desc": "Specifies whether to repeat the <fo:footnote> in the <fo:table-header>\nthat is repeated by table-omit-header-at-break=\"false\".\nValues have the following meanings:\n‒\ntrue: Process <fo:footnote> repeatedly.\n‒\nfalse: Do not process <fo:footnote> repeatedly.",
+    "applies_to": "<fo:table-header>",
+    "values": "true | false",
+    "initial": "true",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:repeat-page-sequence-master": {
+    "desc": "Specifies the repetition of the page sequence. When the value is true, if\nthe page output reaches in the end of <fo:page-sequence-master> and the\npage which should still be outputted remains, page output repeats from\nthe start of <fo:page-sequence-master>.",
+    "applies_to": "<fo:page-sequence-master>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 441
+  },
+  "axf:require": {
+    "desc": "Specifies the version of Antenna House Formatter required for\nformatting.\nYou can specify the required version of Antenna House Formatter\nwhen formatting FO, HTML, etc. Formatting will not be performed if\nthe specified version is not reached. For example, if you specify as\nfollows:\naxf:require=\"7.4\"",
+    "applies_to": "<fo:root>",
+    "values": "<string>",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:retrieve-table-rows": {
+    "desc": "Specifies the maximum number of <fo:table-row> in <fo:marker>\nreferenced from <fo:retrieve-table-marker>.\nWhen multiple rows are retrieved, the number of rows may be\ninconsistent and the rows may be duplicated. In such cases, specify the\nmaximum number of lines to avoid it. Values less than 1 are co",
+    "applies_to": "<fo:retrieve-table-marker>",
+    "values": "<integer>",
+    "initial": "1",
+    "inherited": "no",
+    "page": 442
+  },
+  "axf:reverse-diagonal-border-style": {
+    "desc": "Specifies the style of the reverse diagonal border.",
+    "applies_to": "all elements which can have borders",
+    "values": "<border-style>",
+    "initial": "none",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:reverse-diagonal-border-width": {
+    "desc": "Specifies the width of the reverse diagonal border.",
+    "applies_to": "all elements which can have borders",
+    "values": "<border-width>",
+    "initial": "medium",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:reverse-page": {
+    "desc": "Outputs pages in reverse order.\nValues have the following meanings:\n‒\ntrue: Outputs pages in reverse order.\n‒\nfalse: Outputs pages in order.",
+    "applies_to": "<fo:page-sequence>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 443
+  },
+  "axf:right-page-master-reference": {
+    "desc": "Master name of the page master for the right page of a two-page\nspread.\naxf:right-page-master-reference refers to the page master that defines\nthe page size and the non-spread regions for the right-hand page of a\ntwo-page spread.\nValues have the following meanings:\n‒\n<name>: The name must refer to a",
+    "applies_to": "<axf:spread-page-master>",
+    "values": "<name>",
+    "initial": "N/A, a value is required",
+    "inherited": "no",
+    "page": 445
+  },
+  "axf:ruby-condense": {
+    "desc": "axf:ruby-color \nThe use of the Ruby extension is documented comprehensively and\nwith examples in Ruby Extension in Features of the Online Manual. A\ndescription of the properties is omitted here.",
+    "applies_to": "<axf:ruby>",
+    "values": "see above",
+    "initial": "",
+    "inherited": "",
+    "page": 0
+  },
+  "axf:scope": {
+    "desc": "Specifies the range of cells with which this table header cell is\nassociated. It is the same as the scope attribute in HTML.",
+    "applies_to": "<fo:table-cell>",
+    "values": "auto | row | col | rowgroup | colgroup | both",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 446
+  },
+  "axf:soft-hyphen-treatment": {
+    "desc": "The value auto has the meaning SOFT HYPHEN is deleted except when\nneeded for line breaking.\nThe value preserve has the meaning SOFT HYPHEN is not deleted and\nthe target glyph is output.",
+    "applies_to": "all formatting elements on block and inline level",
+    "values": "auto | preserve",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:suppress-duplicate-footnote": {
+    "desc": "Specifies whether to delete footnotes duplicated in the same page.\nDeters the display of duplicated footnotes on the same footnote region\nwhen the same footnote is assigned to two or more places in the same\npage. When axf:footnote-position=\"column\" is specified, it is effective\nonly for the footnote",
+    "applies_to": "<fo:footnote>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "yes",
+    "page": 447
+  },
+  "axf:suppress-duplicate-marker-contents": {
+    "desc": "Specifies the removal of duplicate marker references.\nWhen inline consecutive <fo:retrieve-marker> refer to <fo:marker> with\nthe same content, one <fo:retrieve-marker> is removed. For example, in\nthe following case, text and elements between <fo:retrieve-marker> are\nalso removed:\n   <fo:retrieve-mar",
+    "applies_to": "all formatting objects",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:suppress-duplicate-page-number": {
+    "desc": "Specifies to delete the duplicated page numbers.\nCAUTION: A similar function is provided in XSL 1.1. Use merge-*-index-\nkey-reference.\nWhen formatting an index, generally several <fo:page-number-citation>\nline up for one index item. In such case, when <fo:page-number-citation>\nrefers to the same pag",
+    "applies_to": "all formatting objects",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "yes",
+    "page": 448
+  },
+  "axf:suppress-folio-prefix": {
+    "desc": "Invalidates the prefix of page numbers.\nSpecifies whether to invalidate the prefix set by <fo:folio-prefix>.\nValues have the following meanings:\n‒\ntrue: Invalidates the prefix.\n‒\nfalse: Validates the prefix.",
+    "applies_to": "<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:suppress-folio-suffix": {
+    "desc": "Invalidates the suffix of page numbers.\nSpecifies whether to invalidate the suffix set by <fo:folio-suffix>.\nValues have the following meanings:\n‒\ntrue: Invalidates the suffix.\n‒\nfalse: Validates the suffix.",
+    "applies_to": "<fo:page-number>, <fo:page-number-citation>, <fo:page-number-citation-last>",
+    "values": "true | false",
+    "initial": "false",
+    "inherited": "no",
+    "page": 449
+  },
+  "axf:suppress-if-first-on-page": {
+    "desc": "Specifies whether to suppress the block at the beginning of a page or\ncolumn.\nValues have the following meanings:\n‒\nfalse: Does nothing.\n‒\ntrue: Suppresses a block when it comes at the beginning of a page\nor column. Actually, it is hidden but exists as a block of zero size\nwithout being deleted, it'",
+    "applies_to": "<fo:block>, <fo:block-container>",
+    "values": "true | false | unless",
+    "initial": "false",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:tab-align": {
+    "desc": "Specifies the tab alignment at the tab stop position.\n‒\nWith the default value auto, the alignment follows the setting in\naxf:tab-stops in the parent block (<fo:block>).\n‒\nstart aligns the start of the string to the tab stop position.\n‒\ncenter aligns the center of the string to the tab stop position",
+    "applies_to": "<axf:tab>",
+    "values": "auto | start | center | end | left | right | decimal | <string>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 450
+  },
+  "axf:tab-stops": {
+    "desc": "This property is used to specify both the tab stops and the alignment\nof the content at the tab stop positions of the block lines in blocks\n(<fo:block>). These specifications are inherited by any subordinate\nblocks! For each tab stop, the alignment at the tab stop is set first,\nthen the tab stop pos",
+    "applies_to": "practically useful in <fo:block>",
+    "values": "[[<tab-align>? [<length>|<number>]]* [<tab-align>? eol]?]!",
+    "initial": "8",
+    "inherited": "yes",
+    "page": 451
+  },
+  "axf:tab-treatment": {
+    "desc": "Specifies the method to treat the tab character (U+0009). The value\n<number> means the specified number of the white space characters\n(U+0020). You cannot specify a negative value. This white space is subject\nto processing of white-space-treatment and white-space-collapse, etc. The\nvalue preserve me",
+    "applies_to": "<fo:block>, <fo:character>",
+    "values": "<number> | preserve",
+    "initial": "4",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:tab-overlap-treatment": {
+    "desc": "Specifies a behavior when tab alignment makes letters overlapped. The\ndefault value auto depends on the default value of the system. This is\nthe value specified in tab-overlap-treatment in the Option Setting File.\nThe value ignore-tab ignores the tab. The string will be shown just after\nthe previous",
+    "applies_to": "<fo:block>, <fo:character>",
+    "values": "auto | ignore-tab | next-tab",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:table-auto-layout-limit": {
+    "desc": "Specifies the number of rows of <fo:table> to read ahead to determine\nthe width of column when table-layout=\"auto\" is specified.",
+    "applies_to": "<fo:table>",
+    "values": "auto | <number>",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 452
+  },
+  "axf:table-row-orphans": {
+    "desc": "Specifies the number of table-rows that must remain at the bottom of\nthe page (column).",
+    "applies_to": "<fo:table-body>",
+    "values": "<integer>",
+    "initial": "1",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:table-row-widows": {
+    "desc": "Specifies the number of table-rows that must remain at the top of the\npage (column).",
+    "applies_to": "<fo:table-body>",
+    "values": "<integer>",
+    "initial": "1",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:table-summary": {
+    "desc": "Describes the table summary.\nThis is equivalent to <table summary=\"<string>\"> in HTML. It doesn't\naffect the formatting result. It is outputted with Tagged PDF.",
+    "applies_to": "<fo:table>",
+    "values": "<string>",
+    "initial": "empty",
+    "inherited": "no",
+    "page": 453
+  },
+  "axf:text-align-string": {
+    "desc": "Specifies the text alignment when text-align=\"<string>\".\nAlthough the specification of <string> to <fo:table-cell> aligns the\ncharacter position of decimal point, etc., there is no definition for\nthe alignment of the whole character string. At a default, AH XSL\nFormatter displayed it right aligned a",
+    "applies_to": "<fo:table-cell>",
+    "values": "start | center | end | inside | outside | left | right",
+    "initial": "end",
+    "inherited": "yes",
+    "page": 454
+  },
+  "axf:text-autospace": {
+    "desc": "Specifies whether to add space surrounding ideographic glyphs or not.\nThe initial value of whether space is added or not can be set by\ntext-autospace in the Option Setting File. It can also be set in the Format\nOption Setting Dialog in the GUI.\nValues have the following meanings:\n‒\nnone: Space is no",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "none | [ ideograph-numeric || ideograph-alpha || ideograph- parenthesis ] | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 455
+  },
+  "axf:text-autospace-width": {
+    "desc": "Specifies the width for axf:text-autospace.\nValues have the following meanings:\n‒\n<length>: Specifies the amount of the space with an absolute value.\n‒\n<percentage>: It's a relative setting to the font size when actually\napplied.\n‒\nauto: Dependent on the system setting. This is the value specified b",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length> | <percentage> | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-combine-horizontal": {
+    "desc": "Sets horizontal-in-vertical composition in vertical writing mode\nautomatically.\n\nCAUTION: Automatic horizontal-in-vertical composition is\nnot recommended to use in any other way than\naxf:text-orientation=\"upright\".\nAutomatic horizontal-in-vertical composition is invalid in the following\ncases. Empha",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "none | all | [ <integer> || alpha <integer> || alphanumeric <integer> || emoji]",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 456
+  },
+  "axf:text-emphasis-style": {
+    "desc": "Specifies the style of emphasis marks.\nValues have the following meanings:\n‒\nnone: No emphasis marks.\n‒\nfilled: Specifies a character with color-fill.\n‒\nopen: Specifies a character with an outline without color-fill.\n‒\ndot: Specifies a filled dot. filled dot is U+2022 •, open dot is U+25E6 ◦.\n‒\ncirc",
+    "applies_to": "all elements",
+    "values": "none | [[filled | open] || [dot | circle | double-circle | triangle | sesame]] | <string>",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 458
+  },
+  "axf:text-emphasis-offset": {
+    "desc": "Specifies the space between emphasis marks and the base characters.\nWhen specified using <number>, the value is what is obtained by\nmultiplying axf:text-emphasis-font-size by the specified <number>. When\nruby and emphasis marks are put on the same side, it is adjusted to the\nlarger one of the specif",
+    "applies_to": "all elements",
+    "values": "<number> | <length> | <percentage>",
+    "initial": "0pt",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-emphasis-skip": {
+    "desc": "Specifies the character to which emphasis marks are not applied.\nValues have the following meanings:\n‒\nnone: No character is excluded.\n‒\nspaces: White space characters are excluded.\n‒\npunctuation: Punctuation marks are excluded.\n‒\nsymbols: Symbols are excluded.\n‒\nnarrow: Non full width characters (h",
+    "applies_to": "all elements",
+    "values": "none | [spaces || punctuation || symbols || narrow]",
+    "initial": "spaces",
+    "inherited": "yes",
+    "page": 459
+  },
+  "axf:text-emphasis-font-family": {
+    "desc": "Specifies the font family of emphasis marks. If nothing is specified, it's\nconsidered the same as font-family.",
+    "applies_to": "emphasis elements",
+    "values": "[<family-name> | <generic-family>]#",
+    "initial": "empty string",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-emphasis-font-size": {
+    "desc": "Specifies the font size of emphasis marks. When specified using\n<number>, the value is what is obtained by multiplying font-size by the\nspecified <number>.",
+    "applies_to": "emphasis elements",
+    "values": "<number> | <absolute-size> | <relative-size> | <length> | <percentage>",
+    "initial": "0.5",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-emphasis-font-style": {
+    "desc": "Specifies whether emphasis marks are made italic. If nothing is\nspecified, it's considered the same as font-style.",
+    "applies_to": "emphasis elements",
+    "values": "normal | italic",
+    "initial": "empty",
+    "inherited": "yes",
+    "page": 460
+  },
+  "axf:text-emphasis-font-stretch": {
+    "desc": "Specifies the font stretching of emphasis marks. If nothing is specified,\nit's considered the same as font-stretch.",
+    "applies_to": "emphasis elements",
+    "values": "normal | wider | narrower | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra- expanded | <percentage> | <number>",
+    "initial": "empty",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-emphasis-color": {
+    "desc": "Specifies the color of emphasis marks. If nothing is specified, it's\nconsidered the same as color.",
+    "applies_to": "emphasis elements",
+    "values": "<color>",
+    "initial": "empty",
+    "inherited": "yes",
+    "page": 461
+  },
+  "axf:text-justify": {
+    "desc": "Specifies how to justify text.\nValues have the following meanings:\n‒\nauto: Uses the best text justification method for the script. For ins‐\ntance, in case of Japanese Kanji, Hiragana and Katakana, spaces\nbetween letters are expanded. In case of Arabic scripts, Kashida\nis used while spaces between wo",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "auto | inter-word | inter-character | distribute",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 462
+  },
+  "axf:text-justify-trim": {
+    "desc": "Specifies the way to trim in text justification.\nTrim the spaces between characters as specified so that text fits into a\nline. When axf:punctuation-trim=\"all\" is specified, there may be no more\nspace to trim.\nValues have the following meanings:\n‒\nnone: Do not trim Japanese text.\n‒\npunctuation: Trim",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "none | [ punctuation || punctuation-except-fullstop || punctuation-except-middledot || [ kana | ideograph ] || inter-word ] | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 463
+  },
+  "axf:text-kashida-space": {
+    "desc": "Specifies the percentage of Kashida in Arabic justification.\nThe initial value of the percentage can be set by text-kashida-space in\nthe Option Setting File.\nValues have the following meanings:\n‒\n<percentage>: Indicates the percentage of white space and Kashida.\nIf the value is 0%, Kashida is not in",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<percentage> | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-line-color": {
+    "desc": "Specifies the color of underline, strikethrough, and overline.",
+    "applies_to": "all elements with and generated content with textual content",
+    "values": "auto | <color>",
+    "initial": "the value of the ‘color’ property",
+    "inherited": "no",
+    "page": 464
+  },
+  "axf:text-line-width": {
+    "desc": "Specifies the width of underline, strikethrough, and overline.",
+    "applies_to": "all elements with and generated content with textual content",
+    "values": "auto | <border-width>",
+    "initial": "auto",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:text-orientation": {
+    "desc": "Specifies the orientation of text in vertical writing mode.\nThis property is not effective in horizontal writing mode. In addition,\ncomplicated scripts, such as Arabic or Thai, cannot be rendered upright.\nValues have the following meanings:\n‒\nmixed: Rotates alphanumeric characters, etc. 90-degree cl",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "mixed | upright | sideways-rl | sideways | none | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 465
+  },
+  "axf:text-overflow": {
+    "desc": "Specifies the display method at the end of the content when\noverflowing in the inline progression direction.\nThis feature is effective only when overflow=\"hidden\" is specified.\nIt has no effect on the overflow in the block progression direction.\nWhen overflowing with only the first one character (or",
+    "applies_to": "block level elements",
+    "values": "clip | ellipsis | <string>",
+    "initial": "clip",
+    "inherited": "no",
+    "page": 466
+  },
+  "axf:text-replace": {
+    "desc": "Replaces the character strings.\nWhen it is simultaneously specified with text-transform or\naxf:number-transform, axf:text-replace will be evaluated last.\nValues have the following meanings:\n‒\nnone: Does nothing.\n‒\n<string> <string>: The first pair of character strings is replaced by\nthe latter chara",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "none | [ <string> <string> ]+",
+    "initial": "none",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-stroke": {
+    "desc": "Specifies the stroke of the character.\n\nThis is a shorthand property for axf:text-stroke-width and\naxf:text-stroke-color.\nCAUTION: This property is valid for GUI and PDF output, SVG output.\nIgnored on other outputs.\nCAUTION: Contiguous character strings such as Arabic or Devanagari\ndraw strokes at c",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length> <color>?|<color>",
+    "initial": "0pt transparent",
+    "inherited": "yes",
+    "page": 467
+  },
+  "axf:text-stroke-color": {
+    "desc": "Specifies the stroke color of the character. Strokes are not drawn when\nthese are transparent.\nCAUTION: This property is valid for GUI and PDF output, SVG output.\nIgnored on other outputs.\nCAUTION: Contiguous character strings such as Arabic or Devanagari\ndraw strokes at character boundaries.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<color>",
+    "initial": "transparent",
+    "inherited": "yes",
+    "page": 0
+  },
+  "axf:text-stroke-width": {
+    "desc": "Specifies the stroke width of the character. Strokes are not drawn when\nthese are less than or equal to 0.\nCAUTION: This property is valid for GUI and PDF output, SVG output.\nIgnored on other outputs.\nCAUTION: Contiguous character strings such as Arabic or Devanagari\ndraw strokes at character bounda",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "<length>",
+    "initial": "0pt",
+    "inherited": "yes",
+    "page": 468
+  },
+  "axf:text-treat-as": {
+    "desc": "Specifies the character string treatable for trimming space between\nideograph character and non-ideographic alphabet character and full\nwidth punctuation.\nFor more details see axf:text-treat-as in XSL/CSS Extensions in\nFeatures of the Online Manual.",
+    "applies_to": "inline formatting objects",
+    "values": "<string> [both | start | end]?",
+    "initial": "empty string",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:text-underline-position": {
+    "desc": "Specifies the position of underline.\nValues have the following meanings:\n‒\nauto: The underline is placed on the automatically adjusted position.\nThe specification of axf:vertical-underline-side in vertical writing\nmode is effective.\n‒\nbefore-edge: The underline is placed on the before-edge. When\n<pe",
+    "applies_to": "all elements with and generated content with textual content",
+    "values": "auto | [ [ before-edge | alphabetic | after-edge ] || [ <percentage> | <length> ] ]",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 469
+  },
+  "axf:transform": {
+    "desc": "Specifies the block transformation.\nCAUTION: The transformation of the region does not happen. Only the\ncontents are transformed.\nValues have the following meanings:\n‒\nnone: Does not transform the block.\n‒\nPerforms the specified transformation. The following transforma‐\ntions can be specified:\n•\nmat",
+    "applies_to": "transformable objects",
+    "values": "none | <transform-function> +",
+    "initial": "none",
+    "inherited": "no",
+    "page": 470
+  },
+  "axf:transform-origin": {
+    "desc": "Specifies the origin of the block transformation.",
+    "applies_to": "transformable objects",
+    "values": "[ <percentage> | <length> | left | center | right | top | bottom] | [ [ <percentage> | <length> | left | center | right ] && [ <percentage> | <length> | top | center | bottom ] ]",
+    "initial": "center center",
+    "inherited": "no",
+    "page": 0
+  },
+  "axf:url-break": {
+    "desc": "Specifies how to perform the line breaking in a URL.",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "normal | chicago",
+    "initial": "normal",
+    "inherited": "yes",
+    "page": 471
+  },
+  "axf:vertical-underline-side": {
+    "desc": "Specifies on which side of the text to put underline in vertical writing-\nmode.\nThis property is effective only when axf:text-underline-position=\"auto\"\nis specified. The overline is placed on the opposite position of the\nunderline.\nThe initial value of the underline position can be set by\nvertical-u",
+    "applies_to": "all block-level and inline-level formatting objects",
+    "values": "left | right | depend-on-language | auto",
+    "initial": "auto",
+    "inherited": "yes",
+    "page": 472
+  }
+}

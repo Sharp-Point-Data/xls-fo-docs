@@ -58,7 +58,7 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:page-sequence-master -- parent container
-- fo:single-page-master-reference -- for exactly one page with a given master
-- fo:repeatable-page-master-alternatives -- for conditional page-master selection
-- fo:simple-page-master -- the page-master referenced by master-reference
+- [fo:page-sequence-master](fo-page-sequence-master.md) — parent container
+- [fo:single-page-master-reference](fo-single-page-master-reference.md) — for exactly one page with a given master
+- [fo:repeatable-page-master-alternatives](fo-repeatable-page-master-alternatives.md) — for conditional page-master selection
+- [fo:simple-page-master](fo-simple-page-master.md) — the page-master referenced by master-reference

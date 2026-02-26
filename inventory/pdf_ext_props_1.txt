@@ -1,0 +1,3283 @@
+===PAGE 312===
+<axf:table-cell-repeated-marker> 
+Common Usage: Specifies the contents to be displayed in the
+split cell. When axf:repeat-cell-content-at-break="true" is specified and
+<axf:table-cell-repeated-marker> is contained in the cell, the contents of
+<axf:table-cell-repeated-marker> is used instead of the contents of the
+cell.
+Properties: none
+Parent Objects: <fo:table-cell>
+Contents: (#PCDATA | <fo:inline> | <fo:block>)*
+2.3 
+AHF Extensions: Properties
+The extension properties are sorted alphabetically. After a short descrip‐
+tion of the function, the allowed environments are enumerated in which
+the given property may be used.
+After that, the possible property values and the default setting are
+named. The default sets the behavior of the AH XSL formatter when the
+given property is not specified. Values delimited by <> render property
+value formats (see the explanations in section ).
+Finally, whether the specified property value inherits in the XML hie‐
+rarchy or not is specified.
+The detailed function descriptions and examples for the application are
+taken from the AHF Online Manual. For some properties, further applica‐
+tion details and examples are given in the AHF Online Manual.
+axf:abbreviation-character-count 
+Specifies the maximum number of characters considered an
+abbreviation.
+AHF Extension Objects
+<axf:table-cell-repeated-marker>
+312
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 313===
+Values have the following meanings:
+auto: The value specified by abbreviation-character-count in the Option
+Setting File is adopted.
+<number>: Specifies the number of characters considered an abbreviation.
+Applies to: <fo:block>
+Values: auto | <number>
+Initial: auto
+Inherited: yes
+axf:action-type 
+This extension is used to set the behavior of an external hyperlink or
+form action.
+The goto value causes an internal link, gotor causes a link into a PDF
+document. launch opens the target as a file. uri opens the target as a
+URI (on the web). The reset and submit values can only be used for
+the <axf:form-field> extension object. reset resets a form field, submit
+dispatches a form field as a form action. The javascript value triggers
+a JavaScript action. The default value auto triggers a system specific
+action.
+If the link does not target a local file, the action type is always URI.
+If the action type is unspecified or set to the default auto, the target
+specified by a relative addressing is treated according to the setting
+of use-launch-for-relative-uri in the AH XSL Formatter PDF Output
+Settings either as action type Open the file (for value true) or as World
+Wide Web link (for value false). For an absolute address, the action type
+is always World Wide Web link.
+A more detailed description of PDF link behavior can be found in the
+AH XSL Formatter Online Manual (file: ahf-ext.html#axf.action-type).
+Applies to: <fo:basic-link>, <axf:form-field>, <axf:form-field-event>
+Values: goto | gotor | launch | uri | reset | submit | javascript | auto
+AHF Extensions: Properties
+axf:abbreviation-character-count
+313
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 314===
+Initial: auto
+Inherited: no
+axf:adjust-last-line-spacing 
+Adjusts the spacing on the last line.
+Values have the following meanings:
+‒
+false: Does nothing.
+‒
+true: Reduces the difference between the spacing on the last line and
+the spacing on the second-last line.
+This processing applies under the following conditions:
+‒
+text-align is "justify"
+‒
+text-align-last is not "justify"
+‒
+When the algorithm of Breaking Paragraphs into Lines is applied,
+such as when axf:line-break="bpil" is specified
+If the result of adjusting the spacing satisfies the condition of
+axf:flush-zone, axf:flush-zone will be applied.
+Applies to: <fo:block>
+Values: false | true
+Initial: false
+Inherited: yes
+axf:alttext 
+Specifies the alternate text of an image or link. Effective when
+outputting Tagged PDF.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>,
+<fo:basic-link>
+Values: <string>
+Initial: empty string
+Inherited: no
+AHF Extensions: Properties
+axf:action-type
+314
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 315===
+axf:annotation-author 
+Specifies the author of the annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-border-style 
+Specifies the border style of the free text annotation.
+The following can be specified for <border-style>: solid, dotted, dashed,
+dot-dash, dot-dot-dash. If anything else is specified, it is considered solid.
+Applies to: all block-level and inline-level formatting objects
+Values: <border-style>
+Initial: solid
+Inherited: no
+axf:annotation-border-width 
+Specifies the border width of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <border-width>
+Initial: 0pt
+Inherited: no
+axf:annotation-border-color 
+Specifies the border color of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <color>
+Initial: the value for axf:annotation-text-color
+Inherited: no
+AHF Extensions: Properties
+axf:annotation-author
+315
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 316===
+axf:annotation-color 
+Specifies the color used for the background of the annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <color> | none
+Initial: none
+Inherited: no
+axf:annotation-contents 
+Specifies the content of the annotation.
+Specifies the character string to be displayed for an <fo:basic-link> or
+HTML <a> or when axf:annotation-type specifies one of the following
+annotation types: Text, FreeText, Stamp, Fileattachment.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-file-name 
+Specifies the alternate file name to output when specifying the file
+attachment annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-file-attachment 
+Specifies the file with which file attachment annotation is related.
+Applies to: all block-level and inline-level formatting objects
+Values: <uri-specification>
+Initial: empty string
+AHF Extensions: Properties
+axf:annotation-color
+316
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 317===
+Inherited: no
+The data scheme (defined in RFC397) can be specified. At that time,
+axf:annotation-file-name must be specified.
+axf:annotation-createdate 
+Specifies the annotation creation date.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-modifydate 
+Specifies the annotation modification date.
+It is the value of /M in the annotation dictionary. If omitted,
+it is considered the value of modifydate in <axf:document-info>. If
+axf:annotation-modifydate is older than axf:annotation-createdate, it will
+be adjusted to axf:annotation-createdate.
+The date format is a string in the ISO 8601 format. The following format
+of this standard is accepted:
+YYYY-MM-DD(Thh(:mm(:ss)?)?)?(Z|±hh(:mm)?)?
+The numbers 0 to 9 are given to Y, M, D, h, m and s, either “+” or “-” is
+given to “±”. Date “-” and time “:” separators may be omitted. When
+time zone is omitted, it is considered the system time zone (local time).
+Even dates that do not exist are appropriately corrected. The setting is
+ignored for dates before 1970, invalid strings, and dates that cannot be
+corrected.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+AHF Extensions: Properties
+axf:annotation-file-attachment
+317
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 318===
+axf:annotation-flags 
+Specifies the flag of the annotation. Specifies the following character
+sequences by enumerating using the white space: Invisible, Hidden,
+Print, NoZoom, NoRotate, NoView, ReadOnly, Locked, ToggleNoView, LockedContents.
+They are case insensitive. See also ISO 32000-1 or ISO 32000-2 to learn
+more.
+Applies to: See also ISO 32000-1 or ISO 32000-2 to learn more.
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-font-family 
+Specifies the font family of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: depends on user agent (PDF-Reader)
+Inherited: no
+axf:annotation-font-size 
+Specifies the font size of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <absolute-size> | <relative-size> | <length> | <percentage>
+Initial: depends on user agent (PDF-Reader)
+Inherited: no
+axf:annotation-font-style 
+Specifies whether to make the font of the free text annotation italic.
+Applies to: all block-level and inline-level formatting objects
+Values: normal | italic
+AHF Extensions: Properties
+axf:annotation-flags
+318
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 319===
+Initial: normal
+Inherited: no
+axf:annotation-font-weight 
+Specifies the font weight of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: normal | bold
+Initial: normal
+Inherited: no
+axf:annotation-height 
+Specifies the height of the annotation. This property is used for the
+height of pop-up and the height of rubber stamp annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length> | auto
+Initial: auto
+Inherited: no
+axf:annotation-icon-name 
+Specifies the name of the icon used for displaying the annotation.
+Although arbitrary name can be specified for the icon used for the
+display of annotations, whether it can be displayed or not depends
+on the viewer application of a document. The annotation type
+(axf:annotation-type) shows the standard name which can be specified.
+‒
+Text:
+Standard names are as follows: Comment, Help, Insert, Key, NewParagraph,
+Note, Paragraph. Empty string is considered Note.
+‒
+Stamp:
+Standard names are as follows: Approved, AsIs, Confidential, Depart‐
+mental, Draft, Experimental, Expired, Final, ForComment, ForPublicRelease,
+AHF Extensions: Properties
+axf:annotation-font-style
+319
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 320===
+NotApproved, NotForPublicRelease, Sold, TopSecret. Empty string is consi‐
+dered Draft.
+‒
+FileAttachment:
+Standard names are as follows: Graph, Paperclip, , Tag. Empty string is
+considered PushPin.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-open 
+Specifies the initial state of the annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: true | false
+Initial: false
+Inherited: no
+axf:annotation-position-horizontal 
+Specifies the horizontal position of the annotation. The position
+specified is the distance from the left edge of the region and is used
+for the position of pop-up or icons and the position of rubber stamp
+annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length>
+Initial: 0pt
+Inherited: no
+axf:annotation-position-vertical 
+Specifies the vertical position of the annotation. The position specified
+is the distance from the top edge of the region and is used for
+AHF Extensions: Properties
+axf:annotation-icon-name
+320
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 321===
+the position of pop-up or icons and the position of rubber stamp
+annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length>
+Initial: 0pt
+Inherited: no
+axf:annotation-text-align 
+Specifies the alignment of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: left | center | right
+Initial: left
+Inherited: no
+axf:annotation-text-color 
+Specifies the color of the free text annotation.
+Applies to: all block-level and inline-level formatting objects
+Values: <color>
+Initial: depends on user agent (PDF-Reader)
+Inherited: no
+axf:annotation-title 
+Specifies the title of the annotation. This property is effective with
+PDF1.5 or later.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+AHF Extensions: Properties
+axf:annotation-position-vertical
+321
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 322===
+axf:annotation-type 
+Specifies the type of the annotation.
+Any of the following types of the annotation can be specified:
+‒
+empty string: No annotations.
+‒
+Text: Text annotation.
+‒
+FreeText: Free text annotation.
+‒
+Stamp: Rubber stamp annotation.
+‒
+FileAttachment: File attachment annotation.
+Character strings are case insensitive.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:annotation-width 
+Specifies the width of the annotation. This property is used for the
+width of pop-up and the width of rubber stamp annotations.
+Applies to: all block-level and inline-level formatting objects
+Values: <length> | auto
+Initial: auto
+Inherited: no
+axf:append-non-end-of-line-characters 
+Specifies the non-end-of-line-characters to append. The characters
+included in <string> can be eliminated from the non-starter-
+characters. If the specified characters are also specified to
+axf:append-non-starter-characters in the same tag as well, the effect is
+not guaranteed. White space characters are disregarded even though
+they are specified. The initial value of non-starter-characters can be set
+by append-non-starter-characters in the Option Setting File.
+AHF Extensions: Properties
+axf:annotation-type
+322
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 323===
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:append-non-starter-characters 
+Specifies the non-starter-characters to append. The characters
+included in <string> can be appended to the non-starter-
+characters. If the specified characters are also specified in
+axf:except-non-starter-characters as well in the same tag, the effect
+could be wrong. White space characters are disregarded even though
+they are specified. Closing parentheses and punctuation marks are
+automatically treated as except-non-starter characters without adding
+them. The initial value of non-starter-characters can be set by
+append-non-starter-characters in the Option Setting File.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:assumed-page-number 
+Specifies the assumed page number. When <fo:page-number-citation>
+appears, the reference area is sometimes undecided. In evaluation of
+fo:page-number-citation, the temporary area is secured first, and when
+a page number is decided, it is adjusted to the right contents. Since
+the size of an area may change at this time, the formatted result is
+sometimes not desirable. For example, when an area becomes narrow,
+it seems that there is an unnecessary line break, and condition that
+a character will overflow if an area becomes large appears. axf:assumed-
+page-number gives the assumed page number at that time.
+AHF Extensions: Properties
+axf:append-non-end-of-line-characters
+323
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 324===
+AH XSL Formatter expects the area of at least three-digit page number
+and formats temporarily. What is necessary will be just to specify
+axf:assumed-page-number="99" etc., when the page number is clearly less
+than that.
+Applies to: all formatting objects
+Values: <number>
+Initial: N/A
+Inherited: yes
+axf:avoid-widow-words 
+Specifies spacing behavior between words or characters so that the last
+line of the paragraph does not have only one word left (one character
+for CJK).
+Values have the following meanings:
+false does nothing.
+true adjusts the spacing so that the last line of the paragraph
+does not have only one word left (one character for CJK).
+When axf:text-justify-trim="auto" is specified, it is considered that
+axf:text-justify-trim="ideograph inter-word" is specified.
+For <length> and <percentage> see the corresponding specifications in the
+AHF Online Manual.
+Applies to: <fo:block>
+Values: false | true | <length> | <percentage>
+Initial: false
+Inherited: yes
+axf:avoid-widow-words-cjk-punctuation 
+Specifies whether to include the last punctuation mark and count them
+in one character when ="true" is specified in CJK. For the meaning
+AHF Extensions: Properties
+axf:assumed-page-number
+324
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 325===
+of the values, see the corresponding specifications in the AHF Online
+Manual.
+Applies to: <fo:block>
+Values: auto | true | false <string>
+Initial: auto
+Inherited: yes
+axf:intrude-into-punctuation 
+Intrudes the inline element into the punctuation. For the meaning of
+the values, see the corresponding specifications in the AHF Online
+Manual.
+Applies to: inline elements
+Values: none | [start || end]
+Initial: none
+Inherited: yes
+axf:auto-letter-spacing 
+Changes letter-spacing depending on the number of characters. For the
+meaning of the values, see the corresponding specifications in the AHF
+Online Manual.
+Applies to: inline-level formatting objects
+Values: [none | <length> | <percentage> ]*
+Initial: none
+Inherited: no
+axf:background-clip 
+This property specifies the display area of the image (box or content
+only).
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, all formatting
+objects
+AHF Extensions: Properties
+axf:avoid-widow-words-cjk-punctuation
+325
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 326===
+Values: [ border-box | padding-box | content-box ]#
+Initial: padding-box
+Inherited: no
+axf:background-image-resolution 
+Specifies the resolution of a background image.
+Values have the following meanings:
+normal: Depends on the default value of the system. It's the value
+specified as pxpi in the Option Setting File. Ignores the actual resolution
+of an image.
+from-image uses the actual resolution of an image. When an image does
+not have the resolution, it will follow the dpi specification. If nothing is
+specified, it is the same as normal.
+<dpi>: Specifies the resolution (dpi). Ignores the actual resolution of an
+image.
+The resolution of a non-background image is specified by
+axf:image-resolution. In case of vector images, such as SVG, it is applied
+to numerical values with no units. from-image is ignored.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, all formatting
+objects
+Values: [normal | [ from-image || <dpi> ]]#
+Initial: from-image
+Inherited: no
+axf:background-origin 
+This property specifies the positioning of the original image. If this
+property is set, the simultaneous setting of background-attachment is
+contradictory.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, all formatting
+objects
+AHF Extensions: Properties
+axf:background-clip
+326
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 327===
+Values: [ border-box | padding-box | content-box ]#
+Initial: padding-box
+Inherited: no
+axf:background-content-type 
+Specifies the content type of a background image.
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, all formatting
+objects
+Values: [<string> | auto]#
+Initial: auto
+Inherited: no
+axf:background-size 
+See https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#the-
+background-size
+Applies to: <fo:simple-page-master>, <fo:page-sequence>, all formatting
+objects
+Values: [ [ <length> | <percentage> | auto ]{1,2} | cover | contain ]#
+Initial: auto
+Inherited: no
+axf:balanced-text-align 
+Specifies whether to balance the entire block including the last line.
+Values have the following meanings:
+‒
+true: The entire block is adjusted to be balanced including the last
+line.
+‒
+false: Does not balance the last line.
+‒
+auto: When applied to a block with any of the following conditions,
+the entire block including the last line is adjusted to be balanced.
+•
+text-align="justify" and text-align-last="justify"
+AHF Extensions: Properties
+axf:background-origin
+327
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 328===
+•
+text-align="center" and text-align-last="center"
+This property is only valid when the line breaking algorithm
+of Breaking Paragraphs into Lines is applied, such as when
+axf:line-break="bpil" is specified. Otherwise it is considered false.
+Applies to: <fo:block>
+Values: true | false | auto
+Initial: auto
+Inherited: yes
+axf:baseline-block-snap 
+This property specifies how to align blocks other than normal line
+boxes, such as headings, figures and tables, on the baseline grid.
+See axf:baseline-grid for usage.
+Values have the following meanings:
+‒
+none: The block is not aligned with the baseline grid.
+‒
+auto: Same as before on top of column, same as after at bottom of
+column, otherwise center.
+‒
+before: The before edge of the block is aligned with a text-before-ed‐
+ge baseline on the baseline grid.
+‒
+after: The after edge of the block is aligned with a text-after-edge
+baseline on the baseline grid.
+‒
+center: The block is centered between a text-before-edge and a text-
+-after-edge baselines on the baseline grid.
+‒
+border-box: The border edge is used to align the block on the baseline
+grid.
+‒
+margin-box: The margin edge is used to align the block on the baseli‐
+ne grid.
+CAUTION: axf:baseline-block-snap is valid when axf:baseline-grid is
+specified in the parent block of the block where it is specified.
+Applies to: block-level-elements
+AHF Extensions: Properties
+axf:balanced-text-align
+328
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 329===
+Values: none | [auto | before | after | center] || [border-box |
+margin-box]
+Initial: auto border-box
+Inherited: no
+axf:baseline-grid 
+Sets or clears the baseline grid.
+Inside the area line that a baseline grid is set, the lines are aligned with
+baselines on the baseline grid. Half-leading is not added before the first
+line and after the last line so that the em-box edges are aligned with the
+before and after edges of the content box.
+CAUTION: axf:baseline-grid works within the block where it is
+specified. The block itself depends on the parent's block.
+The baseline grid is not available in the area with display-align other
+than auto.
+‒
+normal: Neither sets nor clears the baseline grid.
+‒
+none: Clears the baseline grid and the content will not align with a
+baseline grid.
+‒
+new: Sets a new baseline grid. The new baseline grid is established by
+using the font and the line-height settings of this element.
+‒
+root: Sets the baseline grid defined by the root element. The root ba‐
+seline grid is defined by using the font and the line-height settings
+of the root element.
+An XSL-FO example with baseline grids can be found in the Online
+Manual.
+Applies to: block-level formatting objects, <fo:flow>, and
+<fo:static-content>/block-containers
+Values: normal | none | root | new
+Initial: normal
+Inherited: no
+AHF Extensions: Properties
+axf:baseline-block-snap
+329
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 330===
+axf:base-uri 
+Specifies the location which becomes the base of relative URI.
+The axf:base-uri is applied to all relative URI in a document. When
+making links using <fo:basic-link> and specify relative URI, the location
+that is specified using axf:base-uri is interpreted to be base URI. If
+this property is omitted or this has empty string, the base location is
+interpreted as current XML file.
+An example can be found in the Online Manual.
+Applies to: all formatting objects
+Values: <uri-specification>
+Initial: empty string
+Inherited: yes
+axf:bleed
+axf:bleed-bottom
+axf:bleed-left
+axf:bleed-right
+axf:bleed-top 
+Specifies the width of the bleed area for cutting off.
+The area of the bleed is taken outside the trim size. In order to specify
+the same values vertically and horizontally, axf:bleed can be used.
+In order to specify individual values, axf:bleed-top, axf:bleed-bottom,
+axf:bleed-left and axf:bleed-right can be used. When axf:bleed and
+others are specified simultaneously, individual axf:bleed-* properties
+take priority.
+Applies to: <fo:simple-page-master>
+Values: <length>
+Initial: 0pt
+Inherited: no
+AHF Extensions: Properties
+axf:base-uri
+330
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 331===
+axf:bookmark-include 
+Specifies how to include bookmarks in multi separate volume.
+CAUTION: It is invalid for bookmarks created by <fo:bookmark>. Use
+axf:outline-*.
+‒
+first: Adds a bookmark to the first separate volume.
+‒
+all: Adds bookmarks to all the separate volumes.
+‒
+separate: Adds each bookmark to each separate volume. Bookmarks
+are added to the volume where axf:outline-level="1" appears. The
+bookmark that goes across the volume is added to the previous
+volume. For that reason, the external link to the other volume may
+be included even though axf:bookmark-include="separate" is specified.
+Bookmarks grouped by axf:outline-group are attached to the last
+separate volume.
+‒
+separate-group: Same as separate, but also adds grouped bookmarks
+to each volume.
+Applies to: <axf:output-volume-info>
+Values: first | all | separate | separate-group
+Initial: separate
+Inherited: no
+axf:border-connection-form 
+Specifies the shape of the connecting portion of borders.
+In the table of border-collapse="collapse", axf:border-connection-form
+specified in <fo:table-row>, <fo:table-cell>, etc. in that table is invalid.
+The one specified in <fo:table> is adopted.
+Values have the following meanings:
+‒
+wedge: Connects borders in wedge shape. Forms the X shape at the
+cross-shaped intersecting portion, and forms the Y shape at the
+T-shaped intersecting portion.
+AHF Extensions: Properties
+axf:bookmark-include
+331
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 332===
+‒
+mixed: Connects borders with the same thickness in rectangle shape
+at the T-shaped intersecting portion. Others will be in wedge shape.
+‒
+precedence: Draws thick borders to the edge. For the same thickness,
+draws a stronger border to the edge by the border priority.
+Applies to: all elements
+Values: wedge | mixed | precedence
+Initial: mixed
+Inherited: yes
+axf:border-radius
+axf:border-bottom-left-radius
+axf:border-bottom-right-radius
+axf:border-top-left-radius
+axf:border-top-right-radius 
+Specifies the radii of the rounded corners.
+The first value is the horizontal radius (or vertical if vertical writing).
+The second value is the other radius. If the second length is omitted
+it is equal to the first. If either length is less or equal 0, the corner is
+square, not rounded. When specifying rounding corners for the table, if
+border-collapse="collapse" is specified, axf:border-radius is effective only
+when specified to <fo:table>.
+If diagonal is specified, the diagonal border will be drawn in a straight
+line without being rounded.
+Rounded corners do not apply to the border-style wave.
+Applies to: all elements which can have borders
+Values: [<length>|<percentage>][<length>|<percentage>]? diagonal?
+Initial: 0
+Inherited: no
+AHF Extensions: Properties
+axf:border-connection-form
+332
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 333===
+axf:border-double-thickness 
+Specifies the line thickness of border-style="double".
+In <value>, either <number> or <length> can be specified. The values are
+outside line width, spacing and inside line width in order from left to
+right. If the value is omitted, it is considered to be equivalent to the
+preceding value. Negative values are not available. The line width can
+directly be specified in <length>. We do not guarantee the best result
+if the total of <length> exceeds the border-width. The values in <number>
+is summed and then the total of <length> is deducted from the actual
+border-width for proportional distribution.
+For example, if the border-width is 10pt and axf:border-double-
+thickness="4pt 2 1" is specified, it will be shown as follows:
+‒
+Outside line width = 4pt
+‒
+Spacing = (10pt-4pt)/(2+1)*2 = 4pt
+‒
+Inside line width = (10pt-4pt)/(2+1)*1 = 2pt
+Applies to: all elements
+Values: <value> [ <value> [ <value> ]]
+Initial: 1
+Inherited: yes
+axf:border-triple-thickness 
+Specifies the line thickness of border-style="triple".
+In <value>, either <number> or <length> can be specified. The values are
+outside line width, spacing, middle line width, spacing, and inside
+line width in order from left to right. If the value is omitted, it is
+considered to be equivalent to the preceding value. Negative values are
+not available. See axf:border-double-thickness for <value>.
+Applies to: all elements
+Value: <value> {1,5}
+Initial: 1
+AHF Extensions: Properties
+axf:border-double-thickness
+333
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 334===
+Inherited: yes
+axf:border-wave-form 
+Specifies the wave form of border-style="wave", border-style="double-
+wave".
+In <value>, either <number> or <length> or auto can be specified. The values
+are wave form and line width in order from left to right. If the value
+is auto or omitted, it is considered 6 and 0.125 each. Negative values are
+not available. The wave form or the line width can directly be specified
+in <length>. <number> is proportional to the border-width. The third value
+is effective for double-wave and indicates the wave width. If the value is
+omitted or auto, it is considered 0.5.
+Applies to: all elements
+Values: <value>{1,3}
+Initial: auto
+Inherited: yes
+axf:box-shadow 
+Specifies the box shadow.
+Values have the following meanings:
+‒
+none: No shadow is displayed.
+‒
+inset: An inner shadow is displayed.
+The meanings of <length>s and a <color> are as follows:
+‒
+The first <length> is an offset of a horizontal shadow. It becomes a
+right-side shadow of a region when a positive value is specified. It
+becomes a left-side shadow of a region when a negative value is
+specified.
+‒
+The second <length> is an offset of a vertical shadow. It becomes a
+bottom-side shadow of a region when a positive value is specified.
+AHF Extensions: Properties
+axf:border-triple-thickness
+334
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 335===
+It becomes a top-side shadow of a region when a negative value is
+specified.
+‒
+The 3rd <length> must be a non-negative value and specifies the blur
+radius. If the value is 0, there is no blur.
+‒
+The 4th <length> extends a shadow. When a positive value is speci‐
+fied, the region will be expanded. When a negative value is speci‐
+fied, the region will be reduced.
+‒
+The color of the shadow can be specified by <color>.
+CAUTION: The minimum unit of <length> which can be specified is
+1in/96=0.265mm. The value is rounded to its multiple number.
+CAUTION: Note the following when you set the blur:
+‒
+The blur setting is ignored with the device that cannot output in
+transparent mode like PDF/X.
+‒
+The blur setting is ignored when is specified as false.
+Applies to: all elements which can have borders
+Values: none |[inset? &&[ <length>{2,4} && <color>?]]#
+Initial: none
+Inherited: no
+axf:break-distance 
+Specifies effective heights for break-after and break-before.
+Applies to: block-level formatting objects
+Values: always | <length> | <percentage>
+The value percentage refer to the height of containing block.
+Values have the following meanings:
+always: break-after and break-before are always effective.
+<length> | <percentage>: are effective when the height of the remaining
+area is less than the specified height.
+Initial: always
+Inherited: no
+AHF Extensions: Properties
+axf:box-shadow
+335
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 336===
+axf:column-fill 
+Specifies whether to balance the column height.
+Values have the following meanings:
+‒
+auto: Do not balance the height. However if span="all" is specified, it
+is balanced before the spanned column.
+‒
+balance: Balance the height.
+Applies to: multi-column elements
+Values: auto | balance
+Initial: balance
+Inherited: no
+axf:column-number-format 
+Specifies the format of column number. It applies to the format
+of column number specified by axf:number-type property. It can be
+specified with the same way as format property.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: "A"
+Inherited: no
+axf:column-rule 
+The shorthand is effective. axf:column-rule-display can be included.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <border-width> || <border-style> || <color> ||
+<axf:column-rule-display>
+Initial: see individual properties
+Inherited: no
+axf:column-rule-align 
+Specifies the alignment of the column rule.
+AHF Extensions: Properties
+axf:column-fill
+336
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 337===
+Applies to: <fo:region-body>, <fo:block-container>
+Values: before | center | after
+Initial: center
+Inherited: no
+axf:column-rule-color 
+Specifies the color of the column rule.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <color>
+Initial: the value of the color property
+Inherited: no
+axf:column-rule-display 
+Specifies whether to also display a rule at the place where column gaps
+do not exist. Suppose contents are only in the left column of three
+columns.
+Values have the following meanings:
+‒
+gap: Displays a rule only between existing columns.
+‒
+end: Displays a rule at the end side of each existing column.
+However, the end side of the final column is not included.
+‒
+all: Displays rules even between non-existent columns at the end of
+a page, etc.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: gap | end | all
+Initial: gap
+Inherited: no
+axf:column-rule-length 
+Specifies the length of the column rule.
+AHF Extensions: Properties
+axf:column-rule-align
+337
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 338===
+In case where the column is short by specifying span="all" in FO, that
+height of the column indicates 100%.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <length> | <percentage>
+Initial: 100%
+Inherited: no
+axf:column-rule-style 
+Specifies the style of the column rule.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <border-style>
+Initial: none
+Inherited: no
+axf:column-rule-width 
+Specifies the width of the column rule.
+Applies to: <fo:region-body>, <fo:block-container>
+Values: <border-width>
+Initial: medium
+Inherited: no
+axf:condensed-text-align-last 
+Specifies whether to set text-align-last="justify" automatically after
+condensing the overflow.
+This feature is only available when:
+‒
+Condensing in the block progression dimension.
+‒
+font-size or font-stretch condensing is occurring by
+axf:overflow-condense.
+‒
+text-align-last is not explicitly specified.
+Values have the following meanings:
+AHF Extensions: Properties
+axf:column-rule-length
+338
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 339===
+‒
+false: Does nothing.
+‒
+true: Sets text-align-last="justify".
+‒
+justify: Sets text-align-last="justify" when text-align="justify" is
+specified. Whether or not text-align="justify" is determined by
+whether or not the element with the overflow="condense" specified
+is text-align="justify".
+‒
+auto: Follows the setting of condensed-text-align-last in the Option
+Settings File.
+Applies to: all block-level formatting objects
+Values: false | true | justify | auto
+Initial: auto
+Inherited: yes
+axf:crop-area-visibility 
+Specifies whether to display the area that is extended beyond the trim
+size. Specifies whether the area that overflows on the margin specified
+with axf:crop-offset is clipped with the trim size, if there is a bleed
+area, clipped with the bleed area, or the extended area is displayed.
+Applies to: <fo:simple-page-master>
+Values: hidden | visible
+Initial: hidden
+Inherited: no
+axf:crop-offset
+axf:crop-offset-bottom
+axf:crop-offset-left
+axf:crop-offset-right
+axf:crop-offset-top 
+Specifies the distance from the physical end to the trim size of the
+output medium.
+AHF Extensions: Properties
+axf:condensed-text-align-last
+339
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 340===
+The trim size is specified by the page-width and page-height properties.
+axf:crop-offset is for specifying how much the space is taken outside
+the trim size. In order to specify the same values vertically and
+horizontally, axf:crop-offset can be used. In order to specify individual
+values, axf:crop-offset-top, axf:crop-offset-bottom, axf:crop-offset-left
+and axf:crop-offset-right can be used. When axf:crop-offset and others
+are specified simultaneously, individual axf:crop-offset-* properties
+take priority.
+CAUTION: If the value of axf:bleed is greater than the value of
+axf:crop-offset, axf:crop-offset is adjusted to that value. To make the
+trim size the size of the basic printing image, set axf:bleed and axf:crop-
+offset to 0.
+Applies to: <fo:simple-page-master>
+Values: <length>
+Initial: 0pt
+Inherited: no
+axf:destination-type 
+Specifies the way a link opens in a link destination.
+If nothing specified, it's accounted as axf:destination-type="xyz-top". The
+case sensitivity is ignored.
+The destination type options are described in detail in Bookmark and
+Link in XSL/CSS Extensions of the Online Manual.
+Applies to: block level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:diagonal-border-color 
+Specifies the color of the diagonal border.
+AHF Extensions: Properties
+axf:crop-offset
+340
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 341===
+Applies to: all elements which can have borders
+Values: <color>
+Initial: the value of the color property
+Inherited: yes
+axf:diagonal-border-style 
+Specifies the style of the diagonal border.
+Applies to: all elements which can have borders
+Values: <border-style>
+Initial: none
+Inherited: no
+axf:diagonal-border-width 
+Specifies the width of the diagonal border.
+Applies to: all elements which can have borders
+Values: <border-width>
+Initial: medium
+Inherited: yes
+axf:display-alttext 
+Specifies whether to display the alternate text of an image.
+Values have the following meanings:
+‒
+false: The alternate text is not displayed.
+‒
+true: The alternate text is displayed when the alternate text is speci‐
+fied and no image exists.
+‒
+auto: The value specified by display-alttext in the Option Setting File
+is adopted.
+The alternate text is specified by axf:alttext in XSL-FO and alt
+in HTML. When the alternate text is displayed, the image is not
+displayed.
+AHF Extensions: Properties
+axf:diagonal-border-color
+341
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 342===
+Applies to: <fo:external-graphic> (<img> in HTML)
+Values: false | true | auto
+Initial: auto
+Inherited: yes
+axf:document-info-include 
+Specifies how to include document information in multi separate
+volume.
+Values have the following meanings:
+‒
+first: Adds document information to the first separate volume.
+‒
+all: Adds document information to all the separate volumes.
+See <axf:document-info>.
+Applies to: <axf:output-volume-info>
+Values: first | all
+Initial: first
+Inherited: no
+axf:double-hyphen-translineation 
+Specifies whether to place a hyphen also at the start of the line when
+breaking lines at a hyphen.
+Applies to: <fo:block>
+Values: auto | true | false
+Initial: auto
+Inherited: yes
+Values have the following meanings:
+‒
+auto: Works as true when the language is specified by
+double-hyphen-translineation in the Option Setting File.
+‒
+true: Place a hyphen also at the start of the line when a line break
+occurs at a hyphen.
+AHF Extensions: Properties
+axf:display-alttext
+342
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 343===
+‒
+false: Does not place a hyphen at the start of the line when a line
+break occurs at a hyphen.
+This setting is effective when hyphenate="true" is specified.
+axf:except-non-end-of-line-characters 
+Specifies the non-end-of-line-characters to eliminate.
+The characters included in <string> can be eliminated from the non-
+end-of-line-characters. If the specified characters are also specified to
+axf:append-non-end-of-line-characters in the same tag as well, the effect
+is not guaranteed. White space characters are disregarded even though
+they are specified. The initial value of non-end-of-line-characters can
+be set by append-non-end-of-line-characters in the Option Setting File.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:except-non-starter-characters 
+Specifies the non-starter-characters to eliminate.
+The characters included in <string> can be eliminated from the non-
+starter-characters. If the specified characters are also specified to
+axf:append-non-starter-characters in the same tag as well, the effect is
+not guaranteed. White space characters are disregarded even though
+they are specified. The initial value of non-starter-characters can be set
+by append-non-starter-characters in the Option Setting File.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: empty string
+Inherited: no
+AHF Extensions: Properties
+axf:double-hyphen-translineation
+343
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 344===
+axf:expansion-text 
+Specifies the expansion text for tags in Tagged PDF. Specifies the
+description for the abbreviation, etc. in Tagged PDF.
+CAUTION: Effective only when generating tags called structure
+elements in Tagged PDF.
+Applies to: all formatting objects
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-button-face 
+This property is used to specify the label of a form field marked as a
+push button.
+Applies to: <axf:form-field>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-button-face-down 
+This property is used to specify the labeling of a form field marked as a
+push button after activation.
+Applies to: <axf:form-field>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-button-face-rollover 
+This property is used to specify the labeling of a form field marked as a
+push button when the cursor is moved over the form field.
+Applies to: <axf:form-field>
+AHF Extensions: Properties
+axf:expansion-text
+344
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 345===
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-button-icon 
+This property specifies the icon of a form field marked as a push button.
+Applies to: <axf:form-field>
+Values: <uri-specification>
+Initial: empty string
+Inherited: no
+axf:field-button-icon-down 
+This property is used to specify the icon of a form field marked as a
+push button after activation.
+Applies to: <axf:form-field>
+Values: <uri-specification>
+Initial: empty string
+Inherited: no
+axf:field-button-icon-rollover 
+This property specifies the icon of a form field marked as a push button
+when the cursor is moved over the form field.
+Applies to: <axf:form-field>
+Values: <uri-specification>
+Initial: empty string
+Inherited: no
+axf:field-button-layout 
+This property specifies where the label of a form field marked as a push
+button should be placed in relation to the icon. With the default value
+AHF Extensions: Properties
+axf:field-button-face-rollover
+345
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 346===
+caption only the label is displayed, not the icon. With the icon value,
+only the icon is displayed, not the label; with the caption-below-icon
+value, the label is displayed below the icon, with caption-above-icon
+above it, with icon-caption to the right of the icon, with caption-icon to
+the left of the icon, with caption-over-icon overlaying the icon.
+Applies to: <axf:form-field>
+Values: caption | icon | caption-below-icon | caption-above-icon |
+icon-caption | caption-icon | caption-over-icon
+Initial: caption
+Inherited: no
+axf:field-checked 
+This property is used to specify the initial state of form fields that have
+checkbox or radio for the axf:field-type property. If the default value is
+false, the initial state is unchecked. If in axf:field-flags="Checked" is set,
+the setting ="true" is ignored here.
+Applies to: <axf:form-field>
+Values: false | true
+Initial: false
+Inherited: no
+axf:field-checked-style 
+This property sets the appearance of form fields that have the checkbox
+or radio value for the axf:field-type property. For the default value
+checkmark a checkmark is displayed, for the value circle a circle, for
+square a square, for cross a cross and for star an asterisk.
+Applies to: <axf:form-field>
+Values: checkmark | circle | square | cross | star
+Initial: checkmark
+Inherited: no
+AHF Extensions: Properties
+axf:field-button-layout
+346
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 347===
+axf:field-default-text 
+This property is used to specify a predefined text for a form field,
+which can then either be adopted by the form user or overwritten with
+his own text.
+Applies to: <axf:form-field>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-description 
+This property is used to add a description to a form field.
+Applies to: <axf:form-field>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-editable 
+With this property one opens in form fields, which have for the
+property axf:field-type the value combobox, the possibility to change the
+displayed value. With the default value false editing is excluded. If
+axf:field-flags="Editable" is set, the ="true" setting is ignored here.
+Applies to: <axf:form-field>
+Values: false | true
+Initial: false
+Inherited: no
+axf:field-selected 
+Specifies the first selected item in the list box, combo box.
+Applies to: <axf:form-field-option>
+Values: false | true
+AHF Extensions: Properties
+axf:field-default-text
+347
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 348===
+Initial: false
+Inherited: no
+axf:field-flags 
+With this property the form field is given a usage identifier:
+With Readonly the field becomes read-only, with Required it becomes
+mandatory, with Hidden the field is not displayed. In this case the size is
+kept, backgrounds and frames are shown. In version 6.6, the following
+identifiers have been added: Multiline, Password, Scroll, Checked, Multiple
+and Editable. Multiple values must be separated by spaces.
+These codes have priority over the corresponding
+settlements with axf:field-readonly="true", axf:field-required="true",
+axf:field-multiline="true", axf:field-scroll="true",
+axf:field-password="true", axf:field-checked="true",
+axf:field-multiple="true", axf:field-editable="true".
+Applies to: <axf:form-field>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-font-size 
+This property assigns a desired font size to the content of the form
+field. The auto value uses the font size of the environment. The default
+value font-size sets the value set with the font-size property.
+Applies to: <axf:form-field>
+Values: font-size | auto | <length>
+Initial: font-size
+Inherited: no
+AHF Extensions: Properties
+axf:field-selected
+348
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 349===
+axf:field-format 
+This property assigns a desired formatting to the form field content
+according to the value specified in axf:field-format-category. The exact
+format specification for number, percentage, date and time can be found in
+the AHF Online Manual. It corresponds to the JavaScript syntax.
+As of version 6.6, the number of digits to be displayed after the decimal
+point or decimal comma can be set freely.
+Applies to: <axf:form-field>
+Values: auto | [ [ <string> | <number>] [<string> | <number> | true |
+false]* ]
+Initial: auto
+Inherited: no
+axf:field-format-category 
+This property assigns a format type to the form field. The formatting
+itself is specified with axf:field-format.
+If a string is specified as a default value in the text field with
+axf:field-default-text, the format validity is checked. Non-compliant
+default values are ignored.
+Applies to: <axf:form-field>
+Values: none | number | percentage | date | time
+Initial: none
+Inherited: no
+axf:field-lock-document 
+This property is used to indicate whether the document should be
+closed with the signature. With the default value auto the PDF reader
+will ask whether the document should be closed.
+Effective as of PDF 1.7.
+Applies to: <axf:form-field>
+AHF Extensions: Properties
+axf:field-format
+349
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 350===
+Values: auto | false | true
+Initial: auto
+Inherited: no
+axf:field-maxlen 
+This property is used to specify the maximum number of characters
+allowed for input in a form field marked as a text field. If the default
+value is 0, or the property is not specified, or a negative number is
+specified, then the number of characters allowed is not restricted.
+If the maximum number of characters set here is exceeded in the string
+set with axf:field-default-text, then this string will not be output.
+Applies to: <axf:form-field>
+Values: <number>
+Initial: 0
+Inherited: no
+axf:field-multiline 
+This property sets whether a form field marked as a text field allows
+input in a single line or in multiple lines. The default value false allows
+only one line. If axf:field-flags="Multiline" is set, the setting ="true" is
+ignored here.
+Applies to: <axf:form-field>
+Values: true | false
+Initial: false
+Inherited: no
+axf:field-multiple 
+This property sets whether only one or a number of options can be
+selected for form fields that have the listbox value for theaxf:field-type
+property. With the default value false, the choice is limited to one
+AHF Extensions: Properties
+axf:field-lock-document
+350
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 351===
+option in the list. If axf:field-flags="Multiple" is set, the ="true" setting
+is ignored here.
+Applies to: <axf:form-field>
+Values: false | true
+Initial: false
+Inherited: no
+axf:field-name 
+This property defines the name of a form field.
+Applies to: <axf:form-field>
+Values: <string>
+Initial: none, a name must be entered as a value.
+Inherited: no
+axf:field-name-suffix-page-number 
+This property is used to add a page number to the form field name.
+It is assumed that a axf:field-name is defined. If the value is an empty
+string, nothing is added. This property is used with a form inside the
+<fo:static-content> if a separate form is to be generated for each page.
+Applies to: <axf:form-field>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:field-password 
+With this property one marks by the value true a form field marked
+as text field as input field for a password. Each character entered is
+represented by a "*" character. If axf:field-flags="Password" is set, the
+="true" setting is ignored here.
+Applies to: <axf:form-field>
+AHF Extensions: Properties
+axf:field-multiple
+351
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 352===
+Values: true | false
+Initial: false
+Inherited: no
+axf:field-readonly 
+The true value for this property marks the form field as "read only". If
+axf:field-flags="ReadOnly" is set, the ="true" setting is ignored here.
+Applies to: <axf:form-field>
+Values: true | false
+Initial: false
+Inherited: no
+axf:field-required 
+The true value for this property is used to mark the form field as
+"mandatory to fill". If axf:field-flags="Required" is set, the ="true" setting
+is ignored here.
+Applies to: <axf:form-field>
+Values: true | false
+Initial: false
+Inherited: no
+axf:field-scroll 
+This property sets whether a form field marked as a text field gets
+a scroll bar or not. The default value false makes the text field not
+scrollable. If axf:field-flags="Scroll" is set, the setting ="true" is ignored
+here.
+Applies to: <axf:form-field>
+Values: true | false
+Initial: false
+Inherited: no
+AHF Extensions: Properties
+axf:field-password
+352
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 353===
+axf:field-submit-coordinates 
+Specifies whether to send out the coordinates of the mouse when
+submitting a form field.
+Values have the following meanings:
+‒
+false: Does not send out the coordinates.
+‒
+true: Sends out the coordinates.
+Applies to: <axf:form>
+Values: false | true
+Initial: false
+Inherited: no
+axf:field-submit-method 
+Specifies the way to send the information when submitting a form
+field.
+Values have the following meanings:
+‒
+get: Sends out a form as GET request.
+‒
+post: Sends out a form as POST request.
+Applies to: <axf:form>
+Values: get | post
+Initial: get
+Inherited: no
+axf:field-text-align 
+This property sets the horizontal alignment of the content in a text
+field.
+Applies to: <axf:form-field>
+Values: left | center | right
+Initial: left
+Inherited: no
+AHF Extensions: Properties
+axf:field-submit-coordinates
+353
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 354===
+axf:field-top-index 
+This property sets the order of options for form fields that have listbox
+or combobox for the axf:field-type property. With the default value 1,
+the first option (object <axf:form-field-option>) in the list of options is
+displayed in the form field. With a higher number, options positioned
+further down can also be moved into the display.
+The setting here is overridden by the setting of
+axf:field-selected="true".
+Applies to: <axf:form-field>
+Values: <number>
+Initial: 1
+Inherited: no
+axf:field-type 
+This property is used to set the type of a form field. The possible values:
+text for a text field, button for a push button to start an action, checkbox
+for a box to select an option, radio for a button usually placed in a
+group of such buttons where only one of the buttons can be selected,
+listbox for a list of textual alternatives defined as list items with the
+<axf:form-field-option> child extension object, combobox for a list variant,
+and signature for a digital signature.
+The area for the digital signature must be set with width (width)
+and height (height) in the width-height ratio of the signature to be
+generated. The content remains empty for the signature generated in
+the PDF. The formatting of the signature can be set in a restricted way
+(font selection and font color) by the block (<fo:block>) enclosing the
+form field. In the formatting process this area is merely reserved, the
+signature is not generated yet, this only in the PDF generation. In the
+PDF browser this area is displayed to complete the signature. Clicking
+AHF Extensions: Properties
+axf:field-top-index
+354
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 355===
+on this area activates the signature. The PDF must finally be saved with
+the signature.
+Applies to: <axf:form-field>
+Values: text | button | checkbox | radio | listbox | combobox | signature
+Initial: none, a value must be selected.
+Inherited: no
+axf:field-value 
+Specifies the value used when submitting a form field, etc.
+Applies to: <axf:form-field>, <axf:form-field-option>
+Values: <string>
+Initial: empty string
+Inherited: no
+axf:float 
+This is a shorthand property for setting float related extension
+properties: axf:float-x, axf:float-y, axf:float-reference, axf:float-move,
+axf:float-wrap.
+Values have the following meanings:
+‒
+<float-x> = none | start | end | left | right | top | bottom | center
+| inside | outside | alternate | column-outside
+Specifies horizontal (or vertical if writing-mode is vertical) float
+alignment. ☞ axf:float-x
+‒
+<float-y> = none | before | after | top | bottom | left | right |
+center | inside | outside
+Specifies vertical (or horizontal if writing-mode is vertical) float
+alignment. ☞ axf:float-y
+‒
+<float-wrap> = wrap | skip
+Specifies whether the text wraps around the float. ☞ axf:float-wrap
+‒
+<float-reference> = auto | normal | page | multicol | column
+AHF Extensions: Properties
+axf:field-type
+355
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 356===
+Specifies reference area where the float is positioned. ☞
+axf:float-reference
+‒
+<float-move> = next | auto-next | auto-move | keep | keep-float |
+<integer>
+Specifies whether the float moves to the next page (or column). ☞
+axf:float-move
+An example of the use of this shorthand property can be found in Float
+Extension in Features of the Online Manual.
+The values left, right, top, bottom, center, inside, and outside which
+express absolute directions have the ambiguity to extend to both <float-
+x> and <float-y>. This can be solved as follows:
+‒
+none is ignored.
+‒
+When one of before, after, start, end, alternate or column-outside is
+contained, either <float-x> or <float-y> will be selected. The remai‐
+ning ambiguous value will become another value.
+‒
+When none of before, after, start, end, alternate or column-outside is
+contained, the first value which expresses the absolute direction will
+be <float-x>, the latter value will be <float-y>.
+Applies to: <fo:float>
+Values: <float-x> || <float-y> || <float-wrap> || <float-reference> ||
+<float-move>
+Initial: none
+Inherited: no
+axf:float-x 
+Specifies horizontal (or vertical if writing-mode is vertical) float
+alignment.
+Values have the following meanings:
+‒
+none: Not floated horizontally (or vertically if writing-mode is verti‐
+cal).
+AHF Extensions: Properties
+axf:float
+356
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 357===
+‒
+start: Floated to the start side. Same as left in horizontal left-to-
+-right writing-mode.
+‒
+end: Floated to the end side. Same as right in horizontal left-to-right
+writing-mode.
+‒
+left: Floated to the left side. Used only for horizontal writing. It
+cannot be specified for vertical writing.
+‒
+right: Floated to the right side. Used only for horizontal writing. It
+cannot be specified for vertical writing.
+‒
+top: Floated to the top. Used only for vertical writing. It cannot be
+specified for horizontal writing.
+‒
+bottom: Floated to the bottom. Used only for vertical writing. It
+cannot be specified for horizontal writing.
+‒
+center: Floated to the center horizontally (or vertically if writing-
+-mode is vertical).
+‒
+inside: Floated to the inside (left side on a right page, right side on
+a left page). Used only for horizontal writing. It cannot be specified
+for vertical writing.
+‒
+outside: Floated to the outside (right side on a right page, left side on
+a left page). Used only for horizontal writing. It cannot be specified
+for vertical writing.
+‒
+alternate: When the float area is in the first column, it's considered
+that end is specified, when the float area is in the last column,
+it's considered that start is specified, if it is not in the column, it's
+considered that center is specified.
+‒
+column-outside: When the float area is in the last column, it's consi‐
+dered that end is specified, when the float area is in other columns,
+it's considered that start is specified, if it is not in the column, it's
+considered that start is specified. (New in V7.1)
+Applies to: <fo:float>
+AHF Extensions: Properties
+axf:float-x
+357
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 358===
+Values: none | start | end | left | right | top | bottom | center |
+inside | outside | alternate | column-outside
+Initial: none
+Inherited: no
+axf:float-y 
+Specifies vertical (or horizontal if writing-mode is vertical) float
+alignment.
+Values have the following meanings:
+‒
+none: Not floated vertically (or horizontally if writing-mode is verti‐
+cal).
+‒
+before: Floated to the before side. Same as top in horizontal left-to-
+-right writing-mode.
+‒
+after: Floated to the after side. Same as bottom in horizontal left-to-
+-right writing-mode.
+‒
+top: Floated to the top. Used only for horizontal writing. It cannot
+be specified for vertical writing.
+‒
+bottom: Floated to the bottom. Used only for horizontal writing. It
+cannot be specified for vertical writing.
+‒
+left: Floated to the left side. Used only for vertical writing. It cannot
+be specified for horizontal writing.
+‒
+right: Floated to the right side. Used only for vertical writing. It
+cannot be specified for horizontal writing.
+‒
+center: Floated to the center vertically (or horizontally if writing-
+-mode is vertical).
+‒
+inside: Floated to the inside (left side on a right page, right side on
+a left page). Used only for vertical writing. It cannot be specified for
+horizontal writing.
+AHF Extensions: Properties
+axf:float-x
+358
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 359===
+‒
+outside: Floated to the outside (right side on a right page, left side on
+a left page). Used only for vertical writing. It cannot be specified for
+horizontal writing.
+‒
+anchor: Floated to the anchor point.
+Applies to: <fo:float>
+Values: none | before | after | top | bottom | left | right | center |
+inside | outside | anchor
+Initial: none
+Inherited: no
+axf:float-reference 
+Specifies reference area where the float is placed.
+Values have the following meanings:
+‒
+auto: Same as normal.
+‒
+normal: The float is placed in the current reference area.
+‒
+page: The float is placed in the page area (<fo:region-body>).
+‒
+multicol: The float is placed in the multi-column area.
+‒
+column: The float is placed in the column area.
+When axf:float-y is none, the reference area in x-axis will be set.
+Applies to: <fo:float>
+Values: auto | normal | page | multicol | column
+Initial: auto
+Inherited: no
+axf:float-move 
+Specifies whether the float moves to the next page (or column).
+Values have the following meanings:
+‒
+auto: Same as keep if axf:float-y is none, same as auto-next otherwise.
+‒
+next: The float is moved to the next page (or column).
+AHF Extensions: Properties
+axf:float-y
+359
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 360===
+‒
+auto-next: The float is moved to the next page (or column) if there is
+not enough space in the current page (or column).
+‒
+auto-move: The float is moved to the next page (or column) if there is
+not enough space in the current page (or column). It is also possible
+that the float anchor and around text are moved to the next page (or
+column) instead.
+‒
+keep: The float and its anchor are always placed on the same page
+(or column). If there is not enough space for that, a page (or co‐
+lumn) break occurs before the float anchor and a blank space is left.
+‒
+keep-float: Although it is almost the same as keep, the following
+points differ. With keep, keep-with-next="always" is automatically set
+to anchor area and a page break (or column break) is deterred
+between the next area. However, it is not performed by keep-float.
+The difference on operation will appear when the height of anchor
+area is zero.
+‒
+after-edge: Aligns the bottom edge of the float with the position of
+the anchor when axf:float-y is none.
+‒
+<integer>: The numerical value is considered the page number and
+moves the float to that page. If it is larger than the number of pages
+in the document, pages with no contents (not blank pages) will be
+inserted. It does not work when axf:float-y is none. At that time, it is
+considered that auto is specified. (New in V7.1)
+CAUTION: Page numbers are considered logical page numbers.
+If both axf:float-x and axf:float-y are none, the object is not floated and
+the axf:float-move specification is ineffective.
+Applies to: <fo:float>
+Values: auto | normal | page | multicol | column
+Initial: auto
+Inherited: no
+AHF Extensions: Properties
+axf:float-move
+360
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 361===
+axf:float-wrap 
+Specifies the text wrapping.
+Values have the following meanings:
+‒
+auto: Same as wrap if axf:float-x is other than none. Same as skip if it
+is none.
+‒
+wrap: Wraps the text around the float. However, when there is a
+space on both side of a float within the column (by specifying center
+to axf:float-x or axf:float-offset-x), it is the same as skip.
+‒
+skip: The text doesn't wrap around the float. The text is positioned
+by skipping the float.
+Applies to: <fo:float>
+Values: auto | wrap | skip
+Initial: auto
+Inherited: no
+axf:float-min-wrap-x 
+Specifies the minimum width for the text wrapping around the float.
+If the width for the text wrapping around the float is smaller than the
+width specified by this property, the text doesn't wrap.
+The initial value, normal is minimum wrapping width of normal floats. It
+is same as 0pt.
+Applies to: <fo:float>
+Values: normal | <length> | <percentage>
+Initial: normal
+Inherited: no
+axf:float-min-wrap-y 
+Specifies the minimum extent for the text placed before and after the
+float.
+AHF Extensions: Properties
+axf:float-wrap
+361
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 362===
+When the axf:float-y value is not none and there is remaining space to
+place the text before or after the float within the formatting target area,
+if the extent of that space is smaller than the extent specified by this
+property, the text is not placed to that space.
+If the value of axf:float-y is none, it is processed as follows:
+‒
+If the value of axf:float-move is auto-next and there is space left to
+place text after the float within the formatting target area, if its
+height (width in vertical writing) is smaller than the height (width
+in vertical writing) specified in this property, moves the float posi‐
+tion so that its height (width in vertical writing) becomes zero. Text
+that was after the float will move before the float.
+‒
+If the value of axf:float-move is auto-move, it is the same as the case of
+auto-next, but within the formatting target area, if the height (width
+in vertical writing) of the text placement space before the float, not
+only after the float, is smaller than the height (width in vertical
+writing) specified in this property, moves the float position so that
+its height (width in vertical writing) becomes zero. Text that was
+before the float will move after the float.
+‒
+If the value of axf:float-move is other than these, text will wrap
+around if there is space left to place text after the float in the
+formatting target area, otherwise it will not wrap around.
+The initial value, normal is the same as 0pt.
+Applies to: <fo:float>
+Values: normal | <length> | <percentage>
+Initial: normal
+Inherited: no
+axf:float-centering-x 
+Specifies whether the float is centered when the width for the text
+wrapping around the float is insufficient.
+AHF Extensions: Properties
+axf:float-min-wrap-y
+362
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 363===
+Values have the following meanings:
+‒
+none: The float is not centered.
+‒
+auto: The float is centered when the width for the text wrap‐
+ping around the float is less than the width specified by the
+axf:float-min-wrap-x property.
+‒
+<length>
+<percentage>: The float is centered when the width for the text
+wrapping around the float is less than the width specified by this
+property.
+Applies to: <fo:float>
+Values: none | auto | <length> | <percentage>
+Initial: none
+Inherited: no
+axf:float-centering-y 
+Specifies whether the float is centered when the extent for the text
+placed before and after the float is insufficient.
+Values have the following meanings:
+‒
+none: The float is not centered.
+‒
+auto: The float is centered when the extent for the text placed
+before and after the float is less than the extent specified by the
+axf:float-min-wrap-y property.
+‒
+<length>
+<percentage>: The float is centered when the extent for the text pla‐
+ced before and after the float is less than the extent specified by this
+property.
+Applies to: <fo:float>
+Values: none | auto | <length> | <percentage>
+Initial: none
+Inherited: no
+AHF Extensions: Properties
+axf:float-centering-x
+363
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 364===
+axf:float-margin-x 
+Specifies the space between the float and the text wrapping around the
+float (in x-axis).
+When two values are specified, the first one will be the value of the
+start side, the next one will be the value of the end side.
+Applies to: <fo:float>
+Values: [<length> | <percentage>] [<length> | <percentage>]?
+Initial: 0pt
+Inherited: no
+axf:float-margin-y 
+Specifies the space between the float and the text before and after the
+float (in y-axis).
+When two values are specified, the first one will be the value of the
+before side, the next one will be the value of the after side.
+Applies to: <fo:float>
+Values: [<length> | <percentage>] [<length> | <percentage>]?
+Initial: 0pt
+Inherited: no
+axf:float-float-margin-x 
+Specifies the space between the float and another neighboring float (in
+x-axis).
+The initial value auto is same as the axf:float-margin-x value. When two
+values are specified, the first one will be the value of the start side, the
+next one will be the value of the end side.
+The axf:float-float-margin-x value cannot exceed the axf:float-margin-x
+value.
+Applies to: <fo:float>
+Values: auto | [[<length> | <percentage>] [<length> | <percentage>]?]
+AHF Extensions: Properties
+axf:float-margin-x
+364
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 365===
+Initial: auto
+Inherited: no
+axf:float-float-margin-y 
+Specifies the space between the float and another neighboring float (in
+y-axis).
+The initial value auto is same as the axf:float-margin-y value. When two
+values are specified, the first one will be the value of the before side,
+the next one will be the value of the after side.
+The axf:float-float-margin-y value cannot exceed the axf:float-margin-y
+value.
+Applies to: <fo:float>
+Values: auto | [[<length> | <percentage>] [<length> | <percentage>]?]
+Initial: auto
+Inherited: no
+axf:float-offset-x 
+Specifies the offset placement for the float (in x-axis).
+If axf:float-x is start, the offset to the end side is specified. If it is end,
+the offset to the start side is specified.
+Applies to: <fo:float>
+Values: <length> | <percentage>
+Initial: 0pt
+Inherited: no
+axf:float-offset-y 
+Specifies the offset placement for the float (in y-axis).
+If axf:float-y is before, the offset to the after side is specified. If it is
+after, the offset to the before side is specified.
+Applies to: <fo:float>
+AHF Extensions: Properties
+axf:float-float-margin-x
+365
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 366===
+Values: <length> | <percentage>
+Initial: 0pt
+Inherited: no
+axf:flush-zone 
+Adjusts the space at the end of the last line.
+Values have the following meanings:
+‒
+none: Does nothing.
+‒
+<length>
+<percentage>: If text-align="justify" is specified but
+text-align-last="justify" are not specified, and the space at the end
+of the last line is less than or equal to the specified value, the last
+line is processed as text-align-last="justify" is specified.
+Applies to: <fo:block>
+Values: none | <length> | <percentage>
+Initial: none
+Inherited: yes
+axf:font-feature-settings 
+Controls the feature of OpenType fonts.
+Values have the following meanings:
+‒
+normal: Does nothing.
+‒
+<feature-tag-value>: Specifies the tag of OpenType GSUB/GPOS with
+the following format:
+<feature-tag-value> = <string> [ <integer> | on | off ]?
+For more details see XSL/CSS Extensions in Features of the Online
+Manual.
+CAUTION: Refrain from using this property if you are not familiar
+with the OpenType specification. Invalidating the tags required for
+AHF Extensions: Properties
+axf:float-offset-y
+366
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 367===
+complex script control or inadvertent settings will result in unintended
+results.
+Applies to: all elements
+Values: normal | <feature-tag-value>#
+Initial: normal
+Inherited: yes
+axf:footnote-align 
+Specifies the alignment of the footnotes.
+Specifies the method of arrangement of footnotes or sidenotes.
+When it is sidenotes (footnote arrangement into <fo:region-start> or
+<fo:region-end> is specified by axf:footnote-position), it's possible to
+specify whether it is arranged automatically, or it is arranged near by
+the before side, or it is arranged near by the after side.
+Values have the following meanings:
+‒
+auto: Footnotes are placed automatically. Footnotes are the usual
+arrangement. When the text is one column, sidenotes are arranged
+with an anchor position, and in the case of two or more columns,
+sidenotes are arranged near by the before side.
+‒
+before: Sidenotes are arranged near by the before side. In the case
+of usual footnotes that are not sidenotes, footnotes are arranged
+immediately after the text in a page.
+‒
+after: Sidenotes are arranged near by the after side. In the case of
+usual footnotes that are not sidenotes, footnotes are arranged at the
+last of a page.
+Applies to: <fo:region-body>, <fo:footnote>
+Values: auto | before | after
+Initial: auto
+Inherited: no
+AHF Extensions: Properties
+axf:font-feature-settings
+367
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 368===
+axf:footnote-number-format 
+Specifies the format of footnote number.
+Adopted as a format of <axf:footnote-number>. It can be specified in the
+same way as the format property.
+Applies to: <fo:page-sequence>
+Values: <string>
+Initial: 1
+Inherited: no
+axf:footnote-number-initial 
+Specifies the initial footnote number.
+Values have the following meanings:
+‒
+auto: Succeeded from the before existing <fo:page-sequence> without
+initializing a footnote number. When <fo:page-sequence> does not
+exist before, it is set to 1.
+‒
+<number>: Initializes the footnote number with the specified value.
+The value must be greater than or equal to 1. Actual initialization
+takes place at the time when axf:footnote-number-reset is specified.
+Applies to: <fo:page-sequence>
+Values: auto | <number>
+Initial: auto
+Inherited: no
+axf:footnote-number-reset 
+Resets the footnote numbering.
+A footnote number is reset by the value specified by
+axf:footnote-number-initial.
+‒
+auto: Succeeded from the before existing <fo:page-sequence>. When
+<fo:page-sequence> does not exist before, it is set to none.
+‒
+none: Does not reset the footnote number.
+AHF Extensions: Properties
+axf:footnote-number-format
+368
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 369===
+‒
+page: Resets the footnote number when a page breaks.
+‒
+odd-page: Resets the footnote number when an odd page breaks.
+‒
+even-page: Resets the footnote number when an even page breaks.
+‒
+column: Resets the footnote number when a column breaks.
+Applies to: <fo:page-sequence>
+Values: auto | none | page | odd-page | even-page | column
+Initial: auto
+Inherited: no
+axf:footnote-keep 
+Specifies whether to arrange a footnote and an anchor in the same
+page.
+Values have the following meanings:
+‒
+auto: When a footnote does not fit within the column, it is sent to
+the next page or the next column.
+‒
+always: When a footnote does not fit within the column, the line of
+the anchor and the subsequent lines are sent to the following page,
+and a footnote and an anchor are arranged in the same page. When
+axf:footnote-position="column" is specified, a footnote and an anchor
+are arranged in the same column.
+CAUTION: A footnote and an anchor may not be arranged in the
+same page when the cell containing the anchor is large or at the
+bottom of the page.
+‒
+none: When a footnote does not fit within the column, the line of
+the anchor and the subsequent lines are sent to the next page, and
+attempts to fit the footnote itself within the page. (New in V7.1)
+Applies to: <fo:region-body>, <fo:footnote>
+Values: auto | always | none
+Initial: auto
+Inherited: no
+AHF Extensions: Properties
+axf:footnote-number-reset
+369
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 370===
+axf:footnote-max-height 
+Specifies the maximum height of footnote.
+Specifies the maximum height of footnote. The behavior when auto
+is specified depends on the value of auto-break-footnote in the Option
+Setting File.
+ 
+ 
+‒
+When axf:footnote-max-height="auto" and auto-break-footnote="false"
+are specified:
+Up to AH XSL Formatter V6.1, page (column) break did not occur
+within <fo:footnote-body>. This setting performs such previous ope‐
+ration. In case a footnote is big and exceeds the page height, an
+overflow occurs. However, only in case a footnote is small, is it
+possible to format without breaking a footnote.
+‒
+When axf:footnote-max-height="auto" and auto-break-footnote="true"
+are specified:
+It is considered that the page height is specified to axf:foot‐
+note-max-height and page break (column break) occurs within
+<fo:footnote-body>.
+‒
+When axf:footnote-max-height="<length>" or "<percentage>" is speci‐
+fied:
+The value must be a positive. auto-break-footnote is not refer‐
+red to. At this time, page (column) break may occur within
+<fo:footnote-body>. The footnote will be put after an anchor position
+as much as possible and the remaining part will be split and sent to
+the next page (column). Note that axf:footnote-max-height is invalid
+for pages without text.
+Applies to: <fo:region-body>
+Values: auto | <length> | <percentage>
+Initial: auto
+AHF Extensions: Properties
+axf:footnote-max-height
+370
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 371===
+Inherited: no
+axf:footnote-position 
+Specifies the location to place the footnote.
+Values have the following meanings:
+‒
+page: Footnotes are placed on the after side of each page in
+<fo:region-body>. This is the standard layout of XSL specification.
+‒
+odd-page: Footnotes are placed on the after side of each odd page in
+<fo:region-body>. This is the standard layout of sidenotes in vertical
+writing. (On the outside in odd page.)
+‒
+even-page: Footnotes are placed on the after side of each even page in
+<fo:region-body>.
+‒
+start: Footnotes are placed on each page in <fo:region-start>. Head‐
+notes in vertical writing. Sidenotes on the left side in horizontal
+writing.
+‒
+end: Footnotes are placed on each page in <fo:region-end>. Footnotes
+in vertical writing. Sidenotes on the right side in horizontal writing.
+‒
+inside: Footnotes are placed at each even page in <fo:region-end>
+and each odd page in <fo:region-start>. Sidenotes on the inside in
+horizontal writing.
+‒
+outside: Footnotes are placed on each even page in <fo:region-start>
+and each odd page in <fo:region-end>. This is a standard sidenotes in
+horizontal writing. (On the outside of both right and left pages.)
+‒
+column: Footnotes are placed on the after side of each column. This
+is a standard footnote in horizontal writing. Same as page if the
+document is non multi-columns.
+‒
+start-column: Footnotes are placed on the after side of the first co‐
+lumn. Same as start if the document is non multi-columns.
+‒
+end-column: Footnotes are placed on the after side of the end column.
+Same as end if the document is non multi-columns.
+AHF Extensions: Properties
+axf:footnote-max-height
+371
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 372===
+‒
+inside-column: Footnotes are placed in the same way as end-column at
+even page and in the same way as start-column at odd page. Footno‐
+tes are put together on the inside column in horizontal writing.
+‒
+outside-column: Footnotes are placed in the same way as start-column
+at even page and in the same way as end-column at odd page. Footno‐
+tes are put together on the outside column in horizontal writing.
+It is possible to arrange footnotes inside the <fo:region-start> or the
+<fo:region-end> (these notes are called sidenotes). Besides specifying
+them to <fo:region-body>, it is also effective to specify to individual
+<fo:footnote>. It is possible to make several types of notes intermingled
+by this extension.
+There are following restrictions for sidenotes:
+‒
+The sidenotes which run over from the specified area will overflow.
+‒
+The xsl-footnote-separator is not effective.
+start-column, end-column, inside-column and outside-column have the
+following restrictions:
+‒
+It is not possible to specify these values to <fo:footnote>. It is only
+available to specify them to <fo:region-body>.
+‒
+When you specify these values to <fo:region-body>, column cannot
+be specified to <fo:footnote>.
+‒
+These values cannot be used with the forcible column break such
+as break-before="column", etc. These values cannot be used for a large
+volume of footnotes.
+odd-page and even-page have the following restrictions:
+‒
+It is not possible to specify these values to <fo:footnote>. It is only
+available to specify them to <fo:region-body>.
+Applies to: <fo:region-body>, <fo:footnote>
+Values: page | odd-page | even-page | start | end | inside | outside |
+column | start-column | end-column | inside-column | outside-column
+Initial: page
+AHF Extensions: Properties
+axf:footnote-position
+372
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 373===
+Inherited: no
+axf:footnote-stacking 
+Specifies the method to layout the footnote.
+Values have the following meanings:
+‒
+block: Arranges the footnotes in the block progression direction.
+‒
+inline: Arranges the footnotes in the inline progression direction.
+Applies to: <fo:region-body>, <fo:footnote>
+Values: block | inline
+Initial: block
+Inherited: no
+axf:hanging-punctuation 
+Specifies whether to hang punctuation marks at the start of the line or
+end of the line.
+Values have the following meanings:
+‒
+none: Do not hang punctuation marks at the start of the line or end
+of the line.
+‒
+start: Hangs punctuation marks at the start of the line. If the target
+character for hanging appears at the start of the line, the character
+is forced to hang.
+‒
+first: Behaves as the same as the start value only with the start line
+of a paragraph.
+‒
+force-end: Hangs punctuation marks at the end of the line. When
+text-align="right" or text-align="justify" (or text-align-last="justi‐
+fy") is specified and a target character for hanging appears at the
+end of the line, the character is hanged forcibly. When anything else
+is specified to text-align, the character is hung naturally.
+‒
+allow-end: Hangs punctuation marks at the end of the line. When
+text-align="right" or text-align="justify" (or text-align-last="justi‐
+AHF Extensions: Properties
+axf:footnote-position
+373
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 374===
+fy") is specified and a target character for hanging comes to the end
+of the line, the character is not hung if text fits into one line, but the
+character is hung if text does not fit into one line. When anything
+else is specified to text-align, the character is hung naturally.
+‒
+last: Behaves the same as the force-end value only with the end of
+the line of a paragraph.
+The target punctuation marks is as follows:
+‒
+force-end, allow-end:
+Japanese or Simplified Chinese:
+U+3001 IDEOGRAPHIC COMMA 、
+U+3002 IDEOGRAPHIC FULL STOP 。
+U+FF0C FULLWIDTH COMMA ，
+U+FF0E FULLWIDTH FULL STOP ．
+Traditional Chinese:
+U+FE50 SMALL COMMA ﹐
+U+FE51 SMALL IDEOGRAPHIC ﹑
+U+FE52 SMALL FULL STOP ﹒
+U+FF64 HALFWIDTH IDEOGRAPHIC COMMA ､
+Other languages Same as the last value.
+‒
+last: quotation marks, closing parentheses, period, comma and hy‐
+phen.
+‒
+start, first: quotation marks, closing parentheses and bullet.
+Applies to: <fo:block>
+Values: none | [ start || first || [ force-end | allow-end ] || last ]
+Initial: none
+Inherited: yes
+axf:headers 
+Specifies the table header cells associated with this cell. It is the same
+as the headers attribute in HTML.
+AHF Extensions: Properties
+axf:hanging-punctuation
+374
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 375===
+Applies to: <fo:table-cell>
+Values: <idrefs>
+Initial: empty
+Inherited: no
+axf:hyphenate-caps-word 
+Specifies whether to hyphenate words consisting only of uppercase
+letters.
+A phrase like ANTENNA-HOUSE with hyphens is considered multiple
+words. There is a possibility of a line break at the hyphen position.
+Even letters processed as small-caps are considered lowercase if
+the original letters are lowercase. This setting is invalid when
+hyphenate="false" is specified.
+Values have the following meanings:
+‒
+true: Hyphenates a word.
+‒
+false: Does not hyphenate a word that consists of all capital letters.
+A word that does not consist of all capital letters, such as a word
+that has only the first letter capitalized, is hyphenated.
+‒
+false-all: Does not hyphenate all words that start with a capital
+letter.
+Applies to: <fo:block>
+Values: true | false | false-all
+Initial: true
+Inherited: yes
+axf:hyphenate-hyphenated-word 
+Specifies whether to hyphenate the already hyphenated word or not.
+This setting is invalid when hyphenate="false" is specified.
+Values have the following meanings:
+‒
+true: Hyphenates a word.
+AHF Extensions: Properties
+axf:headers
+375
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 376===
+‒
+false: Does not hyphenate a word. The line may break only at the
+hyphen position.
+The following are recognized as hyphens:
+‒
+U+002D HYPHEN-MINUS
+U+00AD SOFT HYPHEN
+U+2010 HYPHEN
+U+2011 NON-BREAKING HYPHEN
+Applies to: <fo:block>
+Values: true | false
+Initial: true
+Inherited: yes
+axf:hyphenation-minimum-character-count 
+Specifies the minimum number of characters a word must have before
+it can be hyphenated. The axf:hyphenation-minimum-character-count must
+be an integer number of 1 or more.
+Applies to: <fo:block>, <fo:character>
+Values: <integer>
+Initial: 1
+Inherited: yes
+axf:hyphenation-zone 
+Limits the range where a hyphenation is available.
+Values have the following meanings:
+‒
+none: Nothing is limited in hyphenation.
+‒
+<length>: If the length from the end of a word to the end of line
+is less or equal to the specified value, the following word is not
+hyphenated. It is invalid when 0 or less value is specified.
+‒
+<percentage>: Refer to the width of containing block.
+Applies to: <fo:block>
+AHF Extensions: Properties
+axf:hyphenate-hyphenated-word
+376
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 377===
+Values: none | <length> | <percentage>
+Initial: none
+Inherited: yes
+axf:image-resolution 
+Specifies the resolution of an image.
+The resolution of a background image is specified by
+axf:background-image-resolution. In case of vector images, such as SVG, it
+is applied to numerical values with no units. from-image is ignored.
+Values have the following meanings:
+‒
+normal: Depends on the default value of the system. It's the value
+specified as pxpi in the Option Setting File. Ignores the actual resolu‐
+tion of an image.
+‒
+from-image: Uses the actual resolution of an image. When an image
+does not have the resolution, it will follow the specification. If
+nothing is specified, it is the same as normal.
+‒
+<dpi>: Specifies the resolution (dpi). Ignores the actual resolution of
+an image.
+You can also use dpcm as a unit to indicate the resolution.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: normal | [ from-image || <dpi> ]
+Initial: from-image
+Inherited: no
+axf:image-orientation 
+Rotates the image.
+Values have the following meanings:
+from-image: Follows the image information (such as the orientation
+specified in metadata).
+none: Does not rolate the image.
+AHF Extensions: Properties
+axf:hyphenation-zone
+377
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 378===
+[ 0 | 90 | 180 | 270 ] flip?: Rotates the image by the specified angle.
+If flip is specified, the image will be horizontally flipped after the
+rotation.
+Applies to: <fo:external-graphic>, <fo:instream-foreign-object>
+Values: from-image | none | [ 0 | 90 | 180 | 270 ] flip?
+Initial: from-image
+Inherited: yes
+axf:image-preproc 
+Preprocesses the image.
+Applies to: <fo:external-graphic>
+Value: <string>
+Initial: empty string
+Inherited: no
+The following can be specified for <string>:
+‒
+OSDC [params]: The data specified to src for <fo:external-graphic> is
+converted to PDF using Office Server Document Converter (abbre‐
+viated as OSDC), and the PDF is embedded in the document.
+Further explanations on the application can be found in the AH
+Formatter Online Manual.
+axf:indent-here 
+Aligns the indent position to the region position when a line break
+occurs.
+In order to indent lines, specify <fo:inline> which contains this
+property as follows:
+‒
+<fo:block>Indent-here: <fo:inline axf:indent-here="0pt"/>The quick
+brown fox jumps over the lazy dog ...</fo:block>
+The start position of <fo:inline> becomes the standard of indentation.
+Values have the following meanings:
+AHF Extensions: Properties
+axf:image-orientation
+378
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 379===
+‒
+none: Does nothing.
+‒
+<length>: Aligns the indent position to the shifted position by
+<length> from the beginning of the specified line area.
+Applies to: <fo:inline>
+Values: none | <length>
+Initial: none
+Inherited: no
+axf:index-page-citation-range-f-suffix 
+Specifies the suffix when merging 2 consecutive page numbers.
+It is used in the same way as <fo:index-page-citation-range-separator>.
+The content is (#PCDATA|%inline;)*. If omitted, it is considered "f.".
+Applies to: block level elements
+Values: <string>
+Initial: "f."
+Inherited: yes
+axf:index-page-citation-range-ff-suffix 
+Specifies the suffix when merging 3 consecutive page numbers.
+It is used in the same way as <fo:index-page-citation-range-separator>.
+The content is (#PCDATA|%inline;)*. If omitted, it is considered "ff.".
+Applies to: block level elements
+Values: <string>
+Initial: "ff."
+Inherited: yes
+axf:initial-letters 
+Creates drop initials.
+AHF Extensions: Properties
+axf:indent-here
+379
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 380===
+A dropped initial is selected from the first text by tracing the children
+of the element for which axf:initial-letters is specified. axf:initial-
+letters is ignored if the following elements appear before text:
+‒
+<fo:block> with axf:initial-letters specified
+‒
+<fo:block> within inline elements
+‒
+Block elements other than <fo:block>
+‒
+<fo:inline-container>
+‒
+<fo:bidi-override>
+‒
+<fo:page-number>
+‒
+<fo:page-number-citation>
+‒
+<fo:page-number-citation-last>
+‒
+<axf:footnote-number>
+‒
+<axf:footnote-number-citation>
+Values have the following meanings:
+‒
+normal: Does nothing.
+‒
+<number>: Specifies the letter size of a dropped initial by number of
+lines. When the value is less than 1, it is invalid.
+‒
+<length>: Specifies the letter size of a dropped initial by actual di‐
+mensions. The specified dimension is converted to how many lines
+it corresponds to. When it is less than 1 line, it is invalid.
+‒
+<integer>: Specifies the number of lines a dropped initial should
+sink. When the value is omitted, it is considered a value obtained by
+rounding down the number of lines to an integer. When the value is
+less than 1, it is invalid.
+‒
+drop: Equivalent to specifying a value of the number of lines roun‐
+ded down to an integer to <integer>.
+‒
+raise: Equivalent to specifying 1 to <integer>.
+‒
+adjacent: Indents all lines in the block, not just the letter of a drop‐
+ped initial.
+AHF Extensions: Properties
+axf:initial-letters
+380
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 381===
+‒
+<integer2>: Similar to adjacent, but indents the lines after the part of
+dropped initial by the specified number of lines. When the value is
+omitted, it is considered 0. When the value is negative, it is invalid.
+A float with axf:float-x="start" within the number of lines of the
+dropped initial is placed on the start side of the dropped initial when
+its anchor is included at the start of the block. Otherwise, it will be
+pushed out and placed on the after side of the dropped initial. ☞
+axf:initial-letters-start-intrusion.
+For more details see axf:initial-letters in XSL/CSS Extensions in
+Features of the Online Manual.
+Applies to: <fo:block>
+Values: normal | [[<number> | <length>] <integer>? | [<number> |
+<length>] && [drop | raise]] [adjacent | <integer2>]?
+Initial: normal
+Inherited: no
+axf:initial-letters-first-line-head-height 
+Specifies where the height of a dropped initial should be adjusted.
+CAUTION: This property is not effective when the document is vertical
+writing or CJK.
+Values have the following meanings:
+‒
+cap-height: Adjusts the height to cap-height on the first line. For an
+illustrated example, see axf:initial-letters-first-line-head-height in
+the Online Manual.
+‒
+x-height: Adjusts the height to x-height on the first line. For an
+illustrated example, see axf:initial-letters-first-line-head-height in
+the Online Manual.
+‒
+auto: Adjusts the height to x-height under the following conditions:
+AHF Extensions: Properties
+axf:initial-letters
+381
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 382===
+•
+When the next character of a dropped initial character or image
+is lowercase small-caps (provided that the character or image to
+be a dropped initial and the next character belong to the same
+element).
+•
+When the number of lines of a dropped initial is equal to the
+number of lines a dropped initial should sink (provided that the
+number of lines is specified without units).
+Otherwise, adjusts to cap-height.
+Applies to: <fo:block>
+Values: cap-height | x-height | auto
+Initial: auto
+Inherited: yes
+axf:initial-letters-end-indent 
+Specifies the space on the end side of a dropped initial.
+Multiple values can be specified. The first value applies to the first line
+and the second value applies to the next line. The last value applies
+after the corresponding line.
+Applies to: <fo:block>
+Values: <length>+
+Initial: 0pt
+Inherited: yes
+axf:initial-letters-leading-punctuation 
+Specifies the size of the leading punctuation of a dropped initial, etc.
+Values have the following meanings:
+‒
+normal: Does nothing special.
+‒
+hide: Does not display the leading punctuation.
+‒
+<length>: Specifies the font size of the leading punctuation.
+‒
+<color>: Specifies the color of the leading punctuation.
+AHF Extensions: Properties
+axf:initial-letters-first-line-head-height
+382
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 383===
+Applies to: <fo:block>
+Values: normal | hide | [<length> || <color>]
+Initial: normal
+Inherited: yes
+axf:initial-letters-leading-punctuation-position 
+Specifies the position of the leading punctuation of a dropped initial in
+the inline progression direction.
+Values have the following meanings:
+‒
+normal: Does nothing special.
+‒
+hang: Protrudes the leading punctuation to the start side.
+axf:hanging-punctuation="start" protrudes one-character punctuation,
+but the hang setting protrudes all punctuations.
+‒
+intrude: Penetrates and overlaps the leading punctuation with the
+dropped initial.
+‒
+<length>: Adjusts the position of the leading punctuation. hang or
+intrude must be specified. Shifts the punctuation from that position
+by the specified length in the inline progression direction.
+Applies to: <fo:block>
+Values: normal | [[hang | intrude] && <length>?]
+Initial: normal
+Inherited: yes
+axf:initial-letters-leading-punctuation-shift 
+Specifies the position of the leading punctuation of a dropped initial in
+the block progression direction.
+Values have the following meanings:
+‒
+normal: Does nothing special. Aligns the leading punctuation with
+the baseline for horizontal writing and aligns it with the center for
+vertical writing.
+AHF Extensions: Properties
+axf:initial-letters-leading-punctuation
+383
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 384===
+‒
+baseline: Aligns the leading punctuation with the baseline of the last
+line.
+‒
+before: Aligns the leading punctuation with the before side of the
+dropped initial.
+‒
+middle: Aligns the leading punctuation with the center of the drop‐
+ped initial.
+‒
+after: Aligns the leading punctuation with the after side of the
+dropped initial.
+‒
+<length>: Specifies the baseline-shift amount of the leading punctua‐
+tion. If it is specified at the same time as baseline, before, middle, and
+after, it is the shift amount from that position.
+Applies to: <fo:block>
+Values: normal | [[baseline | before | middle | after] || <length>]
+Initial: normal
+Inherited: yes
+axf:initial-letters-start-intrusion 
+Specifies the alignment of a float on the start side of the dropped initial.
+Applies to: <fo:block>
+Values: none | first-line
+Initial: none
+Inherited: yes
+Values have the following meanings:
+‒
+none: Aligns the float on the after side, avoiding the dropped initial.
+‒
+first-line: If the anchor of the <fo:float> is after the dropped initial
+and at the start line of the block, aligns the float on the start side of
+the dropped initial. If this is not the case, aligns it on the after side,
+avoiding the dropped initial. However, if the following conditions
+are not met, it is considered axf:initial-letters-start-intrusion="no‐
+ne" and aligned on the after side.
+AHF Extensions: Properties
+axf:initial-letters-leading-punctuation-shift 384
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 385===
+•
+When axf:float-x is other than none
+•
+When axf:float-wrap is wrap
+Specifies the alignment of a float when the anchor of the float, that
+has axf:float-x="start" and is included in the block with dropped
+initial specified, exists after the dropped initial. A float with an
+anchor before the dropped initial will be aligned on the start side
+regardless of this setting.
+This property is not effective when intrusion-displace="block" is spe‐
+cified, because floats are always aligned outside the block.
+axf:initial-letters-width 
+Specifies the width of a dropped initial.
+Values have the following meanings:
+‒
+auto: The width of a dropped initial is calculated from the included
+character string or image.
+‒
+<length>
+<percentage>: Forces the width of a dropped initial to the specified
+width.
+Applies to: <fo:block>
+Values: auto | <length> | <percentage>
+Initial: auto
+Inherited: yes
+axf:initial-letters-text-align 
+Specifies the alignment of a dropped initial.
+When the value of axf:initial-letters-width is auto, it has no effect
+because there is no room for right alignment.
+Applies to: <fo:block>
+Values: start | center | end | left | right
+Initial: end
+AHF Extensions: Properties
+axf:initial-letters-start-intrusion
+385
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 386===
+Inherited: yes
+axf:initial-letters-color 
+Specifies the text color of a dropped initial.
+Applies to: <fo:block>
+Values: <color>
+Initial: the value of the color property
+Inherited: yes
+axf:initial-volume-number 
+Specifies the initial volume number in multi separate volume.
+This value is applied for the format property and utilized for the PDF file
+name to output. In the following example, the file name of the separate
+volume is document-2.pdf, document-3.pdf, document-4.pdf, and so on:
+   <axf:output-volume-info initial-volume-number="2" format="-1"/> 
+Applies to: <axf:output-volume-info>
+Values: <number>
+Initial: 1
+Inherited: no
+axf:inline-overflow-align 
+Makes adjustments when the blocks in <fo:inline-container> overflow.
+Values have the following meanings:
+‒
+normal: Does nothing. axf:inline-overflow-align is invalid.
+‒
+start
+end
+left
+right: Shifts the blocks on the specified side of the reference area
+that contains <fo:inline-container>.
+Applies to: <fo:inline-container>
+AHF Extensions: Properties
+axf:initial-letters-text-align
+386
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 387===
+Values: normal | start | end | left | right
+Initial: normal
+Inherited: yes
+axf:justify-nbsp 
+Specifies whether to justify NON-BREAKING SPACE or not.
+Generally, NON-BREAKING SPACE (U+00A0) is intended for
+justification. The axf:justify-nbsp property can be used when you want
+to check off U+00A0 from justification.
+Values have the following meanings:
+‒
+true: NON-BREAKING SPACE is included for justification.
+‒
+false: NON-BREAKING SPACE is not included for justification.
+Applies to: all formatting objects
+Values: true | false
+Initial: true
+Inherited: yes
+axf:kansuji-grouping-letter 
+Specifies the grouping character used for Japanese numerals. For
+details, see axf:kansuji-grouping-letter in XSL/CSS Extensions in
+Features of the Online Manual.
+Applies to: all block-level and inline-level formatting objects
+Values: <string>
+Initial: empty string
+Inherited: yes
+axf:kansuji-letter 
+Specifies the character used for Japanese numerals. For details, see
+axf:kansuji-letter in XSL/CSS Extensions in Features of the Online
+Manual.
+AHF Extensions: Properties
+axf:inline-overflow-align
+387
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 388===
+Applies to: all block-level and inline-level formatting objects
+Values: kanji | latin | <string>
+Initial: kanji
+Inherited: yes
+axf:kansuji-style 
+Specifies the style used for Japanese numerals. For details, see
+axf:kansuji-style in XSL/CSS Extensions in Features of the Online
+Manual.
+Applies to: all block-level and inline-level formatting objects
+Values: simple | grouping | readable
+Initial: simple
+Inherited: yes
+axf:keep-together-within-dimension 
+Specifies the upper limit height of the keep-together condition.
+If keep-together.within-page or .within-column is not auto, you can specify
+the height for keep-together to apply to that block. When it is all,
+the height is not restricted. If you specify a height with <length>,
+keep-together will be applied to that height, but after that it behaves
+as if auto was specified for keep-together. For example, if you want to
+specify keep-together.within-page="always" for a block, but want to break
+it if it is a block that exceeds the height of the page, specify as follows:
+   <fo:block keep-together.within-page="always"
+      axf:keep-together-within-dimension="100vh">
+Applies to: block level formatting object
+Values: all | <length>
+Initial: all
+Inherited: no
+AHF Extensions: Properties
+axf:kansuji-letter
+388
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 389===
+axf:keep-together-within-inline-dimension 
+Specifies the upper limit width of the keep-together.within-line
+condition.
+When keep-together.within-line is not auto, you can specify the width to
+apply keep-together.within-line to the block. When all is specified, the
+width is not limited. If you specify a width with <length>, keep-together
+is applied up to that width, but for a width longer than that,
+keep-together behaves as if auto is specified.
+Applies to: block level formatting object
+Values: all | <length>
+Initial: all
+Inherited: no
+axf:kerning-mode 
+Specifies whether to process the kerning.
+You can specify whether pair kerning is performed or not by
+pair-kerning in the Option Setting File. This can also be set in the
+Format Option Setting dialog in GUI.
+Values have the following meanings:
+‒
+none: The kerning is not processed.
+‒
+pair: The pair kerning is processed.
+‒
+auto: Dependent on the system setting.
+Applies to: all block-level and inline-level formatting objects
+Values: none | pair | auto
+Initial: auto
+Inherited: yes
+axf:layer 
+Specifies to which layer the area is arranged.
+Values have the following meanings:
+AHF Extensions: Properties
+axf:keep-together-within-inline-dimension
+389
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 390===
+‒
+none: The area is arranged to no layer.
+‒
+<layer-name>: The area is arranged to the layer with the name
+specified by axf:layer-settings.
+Applies to: formatting object that generates area
+Values: none | <layer-name>
+Initial: none
+Inherited: yes
+axf:layer-settings 
+Defines layers.
+‒
+<layer-setting> = <layer-name> [on | off]? [ intent [view | design]
+|| view [on | off] || print [on | off] || export [on | off] || lang
+<string> preferred? || zoom <number> <number>? || locked ]?
+‒
+<layer-name> = <string>
+Values have the following meanings:
+‒
+none: No definition.
+‒
+<layer-setting>: Multiple layers can be defined by comma-separated
+items. What is essential for layer definition is <layer-name>. Other
+parameters are optional.
+‒
+<layer-name>: Specifies a name to identify the layer. on or off specifies
+the default state of the layer when the document is opened. If
+omitted, it is assumed to be on. If view, print, export are not specified,
+the value specified here will be referenced.
+‒
+intent: Specifies the intent of the layer. When view is specified,
+showing and hiding layers can be toggle. When design is specified,
+these cannot be toggled. If omitted, it is assumed to be view.
+‒
+view: Specifies whether to show or hide the layer. Displayed when
+the document is opened with on, it is hidden with off.
+‒
+print: Specifies whether to print the layer. It is printed by on and not
+printed by off.
+AHF Extensions: Properties
+axf:layer
+390
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 391===
+‒
+export: Specifies whether to include the layer in the exported result.
+It is included by on and not included by off.
+‒
+lang: Specifies the language of the layer. Displays the layer if the
+language of the PDF viewer application matches the specified lang
+when the document is opened. preferred also displays the layer
+when the language of the viewer partially matches lang. Whether
+the string of lang is valid or not depends on the PDF viewer applica‐
+tion.
+‒
+zoom: Specifies the minimum and maximum values of the magnifi‐
+cation of the displayed layer. If only one value is specified, the
+minimum value is set.
+‒
+locked: Locks the layer and disables editing. locked is effective with
+PDF1.6 or later.
+In PDF/X, PDF/A and PDF/UA, the settings of view, print, and export are
+ignored.
+Applies to: <fo:root>
+Values: none | <layer-setting>#
+Initial: none
+Inherited: no
+axf:leader-expansion 
+Specifies whether to expand a leader forcibly.
+Values have the following meanings:
+‒
+auto: Operates as usual by specifying text-align.
+‒
+force: Considers a line with leaders as text-align="justify". Conse‐
+quently, leaders will expand.
+For illustrated examples, see axf:leader-expansion in XSL/CSS
+Extensions in Features of the Online Manual.
+Applies to: <fo:block>
+Values: auto | force
+AHF Extensions: Properties
+axf:layer-settings
+391
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 392===
+Initial: auto
+Inherited: yes
+axf:left-page-master-reference 
+Master name of the page master for the left page of a two-page spread.
+axf:left-page-master-reference refers to the page master that defines
+the page size and the non-spread regions for the left-hand page of a
+two-page spread.
+Values have the following meanings:
+‒
+<name>: The name must refer to a master-name that exists within the
+document.
+Applies to: <axf:spread-page-master>
+Values: <name>
+Initial: N/A, a value is required
+Inherited: no
+axf:letter-spacing-side 
+Specifies on which side of the character the space by letter-spacing is
+distributed.
+Values have the following meanings:
+‒
+both: Half the amount of space is distributed on both side of the
+character for each.
+‒
+start: The space is distributed only on the start side of the character.
+‒
+end: The space is distributed only on the end side of the character.
+Applies to: inline-level formatting objects
+Values: both | start | end
+Initial: both
+Inherited: yes
+AHF Extensions: Properties
+axf:leader-expansion
+392
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 393===
+axf:ligature-mode 
+Specifies whether to perform the ligature processing.
+The ligature processed here is the ligature defined in the font itself. The
+ligature defined in Unicode are not processed. (It is called Canonical
+Composition.) In order to normalize ligatures defined in Unicode
+Standard, specify axf:normalize="nfc".
+Values have the following meanings:
+‒
+none: The ligature processing is not performed.
+‒
+latin: Processes the ligature in Western languages. It is processed
+when the scripts are the following: Latn, Grek, Cyrl.
+‒
+kana: Processes the ligature of Kana + semivoiced sound symbol in
+JIS X 0213:2004 as follows: U+304B + U+309A, U+304D + U+309A, U+304F
++ U+309A, U+3051 + U+309A, U+3053 + U+309A, U+30AB + U+309A, U+30AD
++ U+309A, U+30AF + U+309A, U+30B1 + U+309A, U+30B3 + U+309A, U+30BB +
+U+309A, U+30C4 + U+309A, U+30C8 + U+309A, U+31F7 + U+309A.
+Although the ligature of Western languages and the ligature of
+symbols are included in JIS X 0213:2004, these are processed by
+axf:ligature-mode="latin".
+‒
+jamo: Processes the ligature of Hangul Jamo U+1100 to U+11FF.
+‒
+all: latin kana jamo is considered to be specified.
+‒
+auto: The ligature of kana is performed. latin-ligature in the Option
+Setting File will decide whether to perform the ligature of Western
+words. This setting can also be done with the Format Option Setting
+dialog in GUI. Whether to process the ligature of Hangul Jamo
+depends on jamo-ligature in the Option Setting File.
+Applies to: all block-level and inline-level formatting objects
+Values: none | [ latin || kana || jamo ] | all | auto
+Initial: auto
+Inherited: yes
+AHF Extensions: Properties
+axf:ligature-mode
+393
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 394===
+axf:line-break 
+Specifies the method of line breaking.
+Values have the following meanings:
+‒
+auto: It is assumed that normal is specified.
+‒
+normal: CJK Nonstarter characters (prolonged sound mark, small
+hiragana letters, small katakana letters, and iteration marks) defined
+in JIS X 4051:2004 are not treated as Nonstarter characters. Charac‐
+ters marked with [NS] in the following list are processed.
+‒
+strict: CJK Nonstarter character is treated. Characters marked with
+[NS] and [JIS] in the following list are processed.
+‒
+line: Line breaking is performed one by one by a simple algorithm.
+‒
+bpil: Line breaking is performed according to the line breaking
+algorithm by Knuth-Plass's Breaking Paragraphs into Lines. At this
+time, the bpil specification in the Option Setting File is ignored.
+Depending on the conditions, this algorithm may not be applicable.
+See Line Breaking in Technical Notes in Technical of the Online
+Manual.
+If neither normal nor strict is specified, it is assumed that normal is
+specified. When neither line nor bpil is specified, the algorithm is
+selected according to the specification of bpil in the Option Setting File.
+For more details, see Line Breaking in Technical Notes in Technical of
+the Online Manual.
+The line breaking other than Nonstarter characters in CJK complies
+with UAX#14: Line Breaking Properties. At this time, characters
+specified to the properties of axf:append-non-starter-characters,
+axf:except-non-starter-characters, axf:append-non-end-of-line-characters
+and axf:except-non-end-of-line-characters are included.
+Applies to: all block-level formatting objects
+Values: auto | [[normal | strict] || [line | bpil]]
+Initial: auto
+AHF Extensions: Properties
+axf:line-break
+394
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 395===
+Inherited: yes
+The CJK Nonstarter character is as follows:
+   U+203C DOUBLE EXCLAMATION MARK ‼ [NS]
+   U+203D INTERROBANG ‽ [NS]
+   U+2047 DOUBLE QUESTION MARK ⁇ [NS]
+   U+2048 QUESTION EXCLAMATION MARK ⁈ [NS]
+   U+2049 EXCLAMATION QUESTION MARK ⁉ [NS]
+   U+3005 IDEOGRAPHIC ITERATION MARK 々 [NS] [JIS]
+   U+301C WAVE DASH 〜 [NS]
+   U+303B VERTICAL IDEOGRAPHIC ITERATION MARK 〻 [NS] [JIS]
+   U+303C MASU MARK 〼 [NS]
+   U+3041 HIRAGANA LETTER SMALL A ぁ [JIS]
+   U+3043 HIRAGANA LETTER SMALL I ぃ [JIS]
+   U+3045 HIRAGANA LETTER SMALL U ぅ [JIS]
+   U+3047 HIRAGANA LETTER SMALL E ぇ [JIS]
+   U+3049 HIRAGANA LETTER SMALL O ぉ [JIS]
+   U+3063 HIRAGANA LETTER SMALL TU っ [JIS]
+   U+3083 HIRAGANA LETTER SMALL YA ゃ [JIS]
+   U+3085 HIRAGANA LETTER SMALL YU ゅ [JIS]
+   U+3087 HIRAGANA LETTER SMALL YO ょ [JIS]
+   U+308E HIRAGANA LETTER SMALL WA ゎ [JIS]
+   U+3095 HIRAGANA LETTER SMALL KA ゕ [JIS]
+   U+3096 HIRAGANA LETTER SMALL KE ゖ [JIS]
+   U+309B KATAKANA-HIRAGANA VOICED SOUND MARK ゛ [NS]
+   U+309C KATAKANA-HIRAGANA SEMI-VOICED SOUND MARK ゜ [NS]
+   U+309D HIRAGANA ITERATION MARK ゝ [NS] [JIS]
+   U+309E HIRAGANA VOICED ITERATION MARK ゞ [NS] [JIS]
+   U+30A0 KATAKANA-HIRAGANA DOUBLE HYPHEN ゠ [NS]
+   U+30A1 KATAKANA LETTER SMALL A ァ [JIS]
+   U+30A3 KATAKANA LETTER SMALL I ィ [JIS]
+AHF Extensions: Properties
+axf:line-break
+395
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 396===
+   U+30A5 KATAKANA LETTER SMALL U ゥ [JIS]
+   U+30A7 KATAKANA LETTER SMALL E ェ [JIS]
+   U+30A9 KATAKANA LETTER SMALL O ォ [JIS]
+   U+30C3 KATAKANA LETTER SMALL TU ッ [JIS]
+   U+30E3 KATAKANA LETTER SMALL YA ャ [JIS]
+   U+30E5 KATAKANA LETTER SMALL YU ュ [JIS]
+   U+30E7 KATAKANA LETTER SMALL YO ョ [JIS]
+   U+30EE KATAKANA LETTER SMALL WA ヮ [JIS]
+   U+30F5 KATAKANA LETTER SMALL KA ヵ [JIS]
+   U+30F6 KATAKANA LETTER SMALL KE ヶ [JIS]
+   U+30FB KATAKANA MIDDLE DOT ・ [NS]
+   U+30FC KATAKANA-HIRAGANA PROLONGED SOUND MARK ー [JIS]
+   U+30FD KATAKANA ITERATION MARK ヽ [NS] [JIS]
+   U+30FE KATAKANA VOICED ITERATION MARK ヾ [NS] [JIS]
+   U+31F0 KATAKANA LETTER SMALL KU ㇰ [JIS]
+   U+31F1 KATAKANA LETTER SMALL SI ㇱ [JIS]
+   U+31F2 KATAKANA LETTER SMALL SU ㇲ [JIS]
+   U+31F3 KATAKANA LETTER SMALL TO ㇳ [JIS]
+   U+31F4 KATAKANA LETTER SMALL NU ㇴ [JIS]
+   U+31F5 KATAKANA LETTER SMALL HA ㇵ [JIS]
+   U+31F6 KATAKANA LETTER SMALL HI ㇶ [JIS]
+   U+31F7 KATAKANA LETTER SMALL HU ㇷ [JIS]
+   U+31F8 KATAKANA LETTER SMALL HE ㇸ [JIS]
+   U+31F9 KATAKANA LETTER SMALL HO ㇹ [JIS]
+   U+31FA KATAKANA LETTER SMALL MU ㇺ [JIS]
+   U+31FB KATAKANA LETTER SMALL RA ㇻ [JIS]
+   U+31FC KATAKANA LETTER SMALL RI ㇼ [JIS]
+   U+31FD KATAKANA LETTER SMALL RU ㇽ [JIS]
+   U+31FE KATAKANA LETTER SMALL RE ㇾ [JIS]
+   U+31FF KATAKANA LETTER SMALL RO ㇿ [JIS]
+AHF Extensions: Properties
+axf:line-break
+396
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 397===
+   U+FE54 SMALL SEMICOLON ﹔ [NS]
+   U+FE55 SMALL COLON ﹕ [NS] 
+   U+FF1A FULLWIDTH COLON ： [NS]
+   U+FF1B FULLWIDTH SEMICOLON ； [NS]
+   U+FF65 HALFWIDTH KATAKANA MIDDLE DOT ･ [NS]
+   U+FF67 HALFWIDTH KATAKANA LETTER SMALL A ｧ [JIS]
+   U+FF68 HALFWIDTH KATAKANA LETTER SMALL I ｨ [JIS]
+   U+FF69 HALFWIDTH KATAKANA LETTER SMALL U ｩ [JIS]
+   U+FF6A HALFWIDTH KATAKANA LETTER SMALL E ｪ [JIS]
+   U+FF6B HALFWIDTH KATAKANA LETTER SMALL O ｫ [JIS]
+   U+FF6C HALFWIDTH KATAKANA LETTER SMALL YA ｬ [JIS]
+   U+FF6D HALFWIDTH KATAKANA LETTER SMALL YU ｭ [JIS]
+   U+FF6E HALFWIDTH KATAKANA LETTER SMALL YO ｮ [JIS]
+   U+FF6F HALFWIDTH KATAKANA LETTER SMALL TU ｯ [JIS]
+   U+FF70 HALFWIDTH KATAKANA-HIRAGANA PROLONGED SOUND MARK ｰ [JIS]
+   U+FF9E HALFWIDTH KATAKANA VOICED SOUND MARK ﾞ [NS]
+   U+FF9F HALFWIDTH KATAKANA SEMI-VOICED SOUND MARK ﾟ [NS]
+[NS] is classified into NS in Line Break Properties. [JIS] is classified
+into the Nonstarter character in JIS X 4051:2004.
+axf:line-continued-mark 
+When the line with long text strings is broken and continues to the
+next line, line continued marks can be applied to the end of line. It is
+invalid inside <fo:float> or <fo:footnote>.
+Values have the following meanings:
+‒
+<string>: Line continued marks with the specified character strings
+are shown. If the character strings are empty, line continued marks
+are not shown.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+AHF Extensions: Properties
+axf:line-break
+397
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 398===
+Values: <string>
+Initial: empty string
+Inherited: yes
+axf:line-continued-mark-background-color 
+Specifies the background color of line continued marks.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: <color>
+Initial: transparent
+Inherited: yes
+axf:line-continued-mark-color 
+Specifies the color of line continued marks.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: <color>
+Initial: depends on the current line area
+Inherited: yes
+axf:line-continued-mark-font-family 
+Specifies the font family of line continued marks.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: [ <family-name> | <generic-family> ]#
+Initial: depends on the current line area
+Inherited: yes
+axf:line-continued-mark-font-size 
+Specifies the font size of line continued marks.
+AHF Extensions: Properties
+axf:line-continued-mark
+398
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 399===
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: <absolute-size> | <relative-size> | <length> | <percentage>
+Initial: depends on the current line area
+Inherited: yes
+axf:line-continued-mark-font-style 
+Specifies whether to make the font style italic of line continued marks.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: normal | italic
+Initial: depends on the current line area
+Inherited: yes
+axf:line-continued-mark-font-weight 
+Specifies the font weight of line continued marks.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 |
+600 | 700 | 800 | 900 | 1000
+Initial: depends on the current line area
+Inherited: yes
+axf:line-continued-mark-offset 
+Specifies the offset of line continued marks.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>
+Values: <length>
+Initial: 0pt
+Inherited: yes
+AHF Extensions: Properties
+axf:line-continued-mark-font-size
+399
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+===PAGE 400===
+axf:line-number 
+Specifies whether to show line numbers.
+Values have the following meanings:
+‒
+none: Line numbers are not generated.
+‒
+show: Line numbers are shown.
+‒
+hide: Line numbers are not shown but the numbers of the line are
+counted.
+Line numbers are counted against the lines inside the block where
+axf:line-number="show" or axf:line-number="hide" is specified.
+Applies to: all block-level formatting objects that are descendants of
+<fo:flow>, <fo:table-column>
+Values: none | show | hide
+Initial: none
+Inherited: yes (except for <fo:table-column>)
+If axf:line-number is specified to <fo:table-column>, independent line
+numbers are given to the column of the table. At this time, the same
+setting available for <fo:page-sequence> can be specified. The ID reference
+can be specified to <fo:table-column> as axf:line-number-initial="#xxx".
+The ID must be the same as the one specified to the existing
+<fo:table-column>. The value specified to that column is adopted as
+the default value of the line number information. A reference to a
+following column is invalid.
+The following shows the example:
+   ...
+   <fo:page-sequence ... axf:line-number="show"/>
+   ...
+   <fo:table>
+      <fo:table-column/>
+      <fo:table-column axf:line-number="show" id="c2"/>
+      <fo:table-body>
+AHF Extensions: Properties
+axf:line-number
+400
+© 2021 MID/Information Logistics ‒ All rights reserved
+

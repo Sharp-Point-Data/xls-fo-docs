@@ -51,5 +51,5 @@ No code samples in spec for this formatting object. For complete examples of `fo
 
 ## See Also
 
-- `fo:bookmark` -- parent formatting object
-- `fo:bookmark-tree` -- grandparent containing the bookmark hierarchy
+- [fo:bookmark](fo-bookmark.md) — parent formatting object
+- [fo:bookmark-tree](fo-bookmark-tree.md) — grandparent containing the bookmark hierarchy

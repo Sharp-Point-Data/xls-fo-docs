@@ -49,5 +49,5 @@ An fo:bidi-override that is a descendant of an fo:leader or of the fo:inline chi
 
 ## See Also
 
-- fo:inline -- for general inline-level formatting
-- fo:inline-container -- for inline reference-areas with a different writing-mode
+- [fo:inline](fo-inline.md) — for general inline-level formatting
+- [fo:inline-container](fo-inline-container.md) — for inline reference-areas with a different writing-mode

@@ -1,0 +1,27 @@
+===PAGE 277===
+Attributes: src
+Child: <entry>
+<entry>
+Any number of this element can be specified and is evaluated in order.
+If the setting is the same, latter one will take precedence. The default
+value is the one when the new unregistered operator is specified. When
+the operator is already registered, omitted attribute values will not
+be changed. <entry> is disregarded when src of <operator-dictionary> is
+specified.
+Parent: <operator-dictionary>
+Attributes: operator, form, priority, lspace, rspace, minsize, maxsize, accent,
+fence, separator, stretchy, symmetric, largeop, movablelimits, linebreakstyle
+2.1.8 
+CGM Settings
+<cgm-settings> 
+These settings are used for CGM (see CGM Conformance in
+Conformance of the Online Manual).
+Parent: <formatter-config>
+Attributes: issue-unknown-element, issue-unsupported-element, default-line-
+cap, default-edge-cap, default-line-join, default-edge-join, default-mitre-
+limit, default-restricted-text-type, fallback-font, aci
+CGM Settings
+<operator-dictionary>
+277
+© 2021 MID/Information Logistics ‒ All rights reserved
+

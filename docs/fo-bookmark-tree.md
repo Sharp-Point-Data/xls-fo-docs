@@ -37,6 +37,6 @@ No code samples in spec for this formatting object. For complete examples of `fo
 
 ## See Also
 
-- `fo:bookmark` -- child formatting object representing an individual bookmark entry
-- `fo:bookmark-title` -- grandchild providing the human-readable title for a bookmark
-- `fo:root` -- parent formatting object
+- [fo:bookmark](fo-bookmark.md) — child formatting object representing an individual bookmark entry
+- [fo:bookmark-title](fo-bookmark-title.md) — grandchild providing the human-readable title for a bookmark
+- [fo:root](fo-root.md) — parent formatting object

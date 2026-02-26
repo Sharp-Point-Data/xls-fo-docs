@@ -46,6 +46,6 @@ No code samples in spec for this formatting object. See the "Formatting Objects 
 
 ## See Also
 
-- `fo:index-range-end` -- matching formatting object that ends the index range
-- `fo:index-key-reference` -- references index keys to generate page citations
-- `fo:index-page-citation-list` -- groups and formats index page citations
+- [fo:index-range-end](fo-index-range-end.md) — matching formatting object that ends the index range
+- [fo:index-key-reference](fo-index-key-reference.md) — references index keys to generate page citations
+- [fo:index-page-citation-list](fo-index-page-citation-list.md) — groups and formats index page citations

@@ -57,5 +57,5 @@ EMPTY
 
 ## See Also
 
-- fo:number -- defines the numbering sequence that fo:retrieve-number references
-- fo:page-number -- another inline-level formatting object that generates number content
+- [fo:number](fo-number.md) — defines the numbering sequence that fo:retrieve-number references
+- [fo:page-number](fo-page-number.md) — another inline-level formatting object that generates number content

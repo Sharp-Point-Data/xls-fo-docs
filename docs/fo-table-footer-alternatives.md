@@ -43,7 +43,7 @@ This formatting object has no directly applicable properties. The selection beha
 
 ## See Also
 
-- `fo:table-footer` -- the parent formatting object
-- `fo:conditional-table-footer-reference` -- specifies conditional footer content
-- `fo:table-header-alternatives` -- the equivalent for headers
-- `footer-position` property
+- [fo:table-footer](fo-table-footer.md) — the parent formatting object
+- [fo:conditional-table-footer-reference](fo-conditional-table-footer-reference.md) — specifies conditional footer content
+- [fo:table-header-alternatives](fo-table-header-alternatives.md) — the equivalent for headers
+- footer-position property

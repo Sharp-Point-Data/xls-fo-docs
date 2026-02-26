@@ -32,7 +32,7 @@ This formatting object has no specific properties listed in the spec beyond thos
 
 ## See Also
 
-- fo:folio-prefix -- for specifying a static prefix for folio numbers
-- fo:page-number -- the formatting object that uses the folio-suffix content
-- fo:page-number-citation -- also uses the folio-suffix content when formatting cited page numbers
-- fo:page-sequence -- the parent element that contains fo:folio-suffix
+- [fo:folio-prefix](fo-folio-prefix.md) — for specifying a static prefix for folio numbers
+- [fo:page-number](fo-page-number.md) — the formatting object that uses the folio-suffix content
+- [fo:page-number-citation](fo-page-number-citation.md) — also uses the folio-suffix content when formatting cited page numbers
+- [fo:page-sequence](fo-page-sequence.md) — the parent element that contains fo:folio-suffix

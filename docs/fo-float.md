@@ -135,6 +135,6 @@ such as C'ieng Mai. They were typically of tamlung weight.
 
 ## See Also
 
-- `fo:footnote` -- another out-of-line formatting object for footnote content
-- `fo:marginalia` -- out-of-line formatting object for margin notes
-- `fo:block-container` -- can be used for absolutely positioned content
+- [fo:footnote](fo-footnote.md) — another out-of-line formatting object for footnote content
+- [fo:marginalia](fo-marginalia.md) — out-of-line formatting object for margin notes
+- [fo:block-container](fo-block-container.md) — can be used for absolutely positioned content

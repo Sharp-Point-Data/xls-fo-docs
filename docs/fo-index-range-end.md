@@ -38,5 +38,5 @@ No code samples in spec for this formatting object. See the "Formatting Objects 
 
 ## See Also
 
-- `fo:index-range-begin` -- matching formatting object that starts the index range
-- `fo:index-key-reference` -- references index keys to generate page citations
+- [fo:index-range-begin](fo-index-range-begin.md) — matching formatting object that starts the index range
+- [fo:index-key-reference](fo-index-key-reference.md) — references index keys to generate page citations

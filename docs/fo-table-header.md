@@ -58,10 +58,10 @@ For the spec example of conditional table headers (`fo:table-header-alternatives
 
 ## See Also
 
-- `fo:table` -- the parent table formatting object
-- `fo:table-footer` -- table footer rows
-- `fo:table-body` -- table body rows
-- `fo:table-row` -- groups cells into rows
-- `fo:table-cell` -- individual cell content
-- `fo:table-header-alternatives` -- alternative header content
-- `table-omit-header-at-break` property
+- [fo:table](fo-table.md) — the parent table formatting object
+- [fo:table-footer](fo-table-footer.md) — table footer rows
+- [fo:table-body](fo-table-body.md) — table body rows
+- [fo:table-row](fo-table-row.md) — groups cells into rows
+- [fo:table-cell](fo-table-cell.md) — individual cell content
+- [fo:table-header-alternatives](fo-table-header-alternatives.md) — alternative header content
+- table-omit-header-at-break property

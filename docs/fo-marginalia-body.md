@@ -48,5 +48,5 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:marginalia` -- parent formatting object that specifies destination and alignment
-- `fo:footnote-body` -- analogous formatting object for footnote content
+- [fo:marginalia](fo-marginalia.md) — parent formatting object that specifies destination and alignment
+- [fo:footnote-body](fo-footnote-body.md) — analogous formatting object for footnote content

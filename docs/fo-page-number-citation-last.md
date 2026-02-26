@@ -59,7 +59,7 @@ EMPTY
 
 ## See Also
 
-- fo:page-number-citation -- for citing the first page of a referenced formatting object
-- fo:page-number -- for the current page number
-- fo:folio-prefix -- for specifying a static prefix for folio numbers
-- fo:folio-suffix -- for specifying a static suffix for folio numbers
+- [fo:page-number-citation](fo-page-number-citation.md) — for citing the first page of a referenced formatting object
+- [fo:page-number](fo-page-number.md) — for the current page number
+- [fo:folio-prefix](fo-folio-prefix.md) — for specifying a static prefix for folio numbers
+- [fo:folio-suffix](fo-folio-suffix.md) — for specifying a static suffix for folio numbers

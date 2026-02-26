@@ -1,0 +1,327 @@
+### axf:media-activation
+
+Specifies when to activate / deactivate the rich media.
+Values have the following meanings (values are case insensitive, values
+other than these are ignored):
+‒
+ExplicitlyActivated: Activates when the content is clicked. It can be
+abbreviated as XA.
+
+‒
+PageOpen: Activates when the page containing the content is opened.
+It can be abbreviated as PO.
+‒
+PageVisible: Activates when the page containing the content is dis‐
+played. It can be abbreviated as PV.
+‒
+ExplicitlyDeactivated: Deactivates when “Disable Content” is selec‐
+ted from the context menu. It can be abbreviated as XD.
+‒
+PageClose: Dectivates when the page containing the content is clo‐
+sed. It can be abbreviated as PC.
+‒
+PageInvisible: Deactivates when the page containing the content is
+not displayed. It can be abbreviated as PI.
+If omitted, it is considered ExplicitlyActivated ExplicitlyDeactivated. This
+setting is effective when Rich media is activated.
+Applies to: <fo:external-graphic>
+Values: [ ExplicitlyActivated | PageOpen | PageVisible ]?
+[ ExplicitlyDeactivated | PageClose | PageInvisible ]?
+Initial: empty
+Inherited: no
+
+---
+
+### axf:media-duration
+
+Specifies the duration of a time period of the multimedia.
+CAUTION: Whether the setting is effective or not depends on the
+multimedia data, the viewer or the player. This setting is invalid with
+the rich media.
+Values have the following meanings:
+‒
+intrinsic: Plays the multimedia only the period of time that the
+resource has.
+‒
+infinity: Plays the multimedia indefinitely.
+‒
+<number>: Plays the multimedia only the specified period of time. The
+value is the number of seconds.
+This setting is invalid when axf:media-play-mode="once" is specified.
+
+Applies to: <fo:external-graphic>
+Values: intrinsic | infinity | <number>
+Initial: intrinsic
+Inherited: no
+
+---
+
+### axf:media-extraction-policy
+
+Specifies whether the creation of temporary files is allowed or not
+when playing the multimedia.
+CAUTION: Whether the setting is effective or not depends on the
+multimedia data, the viewer or the player. This setting is invalid with
+the rich media.
+Values have the following meanings:
+‒
+tempnever: The creation of temporary files is not allowed.
+‒
+tempextract: Only when the “copy of the contents” is given to the
+user right to access PDF, the creation of temporary files is allowed.
+‒
+tempaccess: Only when the “content extraction for accessibility” is
+given to the user right to access PDF, the creation of temporary files
+is allowed.
+‒
+tempalways: The creation of temporary files is always allowed.
+Applies to: <fo:external-graphic>
+Values: tempnever | tempextract | tempaccess | tempalways
+Initial: tempaccess
+Inherited: no
+
+---
+
+### axf:media-flash-context-menu
+
+Specifies whether to display the context menu of Flash When
+embedding Flash in the rich media.
+This setting is effective when embedding Flash in the Rich media.
+Applies to: <fo:external-graphic>
+Values: true | false
+
+Initial: true
+Inherited: no
+
+---
+
+### axf:media-flash-vars
+
+Specifies the variable when embedding Flash in the rich media.
+This setting is effective when embedding Flash in the Rich media.
+CAUTION: Even if there are some errors in the described content,
+these are not detected and output to PDF as is.
+Applies to: <fo:external-graphic>
+Values: <string>
+Initial: empty string
+Inherited: no
+
+---
+
+### axf:media-play-mode
+
+Specifies the number of times to play the multimedia.
+CAUTION: Whether the setting is effective or not depends on the
+multimedia data, the viewer or the player. This setting is invalid with
+the rich media.
+Values have the following meanings:
+‒
+once: Plays the multimedia only one time.
+‒
+continuously: Plays the multimedia continuously.
+‒
+<number>: Plays the multimedia only the specified number of times.
+Applies to: <fo:external-graphic>
+Values: once | continuously | <number>
+Initial: once
+Inherited: no
+
+---
+
+### axf:media-skin-auto-hide
+
+Specifies whether to automatically hide Rich Media skins or not.
+This setting is effective when the Rich Media is activated.
+
+Applies to: <fo:external-graphic>
+Values: true | false
+Initial: true
+Inherited: no
+
+---
+
+### axf:media-skin-color
+
+Specifies the skin color of the Rich Media.
+When the color does not contain the α value, the default α value is
+adopted. When α value is specified, that value is adopted. This setting is
+effective when the Rich media is activated.
+Applies to: <fo:external-graphic>
+Values: auto | <color>
+Initial: auto
+Inherited: no
+
+---
+
+### axf:media-skin-control
+
+Specifies the skin control of the Rich Media.
+Values have the following meanings:
+‒
+none: No controls are displayed.
+‒
+all: All controls are displayed.
+‒
+play: The playback control is displayed.
+‒
+stop: The stop control is displayed.
+‒
+forward: The fast-forward control is displayed.
+‒
+rewind: The rewind control is displayed.
+‒
+seek: The seek control is displayed.
+‒
+mute: The mute control is displayed.
+‒
+volume: The volume control is displayed.
+Other controls may be displayed automatically to display a certain
+control. This setting is effective when the Rich media is activated.
+Applies to: <fo:external-graphic>
+
+Values: none | all | [ play || stop || forward || rewind || seek || mute
+|| volume ]
+Initial: all
+Inherited: no
+
+---
+
+### axf:media-transparent-background
+
+Specifies whether to make the background transparent when
+embedding Flash in the Rich Media.
+Applies to: <fo:external-graphic>
+Values: true | false
+Initial: true
+Inherited: no
+
+---
+
+### axf:media-volume
+
+Specifies the volume of the sound when playing the multimedia.
+CAUTION: Whether the setting is effective or not depends on the
+multimedia data, the viewer or the player. It is effective also with the
+rich media, but when editing the multimedia with Acrobat, this setting
+seems to be canceled.
+Applies to: <fo:external-graphic>
+Values: <percentage> | <number> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:media-window-height
+
+Specifies the height of the window when
+axf:multimedia-treatment="richmedia-windowed" is specified. This setting is
+effective when the Rich media is activated.
+Applies to: <fo:external-graphic>
+Values: auto | <length>
+
+Initial: auto
+Inherited: no
+
+---
+
+### axf:media-window-width
+
+Specifies the width of the window when
+axf:multimedia-treatment="richmedia-windowed" is specified. This setting is
+effective when the Rich media is activated.
+Applies to: <fo:external-graphic>
+Values: auto | <length>
+Initial: auto
+Inherited: no
+
+---
+
+### axf:multimedia-treatment
+
+Specifies whether to embed Multimedia in PDF.
+Values have the following meanings:
+‒
+auto: The value specified by multimedia-treatment in the Option Set‐
+ting File is adopted.
+‒
+embed: Embeds the multimedia objects in PDF. It is not recommended
+for PDF 2.0 or later.
+‒
+absolute-link: Links the multimedia objects in PDF, instead of em‐
+bedding them. The linked multimedia objects are referred to as the
+absolute link. It is not recommended for PDF 2.0 or later.
+‒
+relative-link: Links the multimedia objects in PDF, instead of em‐
+bedding them. The linked multimedia objects are referred to as the
+relative link from either XML or FO. It is not recommended for PDF
+2.0 or later.
+‒
+richmedia: Embeds the multimedia as Rich media annotation. Effecti‐
+ve with PDF1.7 or later.
+
+‒
+richmedia-windowed: Embeds the multimedia as Rich media annota‐
+tion, but displayed in a separate window when playing. Effective
+with PDF1.7 or later.
+Applies to: <fo:external-graphic>
+Values: auto | embed | absolute-link | relative-link | richmedia |
+richmedia-windowed
+Initial: auto
+Inherited: yes
+
+---
+
+### axf:poster-content-type
+
+Specifies the content type of the poster image for embedded
+multimedia.
+Values have the following meanings:
+‒
+<string>: Specifies the content type of the poster image.
+‒
+auto: Recognizes the content type from the poster image.
+See also Multimedia in PDF Output in Output Formats of the Online
+Manual.
+Applies to: <fo:external-graphic>
+Values: <string> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:poster-image
+
+Specifies the poster image for embedded multimedia.
+Values have the following meanings:
+‒
+<uri-specification>: Specifies the URL of the poster image. Multime‐
+dia, such as video or audio, cannot be specified.
+‒
+none: Specifies no poster images.
+‒
+auto: Uses the plain fallback image for the poster image.
+See also Multimedia in PDF Output in Output Formats of the Online
+Manual.
+Applies to: <fo:external-graphic>
+Values: <uri-specification> | none | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:show-controls
+
+Specifies whether to show the player control bar for multimedia. The
+control bar is shown under the playing multimedia object. To prevent
+overlapping the control bar with another object, it is necessary to make
+enough space below the multimedia object.
+CAUTION: Whether the control bar is shown or not depends on the
+multimedia data, the viewer or the player. This setting is invalid with
+the Rich Media.
+Applies to: <fo:external-graphic>
+Values: true | false
+Initial: false
+Inherited: no
+
+---
+

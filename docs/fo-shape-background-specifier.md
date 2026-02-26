@@ -40,8 +40,8 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- fo:shape-path-specifier — specifies the intrusion path shape
-- fo:shape-border-specifier — specifies the border shape design
+- [fo:shape-path-specifier](fo-shape-path-specifier.md) — specifies the intrusion path shape
+- [fo:shape-border-specifier](fo-shape-border-specifier.md) — specifies the border shape design
 - Common Relative Position Properties
 - display-align property
 - height property

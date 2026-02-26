@@ -78,8 +78,8 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:layout-master-set -- parent container
-- fo:simple-page-master -- simpler page-master with fixed five-region model
-- fo:region-body -- used with fo:simple-page-master
-- fo:page-sequence -- references this master via master-reference
-- fo:page-sequence-master -- orchestrates page-master selection
+- [fo:layout-master-set](fo-layout-master-set.md) — parent container
+- [fo:simple-page-master](fo-simple-page-master.md) — simpler page-master with fixed five-region model
+- [fo:region-body](fo-region-body.md) — used with fo:simple-page-master
+- [fo:page-sequence](fo-page-sequence.md) — references this master via master-reference
+- [fo:page-sequence-master](fo-page-sequence-master.md) — orchestrates page-master selection

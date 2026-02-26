@@ -346,13 +346,13 @@ Resulting XSL-FO output showing `fo:table` with `table-layout="fixed"`, `proport
 
 ## See Also
 
-- `fo:table-and-caption` -- wraps a table with a caption
-- `fo:table-column` -- specifies column characteristics
-- `fo:table-header` -- table header rows
-- `fo:table-footer` -- table footer rows
-- `fo:table-body` -- table body rows
-- `fo:table-row` -- groups cells into rows
-- `fo:table-cell` -- individual cell content
-- `table-layout` property
-- `border-collapse` property
-- `proportional-column-width()` function
+- [fo:table-and-caption](fo-table-and-caption.md) — wraps a table with a caption
+- [fo:table-column](fo-table-column.md) — specifies column characteristics
+- [fo:table-header](fo-table-header.md) — table header rows
+- [fo:table-footer](fo-table-footer.md) — table footer rows
+- [fo:table-body](fo-table-body.md) — table body rows
+- [fo:table-row](fo-table-row.md) — groups cells into rows
+- [fo:table-cell](fo-table-cell.md) — individual cell content
+- table-layout property
+- border-collapse property
+- proportional-column-width() function

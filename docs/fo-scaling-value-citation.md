@@ -68,5 +68,5 @@ EMPTY
 
 ## See Also
 
-- fo:external-graphic -- the formatting object whose scale-factor is cited
-- fo:page-number-citation -- similar pattern for citing page numbers
+- [fo:external-graphic](fo-external-graphic.md) — the formatting object whose scale-factor is cited
+- [fo:page-number-citation](fo-page-number-citation.md) — similar pattern for citing page numbers

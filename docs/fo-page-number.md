@@ -58,8 +58,8 @@ EMPTY
 
 ## See Also
 
-- fo:page-number-citation -- for citing the page number of a referenced formatting object
-- fo:page-number-citation-last -- for citing the last page number of a referenced formatting object
-- fo:folio-prefix -- for specifying a static prefix for folio numbers
-- fo:folio-suffix -- for specifying a static suffix for folio numbers
-- fo:static-content -- common parent for running headers/footers containing page numbers
+- [fo:page-number-citation](fo-page-number-citation.md) — for citing the page number of a referenced formatting object
+- [fo:page-number-citation-last](fo-page-number-citation-last.md) — for citing the last page number of a referenced formatting object
+- [fo:folio-prefix](fo-folio-prefix.md) — for specifying a static prefix for folio numbers
+- [fo:folio-suffix](fo-folio-suffix.md) — for specifying a static suffix for folio numbers
+- [fo:static-content](fo-static-content.md) — common parent for running headers/footers containing page numbers

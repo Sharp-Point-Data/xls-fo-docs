@@ -60,8 +60,8 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## See Also
 
-- `fo:table` -- the parent table formatting object
-- `fo:table-header` -- table header rows
-- `fo:table-footer` -- table footer rows
-- `fo:table-row` -- groups cells into rows
-- `fo:table-cell` -- individual cell content
+- [fo:table](fo-table.md) — the parent table formatting object
+- [fo:table-header](fo-table-header.md) — table header rows
+- [fo:table-footer](fo-table-footer.md) — table footer rows
+- [fo:table-row](fo-table-row.md) — groups cells into rows
+- [fo:table-cell](fo-table-cell.md) — individual cell content

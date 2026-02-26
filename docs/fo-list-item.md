@@ -352,6 +352,6 @@ XSLT for the definition list -- detailed version (`dtdd.xsl`). Implements recurs
 
 ## See Also
 
-- `fo:list-block` -- parent formatting object that contains list items
-- `fo:list-item-label` -- child containing the label (bullet, number, etc.)
-- `fo:list-item-body` -- child containing the body content of the list item
+- [fo:list-block](fo-list-block.md) — parent formatting object that contains list items
+- [fo:list-item-label](fo-list-item-label.md) — child containing the label (bullet, number, etc.)
+- [fo:list-item-body](fo-list-item-body.md) — child containing the body content of the list item

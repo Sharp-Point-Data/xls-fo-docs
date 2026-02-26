@@ -43,7 +43,7 @@ No properties are listed in the spec for this formatting object. It serves as a 
 
 ## See Also
 
-- `fo:ruby` -- the parent formatting object
-- `fo:ruby-base` -- individual base text segments
-- `fo:ruby-text-container` -- the sibling container for annotation texts
-- `fo:ruby-text` -- individual annotation text segments
+- [fo:ruby](fo-ruby.md) — the parent formatting object
+- [fo:ruby-base](fo-ruby-base.md) — individual base text segments
+- [fo:ruby-text-container](fo-ruby-text-container.md) — the sibling container for annotation texts
+- [fo:ruby-text](fo-ruby-text.md) — individual annotation text segments

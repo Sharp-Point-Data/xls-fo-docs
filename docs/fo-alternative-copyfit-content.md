@@ -77,10 +77,10 @@ fames.</fo:block>
 
 ## See Also
 
-- fo:flow — parent container when copyfitting content into a region
-- fo:block-container — parent container when copyfitting in block-containers
-- fo:table-cell — parent container when copyfitting in table cells
-- fo:block — block-level children of the alternative content
-- Copyfitting model (area model specification, copyfitting section)
+- [fo:flow](fo-flow.md) — parent container when copyfitting content into a region
+- [fo:block-container](fo-block-container.md) — parent container when copyfitting in block-containers
+- [fo:table-cell](fo-table-cell.md) — parent container when copyfitting in table cells
+- [fo:block](fo-block.md) — block-level children of the alternative content
+- [Copyfitting model](guide-copyfitting.md) (area model specification, copyfitting section)
 - adjustable-properties — region property that enables copyfitting
 - display-align — controls vertical alignment used in copyfitting

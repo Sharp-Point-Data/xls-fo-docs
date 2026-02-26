@@ -50,8 +50,8 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:layout-master-set -- defines page masters used by the document
-- fo:declarations -- global declarations including color profiles
-- fo:bookmark-tree -- document bookmarks/outline
-- fo:page-sequence -- generates a sequence of pages from content
-- fo:page-sequence-wrapper -- groups page-sequences for inherited properties
+- [fo:layout-master-set](fo-layout-master-set.md) — defines page masters used by the document
+- [fo:declarations](fo-declarations.md) — global declarations including color profiles
+- [fo:bookmark-tree](fo-bookmark-tree.md) — document bookmarks/outline
+- [fo:page-sequence](fo-page-sequence.md) — generates a sequence of pages from content
+- [fo:page-sequence-wrapper](fo-page-sequence-wrapper.md) — groups page-sequences for inherited properties

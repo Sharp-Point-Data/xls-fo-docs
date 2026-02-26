@@ -68,7 +68,7 @@ The content must not contain an fo:leader, fo:inline-container, fo:block-contain
 
 ## See Also
 
-- fo:page-number-citation -- commonly used together with fo:leader in table-of-contents entries
-- fo:basic-link -- often wraps TOC heading text alongside the leader
-- fo:block -- used to contain an fo:leader for block-level rules
-- fo:inline -- for general inline-level formatting
+- [fo:page-number-citation](fo-page-number-citation.md) — commonly used together with fo:leader in table-of-contents entries
+- [fo:basic-link](fo-basic-link.md) — often wraps TOC heading text alongside the leader
+- [fo:block](fo-block.md) — used to contain an fo:leader for block-level rules
+- [fo:inline](fo-inline.md) — for general inline-level formatting

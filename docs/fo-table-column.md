@@ -56,9 +56,9 @@ EMPTY
 
 ## See Also
 
-- `fo:table` -- the parent table formatting object
-- `column-width` property
-- `column-number` property
-- `number-columns-repeated` property
-- `number-columns-spanned` property
-- `from-table-column()` function
+- [fo:table](fo-table.md) — the parent table formatting object
+- column-width property
+- column-number property
+- number-columns-repeated property
+- number-columns-spanned property
+- from-table-column() function

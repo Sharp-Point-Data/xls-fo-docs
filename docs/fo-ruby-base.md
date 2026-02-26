@@ -56,7 +56,7 @@ The `fo:ruby-base` can contain character data and/or inline-level formatting obj
 
 ## See Also
 
-- `fo:ruby` -- the parent formatting object for simple ruby
-- `fo:ruby-base-container` -- the parent for base text in complex ruby
-- `fo:ruby-text` -- the annotation text
-- `fo:ruby-parenthesis` -- fallback delimiters
+- [fo:ruby](fo-ruby.md) — the parent formatting object for simple ruby
+- fo:ruby-base-container — the parent for base text in complex ruby
+- [fo:ruby-text](fo-ruby-text.md) — the annotation text
+- [fo:ruby-parenthesis](fo-ruby-parenthesis.md) — fallback delimiters

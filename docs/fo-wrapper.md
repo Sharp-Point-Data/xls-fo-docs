@@ -104,6 +104,6 @@ in this sentence that also refers to a
 
 ## See Also
 
-- `fo:multi-properties` -- uses `fo:wrapper` as a child for applying merged property values
-- `fo:marker` -- can be an initial child of `fo:wrapper`
-- `fo:inline` -- an alternative for wrapping inline content with explicit area generation
+- [fo:multi-properties](fo-multi-properties.md) — uses fo:wrapper as a child for applying merged property values
+- [fo:marker](fo-marker.md) — can be an initial child of fo:wrapper
+- [fo:inline](fo-inline.md) — an alternative for wrapping inline content with explicit area generation

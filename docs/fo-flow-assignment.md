@@ -43,8 +43,8 @@ The children of the fo:flow-assignment are a source-list and target-list contain
 
 ## See Also
 
-- fo:flow-map — parent container for flow-assignment objects
-- fo:flow-source-list — specifies source flow names
-- fo:flow-target-list — specifies target region names
-- fo:flow-name-specifier — specifies individual flow names
-- fo:region-name-specifier — specifies individual region names
+- [fo:flow-map](fo-flow-map.md) — parent container for flow-assignment objects
+- [fo:flow-source-list](fo-flow-source-list.md) — specifies source flow names
+- [fo:flow-target-list](fo-flow-target-list.md) — specifies target region names
+- [fo:flow-name-specifier](fo-flow-name-specifier.md) — specifies individual flow names
+- [fo:region-name-specifier](fo-region-name-specifier.md) — specifies individual region names

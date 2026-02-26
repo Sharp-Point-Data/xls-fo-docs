@@ -58,6 +58,6 @@ The `fo:ruby-parenthesis` contains only character data, typically a single paren
 
 ## See Also
 
-- `fo:ruby` -- the parent formatting object
-- `fo:ruby-base` -- the base text being annotated
-- `fo:ruby-text` -- the annotation text
+- [fo:ruby](fo-ruby.md) — the parent formatting object
+- [fo:ruby-base](fo-ruby-base.md) — the base text being annotated
+- [fo:ruby-text](fo-ruby-text.md) — the annotation text

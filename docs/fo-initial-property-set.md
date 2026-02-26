@@ -81,5 +81,5 @@ presented with the first line in small-caps.
 
 ## See Also
 
-- fo:block -- the parent formatting object that contains fo:initial-property-set
-- fo:inline -- the inline-level formatting object whose behavior fo:initial-property-set emulates for the first line
+- [fo:block](fo-block.md) — the parent formatting object that contains fo:initial-property-set
+- [fo:inline](fo-inline.md) — the inline-level formatting object whose behavior fo:initial-property-set emulates for the first line

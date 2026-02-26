@@ -48,5 +48,5 @@ No code samples in spec for this formatting object. See the "Expandable/Collapsi
 
 ## See Also
 
-- `fo:multi-switch` -- parent formatting object that wraps all multi-case alternatives
-- `fo:multi-toggle` -- descendant formatting object that triggers case switching
+- [fo:multi-switch](fo-multi-switch.md) — parent formatting object that wraps all multi-case alternatives
+- [fo:multi-toggle](fo-multi-toggle.md) — descendant formatting object that triggers case switching

@@ -71,6 +71,6 @@ No code samples in spec for this formatting object. See the "Dynamic Effects: Li
 
 ## See Also
 
-- `fo:multi-switch` -- enables switching between alternative sub-trees, often combined with links
-- `fo:multi-properties` -- enables property switching based on active state (link, visited, hover, etc.)
-- `fo:multi-toggle` -- triggers switching between multi-case alternatives
+- [fo:multi-switch](fo-multi-switch.md) — enables switching between alternative sub-trees, often combined with links
+- [fo:multi-properties](fo-multi-properties.md) — enables property switching based on active state (link, visited, hover, etc.)
+- [fo:multi-toggle](fo-multi-toggle.md) — triggers switching between multi-case alternatives

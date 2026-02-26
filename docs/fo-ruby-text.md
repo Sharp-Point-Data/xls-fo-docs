@@ -56,10 +56,10 @@ The `fo:ruby-text` contains only character data (text content). It does not acce
 
 ## See Also
 
-- `fo:ruby` -- the parent formatting object for simple ruby
-- `fo:ruby-base` -- the base text being annotated
-- `fo:ruby-parenthesis` -- fallback delimiters for inline rendering
-- `fo:ruby-text-container` -- groups annotation texts for complex ruby
-- `ruby-size` property
-- `ruby-align` property
-- `ruby-position` property
+- [fo:ruby](fo-ruby.md) — the parent formatting object for simple ruby
+- [fo:ruby-base](fo-ruby-base.md) — the base text being annotated
+- [fo:ruby-parenthesis](fo-ruby-parenthesis.md) — fallback delimiters for inline rendering
+- [fo:ruby-text-container](fo-ruby-text-container.md) — groups annotation texts for complex ruby
+- ruby-size property
+- ruby-align property
+- ruby-position property

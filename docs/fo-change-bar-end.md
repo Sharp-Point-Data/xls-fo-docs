@@ -40,4 +40,4 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:change-bar-begin` -- matching formatting object that starts the change region and specifies styling
+- [fo:change-bar-begin](fo-change-bar-begin.md) — matching formatting object that starts the change region and specifies styling

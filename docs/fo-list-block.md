@@ -148,6 +148,6 @@ Resulting XSL-FO output with `fo:list-block` containing three `fo:list-item` ele
 
 ## See Also
 
-- `fo:list-item` -- child formatting object containing label and body for each list entry
-- `fo:list-item-label` -- contains the label content (bullet, number, etc.)
-- `fo:list-item-body` -- contains the body content of a list item
+- [fo:list-item](fo-list-item.md) — child formatting object containing label and body for each list entry
+- [fo:list-item-label](fo-list-item-label.md) — contains the label content (bullet, number, etc.)
+- [fo:list-item-body](fo-list-item-body.md) — contains the body content of a list item

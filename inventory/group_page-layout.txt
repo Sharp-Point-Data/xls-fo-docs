@@ -1,0 +1,232 @@
+### axf:bleed-top
+
+Specifies the width of the bleed area for cutting off.
+The area of the bleed is taken outside the trim size. In order to specify
+the same values vertically and horizontally, axf:bleed can be used.
+In order to specify individual values, axf:bleed-top, axf:bleed-bottom,
+axf:bleed-left and axf:bleed-right can be used. When axf:bleed and
+others are specified simultaneously, individual axf:bleed-* properties
+take priority.
+Applies to: <fo:simple-page-master>
+Values: <length>
+Initial: 0pt
+Inherited: no
+
+---
+
+### axf:crop-area-visibility
+
+Specifies whether to display the area that is extended beyond the trim
+size. Specifies whether the area that overflows on the margin specified
+with axf:crop-offset is clipped with the trim size, if there is a bleed
+area, clipped with the bleed area, or the extended area is displayed.
+Applies to: <fo:simple-page-master>
+Values: hidden | visible
+Initial: hidden
+Inherited: no
+
+---
+
+### axf:crop-offset-top
+
+Specifies the distance from the physical end to the trim size of the
+output medium.
+
+The trim size is specified by the page-width and page-height properties.
+axf:crop-offset is for specifying how much the space is taken outside
+the trim size. In order to specify the same values vertically and
+horizontally, axf:crop-offset can be used. In order to specify individual
+values, axf:crop-offset-top, axf:crop-offset-bottom, axf:crop-offset-left
+and axf:crop-offset-right can be used. When axf:crop-offset and others
+are specified simultaneously, individual axf:crop-offset-* properties
+take priority.
+CAUTION: If the value of axf:bleed is greater than the value of
+axf:crop-offset, axf:crop-offset is adjusted to that value. To make the
+trim size the size of the basic printing image, set axf:bleed and axf:crop-
+offset to 0.
+Applies to: <fo:simple-page-master>
+Values: <length>
+Initial: 0pt
+Inherited: no
+
+---
+
+### axf:printer-bin-selection
+
+Selects the printer tray.
+
+Effective only with the Windows version and functions when
+outputting to a printer. Whether it is effective also depends on a
+printer. What can be specified by the character string is the tray name
+which comes out in each printer setting dialog. This is the tray name
+acquired from a printer driver. The specified name which does not
+match to the tray name acquired from a printer driver is invalid. The
+specified integer needs to match to the tray number acquired from a
+printer driver.
+Applies to: <fo:page-sequence>
+Values: <string> | <integer>
+Initial: depends on the environment
+Inherited: no
+
+---
+
+### axf:printer-duplex
+
+Specifies to print in duplex mode.
+Effective only with the Windows version and functions when
+outputting to a printer. Whether it is effective also depends on a
+printer. Specify the value that is specified by the printer driver. Most
+printers support following integer values:
+1: Simplex Printing.
+2: Duplex Printing. Flip on Long(Vertical) Edge.
+3: Duplex Printing. Flip on Short(Horizontal) Edge.
+Applies to: <fo:page-sequence>
+Values: <integer>
+Initial: depends on the environment
+Inherited: no
+
+---
+
+### axf:printer-marks
+
+Specifies the Printing marks, such as a crop mark. Specifies the action
+of external link.
+
+Values have the following meanings:
+‒
+crop: Outputs corner marks. Outputs corner marks to the position of
+the trim size and the position of the bleed area if it exists. When
+corner marks are output to both the position of the trim size and the
+position of the bleed area, they are combinations of crop marks and
+bleed marks in Japanese style.
+‒
+crop-trim: Outputs corner marks only to the position of the trim size
+(crop marks).
+‒
+cross: Outputs cross-shaped marks.
+‒
+cross-circle: Outputs cross-shaped marks with concentric circle.
+‒
+cross-registration: Outputs registration marks.
+‒
+<uri-specification>: Original printer marks, color bars, etc. can be
+outputted by specifying images, such as SVG. Two or more URIs
+can be specified. Images will be clipped at the bleed area. To avoid
+clipping, specify axf:printer-marks-over-content="true".
+Applies to: <fo:simple-page-master>
+Values: [ [ crop | crop-trim ] || [ cross | cross-circle | cross-
+registration ] || <uri-specification>+ ] | none
+Initial: none
+Inherited: no
+
+---
+
+### axf:printer-marks-line-color
+
+Specifies the line color of printer marks. When the value is auto, the
+color is considered the registration color.
+Applies to: <fo:simple-page-master>
+Values: <color> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:printer-marks-line-length
+
+Specifies the line length of printer marks. When the value is auto, the
+length depends on the system setting. The default length of a printer
+mark is 10mm, it can be adjusted in the Option Setting File.
+Applies to: <fo:simple-page-master>
+Values: <length> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:printer-marks-line-width
+
+Specifies the line width of printer marks. When the value is auto, the
+width depends on the system setting. The default width of a printer
+mark is 0.24pt, it can be adjusted in the Option Setting File.
+Applies to: <fo:simple-page-master>
+Values: <length> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:printer-marks-over-content
+
+Specifies whether printer marks are drawn over the page content.
+Applies to: <fo:simple-page-master>
+Values: false | true
+Initial: false
+Inherited: no
+If true is specified, printer marks can be drawn over the page content.
+
+---
+
+### axf:printer-marks-spine-width
+
+Specifies the spine width of the facing page. When a value greater
+than 0pt is specified, the printing image is assumed to be constructed
+
+as facing pages, the center mark of the spine will be outputted as a
+spine-width printer mark.
+Applies to: <fo:simple-page-master>
+Values: <length>
+Initial: 0pt
+Inherited: no
+
+---
+
+### axf:printer-marks-zero-margin
+
+Specifies the margin between the page and the printer marks when
+axf:bleed is 0. When the value is auto, the margin depends on the
+system setting. The default margin is 3mm, it can be adjusted in the
+Option Setting File.
+Applies to: <fo:simple-page-master>
+Values: <length> | auto
+Initial: auto
+Inherited: no
+
+---
+
+### axf:reverse-page
+
+Outputs pages in reverse order.
+Values have the following meanings:
+‒
+true: Outputs pages in reverse order.
+‒
+false: Outputs pages in order.
+Applies to: <fo:page-sequence>
+Values: true | false
+Initial: false
+Inherited: no
+
+---
+
+### axf:reverse-page-number
+
+Places page numbers in reverse order.
+By specifying axf:reverse-page-number="true", the page number reference
+in <fo:page-sequence> is counted from the last page of <fo:page-sequence>
+in descending order. When pages with different formatting directions
+are mixed, together with="true", it is available to align the page
+numbers in one order when outputting PDF.
+Values have the following meanings:
+‒
+true: Places page numbers in reverse order.
+‒
+false: Places page numbers in order.
+Applies to: <fo:page-number>, <fo:page-number-citation>,
+<fo:page-number-citation-last>
+Values: true | false
+Initial: false
+Inherited: no
+
+---
+

@@ -59,5 +59,5 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:declarations -- parent container for color profile declarations
-- fo:root -- top-level element that contains fo:declarations
+- [fo:declarations](fo-declarations.md) — parent container for color profile declarations
+- [fo:root](fo-root.md) — top-level element that contains fo:declarations

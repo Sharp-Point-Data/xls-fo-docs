@@ -1,0 +1,343 @@
+===PAGE 264===
+Parent: <font-settings>
+Attributes: src, dst
+2.1.3 
+PDF Output Settings
+<pdf-settings> 
+The PDF settings apply to the PDF output of the AH XSL Formatter. For
+the attributes not linked here, please refer to the section “PDF Output
+Settings” in the AH XSL Formatter Online Manual (file: ahf-optset.html).
+Properties: allow-deprecated-annotation, allow-embedding-lower-versions,
+allow-javascript, allow-nest-alt-text, check-tag-relationship, color-
+compression, color-compression-default, color-compression-minimum,
+color-conversion, color-downsampling, color-downsampling-above-dpi,
+color-downsampling-target-dpi, color-downsampling-default, color-
+downsampling-above-dpi-default, color-downsampling-target-dpi-default,
+color-downsampling-minimum, color-downsampling-above-dpi-minimum,
+color-downsampling-target-dpi-minimum, color-jpeg-quality, color-jpeg-
+quality-default, color-jpeg-quality-minimum, default-output-intent,
+embed-all-fonts, embed-font-encoding, embed-std-output-intent, embed-subset-
+font-percentage, encrypt-metadata, encryption-level, EPS-processor, error-
+on-embed-fault, error-on-missing-glyph, error-on-pdfx-fault, fallback-
+alttext, ghostscript, grayscale-compression, grayscale-compression-
+default, grayscale-compression-minimum, grayscale-downsampling, grayscale-
+downsampling-above-dpi, grayscale-downsampling-target-dpi, grayscale-
+downsampling-default, grayscale-downsampling-above-dpi-default, grayscale-
+downsampling-target-dpi-default, grayscale-downsampling-minimum, grayscale-
+downsampling-above-dpi-minimum, grayscale-downsampling-target-dpi-minimum,
+grayscale-jpeg-quality, grayscale-jpeg-quality-default, grayscale-jpeg-
+Font Settings
+<font-alias>
+264
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 265===
+quality-minimum, gs-options, image-color-profile, import-annotation-types,
+import-tagged-pdf, joboptions, linearized, mediabox-origin-zero, monochrome-
+compression, monochrome-compression-default, monochrome-compression-minimum,
+monochrome-downsampling, monochrome-downsampling-above-dpi, monochrome-
+downsampling-target-dpi, monochrome-downsampling-default, monochrome-
+downsampling-above-dpi-default, monochrome-downsampling-target-dpi-default,
+monochrome-downsampling-minimum, monochrome-downsampling-above-dpi-minimum,
+monochrome-downsampling-target-dpi-minimum, multimedia-treatment,
+new-tagging-mode, no-accessibility, no-adding-or-changing-comments, no-
+assemble-doc, no-changing, no-content-copying, no-fill-form, object-
+compression, object-compression-default, object-compression-minimum,
+overprint, owner-password, page-labels, pages-max-kids, pass-through,
+pass-through-default, pass-through-minimum, pdf-version, printing-
+allowed, rasterize-resolution, real-value-limit, real-value-limit-modify,
+reverse-page, tagged-pdf, text-and-lineart-compression, text-and-lineart-
+compression-default, text-and-lineart-compression-minimum, transparency,
+transparency-color-space, use-launch-for-local-file, user-password, xmp-
+padding
+Parent: <formatter-config>
+Child: <embed-font>
+allow-deprecated-annotation
+In PDF2.0, some annotations (Movie, Sound) are deprecated. These
+cannot be output. If you specify true, you will be able to output these in
+PDF2.0.
+Applies to: <pdf-settings>
+Values: false | true
+Default: false
+PDF Output Settings
+<pdf-settings>
+265
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 266===
+allow-embedding-lower-versions
+In PDF2.0, embedding of PDF1.X is deprecated. If you specify true, you
+will be able to embed PDF1.X in PDF2.0.
+Applies to: <pdf-settings>
+Values: false | true
+Default: false
+embed-all-fonts
+Specifies whether or not to embed in the PDF all fonts that are
+embeddable, with one of the following values:
+‒
+false: Only fonts specified in <embed-font> are embedded.
+‒
+true: All fonts that can be embedded will be embedded, except for
+the Standard 14 Fonts.
+‒
+base14: All fonts that can be embedded will be embedded, including
+the Standard 14 Fonts.
+In the GUI, this can be specified by selecting the Embed All
+Embeddable Fonts option.
+Applies to: <pdf-settings>
+Values: false | true | base14
+Default: true
+EPS-processor
+Specifies whether to output PDF after changing into PDF using an
+external processor when outputting EPS to PDF in the formatted result.
+The value is case-insensitive.
+‒
+none
+‒
+distiller
+‒
+ghostscript
+These have the following meanings:
+‒
+none: Use nothing. The same way in the past.
+PDF Output Settings
+allow-embedding-lower-versions
+266
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 267===
+‒
+distiller: Use Adobe Distiller in the environment where Adobe
+Distiller is installed. acrodist.exe is used. Effective only with the
+Windows version. PS support at this time has a little restrictions.
+•
+PS-Adobe-2.0 or later required.
+•
+%%BeginProlog and %%EndProlog should be included.
+☞ joboptions
+‒
+ghostscript: Use Ghostscript in the environment where Ghosts‐
+cript is installed. Use gswin32c.exe with the Windows version (use
+gswin64c.exe with Windows 64-bit) and use gs with non-Windows.
+Since the program is invoked by fork() etc. and used, there is no
+problem with GPL license.
+☞ ghostscript
+Invalid in the environment where each processor is not installed.
+Moreover, it's necessary to set the PATH etc. of the program to use.
+Applies to: <pdf-settings>
+Values: none | ghostscript | distiller
+Default: none
+ghostscript 
+When converting EPS into PDF using Ghostscript, the full path to
+Ghostscript can be specified. For example, specify as ghostscript="/usr/
+local/bin/gs". Thereby, Ghostscript can be invoked even if the PATH
+does not set to Ghostscript. Specify gswin32c.exe in Windows version
+(specify gswin64c.exe with Windows 64-bit).
+Applies to: <pdf-settings>
+Values: path to Ghostscript program
+Default: none
+PDF Output Settings
+EPS-processor
+267
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 268===
+gs-options
+When converting EPS into PDF using Ghostscript, AH Formatter V7.2
+specifies the following parameters and starts Ghostscript by default:
+-dPDFSETTINGS=/printer
+-dNOPAUSE
+-dBATCH
+-dSAFER
+-sDEVICE=pdfwrite
+-dDEVICEWIDTHPOINTS=%width
+-dDEVICEHEIGHTPOINTS=%height
+-dEPSFitPage
+-dCompatibilityLevel=1.3
+-dAutoRotatePages=/None
+-q
+-sOutputFile=%temp
+-c
+.setpdfwrite
+-f
+%eps
+The next four starting with % are replaced by their respective values by
+AH Formatter V7.2.
+‒
+%width: Width of EPS
+‒
+%height: Height of EPS
+‒
+%eps: Input EPS
+‒
+%temp: Temporary Output File
+You can specify any parameter with gs-options. Specify multiple
+parameters separated by U+000A. The gs-options setting completely
+replaces the above settings and launches Ghostscript. The setting of
+-sOutputFile is always considered to be -sOutputFile=%temp. If %temp is not
+included, it will be added. If %eps is not included, it will be added at
+PDF Output Settings
+gs-options
+268
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 269===
+the end. The operation is not guaranteed when invalid parameters are
+specified.
+Applies to: <pdf-settings>
+Values: if necessary, other parameters, separated by the character
+U+000A.
+Default: none
+import-annotation-types
+Annotations contained in the embedded PDF is embeddable directly
+in PDF. Specify the following character strings (case insensitive)
+separated by white spaces:
+All | Text | Link | FreeText | Line | Square | Circle | Polygon | PolyLine |
+Highlight | Underline | Squiggly | StrikeOut | Stamp | Caret | Ink | Popup |
+FileAttachment | Sound | Movie | Screen | 3D | RichMedia | Other
+Specify Other when you embed annotations with no type written.
+When All is specified, all the annotations are embedded. In GUI, it
+can be specified by selecting the Import All Annotations option. For more
+details, see also PDF Embedding in PDF Output of the Online Manual.
+Applies to: <pdf-settings>
+Values: see above
+Default: none
+import-tagged-pdf
+Specifies whether to permit embedding tagged PDF in tagged PDF. If
+true is specified, the tagged PDF is embedded “as is” without producing
+an error. In GUI, you can change the setting at Allow Importing Tagged
+PDF. For more details, see also PDF Embedding in PDF Output of the
+Online Manual.
+Applies to: <pdf-settings>
+Values: false | true
+PDF Output Settings
+gs-options
+269
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 270===
+Default: false
+multimedia-treatment
+Specifies whether to embed multimedia (see Multimedia in PDF Output
+of the Online Manual) in PDF in case of axf:multimedia-treatment="auto",
+with one of the following values:
+‒
+embed
+‒
+absolute-link
+‒
+relative-link
+‒
+richmedia
+‒
+richmedia-windowed
+Applies to: <pdf-settings>
+Values: embed | absolute-link | relative-link | richmedia | richmedia-
+windowed
+Default: embed
+new-tagging-mode
+If true is specified, when explicitly specifying an empty string such
+as axf:pdftag="''", that element does not create a tag but belongs to
+the tag to which the parent area belongs. In addition, the Role Map is
+also enabled, and maps from nonstandard tag names to standard tag
+names are valid. Specifying axf:pdftag="''" on the root element has no
+effect since the root element does not have a parent: a Document tag is
+always created.
+Applies to: <pdf-settings>
+Values: true | false
+Default: false
+PDF Output Settings
+import-tagged-pdf
+270
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 271===
+overprint
+Specifies the overprint. Any values of axf:overprint other than auto can
+be specified.
+Applies to: <pdf-settings>
+Values: see axf:overprint
+Default: none
+pdf-version
+Specifies the version of the PDF to create with one of the following
+values:
+‒
+PDF1.3
+‒
+PDF1.4
+‒
+PDF1.5 (system setting)
+‒
+PDF1.6
+‒
+PDF1.7 (can be read with Adobe Acrobat Reader, version 8.0 or hig‐
+her)
+‒
+PDF2.0 (compliant with ISO 32000-2:2017)
+‒
+PDF/X (optimized for print output) with the variants 1a:2001, 3:2002,
+1a:2003, 2:2003, 3:2003, 4:2010 and 4p:2010 (ISO 15930-7:2010)
+‒
+PDF/A (optimized for archiving) with the variants 1a:2005 and 1b:2005)
+‒
+PDF1.4/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF1.5/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF1.6/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF1.7/A (optimized for archiving) with the variants 2a:2011, 2b:2011,
+2u:2011, 3a:2012, 3b:2012 and 3u:2012)
+‒
+PDF/UA (Universal Accessibility; optimized for facilitated content ac‐
+cessibility). Alternative textual descriptions (required for graphics
+PDF Output Settings
+overprint
+271
+© 2021 MID/Information Logistics ‒ All rights reserved
+
+
+===PAGE 272===
+and numeric formulas) can be specified with the axf:alttext exten‐
+sion, links with axf:annotation-contents:
+PDF1.5/UA-1:2014
+PDF1.6/UA-1:2014
+PDF1.7/UA-1:2014
+In GUI, it can be specified by selecting the PDF Version option.
+Applies to: <pdf-settings>
+Values: see the versions above
+Default: PDF1.5
+tagged-pdf
+Specifies whether to make the Tagged PDF file or not. PDF may not
+be able to be tagged depending on the PDF versions. In this case this
+setting will be ignored. In GUI, it can be specified by selecting the
+Tagged PDF option.
+Applies to: <pdf-settings>
+Values: true | false
+Default: false
+<embed-font>
+Specifies the fonts that are embedded in the PDF. This element
+can be specified without limit and is effective only when
+embed-all-fonts="false" is specified. When embed-all-fonts="false" is
+specified and this element is not specified, only the glyphs of the
+characters that are needed in the PDF output are embedded. When
+this element is specified and if the font indicated here is used within
+the formatted results, the glyph of the character currently used will
+be embedded. For a font that is not specified, embedding is performed
+only for the glyphs of the characters that are needed in the PDF output.
+Parent: <pdf-settings>
+PDF Output Settings
+pdf-version
+272
+© 2021 MID/Information Logistics ‒ All rights reserved
+

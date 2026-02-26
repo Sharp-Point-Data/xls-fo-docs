@@ -58,7 +58,7 @@ The order of concatenation of the sequences of areas returned by the children of
 
 ## See Also
 
-- `fo:table-header-alternatives` -- the parent formatting object
-- `fo:table-header` -- the table header section
-- `fo:conditional-table-footer-reference` -- the equivalent for footers
-- `header-position` property
+- [fo:table-header-alternatives](fo-table-header-alternatives.md) — the parent formatting object
+- [fo:table-header](fo-table-header.md) — the table header section
+- [fo:conditional-table-footer-reference](fo-conditional-table-footer-reference.md) — the equivalent for footers
+- header-position property

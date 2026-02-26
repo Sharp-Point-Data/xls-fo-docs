@@ -50,10 +50,10 @@ The `fo:static-content` may be processed multiple times and thus the default ord
 
 ## See Also
 
-- `fo:page-sequence` -- parent formatting object that contains static-content and flows
-- `fo:flow` -- provides the main flowing content that is distributed across pages
-- `fo:region-before` -- commonly used region for header static content
-- `fo:region-after` -- commonly used region for footer static content
-- `fo:region-start` -- start-side region that can hold static content
-- `fo:region-end` -- end-side region that can hold static content
-- `fo:retrieve-marker` -- retrieves marker content for use in running headers/footers
+- [fo:page-sequence](fo-page-sequence.md) — parent formatting object that contains static-content and flows
+- [fo:flow](fo-flow.md) — provides the main flowing content that is distributed across pages
+- [fo:region-before](fo-region-before.md) — commonly used region for header static content
+- [fo:region-after](fo-region-after.md) — commonly used region for footer static content
+- [fo:region-start](fo-region-start.md) — start-side region that can hold static content
+- [fo:region-end](fo-region-end.md) — end-side region that can hold static content
+- [fo:retrieve-marker](fo-retrieve-marker.md) — retrieves marker content for use in running headers/footers

@@ -84,12 +84,12 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:root -- parent element
-- fo:page-sequence-master -- defines the sequence of page masters used
-- fo:simple-page-master -- defines a single page layout
-- fo:page-master -- defines an arbitrary page layout with multiple regions
-- fo:flow -- contains the flowing content for the page-sequence
-- fo:static-content -- contains repeated content (headers/footers)
-- fo:title -- optional title for the page-sequence
-- fo:page-sequence-wrapper -- groups page-sequences for inherited properties
-- fo:flow-map -- controls assignment of flows to regions
+- [fo:root](fo-root.md) — parent element
+- [fo:page-sequence-master](fo-page-sequence-master.md) — defines the sequence of page masters used
+- [fo:simple-page-master](fo-simple-page-master.md) — defines a single page layout
+- [fo:page-master](fo-page-master.md) — defines an arbitrary page layout with multiple regions
+- [fo:flow](fo-flow.md) — contains the flowing content for the page-sequence
+- [fo:static-content](fo-static-content.md) — contains repeated content (headers/footers)
+- [fo:title](fo-title.md) — optional title for the page-sequence
+- [fo:page-sequence-wrapper](fo-page-sequence-wrapper.md) — groups page-sequences for inherited properties
+- [fo:flow-map](fo-flow-map.md) — controls assignment of flows to regions

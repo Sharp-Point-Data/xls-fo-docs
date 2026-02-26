@@ -54,8 +54,8 @@ Empty.
 
 ## See Also
 
-- `fo:simple-page-master` -- parent formatting object that contains region definitions
-- `fo:extension-region-end` -- the corresponding extension region on the end side
-- `fo:region-body` -- the central content region adjacent to this extension region
-- `fo:region-start` -- the standard start-side region (distinct from this extension region)
-- `fo:marginalia` -- the formatting object for marginalia content assigned to extension regions
+- [fo:simple-page-master](fo-simple-page-master.md) — parent formatting object that contains region definitions
+- [fo:extension-region-end](fo-extension-region-end.md) — the corresponding extension region on the end side
+- [fo:region-body](fo-region-body.md) — the central content region adjacent to this extension region
+- [fo:region-start](fo-region-start.md) — the standard start-side region (distinct from this extension region)
+- [fo:marginalia](fo-marginalia.md) — the formatting object for marginalia content assigned to extension regions

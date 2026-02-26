@@ -54,6 +54,6 @@ The sequence of returned areas must be the concatenation of the sub-sequences of
 
 ## See Also
 
-- `fo:page-sequence` -- parent formatting object that contains the title
-- `fo:flow` -- the main flowing content of the page-sequence
-- `fo:static-content` -- repeating content for headers and footers
+- [fo:page-sequence](fo-page-sequence.md) — parent formatting object that contains the title
+- [fo:flow](fo-flow.md) — the main flowing content of the page-sequence
+- [fo:static-content](fo-static-content.md) — repeating content for headers and footers

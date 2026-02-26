@@ -94,7 +94,7 @@ No code samples in spec for this formatting object's own section. For complete e
 
 ## See Also
 
-- fo:repeatable-page-master-alternatives -- parent container
-- fo:page-sequence-master -- grandparent that defines the overall page selection sequence
-- fo:simple-page-master -- the page-master referenced by master-reference
-- fo:page-master -- alternative page-master that may be referenced
+- [fo:repeatable-page-master-alternatives](fo-repeatable-page-master-alternatives.md) — parent container
+- [fo:page-sequence-master](fo-page-sequence-master.md) — grandparent that defines the overall page selection sequence
+- [fo:simple-page-master](fo-simple-page-master.md) — the page-master referenced by master-reference
+- [fo:page-master](fo-page-master.md) — alternative page-master that may be referenced

@@ -87,11 +87,11 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## See Also
 
-- `fo:ruby-base` -- contains the base text being annotated
-- `fo:ruby-text` -- contains the annotation text
-- `fo:ruby-parenthesis` -- fallback delimiters for inline rendering
-- `fo:ruby-base-container` -- groups multiple base texts for complex ruby
-- `fo:ruby-text-container` -- groups multiple annotation texts for complex ruby
-- `ruby-align` property
-- `ruby-position` property
-- `ruby-overhang` property
+- [fo:ruby-base](fo-ruby-base.md) — contains the base text being annotated
+- [fo:ruby-text](fo-ruby-text.md) — contains the annotation text
+- [fo:ruby-parenthesis](fo-ruby-parenthesis.md) — fallback delimiters for inline rendering
+- fo:ruby-base-container — groups multiple base texts for complex ruby
+- [fo:ruby-text-container](fo-ruby-text-container.md) — groups multiple annotation texts for complex ruby
+- ruby-align property
+- ruby-position property
+- ruby-overhang property

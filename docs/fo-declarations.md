@@ -39,5 +39,5 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:root -- parent element that contains fo:declarations
-- fo:color-profile -- child element for declaring ICC Color Profiles
+- [fo:root](fo-root.md) — parent element that contains fo:declarations
+- [fo:color-profile](fo-color-profile.md) — child element for declaring ICC Color Profiles

@@ -54,7 +54,7 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:page-sequence-master -- parent container
-- fo:repeatable-page-master-reference -- for repeated use of a single page-master
-- fo:repeatable-page-master-alternatives -- for conditional page-master selection
-- fo:simple-page-master -- the page-master referenced by master-reference
+- [fo:page-sequence-master](fo-page-sequence-master.md) — parent container
+- [fo:repeatable-page-master-reference](fo-repeatable-page-master-reference.md) — for repeated use of a single page-master
+- [fo:repeatable-page-master-alternatives](fo-repeatable-page-master-alternatives.md) — for conditional page-master selection
+- [fo:simple-page-master](fo-simple-page-master.md) — the page-master referenced by master-reference

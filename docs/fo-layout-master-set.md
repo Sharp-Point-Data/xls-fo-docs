@@ -45,9 +45,9 @@ No code samples in spec for this formatting object. The spec section contains on
 
 ## See Also
 
-- fo:root -- parent element that must contain at least one fo:layout-master-set
-- fo:simple-page-master -- defines a page layout with predefined region structure
-- fo:page-master -- defines a page layout with arbitrary regions
-- fo:page-sequence-master -- defines page selection logic for a page-sequence
-- fo:flow-map -- defines flow-to-region assignments
-- fo:page-sequence -- references masters by name via master-reference
+- [fo:root](fo-root.md) — parent element that must contain at least one fo:layout-master-set
+- [fo:simple-page-master](fo-simple-page-master.md) — defines a page layout with predefined region structure
+- [fo:page-master](fo-page-master.md) — defines a page layout with arbitrary regions
+- [fo:page-sequence-master](fo-page-sequence-master.md) — defines page selection logic for a page-sequence
+- [fo:flow-map](fo-flow-map.md) — defines flow-to-region assignments
+- [fo:page-sequence](fo-page-sequence.md) — references masters by name via master-reference

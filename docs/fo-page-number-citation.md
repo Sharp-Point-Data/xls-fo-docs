@@ -158,7 +158,7 @@ The following three-part example from the spec demonstrates how fo:page-number-c
 
 ## See Also
 
-- fo:page-number -- for the current page number
-- fo:page-number-citation-last -- for citing the last page containing areas from a formatting object
-- fo:leader -- commonly used with fo:page-number-citation in TOC entries
-- fo:basic-link -- for creating hyperlinks alongside page citations
+- [fo:page-number](fo-page-number.md) — for the current page number
+- [fo:page-number-citation-last](fo-page-number-citation-last.md) — for citing the last page containing areas from a formatting object
+- [fo:leader](fo-leader.md) — commonly used with fo:page-number-citation in TOC entries
+- [fo:basic-link](fo-basic-link.md) — for creating hyperlinks alongside page citations

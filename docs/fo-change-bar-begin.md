@@ -55,4 +55,4 @@ No code samples in spec for this formatting object.
 
 ## See Also
 
-- `fo:change-bar-end` -- matching formatting object that ends the change region
+- [fo:change-bar-end](fo-change-bar-end.md) — matching formatting object that ends the change region

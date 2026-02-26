@@ -1,0 +1,425 @@
+# Antenna House Extension Properties: Line Numbering Properties
+
+<!-- Source: XSL-FO-Reference-74-MID.pdf pp.312-476 -->
+
+Comprehensive line numbering support including line number display, styling (font, color, position), intervals, and continued-line markers.
+
+## axf:line-continued-mark
+
+When the line with long text strings is broken and continues to the next line, line continued marks can be applied to the end of line. It is invalid inside `<fo:float>` or `<fo:footnote>`.
+
+Values have the following meanings:
+- **\<string\>**: Line continued marks with the specified character strings are shown. If the character strings are empty, line continued marks are not shown.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `<string>` |
+| **Initial** | empty string |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-background-color
+
+Specifies the background color of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `<color>` |
+| **Initial** | `transparent` |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-color
+
+Specifies the color of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `<color>` |
+| **Initial** | depends on the current line area |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-font-family
+
+Specifies the font family of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `[ <family-name> \| <generic-family> ]#` |
+| **Initial** | depends on the current line area |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-font-size
+
+Specifies the font size of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `<absolute-size> \| <relative-size> \| <length> \| <percentage>` |
+| **Initial** | depends on the current line area |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-font-style
+
+Specifies whether to make the font style italic of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `normal \| italic` |
+| **Initial** | depends on the current line area |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-font-weight
+
+Specifies the font weight of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `normal \| bold \| bolder \| lighter \| 100 \| 200 \| 300 \| 400 \| 500 \| 600 \| 700 \| 800 \| 900 \| 1000` |
+| **Initial** | depends on the current line area |
+| **Inherited** | yes |
+
+## axf:line-continued-mark-offset
+
+Specifies the offset of line continued marks.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>` |
+| **Values** | `<length>` |
+| **Initial** | `0pt` |
+| **Inherited** | yes |
+
+## axf:line-number
+
+Specifies whether to show line numbers.
+
+Values have the following meanings:
+- **none**: Line numbers are not generated.
+- **show**: Line numbers are shown.
+- **hide**: Line numbers are not shown but the numbers of the line are counted.
+
+Line numbers are counted against the lines inside the block where `axf:line-number="show"` or `axf:line-number="hide"` is specified.
+
+If `axf:line-number` is specified to `<fo:table-column>`, independent line numbers are given to the column of the table. At this time, the same setting available for `<fo:page-sequence>` can be specified. The ID reference can be specified to `<fo:table-column>` as `axf:line-number-initial="#xxx"`. The ID must be the same as the one specified to the existing `<fo:table-column>`. The value specified to that column is adopted as the default value of the line number information. A reference to a following column is invalid.
+
+The following shows the example:
+
+```xml
+...
+<fo:page-sequence ... axf:line-number="show"/>
+...
+<fo:table>
+   <fo:table-column/>
+   <fo:table-column axf:line-number="show" id="c2"/>
+   <fo:table-body>
+   ...
+   </fo:table-body>
+</fo:table>
+```
+
+In this table, line numbers specified to `<fo:page-sequence>` are given to the left column and line numbers specified to `<fo:table-column id="c2">` are given to the right column independently. In the following table, if you specify as follows:
+
+```xml
+<fo:table>
+   <fo:table-column/>
+   <fo:table-column axf:line-number="show" axf:line-number-initial="#c2"/>
+   <fo:table-body>
+   ...
+   </fo:table-body>
+</fo:table>
+```
+
+then, line numbers of the right column will continue in sequence from the previous table.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `none \| show \| hide` |
+| **Initial** | `none` |
+| **Inherited** | yes (except for `<fo:table-column>`) |
+
+## axf:line-number-background-color
+
+Specifies the background color of line numbers.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `<color>` |
+| **Initial** | `transparent` |
+| **Inherited** | yes |
+
+## axf:line-number-color
+
+Specifies the color of line numbers.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `<color>` |
+| **Initial** | the value of the `color` property |
+| **Inherited** | yes |
+
+## axf:line-number-display-align
+
+Specifies the alignment, in the block-progression-direction, of line numbers in the line area.
+
+Values have the following meanings:
+- **before**: Align the line numbers in the upper end of the line area.
+- **center**: Align the line numbers in the middle of the line area.
+- **after**: Align the line numbers in the lower end of the line area.
+- **auto**: It is considered `after` in horizontal writing, and `center` in vertical writing.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `auto \| before \| center \| after` |
+| **Initial** | `auto` |
+| **Inherited** | yes |
+
+## axf:line-number-except-continued-line
+
+Specifies whether to add line numbers except for continued lines.
+
+Values have the following meanings:
+- **true**: When a long line wraps, only the first line is numbered. At this time, the continued lines are not counted in the number of lines.
+- **false**: Adds line numbers to all lines.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `fo:flow`, `fo:table-column` |
+| **Values** | `true \| false` |
+| **Initial** | `false` |
+| **Inherited** | yes |
+
+## axf:line-number-font-family
+
+Specifies the font family of line numbers.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `[ <family-name> \| <generic-family> ]#` |
+| **Initial** | depends on UA |
+| **Inherited** | yes |
+
+## axf:line-number-font-size
+
+Specifies the font size of line numbers.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `<absolute-size> \| <relative-size> \| <length> \| <percentage>` |
+| **Initial** | `medium` |
+| **Inherited** | yes |
+
+## axf:line-number-font-style
+
+Specifies whether to make the font style italic.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `normal \| italic` |
+| **Initial** | `normal` |
+| **Inherited** | yes |
+
+## axf:line-number-font-weight
+
+Specifies the font weight of line numbers.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `normal \| bold \| bolder \| lighter \| 100 \| 200 \| 300 \| 400 \| 500 \| 600 \| 700 \| 800 \| 900 \| 1000` |
+| **Initial** | `normal` |
+| **Inherited** | yes |
+
+## axf:line-number-format
+
+Specifies the format of line numbers. Line numbers are shown as the specified format. The way to specify is the same as that for the `format` property.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:table-column>` |
+| **Values** | `<string>` |
+| **Initial** | `1` |
+| **Inherited** | no |
+
+## axf:line-number-initial
+
+Specifies the line number of the first line.
+
+Values have the following meanings:
+- **auto**: Line numbers are not initialized, and it is succeeded from previous `<fo:page-sequence>`. When previous `<fo:page-sequence>` does not exist, it becomes 1.
+- **\<number\>**: Initializes the line number with the specified value. The value must be greater than or equal to 1. Actual initialization takes place at the time when `axf:line-number-reset` is specified.
+- **#\<id\>**: This extension can only be specified to `<fo:table-column>` to continue line numbers of `<fo:table-column>` in sequence. See also `axf:line-number`.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:table-column>` |
+| **Values** | `auto \| <number> \| #<id>` |
+| **Initial** | `auto` |
+| **Inherited** | no |
+
+## axf:line-number-interval
+
+Specifies the interval of line numbers.
+
+Values have the following meanings:
+- **auto**: The specification of previous `<fo:page-sequence>` is succeeded. When previous `<fo:page-sequence>` does not exist, it becomes 1.
+- **\<number\>**: Sets the interval of the line numbers to the value specified. Specifies to show the line numbers like 5, 10, 15. In this case, `axf:line-number-initial="1" axf:line-number-start="5" axf:line-number-interval="5"` can be applied.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:table-column>` |
+| **Values** | `auto \| <number>` |
+| **Initial** | `auto` |
+| **Inherited** | no |
+
+## axf:line-number-offset
+
+Specifies the offset of line numbers.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `<length>` |
+| **Initial** | `0pt` |
+| **Inherited** | yes |
+
+## axf:line-number-orientation
+
+Rotates line numbers with specified degrees.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:table-column>` |
+| **Values** | `0 \| 90 \| 180 \| 270 \| -90 \| -180 \| -270` |
+| **Initial** | `0` |
+| **Inherited** | no |
+
+## axf:line-number-position
+
+Specifies the position of line numbers.
+
+Values have the following meanings:
+- **start**: Places line numbers at start-edge.
+- **end**: Places line numbers at end-edge.
+- **inside**: Places line numbers at start-edge on odd pages, at end-edge on even pages.
+- **outside**: Places line number at end-edge on odd pages, at start-edge on even pages.
+- **alternate**: Places line number at end-edge in the last column of a column layout, except for the last column, places it at start-edge. If the layout is non-column, places it at start-edge.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `start \| end \| inside \| outside \| alternate` |
+| **Initial** | `start` |
+| **Inherited** | yes |
+
+## axf:line-number-prefix
+
+Specifies the prefix for line numbers. Specified string will be output before each line number generated by `axf:line-number`.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:table-column>` |
+| **Values** | `<string>` |
+| **Initial** | empty string |
+| **Inherited** | no |
+
+## axf:line-number-reset
+
+Resets line numbering. Line numbers are reset to the value specified to `axf:line-number-initial`.
+
+Values have the following meanings:
+- **auto**: The specification of previous `<fo:page-sequence>` is succeeded. When the previous `<fo:page-sequence>` does not exist, it will become `none`.
+- **none**: Line numbers are not reset.
+- **page**: Line numbers are reset when pages break.
+- **column**: Line numbers are reset when columns break.
+- **force**: Line numbers are reset forcibly. It can be specified to `<fo:block>`.
+
+**CAUTION**: `force` can be specified only to `<fo:block>`. On the contrary, other values cannot be specified to `<fo:block>`.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:block>`, `<fo:table-column>` |
+| **Values** | `auto \| none \| page \| column \| force` |
+| **Initial** | `auto` |
+| **Inherited** | no |
+
+## axf:line-number-show
+
+Specifies the line number to be always output. Always outputs the numbers specified here even if numbers are not outputted by `axf:line-number-interval`, etc.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>`, `<fo:table-column>` |
+| **Values** | `<number>*` |
+| **Initial** | empty |
+| **Inherited** | no |
+
+## axf:line-number-start
+
+Specifies the starting line number. Line numbers are shown when the value is greater than or equal to the value specified here. When `axf:line-number-initial="1" axf:line-number-start="5"` are specified, the first 4 line numbers are not shown but the 5th line number will be outputted as the beginning number. When `axf:line-number-initial="5" axf:line-number-start="6"` are specified, the first line number is not shown but the next line number is outputted as 6.
+
+Values have the following meanings:
+- **auto**: The specification of the previous `<fo:page-sequence>` is succeeded. When the previous `<fo:page-sequence>` does not exist, it will become 1.
+- **\<number\>**: Sets the line number that begins outputting to the value specified.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | `<fo:page-sequence>` |
+| **Values** | `auto \| <number>` |
+| **Initial** | `auto` |
+| **Inherited** | no |
+
+## axf:line-number-text-align
+
+Specifies the alignment of line numbers in the line area.
+
+Values have the following meanings:
+- **start | center | end | inside | outside | left | right**: Same as `text-align`.
+- **auto**: When the position of the line numbers is in the start side, it is considered `end`. When the position of the line numbers is in the end side, it is considered `start`. The position of line numbers is specified by `axf:line-number-position`.
+
+When `axf:line-number-width` is not specified, it is always considered `auto`.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `auto \| start \| center \| end \| inside \| outside \| left \| right` |
+| **Initial** | `auto` |
+| **Inherited** | yes |
+
+## axf:line-number-text-decoration
+
+Specifies the text decoration of line numbers. Values have the same meaning as `text-decoration`.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | same as `text-decoration` |
+| **Initial** | `none` |
+| **Inherited** | yes |
+
+## axf:line-number-width
+
+Specifies the width of line numbers.
+
+Values have the following meanings:
+- **auto**: The width of line numbers becomes the width of the text of the line.
+- **\<length\>**: When specifying the arrangement of line numbers by `axf:line-number-text-align`, the value other than `auto` should be specified for the width.
+
+| Attribute | Value |
+|---|---|
+| **Applies to** | all block-level formatting objects that are descendants of `<fo:flow>`, `<fo:table-column>` |
+| **Values** | `auto \| <length>` |
+| **Initial** | `auto` |
+| **Inherited** | yes |

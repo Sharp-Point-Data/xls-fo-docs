@@ -63,6 +63,6 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## See Also
 
-- `fo:table-and-caption` -- the parent formatting object
-- `fo:table` -- the table content
-- `caption-side` property -- controls caption positioning
+- [fo:table-and-caption](fo-table-and-caption.md) — the parent formatting object
+- [fo:table](fo-table.md) — the table content
+- caption-side property — controls caption positioning

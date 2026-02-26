@@ -59,10 +59,10 @@ In addition this formatting object may have a sequence of zero or more `fo:marke
 
 ## See Also
 
-- `fo:table` -- the parent table formatting object
-- `fo:table-header` -- table header rows
-- `fo:table-body` -- table body rows
-- `fo:table-row` -- groups cells into rows
-- `fo:table-cell` -- individual cell content
-- `fo:table-footer-alternatives` -- alternative footer content (XSL-FO 2.0)
-- `table-omit-footer-at-break` property
+- [fo:table](fo-table.md) — the parent table formatting object
+- [fo:table-header](fo-table-header.md) — table header rows
+- [fo:table-body](fo-table-body.md) — table body rows
+- [fo:table-row](fo-table-row.md) — groups cells into rows
+- [fo:table-cell](fo-table-cell.md) — individual cell content
+- [fo:table-footer-alternatives](fo-table-footer-alternatives.md) — alternative footer content (XSL-FO 2.0)
+- table-omit-footer-at-break property

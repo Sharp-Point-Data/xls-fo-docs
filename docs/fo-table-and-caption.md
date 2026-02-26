@@ -200,6 +200,6 @@ Resulting XSL-FO output showing `fo:table-and-caption` with `fo:table-caption` a
 
 ## See Also
 
-- `fo:table` -- the table content itself
-- `fo:table-caption` -- the caption for the table
-- `caption-side` property -- controls caption placement
+- [fo:table](fo-table.md) — the table content itself
+- [fo:table-caption](fo-table-caption.md) — the caption for the table
+- caption-side property — controls caption placement

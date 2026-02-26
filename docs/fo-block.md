@@ -202,11 +202,11 @@ The following three-part example from the spec demonstrates a complete transform
 
 ## See Also
 
-- fo:block-container — generates a block-level reference-area for different writing-mode or reference-orientation
-- fo:initial-property-set — applies properties to the first line of a block
-- fo:marker — defines content for retrieval by fo:retrieve-marker
-- fo:inline — inline-level formatting object used within blocks
-- fo:flow — parent flow object that contains blocks
+- [fo:block-container](fo-block-container.md) — generates a block-level reference-area for different writing-mode or reference-orientation
+- [fo:initial-property-set](fo-initial-property-set.md) — applies properties to the first line of a block
+- [fo:marker](fo-marker.md) — defines content for retrieval by fo:retrieve-marker
+- [fo:inline](fo-inline.md) — inline-level formatting object used within blocks
+- [fo:flow](fo-flow.md) — parent flow object that contains blocks
 - Common Border, Padding, and Background Properties
 - Common Font Properties
 - Common Margin Properties - Block

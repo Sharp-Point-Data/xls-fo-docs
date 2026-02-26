@@ -62,8 +62,8 @@ An fo:inline that is a child of an fo:footnote may not have block-level children
 
 ## See Also
 
-- fo:inline-container -- for inline reference-areas with different writing-modes
-- fo:bidi-override -- for overriding the Unicode BIDI algorithm
-- fo:block -- the block-level counterpart
-- fo:leader -- for generating leaders and rules
-- fo:character -- for explicit character-to-glyph mapping
+- [fo:inline-container](fo-inline-container.md) — for inline reference-areas with different writing-modes
+- [fo:bidi-override](fo-bidi-override.md) — for overriding the Unicode BIDI algorithm
+- [fo:block](fo-block.md) — the block-level counterpart
+- [fo:leader](fo-leader.md) — for generating leaders and rules
+- [fo:character](fo-character.md) — for explicit character-to-glyph mapping
